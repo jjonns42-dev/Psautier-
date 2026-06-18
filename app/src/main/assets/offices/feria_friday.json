@@ -1,10 +1,236 @@
 {
   "id": "feria_friday",
-  "title": { "ar": "اليوم الطقسي", "it": "Ufficio feriale", "syr": "" },
+  "title": { "ar": "الجمعة — الصليب المقدس والآلام", "it": "Venerdì — La Santa Croce e la Passione", "syr": "ܥܪܘܒܬܐ" },
   "hours": [
-    { "hour": "RAMCHO", "elements": [] },
-    { "hour": "SOUTORO", "elements": [] },
-    { "hour": "LILIO", "elements": [] },
-    { "hour": "SAFRO", "elements": [] }
+    {
+      "hour": "RAMCHO",
+      "elements": [
+        {
+          "type": "RUBRIC",
+          "reference": "",
+          "title": { "ar": "الرامشا — صلاة المساء", "it": "Ramcho — Vespri", "syr": "ܪܡܫܐ" },
+          "body": {
+            "ar": "يُكرَّس يوم الجمعة في الشحيمو المارونيّ لآلام ربّنا يسوع المسيح وصليبه المقدس.",
+            "it": "Il venerdì nello Šḥimo maronita è dedicato alla Passione del Signore nostro Gesù Cristo e alla sua Santa Croce.",
+            "syr": ""
+          }
+        },
+        {
+          "type": "OPENING",
+          "reference": "",
+          "title": { "ar": "التسبيح الافتتاحي", "it": "Dossologia iniziale", "syr": "" },
+          "body": {
+            "ar": "مجداً لك يا الله. مجداً لك أيها الخالق. مجداً لك أيها القدوس. يا رب ارحم.\nأيها القدوس ارحم. أيها القدير ارحم. أيها الخالد ارحم.\nالمجد للآب والابن والروح القدس الآن وكل أوان وإلى أبد الآبدين. آمين.\nيا أبانا الذي في السماوات ليتقدس اسمك، ليأت ملكوتك، لتكن مشيئتك كما في السماء كذلك على الأرض، خبزنا كفافنا أعطنا اليوم، واغفر لنا ذنوبنا كما نغفر نحن لمن أساء إلينا، ولا تدخلنا في تجربة، لكن نجّنا من الشرير.",
+            "it": "Gloria a te, o Dio. Gloria a te, o Creatore. Gloria a te, o Santo. Signore, abbi pietà.\nSanto, abbi pietà. Potente, abbi pietà. Immortale, abbi pietà.\nGloria al Padre e al Figlio e allo Spirito Santo, ora e sempre e nei secoli dei secoli. Amen.\nPadre nostro che sei nei cieli, sia santificato il tuo nome, venga il tuo regno, sia fatta la tua volontà come in cielo così in terra. Dacci oggi il nostro pane quotidiano, e rimetti a noi i nostri debiti come noi li rimettiamo ai nostri debitori, e non ci indurre in tentazione, ma liberaci dal male.",
+            "syr": ""
+          }
+        },
+        {
+          "type": "PSALM",
+          "reference": "Ps 141 (140)",
+          "title": { "ar": "مزمور المساء", "it": "Salmo vespertino", "syr": "" },
+          "body": {
+            "ar": "يا رب صرخت إليك فاستجب لي، اسمع صوتي حين أصرخ إليك.\nلتُستَقم صلاتي كالبخور أمامك، ورفع يديّ كذبيحة مساء.\nاجعل يا رب حارساً لفمي وبواباً على شفتيّ.\nلا تُمِل قلبي إلى كلمة شريرة لأرتكب مع الذين يعملون الإثم أعمالاً آثمة ولا آكل من ملاذّهم.\nفليضربني البار فهو رحمة، وليؤدّبني فهو دهن على رأسي، رأسي لا يرفضه.\nإليك يا رب الرب رفعت عينيّ. بك لجأت لا تقتل نفسي.\nاحفظني من الحبالة التي نصبوها لي ومن شراك فاعلي الإثم.\nيقع الأشرار في مصائدهم معاً وأما أنا فأفتقر حتى أعبر.\nالمجد للآب والابن والروح القدس الآن وكل أوان وإلى أبد الآبدين. آمين.",
+            "it": "O Signore, a te grido: accorri a me, ascolta la mia voce quando ti chiamo.\nSalga a te come incenso la mia preghiera, come sacrificio della sera il mio gesto di mani alzate.\nSignore, poni una guardia alla mia bocca, vigila sulla porta delle mie labbra.\nNon permettere che il mio cuore si volga al male.\nIl giusto mi percuota: sarà un bene; mi riprenda: sarà un olio per la mia testa.\nO Signore Dio, verso di te guardano i miei occhi; in te mi rifugio.\nPreservami dal laccio che mi hanno teso e dalle trappole degli operatori di iniquità.\nI malvagi cadano nelle loro reti tutti insieme; io passi indenne.\nGloria al Padre e al Figlio e allo Spirito Santo, ora e sempre e nei secoli dei secoli. Amen.",
+            "syr": ""
+          }
+        },
+        {
+          "type": "QOLO",
+          "reference": "Tono 2",
+          "title": { "ar": "قولو الصليب المقدس", "it": "Qolo della Santa Croce", "syr": "ܩܠܐ ܕܙܩܝܦܐ" },
+          "body": {
+            "ar": "نسجد لصليبك يا سيدنا ونمجّد قيامتك المقدسة، هللويا.\nبصليبك يا مسيح أشرق نور الخلاص على كل الأمم ودُمِّرت سلطة الظلمة.\nيا رب المصلوب من أجل خلاصنا، اغفر لنا خطايانا وارحمنا بقوة صليبك. هللويا.",
+            "it": "Adoriamo la tua Croce, o Signore, e glorifichiamo la tua santa Risurrezione. Alleluia.\nCon la tua Croce, o Cristo, ha brillato la luce della salvezza su tutte le nazioni e il potere delle tenebre è stato distrutto.\nO Signore crocifisso per la nostra salvezza, perdonaci i peccati e abbi pietà di noi con la potenza della tua Croce. Alleluia.",
+            "syr": "ܣܓܕܝܢ ܚܢܢ ܠܙܩܝܦܟ ܡܪܢ ܘܡܫܒܚܝܢ ܚܢܢ ܠܩܝܡܬܟ ܩܕܝܫܬܐ. ܗܠܠܘܝܗ."
+          }
+        },
+        {
+          "type": "HOUSSOYO",
+          "reference": "",
+          "title": { "ar": "الحوسويو", "it": "Hoosoyo", "syr": "ܚܘܣܝܐ" },
+          "body": {
+            "ar": "أيها الرب يسوع المسيح، يا من احتملت الصليب والموت والقبر من أجل خلاصنا:\nفي هذا المساء يوم الجمعة، ذكرى آلامك المقدسة، نجثو بقلوب خاشعة أمام صليبك المعظّم.\nنشكرك على حبّك اللامتناهي الذي دفعك إلى بذل نفسك فداءً عنّا.\nاقبل منّا يا ربّنا الطيّب هذه الصلاة المسائية المقدّمة بالتوبة والندم على خطايانا.\nواغفر لنا ما أخطأنا إليك بالفكر والكلام والفعل.\nوبقوة صليبك المعظّم استرد لنا قوة الإيمان ووحدة الرجاء ودفء المحبة.\nآمين ويكون وإلى الأبد.",
+            "it": "O Signore Gesù Cristo, che hai sopportato la croce, la morte e il sepolcro per la nostra salvezza:\nIn questo vespero del venerdì, memoria della tua santa Passione, ci inginocchiamo con cuori umili davanti alla tua venerata Croce.\nTi ringraziamo per il tuo amore infinito che ti ha spinto a offrire te stesso come riscatto per noi.\nAccetta da noi, o nostro buon Signore, questa preghiera serale offerta con pentimento e contrizione per i nostri peccati.\nPerdonaci tutto ciò con cui abbiamo peccato verso di te nel pensiero, nella parola e nell'azione.\nE con la potenza della tua venerata Croce restaura in noi la forza della fede, l'unità della speranza e il calore dell'amore.\nAmen, così sia e per sempre.",
+            "syr": ""
+          }
+        },
+        {
+          "type": "DOXOLOGY",
+          "reference": "",
+          "title": { "ar": "الختام", "it": "Conclusione", "syr": "" },
+          "body": {
+            "ar": "المجد للآب والابن والروح القدس الآن وكل أوان وإلى أبد الآبدين. آمين.\nيا رب ارحم. يا رب ارحم. يا رب ارحم.",
+            "it": "Gloria al Padre e al Figlio e allo Spirito Santo, ora e sempre e nei secoli dei secoli. Amen.\nSignore, abbi pietà. Signore, abbi pietà. Signore, abbi pietà.",
+            "syr": "ܫܘܒܚܐ ܠܐܒܐ ܘܠܒܪܐ ܘܠܪܘܚܐ ܕܩܘܕܫܐ ܡܢ ܥܠܡ ܘܥܕܡܐ ܠܥܠܡ ܥܠܡܝܢ. ܐܡܝܢ."
+          }
+        }
+      ]
+    },
+    {
+      "hour": "SOUTORO",
+      "elements": [
+        {
+          "type": "OPENING",
+          "reference": "",
+          "title": { "ar": "البداية", "it": "Inizio", "syr": "" },
+          "body": {
+            "ar": "مجداً لك يا الله. مجداً لك أيها الخالق. مجداً لك أيها القدوس. يا رب ارحم.\nالمجد للآب والابن والروح القدس الآن وكل أوان وإلى أبد الآبدين. آمين.",
+            "it": "Gloria a te, o Dio. Gloria a te, o Creatore. Gloria a te, o Santo. Signore, abbi pietà.\nGloria al Padre e al Figlio e allo Spirito Santo, ora e sempre e nei secoli dei secoli. Amen.",
+            "syr": ""
+          }
+        },
+        {
+          "type": "PSALM",
+          "reference": "Ps 91 (90)",
+          "title": { "ar": "مزمور الحماية", "it": "Salmo della protezione", "syr": "" },
+          "body": {
+            "ar": "الساكن في معونة العلي يتمسكن في ظل قوي السماء.\nيقول للرب: أنت ملجأي ومعقلي إلهي فأتكل عليه.\nلأنه ينجيك من فخ الصياد ومن الكلمة المزعجة.\nبجناحيه يُظللك وتحت جناحيه تحتمي.\nلا تخشى من فزع الليل ولا من سهم يطير في النهار.\nلأنه يأمر ملائكته بك ليحفظوك في كل طرقك.\nالمجد للآب والابن والروح القدس الآن وكل أوان وإلى أبد الآبدين. آمين.",
+            "it": "Chi abita al riparo dell'Altissimo passerà la notte all'ombra dell'Onnipotente.\nDico al Signore: mio rifugio e mia fortezza, mio Dio in cui confido.\nEgli ti libererà dal laccio del cacciatore.\nTi coprirà con le sue penne, sotto le sue ali troverai rifugio.\nNon temerai il terrore della notte né la freccia che vola di giorno.\nPoiché agli angeli ha dato ordini per te, a custodirti in tutti i tuoi passi.\nGloria al Padre e al Figlio e allo Spirito Santo, ora e sempre e nei secoli dei secoli. Amen.",
+            "syr": ""
+          }
+        },
+        {
+          "type": "QOLO",
+          "reference": "",
+          "title": { "ar": "قولو ليلة الجمعة", "it": "Qolo della notte di venerdì", "syr": "" },
+          "body": {
+            "ar": "في هذا الليل نتأمل في آلام ربّنا الذي سهر في بستان الزيتون وقدّم صلاته بدموع وتوجّع.\nيا ربّ المصلوب، احرسنا في هذا الليل كما حرست تلاميذك ليلة آلامك.\nبقوة صليبك اطرد عنّا كل قوة الشر وأنِمنا في سلامك. هللويا.",
+            "it": "In questa notte meditiamo sulla Passione del Signore che vegliò nel Getsemani e offrì la sua preghiera con lacrime e angoscia.\nO Signore Crocifisso, custodiscici in questa notte come hai custodito i tuoi discepoli la notte della tua Passione.\nCon la potenza della tua Croce scaccia da noi ogni forza del male e fa' che dormiamo nella tua pace. Alleluia.",
+            "syr": ""
+          }
+        },
+        {
+          "type": "PRAYER",
+          "reference": "",
+          "title": { "ar": "صلاة النوم", "it": "Preghiera del riposo", "syr": "" },
+          "body": {
+            "ar": "يا ربّنا يسوع المسيح، يا حامل الصليب وفادي العالم، بقوة صليبك المقدس احرسنا في هذا الليل وأنِمنا بسلام. آمين.",
+            "it": "O Signore Gesù Cristo, portatore della Croce e Redentore del mondo, con la potenza della tua santa Croce custodiscici in questa notte e fa' che dormiamo in pace. Amen.",
+            "syr": ""
+          }
+        },
+        {
+          "type": "DOXOLOGY",
+          "reference": "",
+          "title": { "ar": "الختام", "it": "Conclusione", "syr": "" },
+          "body": {
+            "ar": "المجد للآب والابن والروح القدس الآن وكل أوان وإلى أبد الآبدين. آمين.",
+            "it": "Gloria al Padre e al Figlio e allo Spirito Santo, ora e sempre e nei secoli dei secoli. Amen.",
+            "syr": "ܫܘܒܚܐ ܠܐܒܐ ܘܠܒܪܐ ܘܠܪܘܚܐ ܕܩܘܕܫܐ ܡܢ ܥܠܡ ܘܥܕܡܐ ܠܥܠܡ ܥܠܡܝܢ. ܐܡܝܢ."
+          }
+        }
+      ]
+    },
+    {
+      "hour": "LILIO",
+      "elements": [
+        {
+          "type": "OPENING",
+          "reference": "",
+          "title": { "ar": "البداية", "it": "Inizio", "syr": "" },
+          "body": {
+            "ar": "مجداً لك يا الله. مجداً لك أيها الخالق. مجداً لك أيها القدوس. يا رب ارحم.\nالمجد للآب والابن والروح القدس الآن وكل أوان وإلى أبد الآبدين. آمين.",
+            "it": "Gloria a te, o Dio. Gloria a te, o Creatore. Gloria a te, o Santo. Signore, abbi pietà.\nGloria al Padre e al Figlio e allo Spirito Santo, ora e sempre e nei secoli dei secoli. Amen.",
+            "syr": ""
+          }
+        },
+        {
+          "type": "PSALM",
+          "reference": "Ps 63 (62)",
+          "title": { "ar": "مزمور الاشتياق إلى الله", "it": "Salmo dell'anelito verso Dio", "syr": "" },
+          "body": {
+            "ar": "يا الله إلهي أنت إليك أبكر. عطشت إليك نفسي واشتاقت إليك بدني في أرض يبسة وناشفة بلا ماء.\nكذلك قد ظهرت لي في القدس لأبصر قدرتك ومجدك.\nلأن رحمتك أصلح من الحياة. شفتاي تسبّحانك.\nإذا ذكرتك على فراشي وفي أسحار تأمّلت فيك.\nلأنك كنت عوناً لي وبظل جناحيك أبتهج.\nتبعتك نفسي خلفك واعتضدت بيمينك.\nالمجد للآب والابن والروح القدس الآن وكل أوان وإلى أبد الآبدين. آمين.",
+            "it": "O Dio, tu sei il mio Dio, dall'aurora ti cerco, ha sete di te l'anima mia in terra arida, assetata, senz'acqua.\nCosì nel santuario ti ho contemplato, guardando la tua potenza e la tua gloria.\nPoiché la tua grazia vale più della vita, le mie labbra ti loderanno.\nQuando penso a te nel mio giaciglio, medito su di te nelle veglie notturne.\nPoiché sei stato il mio aiuto e all'ombra delle tue ali esulto.\nA te si stringe l'anima mia, la tua destra mi sostiene.\nGloria al Padre e al Figlio e allo Spirito Santo, ora e sempre e nei secoli dei secoli. Amen.",
+            "syr": ""
+          }
+        },
+        {
+          "type": "QOLO",
+          "reference": "",
+          "title": { "ar": "قولو الصليب في الأسحار", "it": "Qolo della Croce nelle veglie", "syr": "" },
+          "body": {
+            "ar": "في منتصف الليل نتذكر ربّنا المصلوب الذي أسلم الروح في التاسعة وأظلمت الأرض.\nيا حامل آلام البشرية، صليبك هو رجاؤنا وبه نحيا ونموت.\nأيها الرب المصلوب والمقبور والقائم، رحمتك تسبق قضاءك. هللويا.",
+            "it": "Nel cuore della notte ricordiamo il Signore crocifisso che spirò all'ora nona e la terra si oscurò.\nO portatore delle sofferenze dell'umanità, la tua Croce è la nostra speranza e per essa viviamo e moriamo.\nO Signore Crocifisso, sepolto e Risorto, la tua misericordia precede il tuo giudizio. Alleluia.",
+            "syr": ""
+          }
+        },
+        {
+          "type": "SEDRO",
+          "reference": "",
+          "title": { "ar": "السيدرو", "it": "Sedro", "syr": "ܣܕܪܐ" },
+          "body": {
+            "ar": "أيها الرب يسوع المسيح الذي لأجلنا نحن البشر ولأجل خلاصنا نزلت من السماء:\nوتجسّدت من الروح القدس والعذراء مريم وصرت إنساناً، وصُلبت أيضاً عنّا في عهد بيلاطس البنطي وتألّمت ودُفِنت وقمت في اليوم الثالث كما في الكتب.\nنحن عبيدك في ساعة الأسحار هذه ننظر بعيني الإيمان إلى صليبك المعظّم علامة النصر والخلاص.\nنشكرك على حبّك الفائق للبشر الذي أوصلك إلى حدّ الموت حتى الموت على صليب.\nاقبل منّا هذه الأسحار المقدسة باكورة شفاهنا.\nواغفر لنا إثمنا وخطايانا وأحِنّا إلى حياة التوبة والحب.\nوأعطنا نوماً هانئاً بسلام لنقوم في الصباح بصحة جسداً وروحاً مسبّحين اسمك إلى الأبد.\nآمين ويكون وإلى الأبد.",
+            "it": "O Signore Gesù Cristo, che per noi uomini e per la nostra salvezza sei disceso dal cielo:\nE ti sei incarnato per opera dello Spirito Santo da Maria Vergine e ti sei fatto uomo, e per noi sei stato crocifisso sotto Ponzio Pilato, hai patito ed è stato sepolto, e il terzo giorno sei risorto secondo le Scritture.\nNoi tuoi servi in quest'ora delle veglie guardiamo con gli occhi della fede alla tua venerata Croce, segno di vittoria e di salvezza.\nTi ringraziamo per il tuo amore sovrabbondante verso gli uomini che ti ha portato fino alla morte, la morte di croce.\nAccetta da noi queste sante veglie, primizia delle nostre labbra.\nPerdonaci l'iniquità e i nostri peccati e inclinaci verso una vita di pentimento e amore.\nE donaci un riposo tranquillo in pace, affinché ci alzino al mattino in salute di corpo e di anima, lodando il tuo nome per sempre.\nAmen, così sia e per sempre.",
+            "syr": ""
+          }
+        },
+        {
+          "type": "DOXOLOGY",
+          "reference": "",
+          "title": { "ar": "الختام", "it": "Conclusione", "syr": "" },
+          "body": {
+            "ar": "المجد للآب والابن والروح القدس الآن وكل أوان وإلى أبد الآبدين. آمين.\nيا رب ارحم. يا رب ارحم. يا رب ارحم.",
+            "it": "Gloria al Padre e al Figlio e allo Spirito Santo, ora e sempre e nei secoli dei secoli. Amen.\nSignore, abbi pietà. Signore, abbi pietà. Signore, abbi pietà.",
+            "syr": "ܫܘܒܚܐ ܠܐܒܐ ܘܠܒܪܐ ܘܠܪܘܚܐ ܕܩܘܕܫܐ ܡܢ ܥܠܡ ܘܥܕܡܐ ܠܥܠܡ ܥܠܡܝܢ. ܐܡܝܢ."
+          }
+        }
+      ]
+    },
+    {
+      "hour": "SAFRO",
+      "elements": [
+        {
+          "type": "OPENING",
+          "reference": "",
+          "title": { "ar": "البداية", "it": "Inizio", "syr": "" },
+          "body": {
+            "ar": "مجداً لك يا الله. مجداً لك أيها الخالق. مجداً لك أيها القدوس. يا رب ارحم.\nالمجد للآب والابن والروح القدس الآن وكل أوان وإلى أبد الآبدين. آمين.",
+            "it": "Gloria a te, o Dio. Gloria a te, o Creatore. Gloria a te, o Santo. Signore, abbi pietà.\nGloria al Padre e al Figlio e allo Spirito Santo, ora e sempre e nei secoli dei secoli. Amen.",
+            "syr": ""
+          }
+        },
+        {
+          "type": "PSALM",
+          "reference": "Ps 51 (50)",
+          "title": { "ar": "مزمور التوبة", "it": "Salmo penitenziale", "syr": "" },
+          "body": {
+            "ar": "ارحمني يا الله وفق رحمتك الكبرى. وكعظيم رأفتك امح معاصيّ.\nاغسلني كثيراً من إثمي ومن خطيتي طهّرني.\nتنضحني بالزوفى فأطهر. تغسلني فأبيض من الثلج.\nاخلق فيّ قلباً نقياً يا الله وروحاً مستقيماً جدّد في أحشائي.\nلا تطرحني من أمام وجهك ومن روحك القدوس لا تنزعني.\nيا رب افتح شفتيّ، فيُسبّح فمي حمدك.\nالمجد للآب والابن والروح القدس الآن وكل أوان وإلى أبد الآبدين. آمين.",
+            "it": "Pietà di me, o Dio, nel tuo amore; nella tua grande misericordia cancella la mia iniquità.\nLavami tutto dalla mia colpa, dal mio peccato rendimi puro.\nAspergi di issopo e sarò puro; lavami e sarò più bianco della neve.\nCrea in me, o Dio, un cuore puro, rinnova in me uno spirito saldo.\nNon respingermi dalla tua presenza e non privarmi del tuo santo spirito.\nSignore, apri le mie labbra e la mia bocca proclami la tua lode.\nGloria al Padre e al Figlio e allo Spirito Santo, ora e sempre e nei secoli dei secoli. Amen.",
+            "syr": ""
+          }
+        },
+        {
+          "type": "QOLO",
+          "reference": "",
+          "title": { "ar": "قولو صباح الجمعة", "it": "Qolo del mattino di venerdì", "syr": "" },
+          "body": {
+            "ar": "في هذا الصباح يوم الجمعة نتذكر ربّنا الذي مضى إلى الجلجلة حاملاً الصليب لأجلنا.\nيا ربّ الصليب والقيامة، بضعف آلامك أيّدنا في ضعفنا.\nوبقوة صليبك المقدس احرس حياتنا في هذا اليوم. هللويا.",
+            "it": "In questo mattino di venerdì ricordiamo il Signore che andò al Calvario portando la Croce per noi.\nO Signore della Croce e della Risurrezione, con la debolezza della tua Passione sostienici nella nostra debolezza.\nE con la potenza della tua santa Croce custodisci la nostra vita in questa giornata. Alleluia.",
+            "syr": ""
+          }
+        },
+        {
+          "type": "HOUSSOYO",
+          "reference": "",
+          "title": { "ar": "الحوسويو الصباحي", "it": "Hoosoyo mattutino", "syr": "" },
+          "body": {
+            "ar": "أيها الرب يسوع المسيح يا حامل خطايانا على الصليب:\nفي هذا الصباح يوم جمعتك المباركة، نجثو أمامك بقلوب تائبة خاشعة.\nاقبل صلاتنا ومنح قلوبنا نعمة التوبة الصادقة.\nواحرسنا طوال هذا اليوم بقوة صليبك الكريم. آمين.",
+            "it": "O Signore Gesù Cristo, portatore dei nostri peccati sulla Croce:\nIn questo mattino del tuo benedetto Venerdì, ci inginocchiamo davanti a te con cuori pentiti e umili.\nAccetta la nostra preghiera e dona ai nostri cuori la grazia del vero pentimento.\nE custodiscici durante tutta questa giornata con la potenza della tua preziosa Croce. Amen.",
+            "syr": ""
+          }
+        },
+        {
+          "type": "DOXOLOGY",
+          "reference": "",
+          "title": { "ar": "الختام", "it": "Conclusione", "syr": "" },
+          "body": {
+            "ar": "المجد للآب والابن والروح القدس الآن وكل أوان وإلى أبد الآبدين. آمين.\nيا رب ارحم. يا رب ارحم. يا رب ارحم.",
+            "it": "Gloria al Padre e al Figlio e allo Spirito Santo, ora e sempre e nei secoli dei secoli. Amen.\nSignore, abbi pietà. Signore, abbi pietà. Signore, abbi pietà.",
+            "syr": "ܫܘܒܚܐ ܠܐܒܐ ܘܠܒܪܐ ܘܠܪܘܚܐ ܕܩܘܕܫܐ ܡܢ ܥܠܡ ܘܥܕܡܐ ܠܥܠܡ ܥܠܡܝܢ. ܐܡܝܢ."
+          }
+        }
+      ]
+    }
   ]
 }

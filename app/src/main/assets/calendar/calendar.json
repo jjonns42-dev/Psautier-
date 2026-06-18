@@ -1,0 +1,226 @@
+[
+  {
+    "id": "nativity_lord",
+    "title": { "ar": "ميلاد ربّنا يسوع المسيح", "it": "Natività del Signore Gesù Cristo", "syr": "ܝܠܕܐ ܕܡܪܢ" },
+    "rank": "SOLEMNITY",
+    "color": "WHITE",
+    "season": "NATIVITY",
+    "fixedDate": "12-25"
+  },
+  {
+    "id": "holy_family",
+    "title": { "ar": "العائلة المقدسة — ختان الرب وتسميته", "it": "Sacra Famiglia — Circoncisione del Signore", "syr": "" },
+    "rank": "FEAST",
+    "color": "WHITE",
+    "season": "NATIVITY",
+    "fixedDate": "01-01"
+  },
+  {
+    "id": "epiphany",
+    "title": { "ar": "عيد الدنح — ظهور الرب (الغطاس)", "it": "Epifania del Signore (Denho)", "syr": "ܕܢܚܐ" },
+    "rank": "SOLEMNITY",
+    "color": "WHITE",
+    "season": "EPIPHANY",
+    "fixedDate": "01-06"
+  },
+  {
+    "id": "st_maron",
+    "title": { "ar": "القدّيس مارون الناسك — أبو الموارنة", "it": "San Marone Eremita — Padre dei Maroniti", "syr": "ܡܪܝ ܡܪܘܢ" },
+    "rank": "SOLEMNITY",
+    "color": "WHITE",
+    "season": "ORDINARY",
+    "fixedDate": "02-09"
+  },
+  {
+    "id": "presentation_lord",
+    "title": { "ar": "تقدمة الرب في الهيكل (الشمعة)", "it": "Presentazione del Signore al Tempio (Candelora)", "syr": "" },
+    "rank": "FEAST",
+    "color": "WHITE",
+    "season": "EPIPHANY",
+    "fixedDate": "02-02"
+  },
+  {
+    "id": "st_rafqa",
+    "title": { "ar": "القدّيسة رفقا الرعيّة — الراهبة المارونية", "it": "Santa Rafqa Ar-Rayes — Monaca maronita", "syr": "" },
+    "rank": "FEAST",
+    "color": "WHITE",
+    "season": "ORDINARY",
+    "fixedDate": "03-23"
+  },
+  {
+    "id": "annunciation",
+    "title": { "ar": "البشارة — بشارة جبرائيل لمريم العذراء", "it": "Annunciazione del Signore a Maria Vergine", "syr": "ܣܘܒܪܐ" },
+    "rank": "SOLEMNITY",
+    "color": "WHITE",
+    "season": "ANNUNCIATION",
+    "fixedDate": "03-25"
+  },
+  {
+    "id": "palm_sunday",
+    "title": { "ar": "أحد الشعانين — دخول الرب أورشليم", "it": "Domenica delle Palme — Ingresso del Signore a Gerusalemme", "syr": "ܚܕ ܒܫܒܐ ܕܐܘ̈ܫܥܢܐ" },
+    "rank": "SOLEMNITY",
+    "color": "RED",
+    "season": "PASSION_WEEK",
+    "offsetFromEaster": -7
+  },
+  {
+    "id": "good_friday",
+    "title": { "ar": "الجمعة العظيمة — آلام ربّنا يسوع المسيح وصلبه", "it": "Venerdì Santo — Passione e Crocifissione del Signore", "syr": "ܥܪܘܒܬܐ ܪܒܬܐ" },
+    "rank": "SOLEMNITY",
+    "color": "RED",
+    "season": "PASSION_WEEK",
+    "offsetFromEaster": -2
+  },
+  {
+    "id": "holy_saturday",
+    "title": { "ar": "السبت المقدس — سبت النور", "it": "Sabato Santo — Sabato della Luce", "syr": "ܫܒܬܐ ܩܕܝܫܬܐ" },
+    "rank": "SOLEMNITY",
+    "color": "WHITE",
+    "season": "PASSION_WEEK",
+    "offsetFromEaster": -1
+  },
+  {
+    "id": "easter_sunday",
+    "title": { "ar": "عيد القيامة المجيدة — فصح الرب", "it": "Domenica di Pasqua — Risurrezione del Signore", "syr": "ܥܕܥܕܐ ܕܩܝܡܬܐ" },
+    "rank": "SOLEMNITY",
+    "color": "WHITE",
+    "season": "RESURRECTION",
+    "offsetFromEaster": 0
+  },
+  {
+    "id": "ascension",
+    "title": { "ar": "عيد الصعود المجيد", "it": "Ascensione del Signore", "syr": "ܣܘܠܩܐ" },
+    "rank": "SOLEMNITY",
+    "color": "WHITE",
+    "season": "RESURRECTION",
+    "offsetFromEaster": 39
+  },
+  {
+    "id": "pentecost",
+    "title": { "ar": "عيد العنصرة (حلول الروح القدس)", "it": "Pentecoste (Discesa dello Spirito Santo)", "syr": "ܥܕܥܕܐ ܕܦܢܛܩܘܣܛܐ" },
+    "rank": "SOLEMNITY",
+    "color": "RED",
+    "season": "PENTECOST",
+    "offsetFromEaster": 49
+  },
+  {
+    "id": "birth_john_baptist",
+    "title": { "ar": "ميلاد القدّيس يوحنا المعمدان", "it": "Natività di San Giovanni Battista", "syr": "" },
+    "rank": "SOLEMNITY",
+    "color": "WHITE",
+    "season": "ORDINARY",
+    "fixedDate": "06-24"
+  },
+  {
+    "id": "ss_peter_paul",
+    "title": { "ar": "القدّيسَين بطرس وبولس رئيسَي الرسل", "it": "Santi Pietro e Paolo Apostoli", "syr": "" },
+    "rank": "SOLEMNITY",
+    "color": "RED",
+    "season": "ORDINARY",
+    "fixedDate": "06-29"
+  },
+  {
+    "id": "st_charbel",
+    "title": { "ar": "القدّيس شربل مخلوف الناسك والكاهن", "it": "San Charbel Makhlouf, Monaco e Sacerdote", "syr": "" },
+    "rank": "SOLEMNITY",
+    "color": "WHITE",
+    "season": "ORDINARY",
+    "fixedDate": "07-24"
+  },
+  {
+    "id": "transfiguration",
+    "title": { "ar": "عيد التجلّي المجيد", "it": "Trasfigurazione del Signore", "syr": "ܕܘܒܪܐ" },
+    "rank": "FEAST",
+    "color": "WHITE",
+    "season": "ORDINARY",
+    "fixedDate": "08-06"
+  },
+  {
+    "id": "dormition_mary",
+    "title": { "ar": "عيد انتقال السيدة العذراء مريم", "it": "Dormizione della Vergine Maria", "syr": "ܥܕܥܕܐ ܕܝܠܕܬ ܐܠܗܐ" },
+    "rank": "SOLEMNITY",
+    "color": "WHITE",
+    "season": "ORDINARY",
+    "fixedDate": "08-15"
+  },
+  {
+    "id": "exaltation_holy_cross",
+    "title": { "ar": "عيد ارتفاع الصليب المحيي (إيداع الصليب)", "it": "Esaltazione della Santa Croce (Slibo)", "syr": "ܥܕܥܕܐ ܕܣܠܝܒܐ" },
+    "rank": "SOLEMNITY",
+    "color": "RED",
+    "season": "HOLY_CROSS",
+    "fixedDate": "09-14"
+  },
+  {
+    "id": "all_saints",
+    "title": { "ar": "عيد جميع القديسين", "it": "Tutti i Santi", "syr": "" },
+    "rank": "SOLEMNITY",
+    "color": "WHITE",
+    "season": "ORDINARY",
+    "fixedDate": "11-01"
+  },
+  {
+    "id": "all_souls",
+    "title": { "ar": "ذكرى جميع المؤمنين الراحلين", "it": "Commemorazione di tutti i Fedeli Defunti", "syr": "" },
+    "rank": "FEAST",
+    "color": "BLACK",
+    "season": "ORDINARY",
+    "fixedDate": "11-02"
+  },
+  {
+    "id": "st_nimatallah",
+    "title": { "ar": "القدّيس نعمة الله الحرديني الراهب المارونيّ", "it": "San Nimatallah Kassab Al-Hardini, Monaco maronita", "syr": "" },
+    "rank": "FEAST",
+    "color": "WHITE",
+    "season": "ORDINARY",
+    "fixedDate": "12-14"
+  },
+  {
+    "id": "consecration_church_maronite",
+    "title": { "ar": "تقديس الكنيسة المارونية وتجديدها", "it": "Consacrazione e Rinnovamento della Chiesa Maronita", "syr": "ܩܘܕܫ ܥܕܬܐ" },
+    "rank": "SOLEMNITY",
+    "color": "WHITE",
+    "season": "CONSECRATION_CHURCH",
+    "fixedDate": "10-26"
+  },
+  {
+    "id": "st_joseph",
+    "title": { "ar": "القدّيس يوسف خطيب العذراء وولي الكنيسة", "it": "San Giuseppe, Sposo della Vergine e Patrono della Chiesa", "syr": "" },
+    "rank": "FEAST",
+    "color": "WHITE",
+    "season": "ANNUNCIATION",
+    "fixedDate": "03-19"
+  },
+  {
+    "id": "st_john_maron",
+    "title": { "ar": "القدّيس يوحنا مارون — أوّل بطاركة الموارنة", "it": "San Giovanni Marone — Primo Patriarca dei Maroniti", "syr": "" },
+    "rank": "FEAST",
+    "color": "WHITE",
+    "season": "ORDINARY",
+    "fixedDate": "03-02"
+  },
+  {
+    "id": "immaculate_conception",
+    "title": { "ar": "عيد الحبل بلا دنس بالعذراء مريم", "it": "Immacolata Concezione della Vergine Maria", "syr": "" },
+    "rank": "SOLEMNITY",
+    "color": "WHITE",
+    "season": "ANNUNCIATION",
+    "fixedDate": "12-08"
+  },
+  {
+    "id": "our_lady_lebanon",
+    "title": { "ar": "سيدة لبنان — شفيعة لبنان", "it": "Nostra Signora del Libano — Patrona del Libano", "syr": "" },
+    "rank": "FEAST",
+    "color": "WHITE",
+    "season": "ORDINARY",
+    "fixedDate": "05-01"
+  },
+  {
+    "id": "assumption_mary",
+    "title": { "ar": "انتقال مريم العذراء", "it": "Assunzione della Beata Vergine Maria", "syr": "" },
+    "rank": "SOLEMNITY",
+    "color": "WHITE",
+    "season": "ORDINARY",
+    "fixedDate": "08-15"
+  }
+]

@@ -1,10 +1,236 @@
 {
   "id": "feria_saturday",
-  "title": { "ar": "اليوم الطقسي", "it": "Ufficio feriale", "syr": "" },
+  "title": { "ar": "السبت — الراحلون والشهداء وجميع المؤمنين", "it": "Sabato — I Defunti e tutti i Fedeli", "syr": "ܫܒܬܐ" },
   "hours": [
-    { "hour": "RAMCHO", "elements": [] },
-    { "hour": "SOUTORO", "elements": [] },
-    { "hour": "LILIO", "elements": [] },
-    { "hour": "SAFRO", "elements": [] }
+    {
+      "hour": "RAMCHO",
+      "elements": [
+        {
+          "type": "RUBRIC",
+          "reference": "",
+          "title": { "ar": "الرامشا — صلاة المساء", "it": "Ramcho — Vespri", "syr": "ܪܡܫܐ" },
+          "body": {
+            "ar": "يُكرَّس السبت في الشحيمو المارونيّ لذكرى المؤمنين الراحلين ولجميع الذين رقدوا على رجاء القيامة.",
+            "it": "Il sabato nello Šḥimo maronita è dedicato al ricordo dei fedeli defunti e di tutti coloro che si sono addormentati nella speranza della Risurrezione.",
+            "syr": ""
+          }
+        },
+        {
+          "type": "OPENING",
+          "reference": "",
+          "title": { "ar": "التسبيح الافتتاحي", "it": "Dossologia iniziale", "syr": "" },
+          "body": {
+            "ar": "مجداً لك يا الله. مجداً لك أيها الخالق. مجداً لك أيها القدوس. يا رب ارحم.\nأيها القدوس ارحم. أيها القدير ارحم. أيها الخالد ارحم.\nالمجد للآب والابن والروح القدس الآن وكل أوان وإلى أبد الآبدين. آمين.\nيا أبانا الذي في السماوات ليتقدس اسمك، ليأت ملكوتك، لتكن مشيئتك كما في السماء كذلك على الأرض، خبزنا كفافنا أعطنا اليوم، واغفر لنا ذنوبنا كما نغفر نحن لمن أساء إلينا، ولا تدخلنا في تجربة، لكن نجّنا من الشرير.",
+            "it": "Gloria a te, o Dio. Gloria a te, o Creatore. Gloria a te, o Santo. Signore, abbi pietà.\nSanto, abbi pietà. Potente, abbi pietà. Immortale, abbi pietà.\nGloria al Padre e al Figlio e allo Spirito Santo, ora e sempre e nei secoli dei secoli. Amen.\nPadre nostro che sei nei cieli, sia santificato il tuo nome, venga il tuo regno, sia fatta la tua volontà come in cielo così in terra. Dacci oggi il nostro pane quotidiano, e rimetti a noi i nostri debiti come noi li rimettiamo ai nostri debitori, e non ci indurre in tentazione, ma liberaci dal male.",
+            "syr": ""
+          }
+        },
+        {
+          "type": "PSALM",
+          "reference": "Ps 141 (140)",
+          "title": { "ar": "مزمور المساء", "it": "Salmo vespertino", "syr": "" },
+          "body": {
+            "ar": "يا رب صرخت إليك فاستجب لي، اسمع صوتي حين أصرخ إليك.\nلتُستَقم صلاتي كالبخور أمامك، ورفع يديّ كذبيحة مساء.\nاجعل يا رب حارساً لفمي وبواباً على شفتيّ.\nلا تُمِل قلبي إلى كلمة شريرة لأرتكب مع الذين يعملون الإثم أعمالاً آثمة ولا آكل من ملاذّهم.\nفليضربني البار فهو رحمة، وليؤدّبني فهو دهن على رأسي، رأسي لا يرفضه.\nإليك يا رب الرب رفعت عينيّ. بك لجأت لا تقتل نفسي.\nاحفظني من الحبالة التي نصبوها لي ومن شراك فاعلي الإثم.\nيقع الأشرار في مصائدهم معاً وأما أنا فأفتقر حتى أعبر.\nالمجد للآب والابن والروح القدس الآن وكل أوان وإلى أبد الآبدين. آمين.",
+            "it": "O Signore, a te grido: accorri a me, ascolta la mia voce quando ti chiamo.\nSalga a te come incenso la mia preghiera, come sacrificio della sera il mio gesto di mani alzate.\nSignore, poni una guardia alla mia bocca, vigila sulla porta delle mie labbra.\nNon permettere che il mio cuore si volga al male.\nIl giusto mi percuota: sarà un bene; mi riprenda: sarà un olio per la mia testa.\nO Signore Dio, verso di te guardano i miei occhi; in te mi rifugio.\nPreservami dal laccio che mi hanno teso e dalle trappole degli operatori di iniquità.\nI malvagi cadano nelle loro reti tutti insieme; io passi indenne.\nGloria al Padre e al Figlio e allo Spirito Santo, ora e sempre e nei secoli dei secoli. Amen.",
+            "syr": ""
+          }
+        },
+        {
+          "type": "QOLO",
+          "reference": "Tono 5",
+          "title": { "ar": "قولو الراحلين", "it": "Qolo dei Defunti", "syr": "ܩܠܐ ܕܥܢܝ̈ܕܐ" },
+          "body": {
+            "ar": "أيها الرب الصالح المحب للبشر الذي صنعت مساكن كثيرة لقديسيك، أعطِ الراحة لكل من رقدوا على رجائك.\nيا رب القيامة وإله الأحياء والأموات، أقم برحمتك جميع المؤمنين الراحلين.\nأدخلهم يا ربّنا في فرح ملكوتك حيث لا ألم ولا حزن ولا تنهيدة بل حياة لا تفنى. هللويا.",
+            "it": "O buon Signore, amico degli uomini, che hai preparato molte dimore per i tuoi santi, dona riposo a tutti coloro che si sono addormentati nella tua speranza.\nO Signore della Risurrezione e Dio dei vivi e dei morti, risuscita nella tua misericordia tutti i fedeli defunti.\nIntroducili, o Signore, nella gioia del tuo regno dove non c'è dolore, né tristezza, né gemito, ma vita che non ha fine. Alleluia.",
+            "syr": "ܡܪܝܐ ܛܒܐ ܪܚܡ ܐܢܫܐ ܕܥܒܕܬ ܡܫܪ̈ܝܬܐ ܣ̈ܓܝܐܬܐ ܠܩܕܝܫ̈ܝܟ ܗܒ ܢܝܚܐ ܠܟܠܗܘܢ ܕܥܢܕܘ ܒܣܒܪܟ. ܗܠܠܘܝܗ."
+          }
+        },
+        {
+          "type": "HOUSSOYO",
+          "reference": "",
+          "title": { "ar": "الحوسويو", "it": "Hoosoyo", "syr": "ܚܘܣܝܐ" },
+          "body": {
+            "ar": "أيها الرب إله الأحياء والأموات، الذي بيدك أرواح الجميع وأنت واهب الحياة الأبدية:\nنشكرك لأنك وعدتنا بقيامة الأجساد وحياة العالم الآتي.\nونطلب إليك في هذا المساء لأجل كل الذين رقدوا على رجاء قيامتك:\nآبائنا وأجدادنا وأصدقائنا وكل من قضى في ربقة الإيمان الكاثوليكي المارونيّ.\nأعطهم الراحة والسلام في أحضان القديسين أبراهيم وإسحاق ويعقوب.\nوأسكنهم في مسكن النور والسعادة حيث لا ألم ولا حزن ولا تنهيدة.\nوبارك ذكراهم بيننا وأجعلنا نسعى إلى اللقاء بهم في ملكوتك.\nآمين ويكون وإلى الأبد.",
+            "it": "O Signore Dio dei vivi e dei morti, nelle cui mani sono le anime di tutti e donatore della vita eterna:\nTi ringraziamo perché ci hai promesso la risurrezione dei corpi e la vita del mondo a venire.\nTi chiediamo in questo vespero per tutti coloro che si sono addormentati nella speranza della tua Risurrezione:\nI nostri padri, i nostri nonni, i nostri amici e tutti coloro che sono morti nel vincolo della fede cattolica maronita.\nDona loro riposo e pace nel seno dei santi Abramo, Isacco e Giacobbe.\nStabiliscili nel dimora di luce e felicità dove non c'è dolore, né tristezza, né gemito.\nBenedici la loro memoria tra noi e fa' che ci adoperiamo per incontrare con loro nel tuo regno.\nAmen, così sia e per sempre.",
+            "syr": ""
+          }
+        },
+        {
+          "type": "DOXOLOGY",
+          "reference": "",
+          "title": { "ar": "الختام", "it": "Conclusione", "syr": "" },
+          "body": {
+            "ar": "المجد للآب والابن والروح القدس الآن وكل أوان وإلى أبد الآبدين. آمين.\nيا رب ارحم. يا رب ارحم. يا رب ارحم.",
+            "it": "Gloria al Padre e al Figlio e allo Spirito Santo, ora e sempre e nei secoli dei secoli. Amen.\nSignore, abbi pietà. Signore, abbi pietà. Signore, abbi pietà.",
+            "syr": "ܫܘܒܚܐ ܠܐܒܐ ܘܠܒܪܐ ܘܠܪܘܚܐ ܕܩܘܕܫܐ ܡܢ ܥܠܡ ܘܥܕܡܐ ܠܥܠܡ ܥܠܡܝܢ. ܐܡܝܢ."
+          }
+        }
+      ]
+    },
+    {
+      "hour": "SOUTORO",
+      "elements": [
+        {
+          "type": "OPENING",
+          "reference": "",
+          "title": { "ar": "البداية", "it": "Inizio", "syr": "" },
+          "body": {
+            "ar": "مجداً لك يا الله. مجداً لك أيها الخالق. مجداً لك أيها القدوس. يا رب ارحم.\nالمجد للآب والابن والروح القدس الآن وكل أوان وإلى أبد الآبدين. آمين.",
+            "it": "Gloria a te, o Dio. Gloria a te, o Creatore. Gloria a te, o Santo. Signore, abbi pietà.\nGloria al Padre e al Figlio e allo Spirito Santo, ora e sempre e nei secoli dei secoli. Amen.",
+            "syr": ""
+          }
+        },
+        {
+          "type": "PSALM",
+          "reference": "Ps 91 (90)",
+          "title": { "ar": "مزمور الحماية", "it": "Salmo della protezione", "syr": "" },
+          "body": {
+            "ar": "الساكن في معونة العلي يتمسكن في ظل قوي السماء.\nيقول للرب: أنت ملجأي ومعقلي إلهي فأتكل عليه.\nلأنه ينجيك من فخ الصياد ومن الكلمة المزعجة.\nبجناحيه يُظللك وتحت جناحيه تحتمي.\nلا تخشى من فزع الليل ولا من سهم يطير في النهار.\nلأنه يأمر ملائكته بك ليحفظوك في كل طرقك.\nالمجد للآب والابن والروح القدس الآن وكل أوان وإلى أبد الآبدين. آمين.",
+            "it": "Chi abita al riparo dell'Altissimo passerà la notte all'ombra dell'Onnipotente.\nDico al Signore: mio rifugio e mia fortezza, mio Dio in cui confido.\nEgli ti libererà dal laccio del cacciatore.\nTi coprirà con le sue penne, sotto le sue ali troverai rifugio.\nNon temerai il terrore della notte né la freccia che vola di giorno.\nPoiché agli angeli ha dato ordini per te, a custodirti in tutti i tuoi passi.\nGloria al Padre e al Figlio e allo Spirito Santo, ora e sempre e nei secoli dei secoli. Amen.",
+            "syr": ""
+          }
+        },
+        {
+          "type": "QOLO",
+          "reference": "",
+          "title": { "ar": "قولو ليلة السبت", "it": "Qolo della notte di sabato", "syr": "" },
+          "body": {
+            "ar": "في هذا الليل نذكر أمام الرب كل الذين رقدوا في السبات الدائم.\nيا ربّ الرحمة والغفران، اذكر عبيدك الراقدين في أحضانك برحمتك.\nوأنِمنا نحن أيضاً في هذه الليلة على رجاء قيامتك المبركة. هللويا.",
+            "it": "In questa notte ricordiamo davanti al Signore tutti coloro che si sono addormentati nel riposo eterno.\nO Signore di misericordia e di perdono, ricorda nella tua misericordia i tuoi servi che riposano nel tuo seno.\nE fa' che anche noi dormiamo in questa notte nella speranza della tua benedetta Risurrezione. Alleluia.",
+            "syr": ""
+          }
+        },
+        {
+          "type": "PRAYER",
+          "reference": "",
+          "title": { "ar": "صلاة من أجل الراحلين", "it": "Preghiera per i Defunti", "syr": "" },
+          "body": {
+            "ar": "يا رب إله الرحمة، أرح بسلامك المقدس نفوس جميع الذين رقدوا في رجاء قيامتك. وأعطنا نحن نوم الليل بسلام وسلامة. آمين.",
+            "it": "O Signore Dio di misericordia, fa' riposare nella tua santa pace le anime di tutti coloro che si sono addormentati nella speranza della tua Risurrezione. E concedi anche a noi il sonno della notte in pace e serenità. Amen.",
+            "syr": ""
+          }
+        },
+        {
+          "type": "DOXOLOGY",
+          "reference": "",
+          "title": { "ar": "الختام", "it": "Conclusione", "syr": "" },
+          "body": {
+            "ar": "المجد للآب والابن والروح القدس الآن وكل أوان وإلى أبد الآبدين. آمين.",
+            "it": "Gloria al Padre e al Figlio e allo Spirito Santo, ora e sempre e nei secoli dei secoli. Amen.",
+            "syr": "ܫܘܒܚܐ ܠܐܒܐ ܘܠܒܪܐ ܘܠܪܘܚܐ ܕܩܘܕܫܐ ܡܢ ܥܠܡ ܘܥܕܡܐ ܠܥܠܡ ܥܠܡܝܢ. ܐܡܝܢ."
+          }
+        }
+      ]
+    },
+    {
+      "hour": "LILIO",
+      "elements": [
+        {
+          "type": "OPENING",
+          "reference": "",
+          "title": { "ar": "البداية", "it": "Inizio", "syr": "" },
+          "body": {
+            "ar": "مجداً لك يا الله. مجداً لك أيها الخالق. مجداً لك أيها القدوس. يا رب ارحم.\nالمجد للآب والابن والروح القدس الآن وكل أوان وإلى أبد الآبدين. آمين.",
+            "it": "Gloria a te, o Dio. Gloria a te, o Creatore. Gloria a te, o Santo. Signore, abbi pietà.\nGloria al Padre e al Figlio e allo Spirito Santo, ora e sempre e nei secoli dei secoli. Amen.",
+            "syr": ""
+          }
+        },
+        {
+          "type": "PSALM",
+          "reference": "Ps 63 (62)",
+          "title": { "ar": "مزمور الاشتياق إلى الله", "it": "Salmo dell'anelito verso Dio", "syr": "" },
+          "body": {
+            "ar": "يا الله إلهي أنت إليك أبكر. عطشت إليك نفسي واشتاقت إليك بدني في أرض يبسة وناشفة بلا ماء.\nكذلك قد ظهرت لي في القدس لأبصر قدرتك ومجدك.\nلأن رحمتك أصلح من الحياة. شفتاي تسبّحانك.\nإذا ذكرتك على فراشي وفي أسحار تأمّلت فيك.\nلأنك كنت عوناً لي وبظل جناحيك أبتهج.\nتبعتك نفسي خلفك واعتضدت بيمينك.\nالمجد للآب والابن والروح القدس الآن وكل أوان وإلى أبد الآبدين. آمين.",
+            "it": "O Dio, tu sei il mio Dio, dall'aurora ti cerco, ha sete di te l'anima mia in terra arida, assetata, senz'acqua.\nCosì nel santuario ti ho contemplato, guardando la tua potenza e la tua gloria.\nPoiché la tua grazia vale più della vita, le mie labbra ti loderanno.\nQuando penso a te nel mio giaciglio, medito su di te nelle veglie notturne.\nPoiché sei stato il mio aiuto e all'ombra delle tue ali esulto.\nA te si stringe l'anima mia, la tua destra mi sostiene.\nGloria al Padre e al Figlio e allo Spirito Santo, ora e sempre e nei secoli dei secoli. Amen.",
+            "syr": ""
+          }
+        },
+        {
+          "type": "QOLO",
+          "reference": "",
+          "title": { "ar": "قولو الراحلين في الأسحار", "it": "Qolo dei Defunti nelle veglie", "syr": "" },
+          "body": {
+            "ar": "في منتصف الليل نتذكر كل من سبقونا إلى الأبدية وننتظر لقاءهم في يوم القيامة.\nيا ربّنا الصالح الذي أعددت مساكن كثيرة لمحبّيك، أعطِ الراحة الأبدية لراحلينا.\nوأجعل نور وجهك يضيء عليهم دائماً. هللويا.",
+            "it": "Nel cuore della notte ricordiamo tutti coloro che ci hanno preceduto nell'eternità e attendiamo di incontrarli nel giorno della Risurrezione.\nO nostro buon Signore che hai preparato molte dimore per coloro che ti amano, dona riposo eterno ai nostri defunti.\nE fa' che la luce del tuo volto splenda su di loro per sempre. Alleluia.",
+            "syr": ""
+          }
+        },
+        {
+          "type": "SEDRO",
+          "reference": "",
+          "title": { "ar": "السيدرو", "it": "Sedro", "syr": "ܣܕܪܐ" },
+          "body": {
+            "ar": "أيها الرب يسوع المسيح، يا قيامة الأموات وحياة الكل، أنت الذي قلت: أنا هو القيامة والحياة، من آمن بي ولو مات فسيحيا:\nفي ساعة الأسحار هذه نوصي بين يديك كل من رقدوا في رجاء قيامتك:\nآباءنا وأمهاتنا، أجدادنا وجداتنا، إخوتنا وأخواتنا وأصحابنا الذين سبقونا إلى الأبدية.\nونطلب إليك باسمك القدوس الذي به أقمت لعازر من القبر، أن تقيمهم في يوم القيامة العامة وتدخلهم في فرح ملكوتك الأبدي.\nوفي هذه الأسحار نتوسل إليك أن ترحمنا نحن أيضاً حين نُعبر من هذا الوجود إلى لقائك وجهاً لوجه.\nآمين ويكون وإلى الأبد.",
+            "it": "O Signore Gesù Cristo, o Risurrezione dei morti e vita di tutti, tu che hai detto: Io sono la risurrezione e la vita; chi crede in me, anche se muore, vivrà:\nIn quest'ora delle veglie ti affidiamo tutti coloro che si sono addormentati nella speranza della tua Risurrezione:\nI nostri padri e le nostre madri, i nostri nonni e le nostre nonne, i nostri fratelli e sorelle e i nostri amici che ci hanno preceduto nell'eternità.\nTi chiediamo nel tuo santo nome, con il quale hai risuscitato Lazzaro dal sepolcro, di risuscitarli nel giorno della risurrezione generale e di introdurli nella gioia del tuo eterno regno.\nIn queste ore delle veglie ti supplichiamo di avere misericordia anche di noi quando passeremo da questa esistenza all'incontro con te faccia a faccia.\nAmen, così sia e per sempre.",
+            "syr": ""
+          }
+        },
+        {
+          "type": "DOXOLOGY",
+          "reference": "",
+          "title": { "ar": "الختام", "it": "Conclusione", "syr": "" },
+          "body": {
+            "ar": "المجد للآب والابن والروح القدس الآن وكل أوان وإلى أبد الآبدين. آمين.\nيا رب ارحم. يا رب ارحم. يا رب ارحم.",
+            "it": "Gloria al Padre e al Figlio e allo Spirito Santo, ora e sempre e nei secoli dei secoli. Amen.\nSignore, abbi pietà. Signore, abbi pietà. Signore, abbi pietà.",
+            "syr": "ܫܘܒܚܐ ܠܐܒܐ ܘܠܒܪܐ ܘܠܪܘܚܐ ܕܩܘܕܫܐ ܡܢ ܥܠܡ ܘܥܕܡܐ ܠܥܠܡ ܥܠܡܝܢ. ܐܡܝܢ."
+          }
+        }
+      ]
+    },
+    {
+      "hour": "SAFRO",
+      "elements": [
+        {
+          "type": "OPENING",
+          "reference": "",
+          "title": { "ar": "البداية", "it": "Inizio", "syr": "" },
+          "body": {
+            "ar": "مجداً لك يا الله. مجداً لك أيها الخالق. مجداً لك أيها القدوس. يا رب ارحم.\nالمجد للآب والابن والروح القدس الآن وكل أوان وإلى أبد الآبدين. آمين.",
+            "it": "Gloria a te, o Dio. Gloria a te, o Creatore. Gloria a te, o Santo. Signore, abbi pietà.\nGloria al Padre e al Figlio e allo Spirito Santo, ora e sempre e nei secoli dei secoli. Amen.",
+            "syr": ""
+          }
+        },
+        {
+          "type": "PSALM",
+          "reference": "Ps 51 (50)",
+          "title": { "ar": "مزمور التوبة", "it": "Salmo penitenziale", "syr": "" },
+          "body": {
+            "ar": "ارحمني يا الله وفق رحمتك الكبرى. وكعظيم رأفتك امح معاصيّ.\nاغسلني كثيراً من إثمي ومن خطيتي طهّرني.\nتنضحني بالزوفى فأطهر. تغسلني فأبيض من الثلج.\nاخلق فيّ قلباً نقياً يا الله وروحاً مستقيماً جدّد في أحشائي.\nلا تطرحني من أمام وجهك ومن روحك القدوس لا تنزعني.\nيا رب افتح شفتيّ، فيُسبّح فمي حمدك.\nالمجد للآب والابن والروح القدس الآن وكل أوان وإلى أبد الآبدين. آمين.",
+            "it": "Pietà di me, o Dio, nel tuo amore; nella tua grande misericordia cancella la mia iniquità.\nLavami tutto dalla mia colpa, dal mio peccato rendimi puro.\nAspergi di issopo e sarò puro; lavami e sarò più bianco della neve.\nCrea in me, o Dio, un cuore puro, rinnova in me uno spirito saldo.\nNon respingermi dalla tua presenza e non privarmi del tuo santo spirito.\nSignore, apri le mie labbra e la mia bocca proclami la tua lode.\nGloria al Padre e al Figlio e allo Spirito Santo, ora e sempre e nei secoli dei secoli. Amen.",
+            "syr": ""
+          }
+        },
+        {
+          "type": "QOLO",
+          "reference": "",
+          "title": { "ar": "قولو صباح السبت", "it": "Qolo del mattino di sabato", "syr": "" },
+          "body": {
+            "ar": "في فجر هذا السبت المبارك نذكر أمام الله كل الذين رقدوا قبلنا ونصلي لأجلهم.\nيا ربّ الحياة والموت والقيامة، ارحم راحلينا ومنِحهم النور الأبدي.\nوانقلنا نحن إلى يوم الأحد الأعظم، يوم قيامتنا معهم في مجدك. هللويا.",
+            "it": "All'alba di questo benedetto sabato, ricordiamo davanti a Dio tutti coloro che si sono addormentati prima di noi e preghiamo per loro.\nO Signore della vita, della morte e della Risurrezione, abbi pietà dei nostri defunti e dona loro la luce eterna.\nCi conducici alla grande domenica, al giorno della nostra risurrezione con loro nella tua gloria. Alleluia.",
+            "syr": ""
+          }
+        },
+        {
+          "type": "HOUSSOYO",
+          "reference": "",
+          "title": { "ar": "الحوسويو الصباحي", "it": "Hoosoyo mattutino", "syr": "" },
+          "body": {
+            "ar": "أيها الرب إله الأحياء والأموات، في هذا الصباح السبتيّ المبارك:\nنصلي لأجل كل الذين رقدوا في هذا الشهر وفي هذه السنة وفي كل الأزمنة.\nأعطهم الراحة الأبدية وأضِئ عليهم بنور لا يزول.\nوامنحنا نحن عيشاً صالحاً وموتاً هنيئاً وقيامةً مجيدة معهم. آمين.",
+            "it": "O Signore Dio dei vivi e dei morti, in questo santo mattino del sabato:\nPreghiamo per tutti coloro che si sono addormentati in questo mese e in quest'anno e in tutti i tempi.\nDona loro il riposo eterno e fa' che su di loro risplenda una luce che non tramonta mai.\nE concedi a noi una vita virtuosa, una morte serena e una gloriosa risurrezione insieme a loro. Amen.",
+            "syr": ""
+          }
+        },
+        {
+          "type": "DOXOLOGY",
+          "reference": "",
+          "title": { "ar": "الختام", "it": "Conclusione", "syr": "" },
+          "body": {
+            "ar": "المجد للآب والابن والروح القدس الآن وكل أوان وإلى أبد الآبدين. آمين.\nيا رب ارحم. يا رب ارحم. يا رب ارحم.",
+            "it": "Gloria al Padre e al Figlio e allo Spirito Santo, ora e sempre e nei secoli dei secoli. Amen.\nSignore, abbi pietà. Signore, abbi pietà. Signore, abbi pietà.",
+            "syr": "ܫܘܒܚܐ ܠܐܒܐ ܘܠܒܪܐ ܘܠܪܘܚܐ ܕܩܘܕܫܐ ܡܢ ܥܠܡ ܘܥܕܡܐ ܠܥܠܡ ܥܠܡܝܢ. ܐܡܝܢ."
+          }
+        }
+      ]
+    }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "id": "feria_monday",
-  "title": { "ar": "الإثنين — اليوم الطقسي", "it": "Lunedì — Ufficio feriale", "syr": "" },
+  "title": { "ar": "الإثنين — الملائكة ويوحنا المعمدان", "it": "Lunedì — Gli Angeli e Giovanni Battista", "syr": "ܬܪܝܢ ܒܫܒܐ" },
   "hours": [
     {
       "hour": "RAMCHO",
@@ -8,10 +8,75 @@
         {
           "type": "RUBRIC",
           "reference": "",
-          "title": { "ar": "", "it": "", "syr": "" },
+          "title": { "ar": "الرامشا — صلاة المساء", "it": "Ramcho — Vespri", "syr": "ܪܡܫܐ" },
           "body": {
-            "ar": "[نص توضيحي — يُستبدَل بالنص الفعلي من الشحيمو]",
-            "it": "[Testo provvisorio — da sostituire con il testo reale dello Šḥimo]",
+            "ar": "يُكرَّس الإثنين في الشحيمو المارونيّ للملائكة الكرام ولسيدنا يوحنا المعمدان السابق المجيد.",
+            "it": "Il lunedì nello Šḥimo maronita è dedicato ai santi Angeli e al glorioso precursore Giovanni Battista.",
+            "syr": ""
+          }
+        },
+        {
+          "type": "OPENING",
+          "reference": "",
+          "title": { "ar": "التسبيح الافتتاحي", "it": "Dossologia iniziale", "syr": "" },
+          "body": {
+            "ar": "مجداً لك يا الله. مجداً لك أيها الخالق. مجداً لك أيها القدوس. يا رب ارحم.\nأيها القدوس ارحم. أيها القدير ارحم. أيها الخالد ارحم.\nالمجد للآب والابن والروح القدس الآن وكل أوان وإلى أبد الآبدين. آمين.\nيا أبانا الذي في السماوات ليتقدس اسمك، ليأت ملكوتك، لتكن مشيئتك كما في السماء كذلك على الأرض، خبزنا كفافنا أعطنا اليوم، واغفر لنا ذنوبنا كما نغفر نحن لمن أساء إلينا، ولا تدخلنا في تجربة، لكن نجّنا من الشرير.",
+            "it": "Gloria a te, o Dio. Gloria a te, o Creatore. Gloria a te, o Santo. Signore, abbi pietà.\nSanto, abbi pietà. Potente, abbi pietà. Immortale, abbi pietà.\nGloria al Padre e al Figlio e allo Spirito Santo, ora e sempre e nei secoli dei secoli. Amen.\nPadre nostro che sei nei cieli, sia santificato il tuo nome, venga il tuo regno, sia fatta la tua volontà come in cielo così in terra. Dacci oggi il nostro pane quotidiano, e rimetti a noi i nostri debiti come noi li rimettiamo ai nostri debitori, e non ci indurre in tentazione, ma liberaci dal male.",
+            "syr": ""
+          }
+        },
+        {
+          "type": "PSALM",
+          "reference": "Ps 141 (140)",
+          "title": { "ar": "مزمور المساء", "it": "Salmo vespertino", "syr": "ܡܙܡܘܪܐ" },
+          "body": {
+            "ar": "يا رب صرخت إليك فاستجب لي، اسمع صوتي حين أصرخ إليك.\nلتُستَقم صلاتي كالبخور أمامك، ورفع يديّ كذبيحة مساء.\nاجعل يا رب حارساً لفمي وبواباً على شفتيّ.\nلا تُمِل قلبي إلى كلمة شريرة لأرتكب مع الذين يعملون الإثم أعمالاً آثمة ولا آكل من ملاذّهم.\nفليضربني البار فهو رحمة، وليؤدّبني فهو دهن على رأسي، رأسي لا يرفضه.\nإليك يا رب الرب رفعت عينيّ. بك لجأت لا تقتل نفسي.\nاحفظني من الحبالة التي نصبوها لي ومن شراك فاعلي الإثم.\nيقع الأشرار في مصائدهم معاً وأما أنا فأفتقر حتى أعبر.\nالمجد للآب والابن والروح القدس الآن وكل أوان وإلى أبد الآبدين. آمين.",
+            "it": "O Signore, a te grido: accorri a me, ascolta la mia voce quando ti chiamo.\nSalga a te come incenso la mia preghiera, come sacrificio della sera il mio gesto di mani alzate.\nSignore, poni una guardia alla mia bocca, vigila sulla porta delle mie labbra.\nNon permettere che il mio cuore si volga al male.\nIl giusto mi percuota: sarà un bene; mi riprenda: sarà un olio per la mia testa.\nO Signore Dio, verso di te guardano i miei occhi; in te mi rifugio.\nPreservami dal laccio che mi hanno teso e dalle trappole degli operatori di iniquità.\nI malvagi cadano nelle loro reti tutti insieme; io passi indenne.\nGloria al Padre e al Figlio e allo Spirito Santo, ora e sempre e nei secoli dei secoli. Amen.",
+            "syr": ""
+          }
+        },
+        {
+          "type": "QOLO",
+          "reference": "Tono 2",
+          "title": { "ar": "قولو الملائكة ويوحنا المعمدان", "it": "Qolo degli Angeli e di Giovanni Battista", "syr": "" },
+          "body": {
+            "ar": "أيها الملاك ميخائيل رئيس الأرواح، وجبرائيل مبشّر أسرار الله، وجميع الملائكة الطاهرين، صلّوا لأجلنا.\nيا يوحنا المعمدان أعظم المولودين من النساء وصوت الكلمة في البرية، اشفع لنا عند الرب.\nأيها الملائكة الكرام والسابق المجيد، كونوا شفعاء لنا أمام عرش الله العلي. هللويا.",
+            "it": "O Arcangelo Michele, principe degli spiriti, e Gabriele, annunciatore dei misteri di Dio, e tutti i santi Angeli, pregate per noi.\nO Giovanni Battista, il più grande tra i nati di donna, voce del Verbo nel deserto, intercedi per noi presso il Signore.\nO santi Angeli e glorioso Precursore, siate nostri intercessori davanti al trono dell'Altissimo. Alleluia.",
+            "syr": ""
+          }
+        },
+        {
+          "type": "HOUSSOYO",
+          "reference": "",
+          "title": { "ar": "الحوسويو", "it": "Hoosoyo", "syr": "ܚܘܣܝܐ" },
+          "body": {
+            "ar": "أيها الرب إله القوات، الذي أوجدت القوى السماوية من العدم، وجعلت الملائكة خداماً لإرادتك ورسلاً لأمرك:\nنشكرك على شفاعة الملائكة القدوسين الحارسين لنا في كل أوقاتنا.\nونتوسل إليك بشفاعة القدّيس يوحنا المعمدان السابق المجيد الذي استحق أن يصبغ ابنك الوحيد في نهر الأردن.\nاقبل منّا صلاتنا المسائية واغفر لنا خطايانا وأنت تنظر إلينا بعيني رحمتك.\nوأرسل ملائكتك الحارسين ليسهروا علينا في هذا الليل ويحفظونا من كل ضيق وشر.\nآمين ويكون وإلى الأبد.",
+            "it": "O Signore Dio degli eserciti, che hai creato dal nulla le potenze celesti e hai fatto degli angeli i ministri della tua volontà e i messaggeri del tuo comando:\nTi ringraziamo per l'intercessione dei santi angeli che ci custodiscono in ogni momento.\nTi supplichiamo per l'intercessione del glorioso precursore san Giovanni Battista, degno di battezzare il tuo Figlio unigenito nel fiume Giordano.\nAccetta da noi la nostra preghiera serale e perdonaci i nostri peccati guardandoci con i tuoi occhi di misericordia.\nE manda i tuoi angeli custodi a vegliare su di noi in questa notte e a proteggerci da ogni angustia e male.\nAmen, così sia e per sempre.",
+            "syr": ""
+          }
+        },
+        {
+          "type": "DOXOLOGY",
+          "reference": "",
+          "title": { "ar": "الختام", "it": "Conclusione", "syr": "" },
+          "body": {
+            "ar": "المجد للآب والابن والروح القدس الآن وكل أوان وإلى أبد الآبدين. آمين.\nيا رب ارحم. يا رب ارحم. يا رب ارحم.",
+            "it": "Gloria al Padre e al Figlio e allo Spirito Santo, ora e sempre e nei secoli dei secoli. Amen.\nSignore, abbi pietà. Signore, abbi pietà. Signore, abbi pietà.",
+            "syr": "ܫܘܒܚܐ ܠܐܒܐ ܘܠܒܪܐ ܘܠܪܘܚܐ ܕܩܘܕܫܐ ܡܢ ܥܠܡ ܘܥܕܡܐ ܠܥܠܡ ܥܠܡܝܢ. ܐܡܝܢ."
+          }
+        }
+      ]
+    },
+    {
+      "hour": "SOUTORO",
+      "elements": [
+        {
+          "type": "RUBRIC",
+          "reference": "",
+          "title": { "ar": "السُّتُورو — صلاة الحماية", "it": "Soutoro — Compieta", "syr": "ܣܘܬܪܐ" },
+          "body": {
+            "ar": "نطلب حماية الملائكة القدوسين طوال الليل.",
+            "it": "Invochiamo la protezione dei santi Angeli durante tutta la notte.",
             "syr": ""
           }
         },
@@ -20,31 +85,115 @@
           "reference": "",
           "title": { "ar": "البداية", "it": "Inizio", "syr": "" },
           "body": {
-            "ar": "المجد للآب والابن والروح القدس.",
-            "it": "Gloria al Padre e al Figlio e allo Spirito Santo.",
+            "ar": "مجداً لك يا الله. مجداً لك أيها الخالق. مجداً لك أيها القدوس. يا رب ارحم.\nالمجد للآب والابن والروح القدس الآن وكل أوان وإلى أبد الآبدين. آمين.",
+            "it": "Gloria a te, o Dio. Gloria a te, o Creatore. Gloria a te, o Santo. Signore, abbi pietà.\nGloria al Padre e al Figlio e allo Spirito Santo, ora e sempre e nei secoli dei secoli. Amen.",
             "syr": ""
           }
         },
         {
           "type": "PSALM",
-          "reference": "Ps 141 / 140",
-          "title": { "ar": "مزمور المساء", "it": "Salmo vespertino", "syr": "" },
+          "reference": "Ps 91 (90)",
+          "title": { "ar": "مزمور الحماية", "it": "Salmo della protezione", "syr": "" },
           "body": {
-            "ar": "[نص المزمور — يُدخَل لاحقًا]",
-            "it": "[Testo del salmo — da inserire]",
+            "ar": "الساكن في معونة العلي يتمسكن في ظل قوي السماء.\nيقول للرب: أنت ملجأي ومعقلي إلهي فأتكل عليه.\nلأنه ينجيك من فخ الصياد ومن الكلمة المزعجة.\nبجناحيه يُظللك وتحت جناحيه تحتمي، الحق كالدرع والترس يحيط بك.\nلا تخشى من فزع الليل ولا من سهم يطير في النهار.\nولا من وباء يتصرف في الظلام ولا من هجوم يُتلف في الظهيرة.\nلأنه يأمر ملائكته بك ليحفظوك في كل طرقك.\nعلى أيديهم يحملونك لئلا تصدم بحجر رجلك.\nالمجد للآب والابن والروح القدس الآن وكل أوان وإلى أبد الآبدين. آمين.",
+            "it": "Chi abita al riparo dell'Altissimo passerà la notte all'ombra dell'Onnipotente.\nDico al Signore: mio rifugio e mia fortezza, mio Dio in cui confido.\nEgli ti libererà dal laccio del cacciatore, dalla peste che miete nella notte.\nTi coprirà con le sue penne, sotto le sue ali troverai rifugio.\nNon temerai il terrore della notte né la freccia che vola di giorno.\nPoiché agli angeli ha dato ordini per te, a custodirti in tutti i tuoi passi.\nSulle loro mani ti porteranno perché il tuo piede non inciampi nella pietra.\nGloria al Padre e al Figlio e allo Spirito Santo, ora e sempre e nei secoli dei secoli. Amen.",
             "syr": ""
           }
         },
         {
           "type": "QOLO",
-          "reference": "Qolo — ton 1",
-          "title": { "ar": "قولو", "it": "Qolo", "syr": "" },
+          "reference": "",
+          "title": { "ar": "قولو ليلة الإثنين", "it": "Qolo della notte di lunedì", "syr": "" },
           "body": {
-            "ar": "[نص الترنيمة — يُدخَل لاحقًا]",
-            "it": "[Testo dell'inno — da inserire]",
+            "ar": "يا ملاك الرب الحارس لي، احرسني في هذا الليل من كل إغراء الشيطان.\nيا ميخائيل رئيس الملائكة وقائد جيوش السماء، ادفع عني قوة الشرير.\nيا يوحنا السابق المجيد، صلّ لأجلي إلى الرب في ساعة السهر هذه. هللويا.",
+            "it": "O Angelo custode del Signore, custodiscimi in questa notte da ogni tentazione del maligno.\nO Michele, principe degli angeli e capo degli eserciti del cielo, allontana da me la forza del maligno.\nO Giovanni, glorioso Precursore, prega per me presso il Signore in quest'ora di veglia. Alleluia.",
             "syr": ""
-          },
-          "melodyId": "mode1_sample"
+          }
+        },
+        {
+          "type": "PRAYER",
+          "reference": "",
+          "title": { "ar": "صلاة النوم", "it": "Preghiera del riposo", "syr": "" },
+          "body": {
+            "ar": "يا رب الله، أرسل ملاكك القدوس ليسهر علينا في هذا الليل ويحفظنا من كل شر.\nوبشفاعة يوحنا المعمدان عبدك الصدّيق، اقبل صلاتنا وأنِمنا بسلام. آمين.",
+            "it": "O Signore Dio, manda il tuo santo Angelo a vegliare su di noi in questa notte e a custodirci da ogni male.\nPer l'intercessione di Giovanni Battista, tuo giusto servo, accogli la nostra preghiera e fa' che dormiamo in pace. Amen.",
+            "syr": ""
+          }
+        },
+        {
+          "type": "DOXOLOGY",
+          "reference": "",
+          "title": { "ar": "الختام", "it": "Conclusione", "syr": "" },
+          "body": {
+            "ar": "المجد للآب والابن والروح القدس الآن وكل أوان وإلى أبد الآبدين. آمين.\nيا رب ارحم. يا رب ارحم. يا رب ارحم.",
+            "it": "Gloria al Padre e al Figlio e allo Spirito Santo, ora e sempre e nei secoli dei secoli. Amen.\nSignore, abbi pietà. Signore, abbi pietà. Signore, abbi pietà.",
+            "syr": "ܫܘܒܚܐ ܠܐܒܐ ܘܠܒܪܐ ܘܠܪܘܚܐ ܕܩܘܕܫܐ ܡܢ ܥܠܡ ܘܥܕܡܐ ܠܥܠܡ ܥܠܡܝܢ. ܐܡܝܢ."
+          }
+        }
+      ]
+    },
+    {
+      "hour": "LILIO",
+      "elements": [
+        {
+          "type": "RUBRIC",
+          "reference": "",
+          "title": { "ar": "الليليو — صلاة منتصف الليل", "it": "Lilio — Vigilie notturne", "syr": "ܠܠܝܐ" },
+          "body": {
+            "ar": "في منتصف الليل تُقام هذه الصلاة، تأسياً بالملائكة الذين يسبّحون الله بلا انقطاع.",
+            "it": "Nella notte si celebra questa preghiera, sull'esempio degli Angeli che lodano Dio senza sosta.",
+            "syr": ""
+          }
+        },
+        {
+          "type": "OPENING",
+          "reference": "",
+          "title": { "ar": "البداية", "it": "Inizio", "syr": "" },
+          "body": {
+            "ar": "مجداً لك يا الله. مجداً لك أيها الخالق. مجداً لك أيها القدوس. يا رب ارحم.\nالمجد للآب والابن والروح القدس الآن وكل أوان وإلى أبد الآبدين. آمين.",
+            "it": "Gloria a te, o Dio. Gloria a te, o Creatore. Gloria a te, o Santo. Signore, abbi pietà.\nGloria al Padre e al Figlio e allo Spirito Santo, ora e sempre e nei secoli dei secoli. Amen.",
+            "syr": ""
+          }
+        },
+        {
+          "type": "PSALM",
+          "reference": "Ps 63 (62)",
+          "title": { "ar": "مزمور الاشتياق إلى الله", "it": "Salmo dell'anelito verso Dio", "syr": "" },
+          "body": {
+            "ar": "يا الله إلهي أنت إليك أبكر. عطشت إليك نفسي واشتاقت إليك بدني في أرض يبسة وناشفة بلا ماء.\nكذلك قد ظهرت لي في القدس لأبصر قدرتك ومجدك.\nلأن رحمتك أصلح من الحياة. شفتاي تسبّحانك.\nكذلك أباركك في حياتي وبك أرفع يديّ.\nإذا ذكرتك على فراشي وفي أسحار تأمّلت فيك.\nلأنك كنت عوناً لي وبظل جناحيك أبتهج.\nتبعتك نفسي خلفك واعتضدت بيمينك.\nالمجد للآب والابن والروح القدس الآن وكل أوان وإلى أبد الآبدين. آمين.",
+            "it": "O Dio, tu sei il mio Dio, dall'aurora ti cerco, ha sete di te l'anima mia in terra arida, assetata, senz'acqua.\nCosì nel santuario ti ho contemplato, guardando la tua potenza e la tua gloria.\nPoiché la tua grazia vale più della vita, le mie labbra ti loderanno.\nCosì ti benedirò per tutta la vita: nel tuo nome alzerò le mie mani.\nQuando penso a te nel mio giaciglio, medito su di te nelle veglie notturne.\nPoiché sei stato il mio aiuto e all'ombra delle tue ali esulto.\nA te si stringe l'anima mia, la tua destra mi sostiene.\nGloria al Padre e al Figlio e allo Spirito Santo, ora e sempre e nei secoli dei secoli. Amen.",
+            "syr": ""
+          }
+        },
+        {
+          "type": "QOLO",
+          "reference": "",
+          "title": { "ar": "قولو الملائكة في الأسحار", "it": "Qolo degli Angeli nelle veglie", "syr": "" },
+          "body": {
+            "ar": "في أسحار الليل نسبّح الله مع الملائكة الرافعين المجد في الأعالي.\nأيها الأحياء حول العرش الإلهي كونوا شفعاء لنا الضعفاء الخطأة.\nيا صابغ الصابغين يوحنا استشفع لنا أمام وجه الله. هللويا.",
+            "it": "Nelle ore notturne lodiamo Dio con gli Angeli che innalzano gloria nell'alto dei cieli.\nO viventi intorno al trono divino, siate intercessori per noi, deboli e peccatori.\nO Giovanni, Battezzatore del Battezzatori, intercedi per noi davanti al volto di Dio. Alleluia.",
+            "syr": ""
+          }
+        },
+        {
+          "type": "SEDRO",
+          "reference": "",
+          "title": { "ar": "السيدرو", "it": "Sedro", "syr": "ܣܕܪܐ" },
+          "body": {
+            "ar": "أيها الرب إله القوات، الذي تحيط بك الأرواح الروحية من الشاروبيم والسيرافيم، ومن رئيس الملائكة ميخائيل وجبرائيل ورفائيل وجميع الأرواح السماوية:\nفي ساعة الأسحار هذه نسبّح معهم مجدك القدوس قائلين: قدوس قدوس قدوس رب الجنود، ملء السماوات والأرض مجده.\nونطلب إليك بشفاعة سابقك المجيد يوحنا المعمدان الذي استحق أن يرى الروح القدس حالاً على ابنك عند معموديته في الأردن، وأن يسمع صوتك من السماء شاهداً له:\nاقبل منّا صلاة هذه الأسحار وطهّر قلوبنا ونفوسنا من كل دنس الخطيئة.\nوبلّغنا نهار غد بصحة وسلامة، لنسبّح اسمك القدوس ونرفع إليك الحمد والشكر دائماً وأبداً.\nآمين ويكون وإلى الأبد.",
+            "it": "O Signore Dio degli eserciti, che sei circondato dagli spiriti spirituali, cherubini e serafini, dall'Arcangelo Michele e Gabriele e Raffaele e tutti gli spiriti celesti:\nIn quest'ora delle veglie li lodiamo e cantiamo con loro la tua santa gloria: Santo, Santo, Santo è il Signore degli eserciti, i cieli e la terra sono pieni della sua gloria.\nTi supplichiamo per l'intercessione del tuo glorioso Precursore Giovanni Battista, degno di vedere lo Spirito Santo scendere sul tuo Figlio nel battesimo al Giordano, e di udire la tua voce dal cielo che gli rendeva testimonianza:\nAccetta da noi la preghiera di queste ore notturne e purifica i nostri cuori e le nostre anime da ogni macchia di peccato.\nFaci giungere al giorno di domani in salute e in pace, affinché possiamo lodare il tuo santo nome e offrirti ringraziamento e lode sempre e per sempre.\nAmen, così sia e per sempre.",
+            "syr": ""
+          }
+        },
+        {
+          "type": "DOXOLOGY",
+          "reference": "",
+          "title": { "ar": "الختام", "it": "Conclusione", "syr": "" },
+          "body": {
+            "ar": "المجد للآب والابن والروح القدس الآن وكل أوان وإلى أبد الآبدين. آمين.\nيا رب ارحم. يا رب ارحم. يا رب ارحم.",
+            "it": "Gloria al Padre e al Figlio e allo Spirito Santo, ora e sempre e nei secoli dei secoli. Amen.\nSignore, abbi pietà. Signore, abbi pietà. Signore, abbi pietà.",
+            "syr": "ܫܘܒܚܐ ܠܐܒܐ ܘܠܒܪܐ ܘܠܪܘܚܐ ܕܩܘܕܫܐ ܡܢ ܥܠܡ ܘܥܕܡܐ ܠܥܠܡ ܥܠܡܝܢ. ܐܡܝܢ."
+          }
         }
       ]
     },
@@ -52,23 +201,63 @@
       "hour": "SAFRO",
       "elements": [
         {
+          "type": "RUBRIC",
+          "reference": "",
+          "title": { "ar": "الصفرو — صلاة الفجر", "it": "Safro — Lodi mattutine", "syr": "ܨܦܪܐ" },
+          "body": {
+            "ar": "نُشارك الملائكة في تسبيح الله مع أول نور الفجر.",
+            "it": "Partecipiamo con gli Angeli alla lode di Dio con il primo chiarore dell'alba.",
+            "syr": ""
+          }
+        },
+        {
           "type": "OPENING",
           "reference": "",
           "title": { "ar": "البداية", "it": "Inizio", "syr": "" },
           "body": {
-            "ar": "[نص افتتاح صلاة الصباح]",
-            "it": "[Testo d'apertura delle Lodi]",
+            "ar": "مجداً لك يا الله. مجداً لك أيها الخالق. مجداً لك أيها القدوس. يا رب ارحم.\nالمجد للآب والابن والروح القدس الآن وكل أوان وإلى أبد الآبدين. آمين.",
+            "it": "Gloria a te, o Dio. Gloria a te, o Creatore. Gloria a te, o Santo. Signore, abbi pietà.\nGloria al Padre e al Figlio e allo Spirito Santo, ora e sempre e nei secoli dei secoli. Amen.",
             "syr": ""
           }
         },
         {
           "type": "PSALM",
-          "reference": "Ps 51 / 50",
+          "reference": "Ps 51 (50)",
           "title": { "ar": "مزمور التوبة", "it": "Salmo penitenziale", "syr": "" },
           "body": {
-            "ar": "[نص المزمور — يُدخَل لاحقًا]",
-            "it": "[Testo del salmo — da inserire]",
+            "ar": "ارحمني يا الله وفق رحمتك الكبرى. وكعظيم رأفتك امح معاصيّ.\nاغسلني كثيراً من إثمي ومن خطيتي طهّرني.\nلأني أنا عارف بمعصيتي وخطيتي أمامي في كل حين.\nإليك وحدك أخطأت والشر أمام عينيك فعلت.\nتنضحني بالزوفى فأطهر. تغسلني فأبيض من الثلج.\nاخلق فيّ قلباً نقياً يا الله وروحاً مستقيماً جدّد في أحشائي.\nلا تطرحني من أمام وجهك ومن روحك القدوس لا تنزعني.\nأعِدني إلى فرح خلاصك وبروح التسلّط أعضدني.\nيا رب افتح شفتيّ، فيُسبّح فمي حمدك.\nالمجد للآب والابن والروح القدس الآن وكل أوان وإلى أبد الآبدين. آمين.",
+            "it": "Pietà di me, o Dio, nel tuo amore; nella tua grande misericordia cancella la mia iniquità.\nLavami tutto dalla mia colpa, dal mio peccato rendimi puro.\nRiconosco la mia colpa, il mio peccato mi sta sempre dinanzi.\nContro te, contro te solo ho peccato, quello che è male ai tuoi occhi io l'ho fatto.\nAspergi di issopo e sarò puro; lavami e sarò più bianco della neve.\nCrea in me, o Dio, un cuore puro, rinnova in me uno spirito saldo.\nNon respingermi dalla tua presenza e non privarmi del tuo santo spirito.\nRendimi la gioia della tua salvezza, sostienimi con uno spirito generoso.\nSignore, apri le mie labbra e la mia bocca proclami la tua lode.\nGloria al Padre e al Figlio e allo Spirito Santo, ora e sempre e nei secoli dei secoli. Amen.",
             "syr": ""
+          }
+        },
+        {
+          "type": "QOLO",
+          "reference": "",
+          "title": { "ar": "قولو صباح الإثنين", "it": "Qolo del mattino di lunedì", "syr": "" },
+          "body": {
+            "ar": "صلاة الفجر نقدّمها مع تسابيح الأرواح السماوية المحيطة بعرش الله.\nيا ملائكة الرب الأطهار مع انبثاق هذا الصباح سبّحوا الرب عنّا.\nيا يوحنا المعمدان أوّل الشهداء ومبشّر المسيح، أدخل صلاتنا في هذا الفجر إلى الله. هللويا.",
+            "it": "La preghiera dell'alba la offriamo insieme ai canti degli spiriti celesti che circondano il trono di Dio.\nO puri Angeli del Signore, con lo spuntare di questa mattina lodate il Signore per noi.\nO Giovanni Battista, primo dei martiri e precursore del Cristo, fa' salire la nostra preghiera in quest'alba verso Dio. Alleluia.",
+            "syr": ""
+          }
+        },
+        {
+          "type": "HOUSSOYO",
+          "reference": "",
+          "title": { "ar": "الحوسويو الصباحي", "it": "Hoosoyo mattutino", "syr": "" },
+          "body": {
+            "ar": "أيها الرب إله الكل، بارك هذا الصباح علينا وعلى جميع المؤمنين المسبّحين لاسمك.\nبشفاعة الملائكة القدوسين ويوحنا المعمدان، اقبل صلاتنا الصباحية واغفر لنا خطايانا.\nاحرسنا طوال هذا اليوم بحمايتك الإلهية، وأرسل ملائكتك ليهدونا في كل طرقنا.\nآمين ويكون وإلى الأبد.",
+            "it": "O Signore Dio di tutto, benedici questa mattina per noi e per tutti i fedeli che lodano il tuo nome.\nPer l'intercessione dei santi Angeli e di Giovanni Battista, accetta la nostra preghiera mattutina e perdonaci i nostri peccati.\nCustodiscici durante tutta questa giornata con la tua divina protezione e manda i tuoi angeli a guidarci in tutti i nostri cammini.\nAmen, così sia e per sempre.",
+            "syr": ""
+          }
+        },
+        {
+          "type": "DOXOLOGY",
+          "reference": "",
+          "title": { "ar": "الختام", "it": "Conclusione", "syr": "" },
+          "body": {
+            "ar": "المجد للآب والابن والروح القدس الآن وكل أوان وإلى أبد الآبدين. آمين.\nيا رب ارحم. يا رب ارحم. يا رب ارحم.",
+            "it": "Gloria al Padre e al Figlio e allo Spirito Santo, ora e sempre e nei secoli dei secoli. Amen.\nSignore, abbi pietà. Signore, abbi pietà. Signore, abbi pietà.",
+            "syr": "ܫܘܒܚܐ ܠܐܒܐ ܘܠܒܪܐ ܘܠܪܘܚܐ ܕܩܘܕܫܐ ܡܢ ܥܠܡ ܘܥܕܡܐ ܠܥܠܡ ܥܠܡܝܢ. ܐܡܝܢ."
           }
         }
       ]
