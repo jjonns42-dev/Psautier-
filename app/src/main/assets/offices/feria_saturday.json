@@ -1,0 +1,10 @@
+{
+  "id": "feria_saturday",
+  "title": { "ar": "اليوم الطقسي", "it": "Ufficio feriale", "syr": "" },
+  "hours": [
+    { "hour": "RAMCHO", "elements": [] },
+    { "hour": "SOUTORO", "elements": [] },
+    { "hour": "LILIO", "elements": [] },
+    { "hour": "SAFRO", "elements": [] }
+  ]
+}

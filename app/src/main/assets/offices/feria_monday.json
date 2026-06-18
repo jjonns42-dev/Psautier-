@@ -1,0 +1,77 @@
+{
+  "id": "feria_monday",
+  "title": { "ar": "الإثنين — اليوم الطقسي", "it": "Lunedì — Ufficio feriale", "syr": "" },
+  "hours": [
+    {
+      "hour": "RAMCHO",
+      "elements": [
+        {
+          "type": "RUBRIC",
+          "reference": "",
+          "title": { "ar": "", "it": "", "syr": "" },
+          "body": {
+            "ar": "[نص توضيحي — يُستبدَل بالنص الفعلي من الشحيمو]",
+            "it": "[Testo provvisorio — da sostituire con il testo reale dello Šḥimo]",
+            "syr": ""
+          }
+        },
+        {
+          "type": "OPENING",
+          "reference": "",
+          "title": { "ar": "البداية", "it": "Inizio", "syr": "" },
+          "body": {
+            "ar": "المجد للآب والابن والروح القدس.",
+            "it": "Gloria al Padre e al Figlio e allo Spirito Santo.",
+            "syr": ""
+          }
+        },
+        {
+          "type": "PSALM",
+          "reference": "Ps 141 / 140",
+          "title": { "ar": "مزمور المساء", "it": "Salmo vespertino", "syr": "" },
+          "body": {
+            "ar": "[نص المزمور — يُدخَل لاحقًا]",
+            "it": "[Testo del salmo — da inserire]",
+            "syr": ""
+          }
+        },
+        {
+          "type": "QOLO",
+          "reference": "Qolo — ton 1",
+          "title": { "ar": "قولو", "it": "Qolo", "syr": "" },
+          "body": {
+            "ar": "[نص الترنيمة — يُدخَل لاحقًا]",
+            "it": "[Testo dell'inno — da inserire]",
+            "syr": ""
+          },
+          "melodyId": "mode1_sample"
+        }
+      ]
+    },
+    {
+      "hour": "SAFRO",
+      "elements": [
+        {
+          "type": "OPENING",
+          "reference": "",
+          "title": { "ar": "البداية", "it": "Inizio", "syr": "" },
+          "body": {
+            "ar": "[نص افتتاح صلاة الصباح]",
+            "it": "[Testo d'apertura delle Lodi]",
+            "syr": ""
+          }
+        },
+        {
+          "type": "PSALM",
+          "reference": "Ps 51 / 50",
+          "title": { "ar": "مزمور التوبة", "it": "Salmo penitenziale", "syr": "" },
+          "body": {
+            "ar": "[نص المزمور — يُدخَل لاحقًا]",
+            "it": "[Testo del salmo — da inserire]",
+            "syr": ""
+          }
+        }
+      ]
+    }
+  ]
+}
