@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Psautier de la Sainte Vierge</string>
+    <string name="search_placeholder">Rechercher dans le Psautier…</string>
+    <string name="no_results">Aucun résultat trouvé.</string>
+    <string name="days_title">Jours de la semaine</string>
+    <string name="hours_title">Heures liturgiques</string>
+</resources>

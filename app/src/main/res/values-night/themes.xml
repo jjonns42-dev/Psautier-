@@ -1,0 +1,7 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.Psautier" parent="android:Theme.Material.NoActionBar">
+        <item name="android:statusBarColor">#0D1B2A</item>
+        <item name="android:windowBackground">#1B2430</item>
+        <item name="android:navigationBarColor">#1B2430</item>
+    </style>
+</resources>
