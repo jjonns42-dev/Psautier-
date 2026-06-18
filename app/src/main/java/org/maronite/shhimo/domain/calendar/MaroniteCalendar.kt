@@ -15,7 +15,7 @@ import java.time.LocalDate
  *
  * Le moteur combine deux sources :
  *  1. Les fêtes fixes et mobiles fournies par [calendarEntries]
- *     (chargées depuis assets/calendar/*.json).
+ *     (chargées depuis assets/calendar/calendar.json).
  *  2. Le calcul des saisons à partir des dates pivots (Pâques, début de
  *     l'Annonciation, etc.).
  *

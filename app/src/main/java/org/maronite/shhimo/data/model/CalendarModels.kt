@@ -10,7 +10,7 @@ import kotlinx.serialization.Serializable
  *
  * NOTE: l'ordre et les bornes exactes de ces temps doivent être renseignés
  * à partir du calendrier officiel maronite (Bkerké). Les valeurs ici servent
- * de structure ; les dates précises sont dans les fichiers calendar/*.json.
+ * de structure ; les dates précises sont dans les fichiers calendar/calendar.json.
  */
 enum class MaroniteSeason(val key: String) {
     CONSECRATION_CHURCH("consecration"),   // Qudash 'Idto - Consécration de l'Église
