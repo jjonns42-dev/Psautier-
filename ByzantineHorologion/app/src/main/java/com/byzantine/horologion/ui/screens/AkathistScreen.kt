@@ -41,8 +41,8 @@ fun AkathistScreen() {
         Column(Modifier.fillMaxSize().padding(16.dp)) {
             list.forEach { a ->
                 Card(
-                    Modifier.fillMaxWidth().padding(vertical = 6.dp),
-                    onClick = { selected = a }
+                    onClick = { selected = a },
+                    modifier = Modifier.fillMaxWidth().padding(vertical = 6.dp)
                 ) {
                     Row(Modifier.padding(12.dp), verticalAlignment = Alignment.CenterVertically) {
                         Image(

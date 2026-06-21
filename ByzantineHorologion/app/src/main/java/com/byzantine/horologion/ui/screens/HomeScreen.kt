@@ -108,8 +108,8 @@ fun HomeScreen(nav: NavHostController) {
         )
         cards.forEach { (route, label, _) ->
             Card(
-                Modifier.fillMaxWidth().padding(vertical = 5.dp),
-                onClick = { nav.navigate(route) }
+                onClick = { nav.navigate(route) },
+                modifier = Modifier.fillMaxWidth().padding(vertical = 5.dp)
             ) {
                 Row(Modifier.padding(16.dp), verticalAlignment = Alignment.CenterVertically) {
                     OrthodoxCross(Modifier.size(22.dp), MaterialTheme.colorScheme.secondary)

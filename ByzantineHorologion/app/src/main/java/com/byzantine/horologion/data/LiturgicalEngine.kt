@@ -133,10 +133,10 @@ class LiturgicalEngine(context: Context) {
         val j = JavaLiturgicalHelper.gregorianToJdn(y, m, d)
         val jp = JavaLiturgicalHelper.gregorianToJdn(pascha[0], pascha[1], pascha[2])
         return when (jp - j) {
-            70 -> "publicain"
-            63 -> "prodigue"
-            56 -> "apokreo"
-            49 -> "tyrini"
+            70L -> "publicain"
+            63L -> "prodigue"
+            56L -> "apokreo"
+            49L -> "tyrini"
             else -> null
         }
     }
