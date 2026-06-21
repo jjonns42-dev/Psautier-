@@ -1,0 +1,87 @@
+{
+  "01-01": {
+    "fr": "Circoncision du Seigneur ; saint Basile le Grand",
+    "it": "Circoncisione del Signore; san Basilio Magno",
+    "rank": 2
+  },
+  "01-06": {
+    "fr": "Théophanie (Baptême du Seigneur)",
+    "it": "Teofania (Battesimo del Signore)",
+    "rank": 1
+  },
+  "01-07": {
+    "fr": "Synaxe de saint Jean le Précurseur",
+    "it": "Sinassi di san Giovanni Precursore",
+    "rank": 2
+  },
+  "01-30": {
+    "fr": "Les trois saints Hiérarques",
+    "it": "I tre santi Gerarchi",
+    "rank": 2
+  },
+  "02-02": {
+    "fr": "Présentation du Seigneur au Temple",
+    "it": "Presentazione del Signore al Tempio",
+    "rank": 1
+  },
+  "03-25": {
+    "fr": "Annonciation de la Mère de Dieu",
+    "it": "Annunciazione della Madre di Dio",
+    "rank": 1
+  },
+  "06-29": {
+    "fr": "Saints Apôtres Pierre et Paul",
+    "it": "Santi Apostoli Pietro e Paolo",
+    "rank": 1
+  },
+  "07-20": {
+    "fr": "Saint prophète Élie",
+    "it": "Santo profeta Elia",
+    "rank": 2
+  },
+  "08-06": {
+    "fr": "Transfiguration du Seigneur",
+    "it": "Trasfigurazione del Signore",
+    "rank": 1
+  },
+  "08-15": {
+    "fr": "Dormition de la Mère de Dieu",
+    "it": "Dormizione della Madre di Dio",
+    "rank": 1
+  },
+  "09-08": {
+    "fr": "Nativité de la Mère de Dieu",
+    "it": "Natività della Madre di Dio",
+    "rank": 1
+  },
+  "09-14": {
+    "fr": "Exaltation de la précieuse Croix",
+    "it": "Esaltazione della preziosa Croce",
+    "rank": 1
+  },
+  "11-08": {
+    "fr": "Synaxe des Archanges Michel et Gabriel",
+    "it": "Sinassi degli Arcangeli Michele e Gabriele",
+    "rank": 2
+  },
+  "11-21": {
+    "fr": "Entrée au Temple de la Mère de Dieu",
+    "it": "Ingresso al Tempio della Madre di Dio",
+    "rank": 1
+  },
+  "12-06": {
+    "fr": "Saint Nicolas de Myre",
+    "it": "San Nicola di Mira",
+    "rank": 2
+  },
+  "12-25": {
+    "fr": "Nativité du Christ (Noël)",
+    "it": "Natività di Cristo (Natale)",
+    "rank": 1
+  },
+  "12-26": {
+    "fr": "Synaxe de la Mère de Dieu",
+    "it": "Sinassi della Madre di Dio",
+    "rank": 2
+  }
+}

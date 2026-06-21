@@ -1,0 +1,30 @@
+{
+  "intro_fr": "Section musicale. Les partitions n'apparaissent que si l'option « Je veux les participations musicales » est cochée dans les Réglages.",
+  "intro_it": "Sezione musicale. Gli spartiti compaiono solo se l'opzione « Voglio le parti musicali » è attivata nelle Impostazioni.",
+  "items": [
+    {
+      "id": "trisagion_chant",
+      "title_fr": "Trisaghion (Saint Dieu)",
+      "title_it": "Trisaghion (Santo Dio)",
+      "audio": null,
+      "score": null,
+      "text_ref": "trisagion"
+    },
+    {
+      "id": "phos_chant",
+      "title_fr": "Lumière joyeuse (Phos Hilaron)",
+      "title_it": "Luce gioiosa (Phos Hilaron)",
+      "audio": null,
+      "score": null,
+      "text_ref": "phos_hilaron"
+    },
+    {
+      "id": "cherubikon",
+      "title_fr": "Hymne des Chérubins",
+      "title_it": "Inno cherubico",
+      "audio": null,
+      "score": null,
+      "text_ref": "cherubikon"
+    }
+  ]
+}

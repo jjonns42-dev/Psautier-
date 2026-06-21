@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Horologion</string>
+    <string name="nav_home">Accueil</string>
+    <string name="nav_office">Office du jour</string>
+    <string name="nav_calendar">Calendrier</string>
+    <string name="nav_jesus">Prière de Jésus</string>
+    <string name="nav_akathist">Acathistes</string>
+    <string name="nav_basil">Règle de saint Basile</string>
+    <string name="nav_bible">Bible</string>
+    <string name="nav_chants">Chants</string>
+    <string name="nav_settings">Réglages</string>
+
+    <string name="settings_theme">Apparence</string>
+    <string name="settings_day">Jour</string>
+    <string name="settings_night">Nuit</string>
+    <string name="settings_system">Système</string>
+    <string name="settings_accent">Couleur d\'accent</string>
+    <string name="accent_red">Rouge (bordeaux)</string>
+    <string name="accent_pink">Rose</string>
+    <string name="settings_language">Langue</string>
+    <string name="settings_role">Mode de lecture</string>
+    <string name="role_priest">Prêtre</string>
+    <string name="role_layperson">Laïc</string>
+    <string name="settings_show_scores">Je veux les participations musicales (afficher les partitions)</string>
+
+    <string name="office_tone">Ton</string>
+    <string name="office_theme_of_day">Thème du jour</string>
+    <string name="office_feast">Fête / commémoraison</string>
+    <string name="office_kathismata">Kathismes du jour</string>
+    <string name="standing_note_title">Prière debout — 30 jours</string>
+    <string name="jesus_title">Prière du cœur</string>
+</resources>

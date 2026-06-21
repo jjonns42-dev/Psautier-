@@ -1,0 +1,56 @@
+{
+  "note_standing": {
+    "fr": "Selon la coutume de la Tradition orientale, on prie cet acathiste DEBOUT (ἀκάθιστος = « non assis ») et, pour une demande, on le récite chaque jour pendant 30 jours pour voir ses prières exaucées.",
+    "it": "Secondo l'uso della Tradizione orientale, questo akathistos si prega IN PIEDI (ἀκάθιστος = « non seduti ») e, per una richiesta, lo si recita ogni giorno per 30 giorni perché le preghiere siano esaudite."
+  },
+  "items": [
+    {
+      "id": "jesus",
+      "icon": "icon_christ",
+      "title_fr": "Acathiste au très doux Seigneur Jésus",
+      "title_it": "Akathistos al dolcissimo Signore Gesù",
+      "refrain_fr": "Jésus, Fils de Dieu, aie pitié de moi.",
+      "refrain_it": "Gesù, Figlio di Dio, abbi pietà di me.",
+      "kontakion1_fr": "Ô Jésus, défenseur invincible et vainqueur de l'enfer, moi ta créature et ton serviteur, je te chante des louanges. Toi qui as une miséricorde indicible, délivre-moi de tous les dangers, afin que je te crie : Jésus, Fils de Dieu, aie pitié de moi.",
+      "kontakion1_it": "O Gesù, difensore invincibile e vincitore dell'inferno, io tua creatura e servo ti canto le lodi. Tu che hai una misericordia ineffabile, liberami da ogni pericolo, perché io ti gridi: Gesù, Figlio di Dio, abbi pietà di me.",
+      "body_fr": "[Texte intégral des 13 kondakia et 12 ikos à compléter depuis votre source sous droits — voir README.]",
+      "body_it": "[Testo integrale dei 13 kontakia e 12 ikos da completare dalla vostra fonte — vedi README.]"
+    },
+    {
+      "id": "marie",
+      "icon": "icon_theotokos",
+      "title_fr": "Acathiste à la Très Sainte Mère de Dieu",
+      "title_it": "Akathistos alla Santissima Madre di Dio",
+      "refrain_fr": "Réjouis-toi, Épouse inépousée.",
+      "refrain_it": "Gioisci, Sposa non sposata.",
+      "kontakion1_fr": "À toi, notre cheftaine invincible, après avoir été délivrés des malheurs, nous tes serviteurs, ô Mère de Dieu, nous offrons des hymnes de victoire et d'action de grâces. Toi qui possèdes une puissance invincible, délivre-nous de tout danger, pour que nous te crions : Réjouis-toi, Épouse inépousée.",
+      "kontakion1_it": "A te, invincibile condottiera, liberati dalle sventure, noi tuoi servi, o Madre di Dio, offriamo inni di vittoria e di ringraziamento. Tu che possiedi una potenza invincibile, liberaci da ogni pericolo, perché ti gridiamo: Gioisci, Sposa non sposata.",
+      "body_fr": "[Texte intégral à compléter — voir README.]",
+      "body_it": "[Testo integrale da completare — vedi README.]"
+    },
+    {
+      "id": "joseph",
+      "icon": "icon_joseph",
+      "title_fr": "Acathiste à saint Joseph le Fiancé",
+      "title_it": "Akathistos a san Giuseppe lo Sposo",
+      "refrain_fr": "Réjouis-toi, Joseph, gardien fidèle des mystères de Dieu.",
+      "refrain_it": "Gioisci, Giuseppe, custode fedele dei misteri di Dio.",
+      "kontakion1_fr": "Élu d'entre tous les justes pour servir le mystère de l'Incarnation, ô Joseph, gardien de la Vierge et nourricier du Seigneur, nous te chantons ; intercède pour ceux qui te crient : Réjouis-toi, Joseph, gardien fidèle des mystères de Dieu.",
+      "kontakion1_it": "Eletto fra tutti i giusti a servire il mistero dell'Incarnazione, o Giuseppe, custode della Vergine e nutritore del Signore, ti cantiamo; intercedi per quanti ti gridano: Gioisci, Giuseppe, custode fedele dei misteri di Dio.",
+      "body_fr": "[Texte intégral à compléter — voir README.]",
+      "body_it": "[Testo integrale da completare — vedi README.]"
+    },
+    {
+      "id": "michel",
+      "icon": "icon_michael",
+      "title_fr": "Acathiste à l'Archange saint Michel",
+      "title_it": "Akathistos all'Arcangelo san Michele",
+      "refrain_fr": "Réjouis-toi, Michel, grand archistratège, avec toutes les puissances célestes.",
+      "refrain_it": "Gioisci, Michele, grande archistratega, con tutte le potenze celesti.",
+      "kontakion1_fr": "Archistratège de Dieu et serviteur de la gloire divine, chef des anges et guide des hommes, demande-nous ce qui est utile et la grande miséricorde, à nous qui te crions : Réjouis-toi, Michel, grand archistratège, avec toutes les puissances célestes.",
+      "kontakion1_it": "Archistratega di Dio e ministro della gloria divina, capo degli angeli e guida degli uomini, chiedi per noi ciò che è utile e la grande misericordia, a noi che ti gridiamo: Gioisci, Michele, grande archistratega, con tutte le potenze celesti.",
+      "body_fr": "[Texte intégral à compléter — voir README.]",
+      "body_it": "[Testo integrale da completare — vedi README.]"
+    }
+  ]
+}

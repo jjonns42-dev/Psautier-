@@ -1,0 +1,30 @@
+{
+  "DIM": {
+    "fr": "Résurrection du Christ",
+    "it": "Risurrezione di Cristo"
+  },
+  "LUN": {
+    "fr": "Les Puissances célestes (anges)",
+    "it": "Le Potenze celesti (angeli)"
+  },
+  "MAR": {
+    "fr": "Saint Jean le Précurseur",
+    "it": "San Giovanni il Precursore"
+  },
+  "MER": {
+    "fr": "La Croix et la Mère de Dieu",
+    "it": "La Croce e la Madre di Dio"
+  },
+  "JEU": {
+    "fr": "Les saints Apôtres et saint Nicolas",
+    "it": "I santi Apostoli e san Nicola"
+  },
+  "VEN": {
+    "fr": "La Croix et la Passion",
+    "it": "La Croce e la Passione"
+  },
+  "SAM": {
+    "fr": "Tous les saints et les défunts",
+    "it": "Tutti i santi e i defunti"
+  }
+}

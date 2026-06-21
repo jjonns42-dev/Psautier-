@@ -1,0 +1,516 @@
+{
+ "version": "Crampon 1923 (mission-web.com, CC BY-NC-SA 3.0)",
+ "books": [
+  {
+   "id": "gen",
+   "fr": "Genèse",
+   "it": "Genesi",
+   "testament": "AT",
+   "chapters": 50
+  },
+  {
+   "id": "exo",
+   "fr": "Exode",
+   "it": "Esodo",
+   "testament": "AT",
+   "chapters": 40
+  },
+  {
+   "id": "lev",
+   "fr": "Lévitique",
+   "it": "Levitico",
+   "testament": "AT",
+   "chapters": 27
+  },
+  {
+   "id": "num",
+   "fr": "Nombres",
+   "it": "Numeri",
+   "testament": "AT",
+   "chapters": 36
+  },
+  {
+   "id": "deu",
+   "fr": "Deutéronome",
+   "it": "Deuteronomio",
+   "testament": "AT",
+   "chapters": 34
+  },
+  {
+   "id": "jos",
+   "fr": "Josué",
+   "it": "Giosuè",
+   "testament": "AT",
+   "chapters": 24
+  },
+  {
+   "id": "jdg",
+   "fr": "Juges",
+   "it": "Giudici",
+   "testament": "AT",
+   "chapters": 21
+  },
+  {
+   "id": "rut",
+   "fr": "Ruth",
+   "it": "Rut",
+   "testament": "AT",
+   "chapters": 4
+  },
+  {
+   "id": "1sa",
+   "fr": "Premier livre de Samuel",
+   "it": "Primo libro di Samuele",
+   "testament": "AT",
+   "chapters": 31
+  },
+  {
+   "id": "2sa",
+   "fr": "Deuxième livre de Samuel",
+   "it": "Secondo libro di Samuele",
+   "testament": "AT",
+   "chapters": 24
+  },
+  {
+   "id": "1ki",
+   "fr": "Premier livre des Rois",
+   "it": "Primo libro dei Re",
+   "testament": "AT",
+   "chapters": 22
+  },
+  {
+   "id": "2ki",
+   "fr": "Deuxième livre des Rois",
+   "it": "Secondo libro dei Re",
+   "testament": "AT",
+   "chapters": 25
+  },
+  {
+   "id": "1ch",
+   "fr": "Premier livre des Chroniques",
+   "it": "Primo libro delle Cronache",
+   "testament": "AT",
+   "chapters": 29
+  },
+  {
+   "id": "2ch",
+   "fr": "Deuxième livre des Chroniques",
+   "it": "Secondo libro delle Cronache",
+   "testament": "AT",
+   "chapters": 36
+  },
+  {
+   "id": "ezr",
+   "fr": "Esdras",
+   "it": "Esdra",
+   "testament": "AT",
+   "chapters": 10
+  },
+  {
+   "id": "neh",
+   "fr": "Néhémie",
+   "it": "Neemia",
+   "testament": "AT",
+   "chapters": 13
+  },
+  {
+   "id": "tob",
+   "fr": "Tobie",
+   "it": "Tobia",
+   "testament": "AT",
+   "chapters": 14
+  },
+  {
+   "id": "jdt",
+   "fr": "Judith",
+   "it": "Giuditta",
+   "testament": "AT",
+   "chapters": 16
+  },
+  {
+   "id": "est",
+   "fr": "Esther",
+   "it": "Ester",
+   "testament": "AT",
+   "chapters": 16
+  },
+  {
+   "id": "1ma",
+   "fr": "Premier livre des Machabées",
+   "it": "Primo libro dei Maccabei",
+   "testament": "AT",
+   "chapters": 16
+  },
+  {
+   "id": "2ma",
+   "fr": "Deuxième livre des Machabées",
+   "it": "Secondo libro dei Maccabei",
+   "testament": "AT",
+   "chapters": 15
+  },
+  {
+   "id": "job",
+   "fr": "Job",
+   "it": "Giobbe",
+   "testament": "AT",
+   "chapters": 42
+  },
+  {
+   "id": "psa",
+   "fr": "Psaumes",
+   "it": "Salmi",
+   "testament": "AT",
+   "chapters": 150
+  },
+  {
+   "id": "pro",
+   "fr": "Proverbes",
+   "it": "Proverbi",
+   "testament": "AT",
+   "chapters": 31
+  },
+  {
+   "id": "ecc",
+   "fr": "Ecclésiaste",
+   "it": "Qoèlet",
+   "testament": "AT",
+   "chapters": 12
+  },
+  {
+   "id": "sng",
+   "fr": "Cantique des cantiques",
+   "it": "Cantico dei Cantici",
+   "testament": "AT",
+   "chapters": 8
+  },
+  {
+   "id": "wis",
+   "fr": "Sagesse",
+   "it": "Sapienza",
+   "testament": "AT",
+   "chapters": 19
+  },
+  {
+   "id": "sir",
+   "fr": "Ecclésiastique",
+   "it": "Siracide",
+   "testament": "AT",
+   "chapters": 51
+  },
+  {
+   "id": "isa",
+   "fr": "Isaïe",
+   "it": "Isaia",
+   "testament": "AT",
+   "chapters": 66
+  },
+  {
+   "id": "jer",
+   "fr": "Jérémie",
+   "it": "Geremia",
+   "testament": "AT",
+   "chapters": 52
+  },
+  {
+   "id": "lam",
+   "fr": "Lamentations",
+   "it": "Lamentazioni",
+   "testament": "AT",
+   "chapters": 5
+  },
+  {
+   "id": "bar",
+   "fr": "Baruch",
+   "it": "Baruc",
+   "testament": "AT",
+   "chapters": 6
+  },
+  {
+   "id": "eze",
+   "fr": "Ézéchiel",
+   "it": "Ezechiele",
+   "testament": "AT",
+   "chapters": 48
+  },
+  {
+   "id": "dan",
+   "fr": "Daniel",
+   "it": "Daniele",
+   "testament": "AT",
+   "chapters": 14
+  },
+  {
+   "id": "hos",
+   "fr": "Osée",
+   "it": "Osea",
+   "testament": "AT",
+   "chapters": 14
+  },
+  {
+   "id": "joe",
+   "fr": "Joël",
+   "it": "Gioele",
+   "testament": "AT",
+   "chapters": 4
+  },
+  {
+   "id": "amo",
+   "fr": "Amos",
+   "it": "Amos",
+   "testament": "AT",
+   "chapters": 9
+  },
+  {
+   "id": "oba",
+   "fr": "Abdias",
+   "it": "Abdia",
+   "testament": "AT",
+   "chapters": 1
+  },
+  {
+   "id": "jon",
+   "fr": "Jonas",
+   "it": "Giona",
+   "testament": "AT",
+   "chapters": 4
+  },
+  {
+   "id": "mic",
+   "fr": "Michée",
+   "it": "Michea",
+   "testament": "AT",
+   "chapters": 7
+  },
+  {
+   "id": "nah",
+   "fr": "Nahum",
+   "it": "Naum",
+   "testament": "AT",
+   "chapters": 3
+  },
+  {
+   "id": "hab",
+   "fr": "Habacuc",
+   "it": "Abacuc",
+   "testament": "AT",
+   "chapters": 3
+  },
+  {
+   "id": "zep",
+   "fr": "Sophonie",
+   "it": "Sofonia",
+   "testament": "AT",
+   "chapters": 3
+  },
+  {
+   "id": "hag",
+   "fr": "Aggée",
+   "it": "Aggeo",
+   "testament": "AT",
+   "chapters": 2
+  },
+  {
+   "id": "zec",
+   "fr": "Zacharie",
+   "it": "Zaccaria",
+   "testament": "AT",
+   "chapters": 14
+  },
+  {
+   "id": "mal",
+   "fr": "Malachie",
+   "it": "Malachia",
+   "testament": "AT",
+   "chapters": 3
+  },
+  {
+   "id": "mat",
+   "fr": "Évangile selon saint Matthieu",
+   "it": "Vangelo secondo Matteo",
+   "testament": "NT",
+   "chapters": 28
+  },
+  {
+   "id": "mar",
+   "fr": "Évangile selon saint Marc",
+   "it": "Vangelo secondo Marco",
+   "testament": "NT",
+   "chapters": 16
+  },
+  {
+   "id": "luk",
+   "fr": "Évangile selon saint Luc",
+   "it": "Vangelo secondo Luca",
+   "testament": "NT",
+   "chapters": 24
+  },
+  {
+   "id": "jhn",
+   "fr": "Évangile selon saint Jean",
+   "it": "Vangelo secondo Giovanni",
+   "testament": "NT",
+   "chapters": 21
+  },
+  {
+   "id": "act",
+   "fr": "Actes des Apôtres",
+   "it": "Atti degli Apostoli",
+   "testament": "NT",
+   "chapters": 28
+  },
+  {
+   "id": "rom",
+   "fr": "Épître aux Romains",
+   "it": "Lettera ai Romani",
+   "testament": "NT",
+   "chapters": 16
+  },
+  {
+   "id": "1co",
+   "fr": "Première aux Corinthiens",
+   "it": "Prima ai Corinzi",
+   "testament": "NT",
+   "chapters": 16
+  },
+  {
+   "id": "2co",
+   "fr": "Deuxième aux Corinthiens",
+   "it": "Seconda ai Corinzi",
+   "testament": "NT",
+   "chapters": 13
+  },
+  {
+   "id": "gal",
+   "fr": "Épître aux Galates",
+   "it": "Lettera ai Galati",
+   "testament": "NT",
+   "chapters": 6
+  },
+  {
+   "id": "eph",
+   "fr": "Épître aux Éphésiens",
+   "it": "Lettera agli Efesini",
+   "testament": "NT",
+   "chapters": 6
+  },
+  {
+   "id": "php",
+   "fr": "Épître aux Philippiens",
+   "it": "Lettera ai Filippesi",
+   "testament": "NT",
+   "chapters": 4
+  },
+  {
+   "id": "col",
+   "fr": "Épître aux Colossiens",
+   "it": "Lettera ai Colossesi",
+   "testament": "NT",
+   "chapters": 4
+  },
+  {
+   "id": "1th",
+   "fr": "Première aux Thessaloniciens",
+   "it": "Prima ai Tessalonicesi",
+   "testament": "NT",
+   "chapters": 5
+  },
+  {
+   "id": "2th",
+   "fr": "Deuxième aux Thessaloniciens",
+   "it": "Seconda ai Tessalonicesi",
+   "testament": "NT",
+   "chapters": 3
+  },
+  {
+   "id": "1ti",
+   "fr": "Première à Timothée",
+   "it": "Prima a Timoteo",
+   "testament": "NT",
+   "chapters": 6
+  },
+  {
+   "id": "2ti",
+   "fr": "Deuxième à Timothée",
+   "it": "Seconda a Timoteo",
+   "testament": "NT",
+   "chapters": 4
+  },
+  {
+   "id": "tit",
+   "fr": "Épître à Tite",
+   "it": "Lettera a Tito",
+   "testament": "NT",
+   "chapters": 3
+  },
+  {
+   "id": "phm",
+   "fr": "Épître à Philémon",
+   "it": "Lettera a Filemone",
+   "testament": "NT",
+   "chapters": 1
+  },
+  {
+   "id": "heb",
+   "fr": "Épître aux Hébreux",
+   "it": "Lettera agli Ebrei",
+   "testament": "NT",
+   "chapters": 13
+  },
+  {
+   "id": "jas",
+   "fr": "Épître de Jacques",
+   "it": "Lettera di Giacomo",
+   "testament": "NT",
+   "chapters": 5
+  },
+  {
+   "id": "1pe",
+   "fr": "Première de Pierre",
+   "it": "Prima di Pietro",
+   "testament": "NT",
+   "chapters": 5
+  },
+  {
+   "id": "2pe",
+   "fr": "Deuxième de Pierre",
+   "it": "Seconda di Pietro",
+   "testament": "NT",
+   "chapters": 3
+  },
+  {
+   "id": "1jn",
+   "fr": "Première de Jean",
+   "it": "Prima di Giovanni",
+   "testament": "NT",
+   "chapters": 5
+  },
+  {
+   "id": "2jn",
+   "fr": "Deuxième de Jean",
+   "it": "Seconda di Giovanni",
+   "testament": "NT",
+   "chapters": 1
+  },
+  {
+   "id": "3jn",
+   "fr": "Troisième de Jean",
+   "it": "Terza di Giovanni",
+   "testament": "NT",
+   "chapters": 1
+  },
+  {
+   "id": "jud",
+   "fr": "Épître de Jude",
+   "it": "Lettera di Giuda",
+   "testament": "NT",
+   "chapters": 1
+  },
+  {
+   "id": "rev",
+   "fr": "Apocalypse",
+   "it": "Apocalisse",
+   "testament": "NT",
+   "chapters": 22
+  }
+ ]
+}

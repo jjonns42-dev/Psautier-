@@ -1,0 +1,64 @@
+{
+  "title_fr": "Grande et Sainte Semaine",
+  "title_it": "Grande e Santa Settimana",
+  "intro_fr": "La Semaine Sainte est célébrée selon le Triode ; chaque jour porte un thème propre et des offices spécifiques, souvent anticipés la veille au soir.",
+  "intro_it": "La Settimana Santa è celebrata secondo il Triodion; ogni giorno porta un tema proprio e uffici specifici, spesso anticipati la sera precedente.",
+  "days": [
+    {
+      "id": "lundi_saint",
+      "title_fr": "Lundi saint",
+      "title_it": "Lunedì santo",
+      "fr": "Le dimanche soir : Matines du « Bridegroom » (l'Époux), rappelant la parabole des dix vierges et l'épisode du figuier stérile, image de l'âme sans fruit. Ce tropaire de l'Époux ouvre les Matines des trois premiers jours de la Semaine Sainte.",
+      "it": "La domenica sera: Mattutino dello « Sposo » (Bridegroom), che ricorda la parabola delle dieci vergini e l'episodio del fico sterile, immagine dell'anima senza frutto. Questo tropario dello Sposo apre il Mattutino dei primi tre giorni della Settimana Santa.",
+      "text_ref": "tropaire_epoux"
+    },
+    {
+      "id": "mardi_saint",
+      "title_fr": "Mardi saint",
+      "title_it": "Martedì santo",
+      "fr": "Matines de l'Époux, centrées sur la parabole des talents et l'appel à la vigilance avant la venue du Seigneur.",
+      "it": "Mattutino dello Sposo, incentrato sulla parabola dei talenti e sull'appello alla vigilanza prima della venuta del Signore."
+    },
+    {
+      "id": "mercredi_saint",
+      "title_fr": "Mercredi saint",
+      "title_it": "Mercoledì santo",
+      "fr": "Mémoire de la femme pécheresse qui oignit les pieds du Christ, mise en contraste avec la trahison de Judas. Dernière célébration de l'Onction des malades dans plusieurs traditions paroissiales.",
+      "it": "Memoria della donna peccatrice che unse i piedi del Cristo, posta in contrasto con il tradimento di Giuda. Ultima celebrazione dell'Unzione degli infermi in diverse tradizioni parrocchiali."
+    },
+    {
+      "id": "jeudi_saint",
+      "title_fr": "Jeudi saint",
+      "title_it": "Giovedì santo",
+      "fr": "Mémoire de la Dernière Cène et de l'institution de l'Eucharistie. Le soir : Matines de la Passion avec lecture des douze évangiles de la Passion et procession de la Croix.",
+      "it": "Memoria dell'Ultima Cena e dell'istituzione dell'Eucaristia. La sera: Mattutino della Passione con la lettura dei dodici vangeli della Passione e la processione della Croce.",
+      "text_ref": "jeudi_saint_sticheron"
+    },
+    {
+      "id": "vendredi_saint",
+      "title_fr": "Vendredi saint",
+      "title_it": "Venerdì santo",
+      "fr": "Mémoire de la Crucifixion. Aux Petites Heures royales, lecture continue de la Passion. Aux Vêpres, descente de l'Épitaphios (linceul peint du Christ). Jeûne absolu observé par beaucoup.",
+      "it": "Memoria della Crocifissione. Alle Piccole Ore regali, lettura continua della Passione. Ai Vespri, deposizione dell'Epitaphios (sindone dipinta del Cristo). Digiuno assoluto osservato da molti."
+    },
+    {
+      "id": "samedi_saint",
+      "title_fr": "Samedi saint",
+      "title_it": "Sabato santo",
+      "fr": "Mémoire de la descente du Christ aux enfers. Aux Matines (souvent célébrées le vendredi soir) : chant des Lamentations (Enkomia) autour de l'Épitaphios. Veillée pascale dans la nuit.",
+      "it": "Memoria della discesa del Cristo agli inferi. Al Mattutino (spesso celebrato il venerdì sera): canto delle Lamentazioni (Enkomia) attorno all'Epitaphios. Veglia pasquale nella notte."
+    },
+    {
+      "id": "paques",
+      "title_fr": "Dimanche de Pâques",
+      "title_it": "Domenica di Pasqua",
+      "fr": "La Résurrection du Christ, fête des fêtes. Matines pascales à minuit, proclamation de l'Évangile de saint Jean en plusieurs langues à la Liturgie, et salutation pascale échangée pendant quarante jours : « Christ est ressuscité ! — En vérité il est ressuscité ! »",
+      "it": "La Risurrezione del Cristo, festa delle feste. Mattutino pasquale a mezzanotte, proclamazione del Vangelo di san Giovanni in diverse lingue alla Liturgia, e saluto pasquale scambiato per quaranta giorni: « Cristo è risorto! — In verità è risorto! »"
+    }
+  ],
+  "rameaux": {
+    "title_fr": "Dimanche des Rameaux",
+    "title_it": "Domenica delle Palme",
+    "text_ref": "rameaux_tropaire"
+  }
+}

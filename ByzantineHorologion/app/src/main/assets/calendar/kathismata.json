@@ -1,0 +1,263 @@
+{
+  "ranges": {
+    "1": "1-8",
+    "2": "9-16",
+    "3": "17-23",
+    "4": "24-31",
+    "5": "32-36",
+    "6": "37-45",
+    "7": "46-54",
+    "8": "55-63",
+    "9": "64-69",
+    "10": "70-76",
+    "11": "77-84",
+    "12": "85-90",
+    "13": "91-100",
+    "14": "101-104",
+    "15": "105-108",
+    "16": "109-117",
+    "17": "118",
+    "18": "119-133",
+    "19": "134-142",
+    "20": "143-150"
+  },
+  "seasons": {
+    "ete": {
+      "label_fr": "Été (du dim. de Thomas au 21 sept.)",
+      "label_it": "Estate (dalla dom. di Tommaso al 21 sett.)",
+      "matines": {
+        "DIM": [
+          "2",
+          "3"
+        ],
+        "LUN": [
+          "4",
+          "5"
+        ],
+        "MAR": [
+          "7",
+          "8"
+        ],
+        "MER": [
+          "10",
+          "11"
+        ],
+        "JEU": [
+          "13",
+          "14"
+        ],
+        "VEN": [
+          "19",
+          "20"
+        ],
+        "SAM": [
+          "16",
+          "17"
+        ]
+      },
+      "vepres": {
+        "DIM": [],
+        "LUN": [
+          "6"
+        ],
+        "MAR": [
+          "9"
+        ],
+        "MER": [
+          "12"
+        ],
+        "JEU": [
+          "15"
+        ],
+        "VEN": [
+          "18"
+        ],
+        "SAM": [
+          "1"
+        ]
+      }
+    },
+    "hiver": {
+      "label_fr": "Hiver (22 sept. au dim. du Fils prodigue)",
+      "label_it": "Inverno (22 sett. alla dom. del Figliol prodigo)",
+      "matines": {
+        "DIM": [
+          "2",
+          "3",
+          "17"
+        ],
+        "LUN": [
+          "4",
+          "5",
+          "6"
+        ],
+        "MAR": [
+          "7",
+          "8",
+          "9"
+        ],
+        "MER": [
+          "10",
+          "11",
+          "12"
+        ],
+        "JEU": [
+          "13",
+          "14",
+          "15"
+        ],
+        "VEN": [
+          "19",
+          "20"
+        ],
+        "SAM": [
+          "16",
+          "17"
+        ]
+      },
+      "vepres": {
+        "DIM": [],
+        "LUN": [
+          "18"
+        ],
+        "MAR": [
+          "18"
+        ],
+        "MER": [
+          "18"
+        ],
+        "JEU": [
+          "18"
+        ],
+        "VEN": [
+          "18"
+        ],
+        "SAM": [
+          "1"
+        ]
+      }
+    },
+    "careme": {
+      "label_fr": "Grand Carême (psautier 2× / semaine)",
+      "label_it": "Grande Quaresima (salterio 2× / settimana)",
+      "matines": {
+        "DIM": [
+          "2",
+          "3",
+          "17"
+        ],
+        "LUN": [
+          "4",
+          "5",
+          "6"
+        ],
+        "MAR": [
+          "10",
+          "11",
+          "12"
+        ],
+        "MER": [
+          "19",
+          "20",
+          "1"
+        ],
+        "JEU": [
+          "6",
+          "7",
+          "8"
+        ],
+        "VEN": [
+          "13",
+          "14",
+          "15"
+        ],
+        "SAM": [
+          "16",
+          "17"
+        ]
+      },
+      "premiere": {
+        "MAR": [
+          "13"
+        ],
+        "MER": [
+          "2"
+        ],
+        "JEU": [
+          "9"
+        ]
+      },
+      "tierce": {
+        "LUN": [
+          "7"
+        ],
+        "MAR": [
+          "14"
+        ],
+        "MER": [
+          "3"
+        ],
+        "JEU": [
+          "10"
+        ],
+        "VEN": [
+          "19"
+        ]
+      },
+      "sexte": {
+        "LUN": [
+          "8"
+        ],
+        "MAR": [
+          "15"
+        ],
+        "MER": [
+          "4"
+        ],
+        "JEU": [
+          "11"
+        ],
+        "VEN": [
+          "20"
+        ]
+      },
+      "none": {
+        "LUN": [
+          "9"
+        ],
+        "MAR": [
+          "16"
+        ],
+        "MER": [
+          "5"
+        ],
+        "JEU": [
+          "12"
+        ]
+      },
+      "vepres": {
+        "DIM": [],
+        "LUN": [
+          "18"
+        ],
+        "MAR": [
+          "18"
+        ],
+        "MER": [
+          "18"
+        ],
+        "JEU": [
+          "18"
+        ],
+        "VEN": [
+          "18"
+        ],
+        "SAM": [
+          "1"
+        ]
+      }
+    }
+  },
+  "notes_fr": "Pas de kathisme à Pâques ni durant la Semaine Lumineuse. Règles spéciales 5e sem. de Carême et Semaine Sainte.",
+  "notes_it": "Nessun kathisma a Pasqua né durante la Settimana Luminosa. Regole speciali 5ª sett. di Quaresima e Settimana Santa."
+}

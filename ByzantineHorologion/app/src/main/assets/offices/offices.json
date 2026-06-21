@@ -1,0 +1,1215 @@
+{
+  "order": [
+    "mesonyktikon",
+    "orthros",
+    "premiere",
+    "tierce",
+    "sexte",
+    "none",
+    "typika",
+    "vepres",
+    "grandes_complies",
+    "complies",
+    "defunts"
+  ],
+  "items": {
+    "vepres": {
+      "id": "vepres",
+      "title_fr": "Vêpres",
+      "title_it": "Vespro",
+      "steps": [
+        {
+          "kind": "rubric",
+          "role": "pretre",
+          "rubric_fr": "Le prêtre : Béni soit notre Dieu…",
+          "rubric_it": "Il sacerdote: Benedetto il nostro Dio…"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "venez_adorons"
+        },
+        {
+          "kind": "psalm",
+          "role": "tous",
+          "fr": "Psaume 103 (104) — psaume introductif (Bénis le Seigneur, ô mon âme)",
+          "it": "Salmo 103 (104) — salmo introduttivo"
+        },
+        {
+          "kind": "litany",
+          "role": "pretre",
+          "rubric_fr": "Grande litanie de paix (diacre/prêtre)",
+          "rubric_it": "Grande litania di pace (diacono/sacerdote)"
+        },
+        {
+          "kind": "kathisma",
+          "role": "tous",
+          "fr": "Kathisme du jour (voir tableau du psautier)",
+          "it": "Kathisma del giorno (vedi tabella del salterio)"
+        },
+        {
+          "kind": "variable",
+          "role": "tous",
+          "ref": "stichera_lucernaire",
+          "fr": "« Seigneur, je crie vers toi » (Ps 140) + stichères du ton/jour",
+          "it": "« Signore, a te grido » (Sal 140) + stichirà del tono/giorno"
+        },
+        {
+          "kind": "hymn",
+          "role": "tous",
+          "ref": "phos_hilaron"
+        },
+        {
+          "kind": "variable",
+          "role": "tous",
+          "ref": "prokimenon",
+          "fr": "Prokimenon du jour",
+          "it": "Prochimeno del giorno"
+        },
+        {
+          "kind": "hymn",
+          "role": "tous",
+          "ref": "nunc_dimittis"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "trisagion"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "notre_pere"
+        },
+        {
+          "kind": "variable",
+          "role": "tous",
+          "ref": "apolytikion",
+          "fr": "Tropaire (apolytikion) du jour",
+          "it": "Tropario (apolytikion) del giorno"
+        },
+        {
+          "kind": "rubric",
+          "role": "pretre",
+          "rubric_fr": "Congé (prêtre)",
+          "rubric_it": "Congedo (sacerdote)"
+        }
+      ]
+    },
+    "complies": {
+      "id": "complies",
+      "title_fr": "Petites Complies (Apodipnon)",
+      "title_it": "Piccola Compieta (Apodipnon)",
+      "steps": [
+        {
+          "kind": "rubric",
+          "role": "pretre",
+          "rubric_fr": "Prêtre : Béni soit notre Dieu, en tout temps… (sinon : Par les prières de nos saints Pères…)",
+          "rubric_it": "Sacerdote: Benedetto il Dio nostro… (altrimenti: Per le preghiere dei nostri santi padri…)"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "fr": "Gloire à toi, ô notre Dieu, gloire à toi.",
+          "it": "Gloria a te, Dio nostro, gloria a te."
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "roi_celeste"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "trisagion"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "gloire"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "panaghia_trias"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "notre_pere"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "kyrie_12"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "venez_adorons"
+        },
+        {
+          "kind": "rubric",
+          "role": "tous",
+          "rubric_fr": "3 prosternations, puis les psaumes.",
+          "rubric_it": "3 prostrazioni, quindi i salmi."
+        },
+        {
+          "kind": "psalm",
+          "role": "tous",
+          "fr": "Psaume 50 (51) — voir Bible",
+          "it": "Salmo 50 (51) — vedi Bibbia"
+        },
+        {
+          "kind": "psalm",
+          "role": "tous",
+          "fr": "Psaume 69 (70) : Ô Dieu, viens à mon aide ; Seigneur, hâte-toi de me secourir…",
+          "it": "Salmo 69 (70): O Dio, volgiti in mio aiuto; Signore, affréttati ad aiutarmi…"
+        },
+        {
+          "kind": "psalm",
+          "role": "tous",
+          "fr": "Psaume 142 (143) : Seigneur, écoute ma prière…",
+          "it": "Salmo 142 (143): Signore, ascolta la mia preghiera…"
+        },
+        {
+          "kind": "hymn",
+          "role": "tous",
+          "ref": "small_doxology"
+        },
+        {
+          "kind": "creed",
+          "role": "tous",
+          "fr": "Symbole de la foi (Credo de Nicée-Constantinople)",
+          "it": "Simbolo della fede (Credo niceno-costantinopolitano)"
+        },
+        {
+          "kind": "rubric",
+          "role": "tous",
+          "rubric_fr": "On dit le canon s'il y en a. Puis :",
+          "rubric_it": "Si dice il canone se c'è. Quindi:"
+        },
+        {
+          "kind": "hymn",
+          "role": "tous",
+          "ref": "axion_estin"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "trisagion"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "panaghia_trias"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "notre_pere"
+        },
+        {
+          "kind": "variable",
+          "role": "tous",
+          "ref": "tropaires_complies"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "fr": "Seigneur, aie pitié. (40 fois)",
+          "it": "Signore, pietà. (40 volte)"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "o_en_panti_kairo"
+        },
+        {
+          "kind": "hymn",
+          "role": "tous",
+          "ref": "axion_estin"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "aspile_amolynte"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "antioch_prayer"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "my_hope_father"
+        },
+        {
+          "kind": "rubric",
+          "role": "pretre",
+          "rubric_fr": "Congé (prêtre)",
+          "rubric_it": "Congedo (sacerdote)"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "compline_dismissal"
+        }
+      ]
+    },
+    "mesonyktikon": {
+      "id": "mesonyktikon",
+      "title_fr": "Office de minuit",
+      "title_it": "Ufficio di mezzanotte",
+      "steps": [
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "venez_adorons"
+        },
+        {
+          "kind": "psalm",
+          "role": "tous",
+          "fr": "Psaume 118 (119) — Amomos / les Irréprochables",
+          "it": "Salmo 118 (119) — Amomos / gli Irreprensibili"
+        },
+        {
+          "kind": "creed",
+          "role": "tous",
+          "fr": "Symbole de la foi",
+          "it": "Simbolo della fede"
+        },
+        {
+          "kind": "variable",
+          "role": "tous",
+          "ref": "trinika_dimanche_mesonyktikon",
+          "rubric_fr": "Le dimanche : on chante d'abord le Canon trinitaire propre au ton de la semaine (texte dans l'Octoèque), puis ces tropaires trinitaires fixes :",
+          "rubric_it": "La domenica: si canta prima il Canone trinitario proprio del tono della settimana (testo nell'Octoechos), quindi questi tropari trinitari fissi:"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "trisagion"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "notre_pere"
+        }
+      ]
+    },
+    "orthros": {
+      "id": "orthros",
+      "title_fr": "Matines (Orthros)",
+      "title_it": "Mattutino (Orthros)",
+      "steps": [
+        {
+          "kind": "rubric",
+          "role": "pretre",
+          "rubric_fr": "Bénédiction (prêtre) ; Psaumes royaux",
+          "rubric_it": "Benedizione (sacerdote); Salmi reali"
+        },
+        {
+          "kind": "psalm",
+          "role": "tous",
+          "fr": "Hexapsalme : Ps 3, 37, 62, 87, 102, 142",
+          "it": "Esapsalmo: Sal 3, 37, 62, 87, 102, 142"
+        },
+        {
+          "kind": "litany",
+          "role": "pretre",
+          "rubric_fr": "Grande litanie",
+          "rubric_it": "Grande litania"
+        },
+        {
+          "kind": "variable",
+          "role": "tous",
+          "ref": "theos_kyrios",
+          "fr": "« Dieu est le Seigneur… » + tropaire du jour (ou Alléluia en Carême)",
+          "it": "« Il Signore è Dio… » + troparia del giorno (o Alleluia in Quaresima)"
+        },
+        {
+          "kind": "variable",
+          "role": "tous",
+          "ref": "hymne_trinitaire_ton",
+          "rubric_fr": "Hymnes trinitaires du ton (après l'Hexapsalme)",
+          "rubric_it": "Inni trinitari del tono (dopo l'Esapsalmo)"
+        },
+        {
+          "kind": "kathisma",
+          "role": "tous",
+          "fr": "Kathismes du psautier + sédalènes",
+          "it": "Kathismata del salterio + sedalèni"
+        },
+        {
+          "kind": "variable",
+          "role": "tous",
+          "ref": "polyeleos",
+          "fr": "Polyéléos (Ps 134-135) aux fêtes ; le dimanche : Évlogitaires de la Résurrection",
+          "it": "Polyéleos (Sal 134-135) nelle feste; la domenica: Evloghitari della Risurrezione"
+        },
+        {
+          "kind": "variable",
+          "role": "tous",
+          "ref": "evlogitaires_resurrection",
+          "rubric_fr": "Le dimanche : Évlogitaires de la Résurrection",
+          "rubric_it": "La domenica: Evloghitari della Risurrezione"
+        },
+        {
+          "kind": "variable",
+          "role": "tous",
+          "ref": "anabathmoi",
+          "fr": "Anabathmes (degrés) du ton",
+          "it": "Anabathmoi (gradini) del tono"
+        },
+        {
+          "kind": "variable",
+          "role": "tous",
+          "ref": "matins_gospel",
+          "fr": "Prokimenon + Évangile des Matines (le dim. : un des 11 évangiles résurrectionnels)",
+          "it": "Prochimeno + Vangelo del Mattutino (la dom.: uno degli 11 vangeli della Risurrezione)"
+        },
+        {
+          "kind": "psalm",
+          "role": "tous",
+          "fr": "Psaume 50 (51) — voir Bible",
+          "it": "Salmo 50 (51) — vedi Bibbia"
+        },
+        {
+          "kind": "variable",
+          "role": "tous",
+          "ref": "canon",
+          "fr": "Les canons (9 odes, heirmos + tropaires + katavasia) ; après la 6e ode : kondakion + synaxaire",
+          "it": "I canoni (9 odi, heirmos + tropari + katavasia); dopo la 6ª ode: kontakion + sinassario"
+        },
+        {
+          "kind": "variable",
+          "role": "tous",
+          "ref": "kontakion",
+          "fr": "Kondakion du jour",
+          "it": "Kontakion del giorno"
+        },
+        {
+          "kind": "hymn",
+          "role": "tous",
+          "fr": "« Magnificat » + « Plus vénérable que les chérubins »",
+          "it": "« Magnificat » + « Più venerabile dei cherubini »"
+        },
+        {
+          "kind": "variable",
+          "role": "tous",
+          "ref": "exapostilaire",
+          "fr": "Exapostilaire / photagogique",
+          "it": "Exapostilario / fotagogico"
+        },
+        {
+          "kind": "variable",
+          "role": "tous",
+          "ref": "ainoi",
+          "fr": "Les Louanges (Ps 148-150) + stichères",
+          "it": "Le Lodi (Sal 148-150) + stichirà"
+        },
+        {
+          "kind": "hymn",
+          "role": "tous",
+          "fr": "Grande doxologie",
+          "it": "Grande dossologia"
+        },
+        {
+          "kind": "variable",
+          "role": "tous",
+          "ref": "apolytikion",
+          "fr": "Tropaire du jour",
+          "it": "Troparia del giorno"
+        },
+        {
+          "kind": "rubric",
+          "role": "pretre",
+          "rubric_fr": "Litanies et congé (prêtre)",
+          "rubric_it": "Litanie e congedo (sacerdote)"
+        }
+      ]
+    },
+    "premiere": {
+      "id": "premiere",
+      "title_fr": "Première Heure",
+      "title_it": "Prima Ora",
+      "steps": [
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "venez_adorons"
+        },
+        {
+          "kind": "psalm",
+          "role": "tous",
+          "fr": "Psaumes 5, 89, 100",
+          "it": "Salmi 5, 89, 100"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "gloire"
+        },
+        {
+          "kind": "variable",
+          "role": "tous",
+          "ref": "apolytikion",
+          "fr": "Tropaire et kondakion du jour",
+          "it": "Troparia e kontakion del giorno"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "trisagion"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "notre_pere"
+        }
+      ]
+    },
+    "tierce": {
+      "id": "tierce",
+      "title_fr": "Troisième Heure",
+      "title_it": "Terza Ora",
+      "steps": [
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "venez_adorons"
+        },
+        {
+          "kind": "psalm",
+          "role": "tous",
+          "fr": "Psaumes 16, 24, 50",
+          "it": "Salmi 16, 24, 50"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "gloire"
+        },
+        {
+          "kind": "variable",
+          "role": "tous",
+          "ref": "apolytikion",
+          "fr": "Tropaire et kondakion du jour",
+          "it": "Troparia e kontakion del giorno"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "trisagion"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "notre_pere"
+        }
+      ]
+    },
+    "sexte": {
+      "id": "sexte",
+      "title_fr": "Sixième Heure",
+      "title_it": "Sesta Ora",
+      "steps": [
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "venez_adorons"
+        },
+        {
+          "kind": "psalm",
+          "role": "tous",
+          "fr": "Psaumes 53, 54, 90",
+          "it": "Salmi 53, 54, 90"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "gloire"
+        },
+        {
+          "kind": "variable",
+          "role": "tous",
+          "ref": "apolytikion",
+          "fr": "Tropaire et kondakion du jour",
+          "it": "Troparia e kontakion del giorno"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "trisagion"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "notre_pere"
+        }
+      ]
+    },
+    "none": {
+      "id": "none",
+      "title_fr": "Neuvième Heure",
+      "title_it": "Nona Ora",
+      "steps": [
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "venez_adorons"
+        },
+        {
+          "kind": "psalm",
+          "role": "tous",
+          "fr": "Psaumes 83, 84, 85",
+          "it": "Salmi 83, 84, 85"
+        },
+        {
+          "kind": "hymn",
+          "role": "tous",
+          "ref": "phos_hilaron"
+        },
+        {
+          "kind": "variable",
+          "role": "tous",
+          "ref": "apolytikion",
+          "fr": "Tropaire et kondakion du jour",
+          "it": "Troparia e kontakion del giorno"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "trisagion"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "notre_pere"
+        }
+      ]
+    },
+    "typika": {
+      "id": "typika",
+      "title_fr": "Les Typiques",
+      "title_it": "I Typikà",
+      "steps": [
+        {
+          "kind": "psalm",
+          "role": "tous",
+          "fr": "Psaume 102 (103) ; Psaume 145 (146)",
+          "it": "Salmo 102 (103); Salmo 145 (146)"
+        },
+        {
+          "kind": "hymn",
+          "role": "tous",
+          "fr": "« Fils unique » (Monogénès)",
+          "it": "« Unigenito Figlio » (Monoghenìs)"
+        },
+        {
+          "kind": "variable",
+          "role": "tous",
+          "fr": "Béatitudes + tropaires",
+          "it": "Beatitudini + tropari"
+        },
+        {
+          "kind": "creed",
+          "role": "tous",
+          "fr": "Symbole de la foi",
+          "it": "Simbolo della fede"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "notre_pere"
+        }
+      ]
+    },
+    "grandes_complies": {
+      "id": "grandes_complies",
+      "title_fr": "Grandes Complies",
+      "title_it": "Grande Compieta",
+      "steps": [
+        {
+          "kind": "rubric",
+          "role": "tous",
+          "rubric_fr": "Célébrées le soir du lundi, mardi, mercredi et jeudi de la sainte et grande Quarantaine. Les autres soirs de l'année on dit les Petites Complies.",
+          "rubric_it": "Si celebra la sera del lunedì, martedì, mercoledì e giovedì della santa e grande quaresima. Le altre sere si dice la Piccola Compieta."
+        },
+        {
+          "kind": "rubric",
+          "role": "tous",
+          "rubric_fr": "— Ouverture —",
+          "rubric_it": "— Inizio —"
+        },
+        {
+          "kind": "prayer",
+          "role": "pretre",
+          "ref": "benedetto_dio"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "gloria_a_te"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "roi_celeste"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "trisagion"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "panaghia_trias"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "kyrie_3"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "gloire"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "notre_pere"
+        },
+        {
+          "kind": "prayer",
+          "role": "pretre",
+          "ref": "poiche_tuo_e_il_regno"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "kyrie_12"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "gloire"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "venez_adorons"
+        },
+        {
+          "kind": "rubric",
+          "role": "tous",
+          "rubric_fr": "— Première partie —",
+          "rubric_it": "— Prima parte —"
+        },
+        {
+          "kind": "rubric",
+          "role": "tous",
+          "rubric_fr": "La première semaine du Carême, on commence aussitôt par le Psaume 69 (70) ; les autres soirs on commence au Psaume 4.",
+          "rubric_it": "Se è la prima settimana della grande quaresima, si comincia subito col Salmo 69; altrimenti si procede dal Salmo 4."
+        },
+        {
+          "kind": "psalm",
+          "role": "tous",
+          "fr": "Psaumes 4, 6, 12 (13), 24 (25), 30 (31), 90 (91) — texte dans la Bible (numérotation des Septante).",
+          "it": "Salmi 4, 6, 12, 24, 30, 90 — testo nella Bibbia (numerazione dei Settanta)."
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "alliluia_metanoia"
+        },
+        {
+          "kind": "rubric",
+          "role": "tous",
+          "rubric_fr": "Cantique « Dieu avec nous » (Is 8–9), à deux chœurs, ton pl. 2 :",
+          "rubric_it": "Cantico « Dio è con noi » (Is 8–9), a cori alterni, tono pl. 2:"
+        },
+        {
+          "kind": "variable",
+          "role": "tous",
+          "ref": "dieu_avec_nous"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "troparia_fin_jour"
+        },
+        {
+          "kind": "hymn",
+          "role": "tous",
+          "ref": "asomatos_physis"
+        },
+        {
+          "kind": "creed",
+          "role": "tous",
+          "ref": "credo"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "stichi_intercession"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "trisagion"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "panaghia_trias"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "kyrie_3"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "gloire"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "notre_pere"
+        },
+        {
+          "kind": "prayer",
+          "role": "pretre",
+          "ref": "poiche_tuo_e_il_regno"
+        },
+        {
+          "kind": "rubric",
+          "role": "tous",
+          "rubric_fr": "Tropaires du jour : lundi et mercredi, ton 2 ; mardi et jeudi, ton pl. 4. (Jour de fête : tropaires de la fête.)",
+          "rubric_it": "Tropari del giorno: lunedì e mercoledì, tono 2; martedì e giovedì, tono pl. 4. (In festa: tropari della festa.)"
+        },
+        {
+          "kind": "variable",
+          "role": "tous",
+          "ref": "tropari_lun_mer"
+        },
+        {
+          "kind": "variable",
+          "role": "tous",
+          "ref": "tropari_mar_gio"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "kyrie_40"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "gloire"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "axion_estin"
+        },
+        {
+          "kind": "rubric",
+          "role": "pretre",
+          "rubric_fr": "✠ Au nom du Seigneur, bénis, Père. — Par les prières de nos saints Pères…",
+          "rubric_it": "✠ Nel nome del Signore, benedici, Padre. — Per le preghiere dei nostri santi Padri…"
+        },
+        {
+          "kind": "prayer",
+          "role": "pretre",
+          "ref": "priere_basile_1"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "venez_adorons"
+        },
+        {
+          "kind": "rubric",
+          "role": "tous",
+          "rubric_fr": "— Deuxième partie —",
+          "rubric_it": "— Seconda parte —"
+        },
+        {
+          "kind": "psalm",
+          "role": "tous",
+          "fr": "Psaume 50 (51) ; Psaume 101 (102) — texte dans la Bible.",
+          "it": "Salmo 50; Salmo 101 — testo nella Bibbia."
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "priere_manasse"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "trisagion"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "panaghia_trias"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "kyrie_3"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "gloire"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "notre_pere"
+        },
+        {
+          "kind": "prayer",
+          "role": "pretre",
+          "ref": "poiche_tuo_e_il_regno"
+        },
+        {
+          "kind": "variable",
+          "role": "tous",
+          "ref": "tropari_katanyktika"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "kyrie_40"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "gloire"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "axion_estin"
+        },
+        {
+          "kind": "rubric",
+          "role": "pretre",
+          "rubric_fr": "✠ Au nom du Seigneur, bénis, Père. — Par les prières de nos saints Pères…",
+          "rubric_it": "✠ Nel nome del Signore, benedici, Padre. — Per le preghiere dei nostri santi Padri…"
+        },
+        {
+          "kind": "prayer",
+          "role": "pretre",
+          "ref": "priere_mardario"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "venez_adorons"
+        },
+        {
+          "kind": "rubric",
+          "role": "tous",
+          "rubric_fr": "— Troisième partie —",
+          "rubric_it": "— Terza parte —"
+        },
+        {
+          "kind": "psalm",
+          "role": "tous",
+          "fr": "Psaume 69 (70) ; Psaume 142 (143) — texte dans la Bible.",
+          "it": "Salmo 69; Salmo 142 — testo nella Bibbia."
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "dossologia_compieta"
+        },
+        {
+          "kind": "rubric",
+          "role": "tous",
+          "rubric_fr": "On chante alors le Canon du jour ou de la Mère de Dieu. Première semaine : la section du Grand Canon de saint André prévue pour chaque jour, chaque tropaire précédé de « Aie pitié de moi, ô Dieu, aie pitié de moi » ; après la 6e ode, le kondakion « Mon âme, mon âme » ; après la 9e ode, l'hirmos « D'une conception sans semence ».",
+          "rubric_it": "Si canta il Canone del giorno o della Madre di Dio. La prima settimana: la sezione del Grande Canone di sant'Andrea stabilita per ogni giorno, ogni tropario preceduto da « Pietà di me, o Dio, pietà di me »; dopo l'ode 6, il kondakion « Anima mia, anima mia »; dopo l'ode 9, l'irmos « Di una concezione senza seme »."
+        },
+        {
+          "kind": "variable",
+          "role": "tous",
+          "ref": "grand_canon_andre",
+          "rubric_fr": "Grand Canon de saint André de Crète — premières strophes (chanté par fragments la 1ʳᵉ semaine du Grand Carême, en entier le jeudi de la 5ᵉ semaine)",
+          "rubric_it": "Grande Canone di sant'Andrea di Creta — prime strofe (cantato a frammenti la 1ª settimana del Grande Carême, per intero il giovedì della 5ª settimana)"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "trisagion"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "panaghia_trias"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "kyrie_3"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "gloire"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "notre_pere"
+        },
+        {
+          "kind": "prayer",
+          "role": "pretre",
+          "ref": "poiche_tuo_e_il_regno"
+        },
+        {
+          "kind": "variable",
+          "role": "tous",
+          "ref": "kyrie_ton_dynameon"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "kyrie_40"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "o_en_panti_kairo"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "kyrie_3"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "gloire"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "axion_estin"
+        },
+        {
+          "kind": "rubric",
+          "role": "pretre",
+          "rubric_fr": "✠ Au nom du Seigneur, bénis, Père.",
+          "rubric_it": "✠ Nel nome del Signore, benedici, Padre."
+        },
+        {
+          "kind": "prayer",
+          "role": "pretre",
+          "ref": "gloria_dio_benedici"
+        },
+        {
+          "kind": "rubric",
+          "role": "tous",
+          "rubric_fr": "Prière de saint Éphrem, avec trois grandes prosternations (une à chaque verset).",
+          "rubric_it": "Preghiera di sant'Efrem, con tre grandi prostrazioni (una a ogni stico)."
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "priere_ephrem"
+        },
+        {
+          "kind": "rubric",
+          "role": "tous",
+          "rubric_fr": "Puis 12 petites prosternations : « Ô Dieu, sois propice à moi pécheur. » (12 fois) Enfin une grande prosternation et le dernier verset de la prière de saint Éphrem.",
+          "rubric_it": "Poi 12 piccole prostrazioni: « O Dio, sii propizio a me peccatore. » (12 volte) Infine una grande prostrazione e l'ultimo stico della preghiera di sant'Efrem."
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "trisagion"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "panaghia_trias"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "kyrie_3"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "gloire"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "notre_pere"
+        },
+        {
+          "kind": "prayer",
+          "role": "pretre",
+          "ref": "poiche_tuo_e_il_regno"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "kyrie_12"
+        },
+        {
+          "kind": "rubric",
+          "role": "tous",
+          "rubric_fr": "Prière à la très sainte Mère de Dieu (du moine Paul, du monastère de l'Évergétis) :",
+          "rubric_it": "Preghiera alla santissima Madre di Dio (del monaco Paolo, del Monastero dell'Everghètis):"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "aspile_amolynte"
+        },
+        {
+          "kind": "rubric",
+          "role": "tous",
+          "rubric_fr": "Autre prière au Seigneur Jésus-Christ (d'Antiochus, moine du Pandectès) :",
+          "rubric_it": "Altra preghiera al Signore nostro Gesù Cristo (di Antìoco, monaco del Pandèktis):"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "antioch_prayer"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "my_hope_father"
+        },
+        {
+          "kind": "rubric",
+          "role": "pretre",
+          "rubric_fr": "Première semaine du Carême (à partir du lundi) : le prêtre lit aussitôt, à la belle porte, l'évangile du jour.",
+          "rubric_it": "Nella prima settimana dei digiuni (dal lunedì) il sacerdote legge subito, dalla porta bella, il vangelo del giorno."
+        },
+        {
+          "kind": "rubric",
+          "role": "pretre",
+          "rubric_fr": "✠ Paix à tous. — Inclinons la tête devant le Seigneur. (Tous, tête inclinée, le prêtre prie à voix haute :)",
+          "rubric_it": "✠ Pace a tutti. — Chiniamo il capo davanti al Signore. (Tutti a testa china, il sacerdote prega a gran voce:)"
+        },
+        {
+          "kind": "prayer",
+          "role": "pretre",
+          "ref": "priere_despota_polyelee"
+        },
+        {
+          "kind": "rubric",
+          "role": "tous",
+          "rubric_fr": "Le président, faisant une métanie : « Bénissez, pères saints, pardonnez à moi pécheur. » — Les frères : « Que Dieu te pardonne, Père saint. » Puis tous échangent le pardon, deux à deux, pendant les tropaires suivants.",
+          "rubric_it": "Colui che presiede, facendo metania: « Benedite, padri santi, date il perdono a me peccatore. » — I fratelli: « Dio ti perdoni, Padre santo. » Poi tutti si scambiano il perdono, a due a due, mentre si cantano i seguenti tropari."
+        },
+        {
+          "kind": "rubric",
+          "role": "tous",
+          "rubric_fr": "Lundi, mercredi, vendredi — « Quand du bois… »",
+          "rubric_it": "Lunedì, mercoledì, venerdì — « Quando dal legno… »"
+        },
+        {
+          "kind": "variable",
+          "role": "tous",
+          "ref": "tropari_pardon_lun"
+        },
+        {
+          "kind": "rubric",
+          "role": "tous",
+          "rubric_fr": "Mardi et jeudi soir — « Martyrs dignes de toute louange… »",
+          "rubric_it": "Martedì e giovedì sera — « Martiri degni d'ogni lode… »"
+        },
+        {
+          "kind": "variable",
+          "role": "tous",
+          "ref": "tropari_pardon_mar"
+        },
+        {
+          "kind": "rubric",
+          "role": "pretre",
+          "rubric_fr": "— Conclusion — Le prêtre dit ces suppliques, et tous répondent : Seigneur, aie pitié.",
+          "rubric_it": "— Conclusione — Il sacerdote dice queste suppliche e tutti rispondono: Signore, pietà."
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "litanie_conclusion"
+        },
+        {
+          "kind": "prayer",
+          "role": "pretre",
+          "ref": "congedo_finale"
+        }
+      ]
+    },
+    "defunts": {
+      "id": "defunts",
+      "title_fr": "Office des défunts (extrait)",
+      "title_it": "Ufficio dei defunti (estratto)",
+      "steps": [
+        {
+          "kind": "rubric",
+          "role": "tous",
+          "rubric_fr": "Extrait pour une prière personnelle ; l'office complet des funérailles requiert un prêtre.",
+          "rubric_it": "Estratto per una preghiera personale; l'ufficio completo delle esequie richiede un sacerdote."
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "trisagion"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "notre_pere"
+        },
+        {
+          "kind": "hymn",
+          "role": "tous",
+          "ref": "stichera_funebres",
+          "rubric_fr": "Stichères « du dernier baiser »",
+          "rubric_it": "Stichirà « dell'ultimo bacio »"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "tropaires_complies",
+          "fr": null,
+          "it": null
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "ref": "priere_eustrate",
+          "rubric_fr": "Prière de saint Eustrate (pour le départ de l'âme)",
+          "rubric_it": "Preghiera di sant'Eustrazio (per il passaggio dell'anima)"
+        },
+        {
+          "kind": "prayer",
+          "role": "tous",
+          "fr": "Avec les saints donne le repos, ô Christ, à l'âme de ton serviteur (de ta servante), là où il n'est ni douleur, ni tristesse, ni gémissement, mais la vie sans fin.",
+          "it": "Insieme con i tuoi santi, da' riposo, o Cristo, all'anima del tuo servo (della tua serva), là dove non è affanno, né tristezza, né lamento, ma vita che non ha fine."
+        }
+      ]
+    }
+  }
+}
