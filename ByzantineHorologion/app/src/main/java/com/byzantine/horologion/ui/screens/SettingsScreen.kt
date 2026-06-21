@@ -30,8 +30,8 @@ fun SettingsScreen(onLanguageChange: (Lang) -> Unit) {
 
         HorizontalDivider()
         SectionTitle(stringResource(R.string.settings_accent))
-        RadioRow(stringResource(R.string.accent_red), settings.accent == Accent.RED) { settings.setAccent(Accent.RED) }
-        RadioRow(stringResource(R.string.accent_pink), settings.accent == Accent.PINK) { settings.setAccent(Accent.PINK) }
+        RadioRow(stringResource(R.string.accent_red), settings.accent == Accent.RED) { settings.applyAccent(Accent.RED) }
+        RadioRow(stringResource(R.string.accent_pink), settings.accent == Accent.PINK) { settings.applyAccent(Accent.PINK) }
 
         HorizontalDivider()
         SectionTitle(stringResource(R.string.settings_language))
@@ -40,13 +40,13 @@ fun SettingsScreen(onLanguageChange: (Lang) -> Unit) {
 
         HorizontalDivider()
         SectionTitle(stringResource(R.string.settings_role))
-        RadioRow(stringResource(R.string.role_layperson), settings.role == Role.LAYPERSON) { settings.setRole(Role.LAYPERSON) }
-        RadioRow(stringResource(R.string.role_priest), settings.role == Role.PRIEST) { settings.setRole(Role.PRIEST) }
+        RadioRow(stringResource(R.string.role_layperson), settings.role == Role.LAYPERSON) { settings.applyRole(Role.LAYPERSON) }
+        RadioRow(stringResource(R.string.role_priest), settings.role == Role.PRIEST) { settings.applyRole(Role.PRIEST) }
 
         HorizontalDivider()
         SectionTitle(stringResource(R.string.nav_chants))
         Row(Modifier.fillMaxWidth().padding(vertical = 6.dp), verticalAlignment = Alignment.CenterVertically) {
-            Switch(checked = settings.showScores, onCheckedChange = { settings.setShowScores(it) })
+            Switch(checked = settings.showScores, onCheckedChange = { settings.applyShowScores(it) })
             Spacer(Modifier.width(12.dp))
             Text(stringResource(R.string.settings_show_scores), style = MaterialTheme.typography.bodyLarge)
         }
@@ -54,7 +54,7 @@ fun SettingsScreen(onLanguageChange: (Lang) -> Unit) {
         HorizontalDivider()
         SectionTitle(if (settings.lang == Lang.FR) "Prière de Jésus" else "Preghiera di Gesù")
         Row(Modifier.fillMaxWidth().padding(vertical = 6.dp), verticalAlignment = Alignment.CenterVertically) {
-            Switch(checked = settings.gameEnabled, onCheckedChange = { settings.setGameEnabled(it) })
+            Switch(checked = settings.gameEnabled, onCheckedChange = { settings.applyGameEnabled(it) })
             Spacer(Modifier.width(12.dp))
             Text(
                 if (settings.lang == Lang.FR)

@@ -45,10 +45,10 @@ class AppSettings(context: Context) {
         private set
 
     fun setTheme(v: ThemeMode) { themeMode = v; prefs.edit().putString("theme", v.name).apply() }
-    fun setAccent(v: Accent) { accent = v; prefs.edit().putString("accent", v.name).apply() }
-    fun setRole(v: Role) { role = v; prefs.edit().putString("role", v.name).apply() }
-    fun setShowScores(v: Boolean) { showScores = v; prefs.edit().putBoolean("scores", v).apply() }
-    fun setGameEnabled(v: Boolean) { gameEnabled = v; prefs.edit().putBoolean("game", v).apply() }
+    fun applyAccent(v: Accent) { accent = v; prefs.edit().putString("accent", v.name).apply() }
+    fun applyRole(v: Role) { role = v; prefs.edit().putString("role", v.name).apply() }
+    fun applyShowScores(v: Boolean) { showScores = v; prefs.edit().putBoolean("scores", v).apply() }
+    fun applyGameEnabled(v: Boolean) { gameEnabled = v; prefs.edit().putBoolean("game", v).apply() }
 
     /** Language change requires an Activity recreate to re-resolve resources. */
     fun setLangPersisted(v: Lang) { lang = v; prefs.edit().putString("lang", v.name).apply() }

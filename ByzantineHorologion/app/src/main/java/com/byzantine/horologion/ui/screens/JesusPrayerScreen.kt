@@ -136,7 +136,7 @@ fun JesusPrayerScreen() {
                 if (game.canFreeze()) {
                     Row(verticalAlignment = Alignment.CenterVertically,
                         modifier = Modifier.padding(top = 8.dp)) {
-                        Switch(checked = game.frozen, onCheckedChange = { game.setFrozen(it) })
+                        Switch(checked = game.frozen, onCheckedChange = { game.applyFrozen(it) })
                         Spacer(Modifier.width(8.dp))
                         Text(
                             if (lang == Lang.FR) "Rester à ce niveau" else "Resta a questo livello",

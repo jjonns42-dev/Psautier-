@@ -46,7 +46,7 @@ class GameState(context: Context) {
             .apply()
     }
 
-    fun setFrozen(v: Boolean) { frozen = v; persist() }
+    fun applyFrozen(v: Boolean) { frozen = v; persist() }
 
     private fun resetWeek(today: Long) {
         daysThisWeek = 0
