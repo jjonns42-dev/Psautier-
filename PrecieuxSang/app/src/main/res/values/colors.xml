@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blood_red">#8B0000</color>
+    <color name="blood_red_dark">#5C0000</color>
+    <color name="gold">#C9A227</color>
+    <color name="parchment">#FBF5EC</color>
+    <color name="white">#FFFFFF</color>
+    <color name="ic_background">#8B0000</color>
+</resources>
