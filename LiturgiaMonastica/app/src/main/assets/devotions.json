@@ -1,0 +1,225 @@
+{
+ "devotions": [
+  {
+   "id": "rosaire",
+   "name_fr": "Le Saint Rosaire",
+   "name_it": "Il Santo Rosario",
+   "desc": "Les quatre chapelets (Joyeux, Lumineux, Douloureux, Glorieux) : méditation des mystères de la vie du Christ avec Marie.",
+   "promises": [
+    "Quiconque me servira par la récitation du Rosaire recevra des grâces signalées.",
+    "Je promets ma protection toute spéciale et de très grandes grâces à ceux qui réciteront le Rosaire.",
+    "Le Rosaire sera une armure très puissante contre l'enfer ; il détruira les vices, délivrera du péché, dissipera les hérésies.",
+    "Le Rosaire fera fleurir les vertus afin que les âmes obtiennent de Dieu une abondante miséricorde.",
+    "Celui qui se confie à moi par le Rosaire ne périra pas.",
+    "Celui qui récitera dévotement mon Rosaire ne mourra pas sans les sacrements de l'Église.",
+    "Les vrais dévots de mon Rosaire jouiront d'une grande lumière au moment de la mort.",
+    "Les dévots de mon Rosaire auront pendant leur vie et à leur mort la lumière de Dieu.",
+    "Je délivrerai du purgatoire ceux qui auront eu la dévotion de mon Rosaire.",
+    "Les vrais enfants de mon Rosaire jouiront d'une grande gloire dans le ciel.",
+    "Tout ce qu'on me demande par le Rosaire, on l'obtiendra.",
+    "Ceux qui propagent mon Rosaire seront secourus par moi dans toutes leurs nécessités.",
+    "Tous ceux qui réciteront le Rosaire seront mes fils et les frères de mon Fils unique Jésus-Christ.",
+    "La dévotion à mon Rosaire est un grand signe de prédestination.",
+    "(Les 15 promesses du Rosaire faites à saint Dominique et au bienheureux Alain de la Roche.)"
+   ]
+  },
+  {
+   "id": "divine_misericorde",
+   "name_fr": "Chapelet de la Divine Miséricorde",
+   "name_it": "Coroncina della Divina Misericordia",
+   "desc": "Révélé à sainte Faustine. Se récite sur un chapelet ordinaire, de préférence à 15 h, l'Heure de la Miséricorde.",
+   "promises": [
+    "Tout ce qu'on demande par ce chapelet, on l'obtiendra, si cela est conforme à la volonté de Dieu.",
+    "Les âmes qui réciteront ce chapelet seront enveloppées de ma miséricorde durant leur vie et surtout à l'heure de la mort.",
+    "Récité auprès d'un mourant, j'apaiserai ma colère et lui ferai miséricorde insondable.",
+    "À celui qui récitera ce chapelet, j'accorderai en mourant la grâce d'une mort paisible.",
+    "Quand on dit ce chapelet près d'un mourant, je me tiens entre le Père et le mourant non comme Juge, mais comme Sauveur miséricordieux."
+   ]
+  },
+  {
+   "id": "saintes_plaies",
+   "name_fr": "Chapelet des Saintes Plaies",
+   "name_it": "Coroncina delle Sante Piaghe",
+   "desc": "Révélé à sœur Marie-Marthe Chambon. On offre au Père le Sang et les Plaies de Jésus pour les besoins de l'Église et des âmes.",
+   "promises": [
+    "À chaque parole que vous prononcez sur mes Plaies, je laisse tomber une goutte de mon Sang sur une âme pécheresse.",
+    "Mes Plaies couvriront tous vos péchés ; offrez-les souvent au Père éternel.",
+    "Cette dévotion convertira les plus endurcis ; on n'obtiendra rien de plus grand.",
+    "Les âmes du purgatoire sont délivrées par l'offrande des Saintes Plaies.",
+    "Avec mes Plaies et mon divin Cœur, on peut tout obtenir."
+   ]
+  },
+  {
+   "id": "sept_douleurs",
+   "name_fr": "Rosaire des Sept Douleurs de Marie",
+   "name_it": "Rosario dei Sette Dolori",
+   "desc": "Méditation des sept douleurs de la Vierge Marie (7 fois 7 Ave Maria).",
+   "promises": [
+    "Je donnerai la paix à leurs familles.",
+    "Ils seront éclairés sur les divins mystères.",
+    "Je les consolerai dans leurs peines et les accompagnerai dans leurs travaux.",
+    "Je leur donnerai tout ce qu'ils demanderont, pourvu que ce ne soit pas contraire à la volonté de mon divin Fils ou à la sanctification de leur âme.",
+    "Je les défendrai dans leurs combats spirituels contre l'ennemi infernal et les protégerai à chaque instant de leur vie.",
+    "Je les assisterai visiblement à l'heure de leur mort : ils verront le visage de leur Mère.",
+    "J'ai obtenu de mon divin Fils que ceux qui propageront cette dévotion à mes larmes et à mes douleurs soient conduits de cette vie terrestre à la félicité éternelle."
+   ]
+  },
+  {
+   "id": "larmes_de_marie",
+   "name_fr": "Chapelet des Larmes de Marie",
+   "name_it": "Coroncina delle Lacrime di Maria",
+   "desc": "Révélé à sœur Amalia (Notre-Dame des Larmes). On supplie par les larmes de la Vierge.",
+   "promises": [
+    "Ce que l'on demande par les larmes de ma Mère, je le concède avec une plus grande abondance.",
+    "Par ce chapelet on obtiendra des grâces, notamment la conversion des pécheurs et la consolation des affligés.",
+    "Mes larmes feront fléchir la justice divine et obtiendront miséricorde pour les plus grands pécheurs."
+   ]
+  },
+  {
+   "id": "couronne_angelique",
+   "name_fr": "Couronne Angélique (de saint Michel)",
+   "name_it": "Coroncina Angelica (a san Michele)",
+   "desc": "Neuf salutations en l'honneur des neuf chœurs des Anges.",
+   "promises": [
+    "Saint Michel promit à sainte Antonia d'Astonac : à ceux qui récitent cette couronne, je donnerai pour les accompagner à la sainte Communion un Ange de chacun des neuf chœurs.",
+    "Assistance des saints Anges durant la vie et après la mort, et délivrance des peines du purgatoire pour soi et les siens."
+   ]
+  },
+  {
+   "id": "manteau_saint_joseph",
+   "name_fr": "Sacré Manteau de saint Joseph (30 jours)",
+   "name_it": "Sacro Manto di san Giuseppe (30 giorni)",
+   "desc": "Dévotion de 30 jours en mémoire des 30 années de la vie cachée de Jésus avec Joseph. Demande puissante d'intercession.",
+   "promises": [
+    "Saint Joseph est le protecteur de l'Église universelle et le patron de la bonne mort.",
+    "Quiconque l'invoque avec confiance par cette dévotion obtient secours dans les nécessités spirituelles et temporelles.",
+    "Il assiste tout particulièrement les mourants et obtient la grâce d'une sainte mort.",
+    "« Allez à Joseph » : tout ce qu'il demande à Jésus lui est accordé."
+   ]
+  },
+  {
+   "id": "couronne_therese",
+   "name_fr": "Couronne de sainte Thérèse de l'Enfant-Jésus",
+   "name_it": "Coroncina di santa Teresa di Lisieux",
+   "desc": "24 Gloria en action de grâces pour les 24 années de la vie de sainte Thérèse, avec la prière « Sainte Thérèse, faites-moi sentir une rose ».",
+   "promises": [
+    "Sainte Thérèse a promis de passer son ciel à faire du bien sur la terre.",
+    "Elle a promis de faire tomber une pluie de roses (grâces).",
+    "« Je veux passer mon ciel à faire du bien sur la terre. »"
+   ]
+  },
+  {
+   "id": "couronne_philomene",
+   "name_fr": "Couronne de sainte Philomène",
+   "name_it": "Coroncina di santa Filomena",
+   "desc": "Trois Pater en l'honneur de la Trinité et treize Ave en l'honneur des treize années de la sainte, suivis du Credo.",
+   "promises": [
+    "Sainte Philomène, « Puissante auprès de Dieu », est invoquée pour les causes désespérées.",
+    "Le saint Curé d'Ars la nommait sa chère petite sainte et obtenait par elle d'innombrables miracles."
+   ]
+  },
+  {
+   "id": "couronne_antoine",
+   "name_fr": "Couronne (Chapelet) de saint Antoine de Padoue",
+   "name_it": "Coroncina di sant'Antonio",
+   "desc": "Treize Pater, Ave et Gloria en l'honneur des treize mardis de saint Antoine.",
+   "promises": [
+    "Saint Antoine est invoqué pour retrouver les choses et les âmes perdues.",
+    "« Si tu cherches les miracles… » : il obtient secours dans les nécessités, dangers et tentations."
+   ]
+  },
+  {
+   "id": "sept_joies",
+   "name_fr": "Les Sept Joies de Marie (Couronne franciscaine)",
+   "name_it": "Le Sette Allegrezze di Maria",
+   "desc": "Couronne franciscaine méditant les sept joies de la Vierge (Annonciation, Visitation, Nativité, Adoration des Mages, Recouvrement au Temple, Résurrection, Assomption-Couronnement).",
+   "promises": [
+    "La Vierge réjouit de cette couronne ceux qui la récitent et leur obtient une joie spirituelle.",
+    "Tradition franciscaine : à la mort, autant de roses tombent du ciel que d'Ave récités avec dévotion."
+   ]
+  },
+  {
+   "id": "chapelet_esprit_saint",
+   "name_fr": "Chapelet du Saint-Esprit",
+   "name_it": "Coroncina allo Spirito Santo",
+   "desc": "Invocation des sept dons de l'Esprit Saint, sept séries en l'honneur des sept dons.",
+   "promises": [
+    "L'Esprit Saint accorde ses sept dons (sagesse, intelligence, conseil, force, science, piété, crainte de Dieu).",
+    "Il fait croître en l'âme ses fruits : charité, joie, paix, patience, bonté…"
+   ]
+  },
+  {
+   "id": "rosaire_du_pere",
+   "name_fr": "Rosaire du Père Éternel",
+   "name_it": "Rosario del Padre Eterno",
+   "desc": "Dévotion au Père éternel : on l'adore, on le remercie et on lui offre le Sang du Christ pour le monde.",
+   "promises": [
+    "Le Père éternel répand ses miséricordes sur ceux qui l'honorent comme Père.",
+    "Il accorde la grâce de la filiation divine et la confiance d'enfant."
+   ]
+  },
+  {
+   "id": "priere_de_jesus",
+   "name_fr": "La Prière de Jésus",
+   "name_it": "La Preghiera di Gesù",
+   "desc": "« Seigneur Jésus-Christ, Fils de Dieu, aie pitié de moi, pécheur. » Répétée au rythme du souffle, prière du cœur (hésychasme).",
+   "promises": [
+    "Fruit (non promesse formelle) : la descente de l'esprit dans le cœur, la prière incessante (1 Th 5,17).",
+    "« Le Nom de Jésus invoqué sans cesse fait des merveilles dans l'âme. » (Récits d'un pèlerin russe / saint Séraphin de Sarov.)",
+    "Acquisition de l'Esprit Saint et de la paix du cœur."
+   ]
+  },
+  {
+   "id": "via_crucis",
+   "name_fr": "Le Chemin de Croix (Via Crucis)",
+   "name_it": "Via Crucis",
+   "desc": "Méditation des quatorze stations de la Passion du Seigneur.",
+   "promises": [
+    "Indulgences attachées par l'Église au pieux exercice du Chemin de Croix.",
+    "Union aux souffrances rédemptrices du Christ et grâce de componction.",
+    "Promesses faites aux dévots de la Passion : conversion, contrition, persévérance finale."
+   ]
+  },
+  {
+   "id": "via_matris",
+   "name_fr": "La Via Matris",
+   "name_it": "Via Matris",
+   "desc": "Sept stations méditant les sept douleurs de la Vierge Marie, en union avec la Compassion de la Mère.",
+   "promises": [
+    "Voir les promesses attachées aux Sept Douleurs de Marie.",
+    "Compassion à Marie, participation au mystère de la Croix et consolation dans les épreuves."
+   ]
+  },
+  {
+   "id": "via_lucis",
+   "name_fr": "La Via Lucis (Chemin de Lumière)",
+   "name_it": "Via Lucis",
+   "desc": "Quatorze stations méditant les apparitions et mystères du Christ ressuscité, de Pâques à la Pentecôte.",
+   "promises": [
+    "Affermissement dans l'espérance pascale et la joie du Ressuscité.",
+    "Croissance de la foi en la vie nouvelle et témoignage de la Résurrection."
+   ]
+  },
+  {
+   "id": "psaumes",
+   "name_fr": "Les Psaumes",
+   "name_it": "I Salmi",
+   "desc": "Prière des 150 psaumes, prière même du Christ et de l'Église. (Tirés ici de la Bible Crampon.)",
+   "promises": [
+    "« Qui chante, prie deux fois. » (attribué à saint Augustin)",
+    "Le psautier est l'épine dorsale de l'Office monastique : il forme le cœur à la louange incessante."
+   ]
+  },
+  {
+   "id": "oraison_silencieuse",
+   "name_fr": "Oraison silencieuse",
+   "name_it": "Orazione silenziosa",
+   "desc": "Demeurer en silence devant Dieu, dans la foi et l'amour, sans paroles ni images : « lectio » du cœur.",
+   "promises": [
+    "« Je l'avise et il m'avise. » (le paysan d'Ars au saint Curé)",
+    "Union à Dieu dans le silence, à l'image de la Madone du Silence et des Pères du désert.",
+    "Fruit : la paix profonde et la transformation intérieure par la présence de Dieu."
+   ]
+  }
+ ]
+}

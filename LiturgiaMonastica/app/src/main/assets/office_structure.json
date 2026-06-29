@@ -1,0 +1,504 @@
+{
+ "note": "Schema éditable. Distribution du psautier selon le schéma bénédictin traditionnel (Règle de saint Benoît, ch. 8-19). Numérotation hébraïque (= Crampon/CEI). Entre crochets l'équivalent Vulgate. Vous pouvez corriger librement les listes 'psalms' pour les adapter à votre bréviaire monastique.",
+ "fixed": {
+  "introduction": {
+   "title_fr": "Ouverture",
+   "title_it": "Introduzione",
+   "versicle_fr": "V. Dieu, viens à mon aide.\nR. Seigneur, à notre secours.\nGloire au Père, et au Fils, et au Saint-Esprit,\nau Dieu qui est, qui était et qui vient,\npour les siècles des siècles. Amen. (Alléluia.)",
+   "versicle_it": "V. O Dio, vieni a salvarmi.\nR. Signore, vieni presto in mio aiuto.\nGloria al Padre e al Figlio e allo Spirito Santo,\ncome era nel principio, e ora e sempre\nnei secoli dei secoli. Amen. (Alleluia.)",
+   "versicle_la": "V. Deus, in adiutorium meum intende.\nR. Domine, ad adiuvandum me festina.\nGloria Patri, et Filio, et Spiritui Sancto,\nsicut erat in principio, et nunc, et semper,\net in saecula saeculorum. Amen. (Alleluia.)"
+  },
+  "gloria_fr": "Gloire au Père, et au Fils, et au Saint-Esprit,\ncomme il était au commencement, maintenant et toujours,\net dans les siècles des siècles. Amen.",
+  "gloria_it": "Gloria al Padre e al Figlio e allo Spirito Santo,\ncome era nel principio, e ora e sempre,\nnei secoli dei secoli. Amen.",
+  "our_father_fr": "Notre Père, qui es aux cieux,\nque ton nom soit sanctifié,\nque ton règne vienne,\nque ta volonté soit faite sur la terre comme au ciel.\nDonne-nous aujourd'hui notre pain de ce jour.\nPardonne-nous nos offenses,\ncomme nous pardonnons aussi à ceux qui nous ont offensés.\nEt ne nous laisse pas entrer en tentation,\nmais délivre-nous du Mal. Amen.",
+  "our_father_it": "Padre nostro, che sei nei cieli,\nsia santificato il tuo nome,\nvenga il tuo regno,\nsia fatta la tua volontà, come in cielo così in terra.\nDacci oggi il nostro pane quotidiano,\ne rimetti a noi i nostri debiti\ncome noi li rimettiamo ai nostri debitori,\ne non abbandonarci alla tentazione,\nma liberaci dal male. Amen.",
+  "conclusion_fr": "V. Bénissons le Seigneur.\nR. Nous rendons grâce à Dieu.\nQue les âmes des fidèles défunts, par la miséricorde de Dieu, reposent en paix. Amen.",
+  "conclusion_it": "V. Benediciamo il Signore.\nR. Rendiamo grazie a Dio.\nLe anime dei fedeli defunti, per la misericordia di Dio, riposino in pace. Amen."
+ },
+ "hours": {
+  "vigiliae": {
+   "name_fr": "Vigiles (Matines)",
+   "name_it": "Vigilie (Mattutino)",
+   "name_la": "Vigiliae",
+   "order": 1,
+   "uses_canticle": null
+  },
+  "laudes": {
+   "name_fr": "Laudes",
+   "name_it": "Lodi",
+   "name_la": "Laudes",
+   "order": 2,
+   "uses_canticle": "benedictus"
+  },
+  "prima": {
+   "name_fr": "Prime",
+   "name_it": "Prima",
+   "name_la": "Prima",
+   "order": 3,
+   "uses_canticle": null
+  },
+  "tertia": {
+   "name_fr": "Tierce",
+   "name_it": "Terza",
+   "name_la": "Tertia",
+   "order": 4,
+   "uses_canticle": null
+  },
+  "sexta": {
+   "name_fr": "Sexte",
+   "name_it": "Sesta",
+   "name_la": "Sexta",
+   "order": 5,
+   "uses_canticle": null
+  },
+  "nona": {
+   "name_fr": "None",
+   "name_it": "Nona",
+   "name_la": "Nona",
+   "order": 6,
+   "uses_canticle": null
+  },
+  "vesperae": {
+   "name_fr": "Vêpres",
+   "name_it": "Vespri",
+   "name_la": "Vesperae",
+   "order": 7,
+   "uses_canticle": "magnificat"
+  },
+  "completorium": {
+   "name_fr": "Complies",
+   "name_it": "Compieta",
+   "name_la": "Completorium",
+   "order": 8,
+   "uses_canticle": "nunc_dimittis"
+  }
+ },
+ "distribution": {
+  "_doc": "Pour chaque jour (0=dimanche ... 6=samedi) et chaque heure, la liste des psaumes (numérotation hébraïque). Compline est invariable. À vérifier/adapter selon votre bréviaire.",
+  "completorium": {
+   "all": [
+    4,
+    91,
+    134
+   ]
+  },
+  "laudes": {
+   "0": [
+    51,
+    118,
+    63,
+    148,
+    149,
+    150
+   ],
+   "1": [
+    51,
+    5,
+    36,
+    148,
+    149,
+    150
+   ],
+   "2": [
+    51,
+    43,
+    57,
+    148,
+    149,
+    150
+   ],
+   "3": [
+    51,
+    64,
+    65,
+    148,
+    149,
+    150
+   ],
+   "4": [
+    51,
+    88,
+    90,
+    148,
+    149,
+    150
+   ],
+   "5": [
+    51,
+    76,
+    92,
+    148,
+    149,
+    150
+   ],
+   "6": [
+    51,
+    143,
+    117,
+    148,
+    149,
+    150
+   ]
+  },
+  "vesperae": {
+   "0": [
+    110,
+    111,
+    112,
+    113
+   ],
+   "1": [
+    114,
+    115,
+    116,
+    121
+   ],
+   "2": [
+    123,
+    124,
+    125,
+    126
+   ],
+   "3": [
+    127,
+    128,
+    129,
+    132
+   ],
+   "4": [
+    136,
+    137,
+    138,
+    139
+   ],
+   "5": [
+    140,
+    141,
+    145,
+    146
+   ],
+   "6": [
+    144,
+    147,
+    142,
+    109
+   ]
+  },
+  "prima": {
+   "0": [
+    118
+   ],
+   "1": [
+    1,
+    2,
+    6
+   ],
+   "2": [
+    7,
+    8,
+    9
+   ],
+   "3": [
+    10,
+    11,
+    12
+   ],
+   "4": [
+    13,
+    14,
+    15
+   ],
+   "5": [
+    16,
+    17
+   ],
+   "6": [
+    18,
+    19,
+    20
+   ]
+  },
+  "tertia": {
+   "0": [
+    119
+   ],
+   "1": [
+    119
+   ],
+   "2": [
+    120,
+    121,
+    122
+   ],
+   "3": [
+    123,
+    124,
+    125
+   ],
+   "4": [
+    126,
+    127,
+    128
+   ],
+   "5": [
+    129,
+    130,
+    131
+   ],
+   "6": [
+    132,
+    133,
+    134
+   ]
+  },
+  "sexta": {
+   "0": [
+    119
+   ],
+   "1": [
+    119
+   ],
+   "2": [
+    53,
+    54,
+    55
+   ],
+   "3": [
+    54,
+    55,
+    56
+   ],
+   "4": [
+    69,
+    70,
+    71
+   ],
+   "5": [
+    80,
+    81,
+    82
+   ],
+   "6": [
+    83,
+    84,
+    85
+   ]
+  },
+  "nona": {
+   "0": [
+    119
+   ],
+   "1": [
+    119
+   ],
+   "2": [
+    59,
+    60,
+    66
+   ],
+   "3": [
+    68,
+    69,
+    72
+   ],
+   "4": [
+    73,
+    74,
+    75
+   ],
+   "5": [
+    86,
+    87,
+    89
+   ],
+   "6": [
+    95,
+    96,
+    97
+   ]
+  },
+  "vigiliae": {
+   "0": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+   ],
+   "1": [
+    32,
+    33,
+    34,
+    36,
+    37,
+    38
+   ],
+   "2": [
+    39,
+    40,
+    41,
+    43,
+    44,
+    45
+   ],
+   "3": [
+    46,
+    47,
+    48,
+    49,
+    51,
+    52
+   ],
+   "4": [
+    58,
+    59,
+    60,
+    61,
+    67,
+    68
+   ],
+   "5": [
+    77,
+    78,
+    79,
+    82,
+    88,
+    93
+   ],
+   "6": [
+    101,
+    102,
+    103,
+    104,
+    105,
+    106
+   ]
+  }
+ },
+ "sources": {
+  "psalms": "Bible Crampon 1923 (texte français)",
+  "office_ordinary": "Breviarium Monasticum, Pars II (Compline, hymnes, antiennes — corroborés par OCR de la source fournie)",
+  "note": "Les hymnes et l'ordinaire des Complies sont donnés en latin (texte liturgique traditionnel) avec traduction française."
+ },
+ "hymns": {
+  "prima": {
+   "title": "Iam lucis orto sidere",
+   "latin": "Iam lucis orto sídere,\nDeum precémur súpplices,\nut in diúrnis áctibus\nnos servet a nocéntibus.\n\nLinguam refrénans témperet,\nne litis horror ínsonet ;\nvisum fovéndo cóntegat,\nne vanitátes háuriat.\n\nDeo Patri sit glória,\neiúsque soli Fílio,\ncum Spíritu Paráclito,\nnunc et per omne sǽculum. Amen.",
+   "fr": "Déjà le soleil se lève ; suppliants, prions Dieu, afin que dans les actes du jour il nous garde de tout mal. Qu'il modère et refrène la langue, que ne retentisse pas l'horreur des querelles ; qu'il protège nos regards, qu'ils ne se repaissent pas de vanités. À Dieu le Père soit la gloire, et à son Fils unique, avec l'Esprit Paraclet, maintenant et dans tous les siècles. Amen."
+  },
+  "tertia": {
+   "title": "Nunc Sancte nobis Spiritus",
+   "latin": "Nunc Sancte nobis Spíritus,\nunum Patri cum Fílio,\ndignáre promptus íngeri\nnostro refúsus péctori.\n\nOs, lingua, mens, sensus, vigor\nconfessiónem pérsonent,\nflamméscat igne cáritas,\naccéndat ardor próximos. Amen.",
+   "fr": "Maintenant, Esprit Saint, un avec le Père et le Fils, daigne descendre promptement et te répandre dans notre cœur. Que la bouche, la langue, l'esprit, les sens, la force proclament ta louange ; que la charité s'embrase de ton feu et que son ardeur enflamme le prochain. Amen."
+  },
+  "sexta": {
+   "title": "Rector potens, verax Deus",
+   "latin": "Rector potens, verax Deus,\nqui témperas rerum vices,\nsplendóre mane ínstruis\net ígnibus merídiem.\n\nExstíngue flammas lítium,\naufer calórem nóxium,\nconfer salútem córporum\nverámque pacem córdium. Amen.",
+   "fr": "Maître puissant, Dieu de vérité, qui règles le cours des choses, tu pares le matin de splendeur et de feux le midi. Éteins les flammes des querelles, ôte la chaleur nuisible, donne la santé du corps et la vraie paix des cœurs. Amen."
+  },
+  "nona": {
+   "title": "Rerum Deus tenax vigor",
+   "latin": "Rerum Deus tenax vigor,\nimmótus in te pérmanens,\nlucis diúrnæ témpora\nsuccéssibus detérminans.\n\nLargíre lumen véspere,\nquo vita nusquam décidat,\nsed prǽmium mortis sacræ\nperénnis instet glória. Amen.",
+   "fr": "Dieu, force qui maintiens toutes choses, demeurant immobile en toi-même, tu fixes les temps du jour par leurs successions. Accorde-nous ta lumière au soir, afin que la vie ne décline jamais, mais qu'une gloire éternelle soit la récompense d'une mort sainte. Amen."
+  },
+  "vesperae": {
+   "title": "O lux beata Trinitas",
+   "latin": "O lux beáta Trínitas,\net principális Únitas,\niam sol recédit ígneus :\ninfúnde lumen córdibus.\n\nTe mane laudum cármine,\nte deprecémur véspere ;\nte nostra supplex glória\nper cuncta laudet sǽcula. Amen.",
+   "fr": "Ô lumière, Trinité bienheureuse, et souveraine Unité, déjà le soleil de feu se retire : répands ta lumière dans nos cœurs. Au matin nous te louons par nos chants, au soir nous te supplions ; que notre gloire suppliante te loue dans tous les siècles. Amen.",
+   "src": "Breviarium Monasticum, Sabbato ad Vesperas"
+  },
+  "laudes": {
+   "title": "Splendor paternae gloriae",
+   "latin": "Splendor patérnæ glóriæ,\nde luce lucem próferens,\nlux lucis et fons lúminis,\ndiem dies illúminans.\n\nVerúsque sol illábere\nmicans nitóre pérpeti,\niubárque Sancti Spíritus\ninfúnde nostris sénsibus. Amen.",
+   "fr": "Splendeur de la gloire du Père, lumière jaillie de la lumière, lumière de lumière et source du jour, jour qui illumines le jour. Vrai soleil, descends en nous, brillant d'un éclat sans fin, et répands dans nos sens la clarté de l'Esprit Saint. Amen."
+  },
+  "completorium": {
+   "title": "Te lucis ante terminum",
+   "latin": "Te lucis ante términum,\nrerum Creátor, póscimus,\nut sólita cleméntia\nsis præsul ad custódiam.\n\nProcul recédant sómnia\net nóctium phantásmata ;\nhostémque nostrum cómprime,\nne polluántur córpora.\n\nPræsta, Pater piíssime,\nPatríque compar Únice,\ncum Spíritu Paráclito\nregnans per omne sǽculum. Amen.",
+   "fr": "Avant que le jour ne s'éteigne, Créateur de toutes choses, nous t'implorons : selon ta clémence accoutumée, sois notre protecteur et notre garde. Que s'enfuient au loin les songes et les fantômes de la nuit ; réprime notre ennemi, afin que nos corps demeurent purs. Exauce-nous, Père très bon, et toi, Fils unique égal au Père, qui, avec l'Esprit Paraclet, règnes dans tous les siècles. Amen."
+  }
+ },
+ "completorium_full": {
+  "opening": {
+   "latin": "Iube, domne, benedícere.\nNoctem quiétam et finem perféctum concédat nobis Dóminus omnípotens. Amen.",
+   "fr": "Veuillez, Seigneur, bénir.\nQue le Seigneur tout-puissant nous accorde une nuit tranquille et une fin parfaite. Amen."
+  },
+  "lectio_brevis": {
+   "ref": "1 P 5, 8-9",
+   "latin": "Fratres : Sóbrii estóte et vigiláte ; quia adversárius vester diábolus tamquam leo rúgiens círcuit, quærens quem dévoret : cui resístite fortes in fide. Tu autem, Dómine, miserére nobis.",
+   "fr": "Frères, soyez sobres et veillez : car votre adversaire, le diable, comme un lion rugissant, rôde cherchant qui dévorer ; résistez-lui, fermes dans la foi. Et toi, Seigneur, aie pitié de nous."
+  },
+  "adjutorium": {
+   "latin": "V. Adiutórium nostrum in nómine Dómini.\nR. Qui fecit cælum et terram.",
+   "fr": "V. Notre secours est dans le nom du Seigneur.\nR. Qui a fait le ciel et la terre."
+  },
+  "confiteor": {
+   "latin": "Confíteor Deo omnipoténti, beátæ Maríæ semper Vírgini, beáto Michaéli Archángelo, beáto Ioánni Baptístæ, sanctis Apóstolis Petro et Paulo, beáto Patre nostro Benedícto, ómnibus Sanctis, et vobis, fratres : quia peccávi nimis cogitatióne, verbo et ópere : mea culpa, mea culpa, mea máxima culpa.",
+   "fr": "Je confesse à Dieu tout-puissant, à la bienheureuse Marie toujours Vierge, à saint Michel Archange, à saint Jean-Baptiste, aux saints apôtres Pierre et Paul, à notre bienheureux père Benoît, à tous les saints, et à vous, mes frères, que j'ai beaucoup péché, en pensée, en parole et par action : c'est ma faute, c'est ma faute, c'est ma très grande faute."
+  },
+  "converte": {
+   "latin": "V. Convérte nos, Deus, salutáris noster.\nR. Et avérte iram tuam a nobis.\nV. Deus, in adiutórium meum inténde.\nR. Dómine, ad adiuvándum me festína. Glória Patri…",
+   "fr": "V. Convertis-nous, ô Dieu, notre salut.\nR. Et détourne de nous ta colère.\nV. Dieu, viens à mon aide.\nR. Seigneur, à notre secours. Gloire au Père…"
+  },
+  "antiphon": {
+   "latin": "Ant. Miserére mihi, Dómine, et exáudi oratiónem meam. (T. P. Allelúia.)",
+   "fr": "Ant. Aie pitié de moi, Seigneur, et exauce ma prière. (T. P. Alléluia.)"
+  },
+  "psalms": [
+   4,
+   91,
+   134
+  ],
+  "chapter": {
+   "ref": "Jr 14, 9",
+   "latin": "Tu autem in nobis es, Dómine, et nomen sanctum tuum invocátum est super nos : ne derelínquas nos, Dómine Deus noster. R. Deo grátias.",
+   "fr": "Mais toi, tu es au milieu de nous, Seigneur, et ton saint nom a été invoqué sur nous : ne nous abandonne pas, Seigneur notre Dieu. R. Rendons grâce à Dieu."
+  },
+  "responsory": {
+   "latin": "R. In manus tuas, Dómine, comméndo spíritum meum.\nV. Redemísti nos, Dómine, Deus veritátis.\nV. Custódi nos, Dómine, ut pupíllam óculi.\nR. Sub umbra alárum tuárum prótege nos. (T. P. Allelúia.)",
+   "fr": "R. En tes mains, Seigneur, je remets mon esprit.\nV. Tu nous as rachetés, Seigneur, Dieu de vérité.\nV. Garde-nous, Seigneur, comme la prunelle de l'œil.\nR. À l'ombre de tes ailes, protège-nous. (T. P. Alléluia.)"
+  },
+  "nunc_antiphon": {
+   "latin": "Ant. Salva nos, Dómine, vigilántes, custódi nos dormiéntes : ut vigilémus cum Christo, et requiescámus in pace. (T. P. Allelúia.)",
+   "fr": "Ant. Sauve-nous, Seigneur, durant la veille, garde-nous durant le sommeil : afin que nous veillions avec le Christ et que nous reposions dans la paix. (T. P. Alléluia.)"
+  },
+  "collect": {
+   "latin": "Orémus. Vísita, quǽsumus, Dómine, habitatiónem istam, et omnes insídias inimíci ab ea longe repélle : Ángeli tui sancti hábitent in ea, qui nos in pace custódiant ; et benedíctio tua sit super nos semper. Per Dóminum nostrum Iesum Christum. Amen.",
+   "fr": "Prions. Visite, nous t'en prions, Seigneur, cette demeure, et écarte loin d'elle toutes les embûches de l'ennemi : que tes saints anges y habitent, pour nous garder dans la paix ; et que ta bénédiction soit toujours sur nous. Par Jésus-Christ notre Seigneur. Amen."
+  },
+  "blessing": {
+   "latin": "V. Benedicámus Dómino. R. Deo grátias.\nBenedícat et custódiat nos omnípotens et miséricors Dóminus, Pater, et Fílius, et Spíritus Sanctus. Amen.",
+   "fr": "V. Bénissons le Seigneur. R. Rendons grâce à Dieu.\nQue le Dieu tout-puissant et miséricordieux nous bénisse et nous garde, le Père, et le Fils, et le Saint-Esprit. Amen."
+  }
+ },
+ "marian_antiphons": {
+  "note": "Antienne finale à la Sainte Vierge, selon le temps liturgique.",
+  "salve_regina": {
+   "title": "Salve Regina",
+   "latin": "Salve, Regína, mater misericórdiæ ; vita, dulcédo et spes nostra, salve. Ad te clamámus, éxsules fílii Hevæ. Ad te suspirámus, geméntes et flentes in hac lacrimárum valle. Eia ergo, advocáta nostra, illos tuos misericórdes óculos ad nos convérte. Et Iesum, benedíctum fructum ventris tui, nobis post hoc exsílium osténde. O clemens, o pia, o dulcis Virgo María.",
+   "fr": "Salut, ô Reine, Mère de miséricorde, notre vie, notre douceur et notre espérance, salut. Vers toi nous crions, fils d'Ève exilés ; vers toi nous soupirons, gémissant et pleurant dans cette vallée de larmes. Ô toi, notre avocate, tourne vers nous tes regards miséricordieux. Et après cet exil, montre-nous Jésus, le fruit béni de ton sein. Ô clémente, ô miséricordieuse, ô douce Vierge Marie."
+  },
+  "alma_redemptoris": {
+   "title": "Alma Redemptoris Mater (Avent–Présentation)",
+   "latin": "Alma Redemptóris Mater…",
+   "fr": "Sainte Mère du Rédempteur… (temps de l'Avent et de Noël)"
+  },
+  "ave_regina": {
+   "title": "Ave Regina caelorum (Présentation–Pâques)",
+   "latin": "Ave, Regína cælórum…",
+   "fr": "Salut, Reine des cieux… (de la Présentation au Carême)"
+  },
+  "regina_caeli": {
+   "title": "Regina caeli (Temps pascal)",
+   "latin": "Regína cæli, lætáre, allelúia…",
+   "fr": "Reine du ciel, réjouis-toi, alléluia… (temps pascal)"
+  }
+ }
+}

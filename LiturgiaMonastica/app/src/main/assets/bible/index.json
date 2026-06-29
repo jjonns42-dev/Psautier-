@@ -1,0 +1,41 @@
+{
+ "language": "fr",
+ "source": "Bible Crampon 1923",
+ "books": [
+  {
+   "id": "psaumes",
+   "name": "Les Psaumes",
+   "file": "bible/psaumes_fr.json",
+   "testament": "AT",
+   "chapters": 150
+  },
+  {
+   "id": "matthieu",
+   "name": "Évangile selon saint Matthieu",
+   "file": "bible/matthieu_fr.json",
+   "testament": "NT",
+   "chapters": 28
+  },
+  {
+   "id": "marc",
+   "name": "Évangile selon saint Marc",
+   "file": "bible/marc_fr.json",
+   "testament": "NT",
+   "chapters": 16
+  },
+  {
+   "id": "luc",
+   "name": "Évangile selon saint Luc",
+   "file": "bible/luc_fr.json",
+   "testament": "NT",
+   "chapters": 24
+  },
+  {
+   "id": "jean",
+   "name": "Évangile selon saint Jean",
+   "file": "bible/jean_fr.json",
+   "testament": "NT",
+   "chapters": 21
+  }
+ ]
+}
