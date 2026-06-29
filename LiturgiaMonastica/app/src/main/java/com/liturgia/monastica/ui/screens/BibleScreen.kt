@@ -6,6 +6,7 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
@@ -96,7 +97,7 @@ private fun ChapterGrid(book: BibleBook, repo: ContentRepository, onPick: (Int) 
         columns = GridCells.Adaptive(minSize = 56.dp),
         modifier = Modifier.fillMaxSize().padding(12.dp)
     ) {
-        androidx.compose.foundation.lazy.grid.items((1..count).toList()) { c ->
+        items((1..count).toList()) { c ->
             Card(
                 Modifier.padding(6.dp).clickable { onPick(c) },
                 shape = RoundedCornerShape(8.dp),
