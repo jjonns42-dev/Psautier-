@@ -1,0 +1,26 @@
+{
+  "melodies": [
+    {
+      "id": "mode1_sample",
+      "name": { "ar": "اللحن الأول", "it": "Primo modo", "syr": "" },
+      "mode": 1,
+      "incipit": { "ar": "", "it": "", "syr": "" },
+      "audioAsset": null
+    }
+  ],
+  "hymns": [
+    {
+      "id": "nuhro_sample",
+      "title": { "ar": "ترنيمة النور", "it": "Inno della Luce (Nuhro)", "syr": "ܢܘܗܪܐ" },
+      "melodyId": "mode1_sample",
+      "stanzas": [
+        {
+          "ar": "[المقطع الأول — يُدخَل لاحقًا]",
+          "it": "[Prima strofa — da inserire]",
+          "syr": ""
+        }
+      ],
+      "season": null
+    }
+  ]
+}

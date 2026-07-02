@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Shḥimo</string>
+    <string name="nav_office">Ufficio</string>
+    <string name="nav_settings">Impostazioni</string>
+    <string name="hour_ramsho">Ramsho (Vespro)</string>
+    <string name="hour_sutoro">Sutoro (Compieta)</string>
+    <string name="hour_lilyo">Lilyo (Veglia notturna)</string>
+    <string name="hour_safro">Safro (Lodi mattutine)</string>
+    <string name="empty_office">I testi di questo ufficio non sono ancora stati inseriti.</string>
+    <string name="settings_language">Lingua</string>
+    <string name="settings_font_size">Dimensione del testo</string>
+</resources>

@@ -1,0 +1,56 @@
+[
+  {
+    "id": "nativity",
+    "title": { "ar": "عيد الميلاد", "it": "Natività del Signore", "syr": "ܝܠܕܐ" },
+    "rank": "SOLEMNITY",
+    "color": "WHITE",
+    "season": "NATIVITY",
+    "fixedDate": "12-25",
+    "officeId": "feast_nativity"
+  },
+  {
+    "id": "epiphany",
+    "title": { "ar": "الدنح / الغطاس", "it": "Epifania (Denho)", "syr": "ܕܢܚܐ" },
+    "rank": "SOLEMNITY",
+    "color": "WHITE",
+    "season": "EPIPHANY",
+    "fixedDate": "01-06",
+    "officeId": null
+  },
+  {
+    "id": "st_maron",
+    "title": { "ar": "القديس مارون", "it": "San Marone", "syr": "ܡܪܘܢ" },
+    "rank": "FEAST",
+    "color": "WHITE",
+    "season": "EPIPHANY",
+    "fixedDate": "02-09",
+    "officeId": null
+  },
+  {
+    "id": "resurrection",
+    "title": { "ar": "القيامة", "it": "Resurrezione (Qyomto)", "syr": "ܩܝܡܬܐ" },
+    "rank": "SOLEMNITY",
+    "color": "WHITE",
+    "season": "RESURRECTION",
+    "offsetFromEaster": 0,
+    "officeId": null
+  },
+  {
+    "id": "pentecost",
+    "title": { "ar": "العنصرة", "it": "Pentecoste", "syr": "ܦܢܛܩܘܣܛܐ" },
+    "rank": "SOLEMNITY",
+    "color": "RED",
+    "season": "PENTECOST",
+    "offsetFromEaster": 49,
+    "officeId": null
+  },
+  {
+    "id": "holy_cross",
+    "title": { "ar": "عيد الصليب", "it": "Esaltazione della Croce (Slibo)", "syr": "ܨܠܝܒܐ" },
+    "rank": "FEAST",
+    "color": "RED",
+    "season": "HOLY_CROSS",
+    "fixedDate": "09-14",
+    "officeId": null
+  }
+]

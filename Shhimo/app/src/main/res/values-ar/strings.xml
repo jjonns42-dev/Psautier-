@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">شحيمو</string>
+    <string name="nav_office">المكتب</string>
+    <string name="nav_settings">الإعدادات</string>
+    <string name="hour_ramsho">رمشو (صلاة المساء)</string>
+    <string name="hour_sutoro">سوتورو (صلاة النوم)</string>
+    <string name="hour_lilyo">ليليو (صلاة الليل)</string>
+    <string name="hour_safro">صفرو (صلاة الصباح)</string>
+    <string name="empty_office">لم تُدخَل نصوص هذا المكتب بعد.</string>
+    <string name="settings_language">اللغة</string>
+    <string name="settings_font_size">حجم الخط</string>
+</resources>
