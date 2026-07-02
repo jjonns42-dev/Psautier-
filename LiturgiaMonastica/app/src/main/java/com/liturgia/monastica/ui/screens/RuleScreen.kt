@@ -33,25 +33,67 @@ private fun familyLabel(f: String, it: Boolean) = when (f) {
     else -> if (it) "Carismatica cattolica" else "Charismatique catholique"
 }
 
-/** Extra, procedurally generated intensifications once every named devotion is unlocked — the Rule never truly ends. */
-private val EXTRA_INTENSIFIERS = listOf(
-    "Prolonge ton temps d'oraison silencieuse de cinq minutes de plus.",
-    "Ajoute un jour de jeûne supplémentaire ce mois-ci.",
-    "Reprends une veille ou un temps d'adoration nocturne supplémentaire.",
-    "Consacre une journée entière au silence complet ce mois-ci.",
-    "Double, une semaine sur deux, l'une des dévotions déjà acquises.",
-    "Ajoute un acte de charité cachée chaque jour de cette semaine."
-)
+/** Étapes réelles de formation religieuse, communes aux trois familles (voir recherche : Shalom a
+ *  Postulantado → Discipulado → Promessas Temporárias → Definitivas ; les ordres catholiques et les
+ *  monastères orthodoxes suivent le même schéma postulat/noviciat/profession). */
+private fun fullUnlockLevel(tradition: RuleTradition, diff: RuleDifficulty): Int {
+    val stepsNeeded = (maxDevotionsFor(tradition, diff) - diff.startCount).coerceAtLeast(0)
+    return 1 + diff.paceLevels * stepsNeeded
+}
+
+private data class Stage(val label: String, val sub: String)
+
+private fun stageFor(level: Int, tradition: RuleTradition, diff: RuleDifficulty, italian: Boolean): Stage {
+    val fullLevel = fullUnlockLevel(tradition, diff)
+    return when {
+        level < fullLevel && level <= diff.paceLevels ->
+            Stage(if (italian) "Postulato" else "Postulat", if (italian) "Découverte de la règle" else "Découverte de la règle")
+        level < fullLevel ->
+            Stage(if (italian) "Noviziato" else "Noviciat", if (italian) "La règle s'apprend, dévotion après dévotion" else "La règle s'apprend, dévotion après dévotion")
+        level == fullLevel -> {
+            val pct = (diff.capFraction * 100).toInt()
+            val sub = if (diff == RuleDifficulty.DIFFICILE)
+                (if (italian) "La regola intera dell'ordine, senza riduzione." else "La règle intégrale de l'ordre, sans réduction.")
+            else
+                (if (italian) "Una versione adattata al tuo stato di vita ($pct% della regola integrale)." else "Une version adaptée à ton état de vie ($pct % de la règle intégrale).")
+            Stage(if (italian) "Professione" else "Profession", sub)
+        }
+        else -> {
+            val weeksSince = level - fullLevel
+            val label = when {
+                weeksSince < 4 -> if (italian) "Fedeltà — settimana $weeksSince" else "Fidélité — semaine $weeksSince"
+                weeksSince < 12 -> if (italian) "~1 mese di fedeltà" else "~1 mois de fidélité"
+                weeksSince < 26 -> if (italian) "~3 mesi di fedeltà" else "~3 mois de fidélité"
+                weeksSince < 52 -> if (italian) "~6 mesi di fedeltà" else "~6 mois de fidélité"
+                else -> {
+                    val years = weeksSince / 52
+                    val jubilee = years in setOf(5, 10, 15, 20, 25, 30, 40, 50)
+                    if (jubilee) (if (italian) "Giubileo — $years anni di fedeltà" else "Jubilé — $years ans de fidélité")
+                    else (if (italian) "$years anni di fedeltà" else "$years ans de fidélité")
+                }
+            }
+            Stage(label, if (italian) "Vivere la regola, senza aggiungere, senza cedere" else "Vivre la règle, sans en ajouter, sans en céder")
+        }
+    }
+}
+
+/** Nombre de dévotions accessibles au maximum pour cette difficulté : Difficile seul atteint 100% de la Règle. */
+private fun maxDevotionsFor(tradition: RuleTradition, diff: RuleDifficulty): Int {
+    val cap = kotlin.math.ceil(tradition.devotions.size * diff.capFraction).toInt()
+    return cap.coerceIn(diff.startCount, tradition.devotions.size)
+}
 
 private fun activeDevotionCount(tradition: RuleTradition, diff: RuleDifficulty, level: Int): Int {
     val steps = (level - 1) / diff.paceLevels
-    return (diff.startCount + steps).coerceIn(0, tradition.devotions.size)
+    return (diff.startCount + steps).coerceIn(0, maxDevotionsFor(tradition, diff))
 }
 
-private fun extraIntensifierSteps(tradition: RuleTradition, diff: RuleDifficulty, level: Int): Int {
-    val unlockStepsTotal = (tradition.devotions.size - diff.startCount).coerceAtLeast(0)
-    val currentStep = (level - 1) / diff.paceLevels
-    return (currentStep - unlockStepsTotal).coerceAtLeast(0)
+/** Résout les dévotions actives en retirant celles qu'une dévotion plus récente remplace
+ *  (ex. "Trois Heures de l'Office" retire "Une Heure" et "Deux Heures" de l'affichage). */
+private fun resolveActive(tradition: RuleTradition, activeCount: Int): List<RuleDevotion> {
+    val raw = tradition.devotions.take(activeCount)
+    val supersededIndices = raw.mapNotNull { if (it.supersedes >= 0) it.supersedes else null }.toSet()
+    return raw.filterIndexed { idx, _ -> idx !in supersededIndices }
 }
 
 @Composable
@@ -177,12 +219,27 @@ private fun RuleSetup(repo: ContentRepository, store: GameStore, modifier: Modif
                     shape = RoundedCornerShape(8.dp)
                 ) {
                     Row(Modifier.padding(14.dp).fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
-                        Text(d.label, style = MaterialTheme.typography.titleSmall, color = MaterialTheme.colorScheme.onSurface)
-                        Text(
-                            (if (italian) "nuova devozione ogni " else "nouvelle dévotion tous les ") +
-                                "${d.paceLevels} " + (if (italian) "settimane" else "semaines"),
-                            style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant
-                        )
+                        Column {
+                            Text(d.label, style = MaterialTheme.typography.titleSmall, color = MaterialTheme.colorScheme.onSurface)
+                            Text(
+                                if (d == RuleDifficulty.DIFFICILE)
+                                    (if (italian) "Regola integrale (100%)" else "Règle intégrale (100 %)")
+                                else
+                                    (if (italian) "Regola adattata (${(d.capFraction*100).toInt()}%)" else "Règle adaptée (${(d.capFraction*100).toInt()} %)"),
+                                style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.tertiary
+                            )
+                        }
+                        Column(horizontalAlignment = Alignment.End) {
+                            Text(
+                                (if (italian) "nuova devozione ogni " else "nouvelle dévotion tous les ") +
+                                    "${d.paceLevels} " + (if (italian) "settimane" else "semaines"),
+                                style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant
+                            )
+                            Text(
+                                (if (italian) "durées ×" else "durées ×") + "${d.timeMultiplier}",
+                                style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant
+                            )
+                        }
                     }
                 }
             }
@@ -219,11 +276,15 @@ private fun RuleRunning(repo: ContentRepository, store: GameStore, modifier: Mod
 
     val diff = RuleDifficulty.fromKey(p.difficulty)
     val level = p.level
-    val month = ((level - 1) / 4) + 1
     val activeCount = activeDevotionCount(tradition, diff, level)
-    val unlocked = tradition.devotions.take(activeCount)
-    val extraSteps = extraIntensifierSteps(tradition, diff, level)
+    val unlocked = resolveActive(tradition, activeCount)
+    val stage = stageFor(level, tradition, diff, italian)
     val accent = ruleAccent(tradition.accent)
+    val fullLevel = fullUnlockLevel(tradition, diff)
+    val weeksSince = (level - fullLevel).coerceAtLeast(0)
+    val currentYear = if (level > fullLevel) weeksSince / 52 else 0
+    var showHistory by remember { mutableStateOf(false) }
+    val showRenewal = currentYear >= 1 && currentYear > p.lastRenewalYear && weeksSince % 52 == 0
 
     Backdrop(R.drawable.madonna_silenzio, modifier, dim = 0.7f) {
         Column(
@@ -235,8 +296,17 @@ private fun RuleRunning(repo: ContentRepository, store: GameStore, modifier: Mod
             Text(tradition.subtitle, style = MaterialTheme.typography.labelLarge, color = Color(0xFFD8B768), textAlign = TextAlign.Center)
             Spacer(Modifier.height(10.dp))
             Text(
-                (if (italian) "Livello " else "Niveau ") + "$level · " + (if (italian) "Mese " else "Mois ") + "$month · ${diff.label}",
-                style = MaterialTheme.typography.titleMedium, color = Color.White
+                stage.label, style = MaterialTheme.typography.titleLarge, color = Color(0xFFD8B768),
+                textAlign = TextAlign.Center, fontWeight = FontWeight.SemiBold
+            )
+            Text(
+                stage.sub, style = MaterialTheme.typography.bodySmall, color = Color(0xFFB9A87A),
+                textAlign = TextAlign.Center
+            )
+            Spacer(Modifier.height(4.dp))
+            Text(
+                (if (italian) "Livello " else "Niveau ") + "$level · ${diff.label}",
+                style = MaterialTheme.typography.labelMedium, color = Color.White.copy(alpha = 0.6f)
             )
 
             if (store.ruleJustDemoted) {
@@ -273,29 +343,36 @@ private fun RuleRunning(repo: ContentRepository, store: GameStore, modifier: Mod
 
             Spacer(Modifier.height(14.dp))
             SectionHeader(if (italian) "La tua regola attuale" else "Ta règle actuelle", accent)
+            val totalMinutes = unlocked.sumOf { scaledMinutes(it.minutes, diff) }
+            if (totalMinutes > 0) {
+                Text(
+                    (if (italian) "Tempo di preghiera stimato oggi: ~" else "Temps de prière estimé aujourd'hui : ~") +
+                        "$totalMinutes " + (if (italian) "min" else "min"),
+                    style = MaterialTheme.typography.labelMedium, color = Color(0xFFD8B768),
+                    modifier = Modifier.padding(bottom = 6.dp)
+                )
+            }
             unlocked.forEachIndexed { idx, dev ->
                 val isNewest = idx == unlocked.lastIndex
-                RuleDevotionLine(dev, highlighted = isNewest, italian = italian)
+                RuleDevotionLine(dev, highlighted = isNewest, italian = italian, minutes = scaledMinutes(dev.minutes, diff))
             }
 
-            if (extraSteps > 0) {
+            if (level > fullUnlockLevel(tradition, diff)) {
                 Spacer(Modifier.height(14.dp))
-                SectionHeader(if (italian) "Intensificazioni" else "Intensifications", accent)
-                for (i in 0 until extraSteps) {
-                    val base = EXTRA_INTENSIFIERS[i % EXTRA_INTENSIFIERS.size]
-                    val cycle = i / EXTRA_INTENSIFIERS.size
-                    val text = if (cycle > 0) "$base (${if (italian) "rinnovato" else "renouvelé"} ×${cycle + 1})" else base
-                    RuleLine(text, bullet = "↑")
+                Card(
+                    Modifier.fillMaxWidth(),
+                    colors = CardDefaults.cardColors(containerColor = Color(0x22D8B768)),
+                    shape = RoundedCornerShape(6.dp)
+                ) {
+                    Text(
+                        if (italian)
+                            "La regola non chiede più nulla di nuovo: dal giorno della Professione, il combattimento è vivere questa stessa regola, fedelmente, settimana dopo settimana."
+                        else
+                            "La règle ne demande plus rien de nouveau : depuis le jour de la Profession, le combat consiste à vivre cette même règle, fidèlement, semaine après semaine.",
+                        style = MaterialTheme.typography.bodySmall, color = Color(0xFFE9D9A8),
+                        modifier = Modifier.padding(14.dp), textAlign = TextAlign.Center
+                    )
                 }
-                Spacer(Modifier.height(10.dp))
-                Text(
-                    if (italian)
-                        "Un padre spirituale ricorderebbe qui la discrezione: la perseveranza conta più dell'eccesso. Non esitare a consultare un accompagnatore reale."
-                    else
-                        "Un père spirituel rappellerait ici la discrétion : la persévérance importe plus que la démesure. N'hésite pas à demander conseil à un accompagnateur réel.",
-                    style = MaterialTheme.typography.labelSmall, color = Color(0xFFB9A87A),
-                    textAlign = TextAlign.Center
-                )
             }
 
             Spacer(Modifier.height(20.dp))
@@ -331,13 +408,75 @@ private fun RuleRunning(repo: ContentRepository, store: GameStore, modifier: Mod
             }
 
             Spacer(Modifier.height(22.dp))
-            TextButton(onClick = { showReset = true }) {
-                Text(if (italian) "Cambiare regola (ricomincia da zero)" else "Changer de règle (recommencer à zéro)", color = Color(0xFFB9A87A))
+            Row(horizontalArrangement = Arrangement.spacedBy(18.dp)) {
+                TextButton(onClick = { showHistory = true }) {
+                    Text(if (italian) "Storico dei livelli" else "Historique des niveaux", color = Color(0xFFB9A87A))
+                }
+                TextButton(onClick = { showReset = true }) {
+                    Text(
+                        if (italian) "Cambiare regola (ricomincia da zero)" else "Changer de règle (recommencer à zéro)",
+                        color = Color(0xFFB9A87A)
+                    )
+                }
             }
             Spacer(Modifier.height(20.dp))
         }
     }
 
+    if (showRenewal) AlertDialog(
+        onDismissRequest = { },
+        confirmButton = {
+            TextButton(onClick = { store.ruleAcknowledgeRenewal(currentYear) }) {
+                Text(if (italian) "Rinnovo il mio impegno" else "Je renouvelle mon engagement")
+            }
+        },
+        title = {
+            Text(
+                if (italian) "Rinnovamento dei voti — $currentYear ${if (currentYear>1) "anni" else "anno"} di fedeltà"
+                else "Renouvellement des vœux — $currentYear ${if (currentYear>1) "ans" else "an"} de fidélité"
+            )
+        },
+        text = {
+            Text(
+                if (italian)
+                    "Come i religiosi rinnovano i loro voti temporanei, prenditi un momento per rinnovare interiormente il tuo impegno in questa regola, prima di continuare."
+                else
+                    "Comme les religieux renouvellent leurs vœux temporaires, prends un instant pour renouveler intérieurement ton engagement dans cette règle, avant de continuer."
+            )
+        }
+    )
+
+    if (showHistory) {
+        val entries = p.history.sortedByDescending { it.epochDay }
+        AlertDialog(
+            onDismissRequest = { showHistory = false },
+            confirmButton = { TextButton(onClick = { showHistory = false }) { Text("OK") } },
+            title = { Text(if (italian) "Storico dei livelli" else "Historique des niveaux") },
+            text = {
+                Column(Modifier.heightIn(max = 380.dp).verticalScroll(rememberScrollState())) {
+                    if (entries.isEmpty()) {
+                        Text(if (italian) "Nessuna cronologia ancora." else "Aucun historique pour l'instant.")
+                    }
+                    entries.forEach { e ->
+                        val entryStage = stageFor(e.level, tradition, diff, italian)
+                        val eventLabel = when (e.event) {
+                            "start" -> if (italian) "Inizio" else "Début"
+                            "levelup" -> if (italian) "Progresso" else "Progression"
+                            "demotion" -> if (italian) "Ricaduta" else "Rétrogradation"
+                            "renewal" -> if (italian) "Rinnovamento dei voti" else "Renouvellement des vœux"
+                            else -> e.event
+                        }
+                        Column(Modifier.padding(vertical = 6.dp)) {
+                            Text("$eventLabel — ${if (italian) "livello" else "niveau"} ${e.level}",
+                                style = MaterialTheme.typography.bodyMedium, fontWeight = FontWeight.Medium)
+                            Text(entryStage.label, style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.tertiary)
+                        }
+                        Divider()
+                    }
+                }
+            }
+        )
+    }
     if (showReset) AlertDialog(
         onDismissRequest = { showReset = false },
         confirmButton = {
@@ -372,8 +511,13 @@ private fun RuleLine(text: String, bullet: String) {
     }
 }
 
+private fun scaledMinutes(base: Int, diff: RuleDifficulty): Int {
+    if (base <= 0) return 0
+    return (base * diff.timeMultiplier).toInt().coerceAtLeast(1)
+}
+
 @Composable
-private fun RuleDevotionLine(dev: RuleDevotion, highlighted: Boolean, italian: Boolean) {
+private fun RuleDevotionLine(dev: RuleDevotion, highlighted: Boolean, italian: Boolean, minutes: Int) {
     Card(
         Modifier.fillMaxWidth().padding(vertical = 3.dp),
         colors = CardDefaults.cardColors(
@@ -390,6 +534,13 @@ private fun RuleDevotionLine(dev: RuleDevotion, highlighted: Boolean, italian: B
                     Text(
                         "· " + (if (italian) "nuova" else "nouvelle"),
                         style = MaterialTheme.typography.labelSmall, color = Color(0xFFD8B768), fontStyle = FontStyle.Italic
+                    )
+                }
+                if (minutes > 0) {
+                    Spacer(Modifier.weight(1f))
+                    Text(
+                        "~$minutes min",
+                        style = MaterialTheme.typography.labelSmall, color = Color(0xFFD8B768), fontWeight = FontWeight.SemiBold
                     )
                 }
             }

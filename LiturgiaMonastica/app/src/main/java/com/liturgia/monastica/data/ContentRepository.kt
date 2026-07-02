@@ -290,7 +290,9 @@ class ContentRepository(private val context: Context) {
                     RuleDevotion(
                         name = dO.get("name").asString,
                         note = dO.get("note").asString,
-                        signature = dO.get("signature").asBoolean
+                        signature = dO.get("signature").asBoolean,
+                        minutes = if (dO.has("minutes")) dO.get("minutes").asInt else 0,
+                        supersedes = if (dO.has("supersedes")) dO.get("supersedes").asInt else -1
                     )
                 }
             )

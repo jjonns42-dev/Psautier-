@@ -289,9 +289,11 @@ class GameStore(context: Context) {
 
     /** Locks the tradition and difficulty; begins at level 1. */
     fun ruleStart(traditionId: String, difficulty: RuleDifficulty) {
+        val today = todayEpochDay()
         ruleProgress = RuleProgress(
             started = true, traditionId = traditionId, difficulty = difficulty.name,
-            level = 1, daysConfirmed = 0, lastDay = -1L
+            level = 1, daysConfirmed = 0, lastDay = -1L,
+            history = listOf(RuleHistoryEntry(level = 1, epochDay = today, event = "start"))
         )
         ruleJustDemoted = false
         persistRule()
@@ -304,7 +306,8 @@ class GameStore(context: Context) {
         val gap = todayEpochDay() - p.lastDay
         if (gap >= 2) {
             val newLevel = if (p.level > 1) p.level - 1 else 1
-            ruleProgress = p.copy(level = newLevel, daysConfirmed = 0, lastDay = -1L)
+            val entry = RuleHistoryEntry(level = newLevel, epochDay = todayEpochDay(), event = "demotion")
+            ruleProgress = p.copy(level = newLevel, daysConfirmed = 0, lastDay = -1L, history = p.history + entry)
             ruleJustDemoted = true
             persistRule()
         }
@@ -319,12 +322,23 @@ class GameStore(context: Context) {
         var level = p.level
         var days = p.daysConfirmed + 1
         var lastDay = todayEpochDay()
+        var history = p.history
         if (days >= 7) {
             level += 1
             days = 0
             lastDay = -1L
+            history = history + RuleHistoryEntry(level = level, epochDay = todayEpochDay(), event = "levelup")
         }
-        ruleProgress = p.copy(level = level, daysConfirmed = days, lastDay = lastDay)
+        ruleProgress = p.copy(level = level, daysConfirmed = days, lastDay = lastDay, history = history)
+        persistRule()
+    }
+
+    /** Renouvellement des vœux : appelé quand l'utilisateur reconnaît consciemment une année de fidélité. */
+    fun ruleAcknowledgeRenewal(year: Int) {
+        val p = ruleProgress
+        if (!p.started || year <= p.lastRenewalYear) return
+        val entry = RuleHistoryEntry(level = p.level, epochDay = todayEpochDay(), event = "renewal")
+        ruleProgress = p.copy(lastRenewalYear = year, history = p.history + entry)
         persistRule()
     }
 

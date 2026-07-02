@@ -110,7 +110,9 @@ data class SinProgress(
 data class RuleDevotion(
     val name: String,
     val note: String,
-    val signature: Boolean   // true = dévotion emblématique propre à l'ordre/tradition
+    val signature: Boolean,   // true = dévotion emblématique propre à l'ordre/tradition
+    val minutes: Int = 0,     // durée de base suggérée (à l'échelle Normal) ; 0 = non temporelle (jeûne, confession, geste concret...)
+    val supersedes: Int = -1  // index (dans devotions) d'une dévotion antérieure que celle-ci remplace une fois active
 )
 
 data class RuleTradition(
@@ -125,10 +127,13 @@ data class RuleTradition(
     val devotions: List<RuleDevotion> // dévotions nommées, débloquées progressivement
 )
 
-enum class RuleDifficulty(val label: String, val startCount: Int, val paceLevels: Int) {
-    DEBUTANT("Débutant", startCount = 1, paceLevels = 8),
-    NORMAL("Normal", startCount = 2, paceLevels = 4),
-    DIFFICILE("Difficile", startCount = 3, paceLevels = 2);
+enum class RuleDifficulty(
+    val label: String, val startCount: Int, val paceLevels: Int,
+    val timeMultiplier: Double, val capFraction: Double
+) {
+    DEBUTANT("Débutant", startCount = 1, paceLevels = 8, timeMultiplier = 0.6, capFraction = 0.6),
+    NORMAL("Normal", startCount = 2, paceLevels = 4, timeMultiplier = 1.0, capFraction = 0.85),
+    DIFFICILE("Difficile", startCount = 3, paceLevels = 2, timeMultiplier = 1.6, capFraction = 1.0);
 
     companion object {
         fun fromKey(k: String) = entries.firstOrNull { it.name == k } ?: NORMAL
@@ -136,11 +141,20 @@ enum class RuleDifficulty(val label: String, val startCount: Int, val paceLevels
 }
 
 /** Persisted state of the never-ending Rule game. */
+/** Une entrée du répertoire des niveaux passés : quand, à quel niveau, et pour quel événement. */
+data class RuleHistoryEntry(
+    val level: Int,
+    val epochDay: Long,
+    val event: String   // "start" | "levelup" | "demotion" | "renewal"
+)
+
 data class RuleProgress(
     val started: Boolean = false,
     val traditionId: String = "",
     val difficulty: String = RuleDifficulty.NORMAL.name,
     val level: Int = 1,
     val daysConfirmed: Int = 0,
-    val lastDay: Long = -1L
+    val lastDay: Long = -1L,
+    val lastRenewalYear: Int = 0,
+    val history: List<RuleHistoryEntry> = emptyList()
 )
