@@ -45,3 +45,102 @@ data class BibleBook(
     val testament: String,
     val chapters: Int
 )
+
+// =============================================================================
+//  LE COMBAT — les huit pensées d'Évagre/Cassien + l'envie (saint Grégoire).
+//  Chaque péché a 10 niveaux d'une semaine, une pratique orthodoxe et une
+//  pratique catholique par niveau, une règle de prière propre, et 7 citations
+//  bibliques qui tournent au fil des jours confirmés.
+// =============================================================================
+
+/** A short attributed text: a prayer or a piece of counsel, with its source. */
+data class SinQuote(
+    val source: String,
+    val text: String
+)
+
+/** The prayer rule for one sin: one prayer and one counsel per tradition. */
+data class SinPrayerRule(
+    val orthoPrayer: SinQuote,
+    val cathoPrayer: SinQuote,
+    val orthoCounsel: SinQuote,
+    val cathoCounsel: SinQuote
+)
+
+data class SinVerse(
+    val ref: String,
+    val text: String
+)
+
+/** One week-long level: a shared instruction plus a distinct Orthodox and Catholic practice. */
+data class SinLevel(
+    val title: String,
+    val practice: String,
+    val ortho: String,
+    val catho: String
+)
+
+data class Sin(
+    val id: String,
+    val name: String,
+    val latin: String,
+    val accent: String,
+    val virtue: String,
+    val desc: String,
+    val prayer: SinPrayerRule,
+    val verses: List<SinVerse>,
+    val levels: List<SinLevel>
+)
+
+/** Persisted progress for a single sin's combat. Immutable: always replaced, never mutated in place. */
+data class SinProgress(
+    val level: Int = 1,
+    val daysConfirmed: Int = 0,
+    val lastDay: Long = -1L
+)
+
+// =============================================================================
+//  LA RÈGLE — règle de prière à niveaux infinis, choisie une fois (famille,
+//  tradition/ordre, difficulté), puis progressive. Chaque niveau dure une
+//  semaine ; tous les 4 niveaux (~1 mois), une dévotion nommée supplémentaire
+//  s'ajoute à la règle. Un jour manqué fait redescendre d'un seul niveau,
+//  qu'il faut revalider entièrement.
+// =============================================================================
+
+data class RuleDevotion(
+    val name: String,
+    val note: String,
+    val signature: Boolean   // true = dévotion emblématique propre à l'ordre/tradition
+)
+
+data class RuleTradition(
+    val id: String,
+    val family: String,        // "orthodoxe" | "catholique" | "charismatique"
+    val name: String,
+    val subtitle: String,
+    val patron: String,
+    val accent: String,
+    val desc: String,
+    val dailyCore: List<String>,   // le socle fixe, présent dès le niveau 1
+    val devotions: List<RuleDevotion> // dévotions nommées, débloquées progressivement
+)
+
+enum class RuleDifficulty(val label: String, val startCount: Int, val paceLevels: Int) {
+    DEBUTANT("Débutant", startCount = 1, paceLevels = 8),
+    NORMAL("Normal", startCount = 2, paceLevels = 4),
+    DIFFICILE("Difficile", startCount = 3, paceLevels = 2);
+
+    companion object {
+        fun fromKey(k: String) = entries.firstOrNull { it.name == k } ?: NORMAL
+    }
+}
+
+/** Persisted state of the never-ending Rule game. */
+data class RuleProgress(
+    val started: Boolean = false,
+    val traditionId: String = "",
+    val difficulty: String = RuleDifficulty.NORMAL.name,
+    val level: Int = 1,
+    val daysConfirmed: Int = 0,
+    val lastDay: Long = -1L
+)

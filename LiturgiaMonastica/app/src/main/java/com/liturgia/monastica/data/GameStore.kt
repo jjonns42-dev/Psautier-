@@ -4,6 +4,8 @@ import android.content.Context
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
 import java.util.Calendar
 import java.util.TimeZone
 
@@ -161,5 +163,175 @@ class GameStore(context: Context) {
             .putInt("t_day", thDay)
             .putLong("t_lastday", thLastDay)
             .apply()
+    }
+
+    // =========================================================================
+    //  LE COMBAT  (les huit pensées d'Évagre/Cassien + l'envie)
+    //  Un niveau dure une semaine (7 confirmations). Chaque jour doit être
+    //  confirmé manuellement une fois la pratique orthodoxe et/ou catholique
+    //  accomplie. Une seule journée sans confirmation remet le niveau à zéro.
+    //  Chaque péché progresse indépendamment ; jusqu'à 10 niveaux.
+    // =========================================================================
+    private val gson = Gson()
+    private val combatType = object : TypeToken<Map<String, SinProgress>>() {}.type
+
+    var combatProgress by mutableStateOf(loadCombatProgress())
+        private set
+
+    /** Set of sinIds whose current level was just reset by a missed day (consumed once by the UI). */
+    var combatJustReset by mutableStateOf(setOf<String>())
+        private set
+
+    private fun loadCombatProgress(): Map<String, SinProgress> {
+        val raw = sp.getString("combat_progress", null) ?: return emptyMap()
+        return try {
+            gson.fromJson<Map<String, SinProgress>>(raw, combatType) ?: emptyMap()
+        } catch (e: Exception) { emptyMap() }
+    }
+
+    private fun persistCombat() {
+        sp.edit().putString("combat_progress", gson.toJson(combatProgress)).apply()
+    }
+
+    private fun progressFor(sinId: String): SinProgress = combatProgress[sinId] ?: SinProgress()
+
+    fun combatLevel(sinId: String): Int = progressFor(sinId).level
+    fun combatDaysConfirmed(sinId: String): Int = progressFor(sinId).daysConfirmed
+    fun combatDoneToday(sinId: String): Boolean = progressFor(sinId).lastDay == todayEpochDay()
+
+    private fun updateProgress(sinId: String, transform: (SinProgress) -> SinProgress) {
+        val updated = transform(progressFor(sinId))
+        combatProgress = combatProgress + (sinId to updated)
+        persistCombat()
+    }
+
+    private fun isFullyAccomplished(p: SinProgress) = p.level >= 10 && p.daysConfirmed >= 7
+
+    /** Re-evaluate every sin's streak against the calendar; called on app launch and on entering a combat screen. */
+    fun combatRefresh() {
+        val today = todayEpochDay()
+        var changed = false
+        val justReset = mutableSetOf<String>()
+        val updated = combatProgress.mapValues { (id, p) ->
+            if (!isFullyAccomplished(p) && p.lastDay >= 0) {
+                val gap = today - p.lastDay
+                if (gap >= 2) {
+                    changed = true
+                    justReset += id
+                    p.copy(daysConfirmed = 0, lastDay = -1L)
+                } else p
+            } else p
+        }
+        if (changed) {
+            combatProgress = updated
+            persistCombat()
+        }
+        if (justReset.isNotEmpty()) combatJustReset = justReset
+    }
+
+    /** The UI calls this once it has shown the reset notice, so it doesn't reappear. */
+    fun combatConsumeReset(sinId: String) {
+        if (sinId in combatJustReset) combatJustReset = combatJustReset - sinId
+    }
+
+    /** Confirm today's practice for a sin. Advances the level automatically at 7/7. */
+    fun combatConfirmToday(sinId: String) {
+        if (combatDoneToday(sinId)) return
+        if (isFullyAccomplished(progressFor(sinId))) return
+        updateProgress(sinId) { p ->
+            var level = p.level
+            var days = p.daysConfirmed + 1
+            var lastDay: Long = todayEpochDay()
+            if (days >= 7) {
+                if (level < 10) {
+                    level += 1
+                    days = 0
+                    lastDay = -1L
+                } else {
+                    days = 7 // combat achevé : reste plein, ne se remet plus à zéro
+                }
+            }
+            p.copy(level = level, daysConfirmed = days, lastDay = lastDay)
+        }
+    }
+
+    /** Full manual restart of a single sin's combat (level 1, day 0). */
+    fun combatResetSin(sinId: String) {
+        updateProgress(sinId) { SinProgress() }
+    }
+
+    // =========================================================================
+    //  LA RÈGLE  (règle de prière à niveaux infinis)
+    //  Une seule règle active à la fois : famille + tradition/ordre + difficulté
+    //  choisis une fois, verrouillés jusqu'à un « recommencer à zéro ».
+    //  Un niveau dure une semaine. Un jour manqué fait redescendre d'UN SEUL
+    //  niveau (à revalider entièrement) ; le niveau ne descend jamais sous 1.
+    // =========================================================================
+    private val ruleType = object : TypeToken<RuleProgress>() {}.type
+
+    var ruleProgress by mutableStateOf(loadRuleProgress())
+        private set
+
+    /** true right after a missed day has demoted the level (consumed once by the UI). */
+    var ruleJustDemoted by mutableStateOf(false)
+        private set
+
+    private fun loadRuleProgress(): RuleProgress {
+        val raw = sp.getString("rule_progress", null) ?: return RuleProgress()
+        return try { gson.fromJson(raw, ruleType) ?: RuleProgress() } catch (e: Exception) { RuleProgress() }
+    }
+
+    private fun persistRule() {
+        sp.edit().putString("rule_progress", gson.toJson(ruleProgress)).apply()
+    }
+
+    fun ruleDoneToday(): Boolean = ruleProgress.started && ruleProgress.lastDay == todayEpochDay()
+
+    /** Locks the tradition and difficulty; begins at level 1. */
+    fun ruleStart(traditionId: String, difficulty: RuleDifficulty) {
+        ruleProgress = RuleProgress(
+            started = true, traditionId = traditionId, difficulty = difficulty.name,
+            level = 1, daysConfirmed = 0, lastDay = -1L
+        )
+        ruleJustDemoted = false
+        persistRule()
+    }
+
+    /** Re-evaluate the streak against the calendar; demotes by exactly one level on a missed day. */
+    fun ruleRefresh() {
+        val p = ruleProgress
+        if (!p.started || p.lastDay < 0) return
+        val gap = todayEpochDay() - p.lastDay
+        if (gap >= 2) {
+            val newLevel = if (p.level > 1) p.level - 1 else 1
+            ruleProgress = p.copy(level = newLevel, daysConfirmed = 0, lastDay = -1L)
+            ruleJustDemoted = true
+            persistRule()
+        }
+    }
+
+    fun ruleConsumeDemoted() { if (ruleJustDemoted) ruleJustDemoted = false }
+
+    /** Confirm today's rule. Advances one level at 7/7 — levels are unbounded. */
+    fun ruleConfirmToday() {
+        val p = ruleProgress
+        if (!p.started || ruleDoneToday()) return
+        var level = p.level
+        var days = p.daysConfirmed + 1
+        var lastDay = todayEpochDay()
+        if (days >= 7) {
+            level += 1
+            days = 0
+            lastDay = -1L
+        }
+        ruleProgress = p.copy(level = level, daysConfirmed = days, lastDay = lastDay)
+        persistRule()
+    }
+
+    /** Abandon the current rule entirely; returns to the choice screen. */
+    fun ruleReset() {
+        ruleProgress = RuleProgress()
+        ruleJustDemoted = false
+        persistRule()
     }
 }

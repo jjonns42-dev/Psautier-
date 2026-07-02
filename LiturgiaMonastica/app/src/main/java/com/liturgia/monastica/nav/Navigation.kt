@@ -17,7 +17,13 @@ object Routes {
     const val BIBLE = "bible"
     const val CANDLE = "candle"
     const val THOUSAND = "thousand"
+    const val COMBAT = "combat"
+    const val COMBAT_SIN = "combat/{sinId}"
+    const val COMBAT_LEVEL = "combat/{sinId}/{level}"
+    const val RULE = "rule"
     fun hour(id: String) = "office/$id"
+    fun combatSin(id: String) = "combat/$id"
+    fun combatLevel(id: String, level: Int) = "combat/$id/$level"
 }
 
 @Composable
@@ -30,7 +36,9 @@ fun AppNavGraph(repo: ContentRepository, store: GameStore) {
                 onOffice = { nav.navigate(Routes.OFFICE) },
                 onBible = { nav.navigate(Routes.BIBLE) },
                 onCandle = { nav.navigate(Routes.CANDLE) },
-                onThousand = { nav.navigate(Routes.THOUSAND) }
+                onThousand = { nav.navigate(Routes.THOUSAND) },
+                onCombat = { nav.navigate(Routes.COMBAT) },
+                onRule = { nav.navigate(Routes.RULE) }
             )
         }
         composable(Routes.OFFICE) {
@@ -52,6 +60,32 @@ fun AppNavGraph(repo: ContentRepository, store: GameStore) {
         }
         composable(Routes.THOUSAND) {
             ThousandDaysScreen(repo, store, onBack = { nav.popBackStack() })
+        }
+        composable(Routes.COMBAT) {
+            CombatListScreen(repo, store, onBack = { nav.popBackStack() },
+                onSin = { id -> nav.navigate(Routes.combatSin(id)) })
+        }
+        composable(
+            Routes.COMBAT_SIN,
+            arguments = listOf(navArgument("sinId") { type = NavType.StringType })
+        ) { entry ->
+            val id = entry.arguments?.getString("sinId") ?: return@composable
+            CombatSinScreen(repo, store, id, onBack = { nav.popBackStack() },
+                onLevel = { lvl -> nav.navigate(Routes.combatLevel(id, lvl)) })
+        }
+        composable(
+            Routes.COMBAT_LEVEL,
+            arguments = listOf(
+                navArgument("sinId") { type = NavType.StringType },
+                navArgument("level") { type = NavType.IntType }
+            )
+        ) { entry ->
+            val id = entry.arguments?.getString("sinId") ?: return@composable
+            val lvl = entry.arguments?.getInt("level") ?: 1
+            CombatLevelScreen(repo, store, id, lvl, onBack = { nav.popBackStack() })
+        }
+        composable(Routes.RULE) {
+            RuleScreen(repo, store, onBack = { nav.popBackStack() })
         }
     }
 }

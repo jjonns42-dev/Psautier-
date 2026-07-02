@@ -20,6 +20,8 @@ class MainActivity : ComponentActivity() {
             LaunchedEffect(Unit) {
                 store.candleRefresh()
                 store.thRefresh()
+                store.combatRefresh()
+                store.ruleRefresh()
             }
             LiturgiaTheme(night = store.night) {
                 AppNavGraph(repo, store)

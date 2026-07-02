@@ -9,6 +9,8 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.MenuBook
 import androidx.compose.material.icons.filled.LocalFireDepartment
+import androidx.compose.material.icons.filled.SelfImprovement
+import androidx.compose.material.icons.filled.Shield
 import androidx.compose.material.icons.filled.WbTwilight
 import androidx.compose.material.icons.outlined.Brightness3
 import androidx.compose.material3.*
@@ -32,7 +34,9 @@ fun HomeScreen(
     onOffice: () -> Unit,
     onBible: () -> Unit,
     onCandle: () -> Unit,
-    onThousand: () -> Unit
+    onThousand: () -> Unit,
+    onCombat: () -> Unit,
+    onRule: () -> Unit
 ) {
     val it = store.lang == "it"
     AppScaffold(
@@ -93,6 +97,16 @@ fun HomeScreen(
                 title = if (it) "1000 Giorni" else "1000 Jours",
                 subtitle = if (it) "Una devozione, mille giorni" else "Une dévotion, mille jours",
                 icon = Icons.Outlined.Brightness3, onClick = onThousand
+            )
+            Tile(
+                title = if (it) "Il Combattimento" else "Le Combat",
+                subtitle = if (it) "Le otto passioni, dieci livelli" else "Les huit pensées, dix niveaux",
+                icon = Icons.Filled.Shield, onClick = onCombat
+            )
+            Tile(
+                title = if (it) "La Regola" else "La Règle",
+                subtitle = if (it) "Regola di preghiera, livelli infiniti" else "Règle de prière, niveaux infinis",
+                icon = Icons.Filled.SelfImprovement, onClick = onRule
             )
         }
     }

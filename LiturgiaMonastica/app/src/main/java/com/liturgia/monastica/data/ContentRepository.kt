@@ -227,6 +227,80 @@ class ContentRepository(private val context: Context) {
         return sections
     }
 
+    // ---- Le Combat (huit pensées + envie) -------------------------------------
+    private val sinsRoot: JsonObject by lazy { obj("sins.json") }
+
+    private fun quoteOf(o: JsonObject, field: String): SinQuote {
+        val q = o.getAsJsonObject(field)
+        return SinQuote(q.get("source").asString, q.get("text").asString)
+    }
+
+    fun sins(): List<Sin> =
+        sinsRoot.getAsJsonArray("sins").map { el ->
+            val o = el.asJsonObject
+            val prayerObj = o.getAsJsonObject("prayer")
+            Sin(
+                id = o.get("id").asString,
+                name = o.get("name").asString,
+                latin = o.get("latin").asString,
+                accent = o.get("accent").asString,
+                virtue = o.get("virtue").asString,
+                desc = o.get("desc").asString,
+                prayer = SinPrayerRule(
+                    orthoPrayer = quoteOf(prayerObj, "orthoPrayer"),
+                    cathoPrayer = quoteOf(prayerObj, "cathoPrayer"),
+                    orthoCounsel = quoteOf(prayerObj, "orthoCounsel"),
+                    cathoCounsel = quoteOf(prayerObj, "cathoCounsel")
+                ),
+                verses = o.getAsJsonArray("verses").map { v ->
+                    val vo = v.asJsonObject
+                    SinVerse(vo.get("ref").asString, vo.get("text").asString)
+                },
+                levels = o.getAsJsonArray("levels").map { l ->
+                    val lo = l.asJsonObject
+                    SinLevel(
+                        title = lo.get("title").asString,
+                        practice = lo.get("practice").asString,
+                        ortho = lo.get("ortho").asString,
+                        catho = lo.get("catho").asString
+                    )
+                }
+            )
+        }
+
+    fun sin(id: String): Sin? = sins().firstOrNull { it.id == id }
+
+    // ---- La Règle (traditions de prière) --------------------------------------
+    private val traditionsRoot: JsonObject by lazy { obj("traditions.json") }
+
+    fun ruleTraditions(): List<RuleTradition> =
+        traditionsRoot.getAsJsonArray("traditions").map { el ->
+            val o = el.asJsonObject
+            RuleTradition(
+                id = o.get("id").asString,
+                family = o.get("family").asString,
+                name = o.get("name").asString,
+                subtitle = o.get("subtitle").asString,
+                patron = o.get("patron").asString,
+                accent = o.get("accent").asString,
+                desc = o.get("desc").asString,
+                dailyCore = o.getAsJsonArray("dailyCore").map { it2 -> it2.asString },
+                devotions = o.getAsJsonArray("devotions").map { d ->
+                    val dO = d.asJsonObject
+                    RuleDevotion(
+                        name = dO.get("name").asString,
+                        note = dO.get("note").asString,
+                        signature = dO.get("signature").asBoolean
+                    )
+                }
+            )
+        }
+
+    fun ruleTradition(id: String): RuleTradition? = ruleTraditions().firstOrNull { it.id == id }
+
+    fun ruleTraditionsByFamily(family: String): List<RuleTradition> =
+        ruleTraditions().filter { it.family == family }
+
     // ---- Bible ---------------------------------------------------------------
     fun bibleBooks(): List<BibleBook> =
         obj("bible/index.json").getAsJsonArray("books").map {

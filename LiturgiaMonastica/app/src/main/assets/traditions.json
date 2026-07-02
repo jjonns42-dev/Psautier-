@@ -1,0 +1,1304 @@
+{
+ "traditions": [
+  {
+   "id": "athonite",
+   "family": "orthodoxe",
+   "name": "Tradition athonite",
+   "subtitle": "Mont Athos — hésychasme grec",
+   "patron": "Saint Silouane de l'Athos, saint Grégoire Palamas",
+   "accent": "#4a5a3a",
+   "desc": "La tradition du Mont Athos : primauté de la Prière de Jésus, silence (hésychia) et veille intérieure. « Garde ton esprit en enfer, et ne désespère pas » (saint Silouane).",
+   "dailyCore": [
+    "Prière de Jésus sur le komvoschoinion (chapelet à nœuds)",
+    "Signe de croix fréquent tout au long du jour"
+   ],
+   "devotions": [
+    {
+     "name": "Komvoschoinion quotidien",
+     "note": "100 nœuds de la Prière de Jésus, matin et soir.",
+     "signature": true
+    },
+    {
+     "name": "Mésonyktikon abrégé",
+     "note": "Office de minuit, dans sa forme brève.",
+     "signature": false
+    },
+    {
+     "name": "Lecture de la Philocalie",
+     "note": "Un court passage chaque jour, sans hâte.",
+     "signature": false
+    },
+    {
+     "name": "Jeûne selon le typikon athonite",
+     "note": "Mercredi et vendredi, sans huile si possible.",
+     "signature": false
+    },
+    {
+     "name": "Acathiste à la Mère de Dieu",
+     "note": "Chaque samedi soir.",
+     "signature": true
+    },
+    {
+     "name": "Métanies",
+     "note": "Prosternations, nombre croissant selon la force de chacun.",
+     "signature": false
+    },
+    {
+     "name": "Agrypnie hebdomadaire",
+     "note": "Veille nocturne d'une durée choisie, une fois par semaine.",
+     "signature": false
+    },
+    {
+     "name": "Confession et communion fréquentes",
+     "note": "Selon le rythme conseillé par le père spirituel.",
+     "signature": false
+    },
+    {
+     "name": "Lecture de l'Échelle sainte",
+     "note": "Un degré de l'Échelle de Jean Climaque par semaine.",
+     "signature": false
+    },
+    {
+     "name": "Hésychia prolongée",
+     "note": "Un temps quotidien de silence total, sans lecture ni parole.",
+     "signature": false
+    }
+   ]
+  },
+  {
+   "id": "slave-russe",
+   "family": "orthodoxe",
+   "name": "Tradition slave-russe",
+   "subtitle": "Piété russe — Séraphin de Sarov",
+   "patron": "Saint Séraphin de Sarov",
+   "accent": "#5a2e2e",
+   "desc": "« Le vrai but de la vie chrétienne consiste en l'acquisition du Saint-Esprit » (saint Séraphin de Sarov). Une piété du cœur brûlant, nourrie par la règle quotidienne et l'Acathiste.",
+   "dailyCore": [
+    "Prière de Jésus sur le tchotki",
+    "Pravilo (règle) du matin et du soir"
+   ],
+   "devotions": [
+    {
+     "name": "Pravilo complet",
+     "note": "Règle du matin et du soir, dans son intégralité.",
+     "signature": true
+    },
+    {
+     "name": "Chapelet de la Prière de Jésus",
+     "note": "Sur le tchotki, cent grains.",
+     "signature": false
+    },
+    {
+     "name": "Acathiste à saint Séraphin de Sarov",
+     "note": "Une fois par semaine.",
+     "signature": true
+    },
+    {
+     "name": "Lecture quotidienne de l'Évangile",
+     "note": "Un chapitre, lu lentement.",
+     "signature": false
+    },
+    {
+     "name": "Jeûne selon le calendrier orthodoxe russe",
+     "note": "Mercredi, vendredi, et périodes de jeûne prescrites.",
+     "signature": false
+    },
+    {
+     "name": "Poklony (prosternations)",
+     "note": "Nombre croissant, au rythme de chacun.",
+     "signature": false
+    },
+    {
+     "name": "Canon de repentance",
+     "note": "Une fois par semaine, de préférence le soir.",
+     "signature": false
+    },
+    {
+     "name": "Veillée selon le cycle liturgique",
+     "note": "Participation aux grandes vigiles quand elles sont célébrées.",
+     "signature": false
+    },
+    {
+     "name": "Silence du cœur",
+     "note": "Un temps quotidien de recueillement, en marchant si besoin (comme Séraphin en forêt).",
+     "signature": false
+    },
+    {
+     "name": "Acquisition de l'Esprit Saint",
+     "note": "Une journée entière offerte, sans autre but que la présence de Dieu.",
+     "signature": false
+    }
+   ]
+  },
+  {
+   "id": "copte",
+   "family": "orthodoxe",
+   "name": "Tradition copte",
+   "subtitle": "Égypte — les Pères du désert",
+   "patron": "Saint Antoine le Grand, saint Macaire d'Égypte",
+   "accent": "#6b5a2e",
+   "desc": "La source même du monachisme chrétien : les Heures de l'Agpeya, le jeûne prolongé, la psalmodie. « Fuis, tais-toi, prie sans cesse » (Apophtegme attribué à Arsène).",
+   "dailyCore": [
+    "Une Heure de l'Agpeya au minimum chaque jour",
+    "Prosternations (metanoia) quotidiennes"
+   ],
+   "devotions": [
+    {
+     "name": "Une Heure de l'Agpeya",
+     "note": "Choisie librement dans le livre des Heures coptes.",
+     "signature": true
+    },
+    {
+     "name": "Metanoia quotidiennes",
+     "note": "Prosternations, nombre croissant.",
+     "signature": false
+    },
+    {
+     "name": "Jeûne copte",
+     "note": "Selon le calendrier copte, substantiel dans sa forme traditionnelle.",
+     "signature": false
+    },
+    {
+     "name": "Lecture des Apophtegmes des Pères du désert",
+     "note": "Une sentence chaque jour, méditée.",
+     "signature": false
+    },
+    {
+     "name": "Psalmodia",
+     "note": "Chant ou récitation des psaumes selon l'usage copte.",
+     "signature": false
+    },
+    {
+     "name": "Deux Heures de l'Agpeya",
+     "note": "Matin et soir.",
+     "signature": false
+    },
+    {
+     "name": "Jeûne du Grand Carême copte",
+     "note": "Cinquante-cinq jours, selon la tradition — à vivre avec discernement et un accompagnement.",
+     "signature": false
+    },
+    {
+     "name": "Veille de prière nocturne",
+     "note": "Une fois par semaine.",
+     "signature": false
+    },
+    {
+     "name": "Confession fréquente",
+     "note": "Auprès d'un père de confession.",
+     "signature": false
+    },
+    {
+     "name": "Les sept Heures de l'Agpeya",
+     "note": "L'office complet, comme les moines du désert.",
+     "signature": false
+    }
+   ]
+  },
+  {
+   "id": "benedictins",
+   "family": "catholique",
+   "name": "Bénédictins",
+   "subtitle": "« Ora et labora »",
+   "patron": "Saint Benoît de Nursie, sainte Scholastique",
+   "accent": "#2e5135",
+   "desc": "La Règle de saint Benoît : stabilité, obéissance, conversion continue. La prière rythme le travail et le travail nourrit la prière.",
+   "dailyCore": [
+    "Lectio divina quotidienne",
+    "Une Heure de l'Office monastique (voir le module Liturgie des Heures de cette app)"
+   ],
+   "devotions": [
+    {
+     "name": "Lectio divina",
+     "note": "15 à 30 minutes de lecture priante de l'Écriture.",
+     "signature": true
+    },
+    {
+     "name": "Une Heure de l'Office",
+     "note": "Laudes ou Vêpres, à prier dans le module Liturgie des Heures.",
+     "signature": true
+    },
+    {
+     "name": "Labora offert",
+     "note": "Le travail quotidien, consciemment offert à Dieu.",
+     "signature": false
+    },
+    {
+     "name": "Deux Heures de l'Office",
+     "note": "Ajouter Complies ou une autre Heure.",
+     "signature": false
+    },
+    {
+     "name": "Grand silence",
+     "note": "Du soir au matin, silence gardé autant que possible.",
+     "signature": false
+    },
+    {
+     "name": "Hospitalité",
+     "note": "Accueillir quelqu'un « comme le Christ lui-même » cette semaine.",
+     "signature": false
+    },
+    {
+     "name": "Obéissance quotidienne",
+     "note": "Accepter une contrariété sans résister intérieurement.",
+     "signature": false
+    },
+    {
+     "name": "Trois Heures de l'Office",
+     "note": "Ajouter une troisième Heure à la journée.",
+     "signature": false
+    },
+    {
+     "name": "Stabilité",
+     "note": "Persévérer fidèlement dans le même état de vie, sans céder à l'instabilité intérieure.",
+     "signature": false
+    },
+    {
+     "name": "Conversatio morum",
+     "note": "Examen hebdomadaire de conversion continue, selon le vœu bénédictin.",
+     "signature": false
+    }
+   ]
+  },
+  {
+   "id": "franciscains",
+   "family": "catholique",
+   "name": "Franciscains",
+   "subtitle": "« Le Seigneur te donne la paix »",
+   "patron": "Saint François d'Assise, sainte Claire d'Assise",
+   "accent": "#8a5a3c",
+   "desc": "La pauvreté joyeuse, la fraternité universelle, l'amour du Crucifié et de la création. « Loué sois-tu, mon Seigneur, pour sœur notre mère la terre. »",
+   "dailyCore": [
+    "Prière devant le crucifix de saint Damien",
+    "Angélus (matin, midi, soir)"
+   ],
+   "devotions": [
+    {
+     "name": "Couronne séraphique",
+     "note": "Rosaire séraphique en sept dizaines, sur les sept joies de la Vierge.",
+     "signature": true
+    },
+    {
+     "name": "Angélus",
+     "note": "Trois fois par jour.",
+     "signature": false
+    },
+    {
+     "name": "Cantique des créatures",
+     "note": "Méditation quotidienne d'un verset du Cantique de saint François.",
+     "signature": true
+    },
+    {
+     "name": "Pauvreté volontaire",
+     "note": "Un geste concret de détachement chaque jour.",
+     "signature": false
+    },
+    {
+     "name": "Via Crucis",
+     "note": "Chemin de Croix, une fois par semaine.",
+     "signature": false
+    },
+    {
+     "name": "Fraternité",
+     "note": "Contact fraternel réel — visite, appel, lettre — chaque jour.",
+     "signature": false
+    },
+    {
+     "name": "Adoration eucharistique",
+     "note": "Un temps hebdomadaire devant le Saint-Sacrement.",
+     "signature": false
+    },
+    {
+     "name": "Jeûne de saint Martin",
+     "note": "Jeûne franciscain traditionnel de préparation à Noël.",
+     "signature": false
+    },
+    {
+     "name": "Méditation du Transitus",
+     "note": "Méditation de la mort de saint François, spécialement le 3 octobre.",
+     "signature": true
+    },
+    {
+     "name": "Union à la Passion",
+     "note": "Contemplation prolongée du Crucifié, à l'image des stigmates intérieurs de saint François.",
+     "signature": false
+    }
+   ]
+  },
+  {
+   "id": "carmes",
+   "family": "catholique",
+   "name": "Carmel",
+   "subtitle": "Oraison silencieuse et petite voie",
+   "patron": "Sainte Thérèse d'Avila, saint Jean de la Croix, sainte Thérèse de Lisieux",
+   "accent": "#5b2a5e",
+   "desc": "Le Carmel : le silence de l'oraison, la nuit obscure traversée dans la foi, la petite voie de confiance et d'amour.",
+   "dailyCore": [
+    "Oraison silencieuse quotidienne",
+    "Scapulaire du Carmel"
+   ],
+   "devotions": [
+    {
+     "name": "Oraison silencieuse",
+     "note": "15 à 20 minutes, assis en silence devant Dieu.",
+     "signature": true
+    },
+    {
+     "name": "Petit Office de la Vierge du Carmel",
+     "note": "Selon l'usage carmélitain.",
+     "signature": false
+    },
+    {
+     "name": "Lecture spirituelle",
+     "note": "Un passage de Thérèse d'Avila ou de Jean de la Croix.",
+     "signature": false
+    },
+    {
+     "name": "Petite voie",
+     "note": "Un acte d'amour caché, sans qu'il soit vu, selon sainte Thérèse de Lisieux.",
+     "signature": true
+    },
+    {
+     "name": "Oraison prolongée",
+     "note": "30 minutes, sans chercher de consolation sensible.",
+     "signature": false
+    },
+    {
+     "name": "Nuit obscure acceptée",
+     "note": "Persévérer dans la prière même dans l'aridité, sans fuir.",
+     "signature": false
+    },
+    {
+     "name": "Silence intérieur prolongé",
+     "note": "Un temps de solitude et de silence plus long, une fois par semaine.",
+     "signature": false
+    },
+    {
+     "name": "Consécration à Marie du Carmel",
+     "note": "Renouvelée chaque mois.",
+     "signature": false
+    },
+    {
+     "name": "Désert mensuel",
+     "note": "Une journée de solitude et de silence plus profond, chaque mois.",
+     "signature": false
+    },
+    {
+     "name": "Château intérieur",
+     "note": "Contemplation des demeures de l'âme selon sainte Thérèse d'Avila — abandon total.",
+     "signature": false
+    }
+   ]
+  },
+  {
+   "id": "dominicains",
+   "family": "catholique",
+   "name": "Dominicains",
+   "subtitle": "Contempler et donner aux autres le fruit de sa contemplation",
+   "patron": "Saint Dominique, sainte Catherine de Sienne, saint Thomas d'Aquin",
+   "accent": "#2a2a5e",
+   "desc": "L'Ordre des Prêcheurs : l'étude nourrit la contemplation, la contemplation nourrit la prédication. « Contemplata aliis tradere. »",
+   "dailyCore": [
+    "Rosaire dominicain",
+    "Étude quotidienne de l'Écriture ou de la théologie"
+   ],
+   "devotions": [
+    {
+     "name": "Rosaire dominicain",
+     "note": "Les quinze mystères, répartis sur la semaine.",
+     "signature": true
+    },
+    {
+     "name": "Étude quotidienne",
+     "note": "Un temps d'étude de l'Écriture ou de théologie, offert en prière.",
+     "signature": true
+    },
+    {
+     "name": "Les Neuf Façons de Prier de saint Dominique",
+     "note": "Une façon différente chaque semaine.",
+     "signature": true
+    },
+    {
+     "name": "Office divin",
+     "note": "En communauté ou en solitaire, selon ce qui est possible.",
+     "signature": false
+    },
+    {
+     "name": "Silence d'étude",
+     "note": "Un temps de silence dédié à la lecture, chaque jour.",
+     "signature": false
+    },
+    {
+     "name": "Prédication informelle",
+     "note": "Partager sa foi avec quelqu'un, une fois par semaine.",
+     "signature": false
+    },
+    {
+     "name": "Neuvaine à saint Dominique",
+     "note": "Une fois par trimestre, ou en préparation de sa fête.",
+     "signature": false
+    },
+    {
+     "name": "Charité intellectuelle",
+     "note": "Corriger une erreur ou un malentendu avec douceur et vérité.",
+     "signature": false
+    },
+    {
+     "name": "Examen de vérité",
+     "note": "Examen de conscience centré sur la sincérité et la droiture d'intention.",
+     "signature": false
+    },
+    {
+     "name": "Contemplata aliis tradere",
+     "note": "Enseigner ou transmettre, cette semaine, ce que la contemplation a donné.",
+     "signature": false
+    }
+   ]
+  },
+  {
+   "id": "jesuites",
+   "family": "catholique",
+   "name": "Compagnie de Jésus",
+   "subtitle": "Trouver Dieu en toutes choses",
+   "patron": "Saint Ignace de Loyola, saint François Xavier",
+   "accent": "#7a1f1f",
+   "desc": "Les Exercices spirituels : discernement, magis, indifférence, action pour la plus grande gloire de Dieu (« Ad maiorem Dei gloriam »).",
+   "dailyCore": [
+    "Examen ignatien du soir (voir le bouton dédié de cette app)",
+    "Oraison ignatienne quotidienne"
+   ],
+   "devotions": [
+    {
+     "name": "Examen particulier",
+     "note": "Deux fois par jour, sur un point précis de combat intérieur.",
+     "signature": true
+    },
+    {
+     "name": "Oraison ignatienne",
+     "note": "20 minutes de contemplation imaginative d'une scène d'Évangile.",
+     "signature": true
+    },
+    {
+     "name": "Discernement des esprits",
+     "note": "Relecture hebdomadaire des mouvements intérieurs de consolation et désolation.",
+     "signature": false
+    },
+    {
+     "name": "Magis",
+     "note": "Un acte concret cherchant le « plus » pour la gloire de Dieu.",
+     "signature": false
+    },
+    {
+     "name": "Méditation de l'indifférence",
+     "note": "Selon le Principe et Fondement des Exercices.",
+     "signature": false
+    },
+    {
+     "name": "Retraite silencieuse mensuelle",
+     "note": "Une journée de silence et de prière prolongée, chaque mois.",
+     "signature": false
+    },
+    {
+     "name": "Contemplation pour obtenir l'amour",
+     "note": "Prière finale des Exercices, à reprendre régulièrement.",
+     "signature": true
+    },
+    {
+     "name": "Élection",
+     "note": "Discernement concret d'un choix de vie ou d'action.",
+     "signature": false
+    },
+    {
+     "name": "Service apostolique",
+     "note": "Un service concret rendu cette semaine.",
+     "signature": false
+    },
+    {
+     "name": "Trouver Dieu en toutes choses",
+     "note": "Une journée entière vécue consciemment en présence de Dieu.",
+     "signature": false
+    }
+   ]
+  },
+  {
+   "id": "chartreux",
+   "family": "catholique",
+   "name": "Chartreux",
+   "subtitle": "Le désert et le silence",
+   "patron": "Saint Bruno de Cologne",
+   "accent": "#3a3a4a",
+   "desc": "« Stat crux dum volvitur orbis » — la croix se tient debout tandis que le monde tourne. La plus austère et la plus silencieuse des voies contemplatives occidentales.",
+   "dailyCore": [
+    "Silence quasi perpétuel",
+    "Office cellulaire en plus de l'Office commun"
+   ],
+   "devotions": [
+    {
+     "name": "Chapelet aux clausules",
+     "note": "Réciter le Je vous salue Marie en ajoutant après le nom de Jésus une courte phrase méditant un mystère de sa vie — méthode inventée par le chartreux Dominique de Prusse (XVe s.), à l'origine du Rosaire actuel.",
+     "signature": true
+    },
+    {
+     "name": "Silence de la cellule",
+     "note": "Un temps quotidien de solitude et de silence total, à l'image de la cellule chartreuse.",
+     "signature": true
+    },
+    {
+     "name": "Lecture spirituelle silencieuse",
+     "note": "Sans aucune parole avant ou après.",
+     "signature": false
+    },
+    {
+     "name": "Office cellulaire",
+     "note": "Une Heure priée seul, en plus de toute prière commune.",
+     "signature": false
+    },
+    {
+     "name": "Jeûne du désert",
+     "note": "Sobriété alimentaire marquée, avec discernement.",
+     "signature": false
+    },
+    {
+     "name": "Travail manuel silencieux",
+     "note": "Une tâche accomplie sans parole ni distraction.",
+     "signature": false
+    },
+    {
+     "name": "Veille nocturne",
+     "note": "Une vigile prolongée, à l'image de l'office de nuit chartreux.",
+     "signature": false
+    },
+    {
+     "name": "Solitude hebdomadaire",
+     "note": "Une demi-journée entière de solitude et silence complet.",
+     "signature": false
+    },
+    {
+     "name": "Renoncement à la parole inutile",
+     "note": "Une journée sans parole superflue.",
+     "signature": false
+    },
+    {
+     "name": "Désert intérieur permanent",
+     "note": "Vivre, autant que possible, dans un silence intérieur constant.",
+     "signature": false
+    }
+   ]
+  },
+  {
+   "id": "cisterciens",
+   "family": "catholique",
+   "name": "Cisterciens",
+   "subtitle": "Simplicité, silence et travail des mains",
+   "patron": "Saint Bernard de Clairvaux",
+   "accent": "#1c3522",
+   "desc": "Réforme de simplicité dans la tradition bénédictine : austérité, silence, dévotion mariale ardente.",
+   "dailyCore": [
+    "Lectio divina",
+    "Silence et travail manuel"
+   ],
+   "devotions": [
+    {
+     "name": "Salve Regina chanté",
+     "note": "Chaque soir, selon l'usage cistercien.",
+     "signature": true
+    },
+    {
+     "name": "Lectio divina cistercienne",
+     "note": "Lecture lente, ruminée, de l'Écriture ou de saint Bernard.",
+     "signature": true
+    },
+    {
+     "name": "Silence des signes",
+     "note": "Limiter la parole, communiquer par gestes quand c'est possible.",
+     "signature": false
+    },
+    {
+     "name": "Travail manuel",
+     "note": "Une tâche manuelle offerte en prière.",
+     "signature": false
+    },
+    {
+     "name": "Dévotion mariale quotidienne",
+     "note": "Une invocation mariale répétée dans la journée, à l'exemple de saint Bernard.",
+     "signature": false
+    },
+    {
+     "name": "Office complet du jour",
+     "note": "Toutes les Heures possibles selon son état de vie.",
+     "signature": false
+    },
+    {
+     "name": "Sermons sur le Cantique",
+     "note": "Lecture méditée d'un extrait de saint Bernard sur le Cantique des Cantiques.",
+     "signature": false
+    },
+    {
+     "name": "Simplicité des lieux et des choses",
+     "note": "Un geste de dépouillement matériel cette semaine.",
+     "signature": false
+    },
+    {
+     "name": "Silence complet un jour",
+     "note": "Une journée de silence total, y compris les signes.",
+     "signature": false
+    },
+    {
+     "name": "Amour ardent de Marie",
+     "note": "Consécration renouvelée, dans l'esprit de saint Bernard, docteur marial.",
+     "signature": false
+    }
+   ]
+  },
+  {
+   "id": "missionnaires-charite",
+   "family": "catholique",
+   "name": "Missionnaires de la Charité",
+   "subtitle": "Rien de beau pour Dieu",
+   "patron": "Sainte Mère Teresa de Calcutta",
+   "accent": "#7a2230",
+   "desc": "Adoration et service des plus pauvres parmi les pauvres, dans la soif de Jésus sur la croix : « J'ai soif. »",
+   "dailyCore": [
+    "Une heure d'adoration eucharistique quotidienne",
+    "Service concret des plus pauvres"
+   ],
+   "devotions": [
+    {
+     "name": "Une heure d'adoration",
+     "note": "Chaque jour, devant le Saint-Sacrement.",
+     "signature": true
+    },
+    {
+     "name": "Service des plus pauvres",
+     "note": "Un geste concret de service désintéressé chaque jour.",
+     "signature": true
+    },
+    {
+     "name": "« J'ai soif »",
+     "note": "Méditation quotidienne de cette parole du Christ en croix, inscrite dans chaque chapelle de la congrégation.",
+     "signature": true
+    },
+    {
+     "name": "Chapelet quotidien",
+     "note": "Récité pour les intentions des plus pauvres.",
+     "signature": false
+    },
+    {
+     "name": "Petites choses avec grand amour",
+     "note": "Accomplir une tâche ordinaire avec une attention totale.",
+     "signature": false
+    },
+    {
+     "name": "Silence du cœur",
+     "note": "Un temps de silence pour écouter Dieu dans la prière, avant le service.",
+     "signature": false
+    },
+    {
+     "name": "Messe quotidienne si possible",
+     "note": "Participation à l'Eucharistie.",
+     "signature": false
+    },
+    {
+     "name": "Pauvreté effective",
+     "note": "Un renoncement matériel concret cette semaine.",
+     "signature": false
+    },
+    {
+     "name": "Joie dans le service",
+     "note": "Examen sur la joie effective mise dans les gestes de service.",
+     "signature": false
+    },
+    {
+     "name": "Disponibilité totale",
+     "note": "Une journée vécue en pleine disponibilité aux besoins d'autrui.",
+     "signature": false
+    }
+   ]
+  },
+  {
+   "id": "emmanuel",
+   "family": "charismatique",
+   "name": "Communauté de l'Emmanuel",
+   "subtitle": "Adoration — Compassion — Évangélisation",
+   "patron": "Pierre Goursat (fondateur), inspiration de la spiritualité de l'Emmanuel",
+   "accent": "#a08840",
+   "desc": "Née du renouveau charismatique catholique : l'adoration prolongée, la compassion vécue concrètement, et l'annonce joyeuse de l'Évangile.",
+   "dailyCore": [
+    "Temps de louange personnelle",
+    "Lecture priante de la Parole"
+   ],
+   "devotions": [
+    {
+     "name": "Louange quotidienne",
+     "note": "Chant ou prière spontanée de louange, seul ou en groupe.",
+     "signature": true
+    },
+    {
+     "name": "Adoration eucharistique",
+     "note": "Un temps hebdomadaire devant le Saint-Sacrement.",
+     "signature": true
+    },
+    {
+     "name": "Demande de l'effusion de l'Esprit",
+     "note": "Prière renouvelée pour une nouvelle effusion de l'Esprit Saint.",
+     "signature": true
+    },
+    {
+     "name": "Partage en groupe de prière",
+     "note": "Participation ou équivalent personnel de partage fraternel.",
+     "signature": false
+    },
+    {
+     "name": "Compassion concrète",
+     "note": "Un geste de service envers une personne en souffrance cette semaine.",
+     "signature": false
+    },
+    {
+     "name": "Témoignage donné",
+     "note": "Partager sa foi avec quelqu'un cette semaine.",
+     "signature": false
+    },
+    {
+     "name": "Louange prolongée",
+     "note": "Un temps plus long de louange, mains levées, dans la tradition charismatique.",
+     "signature": false
+    },
+    {
+     "name": "Jeûne et prière d'intercession",
+     "note": "Pour une intention précise.",
+     "signature": false
+    },
+    {
+     "name": "Formation spirituelle",
+     "note": "Un enseignement ou une session lue ou écoutée.",
+     "signature": false
+    },
+    {
+     "name": "Vie de prière communautaire",
+     "note": "Un engagement stable de prière avec d'autres.",
+     "signature": false
+    }
+   ]
+  },
+  {
+   "id": "shalom",
+   "family": "charismatique",
+   "name": "Communauté Shalom",
+   "subtitle": "Louange, évangélisation et vie fraternelle",
+   "patron": "Moysés Azevedo (fondateur), inspiration de la spiritualité de Shalom",
+   "accent": "#8a2e5a",
+   "desc": "Communauté née au Brésil : louange vibrante, évangélisation missionnaire, forte dévotion mariale et vie fraternelle intense.",
+   "dailyCore": [
+    "Louange et intercession quotidienne",
+    "Lecture de la Parole avec le cœur"
+   ],
+   "devotions": [
+    {
+     "name": "Louange chantée quotidienne",
+     "note": "Chant de louange, seul ou en groupe.",
+     "signature": true
+    },
+    {
+     "name": "Intercession nommée",
+     "note": "Prière quotidienne pour une personne précise.",
+     "signature": false
+    },
+    {
+     "name": "Demande de l'effusion de l'Esprit",
+     "note": "Renouvelée régulièrement.",
+     "signature": false
+    },
+    {
+     "name": "Évangélisation concrète",
+     "note": "Un témoignage ou une annonce donnée cette semaine.",
+     "signature": true
+    },
+    {
+     "name": "Vie fraternelle",
+     "note": "Partage réel de la vie avec d'autres croyants cette semaine.",
+     "signature": false
+    },
+    {
+     "name": "Adoration prolongée",
+     "note": "Un temps plus long devant le Saint-Sacrement.",
+     "signature": false
+    },
+    {
+     "name": "Jeûne d'intercession",
+     "note": "Pour une intention missionnaire précise.",
+     "signature": false
+    },
+    {
+     "name": "Service des pauvres",
+     "note": "Un geste concret cette semaine.",
+     "signature": false
+    },
+    {
+     "name": "Formation biblique",
+     "note": "Étude priante d'un passage de l'Écriture.",
+     "signature": false
+    },
+    {
+     "name": "Consécration mariale Shalom",
+     "note": "Consécration à Marie, renouvelée selon le charisme de la communauté.",
+     "signature": true
+    }
+   ]
+  },
+  {
+   "id": "roumaine",
+   "family": "orthodoxe",
+   "name": "Tradition roumaine",
+   "subtitle": "Philocalie roumaine — Rugul Aprins",
+   "patron": "Saint Dumitru Stăniloae, hiéromoine Daniil Sandu Tudor",
+   "accent": "#5a3a2e",
+   "desc": "La redécouverte de l'hésychasme au XXe siècle : le père Dumitru Stăniloae traduisit la Philocalie en douze volumes ; le mouvement du « Buisson Ardent » (Rugul Aprins), autour du monastère Antim de Bucarest, en fit une école de prière du cœur, y compris sous la persécution communiste.",
+   "dailyCore": [
+    "Prière de Jésus (rugăciunea inimii)",
+    "Lecture quotidienne d'un court passage de la Philocalie roumaine"
+   ],
+   "devotions": [
+    {
+     "name": "Rugăciunea inimii",
+     "note": "La Prière de Jésus, répétée avec le souffle, chaque jour.",
+     "signature": true
+    },
+    {
+     "name": "Lecture de la Philocalie roumaine",
+     "note": "Un passage bref, traduit et commenté par le père Stăniloae.",
+     "signature": true
+    },
+    {
+     "name": "Acathiste marial",
+     "note": "Chaque semaine, selon l'usage roumain.",
+     "signature": false
+    },
+    {
+     "name": "Jeûne selon le calendrier roumain",
+     "note": "Mercredi, vendredi, et périodes prescrites.",
+     "signature": false
+    },
+    {
+     "name": "Confession et communion fréquentes",
+     "note": "Selon le rythme conseillé par le père spirituel.",
+     "signature": false
+    },
+    {
+     "name": "Veillée du Buisson Ardent",
+     "note": "Silence et prière prolongée, à l'image du mouvement spirituel de Bucarest.",
+     "signature": true
+    },
+    {
+     "name": "Lecture de l'Échelle sainte",
+     "note": "Incluse dans la Philocalie roumaine, un degré par semaine.",
+     "signature": false
+    },
+    {
+     "name": "Métanies quotidiennes",
+     "note": "Prosternations, nombre croissant.",
+     "signature": false
+    },
+    {
+     "name": "Contemplation de la lumière incréée",
+     "note": "Selon la théologie palamite, chère au père Stăniloae.",
+     "signature": false
+    },
+    {
+     "name": "Prière pour l'unité",
+     "note": "Intention constante pour l'unité de l'Église et la communion des personnes.",
+     "signature": false
+    }
+   ]
+  },
+  {
+   "id": "georgienne",
+   "family": "orthodoxe",
+   "name": "Tradition géorgienne",
+   "subtitle": "Sainte Nino et les Pères assyriens",
+   "patron": "Sainte Nino, égale-aux-Apôtres ; saint David Garedjeli",
+   "accent": "#3a4a3a",
+   "desc": "L'une des plus anciennes Églises chrétiennes : sainte Nino évangélisa la Géorgie au IVe siècle avec une croix faite de sarments de vigne liés de ses propres cheveux ; les Pères assyriens, dont saint David, y fondèrent au VIe siècle un monachisme du désert.",
+   "dailyCore": [
+    "Prière devant la croix de sarments de sainte Nino (en pensée ou devant une icône)",
+    "Prière de Jésus"
+   ],
+   "devotions": [
+    {
+     "name": "Prière devant la croix de sainte Nino",
+     "note": "Icône ou représentation de la croix de vigne liée de cheveux.",
+     "signature": true
+    },
+    {
+     "name": "Chant liturgique géorgien",
+     "note": "Écoute ou pratique du chant polyphonique traditionnel.",
+     "signature": true
+    },
+    {
+     "name": "Jeûne selon le typikon géorgien",
+     "note": "Mercredi et vendredi, périodes prescrites.",
+     "signature": false
+    },
+    {
+     "name": "Mémoire des lieux saints",
+     "note": "Pèlerinage intérieur vers Mtskheta et David Gareja par la pensée et la prière.",
+     "signature": false
+    },
+    {
+     "name": "Vénération des icônes et reliques",
+     "note": "Un temps quotidien devant une icône.",
+     "signature": false
+    },
+    {
+     "name": "Prosternations",
+     "note": "Nombre croissant.",
+     "signature": false
+    },
+    {
+     "name": "Retraite au désert",
+     "note": "Un temps de solitude, à l'image de saint David Garedjeli.",
+     "signature": false
+    },
+    {
+     "name": "Confession fréquente",
+     "note": "Selon le rythme conseillé par le père spirituel.",
+     "signature": false
+    },
+    {
+     "name": "Prière pour l'Église et le peuple",
+     "note": "Intention constante, trait marquant de la piété géorgienne.",
+     "signature": false
+    },
+    {
+     "name": "Silence contemplatif",
+     "note": "À l'image des Pères assyriens fondateurs du désert géorgien.",
+     "signature": false
+    }
+   ]
+  },
+  {
+   "id": "capucins",
+   "family": "catholique",
+   "name": "Capucins",
+   "subtitle": "Réforme de solitude et d'oraison (1528)",
+   "patron": "Saint Padre Pio de Pietrelcina, saint Laurent de Brindisi, saint Félix de Cantalice",
+   "accent": "#6b4a2e",
+   "desc": "Réforme franciscaine de 1528 : retour à la solitude, à la pauvreté radicale et à l'oraison prolongée, avec une place centrale donnée à la méditation de la Passion et au ministère de la confession.",
+   "dailyCore": [
+    "Oraison mentale prolongée",
+    "Méditation quotidienne de la Passion du Christ"
+   ],
+   "devotions": [
+    {
+     "name": "Oraison mentale silencieuse",
+     "note": "Un temps quotidien de prière silencieuse, prolongé progressivement.",
+     "signature": true
+    },
+    {
+     "name": "Méditation de la Passion",
+     "note": "Contemplation quotidienne d'un épisode de la Passion du Christ.",
+     "signature": true
+    },
+    {
+     "name": "Confession fréquente",
+     "note": "À l'exemple de saint Padre Pio, confesseur inlassable.",
+     "signature": true
+    },
+    {
+     "name": "Angélus",
+     "note": "Trois fois par jour.",
+     "signature": false
+    },
+    {
+     "name": "Adoration eucharistique",
+     "note": "Un temps hebdomadaire devant le Saint-Sacrement.",
+     "signature": false
+    },
+    {
+     "name": "Pauvreté radicale",
+     "note": "Un renoncement concret chaque semaine.",
+     "signature": false
+    },
+    {
+     "name": "Rosaire",
+     "note": "Récité quotidiennement.",
+     "signature": false
+    },
+    {
+     "name": "Solitude en ermitage",
+     "note": "Un temps de retraite personnelle chaque mois.",
+     "signature": false
+    },
+    {
+     "name": "Partage de la foi avec les pauvres",
+     "note": "Un geste ou une parole de réconfort donnée cette semaine.",
+     "signature": false
+    },
+    {
+     "name": "Abandon total à la volonté de Dieu",
+     "note": "À l'exemple de Padre Pio, union mystique dans l'obéissance.",
+     "signature": false
+    }
+   ]
+  },
+  {
+   "id": "passionistes",
+   "family": "catholique",
+   "name": "Passionistes",
+   "subtitle": "Que la Passion soit toujours dans nos cœurs",
+   "patron": "Saint Paul de la Croix, saint Gabriel de l'Addolorata",
+   "accent": "#7a1f3a",
+   "desc": "Fondés par saint Paul de la Croix en 1720 : un quatrième vœu s'ajoute aux trois habituels, celui de garder et propager la mémoire vivante de la Passion du Christ, « l'œuvre la plus stupéfiante de l'amour de Dieu ».",
+   "dailyCore": [
+    "Mémoire vivante de la Passion : « Que la Passion de Jésus-Christ soit toujours dans nos cœurs »",
+    "Oraison mentale quotidienne"
+   ],
+   "devotions": [
+    {
+     "name": "Méditation de la Passion",
+     "note": "Chaque jour, un épisode de la Passion contemplé en détail.",
+     "signature": true
+    },
+    {
+     "name": "Chapelet des Cinq Plaies",
+     "note": "Dévotion propre à la congrégation, approuvée en 1823.",
+     "signature": true
+    },
+    {
+     "name": "Via Crucis",
+     "note": "Chemin de Croix, une fois par semaine.",
+     "signature": false
+    },
+    {
+     "name": "Esprit d'oraison, de solitude, de pauvreté",
+     "note": "Les trois piliers du testament spirituel de saint Paul de la Croix.",
+     "signature": true
+    },
+    {
+     "name": "Partage de la mémoire de la Passion",
+     "note": "Un témoignage donné à quelqu'un cette semaine.",
+     "signature": false
+    },
+    {
+     "name": "Sept Douleurs de la Vierge",
+     "note": "Méditation, à l'image des moniales passionistes debout au pied de la croix.",
+     "signature": false
+    },
+    {
+     "name": "Silence contemplatif prolongé",
+     "note": "Un temps de silence plus long chaque semaine.",
+     "signature": false
+    },
+    {
+     "name": "Solitude mensuelle",
+     "note": "Un jour de retraite et de solitude chaque mois.",
+     "signature": false
+    },
+    {
+     "name": "Charité envers les souffrants",
+     "note": "Visiter ou soutenir une personne malade ou éprouvée.",
+     "signature": false
+    },
+    {
+     "name": "Abandon au bon plaisir divin",
+     "note": "Dépouillement de toute consolation sensible, selon le journal mystique de saint Paul de la Croix.",
+     "signature": false
+    }
+   ]
+  },
+  {
+   "id": "misericorde-faustine",
+   "family": "catholique",
+   "name": "Sœurs de Notre-Dame de la Miséricorde",
+   "subtitle": "Contempler, accueillir, manifester la Miséricorde",
+   "patron": "Sainte Faustine Kowalska, Mère Thérèse (Ewa Potocka), fondatrice",
+   "accent": "#8a2e4a",
+   "desc": "Fondée à Varsovie en 1862, cette congrégation compta parmi ses sœurs sainte Faustine Kowalska, à qui fut révélée la dévotion à la Divine Miséricorde. Sa spiritualité s'appuie sur la démarche évangélique de saint Ignace de Loyola.",
+   "dailyCore": [
+    "Chapelet de la Divine Miséricorde, si possible à 15h (l'Heure de la Miséricorde)",
+    "Invocation « Jésus, j'ai confiance en Toi »"
+   ],
+   "devotions": [
+    {
+     "name": "Chapelet de la Divine Miséricorde",
+     "note": "Récité si possible à 15h, l'Heure de la Miséricorde.",
+     "signature": true
+    },
+    {
+     "name": "« Jésus, j'ai confiance en Toi »",
+     "note": "Invocation répétée devant l'image de la Miséricorde divine.",
+     "signature": true
+    },
+    {
+     "name": "Lecture du Petit Journal",
+     "note": "Un court passage du Petit Journal de sainte Faustine.",
+     "signature": true
+    },
+    {
+     "name": "Neuvaine à la Divine Miséricorde",
+     "note": "En préparation du Dimanche de la Miséricorde, après Pâques.",
+     "signature": false
+    },
+    {
+     "name": "Démarche évangélique ignatienne",
+     "note": "Examen et discernement, selon la spiritualité fondatrice.",
+     "signature": false
+    },
+    {
+     "name": "Contempler, accueillir, manifester",
+     "note": "Un geste concret de miséricorde envers quelqu'un chaque jour.",
+     "signature": false
+    },
+    {
+     "name": "Accueil des personnes en difficulté",
+     "note": "Service concret, dans l'esprit de l'apostolat de la congrégation.",
+     "signature": false
+    },
+    {
+     "name": "Méditation des vœux",
+     "note": "Pauvreté, chasteté, obéissance, médités selon son propre état de vie.",
+     "signature": false
+    },
+    {
+     "name": "Confiance totale",
+     "note": "Un acte concret de confiance en la miséricorde de Dieu, même dans la faute.",
+     "signature": false
+    },
+    {
+     "name": "Miséricorde envers soi-même",
+     "note": "Cesser toute dureté envers soi ; accueillir le pardon reçu.",
+     "signature": false
+    }
+   ]
+  },
+  {
+   "id": "chemin-neuf",
+   "family": "charismatique",
+   "name": "Communauté du Chemin Neuf",
+   "subtitle": "Spiritualité ignatienne et Renouveau charismatique",
+   "patron": "Père Laurent Fabre (fondateur, 1973), inspiration œcuménique et ignatienne",
+   "accent": "#3a5a6b",
+   "desc": "Née d'un groupe de prière charismatique à Lyon en 1973, la communauté unit la tradition ignatienne (Exercices, discernement, accompagnement) et l'expérience du Renouveau charismatique, dans une vocation résolument œcuménique.",
+   "dailyCore": [
+    "Lecture et méditation quotidienne de la Parole de Dieu",
+    "Accompagnement spirituel régulier"
+   ],
+   "devotions": [
+    {
+     "name": "Lecture priante de la Parole",
+     "note": "Chaque jour, à la manière de la tradition ignatienne.",
+     "signature": true
+    },
+    {
+     "name": "Baptême dans l'Esprit Saint",
+     "note": "Demande renouvelée, expérience fondatrice de la communauté.",
+     "signature": true
+    },
+    {
+     "name": "Prière commune hebdomadaire",
+     "note": "Participation à un temps de prière partagé.",
+     "signature": false
+    },
+    {
+     "name": "Accompagnement spirituel",
+     "note": "Régulier, selon le discernement ignatien.",
+     "signature": false
+    },
+    {
+     "name": "Discernement des esprits",
+     "note": "Relecture des mouvements de consolation et désolation.",
+     "signature": false
+    },
+    {
+     "name": "Simplicité de vie",
+     "note": "Un geste de partage concret cette semaine.",
+     "signature": false
+    },
+    {
+     "name": "Prière pour l'unité des chrétiens",
+     "note": "Intention constante, charisme œcuménique propre à la communauté.",
+     "signature": true
+    },
+    {
+     "name": "Session ou retraite selon les Exercices",
+     "note": "Un temps de retraite ignatienne, au moins une fois par an.",
+     "signature": false
+    },
+    {
+     "name": "Service et mission",
+     "note": "Un engagement concret pour l'Église ou une personne en difficulté.",
+     "signature": false
+    },
+    {
+     "name": "Vie fraternelle engagée",
+     "note": "Disponibilité réelle envers un frère ou une sœur cette semaine.",
+     "signature": false
+    }
+   ]
+  },
+  {
+   "id": "verbum-dei",
+   "family": "charismatique",
+   "name": "Fraternité Verbum Dei",
+   "subtitle": "« Assidus à la prière et au ministère de la Parole » (Ac 6,4)",
+   "patron": "Père Jaime Bonet Bonet (fondateur, Majorque, 1963)",
+   "accent": "#5a4a2e",
+   "desc": "Fondée à Majorque en 1963 par le père Jaime Bonet, reconnue par le Saint-Siège en 2000 : une fraternité missionnaire (sœurs consacrées, prêtres et frères, couples consacrés) tout entière centrée sur le service de la Parole de Dieu, priée, assimilée et prêchée.",
+   "dailyCore": [
+    "Prière avec la Parole de Dieu, chaque jour",
+    "Ministère de la Parole : partager ce qui a été reçu dans la prière"
+   ],
+   "devotions": [
+    {
+     "name": "Prière avec la Parole",
+     "note": "Un passage d'Écriture prié chaque jour, pas seulement lu.",
+     "signature": true
+    },
+    {
+     "name": "Assimilation de la Parole",
+     "note": "Mémoriser ou intérioriser un verset pour le porter dans la journée.",
+     "signature": true
+    },
+    {
+     "name": "Ministère de la Parole",
+     "note": "Partager avec quelqu'un ce que la prière a donné cette semaine.",
+     "signature": false
+    },
+    {
+     "name": "Vie selon les Béatitudes",
+     "note": "Choisir une Béatitude et la vivre concrètement cette semaine.",
+     "signature": false
+    },
+    {
+     "name": "Temps de fraternité",
+     "note": "Un temps de partage de vie et de foi avec d'autres.",
+     "signature": false
+    },
+    {
+     "name": "Évangélisation directe",
+     "note": "Une annonce explicite de la Parole donnée à quelqu'un.",
+     "signature": false
+    },
+    {
+     "name": "Contemplation missionnaire",
+     "note": "Union de la prière silencieuse et du zèle missionnaire, propre au charisme Verbum Dei.",
+     "signature": true
+    },
+    {
+     "name": "Service désintéressé",
+     "note": "Un geste de charité solidaire cette semaine.",
+     "signature": false
+    },
+    {
+     "name": "Formation à l'Écriture",
+     "note": "Approfondir un livre biblique, verset après verset.",
+     "signature": false
+    },
+    {
+     "name": "Identification à Jésus Parole",
+     "note": "Relire sa journée en cherchant où la Parole s'est faite chair dans ses actes.",
+     "signature": false
+    }
+   ]
+  }
+ ]
+}

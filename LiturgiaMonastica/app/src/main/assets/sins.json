@@ -1,0 +1,1066 @@
+{
+ "sins": [
+  {
+   "id": "gourmandise",
+   "name": "Gourmandise",
+   "latin": "Gula",
+   "accent": "#8a5a3c",
+   "virtue": "Tempérance — sobriété du corps et du cœur",
+   "desc": "Première des huit pensées selon Évagre et Cassien : le désordre dans le manger et le boire, porte d'entrée des autres passions. « On ne combat bien les autres démons que si l'on a d'abord vaincu celui-ci » (Cassien, Institutions, livre V).",
+   "prayer": {
+    "orthoPrayer": {
+     "source": "Avant le repas",
+     "text": "« Les yeux de tous espèrent en toi, Seigneur, et tu leur donnes leur nourriture en son temps. Tu ouvres ta main et tu rassasies avec bienveillance tout ce qui vit. » (Ps 144/145,15-16), suivi de trois métanies avant de s'asseoir."
+    },
+    "cathoPrayer": {
+     "source": "Bénédicité",
+     "text": "« Bénissez-nous, Seigneur, ainsi que ces dons que nous allons recevoir de votre bonté, par le Christ notre Seigneur. Amen. »"
+    },
+    "orthoCounsel": {
+     "source": "Jean Climaque, Échelle sainte, degré 14",
+     "text": "La gourmandise est « hypocrite » : elle se dit rassasiée et redemande aussitôt à manger ; mieux vaut quitter la table avant la pleine satiété."
+    },
+    "cathoCounsel": {
+     "source": "François de Sales, Vie dévote III,23",
+     "text": "Garder toujours un reste de faim est plus sûr que d'attendre le dégoût pour s'arrêter de manger."
+    }
+   },
+   "verses": [
+    {
+     "ref": "Philippiens 3,19",
+     "text": "Ceux dont le dieu est le ventre mettent leur gloire dans leur honte et ne pensent qu'aux choses de la terre."
+    },
+    {
+     "ref": "1 Corinthiens 10,31",
+     "text": "Soit donc que vous mangiez, soit que vous buviez, faites tout pour la gloire de Dieu."
+    },
+    {
+     "ref": "Proverbes 23,20-21",
+     "text": "Ne sois pas parmi les buveurs de vin ni parmi ceux qui font excès de nourriture, car cela mène à la pauvreté."
+    },
+    {
+     "ref": "Matthieu 4,4",
+     "text": "L'homme ne vivra pas de pain seulement, mais de toute parole qui sort de la bouche de Dieu."
+    },
+    {
+     "ref": "Galates 5,22-23",
+     "text": "Le fruit de l'Esprit, c'est la joie, la paix, la patience... la maîtrise de soi."
+    },
+    {
+     "ref": "1 Corinthiens 9,27",
+     "text": "Je traite durement mon corps et je le tiens assujetti, de peur d'être moi-même rejeté après avoir prêché aux autres."
+    },
+    {
+     "ref": "Siracide 37,29-30",
+     "text": "Ne te laisse pas emporter par l'appétit ; l'excès de table cause la maladie."
+    }
+   ],
+   "levels": [
+    {
+     "title": "Le carnet de la faim",
+     "practice": "Avant chaque repas, note en une ligne si tu manges par vraie faim ou par ennui, anxiété, habitude. N'y change rien encore : observe seulement.",
+     "ortho": "Fais trois métanies et récite le psaume 144(145),15-16 avant chaque repas.",
+     "catho": "Récite le Bénédicité en pleine conscience, sans le précipiter."
+    },
+    {
+     "title": "Un retranchement par repas",
+     "practice": "À chaque repas, retranche un superflu : second service, dessert systématique, grignotage. Lève-toi de table encore un peu affamé.",
+     "ortho": "Retranche le dernier morceau, en mémoire du conseil de Climaque de quitter la table avant la satiété complète.",
+     "catho": "Choisis un plat en moins, par tempérance, selon François de Sales."
+    },
+    {
+     "title": "Les heures fixes",
+     "practice": "Fixe des heures de repas précises et refuse tout grignotage en dehors. La discipline du temps est le premier rempart contre la voracité.",
+     "ortho": "Observe les heures de repas selon la discipline du typikon monastique.",
+     "catho": "Tiens un horaire fixe de repas comme discipline de vie, à la manière de la règle bénédictine."
+    },
+    {
+     "title": "Un jour de jeûne",
+     "practice": "Choisis un jour cette semaine pour réduire à un repas complet avec des collations très simples.",
+     "ortho": "Observe le jeûne selon le calendrier liturgique orthodoxe si tu le peux (sans viande, sans laitage).",
+     "catho": "Observe le jeûne et l'abstinence catholiques (un repas complet, deux collations)."
+    },
+    {
+     "title": "La prière à table",
+     "practice": "Avant et après chaque repas, rends grâce consciemment, sans réciter machinalement.",
+     "ortho": "Récite la Prière de Jésus avant et après chaque repas.",
+     "catho": "Ajoute une brève action de grâce après le repas (Gloria Patri)."
+    },
+    {
+     "title": "Sobriété des sens",
+     "practice": "Mange sans écran, en silence si possible, en goûtant réellement ce que tu manges.",
+     "ortho": "Pratique l'hésychia à table : silence, sans lecture ni écran, comme au réfectoire monastique.",
+     "catho": "Mange sans distraction, offrant ce moment comme petite mortification ignatienne."
+    },
+    {
+     "title": "L'aumône du jeûne",
+     "practice": "Convertis en aumône concrète ce que tu économises par la sobriété de cette semaine.",
+     "ortho": "Donne à un pauvre l'équivalent d'un repas économisé, selon Jean Chrysostome.",
+     "catho": "Verse à une œuvre caritative ce que tu économises cette semaine."
+    },
+    {
+     "title": "Le jeûne ecclésial",
+     "practice": "Observe cette semaine le jeûne prescrit par ton Église, avec mesure — jamais dans l'excès inverse.",
+     "ortho": "Respecte le jeûne eucharistique avant la communion selon l'usage de ton Église.",
+     "catho": "Respecte le jeûne eucharistique d'une heure avant la communion."
+    },
+    {
+     "title": "Confession et discernement",
+     "practice": "Parle de ce combat à un confesseur : la gourmandise non corrigée ouvre à la tristesse et à l'acédie.",
+     "ortho": "Confesse ce combat à ton père spirituel (pnevmatikos).",
+     "catho": "Confesse ce combat à ton prêtre, en nommant précisément les manquements."
+    },
+    {
+     "title": "Intégration",
+     "practice": "Vis chaque repas de cette semaine comme une offrande consciente. Relis le chemin parcouru.",
+     "ortho": "Termine par une doxologie pour le chemin parcouru.",
+     "catho": "Termine par un Te Deum ou un chant d'action de grâce."
+    }
+   ]
+  },
+  {
+   "id": "luxure",
+   "name": "Luxure",
+   "latin": "Luxuria",
+   "accent": "#5b2a5e",
+   "virtue": "Chasteté — pureté du regard et du cœur",
+   "desc": "Cassien la relie à l'oisiveté et à la gourmandise non maîtrisée : « Le corps ne peut être chaste si l'estomac n'est pas maîtrisé » (Institutions VI). Jean Climaque en fait le quinzième degré de l'Échelle sainte.",
+   "prayer": {
+    "orthoPrayer": {
+     "source": "Tradition hésychaste",
+     "text": "Au moment de la tentation, répéter sans cesse : « Seigneur Jésus-Christ, Fils de Dieu, aie pitié de moi, pécheur. »"
+    },
+    "cathoPrayer": {
+     "source": "Prière à la Vierge",
+     "text": "« Sainte Marie, Mère de Dieu, gardez mon cœur et mes sens, obtenez-moi la pureté. Je vous salue Marie, pleine de grâce... »"
+    },
+    "orthoCounsel": {
+     "source": "Jean Climaque, Échelle sainte, degré 15",
+     "text": "La chasteté se gagne par la fuite plus que par le combat direct : celui qui fuit reçoit une couronne plus sûre que celui qui lutte de près."
+    },
+    "cathoCounsel": {
+     "source": "François de Sales, Vie dévote III,2",
+     "text": "La garde des yeux et des paroles est le premier rempart de la pureté du cœur."
+    }
+   },
+   "verses": [
+    {
+     "ref": "Matthieu 5,8",
+     "text": "Heureux les cœurs purs, car ils verront Dieu."
+    },
+    {
+     "ref": "Job 31,1",
+     "text": "J'avais fait un pacte avec mes yeux ; comment aurais-je arrêté mes regards sur une jeune fille ?"
+    },
+    {
+     "ref": "1 Corinthiens 6,19-20",
+     "text": "Votre corps est le temple du Saint-Esprit qui est en vous ; glorifiez donc Dieu dans votre corps."
+    },
+    {
+     "ref": "Galates 5,16",
+     "text": "Marchez selon l'Esprit, et vous n'accomplirez pas les désirs de la chair."
+    },
+    {
+     "ref": "Psaume 51,12",
+     "text": "Crée en moi un cœur pur, ô Dieu, renouvelle en moi un esprit bien disposé."
+    },
+    {
+     "ref": "Matthieu 5,28",
+     "text": "Quiconque regarde une femme pour la convoiter a déjà commis l'adultère avec elle dans son cœur."
+    },
+    {
+     "ref": "2 Timothée 2,22",
+     "text": "Fuis les passions de la jeunesse et recherche la justice, la foi, la charité, la paix."
+    }
+   ],
+   "levels": [
+    {
+     "title": "Garde des pensées",
+     "practice": "Chaque soir, relis ta journée : quelles pensées, quels regards se sont attardés sans que tu les arrêtes ? Note sans te condamner.",
+     "ortho": "Pratique la garde des pensées (nepsis) enseignée par Évagre : repère la pensée avant qu'elle ne devienne image.",
+     "catho": "Fais un examen ignatien du soir centré sur les pensées et les regards."
+    },
+    {
+     "title": "Nommer les occasions",
+     "practice": "Identifie une ou deux occasions précises à écarter cette semaine. Rien de vague : un nom, une action.",
+     "ortho": "Éloigne-toi concrètement de l'occasion identifiée, à la manière des Pères du désert.",
+     "catho": "Prends une résolution concrète pour l'éviter, comme le conseille Ignace dans les Exercices."
+    },
+    {
+     "title": "Le pacte des yeux",
+     "practice": "À l'exemple de Job, détourne volontairement le regard dès la première pensée, sans t'y attarder.",
+     "ortho": "Détourne le regard sans t'y attarder ni te culpabiliser — méthode des Pères du désert.",
+     "catho": "Note chaque soir où le regard a manqué, selon le pacte de Job."
+    },
+    {
+     "title": "Occuper les mains",
+     "practice": "Cassien lie cette passion à l'oisiveté : occupe chaque temps mort par un travail ou une lecture spirituelle.",
+     "ortho": "Occupe les temps morts par un travail manuel, comme le prescrit Cassien contre l'oisiveté.",
+     "catho": "Occupe les temps morts par la lecture spirituelle ou le chapelet."
+    },
+    {
+     "title": "La prière brève",
+     "practice": "Au moment précis de la tentation, prie brièvement plutôt que de raisonner longuement.",
+     "ortho": "Répète la Prière de Jésus au moment précis de la tentation.",
+     "catho": "Récite un Je vous salue Marie au moment précis de la tentation."
+    },
+    {
+     "title": "Modestie concrète",
+     "practice": "Revois ta tenue, tes paroles, tes plaisanteries de la semaine.",
+     "ortho": "Revois ta tenue et ton langage selon la pudeur enseignée par les Pères du désert.",
+     "catho": "Applique les conseils de modestie de François de Sales (Vie dévote III,2)."
+    },
+    {
+     "title": "Confession fréquente",
+     "practice": "Prends l'habitude d'une confession sincère et régulière sur ce point précis.",
+     "ortho": "Confesse ce combat à ton père spirituel sans détour ni minimisation.",
+     "catho": "Confesse ce combat sacramentellement, avec précision."
+    },
+    {
+     "title": "Amitiés vraies",
+     "practice": "Cultive une relation d'amitié spirituelle authentique et chaste.",
+     "ortho": "Cultive une amitié à l'exemple de Barsanuphe, Jean et Dorothée de Gaza.",
+     "catho": "Cultive une amitié fondée sur la vertu, selon François de Sales (Vie dévote III,19)."
+    },
+    {
+     "title": "Ascèse mesurée",
+     "practice": "Ajoute un jeûne ou une veille supplémentaire, toujours avec mesure.",
+     "ortho": "Ajoute un jeûne ou une veille supplémentaire, avec mesure.",
+     "catho": "Ajoute une pénitence corporelle mesurée, offerte pour la pureté."
+    },
+    {
+     "title": "Intégration — le cœur pur",
+     "practice": "Relis le chemin des neuf semaines. Oriente ton désir tout entier vers Dieu.",
+     "ortho": "Termine par une doxologie et un passage de l'Échelle sainte sur la chasteté.",
+     "catho": "Termine par une consécration du cœur à la Vierge Marie."
+    }
+   ]
+  },
+  {
+   "id": "avarice",
+   "name": "Avarice",
+   "latin": "Avaritia",
+   "accent": "#6b5a2e",
+   "virtue": "Pauvreté de cœur — détachement et confiance en la Providence",
+   "desc": "« L'amour de l'argent est une racine de tous les maux » (1 Tm 6,10). Cassien note qu'à la différence des autres passions, l'avarice n'a aucune racine dans la nature humaine : elle vient d'une volonté mauvaise.",
+   "prayer": {
+    "orthoPrayer": {
+     "source": "Notre Père, sur la confiance",
+     "text": "« Donne-nous aujourd'hui notre pain quotidien », récité en insistant sur la confiance en la Providence, à l'image des Pères du désert qui ne gardaient rien pour le lendemain."
+    },
+    "cathoPrayer": {
+     "source": "Suscipe, saint Ignace",
+     "text": "« Prenez, Seigneur, et recevez toute ma liberté, ma mémoire, mon intelligence et toute ma volonté... donnez-moi votre amour et votre grâce, cela me suffit. »"
+    },
+    "orthoCounsel": {
+     "source": "Jean Cassien, Institutions VII",
+     "text": "L'avarice, à la différence des autres passions, n'a aucune racine dans la nature : elle vient d'une volonté mauvaise, et peut donc être arrachée d'un coup de résolution."
+    },
+    "cathoCounsel": {
+     "source": "Thomas d'Aquin, Somme théologique IIa-IIae Q.118",
+     "text": "L'avarice dérègle la fin des biens temporels, faits pour servir l'homme et non pour être servis par lui."
+    }
+   },
+   "verses": [
+    {
+     "ref": "1 Timothée 6,10",
+     "text": "L'amour de l'argent est une racine de tous les maux."
+    },
+    {
+     "ref": "Matthieu 6,19-21",
+     "text": "Ne vous amassez pas de trésors sur la terre... Car là où est ton trésor, là aussi sera ton cœur."
+    },
+    {
+     "ref": "Luc 12,15",
+     "text": "Gardez-vous de toute avarice, car la vie d'un homme ne dépend pas de l'abondance de ses biens."
+    },
+    {
+     "ref": "Hébreux 13,5",
+     "text": "Ne vous livrez pas à l'amour de l'argent ; contentez-vous de ce que vous avez."
+    },
+    {
+     "ref": "Matthieu 6,24",
+     "text": "Nul ne peut servir deux maîtres... Vous ne pouvez servir Dieu et Mamon."
+    },
+    {
+     "ref": "2 Corinthiens 9,7",
+     "text": "Dieu aime celui qui donne avec joie."
+    },
+    {
+     "ref": "Actes 20,35",
+     "text": "Il y a plus de bonheur à donner qu'à recevoir."
+    }
+   ],
+   "levels": [
+    {
+     "title": "Lister les attachements",
+     "practice": "Sans rien changer encore, note ce à quoi tu es le plus attaché matériellement. La lucidité précède le détachement.",
+     "ortho": "Note tes attachements sans culpabilité, à la manière de l'examen des pensées d'Évagre.",
+     "catho": "Fais un examen ignatien sur tes attachements matériels."
+    },
+    {
+     "title": "Le premier don",
+     "practice": "Donne concrètement, cette semaine, un objet, une somme ou du temps, sans calcul ni attente de retour.",
+     "ortho": "Donne en aumône selon l'esprit du denier orthodoxe, sans calcul.",
+     "catho": "Pose un geste de charité concret cette semaine, sans attente de retour."
+    },
+    {
+     "title": "Le budget devant Dieu",
+     "practice": "Relis tes dépenses récentes à la lumière de la prière : distingue le besoin réel du désir entretenu.",
+     "ortho": "Relis tes dépenses en union avec la prière du cœur.",
+     "catho": "Fais un budget devant Dieu à la lumière de l'examen ignatien."
+    },
+    {
+     "title": "Se défaire d'un superflu",
+     "practice": "Vends ou donne un bien dont tu n'as pas réellement besoin.",
+     "ortho": "Défais-toi d'un bien superflu, en mémoire du renoncement monastique.",
+     "catho": "Vends ou donne un bien superflu, exercice de pauvreté volontaire (François de Sales III,14)."
+    },
+    {
+     "title": "Une part fixe",
+     "practice": "Instaure une part régulière donnée aux pauvres ou à l'Église.",
+     "ortho": "Institue une aumône régulière à ta paroisse.",
+     "catho": "Institue une dîme ou un don régulier à une œuvre caritative."
+    },
+    {
+     "title": "Simplicité de vie",
+     "practice": "Réduis un poste précis de ton train de vie au profit d'un usage plus sobre.",
+     "ortho": "Simplifie ton mode de vie à l'image de la sobriété monastique.",
+     "catho": "Réduis un poste de dépense superflu cette semaine."
+    },
+    {
+     "title": "La Providence en acte",
+     "practice": "Chaque jour, médite Matthieu 6 et pose un acte concret de confiance qui te coûte.",
+     "ortho": "Médite chaque jour un psaume de confiance (Ps 22/23).",
+     "catho": "Médite Matthieu 6 et pose un acte concret de confiance en la Providence."
+    },
+    {
+     "title": "Service désintéressé",
+     "practice": "Consacre du temps, pas seulement de l'argent, à un service entièrement gratuit.",
+     "ortho": "Consacre du temps gratuit au service des pauvres, comme les diaconies orientales.",
+     "catho": "Consacre du temps gratuit à une œuvre caritative."
+    },
+    {
+     "title": "Pauvreté d'esprit",
+     "practice": "Relis les Béatitudes et examine ton cœur au-delà des seuls biens matériels.",
+     "ortho": "Relis les Béatitudes en union avec la pauvreté d'esprit prônée par les moines.",
+     "catho": "Relis les Béatitudes et examine ton cœur au-delà des seuls biens matériels."
+    },
+    {
+     "title": "Intégration",
+     "practice": "Bilan des dix semaines : qu'est-ce qui te possédait, et qu'as-tu appris à posséder librement ?",
+     "ortho": "Termine par une action de grâce pour la liberté intérieure retrouvée.",
+     "catho": "Termine par la prière du Suscipe d'Ignace de Loyola."
+    }
+   ]
+  },
+  {
+   "id": "colere",
+   "name": "Colère",
+   "latin": "Ira",
+   "accent": "#7a1f1f",
+   "virtue": "Douceur — mansuétude du cœur",
+   "desc": "« La colère est un fruit de l'orgueil », note Évagre. Cassien lui consacre le livre VIII des Institutions : elle empêche toute prière et tout discernement tant qu'elle n'est pas déracinée.",
+   "prayer": {
+    "orthoPrayer": {
+     "source": "Inspirée de saint Éphrem",
+     "text": "« Seigneur, donne-moi de voir mes propres fautes et de ne pas juger mon frère, car tu es béni dans les siècles. Amen. »"
+    },
+    "cathoPrayer": {
+     "source": "Prière de saint François d'Assise",
+     "text": "« Seigneur, fais de moi un instrument de ta paix... là où est la haine, que je mette l'amour. »"
+    },
+    "orthoCounsel": {
+     "source": "Évagre le Pontique",
+     "text": "La colère est liée à l'orgueil blessé : celui qui s'irrite veut être reconnu et ne l'est pas ; le remède véritable est donc l'humilité, non la seule maîtrise de soi."
+    },
+    "cathoCounsel": {
+     "source": "François de Sales, Vie dévote III,8-9",
+     "text": "Mieux vaut prévenir la colère que la guérir ; il faut la combattre dès le premier mouvement, avant qu'elle ne s'installe."
+    }
+   },
+   "verses": [
+    {
+     "ref": "Éphésiens 4,26",
+     "text": "Si vous vous mettez en colère, ne péchez point ; que le soleil ne se couche pas sur votre colère."
+    },
+    {
+     "ref": "Jacques 1,19-20",
+     "text": "Que tout homme soit prompt à écouter, lent à parler, lent à se mettre en colère."
+    },
+    {
+     "ref": "Proverbes 15,1",
+     "text": "Une réponse douce calme la fureur, mais une parole dure excite la colère."
+    },
+    {
+     "ref": "Matthieu 5,22",
+     "text": "Quiconque se met en colère contre son frère en répondra devant le jugement."
+    },
+    {
+     "ref": "Proverbes 16,32",
+     "text": "Celui qui est lent à la colère vaut mieux qu'un héros."
+    },
+    {
+     "ref": "Colossiens 3,8",
+     "text": "Dépouillez-vous de la colère, de l'animosité, de la méchanceté."
+    },
+    {
+     "ref": "Psaume 37,8",
+     "text": "Laisse la colère, abandonne la fureur, ne t'irrite pas, ce serait mal faire."
+    }
+   ],
+   "levels": [
+    {
+     "title": "Observation sans correction",
+     "practice": "Note chaque mouvement de colère de la journée : déclencheur, intensité, réaction. N'essaie pas encore de corriger.",
+     "ortho": "Pratique la garde du cœur : observe chaque mouvement de colère sans réagir ni te juger.",
+     "catho": "Fais un examen ignatien du soir centré uniquement sur la colère du jour."
+    },
+    {
+     "title": "Le délai",
+     "practice": "Avant toute réponse sous le coup de la colère, impose-toi une pause.",
+     "ortho": "Avant de répondre, récite intérieurement la Prière de Jésus une fois.",
+     "catho": "Avant de répondre, récite un Notre Père intérieurement."
+    },
+    {
+     "title": "La douceur active",
+     "practice": "Au moins une fois par jour, remplace concrètement une réponse dure par une réponse douce.",
+     "ortho": "Remplace une parole dure par une parole douce, en mémoire des Apophtegmes des Pères.",
+     "catho": "Applique le conseil de François de Sales : répondre doucement même quand on a raison."
+    },
+    {
+     "title": "Un pardon nommé",
+     "practice": "Identifie une rancune précise et pose un acte de pardon explicite.",
+     "ortho": "Pardonne explicitement, en union avec « comme nous pardonnons ».",
+     "catho": "Pose un acte de pardon concret, en lien avec la réconciliation si possible."
+    },
+    {
+     "title": "Prier pour l'offenseur",
+     "practice": "Prie nommément, chaque jour, pour la personne qui a suscité ta colère.",
+     "ortho": "Prie chaque jour pour cette personne selon Matthieu 5,44.",
+     "catho": "Prie chaque jour pour cette personne et offre un chapelet à cette intention."
+    },
+    {
+     "title": "Garder la langue",
+     "practice": "Observe un temps de silence volontaire renforcé.",
+     "ortho": "Observe un jour de silence renforcé, à la manière des hésychastes.",
+     "catho": "Observe un jour de silence volontaire, offert en pénitence."
+    },
+    {
+     "title": "Confession précise",
+     "practice": "Confesse concrètement les manquements de colère de la semaine.",
+     "ortho": "Confesse précisément à ton père spirituel les manquements de colère.",
+     "catho": "Confesse précisément ces manquements en confession sacramentelle."
+    },
+    {
+     "title": "Corriger sans passion",
+     "practice": "Si une remarque doit être faite, prépare-la et formule-la sans passion.",
+     "ortho": "Prépare toute correction fraternelle sans passion, selon Dorothée de Gaza.",
+     "catho": "Prépare toute correction fraternelle dans la prière avant de la formuler."
+    },
+    {
+     "title": "Douceur envers soi-même",
+     "practice": "Étends la douceur à l'auto-critique : cesse les mouvements de colère contre toi-même.",
+     "ortho": "Étends la douceur à toi-même : cesse l'auto-accusation violente.",
+     "catho": "Applique à toi-même la miséricorde que tu demandes à Dieu."
+    },
+    {
+     "title": "Intégration — la paix du cœur",
+     "practice": "Relis les dix semaines : où la colère a-t-elle reculé ?",
+     "ortho": "Termine par la prière de saint Éphrem sur la paix du cœur.",
+     "catho": "Termine par la prière de saint François d'Assise pour la paix."
+    }
+   ]
+  },
+  {
+   "id": "tristesse",
+   "name": "Tristesse",
+   "latin": "Tristitia",
+   "accent": "#3b4a5a",
+   "virtue": "Espérance — joie selon Dieu",
+   "desc": "Cassien distingue la tristesse selon Dieu, qui conduit à la conversion, de la tristesse du monde, stérile et rongeante (2 Co 7,10). Il lui consacre le livre IX des Institutions et la Conférence V.",
+   "prayer": {
+    "orthoPrayer": {
+     "source": "Psaume 42/43",
+     "text": "« Pourquoi t'abats-tu, mon âme... espère en Dieu, car je le louerai encore, lui, le salut de ma face et mon Dieu. » Récité lentement, verset par verset."
+    },
+    "cathoPrayer": {
+     "source": "Prière de confiance",
+     "text": "« Jésus, j'ai confiance en toi » — invocation courte, fondée sur la dévotion à la Miséricorde divine."
+    },
+    "orthoCounsel": {
+     "source": "Cassien, Conférences V",
+     "text": "Distinguer la tristesse selon Dieu, qui produit la componction et la conversion, de la tristesse du monde, qui ronge et décourage sans fruit."
+    },
+    "cathoCounsel": {
+     "source": "François de Sales",
+     "text": "Ne jamais prendre de grande décision dans la tristesse ; s'en remettre humblement au temps et à la prière plutôt qu'à l'agitation."
+    }
+   },
+   "verses": [
+    {
+     "ref": "2 Corinthiens 7,10",
+     "text": "La tristesse selon Dieu produit une repentance à salut... mais la tristesse du monde produit la mort."
+    },
+    {
+     "ref": "Psaume 42,6",
+     "text": "Pourquoi t'abats-tu, mon âme, et gémis-tu en moi ? Espère en Dieu."
+    },
+    {
+     "ref": "Jean 16,22",
+     "text": "Vous éprouvez maintenant de la tristesse ; mais je vous reverrai, et votre cœur se réjouira."
+    },
+    {
+     "ref": "Philippiens 4,4",
+     "text": "Réjouissez-vous toujours dans le Seigneur ; je le répète, réjouissez-vous."
+    },
+    {
+     "ref": "Lamentations 3,22-23",
+     "text": "Les compassions du Seigneur ne sont pas épuisées, elles se renouvellent chaque matin."
+    },
+    {
+     "ref": "Romains 12,12",
+     "text": "Réjouissez-vous en espérance, soyez patients dans l'affliction, persévérez dans la prière."
+    },
+    {
+     "ref": "Psaume 30,6",
+     "text": "Le soir arrivent les pleurs, et le matin l'allégresse."
+    }
+   ],
+   "levels": [
+    {
+     "title": "Discerner la source",
+     "practice": "Chaque soir, note d'où vient la tristesse du jour : péché reconnu, perte réelle, ou sans cause identifiable.",
+     "ortho": "Discerne la source selon la méthode de Cassien (Conférences V).",
+     "catho": "Nomme dans l'examen du soir la source précise de la tristesse."
+    },
+    {
+     "title": "L'acte d'espérance",
+     "practice": "À chaque moment de tristesse, formule consciemment une parole d'espérance.",
+     "ortho": "Récite le psaume 42 dès qu'un abattement survient.",
+     "catho": "Formule un acte d'espérance concret dès qu'un abattement survient."
+    },
+    {
+     "title": "Ne pas rester seul",
+     "practice": "Partage ton état à une personne de confiance plutôt que de t'enfermer.",
+     "ortho": "Ouvre-toi à ton père spirituel plutôt que de t'enfermer.",
+     "catho": "Parle à un prêtre ou un accompagnateur de cet état."
+    },
+    {
+     "title": "Trois grâces par jour",
+     "practice": "Chaque soir, nomme trois choses concrètes pour lesquelles rendre grâce, même dans la peine.",
+     "ortho": "Rends grâce chaque soir pour trois bienfaits reçus, malgré la peine.",
+     "catho": "Fais de même dans l'examen ignatien, en commençant toujours par la gratitude."
+    },
+    {
+     "title": "Sortir de soi",
+     "practice": "Pose un service concret envers quelqu'un — la tristesse se referme, la charité l'ouvre.",
+     "ortho": "Pose un service concret envers un frère pour sortir de toi-même.",
+     "catho": "Pose un acte de charité concret cette semaine."
+    },
+    {
+     "title": "Larmes selon Dieu",
+     "practice": "Distingue la componction qui purifie de l'abattement stérile qui décourage.",
+     "ortho": "Distingue les larmes de componction (Échelle sainte, degré 7) de l'abattement stérile.",
+     "catho": "Distingue la contrition qui pousse vers Dieu du scrupule qui décourage."
+    },
+    {
+     "title": "Le sacrement",
+     "practice": "Reçois un sacrement en lien conscient avec cette tristesse.",
+     "ortho": "Reçois la communion en lien conscient avec cette tristesse.",
+     "catho": "Reçois la réconciliation ou l'eucharistie en lien avec cette tristesse."
+    },
+    {
+     "title": "Le corps et la création",
+     "practice": "Intègre chaque jour un temps dehors, en marchant.",
+     "ortho": "Intègre une marche quotidienne, en silence intérieur priant.",
+     "catho": "Intègre une marche quotidienne accompagnée d'un chapelet."
+    },
+    {
+     "title": "Nourrir l'âme",
+     "practice": "Lis chaque jour un court passage d'Écriture pour restaurer l'espérance.",
+     "ortho": "Nourris-toi chaque jour d'un verset des psaumes.",
+     "catho": "Pratique une courte lectio divina quotidienne."
+    },
+    {
+     "title": "Intégration — la joie retrouvée",
+     "practice": "Bilan des dix semaines : relis les traces de la joie qui a percé, même faiblement.",
+     "ortho": "Termine par une action de grâce complète pour le chemin parcouru.",
+     "catho": "Termine par la prière de confiance à la Miséricorde divine."
+    }
+   ]
+  },
+  {
+   "id": "acedie",
+   "name": "Acédie",
+   "latin": "Acedia",
+   "accent": "#4a4a4a",
+   "virtue": "Persévérance — ferveur stable",
+   "desc": "« Le démon de midi » (Ps 90,6 LXX) : dégoût, lassitude spirituelle, tentation de fuir son devoir d'état. Cassien y consacre le livre X des Institutions, l'un des plus fins de toute la littérature ascétique.",
+   "prayer": {
+    "orthoPrayer": {
+     "source": "Saint Éphrem le Syrien (Carême orthodoxe)",
+     "text": "« Seigneur et Maître de ma vie, ne me donne pas un esprit d'oisiveté, de découragement... mais accorde-moi un esprit de tempérance, d'humilité, de patience et d'amour. »"
+    },
+    "cathoPrayer": {
+     "source": "Prière pour la persévérance",
+     "text": "« Seigneur, donnez-moi la force de continuer ce que j'ai commencé pour vous, même sans consolation sensible. »"
+    },
+    "orthoCounsel": {
+     "source": "Cassien, Institutions X,7",
+     "text": "Celui qui travaille est assailli par un seul démon, l'oisif par mille : le travail manuel est le premier remède à l'acédie."
+    },
+    "cathoCounsel": {
+     "source": "Thérèse d'Avila et François de Sales",
+     "text": "Persévérer dans la prière même sans goût ni ferveur sensible ; la fidélité importe plus que le sentiment."
+    }
+   },
+   "verses": [
+    {
+     "ref": "Hébreux 12,12-13",
+     "text": "Fortifiez vos mains languissantes et vos genoux affaiblis."
+    },
+    {
+     "ref": "Galates 6,9",
+     "text": "Ne nous lassons pas de faire le bien, car nous moissonnerons au temps convenable."
+    },
+    {
+     "ref": "Proverbes 6,6",
+     "text": "Va vers la fourmi, paresseux ; regarde ses voies, et deviens sage."
+    },
+    {
+     "ref": "Colossiens 3,23",
+     "text": "Tout ce que vous faites, faites-le de bon cœur, comme pour le Seigneur."
+    },
+    {
+     "ref": "Ecclésiaste 9,10",
+     "text": "Tout ce que ta main trouve à faire, fais-le avec ta force."
+    },
+    {
+     "ref": "Apocalypse 3,15-16",
+     "text": "Je connais tes œuvres : tu n'es ni froid ni bouillant... je te vomirai de ma bouche."
+    },
+    {
+     "ref": "Romains 12,11",
+     "text": "Ayez du zèle, et non de la paresse. Soyez fervents d'esprit."
+    }
+   ],
+   "levels": [
+    {
+     "title": "Repérer l'heure critique",
+     "practice": "Identifie le moment de la journée où la lassitude spirituelle frappe le plus.",
+     "ortho": "Repère l'heure du 'démon de midi' (Ps 90,6 LXX).",
+     "catho": "Repère dans l'examen ignatien l'heure où la tiédeur s'installe."
+    },
+    {
+     "title": "Tenir l'engagement",
+     "practice": "Maintiens ton engagement de prière précisément à cette heure, sans fuite.",
+     "ortho": "Tiens ton engagement de prière précisément à cette heure, sans fuite.",
+     "catho": "Tiens ton temps d'oraison à cette heure, appuyé sur la persévérance ignatienne."
+    },
+    {
+     "title": "Le travail manuel",
+     "practice": "Impose-toi une tâche concrète chaque jour à l'heure de l'acédie.",
+     "ortho": "Impose-toi un travail manuel concret à l'heure critique, selon Cassien.",
+     "catho": "Impose-toi une tâche concrète à cette heure plutôt que de céder à la dispersion."
+    },
+    {
+     "title": "De petits pas fidèles",
+     "practice": "Réduis tes objectifs spirituels à des engagements tenables plutôt que de tout abandonner.",
+     "ortho": "Réduis ta règle de prière à un minimum tenable plutôt que de l'abandonner.",
+     "catho": "Mieux vaut cinq minutes fidèles qu'une heure d'oraison abandonnée."
+    },
+    {
+     "title": "Éviter le vagabondage",
+     "practice": "Limite les distractions-évasion identifiées cette semaine.",
+     "ortho": "Limite le 'vagabondage' (Cassien X,2-3) de cette semaine.",
+     "catho": "Limite les mêmes distractions-évasion, identifiées précisément."
+    },
+    {
+     "title": "Rompre l'isolement",
+     "practice": "Rends visite ou reçois visite — l'isolement nourrit l'acédie.",
+     "ortho": "Rends visite à un frère, comme le recommandaient les Pères du désert.",
+     "catho": "Sors de l'isolement : appelle ou rends visite à quelqu'un cette semaine."
+    },
+    {
+     "title": "Nommer la tiédeur",
+     "practice": "Confesse explicitement la tiédeur, sans la déguiser en fatigue légitime.",
+     "ortho": "Nomme la tiédeur à ton père spirituel sans la déguiser.",
+     "catho": "Nomme la tiédeur en confession sacramentelle."
+    },
+    {
+     "title": "Prier sans ressentir",
+     "practice": "Continue de prier même sans consolation sensible.",
+     "ortho": "Prie même sans consolation, en tenant la règle malgré la sécheresse.",
+     "catho": "Prie même sans ferveur sensible, fidèle à l'exemple de Thérèse d'Avila."
+    },
+    {
+     "title": "Un but précis",
+     "practice": "Fixe-toi un objectif spirituel concret et mesurable pour la semaine.",
+     "ortho": "Fixe un but précis (ex. lire un chapitre de l'Échelle sainte par jour).",
+     "catho": "Fixe un but spirituel précis et mesurable pour la semaine."
+    },
+    {
+     "title": "Intégration — la ferveur",
+     "practice": "Bilan des dix semaines : la persévérance, même imparfaite, est déjà une victoire.",
+     "ortho": "Termine par la prière de saint Éphrem sur l'esprit de ferveur.",
+     "catho": "Termine par une prière de persévérance et d'action de grâce."
+    }
+   ]
+  },
+  {
+   "id": "vaine-gloire",
+   "name": "Vaine gloire",
+   "latin": "Vanagloria",
+   "accent": "#a08840",
+   "virtue": "Simplicité — la gloire de Dieu seul",
+   "desc": "« La plus subtile des passions », dit Évagre, car elle se nourrit des vertus elles-mêmes. Elle cherche à être vue, louée, reconnue — jusque dans le bien accompli.",
+   "prayer": {
+    "orthoPrayer": {
+     "source": "Psaume 113/115",
+     "text": "« Non pas à nous, Seigneur, non pas à nous, mais à ton nom donne la gloire », récité chaque fois qu'un compliment est reçu."
+    },
+    "cathoPrayer": {
+     "source": "Litanie de l'humilité",
+     "text": "« Du désir d'être estimé, du désir d'être préféré aux autres... délivrez-moi, Jésus. »"
+    },
+    "orthoCounsel": {
+     "source": "Évagre le Pontique",
+     "text": "La vaine gloire est « la plus subtile des passions », car elle se nourrit des vertus elles-mêmes et renaît de leur propre victoire."
+    },
+    "cathoCounsel": {
+     "source": "Ignace de Loyola, Règles pour le discernement des esprits",
+     "text": "Examiner d'où vient une consolation : de Dieu, ou du seul plaisir d'être vu vertueux."
+    }
+   },
+   "verses": [
+    {
+     "ref": "Matthieu 6,1",
+     "text": "Gardez-vous de pratiquer votre justice devant les hommes, pour en être vus."
+    },
+    {
+     "ref": "Galates 1,10",
+     "text": "Si je plaisais encore aux hommes, je ne serais pas serviteur de Christ."
+    },
+    {
+     "ref": "Jean 5,44",
+     "text": "Comment pouvez-vous croire, vous qui tirez votre gloire les uns des autres ?"
+    },
+    {
+     "ref": "Matthieu 6,3-4",
+     "text": "Que ta main gauche ne sache pas ce que fait ta main droite, et ton Père qui voit dans le secret te le rendra."
+    },
+    {
+     "ref": "1 Corinthiens 4,7",
+     "text": "Qu'as-tu que tu n'aies reçu ? Et si tu l'as reçu, pourquoi te glorifies-tu ?"
+    },
+    {
+     "ref": "Jérémie 9,23-24",
+     "text": "Que celui qui se glorifie se glorifie de connaître le Seigneur."
+    },
+    {
+     "ref": "Galates 6,14",
+     "text": "Loin de moi la pensée de me glorifier, sinon dans la croix de notre Seigneur Jésus-Christ."
+    }
+   ],
+   "levels": [
+    {
+     "title": "Observer le désir d'être vu",
+     "practice": "Remarque, sans te juger, chaque désir d'être vu ou félicité pendant la journée.",
+     "ortho": "Observe ce désir selon Évagre (Traité pratique 13).",
+     "catho": "Fais de même dans l'examen ignatien du soir."
+    },
+    {
+     "title": "Le bien caché",
+     "practice": "Accomplis consciemment une bonne action sans que personne ne le sache.",
+     "ortho": "Accomplis une bonne action cachée, selon Matthieu 6,3-4.",
+     "catho": "Fais de même, en l'offrant explicitement à Dieu seul."
+    },
+    {
+     "title": "Recevoir la critique",
+     "practice": "Accueille une remarque cette semaine sans te justifier ni te défendre.",
+     "ortho": "Accueille une remarque sans te justifier, en mémoire de l'obéissance monastique.",
+     "catho": "Accueille une correction sans te défendre, exercice d'humilité ignatienne."
+    },
+    {
+     "title": "Rediriger le compliment",
+     "practice": "Chaque fois que tu reçois un compliment, redirige-le intérieurement vers Dieu.",
+     "ortho": "Redirige tout compliment par une brève action de grâce intérieure.",
+     "catho": "Fais de même en récitant intérieurement le Gloria Patri."
+    },
+    {
+     "title": "Discrétion dans la prière",
+     "practice": "Évite toute pratique spirituelle « spectacle ».",
+     "ortho": "Reviens à la discrétion voulue par le Christ (Mt 6,1).",
+     "catho": "Évite toute pratique 'spectacle' de dévotion."
+    },
+    {
+     "title": "Service invisible",
+     "practice": "Choisis une tâche peu valorisante et accomplis-la avec soin.",
+     "ortho": "Choisis une tâche peu visible et accomplis-la avec le même soin.",
+     "catho": "Fais de même, en union avec le service caché de Nazareth."
+    },
+    {
+     "title": "Confesser la recherche d'estime",
+     "practice": "Nomme les moments où tu as agi pour l'image plutôt que pour Dieu.",
+     "ortho": "Confesse la recherche d'estime à ton père spirituel.",
+     "catho": "Confesse-la sacramentellement."
+    },
+    {
+     "title": "Se réjouir du bien loué chez un autre",
+     "practice": "Quand un autre est loué à ta place, exerce-toi à une joie sincère.",
+     "ortho": "Réjouis-toi sincèrement (Rm 12,15).",
+     "catho": "Fais de même, en priant pour cette personne."
+    },
+    {
+     "title": "Choisir la dernière place",
+     "practice": "Dans une activité commune, choisis volontairement une position moins visible.",
+     "ortho": "Choisis volontairement la dernière place.",
+     "catho": "Fais de même, en union avec l'esprit des Béatitudes."
+    },
+    {
+     "title": "Intégration — la gloire de Dieu seul",
+     "practice": "Bilan : à qui, en définitive, cherches-tu à plaire ?",
+     "ortho": "Termine par le psaume 113/115 : à Dieu seul la gloire.",
+     "catho": "Termine par la litanie de l'humilité."
+    }
+   ]
+  },
+  {
+   "id": "orgueil",
+   "name": "Orgueil",
+   "latin": "Superbia",
+   "accent": "#2a1a2e",
+   "virtue": "Humilité — vérité sur soi devant Dieu",
+   "desc": "« Dernier et le plus redoutable des combats », selon Cassien, car il peut abattre même ceux qui ont vaincu tous les autres vices. Jean Climaque en fait le sommet inversé de l'Échelle : la chute la plus haute.",
+   "prayer": {
+    "orthoPrayer": {
+     "source": "Prière du publicain (Luc 18,13)",
+     "text": "À répéter tout au long de la journée : « Ô Dieu, aie pitié de moi, pécheur. »"
+    },
+    "cathoPrayer": {
+     "source": "Litanie de l'humilité",
+     "text": "« Jésus doux et humble de cœur, rendez mon cœur semblable au vôtre. »"
+    },
+    "orthoCounsel": {
+     "source": "Jean Climaque, Échelle sainte, degré 25",
+     "text": "Autant le soleil dépasse les autres astres, autant l'humilité dépasse toutes les autres vertus."
+    },
+    "cathoCounsel": {
+     "source": "Thomas d'Aquin, Somme théologique IIa-IIae Q.162",
+     "text": "L'orgueil est le désir déréglé de sa propre excellence ; son remède est la vérité sur soi, non l'humiliation artificielle."
+    }
+   },
+   "verses": [
+    {
+     "ref": "Jacques 4,6",
+     "text": "Dieu résiste aux orgueilleux, mais il fait grâce aux humbles."
+    },
+    {
+     "ref": "1 Pierre 5,5-6",
+     "text": "Humiliez-vous sous la puissante main de Dieu, afin qu'il vous élève au temps convenable."
+    },
+    {
+     "ref": "Proverbes 16,18",
+     "text": "L'orgueil précède la ruine, et l'esprit hautain précède la chute."
+    },
+    {
+     "ref": "Philippiens 2,3",
+     "text": "Ne faites rien par esprit de parti, mais que l'humilité vous fasse regarder les autres comme supérieurs à vous-mêmes."
+    },
+    {
+     "ref": "Luc 14,11",
+     "text": "Quiconque s'élève sera abaissé, et quiconque s'abaisse sera élevé."
+    },
+    {
+     "ref": "Matthieu 11,29",
+     "text": "Apprenez de moi, car je suis doux et humble de cœur."
+    },
+    {
+     "ref": "Michée 6,8",
+     "text": "Il t'a fait connaître, ô homme, ce qui est bien : pratiquer la justice, aimer la miséricorde, et marcher humblement avec ton Dieu."
+    }
+   ],
+   "levels": [
+    {
+     "title": "Examen des pensées de supériorité",
+     "practice": "Chaque soir, un examen centré sur les pensées de mépris ou de supériorité.",
+     "ortho": "Fais cet examen selon la méthode d'Évagre.",
+     "catho": "Fais un examen ignatien centré sur les mêmes pensées."
+    },
+    {
+     "title": "La petite obéissance",
+     "practice": "Accepte une contrariété, un avis ou une consigne sans discuter.",
+     "ortho": "Accepte sans discuter, en mémoire du degré 4 de l'Échelle sainte (l'obéissance).",
+     "catho": "Fais de même, en union avec l'obéissance ignatienne."
+    },
+    {
+     "title": "Ne pas juger",
+     "practice": "Abstiens-toi de tout jugement intérieur sur autrui, chaque jour.",
+     "ortho": "Abstiens-toi de tout jugement, selon Dorothée de Gaza (Instruction VI).",
+     "catho": "Fais de même, en te rappelant Matthieu 7,1."
+    },
+    {
+     "title": "Demander pardon",
+     "practice": "Pose un acte concret d'humilité : t'excuser, demander conseil.",
+     "ortho": "Pose un acte concret d'humilité (excuse, demande de conseil).",
+     "catho": "Fais de même, en lien avec le sacrement de réconciliation."
+    },
+    {
+     "title": "Servir en premier",
+     "practice": "Recherche activement à servir avant d'être servi.",
+     "ortho": "Cherche à servir, à l'exemple du lavement des pieds (Jn 13).",
+     "catho": "Fais de même, en union avec le service ignatien du prochain."
+    },
+    {
+     "title": "Accueillir l'humiliation",
+     "practice": "Accueille sans réaction défensive une petite humiliation de la semaine.",
+     "ortho": "Accueille-la selon le degré 25 de l'Échelle sainte.",
+     "catho": "Fais de même, en union avec l'humilité du Christ (Ph 2,3-8)."
+    },
+    {
+     "title": "Confesser l'orgueil",
+     "practice": "Nomme précisément en confession les manifestations d'orgueil de la semaine.",
+     "ortho": "Confesse-les précisément à ton père spirituel.",
+     "catho": "Fais de même sacramentellement."
+    },
+    {
+     "title": "Imiter l'humilité du Christ",
+     "practice": "Médite chaque jour Philippiens 2,3-8 et pose un acte concret d'abaissement.",
+     "ortho": "Médite ce texte chaque jour.",
+     "catho": "Médite-le selon la contemplation ignatienne de l'Incarnation (Exercices spirituels)."
+    },
+    {
+     "title": "Reconnaître la grâce",
+     "practice": "Relis ta semaine en attribuant à Dieu, non à toi, tout bien accompli.",
+     "ortho": "Attribue à Dieu tout bien accompli (1 Co 4,7).",
+     "catho": "Fais de même dans l'examen ignatien du soir."
+    },
+    {
+     "title": "Intégration — l'humilité du cœur",
+     "practice": "Bilan des dix semaines. Ce combat ne finit jamais vraiment ; il se reprend chaque jour.",
+     "ortho": "Termine par la prière du publicain, répétée avec le cœur.",
+     "catho": "Termine par la litanie de l'humilité."
+    }
+   ]
+  },
+  {
+   "id": "envie",
+   "name": "Envie",
+   "latin": "Invidia",
+   "accent": "#2f4a3d",
+   "virtue": "Charité fraternelle — se réjouir du bien d'autrui",
+   "desc": "Non distinguée séparément par Évagre et Cassien, elle est isolée comme vice capital par saint Grégoire le Grand et reprise par la Somme théologique (IIa-IIae, Q.36).",
+   "prayer": {
+    "orthoPrayer": {
+     "source": "Romains 12,15",
+     "text": "« Réjouissez-vous avec ceux qui se réjouissent », récité en intercession pour la personne enviée."
+    },
+    "cathoPrayer": {
+     "source": "Prière pour la charité fraternelle",
+     "text": "« Seigneur, apprends-moi à me réjouir du bien d'autrui comme du mien propre. »"
+    },
+    "orthoCounsel": {
+     "source": "Dorothée de Gaza, Instruction VI",
+     "text": "L'envie est liée au manque d'humilité : on envie ce qu'on estime nous être dû, plutôt que reçu par grâce."
+    },
+    "cathoCounsel": {
+     "source": "Thomas d'Aquin, Somme théologique IIa-IIae Q.36",
+     "text": "L'envie est une tristesse du bien d'autrui perçu comme diminuant le sien propre ; son remède est la charité, qui se réjouit du bien de tous."
+    }
+   },
+   "verses": [
+    {
+     "ref": "Jacques 3,16",
+     "text": "Là où il y a jalousie et esprit de dispute, il y a du désordre et toute espèce de mauvaises actions."
+    },
+    {
+     "ref": "Galates 5,26",
+     "text": "Ne cherchons pas la vaine gloire, en nous portant envie les uns aux autres."
+    },
+    {
+     "ref": "1 Corinthiens 13,4",
+     "text": "La charité est patiente, elle est pleine de bonté ; la charité n'est point envieuse."
+    },
+    {
+     "ref": "Proverbes 14,30",
+     "text": "Un cœur tranquille est la vie du corps, mais l'envie est la carie des os."
+    },
+    {
+     "ref": "Romains 12,15",
+     "text": "Réjouissez-vous avec ceux qui se réjouissent."
+    },
+    {
+     "ref": "Genèse 4,6-7",
+     "text": "Le péché se tient à la porte, et ses désirs se portent vers toi ; mais toi, domine sur lui."
+    },
+    {
+     "ref": "1 Pierre 2,1",
+     "text": "Rejetez donc toute malice... toute envie et toute médisance."
+    }
+   ],
+   "levels": [
+    {
+     "title": "Observer la comparaison",
+     "practice": "Note les mouvements de comparaison ou de jalousie dans la journée, sans te juger.",
+     "ortho": "Observe-les selon la méthode d'Évagre.",
+     "catho": "Fais de même dans l'examen ignatien du soir."
+    },
+    {
+     "title": "Bénir plutôt qu'envier",
+     "practice": "Dès que le sentiment surgit, formule intérieurement une prière de bénédiction.",
+     "ortho": "Bénis intérieurement la personne, dès que le sentiment surgit.",
+     "catho": "Fais de même par une brève prière d'intercession."
+    },
+    {
+     "title": "Se réjouir sincèrement",
+     "practice": "Cherche chaque jour une occasion de féliciter sincèrement quelqu'un.",
+     "ortho": "Félicite sincèrement quelqu'un chaque jour.",
+     "catho": "Fais de même, en l'offrant comme acte de charité."
+    },
+    {
+     "title": "Compter ses propres dons",
+     "practice": "Chaque soir, liste ce que Dieu t'a donné en propre, sans comparaison.",
+     "ortho": "Liste chaque soir les dons reçus de Dieu.",
+     "catho": "Fais de même dans l'action de grâce de l'examen ignatien."
+    },
+    {
+     "title": "Limiter la comparaison",
+     "practice": "Réduis volontairement une source concrète de comparaison identifiée.",
+     "ortho": "Réduis cette source concrète cette semaine.",
+     "catho": "Fais de même, avec une résolution précise."
+    },
+    {
+     "title": "Intercéder",
+     "practice": "Prie régulièrement pour la réussite d'une personne précise, source d'envie.",
+     "ortho": "Prie pour la réussite de cette personne.",
+     "catho": "Fais de même, en offrant un chapelet à cette intention."
+    },
+    {
+     "title": "Confesser l'envie",
+     "practice": "Nomme en confession les pensées envieuses de la semaine.",
+     "ortho": "Confesse-les à ton père spirituel.",
+     "catho": "Fais de même sacramentellement."
+    },
+    {
+     "title": "Un geste concret",
+     "practice": "Pose un acte concret d'aide envers la personne enviée.",
+     "ortho": "Pose ce geste concret cette semaine.",
+     "catho": "Fais de même, en union avec 1 Jean 3,18."
+    },
+    {
+     "title": "Relier envie et orgueil",
+     "practice": "L'envie naît souvent de croire qu'un bien nous est dû.",
+     "ortho": "Relie envie et orgueil, selon Dorothée de Gaza.",
+     "catho": "Fais de même en lien avec la Somme théologique Q.36."
+    },
+    {
+     "title": "Intégration",
+     "practice": "Bilan des dix semaines : rends grâce pour le bien d'autrui comme pour le tien.",
+     "ortho": "Termine par une action de grâce pour le bien d'autrui.",
+     "catho": "Termine par la prière pour la charité fraternelle."
+    }
+   ]
+  }
+ ]
+}
