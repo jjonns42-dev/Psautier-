@@ -2744,6 +2744,432 @@
      "supersedes": -1
     }
    ]
+  },
+  {
+   "id": "antiochienne",
+   "family": "orthodoxe",
+   "name": "Tradition antiochienne",
+   "subtitle": "L'Église où les disciples furent appelés chrétiens pour la première fois",
+   "patron": "Saint Ignace d'Antioche, saint Jean Chrysostome",
+   "accent": "#5B3A29",
+   "desc": "« C'est à Antioche que, pour la première fois, les disciples furent appelés chrétiens » (Ac 11, 26). Héritière de l'un des sièges apostoliques les plus anciens, marquée par le zèle missionnaire et la théologie de saint Jean Chrysostome.",
+   "dailyCore": [
+    "Prière de Jésus",
+    "Lecture d'un père antiochien (Chrysostome, Éphrem)"
+   ],
+   "devotions": [
+    {
+     "name": "Prière de Jésus",
+     "note": "L'invocation du Nom, répétée avec le souffle.",
+     "signature": true,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Homélie de saint Jean Chrysostome",
+     "note": "Courte lecture d'une homélie sur l'Écriture.",
+     "signature": true,
+     "minutes": 10,
+     "supersedes": -1
+    },
+    {
+     "name": "Office des Complies",
+     "note": "Prière du soir selon l'usage antiochien.",
+     "signature": false,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Jeûne du mercredi et du vendredi",
+     "note": "Selon le typikon de l'Église d'Antioche.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Vénération de la Croix",
+     "note": "Un temps de recueillement devant la Croix.",
+     "signature": false,
+     "minutes": 10,
+     "supersedes": -1
+    },
+    {
+     "name": "Confession régulière",
+     "note": "Ouverture du cœur à un père spirituel.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Hymnes syriaques traduites",
+     "note": "Chant ou lecture d'un hymne de saint Éphrem.",
+     "signature": true,
+     "minutes": 15,
+     "supersedes": 1
+    },
+    {
+     "name": "Vie de zèle missionnaire",
+     "note": "Un geste concret de témoignage ou de charité envers un non-croyant.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    }
+   ]
+  },
+  {
+   "id": "ukrainienne",
+   "family": "orthodoxe",
+   "name": "Tradition ukrainienne",
+   "subtitle": "La foi de Kiev, mère des Églises slaves",
+   "patron": "Saint Vladimir de Kiev, les saintes moniales de la Laure des Grottes",
+   "accent": "#1F5C8B",
+   "desc": "Héritière du baptême de la Rus' de Kiev (988) et de la spiritualité des Grottes de Kiev, entre veille monastique et dévotion mariale intense.",
+   "dailyCore": [
+    "Prière de Jésus",
+    "Vénération d'une icône mariale"
+   ],
+   "devotions": [
+    {
+     "name": "Prière de Jésus",
+     "note": "Invocation répétée avec le komboskini.",
+     "signature": true,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Acathiste à la Mère de Dieu",
+     "note": "Hymne debout en l'honneur de la Théotokos.",
+     "signature": true,
+     "minutes": 20,
+     "supersedes": -1
+    },
+    {
+     "name": "Lecture des Pères des Grottes de Kiev",
+     "note": "Vies et sentences des moines de la Laure.",
+     "signature": false,
+     "minutes": 10,
+     "supersedes": -1
+    },
+    {
+     "name": "Jeûne du mercredi et du vendredi",
+     "note": "Selon le typikon ukrainien.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Panikhide pour les défunts",
+     "note": "Prière pour les âmes des défunts.",
+     "signature": false,
+     "minutes": 10,
+     "supersedes": -1
+    },
+    {
+     "name": "Vénération des reliques",
+     "note": "Un temps de recueillement devant une relique ou une icône vénérée.",
+     "signature": false,
+     "minutes": 10,
+     "supersedes": -1
+    },
+    {
+     "name": "Chant liturgique kiévien",
+     "note": "Chant ou écoute méditative du chant znamenny/kiévien.",
+     "signature": true,
+     "minutes": 15,
+     "supersedes": 1
+    },
+    {
+     "name": "Pèlerinage intérieur aux Grottes",
+     "note": "Une méditation quotidienne sur la vie des saints de Kiev.",
+     "signature": false,
+     "minutes": 15,
+     "supersedes": -1
+    }
+   ]
+  },
+  {
+   "id": "sinaite",
+   "family": "orthodoxe",
+   "name": "Tradition sinaïtique",
+   "subtitle": "Le Buisson ardent et l'Échelle du ciel",
+   "patron": "Sainte Catherine d'Alexandrie, saint Jean Climaque",
+   "accent": "#8C6D1F",
+   "desc": "La tradition du monastère Sainte-Catherine du Sinaï, gardien du lieu du Buisson ardent (Ex 3, 2) et berceau de l'« Échelle sainte » de saint Jean Climaque, maître de l'ascension spirituelle par degrés.",
+   "dailyCore": [
+    "Prière de Jésus",
+    "Un degré de l'Échelle sainte médité"
+   ],
+   "devotions": [
+    {
+     "name": "Prière de Jésus",
+     "note": "Invocation continuelle, assise, en silence.",
+     "signature": true,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Lecture d'un degré de l'Échelle sainte",
+     "note": "Un degré de saint Jean Climaque, lu et retenu.",
+     "signature": true,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Veille nocturne",
+     "note": "Un temps de prière prolongé avant l'aube, à l'image des veilles du Sinaï.",
+     "signature": false,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Jeûne du désert",
+     "note": "Grande sobriété alimentaire, à l'imitation des Pères du Sinaï.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Vénération de l'icône du Buisson ardent",
+     "note": "Recueillement devant une icône de la Mère de Dieu Buisson ardent.",
+     "signature": false,
+     "minutes": 10,
+     "supersedes": -1
+    },
+    {
+     "name": "Silence et solitude",
+     "note": "Un temps de solitude complète, hors de toute parole.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Cycle complet des degrés de l'Échelle",
+     "note": "Reprise méditée de l'ensemble des trente degrés, un par semaine.",
+     "signature": true,
+     "minutes": 20,
+     "supersedes": 1
+    },
+    {
+     "name": "Hospitalité du désert",
+     "note": "Un geste concret d'accueil ou de partage, selon l'hospitalité du Sinaï.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    }
+   ]
+  },
+  {
+   "id": "camaldules",
+   "family": "catholique",
+   "name": "Camaldules",
+   "subtitle": "L'érémitisme au cœur de la Règle bénédictine",
+   "patron": "Saint Romuald de Ravenne",
+   "accent": "#4A4A38",
+   "desc": "Fondés par saint Romuald au XIe siècle, les Camaldules unissent la vie cénobitique bénédictine à un fort accent érémitique : chaque moine vit une large part de sa journée seul en cellule, en silence.",
+   "dailyCore": [
+    "Office en cellule",
+    "Silence prolongé"
+   ],
+   "devotions": [
+    {
+     "name": "Petite Règle de saint Romuald",
+     "note": "« Assieds-toi dans ta cellule comme au paradis » : un temps quotidien de solitude priante.",
+     "signature": true,
+     "minutes": 20,
+     "supersedes": -1
+    },
+    {
+     "name": "Lecture spirituelle en cellule",
+     "note": "Lecture silencieuse d'un texte monastique.",
+     "signature": false,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Office cellulaire",
+     "note": "Une Heure priée seul, en plus de l'office commun.",
+     "signature": false,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Silence continu",
+     "note": "Grand silence gardé toute la journée.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Travail manuel solitaire",
+     "note": "Une tâche accomplie seul, en silence.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Jeûne bénédictin renforcé",
+     "note": "Sobriété alimentaire notable, selon la Règle.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Veille nocturne érémitique",
+     "note": "Une vigile prolongée, seul, avant l'aube.",
+     "signature": true,
+     "minutes": 20,
+     "supersedes": 2
+    },
+    {
+     "name": "Vœux camaldules",
+     "note": "Stabilité, conversion des mœurs et obéissance, dans l'esprit érémitique romualdien.",
+     "signature": true,
+     "minutes": 0,
+     "supersedes": -1
+    }
+   ]
+  },
+  {
+   "id": "oratoriens",
+   "family": "catholique",
+   "name": "Oratoriens",
+   "subtitle": "La liberté de l'amour, sans vœux",
+   "patron": "Saint Philippe Néri",
+   "accent": "#B5651D",
+   "desc": "Fondé par saint Philippe Néri à Rome au XVIe siècle, l'Oratoire propose une vie de prière fervente et joyeuse, vécue en communauté fraternelle sans vœux, avec un grand amour de l'oraison et de la direction spirituelle.",
+   "dailyCore": [
+    "Oraison mentale quotidienne",
+    "Visite au Saint-Sacrement"
+   ],
+   "devotions": [
+    {
+     "name": "Oraison mentale",
+     "note": "Un temps de prière silencieuse et affective devant Dieu, cher à saint Philippe.",
+     "signature": true,
+     "minutes": 20,
+     "supersedes": -1
+    },
+    {
+     "name": "Visite au Saint-Sacrement",
+     "note": "Une brève visite d'adoration au cours de la journée.",
+     "signature": true,
+     "minutes": 10,
+     "supersedes": -1
+    },
+    {
+     "name": "Examen de conscience du soir",
+     "note": "Relecture priante de la journée.",
+     "signature": false,
+     "minutes": 10,
+     "supersedes": -1
+    },
+    {
+     "name": "Lecture spirituelle joyeuse",
+     "note": "Lecture d'un texte spirituel dans un esprit de simplicité et de joie.",
+     "signature": false,
+     "minutes": 10,
+     "supersedes": -1
+    },
+    {
+     "name": "Direction spirituelle régulière",
+     "note": "Ouverture du cœur à un père spirituel.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Charité fraternelle concrète",
+     "note": "Un geste de charité simple envers un proche.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Office divin en commun",
+     "note": "Participation à la prière communautaire de l'Oratoire.",
+     "signature": false,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Esprit d'enfance spirituelle",
+     "note": "Cultiver, comme saint Philippe, l'humilité et la joie simple devant Dieu.",
+     "signature": true,
+     "minutes": 0,
+     "supersedes": 3
+    }
+   ]
+  },
+  {
+   "id": "petits-freres-jesus",
+   "family": "catholique",
+   "name": "Petits Frères et Petites Sœurs de Jésus",
+   "subtitle": "La vie cachée de Nazareth, au cœur du monde",
+   "patron": "Bienheureux Charles de Foucauld",
+   "accent": "#C08A3E",
+   "desc": "Inspirés par la vie cachée de Charles de Foucauld à Nazareth et au Sahara : partager la condition des plus pauvres, dans le travail manuel, l'adoration eucharistique et l'amitié universelle, « crier l'Évangile par toute sa vie ».",
+   "dailyCore": [
+    "Adoration eucharistique quotidienne",
+    "Travail manuel partagé avec les pauvres"
+   ],
+   "devotions": [
+    {
+     "name": "Adoration eucharistique silencieuse",
+     "note": "Une heure d'adoration, à l'exemple de Charles de Foucauld.",
+     "signature": true,
+     "minutes": 30,
+     "supersedes": -1
+    },
+    {
+     "name": "Prière d'abandon",
+     "note": "« Mon Père, je m'abandonne à toi... » récitée avec le cœur.",
+     "signature": true,
+     "minutes": 5,
+     "supersedes": -1
+    },
+    {
+     "name": "Travail manuel humble",
+     "note": "Un travail simple, partagé avec les plus pauvres.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Vie fraternelle de proximité",
+     "note": "Un temps de présence gratuite auprès d'un pauvre ou d'un isolé.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Lecture de l'Évangile selon Nazareth",
+     "note": "Méditation de la vie cachée de Jésus à Nazareth.",
+     "signature": false,
+     "minutes": 10,
+     "supersedes": -1
+    },
+    {
+     "name": "Silence et désert intérieur",
+     "note": "Un temps de solitude et de silence, à l'image du désert saharien.",
+     "signature": false,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Office simple du jour",
+     "note": "Prière des Heures dans sa forme la plus dépouillée.",
+     "signature": false,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Esprit de Nazareth permanent",
+     "note": "Vivre, en tout, la présence cachée et humble de Jésus artisan.",
+     "signature": true,
+     "minutes": 0,
+     "supersedes": 0
+    }
+   ]
   }
  ]
 }

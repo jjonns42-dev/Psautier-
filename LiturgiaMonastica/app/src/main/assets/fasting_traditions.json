@@ -1,0 +1,139 @@
+{
+  "fasts": [
+    {
+      "id": "ortho-great-lent",
+      "family": "orthodoxe",
+      "scope": "Église universelle",
+      "name": "Grand Carême",
+      "computed": "great_lent",
+      "rule": "Abstinence de viande, produits laitiers, œufs, poisson (sauf Annonciation et dimanche des Rameaux) et, selon la rigueur monastique, d'huile et de vin certains jours ; jeûne strict le Vendredi saint.",
+      "note": "Commence le Lundi pur, précédé par les semaines préparatoires du Triode (publicain et pharisien, enfant prodigue, jugement dernier, fromage)."
+    },
+    {
+      "id": "ortho-apostles",
+      "family": "orthodoxe",
+      "scope": "Église universelle",
+      "name": "Jeûne des saints Apôtres",
+      "computed": "apostles_fast",
+      "rule": "Abstinence de viande et de produits laitiers ; poisson autorisé sauf mercredi et vendredi. Durée variable selon la date de Pâques.",
+      "note": "Du lundi après le dimanche de Tous les Saints jusqu'au 28 juin, veille de la fête des saints Pierre et Paul."
+    },
+    {
+      "id": "ortho-dormition",
+      "family": "orthodoxe",
+      "scope": "Église universelle",
+      "name": "Jeûne de la Dormition",
+      "computed": "dormition_fast",
+      "rule": "Jeûne assez strict, proche de celui du Grand Carême ; poisson autorisé seulement le jour de la Transfiguration (6 août).",
+      "note": "Du 1er au 14 août, en préparation de la fête de la Dormition de la Mère de Dieu (15 août)."
+    },
+    {
+      "id": "ortho-nativity",
+      "family": "orthodoxe",
+      "scope": "Église universelle",
+      "name": "Jeûne de la Nativité (Carême des Philippes)",
+      "computed": "nativity_fast",
+      "rule": "Abstinence de viande et de produits laitiers ; poisson autorisé la plupart des jours, sauf les deux dernières semaines où il se resserre, surtout du 20 au 24 décembre.",
+      "note": "Du 15 novembre au 24 décembre. Les Églises restées au calendrier julien pour les fêtes fixes le vivent 13 jours plus tard en style grégorien."
+    },
+    {
+      "id": "ortho-wedfri",
+      "family": "orthodoxe",
+      "scope": "Église universelle",
+      "name": "Mercredi et vendredi hebdomadaires",
+      "computed": "wedfri_weekly",
+      "rule": "Abstinence de viande, produits laitiers et, selon la rigueur, de poisson — en mémoire de la trahison (mercredi) et de la Passion (vendredi).",
+      "note": "Suspendu durant les semaines « sans jeûne » : semaine de Noël-Théophanie, semaine du publicain et du pharisien, semaine de Pâques, semaine de la Pentecôte."
+    },
+    {
+      "id": "ortho-athonite",
+      "family": "orthodoxe",
+      "scope": "Tradition athonite (Mont Athos)",
+      "name": "Discipline monastique renforcée",
+      "computed": null,
+      "rule": "Xérophagie (nourriture « sèche », sans huile ni vin) les lundis, mercredis et vendredis hors fêtes ; un seul repas les jours de jeûne strict ; grande sobriété toute l'année.",
+      "note": "Rythme fixé par le typikon de chaque monastère, sous l'autorité de l'higoumène."
+    },
+    {
+      "id": "ortho-copte",
+      "family": "orthodoxe",
+      "scope": "Tradition copte (Église copte orthodoxe)",
+      "name": "Jeûnes coptes",
+      "computed": null,
+      "rule": "Abstinence totale de produits animaux (viande, poisson, œufs, laitages) durant les jeûnes ; jeûne eucharistique strict jusqu'à l'après-midi certains jours.",
+      "note": "Calendrier de jeûne parmi les plus longs de la chrétienté : Grand Carême (55 jours), jeûne de la Nativité (43 jours), jeûne des Apôtres (variable), jeûne de la Vierge (15 jours en août), et la plupart des mercredis et vendredis de l'année."
+    },
+    {
+      "id": "ortho-ethiopienne",
+      "family": "orthodoxe",
+      "scope": "Tradition éthiopienne (Tewahedo)",
+      "name": "Jeûnes éthiopiens",
+      "computed": null,
+      "rule": "Abstinence totale de produits animaux et souvent jeûne eucharistique jusqu'à midi ou plus tard, selon un usage parmi les plus exigeants de la tradition chrétienne.",
+      "note": "Sept jeûnes principaux prescrits, dont le Grand Carême (Abiy Tsom, 55 jours) et le jeûne de la Nativité."
+    },
+    {
+      "id": "catho-lent",
+      "family": "catholique",
+      "scope": "Église universelle",
+      "name": "Carême",
+      "computed": "lent_catholic",
+      "rule": "Jeûne (un seul repas complet) et abstinence de viande le Mercredi des Cendres et le Vendredi saint ; abstinence de viande tous les vendredis de Carême.",
+      "note": "Du Mercredi des Cendres au Samedi saint (veille de Pâques) inclus."
+    },
+    {
+      "id": "catho-advent",
+      "family": "catholique",
+      "scope": "Église universelle (usage traditionnel)",
+      "name": "Avent",
+      "computed": "advent_catholic",
+      "rule": "N'est plus un temps de jeûne obligatoire dans le rite romain actuel, mais reste vécu comme temps de sobriété et de préparation ; certains ordres (ex. Franciscains, Chartreux) y gardent un jeûne propre.",
+      "note": "Du 1er dimanche de l'Avent (dimanche le plus proche du 30 novembre) au 24 décembre."
+    },
+    {
+      "id": "catho-fridays",
+      "family": "catholique",
+      "scope": "Église universelle",
+      "name": "Vendredis de l'année",
+      "computed": "friday_weekly",
+      "rule": "Jour de pénitence toute l'année (can. 1250-1251) ; l'abstinence de viande reste la forme normative, mais les conférences épiscopales peuvent permettre de la remplacer par une autre pénitence en dehors du Carême.",
+      "note": "Hors les vendredis de Carême, la forme concrète (abstinence stricte ou autre pénitence) dépend souvent des indications de l'évêque local."
+    },
+    {
+      "id": "catho-chartreux",
+      "family": "catholique",
+      "scope": "Chartreux",
+      "name": "Jeûne cartusien",
+      "computed": null,
+      "rule": "Abstinence perpétuelle de viande pour tous les moines, en tout temps ; jeûne renforcé (un seul repas) durant l'Avent, le Carême et de nombreuses vigiles de fêtes.",
+      "note": "L'un des régimes de jeûne les plus austères de l'Occident chrétien, selon les Statuts de l'Ordre."
+    },
+    {
+      "id": "catho-cisterciens",
+      "family": "catholique",
+      "scope": "Cisterciens / Trappistes",
+      "name": "Jeûne cistercien",
+      "computed": null,
+      "rule": "Abstinence de viande de quadrupède en tout temps selon la Règle bénédictine réformée ; jeûne renforcé du 14 septembre à Pâques et durant tout le Carême.",
+      "note": "Hérité directement de la Règle de saint Benoît (ch. 39-41), interprétée avec plus de rigueur par la réforme cistercienne."
+    },
+    {
+      "id": "catho-capucins",
+      "family": "catholique",
+      "scope": "Capucins (branche franciscaine)",
+      "name": "Jeûne franciscain renforcé",
+      "computed": null,
+      "rule": "Fidélité stricte aux jeûnes de Carême et d'Avent voulus par saint François, avec grande sobriété quotidienne dans l'esprit de la « Dame Pauvreté ».",
+      "note": "L'Avent franciscain (dit « Carême de saint Martin » dans certaines provinces) commence traditionnellement le 12 novembre, lendemain de la Saint-Martin."
+    },
+    {
+      "id": "catho-carmes",
+      "family": "catholique",
+      "scope": "Carmel (Carmes déchaux)",
+      "name": "Jeûne du Carmel",
+      "computed": null,
+      "rule": "Abstinence perpétuelle de viande (sauf nécessité ou maladie) et jeûne du 14 septembre à Pâques, selon la Règle primitive rétablie par sainte Thérèse d'Avila.",
+      "note": "Uni à un grand silence et à un esprit érémitique hérité du mont Carmel."
+    }
+  ]
+}

@@ -10,9 +10,13 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.MenuBook
+import androidx.compose.material.icons.filled.AutoStories
+import androidx.compose.material.icons.filled.CalendarMonth
 import androidx.compose.material.icons.filled.LocalFireDepartment
+import androidx.compose.material.icons.filled.NoFood
 import androidx.compose.material.icons.filled.SelfImprovement
 import androidx.compose.material.icons.filled.Shield
+import androidx.compose.material.icons.filled.Stairs
 import androidx.compose.material.icons.filled.WbTwilight
 import androidx.compose.material.icons.outlined.Brightness3
 import androidx.compose.material3.*
@@ -38,7 +42,11 @@ fun HomeScreen(
     onCandle: () -> Unit,
     onThousand: () -> Unit,
     onCombat: () -> Unit,
-    onRule: () -> Unit
+    onRule: () -> Unit,
+    onNovena: () -> Unit,
+    onFasting: () -> Unit,
+    onExercises: () -> Unit,
+    onReading: () -> Unit
 ) {
     val it = store.lang == "it"
     AppScaffold(
@@ -103,13 +111,33 @@ fun HomeScreen(
             )
             Tile(
                 title = if (it) "Il Combattimento" else "Le Combat",
-                subtitle = if (it) "Le otto passioni, dieci livelli" else "Les huit pensées, dix niveaux",
+                subtitle = if (it) "Le otto passioni, poi vigilanza perpetua" else "Les huit pensées, puis vigilance perpétuelle",
                 icon = Icons.Filled.Shield, onClick = onCombat
             )
             Tile(
                 title = if (it) "La Regola" else "La Règle",
                 subtitle = if (it) "Regola di preghiera, livelli infiniti" else "Règle de prière, niveaux infinis",
                 icon = Icons.Filled.SelfImprovement, onClick = onRule
+            )
+            Tile(
+                title = if (it) "Novena" else "Neuvaine",
+                subtitle = if (it) "9, 30, 40 o 54 giorni" else "9, 30, 40 ou 54 jours",
+                icon = Icons.Filled.CalendarMonth, onClick = onNovena
+            )
+            Tile(
+                title = if (it) "Calendario dei digiuni" else "Calendrier de jeûne",
+                subtitle = if (it) "Tradizioni ortodosse e cattoliche" else "Traditions orthodoxes et catholiques",
+                icon = Icons.Filled.NoFood, onClick = onFasting
+            )
+            Tile(
+                title = if (it) "Esercizi spirituali" else "Exercices spirituels",
+                subtitle = if (it) "Scrittura ed insegnamento dei Padri" else "Écriture et enseignement des Pères",
+                icon = Icons.Filled.AutoStories, onClick = onExercises
+            )
+            Tile(
+                title = if (it) "Gioco di lettura" else "Jeu de lecture",
+                subtitle = if (it) "Bibbia, teologia, mistica, Padri — livelli infiniti" else "Bible, théologie, mystique, Pères — niveaux infinis",
+                icon = Icons.Filled.Stairs, onClick = onReading
             )
         }
     }

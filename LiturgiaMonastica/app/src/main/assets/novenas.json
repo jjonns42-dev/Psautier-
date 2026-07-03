@@ -1,0 +1,51 @@
+{
+  "novenas": [
+    {
+      "id": "neuvaine-9",
+      "name_fr": "Neuvaine classique (9 jours)",
+      "name_it": "Novena classica (9 giorni)",
+      "days": 9,
+      "category": "classique",
+      "fasting": false,
+      "desc_fr": "La neuvaine ordinaire de neuf jours, en mémoire des neuf jours que les Apôtres et la Vierge Marie passèrent en prière au Cénacle entre l'Ascension et la Pentecôte (Ac 1, 12-14). Convient à toute intention : un saint, une fête, une grâce à demander.",
+      "desc_it": "La novena ordinaria di nove giorni, in memoria dei nove giorni che gli Apostoli e la Vergine Maria trascorsero in preghiera nel Cenacolo tra l'Ascensione e la Pentecoste (At 1, 12-14).",
+      "phases": []
+    },
+    {
+      "id": "neuvaine-30",
+      "name_fr": "Neuvaine de 30 jours",
+      "name_it": "Novena di 30 giorni",
+      "days": 30,
+      "category": "longue",
+      "fasting": false,
+      "desc_fr": "Neuvaine prolongée d'un mois, traditionnellement offerte à saint Joseph ou à la Vierge Marie (« Neuvaine miraculeuse » ou « Neuvaine des 30 jours à saint Joseph »), pour une intention particulièrement pressante ou difficile.",
+      "desc_it": "Novena prolungata di un mese, tradizionalmente offerta a san Giuseppe o alla Vergine Maria, per un'intenzione particolarmente urgente o difficile.",
+      "phases": []
+    },
+    {
+      "id": "neuvaine-40",
+      "name_fr": "Neuvaine-jeûne de 40 jours",
+      "name_it": "Novena-digiuno di 40 giorni",
+      "days": 40,
+      "category": "jeune",
+      "fasting": true,
+      "desc_fr": "Neuvaine associée à un jeûne de quarante jours, sur le modèle du jeûne de Moïse (Ex 34, 28), d'Élie (1 R 19, 8) et de Jésus au désert (Mt 4, 2). Se prie en union avec une sobriété alimentaire librement choisie, selon son état de vie et l'avis de son confesseur.",
+      "desc_it": "Novena associata a un digiuno di quaranta giorni, sul modello del digiuno di Mosè (Es 34, 28), di Elia (1 Re 19, 8) e di Gesù nel deserto (Mt 4, 2).",
+      "phases": []
+    },
+    {
+      "id": "neuvaine-54",
+      "name_fr": "Neuvaine des 54 jours (Rosaire)",
+      "name_it": "Novena dei 54 giorni (Rosario)",
+      "days": 54,
+      "category": "longue",
+      "fasting": false,
+      "desc_fr": "La « Neuvaine miraculeuse » ou « Rosaire vivant des 54 jours » : six neuvaines de neuf jours (54 jours), les 27 premiers en pétition, les 27 derniers en action de grâce, chaque jour avec un chapelet médité. Origine : Notre-Dame de Pompéi, apparue à Fortuna Agrelli (Naples, 1884).",
+      "desc_it": "La «Novena miracolosa» o «Rosario vivente dei 54 giorni»: sei novene di nove giorni (54 giorni), i primi 27 in richiesta, gli ultimi 27 in ringraziamento, ogni giorno con un rosario meditato.",
+      "phases": [
+        { "from_day": 1, "to_day": 27, "label_fr": "Semaine de pétition", "label_it": "Settimana di richiesta" },
+        { "from_day": 28, "to_day": 54, "label_fr": "Semaine d'action de grâce", "label_it": "Settimana di ringraziamento" }
+      ]
+    }
+  ]
+}

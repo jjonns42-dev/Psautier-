@@ -206,19 +206,23 @@ class GameStore(context: Context) {
     }
 
     private fun isFullyAccomplished(p: SinProgress) = p.level >= 10 && p.daysConfirmed >= 7
+    // (conservée pour compatibilité éventuelle ; plus utilisée depuis le passage en vigilance perpétuelle)
 
-    /** Re-evaluate every sin's streak against the calendar; called on app launch and on entering a combat screen. */
+    /** Re-evaluate every sin's streak against the calendar; called on app launch and on entering a combat screen.
+     *  Un jour manqué fait redescendre d'UN SEUL niveau (jamais sous 1), à revalider entièrement —
+     *  même logique de miséricorde que La Règle, plutôt qu'une remise à zéro totale du niveau. */
     fun combatRefresh() {
         val today = todayEpochDay()
         var changed = false
-        val justReset = mutableSetOf<String>()
+        val justDemoted = mutableSetOf<String>()
         val updated = combatProgress.mapValues { (id, p) ->
-            if (!isFullyAccomplished(p) && p.lastDay >= 0) {
+            if (p.lastDay >= 0) {
                 val gap = today - p.lastDay
                 if (gap >= 2) {
                     changed = true
-                    justReset += id
-                    p.copy(daysConfirmed = 0, lastDay = -1L)
+                    justDemoted += id
+                    val newLevel = if (p.level > 1) p.level - 1 else 1
+                    p.copy(level = newLevel, daysConfirmed = 0, lastDay = -1L)
                 } else p
             } else p
         }
@@ -226,7 +230,7 @@ class GameStore(context: Context) {
             combatProgress = updated
             persistCombat()
         }
-        if (justReset.isNotEmpty()) combatJustReset = justReset
+        if (justDemoted.isNotEmpty()) combatJustReset = justDemoted
     }
 
     /** The UI calls this once it has shown the reset notice, so it doesn't reappear. */
@@ -237,19 +241,14 @@ class GameStore(context: Context) {
     /** Confirm today's practice for a sin. Advances the level automatically at 7/7. */
     fun combatConfirmToday(sinId: String) {
         if (combatDoneToday(sinId)) return
-        if (isFullyAccomplished(progressFor(sinId))) return
         updateProgress(sinId) { p ->
             var level = p.level
             var days = p.daysConfirmed + 1
             var lastDay: Long = todayEpochDay()
             if (days >= 7) {
-                if (level < 10) {
-                    level += 1
-                    days = 0
-                    lastDay = -1L
-                } else {
-                    days = 7 // combat achevé : reste plein, ne se remet plus à zéro
-                }
+                level += 1
+                days = 0
+                lastDay = -1L
             }
             p.copy(level = level, daysConfirmed = days, lastDay = lastDay)
         }
@@ -347,5 +346,149 @@ class GameStore(context: Context) {
         ruleProgress = RuleProgress()
         ruleJustDemoted = false
         persistRule()
+    }
+
+    // =========================================================================
+    //  LES NEUVAINES  (coins de neuvaine — 9, 30, 40, 54 jours...)
+    //  Un seul coin actif à la fois. Un jour manqué remet le compteur à zéro
+    //  (fidélité à la pratique traditionnelle de la neuvaine). Arrivée au terme,
+    //  la neuvaine est archivée dans le petit répertoire et le coin se libère.
+    // =========================================================================
+    private val novenaType = object : TypeToken<NovenaProgress>() {}.type
+
+    var novenaProgress by mutableStateOf(loadNovenaProgress())
+        private set
+
+    /** true right after a missed day reset the counter to zero (consumed once by the UI). */
+    var novenaJustReset by mutableStateOf(false)
+        private set
+
+    private fun loadNovenaProgress(): NovenaProgress {
+        val raw = sp.getString("novena_progress", null) ?: return NovenaProgress()
+        return try { gson.fromJson(raw, novenaType) ?: NovenaProgress() } catch (e: Exception) { NovenaProgress() }
+    }
+
+    private fun persistNovena() {
+        sp.edit().putString("novena_progress", gson.toJson(novenaProgress)).apply()
+    }
+
+    fun novenaDoneToday(): Boolean = novenaProgress.started && novenaProgress.lastDay == todayEpochDay()
+
+    /** Begin a new novena of the chosen type; locks it until completion or abandon. */
+    fun novenaStart(typeId: String) {
+        novenaProgress = novenaProgress.copy(
+            started = true, typeId = typeId, day = 0, lastDay = -1L, startEpochDay = todayEpochDay()
+        )
+        novenaJustReset = false
+        persistNovena()
+    }
+
+    /** Re-evaluate the streak against the calendar; a missed day restarts the counter at zero. */
+    fun novenaRefresh() {
+        val p = novenaProgress
+        if (!p.started || p.lastDay < 0) return
+        val gap = todayEpochDay() - p.lastDay
+        if (gap >= 2) {
+            novenaProgress = p.copy(day = 0, lastDay = -1L, startEpochDay = todayEpochDay())
+            novenaJustReset = true
+            persistNovena()
+        }
+    }
+
+    fun novenaConsumeReset() { if (novenaJustReset) novenaJustReset = false }
+
+    /** Confirm today's prayer; archives the novena once the target number of days is reached. */
+    fun novenaConfirmToday(totalDays: Int) {
+        val p = novenaProgress
+        if (!p.started || novenaDoneToday()) return
+        val newDay = p.day + 1
+        if (newDay >= totalDays) {
+            val entry = NovenaHistoryEntry(
+                typeId = p.typeId,
+                startEpochDay = if (p.startEpochDay >= 0) p.startEpochDay else todayEpochDay(),
+                endEpochDay = todayEpochDay()
+            )
+            novenaProgress = NovenaProgress(completed = p.completed + entry)
+        } else {
+            novenaProgress = p.copy(day = newDay, lastDay = todayEpochDay())
+        }
+        persistNovena()
+    }
+
+    /** Abandon the current novena without archiving it; returns to the choice screen. */
+    fun novenaAbandon() {
+        novenaProgress = novenaProgress.copy(started = false, typeId = "", day = 0, lastDay = -1L, startEpochDay = -1L)
+        novenaJustReset = false
+        persistNovena()
+    }
+
+    // =========================================================================
+    //  LE JEU DE LECTURE — niveaux infinis par livre biblique et par œuvre
+    //  (théologie / spiritualité-mystique / Pères de l'Église, ajoutées par le
+    //  lecteur lui-même). Une séance chronométrée de 5 à 60 min octroie de l'XP ;
+    //  plus la séance est longue, plus elle rapporte d'XP par minute. Le niveau
+    //  cumulé d'une catégorie se calcule sur la somme d'XP de tous ses éléments.
+    // =========================================================================
+    private val bibleXpType = object : TypeToken<Map<String, Long>>() {}.type
+    private val worksType = object : TypeToken<List<ReadingWork>>() {}.type
+
+    var bibleXp by mutableStateOf(loadBibleXp())
+        private set
+    var readingWorks by mutableStateOf(loadWorks())
+        private set
+
+    private fun loadBibleXp(): Map<String, Long> {
+        val raw = sp.getString("reading_bible_xp", null) ?: return emptyMap()
+        return try { gson.fromJson<Map<String, Long>>(raw, bibleXpType) ?: emptyMap() } catch (e: Exception) { emptyMap() }
+    }
+
+    private fun persistBibleXp() {
+        sp.edit().putString("reading_bible_xp", gson.toJson(bibleXp)).apply()
+    }
+
+    private fun loadWorks(): List<ReadingWork> {
+        val raw = sp.getString("reading_works", null) ?: return emptyList()
+        return try { gson.fromJson<List<ReadingWork>>(raw, worksType) ?: emptyList() } catch (e: Exception) { emptyList() }
+    }
+
+    private fun persistWorks() {
+        sp.edit().putString("reading_works", gson.toJson(readingWorks)).apply()
+    }
+
+    fun bibleBookXp(bookId: String): Long = bibleXp[bookId] ?: 0L
+    fun bibleBookLevel(bookId: String): Int = ReadingLeveling.levelFromXp(bibleBookXp(bookId))
+    fun bibleCategoryXp(): Long = bibleXp.values.sum()
+    fun bibleCategoryLevel(): Int = ReadingLeveling.levelFromXp(bibleCategoryXp())
+
+    /** Record a finished timed reading session for a Bible book. */
+    fun bibleReadSession(bookId: String, minutes: Int) {
+        val gain = ReadingLeveling.sessionXp(minutes)
+        bibleXp = bibleXp.toMutableMap().apply { this[bookId] = (this[bookId] ?: 0L) + gain }
+        persistBibleXp()
+    }
+
+    fun worksByCategory(category: String): List<ReadingWork> = readingWorks.filter { it.category == category }
+    fun categoryWorksXp(category: String): Long = worksByCategory(category).sumOf { it.xp }
+    fun categoryWorksLevel(category: String): Int = ReadingLeveling.levelFromXp(categoryWorksXp(category))
+    fun workLevel(work: ReadingWork): Int = ReadingLeveling.levelFromXp(work.xp)
+
+    /** Adds a work the reader has written into the list themselves, in one of the three categories. */
+    fun addWork(category: String, title: String, author: String = ""): String {
+        val id = "w_" + System.currentTimeMillis().toString(36) + "_" + (0..999).random()
+        readingWorks = readingWorks + ReadingWork(id = id, category = category, title = title.trim(), author = author.trim())
+        persistWorks()
+        return id
+    }
+
+    fun removeWork(workId: String) {
+        readingWorks = readingWorks.filterNot { it.id == workId }
+        persistWorks()
+    }
+
+    /** Record a finished timed reading session for a user-added work. */
+    fun workReadSession(workId: String, minutes: Int) {
+        val gain = ReadingLeveling.sessionXp(minutes)
+        readingWorks = readingWorks.map { if (it.id == workId) it.copy(xp = it.xp + gain) else it }
+        persistWorks()
     }
 }

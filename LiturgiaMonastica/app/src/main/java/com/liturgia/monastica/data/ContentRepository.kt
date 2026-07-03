@@ -250,7 +250,8 @@ class ContentRepository(private val context: Context) {
                     orthoPrayer = quoteOf(prayerObj, "orthoPrayer"),
                     cathoPrayer = quoteOf(prayerObj, "cathoPrayer"),
                     orthoCounsel = quoteOf(prayerObj, "orthoCounsel"),
-                    cathoCounsel = quoteOf(prayerObj, "cathoCounsel")
+                    cathoCounsel = quoteOf(prayerObj, "cathoCounsel"),
+                    extraCounsel = if (prayerObj.has("extraCounsel")) quoteOf(prayerObj, "extraCounsel") else null
                 ),
                 verses = o.getAsJsonArray("verses").map { v ->
                     val vo = v.asJsonObject
@@ -264,7 +265,8 @@ class ContentRepository(private val context: Context) {
                         ortho = lo.get("ortho").asString,
                         catho = lo.get("catho").asString
                     )
-                }
+                },
+                furtherReading = if (o.has("furtherReading")) o.getAsJsonArray("furtherReading").map { it.asString } else emptyList()
             )
         }
 
@@ -302,6 +304,88 @@ class ContentRepository(private val context: Context) {
 
     fun ruleTraditionsByFamily(family: String): List<RuleTradition> =
         ruleTraditions().filter { it.family == family }
+
+    // ---- Neuvaines -------------------------------------------------------------
+    private val novenasRoot: JsonObject by lazy { obj("novenas.json") }
+
+    fun novenaTypes(): List<NovenaType> =
+        novenasRoot.getAsJsonArray("novenas").map { el ->
+            val o = el.asJsonObject
+            NovenaType(
+                id = o.get("id").asString,
+                nameFr = o.get("name_fr").asString,
+                nameIt = o.get("name_it").asString,
+                days = o.get("days").asInt,
+                descFr = o.get("desc_fr").asString,
+                descIt = o.get("desc_it").asString,
+                category = o.get("category").asString,
+                fasting = o.get("fasting").asBoolean,
+                phases = o.getAsJsonArray("phases").map { p ->
+                    val pO = p.asJsonObject
+                    NovenaPhase(
+                        fromDay = pO.get("from_day").asInt,
+                        toDay = pO.get("to_day").asInt,
+                        labelFr = pO.get("label_fr").asString,
+                        labelIt = pO.get("label_it").asString
+                    )
+                }
+            )
+        }
+
+    fun novenaType(id: String): NovenaType? = novenaTypes().firstOrNull { it.id == id }
+
+    // ---- Exercices spirituels ---------------------------------------------------
+    private val exercisesRoot: JsonObject by lazy { obj("spiritual_exercises.json") }
+
+    fun spiritualExercises(): List<SpiritualExercise> =
+        exercisesRoot.getAsJsonArray("exercises").map { el ->
+            val o = el.asJsonObject
+            SpiritualExercise(
+                id = o.get("id").asString,
+                family = o.get("family").asString,
+                name = o.get("name").asString,
+                source = o.get("source").asString,
+                desc = o.get("desc").asString,
+                steps = o.getAsJsonArray("steps").map { it2 -> it2.asString },
+                scripture = o.getAsJsonArray("scripture").map { it2 -> it2.asString }
+            )
+        }
+
+    fun spiritualExercisesByFamily(family: String): List<SpiritualExercise> =
+        spiritualExercises().filter { it.family == family }
+
+    // ---- Calendrier de jeûne -----------------------------------------------------
+    private val fastingRoot: JsonObject by lazy { obj("fasting_traditions.json") }
+
+    fun fastEntries(): List<FastEntry> =
+        fastingRoot.getAsJsonArray("fasts").map { el ->
+            val o = el.asJsonObject
+            FastEntry(
+                id = o.get("id").asString,
+                family = o.get("family").asString,
+                scope = o.get("scope").asString,
+                name = o.get("name").asString,
+                computed = if (o.has("computed") && !o.get("computed").isJsonNull) o.get("computed").asString else null,
+                rule = o.get("rule").asString,
+                note = o.get("note").asString
+            )
+        }
+
+    fun fastEntriesByFamily(family: String): List<FastEntry> = fastEntries().filter { it.family == family }
+
+    // ---- Livres du jeu de lecture biblique (73 livres, niveaux) -------------------
+    private val bibleReadingRoot: JsonObject by lazy { obj("bible_reading_books.json") }
+
+    fun bibleReadingBooks(): List<BibleReadingBook> =
+        bibleReadingRoot.getAsJsonArray("books").map { el ->
+            val o = el.asJsonObject
+            BibleReadingBook(
+                id = o.get("id").asString,
+                nameFr = o.get("name_fr").asString,
+                nameIt = o.get("name_it").asString,
+                testament = o.get("testament").asString
+            )
+        }
 
     // ---- Bible ---------------------------------------------------------------
     fun bibleBooks(): List<BibleBook> =

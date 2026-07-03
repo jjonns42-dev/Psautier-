@@ -23,6 +23,10 @@
     "cathoCounsel": {
      "source": "François de Sales, Vie dévote III,23",
      "text": "Garder toujours un reste de faim est plus sûr que d'attendre le dégoût pour s'arrêter de manger."
+    },
+    "extraCounsel": {
+     "source": "Bossuet, Traité de la concupiscence",
+     "text": "La gourmandise relève de la « concupiscence de la chair » (1 Jn 2,16), l'un des trois foyers du péché selon Bossuet, avec l'orgueil de la vie et la convoitise des yeux."
     }
    },
    "verses": [
@@ -116,6 +120,13 @@
      "ortho": "Termine par une doxologie pour le chemin parcouru.",
      "catho": "Termine par un Te Deum ou un chant d'action de grâce."
     }
+   ],
+   "furtherReading": [
+    "Jean Cassien, Institutions cénobitiques, livre V",
+    "Jean Climaque, L'Échelle sainte, degré 14",
+    "François de Sales, Introduction à la vie dévote, III,23",
+    "Jacques-Bénigne Bossuet, Traité de la concupiscence",
+    "Jean-Claude Larchet, Thérapeutique des maladies spirituelles"
    ]
   },
   {
@@ -141,6 +152,10 @@
     "cathoCounsel": {
      "source": "François de Sales, Vie dévote III,2",
      "text": "La garde des yeux et des paroles est le premier rempart de la pureté du cœur."
+    },
+    "extraCounsel": {
+     "source": "Bossuet, Traité de la concupiscence",
+     "text": "Même racine : la « concupiscence de la chair ». Bossuet y voit, avec saint Jean, l'une des trois portes par lesquelles le monde entre dans le cœur de l'homme."
     }
    },
    "verses": [
@@ -234,6 +249,13 @@
      "ortho": "Termine par une doxologie et un passage de l'Échelle sainte sur la chasteté.",
      "catho": "Termine par une consécration du cœur à la Vierge Marie."
     }
+   ],
+   "furtherReading": [
+    "Jean Climaque, L'Échelle sainte, degré 15",
+    "Saint Jean de la Croix, La Nuit obscure / La Montée du Carmel",
+    "Jacques-Bénigne Bossuet, Traité de la concupiscence",
+    "Saint Augustin, Les Confessions",
+    "Jean-Claude Larchet, Thérapeutique des maladies spirituelles"
    ]
   },
   {
@@ -259,6 +281,10 @@
     "cathoCounsel": {
      "source": "Thomas d'Aquin, Somme théologique IIa-IIae Q.118",
      "text": "L'avarice dérègle la fin des biens temporels, faits pour servir l'homme et non pour être servis par lui."
+    },
+    "extraCounsel": {
+     "source": "Bossuet, Traité de la concupiscence",
+     "text": "L'avarice relève de la « concupiscence des yeux » (1 Jn 2,16) — le désir de posséder ce que l'on voit, distinct du seul plaisir des sens."
     }
    },
    "verses": [
@@ -352,6 +378,13 @@
      "ortho": "Termine par une action de grâce pour la liberté intérieure retrouvée.",
      "catho": "Termine par la prière du Suscipe d'Ignace de Loyola."
     }
+   ],
+   "furtherReading": [
+    "Jean Cassien, Institutions cénobitiques, livre VII",
+    "Thomas d'Aquin, Somme théologique, IIa-IIae Q.118",
+    "Jacques-Bénigne Bossuet, Traité de la concupiscence",
+    "Saint Augustin, Les Confessions",
+    "Jean-Claude Larchet, Thérapeutique des maladies spirituelles"
    ]
   },
   {
@@ -377,6 +410,10 @@
     "cathoCounsel": {
      "source": "François de Sales, Vie dévote III,8-9",
      "text": "Mieux vaut prévenir la colère que la guérir ; il faut la combattre dès le premier mouvement, avant qu'elle ne s'installe."
+    },
+    "extraCounsel": {
+     "source": "Maxime le Confesseur, Centuries sur la charité I,38",
+     "text": "« S'irriter, se montrer méchant, c'est rompre avec l'amour ; et rompre avec l'amour, c'est rompre avec Dieu, puisque Dieu est amour. »"
     }
    },
    "verses": [
@@ -470,6 +507,12 @@
      "ortho": "Termine par la prière de saint Éphrem sur la paix du cœur.",
      "catho": "Termine par la prière de saint François d'Assise pour la paix."
     }
+   ],
+   "furtherReading": [
+    "Évagre le Pontique, Le Traité pratique",
+    "Maxime le Confesseur, Les Centuries sur la charité",
+    "François de Sales, Introduction à la vie dévote, III,8-9",
+    "Jean-Claude Larchet, Thérapeutique des maladies spirituelles"
    ]
   },
   {
@@ -495,6 +538,10 @@
     "cathoCounsel": {
      "source": "François de Sales",
      "text": "Ne jamais prendre de grande décision dans la tristesse ; s'en remettre humblement au temps et à la prière plutôt qu'à l'agitation."
+    },
+    "extraCounsel": {
+     "source": "André de Crête, Grand Canon de repentir",
+     "text": "Chanté au début du Carême orthodoxe : verset après verset, il parcourt toute l'Écriture pour transformer la tristesse en larmes de conversion plutôt qu'en accablement."
     }
    },
    "verses": [
@@ -568,7 +615,8 @@
      "title": "Le sacrement",
      "practice": "Reçois un sacrement en lien conscient avec cette tristesse.",
      "ortho": "Reçois la communion en lien conscient avec cette tristesse.",
-     "catho": "Reçois la réconciliation ou l'eucharistie en lien avec cette tristesse."
+     "catho": "Reçois la réconciliation ou l'eucharistie en lien avec cette tristesse.",
+     "insp": "Macaire d'Égypte, Homélies spirituelles, 16 — « Accueillons notre Dieu et Seigneur, le véritable médecin, qui seul est capable de guérir notre âme. »"
     },
     {
      "title": "Le corps et la création",
@@ -588,6 +636,13 @@
      "ortho": "Termine par une action de grâce complète pour le chemin parcouru.",
      "catho": "Termine par la prière de confiance à la Miséricorde divine."
     }
+   ],
+   "furtherReading": [
+    "Macaire d'Égypte, Les Homélies spirituelles",
+    "Jean Cassien, Conférences, V",
+    "André de Crête, Le Grand Canon de repentir",
+    "Saint Alphonse de Liguori, Traité des scrupules",
+    "Jean-Claude Larchet, Thérapeutique des maladies spirituelles"
    ]
   },
   {
@@ -613,6 +668,10 @@
     "cathoCounsel": {
      "source": "Thérèse d'Avila et François de Sales",
      "text": "Persévérer dans la prière même sans goût ni ferveur sensible ; la fidélité importe plus que le sentiment."
+    },
+    "extraCounsel": {
+     "source": "Maxime le Confesseur, Centuries sur la charité I,67",
+     "text": "« La paresse spirituelle, qui s'attaque à toutes les puissances de l'âme, émeut à la fois presque toutes les passions ; c'est pourquoi, entre toutes, elle est redoutable. »"
     }
    },
    "verses": [
@@ -706,6 +765,12 @@
      "ortho": "Termine par la prière de saint Éphrem sur l'esprit de ferveur.",
      "catho": "Termine par une prière de persévérance et d'action de grâce."
     }
+   ],
+   "furtherReading": [
+    "Jean Cassien, Institutions cénobitiques, livre X",
+    "Maxime le Confesseur, Les Centuries sur la charité",
+    "Saint Jean de la Croix, La Nuit obscure",
+    "Jean-Claude Larchet, Thérapeutique des maladies spirituelles"
    ]
   },
   {
@@ -731,6 +796,10 @@
     "cathoCounsel": {
      "source": "Ignace de Loyola, Règles pour le discernement des esprits",
      "text": "Examiner d'où vient une consolation : de Dieu, ou du seul plaisir d'être vu vertueux."
+    },
+    "extraCounsel": {
+     "source": "Garrigou-Lagrange, Les Trois âges de la vie intérieure",
+     "text": "La vaine gloire s'attaque particulièrement au début de la voie purgative : elle guette jusque dans le désir d'être vu en train de progresser spirituellement."
     }
    },
    "verses": [
@@ -824,6 +893,12 @@
      "ortho": "Termine par le psaume 113/115 : à Dieu seul la gloire.",
      "catho": "Termine par la litanie de l'humilité."
     }
+   ],
+   "furtherReading": [
+    "Évagre le Pontique, Le Traité pratique",
+    "Ignace de Loyola, Les Exercices spirituels — Règles pour le discernement des esprits",
+    "Réginald Garrigou-Lagrange, Les Trois âges de la vie intérieure",
+    "Jean-Claude Larchet, Thérapeutique des maladies spirituelles"
    ]
   },
   {
@@ -849,6 +924,10 @@
     "cathoCounsel": {
      "source": "Thomas d'Aquin, Somme théologique IIa-IIae Q.162",
      "text": "L'orgueil est le désir déréglé de sa propre excellence ; son remède est la vérité sur soi, non l'humiliation artificielle."
+    },
+    "extraCounsel": {
+     "source": "Grégoire le Grand, Moralia in Job",
+     "text": "« L'orgueil, reine des vices, lorsqu'il a vaincu le cœur, livre aussitôt entre les mains de ses lieutenants les sept vices principaux. »"
     }
    },
    "verses": [
@@ -942,6 +1021,13 @@
      "ortho": "Termine par la prière du publicain, répétée avec le cœur.",
      "catho": "Termine par la litanie de l'humilité."
     }
+   ],
+   "furtherReading": [
+    "Jean Climaque, L'Échelle sainte, degré 25",
+    "Grégoire le Grand, Moralia in Job",
+    "Thomas d'Aquin, Somme théologique, IIa-IIae Q.162",
+    "Saint Augustin, Les Confessions",
+    "Jean-Claude Larchet, Thérapeutique des maladies spirituelles"
    ]
   },
   {
@@ -967,6 +1053,10 @@
     "cathoCounsel": {
      "source": "Thomas d'Aquin, Somme théologique IIa-IIae Q.36",
      "text": "L'envie est une tristesse du bien d'autrui perçu comme diminuant le sien propre ; son remède est la charité, qui se réjouit du bien de tous."
+    },
+    "extraCounsel": {
+     "source": "Isaac le Syrien, Discours ascétiques, Discours 81 (trad. Placide Deseille)",
+     "text": "« Qu'est-ce qu'un cœur miséricordieux ? Une flamme qui embrase le cœur pour toute la création... son cœur devient humble et il ne peut plus supporter de voir un tort fait à une créature. »"
     }
    },
    "verses": [
@@ -1060,6 +1150,12 @@
      "ortho": "Termine par une action de grâce pour le bien d'autrui.",
      "catho": "Termine par la prière pour la charité fraternelle."
     }
+   ],
+   "furtherReading": [
+    "Dorothée de Gaza, Les Instructions spirituelles, VI",
+    "Maxime le Confesseur, Les Centuries sur la charité",
+    "Thomas d'Aquin, Somme théologique, IIa-IIae Q.36",
+    "Jean-Claude Larchet, Thérapeutique des maladies spirituelles"
    ]
   }
  ]

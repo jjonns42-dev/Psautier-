@@ -140,6 +140,19 @@ private fun RuleSetup(repo: ContentRepository, store: GameStore, modifier: Modif
             textAlign = TextAlign.Center, modifier = Modifier.padding(vertical = 10.dp)
         )
 
+        OutlinedButton(
+            onClick = {
+                val f = familyOrder.random()
+                val t = allTraditions.filter { tr -> tr.family == f }.random()
+                family = f
+                selected = t
+                difficulty = RuleDifficulty.entries.toTypedArray().random()
+            },
+            modifier = Modifier.padding(top = 6.dp)
+        ) {
+            Text("🎲 " + (if (italian) "Scegli a caso la mia regola" else "Choisir ma règle au hasard"))
+        }
+
         Text(
             (if (italian) "1. Famiglia spirituale" else "1. Famille spirituelle").uppercase(),
             style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.tertiary,

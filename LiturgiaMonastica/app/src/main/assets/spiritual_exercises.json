@@ -1,0 +1,187 @@
+{
+  "exercises": [
+    {
+      "id": "priere-jesus",
+      "family": "orthodoxe",
+      "name": "La Prière du cœur",
+      "source": "Inspiré de la tradition hésychaste et de la Philocalie",
+      "desc": "Un exercice de recueillement fondé sur l'invocation continuelle du Nom de Jésus, pour unir l'esprit et le cœur dans une attention paisible à la présence de Dieu.",
+      "steps": [
+        "S'asseoir en silence, dos droit, respiration calme.",
+        "Répéter intérieurement : « Seigneur Jésus-Christ, Fils de Dieu, aie pitié de moi, pécheur », en rythme avec le souffle.",
+        "Quand l'esprit se disperse, revenir sans effort à l'invocation, sans se juger.",
+        "Terminer par un temps de silence, sans parole, simplement présent."
+      ],
+      "scripture": ["Luc 18, 13", "1 Thessaloniciens 5, 17", "Marc 10, 47"]
+    },
+    {
+      "id": "echelle-sainte",
+      "family": "orthodoxe",
+      "name": "L'Échelle sainte",
+      "source": "Inspiré de saint Jean Climaque, Scala Paradisi",
+      "desc": "Un parcours progressif, degré par degré, pour reconnaître un obstacle et une vertu correspondante, et avancer pas à pas vers la charité.",
+      "steps": [
+        "Choisir chaque semaine un combat intérieur précis (colère, jugement, attachement...).",
+        "Méditer un court passage biblique qui l'éclaire.",
+        "Noter, le soir, un geste concret posé dans ce sens durant la journée.",
+        "Reprendre le degré suivant seulement quand le précédent est devenu plus stable."
+      ],
+      "scripture": ["Genèse 28, 12", "Philippiens 3, 13-14", "Matthieu 5, 3-10"]
+    },
+    {
+      "id": "garde-du-coeur",
+      "family": "orthodoxe",
+      "name": "La garde du cœur (nepsis)",
+      "source": "Inspiré d'Évagre le Pontique et des écrits sur la vigilance intérieure",
+      "desc": "Un exercice de vigilance : observer une pensée dès son apparition, avant qu'elle ne devienne désir puis acte, pour choisir librement d'y consentir ou non.",
+      "steps": [
+        "Plusieurs fois par jour, s'arrêter un instant et se demander : « quelle pensée m'habite en ce moment ? »",
+        "La nommer simplement, sans dramatiser ni se juger.",
+        "Se demander si elle rapproche ou éloigne de la charité.",
+        "L'offrir à Dieu en une brève prière, puis reprendre son activité en paix."
+      ],
+      "scripture": ["Proverbes 4, 23", "Matthieu 15, 19", "Romains 12, 2"]
+    },
+    {
+      "id": "lecture-peres-desert",
+      "family": "orthodoxe",
+      "name": "La parole des Anciens",
+      "source": "Inspiré des Apophtegmes des Pères du désert",
+      "desc": "Un exercice de lecture brève, pour recevoir chaque jour une parole concrète et la garder comme viatique pour la journée.",
+      "steps": [
+        "Lire une courte sentence ou un court récit d'un ancien du désert.",
+        "La relire une seconde fois, lentement.",
+        "En retenir une seule phrase, comme une lampe pour la journée.",
+        "Le soir, se demander comment elle a éclairé un moment vécu."
+      ],
+      "scripture": ["Matthieu 19, 21", "1 Rois 19, 4-8", "Psaume 1, 2"]
+    },
+    {
+      "id": "psalmodie-meditee",
+      "family": "orthodoxe",
+      "name": "La psalmodie méditée",
+      "source": "Inspiré de l'usage monastique du Psautier",
+      "desc": "Un exercice pour prier un psaume non comme un texte à réciter vite, mais comme une parole que l'on fait sienne, verset après verset.",
+      "steps": [
+        "Choisir un psaume court.",
+        "Le lire une première fois en entier, lentement.",
+        "Reprendre verset par verset, en s'arrêtant sur celui qui touche le plus.",
+        "Le redire dans ses propres mots, comme une prière personnelle."
+      ],
+      "scripture": ["Psaume 118, 105", "Colossiens 3, 16"]
+    },
+    {
+      "id": "examen-orthodoxe",
+      "family": "orthodoxe",
+      "name": "L'examen du soir devant Dieu",
+      "source": "Inspiré de la pratique de la confession fréquente des startsi",
+      "desc": "Une brève relecture de la journée à la lumière de Dieu, pour grandir dans la componction et la reconnaissance, en vue d'une confession sincère.",
+      "steps": [
+        "Se tenir en silence devant une icône ou simplement les yeux fermés.",
+        "Rendre grâce pour un bienfait reçu ce jour.",
+        "Repasser brièvement la journée, sans complaisance ni sévérité excessive.",
+        "Demander pardon pour une faute précise et former une résolution simple pour demain."
+      ],
+      "scripture": ["Lamentations 3, 40", "Jacques 5, 16", "Psaume 4, 5"]
+    },
+    {
+      "id": "veille-attente",
+      "family": "orthodoxe",
+      "name": "La veille de l'attente",
+      "source": "Inspiré de la vigile monastique et des paraboles évangéliques de la veille",
+      "desc": "Un exercice de veille intérieure, pour vivre chaque jour comme préparé à la rencontre du Christ, sans anxiété mais avec vigilance joyeuse.",
+      "steps": [
+        "Se réserver un court moment, tôt le matin ou tard le soir, pour se tenir devant Dieu sans rien demander.",
+        "Relire une parabole évangélique de la veille (vierges sages, serviteur fidèle...).",
+        "Se demander ce qu'attendre du Seigneur signifie concrètement ce jour-là.",
+        "Confier la journée à venir, ou celle qui s'achève, entre les mains de Dieu."
+      ],
+      "scripture": ["Matthieu 25, 1-13", "Marc 13, 35-37", "Luc 12, 35-40"]
+    },
+    {
+      "id": "lectio-divina",
+      "family": "catholique",
+      "name": "La Lecture priante",
+      "source": "Inspiré de Guigues II le Chartreux, L'Échelle des moines, et de la tradition bénédictine",
+      "desc": "Quatre mouvements simples pour laisser un texte biblique descendre de la lecture à la contemplation.",
+      "steps": [
+        "Lire lentement un court passage biblique (lectio).",
+        "Ruminer intérieurement un mot ou une phrase qui touche (meditatio).",
+        "Répondre à Dieu par une prière personnelle jaillie du texte (oratio).",
+        "Demeurer un instant en silence, simplement présent à Dieu (contemplatio)."
+      ],
+      "scripture": ["Psaume 1, 2", "Luc 2, 19"]
+    },
+    {
+      "id": "exercices-ignace",
+      "family": "catholique",
+      "name": "La contemplation des scènes évangéliques",
+      "source": "Inspiré de saint Ignace de Loyola, Exercices spirituels",
+      "desc": "Une manière de méditer l'Évangile en s'imaginant présent dans la scène, pour laisser le cœur être touché et discerner ce que Dieu y suggère.",
+      "steps": [
+        "Choisir un passage d'Évangile et se représenter le lieu, les personnes, l'ambiance.",
+        "Demander intérieurement la grâce que l'on désire recevoir de cette contemplation.",
+        "Entrer dans la scène avec les sens : voir, entendre, ressentir.",
+        "Terminer par un colloque avec le Christ, comme un ami parle à un ami."
+      ],
+      "scripture": ["Luc 9, 23", "Matthieu 4, 1-11"]
+    },
+    {
+      "id": "examen-ignatien",
+      "family": "catholique",
+      "name": "L'examen du jour",
+      "source": "Inspiré de saint Ignace de Loyola",
+      "desc": "Une prière quotidienne en cinq mouvements pour relire la journée à la lumière de Dieu et discerner ce qui rapproche ou éloigne de Lui.",
+      "steps": [
+        "Rendre grâce pour les bienfaits reçus dans la journée.",
+        "Demander la lumière pour bien se voir tel que l'on est.",
+        "Repasser la journée moment par moment.",
+        "Demander pardon pour ce qui doit l'être.",
+        "Former une résolution concrète et confiante pour le lendemain."
+      ],
+      "scripture": ["Lamentations 3, 40", "Psaume 4, 5"]
+    },
+    {
+      "id": "chemin-croix-medite",
+      "family": "catholique",
+      "name": "Le chemin de la Passion",
+      "source": "Inspiré du Chemin de Croix franciscain",
+      "desc": "Un parcours méditatif à travers les étapes de la Passion du Christ, pour unir sa propre vie aux souffrances et à l'espérance du Sauveur.",
+      "steps": [
+        "S'arrêter, en pensée ou en marchant, à chaque étape de la Passion.",
+        "Lire un bref passage évangélique correspondant.",
+        "Se demander en quoi cette étape rejoint une épreuve personnelle vécue.",
+        "Conclure chaque étape par une brève prière de confiance."
+      ],
+      "scripture": ["Jean 19, 17", "Marc 15, 21-37"]
+    },
+    {
+      "id": "abandon-providence",
+      "family": "catholique",
+      "name": "L'abandon du moment présent",
+      "source": "Inspiré de Jean-Pierre de Caussade, L'Abandon à la divine Providence",
+      "desc": "Un exercice pour accueillir chaque instant de la journée, joyeux ou pénible, comme reçu de la main de Dieu, sans anxiété pour l'avenir.",
+      "steps": [
+        "Au début d'une tâche, reconnaître un instant qu'elle vient de la volonté de Dieu.",
+        "L'accomplir de son mieux, sans se projeter dans l'inquiétude.",
+        "Face à une contrariété, redire intérieurement : « Que ta volonté soit faite ».",
+        "Le soir, remettre le fruit de la journée entre les mains de Dieu."
+      ],
+      "scripture": ["Matthieu 6, 34", "1 Pierre 5, 7"]
+    },
+    {
+      "id": "petite-voie",
+      "family": "catholique",
+      "name": "La petite offrande",
+      "source": "Inspiré de sainte Thérèse de l'Enfant-Jésus, la Petite Voie",
+      "desc": "Un exercice de confiance filiale : transformer chaque petite action ordinaire en un acte d'amour offert à Dieu.",
+      "steps": [
+        "Choisir une petite action simple de la journée (un service rendu, une contrariété acceptée).",
+        "L'offrir consciemment à Dieu par amour, sans chercher à être vu ni remercié.",
+        "Renouveler cette offrande plusieurs fois dans la journée, avec simplicité.",
+        "Se rappeler que la petitesse du geste n'enlève rien à la grandeur de l'amour qui l'anime."
+      ],
+      "scripture": ["Matthieu 18, 3", "Matthieu 6, 3-4"]
+    }
+  ]
+}

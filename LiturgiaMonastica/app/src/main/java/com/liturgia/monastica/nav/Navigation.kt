@@ -20,7 +20,12 @@ object Routes {
     const val COMBAT = "combat"
     const val COMBAT_SIN = "combat/{sinId}"
     const val COMBAT_LEVEL = "combat/{sinId}/{level}"
+    const val COMBAT_INFO = "combat_info"
     const val RULE = "rule"
+    const val NOVENA = "novena"
+    const val FASTING = "fasting"
+    const val EXERCISES = "exercises"
+    const val READING = "reading"
     fun hour(id: String) = "office/$id"
     fun combatSin(id: String) = "combat/$id"
     fun combatLevel(id: String, level: Int) = "combat/$id/$level"
@@ -38,7 +43,11 @@ fun AppNavGraph(repo: ContentRepository, store: GameStore) {
                 onCandle = { nav.navigate(Routes.CANDLE) },
                 onThousand = { nav.navigate(Routes.THOUSAND) },
                 onCombat = { nav.navigate(Routes.COMBAT) },
-                onRule = { nav.navigate(Routes.RULE) }
+                onRule = { nav.navigate(Routes.RULE) },
+                onNovena = { nav.navigate(Routes.NOVENA) },
+                onFasting = { nav.navigate(Routes.FASTING) },
+                onExercises = { nav.navigate(Routes.EXERCISES) },
+                onReading = { nav.navigate(Routes.READING) }
             )
         }
         composable(Routes.OFFICE) {
@@ -63,7 +72,11 @@ fun AppNavGraph(repo: ContentRepository, store: GameStore) {
         }
         composable(Routes.COMBAT) {
             CombatListScreen(repo, store, onBack = { nav.popBackStack() },
-                onSin = { id -> nav.navigate(Routes.combatSin(id)) })
+                onSin = { id -> nav.navigate(Routes.combatSin(id)) },
+                onInfo = { nav.navigate(Routes.COMBAT_INFO) })
+        }
+        composable(Routes.COMBAT_INFO) {
+            CombatInfoScreen(store, onBack = { nav.popBackStack() })
         }
         composable(
             Routes.COMBAT_SIN,
@@ -86,6 +99,18 @@ fun AppNavGraph(repo: ContentRepository, store: GameStore) {
         }
         composable(Routes.RULE) {
             RuleScreen(repo, store, onBack = { nav.popBackStack() })
+        }
+        composable(Routes.NOVENA) {
+            NovenaScreen(repo, store, onBack = { nav.popBackStack() })
+        }
+        composable(Routes.FASTING) {
+            FastingScreen(repo, store, onBack = { nav.popBackStack() })
+        }
+        composable(Routes.EXERCISES) {
+            SpiritualExercisesScreen(repo, store, onBack = { nav.popBackStack() })
+        }
+        composable(Routes.READING) {
+            ReadingGameScreen(repo, store, onBack = { nav.popBackStack() })
         }
     }
 }

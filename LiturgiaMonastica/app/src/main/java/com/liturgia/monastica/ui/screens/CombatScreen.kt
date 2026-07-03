@@ -37,11 +37,35 @@ private fun accentColor(hex: String): Color = try {
     Color(android.graphics.Color.parseColor(hex))
 } catch (e: Exception) { Color(0xFF7A1F1B) }
 
+/** Au-delà du niveau 10, le combat n'est jamais "terminé" : il devient une vigilance perpétuelle,
+ *  sur le même principe de jalons que la Fidélité de La Règle. */
+private fun combatStageLabel(level: Int, italian: Boolean): Pair<String, String> {
+    if (level <= 10) return "" to ""
+    val weeksSince = level - 10
+    return when {
+        weeksSince < 4 -> (if (italian) "Vigilanza — settimana $weeksSince" else "Vigilance — semaine $weeksSince") to
+            (if (italian) "Il combattimento continua, senza nuova prova." else "Le combat continue, sans épreuve nouvelle.")
+        weeksSince < 12 -> (if (italian) "~1 mese di vigilanza" else "~1 mois de vigilance") to
+            (if (italian) "Fedeltà silenziosa." else "Fidélité silencieuse.")
+        weeksSince < 26 -> (if (italian) "~3 mesi di vigilanza" else "~3 mois de vigilance") to ""
+        weeksSince < 52 -> (if (italian) "~6 mesi di vigilanza" else "~6 mois de vigilance") to ""
+        else -> {
+            val years = weeksSince / 52
+            val jubilee = years in setOf(5, 10, 15, 20, 25, 30, 40, 50)
+            val label = if (jubilee)
+                (if (italian) "Giubileo — $years anni di vigilanza" else "Jubilé — $years ans de vigilance")
+            else
+                (if (italian) "$years anni di vigilanza" else "$years ans de vigilance")
+            label to (if (italian) "« Ce combat ne finit jamais vraiment » — Cassien" else "« Ce combat ne finit jamais vraiment » — Cassien")
+        }
+    }
+}
+
 /* ============================================================================
    1. LISTE DES NEUF COMBATS
    ============================================================================ */
 @Composable
-fun CombatListScreen(repo: ContentRepository, store: GameStore, onBack: () -> Unit, onSin: (String) -> Unit) {
+fun CombatListScreen(repo: ContentRepository, store: GameStore, onBack: () -> Unit, onSin: (String) -> Unit, onInfo: () -> Unit) {
     val it = store.lang == "it"
     LaunchedEffect(Unit) { store.combatRefresh() }
     val sins = remember { repo.sins() }
@@ -62,9 +86,9 @@ fun CombatListScreen(repo: ContentRepository, store: GameStore, onBack: () -> Un
                     GoldRule()
                     Text(
                         if (it)
-                            "Dieci livelli, una settimana ciascuno. Ogni giorno va confermato: un solo giorno mancato riporta il livello a zero."
+                            "Dieci livelli di formazione, poi vigilanza perpetua. Ogni giorno va confermato: un giorno mancato fa scendere di un livello (mai sotto il livello 1)."
                         else
-                            "Dix niveaux, une semaine chacun. Chaque jour doit être confirmé : une seule journée manquée remet le niveau à zéro.",
+                            "Dix niveaux de formation, puis vigilance perpétuelle. Chaque jour doit être confirmé : une journée manquée fait redescendre d'un niveau (jamais sous le niveau 1).",
                         style = MaterialTheme.typography.bodyMedium,
                         color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
@@ -92,7 +116,8 @@ fun CombatListScreen(repo: ContentRepository, store: GameStore, onBack: () -> Un
                         }
                         Column(horizontalAlignment = Alignment.End) {
                             Text(
-                                (if (it) "Livello " else "Niveau ") + "$level/10",
+                                if (level <= 10) (if (it) "Livello " else "Niveau ") + "$level/10"
+                                else (if (it) "Vigilanza" else "Vigilance"),
                                 style = MaterialTheme.typography.labelLarge,
                                 color = MaterialTheme.colorScheme.tertiary
                             )
@@ -105,7 +130,13 @@ fun CombatListScreen(repo: ContentRepository, store: GameStore, onBack: () -> Un
                     }
                 }
             }
-            item { Spacer(Modifier.height(20.dp)) }
+            item {
+                Spacer(Modifier.height(10.dp))
+                TextButton(onClick = onInfo, modifier = Modifier.fillMaxWidth()) {
+                    Text(if (it) "Le fonti e i manuali dei confessori" else "Les sources et les manuels de confesseurs", color = MaterialTheme.colorScheme.tertiary)
+                }
+                Spacer(Modifier.height(20.dp))
+            }
         }
     }
 }
@@ -148,8 +179,8 @@ fun CombatSinScreen(repo: ContentRepository, store: GameStore, sinId: String, on
                     ) {
                         Column(Modifier.padding(14.dp)) {
                             Text(
-                                if (it) "Un giorno senza conferma ha riportato questo combattimento a zero per il livello $currentLevel. Riprendi, senza scoraggiarti: è il combattimento stesso."
-                                else "Une journée sans confirmation a remis ce combat à zéro pour le niveau $currentLevel. Reprends, sans te décourager : c'est le combat lui-même.",
+                                if (it) "Un giorno senza conferma ti ha fatto scendere al livello $currentLevel. Riprendi, senza scoraggiarti: è il combattimento stesso."
+                                else "Une journée sans confirmation t'a fait redescendre au niveau $currentLevel. Reprends, sans te décourager : c'est le combat lui-même.",
                                 style = MaterialTheme.typography.bodySmall,
                                 color = MaterialTheme.colorScheme.onSurface
                             )
@@ -175,6 +206,29 @@ fun CombatSinScreen(repo: ContentRepository, store: GameStore, sinId: String, on
                     italian = it,
                     onClick = { if (state != LevelState.LOCKED) onLevel(n) }
                 )
+            }
+            if (currentLevel > 10) {
+                item {
+                    val (stageLabel, _) = combatStageLabel(currentLevel, it)
+                    Card(
+                        Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 8.dp)
+                            .clickable { onLevel(currentLevel) },
+                        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.secondary.copy(alpha = 0.18f)),
+                        shape = RoundedCornerShape(8.dp)
+                    ) {
+                        Column(Modifier.padding(16.dp)) {
+                            Text(
+                                (if (it) "✦ Vigilanza perpetua" else "✦ Vigilance perpétuelle"),
+                                style = MaterialTheme.typography.titleMedium, color = MaterialTheme.colorScheme.tertiary
+                            )
+                            Text(stageLabel, style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurface)
+                            Text(
+                                "${store.combatDaysConfirmed(sinId)}/7 " + (if (it) "giorni confermati" else "jours confirmés"),
+                                style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant
+                            )
+                        }
+                    }
+                }
             }
             item {
                 Spacer(Modifier.height(20.dp))
@@ -279,6 +333,27 @@ private fun PrayerRuleCard(sin: Sin, expanded: Boolean, onToggle: () -> Unit, it
                 PrayerItem("☦ " + (if (italian) "Consiglio di un Padre" else "Conseil d'un Père"), OrthoGreen, sin.prayer.orthoCounsel.text, sin.prayer.orthoCounsel.source, quote = false)
                 Spacer(Modifier.height(12.dp))
                 PrayerItem("✛ " + (if (italian) "Consiglio di un santo" else "Conseil d'un saint"), CathoBlue, sin.prayer.cathoCounsel.text, sin.prayer.cathoCounsel.source, quote = false)
+                sin.prayer.extraCounsel?.let { extra ->
+                    Spacer(Modifier.height(12.dp))
+                    PrayerItem("✦ " + (if (italian) "Un'altra voce" else "Une autre voix"), Color(0xFFC9A94F), extra.text, extra.source, quote = true)
+                }
+                if (sin.furtherReading.isNotEmpty()) {
+                    Spacer(Modifier.height(16.dp))
+                    Text(
+                        (if (italian) "Per approfondire" else "Pour aller plus loin").uppercase(),
+                        style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.tertiary,
+                        fontWeight = FontWeight.SemiBold
+                    )
+                    Spacer(Modifier.height(4.dp))
+                    sin.furtherReading.forEach { title ->
+                        Text(
+                            "· $title",
+                            style = MaterialTheme.typography.labelSmall,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant,
+                            modifier = Modifier.padding(vertical = 1.dp)
+                        )
+                    }
+                }
             }
         }
     }
@@ -313,16 +388,19 @@ private fun PrayerItem(tag: String, tagColor: Color, text: String, source: Strin
 fun CombatLevelScreen(repo: ContentRepository, store: GameStore, sinId: String, levelNum: Int, onBack: () -> Unit) {
     val it = store.lang == "it"
     val sin = remember(sinId) { repo.sin(sinId) } ?: return
-    val level = sin.levels.getOrNull(levelNum - 1) ?: return
+    val isVigilance = levelNum > 10
+    // Au-delà du niveau 10, on réutilise le contenu du dernier niveau ("Intégration") comme socle maintenu.
+    val level = sin.levels.getOrNull(if (isVigilance) 9 else levelNum - 1) ?: return
     val currentLevel = store.combatLevel(sinId)
     val isCurrent = levelNum == currentLevel
     val daysConfirmed = if (isCurrent) store.combatDaysConfirmed(sinId) else 7
     val verse = sin.verses[daysConfirmed % sin.verses.size]
     val doneToday = store.combatDoneToday(sinId)
-    val fullyAccomplished = currentLevel >= 10 && store.combatDaysConfirmed(sinId) >= 7 && isCurrent
+    val (vigilanceLabel, vigilanceSub) = if (isVigilance) combatStageLabel(levelNum, it) else "" to ""
 
     AppScaffold(
-        title = (if (it) "Livello " else "Niveau ") + "$levelNum/10 — ${sin.name}",
+        title = if (isVigilance) (if (it) "Vigilanza — ${sin.name}" else "Vigilance — ${sin.name}")
+                else (if (it) "Livello " else "Niveau ") + "$levelNum/10 — ${sin.name}",
         onBack = onBack, night = store.night, onToggleNight = { store.toggleNight() }
     ) { pad ->
         Backdrop(R.drawable.seraphim_sarov, Modifier.padding(pad), dim = 0.72f) {
@@ -334,9 +412,13 @@ fun CombatLevelScreen(repo: ContentRepository, store: GameStore, sinId: String, 
             ) {
                 Spacer(Modifier.height(16.dp))
                 Text(
-                    level.title, style = MaterialTheme.typography.headlineSmall,
+                    if (isVigilance) vigilanceLabel else level.title,
+                    style = MaterialTheme.typography.headlineSmall,
                     color = Color(0xFFF1E4BD), textAlign = TextAlign.Center
                 )
+                if (isVigilance && vigilanceSub.isNotEmpty()) {
+                    Text(vigilanceSub, style = MaterialTheme.typography.bodySmall, color = Color(0xFFB9A87A), textAlign = TextAlign.Center)
+                }
                 Spacer(Modifier.height(12.dp))
                 Card(
                     Modifier.fillMaxWidth(),
@@ -404,14 +486,6 @@ fun CombatLevelScreen(repo: ContentRepository, store: GameStore, sinId: String, 
                             style = MaterialTheme.typography.titleMedium, color = Color(0xFFD8B768)
                         )
                     }
-                    fullyAccomplished -> {
-                        Text(
-                            if (it) "✦ Questo combattimento è compiuto. Che continui nel cuore. ✦"
-                            else "✦ Ce combat est achevé. Qu'il se poursuive dans le cœur. ✦",
-                            style = MaterialTheme.typography.titleMedium, color = Color(0xFFD8B768),
-                            textAlign = TextAlign.Center
-                        )
-                    }
                     doneToday -> {
                         Text(
                             if (it) "✓ Oggi: pratica compiuta e confermata." else "✓ Aujourd'hui : pratique accomplie et confirmée.",
@@ -420,8 +494,8 @@ fun CombatLevelScreen(repo: ContentRepository, store: GameStore, sinId: String, 
                         )
                         Spacer(Modifier.height(6.dp))
                         Text(
-                            if (it) "Torna domani per confermare il giorno successivo. Un giorno senza conferma riporta questo livello a zero."
-                            else "Reviens demain pour confirmer le jour suivant. Un jour sans confirmation remet ce niveau à zéro.",
+                            if (it) "Torna domani per confermare il giorno successivo. Un giorno senza conferma fa scendere di un livello."
+                            else "Reviens demain pour confirmer le jour suivant. Un jour sans confirmation fait redescendre d'un niveau.",
                             style = MaterialTheme.typography.labelSmall, color = Color(0xFFB9A87A),
                             textAlign = TextAlign.Center
                         )
@@ -440,8 +514,8 @@ fun CombatLevelScreen(repo: ContentRepository, store: GameStore, sinId: String, 
                         }
                         Spacer(Modifier.height(8.dp))
                         Text(
-                            if (it) "⚠ Se non confermi domani, questo livello ricomincerà interamente da zero."
-                            else "⚠ Si tu ne confirmes pas demain, ce niveau recommencera entièrement à zéro.",
+                            if (it) "⚠ Se non confermi domani, scenderai di un livello (mai sotto il livello 1)."
+                            else "⚠ Si tu ne confirmes pas demain, tu redescendras d'un niveau (jamais sous le niveau 1).",
                             style = MaterialTheme.typography.labelSmall, color = Color(0xFFB9A87A),
                             textAlign = TextAlign.Center
                         )
@@ -466,4 +540,67 @@ private fun DuoBox(label: String, color: Color, text: String) {
             Text(text, style = MaterialTheme.typography.bodyMedium, color = Color(0xFFF1E4BD))
         }
     }
+}
+
+/* ============================================================================
+   4. INFORMATION — les sources, les classifications, les manuels de confesseurs
+   ============================================================================ */
+@Composable
+fun CombatInfoScreen(store: GameStore, onBack: () -> Unit) {
+    val it = store.lang == "it"
+    AppScaffold(
+        title = if (it) "Le fonti" else "Les sources", onBack = onBack,
+        night = store.night, onToggleNight = { store.toggleNight() }
+    ) { pad ->
+        Column(Modifier.padding(pad).fillMaxSize().verticalScroll(rememberScrollState()).padding(20.dp)) {
+            InfoSection(
+                if (it) "Due classificazioni, un'unica tradizione" else "Deux classifications, une même tradition",
+                if (it)
+                    "L'Oriente e l'Occidente cristiani non hanno esattamente la stessa lista, ma la stessa intuizione: individuare le radici del peccato per combatterle meglio."
+                else
+                    "L'Orient et l'Occident chrétiens n'ont pas exactement la même liste, mais la même intuition : identifier les racines du péché pour mieux les combattre."
+            )
+            InfoSection(
+                if (it) "Le otto passioni — Evagrio, Cassiano" else "Les huit pensées — Évagre, Cassien",
+                if (it) "Gola, lussuria, avarizia, ira, tristezza, accidia, vanagloria, orgoglio."
+                else "Gourmandise, luxure, avarice, colère, tristesse, acédie, vaine gloire, orgueil."
+            )
+            InfoSection(
+                if (it) "I sette vizi capitali — san Gregorio Magno" else "Les sept péchés capitaux — saint Grégoire le Grand",
+                if (it)
+                    "Nei Moralia in Job, Gregorio fonde tristezza e accidia in un'unica « pigrizia », assorbe la vanagloria nell'orgoglio — « regina dei vizi » — e isola l'invidia come vizio a sé."
+                else
+                    "Dans les Moralia in Job, Grégoire fusionne tristesse et acédie en une seule « paresse », absorbe la vaine gloire dans l'orgueil — « reine des vices » — et isole l'envie comme vice à part entière."
+            )
+            InfoSection(
+                if (it) "I manuali dei confessori" else "Les manuels des confesseurs",
+                if (it)
+                    "Due tradizioni parallele hanno prodotto manuali per accompagnare la confessione con carità, senza rigorismo né lassismo. In Occidente, la Theologia Moralis di sant'Alfonso de' Liguori. In Oriente, l'Exomologetarion di san Nicodemo l'Agiorita — definito da alcuni storici « il sant'Alfonso de' Liguori della Chiesa greca ». L'opera contemporanea di Jean-Claude Larchet, Thérapeutique des maladies spirituelles, ne è oggi la grande sintesi: le passioni vi sono trattate come malattie da guarire, non colpe da punire — proprio lo spirito di questa applicazione."
+                else
+                    "Deux traditions parallèles ont produit des manuels pour accompagner la confession avec charité, sans rigorisme ni laxisme. En Occident, la Theologia Moralis de saint Alphonse de Liguori. En Orient, l'Exomologetarion de saint Nicodème l'Hagiorite — surnommé par certains historiens « le saint Alphonse de Liguori de l'Église grecque ». L'ouvrage contemporain de Jean-Claude Larchet, Thérapeutique des maladies spirituelles, en est aujourd'hui la grande synthèse : les passions y sont traitées comme des maladies à guérir, non des fautes à punir — exactement l'esprit de cette application."
+            )
+            InfoSection(
+                if (it) "Un punto di onestà" else "Un point d'honnêteté",
+                if (it)
+                    "Questa applicazione non pretende di giudicare la gravità di una colpa — questo resta il ruolo proprio di un vero padre spirituale o confessore. Se hai bisogno di questo discernimento, rivolgiti a una persona reale, non a un'app."
+                else
+                    "Cette application ne prétend pas juger de la gravité d'une faute — cela reste le rôle propre d'un vrai père spirituel ou confesseur. Si tu as besoin de ce discernement, adresse-toi à une personne réelle, pas à une application."
+            )
+            InfoSection(
+                if (it) "La regola del gioco" else "La règle du jeu",
+                if (it)
+                    "Un livello dura sette giorni. Ogni giorno va confermato. Un giorno mancato fa scendere di un livello (mai sotto il livello 1). Oltre il livello 10, il combattimento diventa vigilanza perpetua, senza mai finire davvero — « questo combattimento non finisce mai veramente », secondo Cassiano."
+                else
+                    "Un niveau dure sept jours. Chaque jour doit être confirmé. Une journée manquée fait redescendre d'un niveau (jamais sous le niveau 1). Au-delà du niveau 10, le combat devient une vigilance perpétuelle, sans jamais vraiment finir — « ce combat ne finit jamais vraiment », selon Cassien."
+            )
+            Spacer(Modifier.height(24.dp))
+        }
+    }
+}
+
+@Composable
+private fun InfoSection(title: String, body: String) {
+    Text(title, style = MaterialTheme.typography.titleMedium, color = MaterialTheme.colorScheme.tertiary,
+        modifier = Modifier.padding(top = 18.dp, bottom = 6.dp))
+    Text(body, style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurface)
 }

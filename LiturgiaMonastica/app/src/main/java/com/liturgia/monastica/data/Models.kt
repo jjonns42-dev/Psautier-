@@ -64,7 +64,8 @@ data class SinPrayerRule(
     val orthoPrayer: SinQuote,
     val cathoPrayer: SinQuote,
     val orthoCounsel: SinQuote,
-    val cathoCounsel: SinQuote
+    val cathoCounsel: SinQuote,
+    val extraCounsel: SinQuote? = null   // conseil supplémentaire, source non encore utilisée ailleurs dans ce combat
 )
 
 data class SinVerse(
@@ -89,7 +90,8 @@ data class Sin(
     val desc: String,
     val prayer: SinPrayerRule,
     val verses: List<SinVerse>,
-    val levels: List<SinLevel>
+    val levels: List<SinLevel>,
+    val furtherReading: List<String> = emptyList()
 )
 
 /** Persisted progress for a single sin's combat. Immutable: always replaced, never mutated in place. */
@@ -158,3 +160,115 @@ data class RuleProgress(
     val lastRenewalYear: Int = 0,
     val history: List<RuleHistoryEntry> = emptyList()
 )
+
+// =============================================================================
+//  LES NEUVAINES — coins de neuvaine à durées multiples (9, 30, 40, 54 jours...)
+//  Un seul "coin" actif à la fois. Chaque jour prié incrémente le compteur.
+//  Un jour manqué remet le compteur à zéro (fidélité à la neuvaine classique).
+//  Les neuvaines menées à terme sont conservées dans un petit répertoire.
+// =============================================================================
+
+/** Un type de neuvaine proposé (durée, thème, éventuellement jeûne associé). */
+data class NovenaType(
+    val id: String,
+    val nameFr: String,
+    val nameIt: String,
+    val days: Int,
+    val descFr: String,
+    val descIt: String,
+    val category: String,   // "classique" | "longue" | "jeune"
+    val fasting: Boolean = false,
+    val phases: List<NovenaPhase> = emptyList() // ex. 54 jours: pétition puis action de grâce
+)
+
+data class NovenaPhase(
+    val fromDay: Int,   // 1-based, inclus
+    val toDay: Int,     // inclus
+    val labelFr: String,
+    val labelIt: String
+)
+
+/** Une neuvaine achevée, conservée au répertoire. */
+data class NovenaHistoryEntry(
+    val typeId: String,
+    val startEpochDay: Long,
+    val endEpochDay: Long
+)
+
+data class NovenaProgress(
+    val started: Boolean = false,
+    val typeId: String = "",
+    val day: Int = 0,
+    val lastDay: Long = -1L,
+    val startEpochDay: Long = -1L,
+    val completed: List<NovenaHistoryEntry> = emptyList()
+)
+
+// =============================================================================
+//  EXERCICES SPIRITUELS — pratiques fondées sur l'Écriture et les Pères,
+//  réparties en deux répertoires : orthodoxe et catholique.
+// =============================================================================
+
+data class SpiritualExercise(
+    val id: String,
+    val family: String,     // "orthodoxe" | "catholique"
+    val name: String,
+    val source: String,
+    val desc: String,
+    val steps: List<String>,
+    val scripture: List<String>
+)
+
+// =============================================================================
+//  CALENDRIER DE JEÛNE — jeûnes universels et propres à chaque tradition/ordre,
+//  catholiques et orthodoxes.
+// =============================================================================
+
+data class FastEntry(
+    val id: String,
+    val family: String,     // "orthodoxe" | "catholique"
+    val scope: String,      // "Église universelle" ou nom de la tradition/ordre
+    val name: String,
+    val computed: String?,  // clé calculée par FastingCalendar, ou null si seulement descriptif
+    val rule: String,
+    val note: String
+)
+
+// =============================================================================
+//  LE JEU DE LECTURE — niveaux infinis pour chaque livre de la Bible, et pour
+//  les œuvres (théologie, spiritualité/mystique, Pères de l'Église) que le
+//  lecteur ajoute lui-même. Chaque séance chronométrée (5 à 60 min) fait
+//  progresser la jauge du livre/de l'œuvre ; les niveaux de tous les
+//  livres/œuvres d'une catégorie se combinent en un niveau cumulé.
+// =============================================================================
+
+object ReadingCategory {
+    const val BIBLE = "bible"
+    const val THEOLOGIE = "theologie"
+    const val MYSTIQUE = "mystique"
+    const val PERES = "peres"
+    val ALL = listOf(BIBLE, THEOLOGIE, MYSTIQUE, PERES)
+}
+
+/** Le jeu de lecture biblique couvre les 73 livres du canon, chacun avec son propre
+ *  niveau — distinct du [BibleBook] (id, name, file, testament, chapters) qui sert
+ *  à afficher le texte des quelques livres disponibles en lecture intégrale. */
+data class BibleReadingBook(
+    val id: String,
+    val nameFr: String,
+    val nameIt: String,
+    val testament: String   // "AT" | "NT"
+)
+
+/** Une œuvre ajoutée par le lecteur lui-même, dans l'une des trois catégories
+ *  théologie / spiritualité-mystique / Pères de l'Église. */
+data class ReadingWork(
+    val id: String,
+    val category: String,   // ReadingCategory.THEOLOGIE | MYSTIQUE | PERES
+    val title: String,
+    val author: String = "",
+    val xp: Long = 0L
+)
+
+/** Les 12 durées de séance proposées, en minutes. */
+val READING_DURATIONS = listOf(5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60)
