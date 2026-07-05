@@ -113,92 +113,92 @@
    ],
    "devotions": [
     {
-     "name": "Pravilo complet",
-     "note": "Règle du matin et du soir, dans son intégralité.",
+     "name": "Règle de prière (pravilo) du matin et du soir",
+     "note": "Le socle quotidien de la piété russe : prières fixes au lever et au coucher.",
      "signature": true,
      "minutes": 15,
      "supersedes": -1
     },
     {
-     "name": "Chapelet de la Prière de Jésus",
-     "note": "Sur le tchotki, cent grains.",
-     "signature": false,
-     "minutes": 20,
-     "supersedes": -1
-    },
-    {
-     "name": "Acathiste à saint Séraphin de Sarov",
-     "note": "Une fois par semaine.",
+     "name": "Prière de Jésus sur le tchotki (100 nœuds)",
+     "note": "« Seigneur Jésus-Christ, Fils de Dieu, aie pitié de moi, pécheur », au rythme du chapelet à nœuds.",
      "signature": true,
-     "minutes": 25,
+     "minutes": 10,
      "supersedes": -1
     },
     {
      "name": "Lecture quotidienne de l'Évangile",
-     "note": "Un chapitre, lu lentement.",
+     "note": "Un passage chaque jour, lu à genoux ou debout devant les icônes.",
      "signature": false,
      "minutes": 10,
      "supersedes": -1
     },
     {
+     "name": "Poklony (prosternations)",
+     "note": "Grandes et petites métanies, en nombre croissant.",
+     "signature": false,
+     "minutes": 5,
+     "supersedes": -1
+    },
+    {
      "name": "Jeûne selon le calendrier orthodoxe russe",
-     "note": "Mercredi, vendredi, et périodes de jeûne prescrites.",
+     "note": "Les quatre carêmes, mercredis et vendredis — à vivre avec discernement.",
      "signature": false,
      "minutes": 0,
      "supersedes": -1
     },
     {
-     "name": "Poklony (prosternations)",
-     "note": "Nombre croissant, au rythme de chacun.",
+     "name": "Prière de Jésus prolongée (plusieurs tchotki)",
+     "note": "L'invocation portée sur plusieurs centaines de nœuds, jusqu'à ce que le nom demeure au cœur.",
      "signature": false,
-     "minutes": 5,
+     "minutes": 20,
+     "supersedes": 1
+    },
+    {
+     "name": "Acathiste (à la Mère de Dieu ou à saint Séraphin)",
+     "note": "Hymne debout d'action de grâces et de supplication.",
+     "signature": false,
+     "minutes": 15,
      "supersedes": -1
     },
     {
      "name": "Canon de repentance",
-     "note": "Une fois par semaine, de préférence le soir.",
+     "note": "Le canon pénitentiel, pour tenir le cœur dans la componction.",
      "signature": false,
      "minutes": 20,
      "supersedes": -1
     },
     {
-     "name": "Veillée selon le cycle liturgique",
-     "note": "Participation aux grandes vigiles quand elles sont célébrées.",
+     "name": "Lecture de la Philocalie",
+     "note": "Les Pères neptiques, sur la garde du cœur et la prière.",
+     "signature": false,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Grand Carême orthodoxe (prière de saint Éphrem)",
+     "note": "Le jeûne majeur, ponctué de la prière de saint Éphrem avec prosternations.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": 4
+    },
+    {
+     "name": "Veillée du dimanche et des fêtes",
+     "note": "Vigile de la nuit ou de la veille, selon le cycle liturgique.",
      "signature": false,
      "minutes": 0,
      "supersedes": -1
     },
     {
-     "name": "Silence du cœur",
-     "note": "Un temps quotidien de recueillement, en marchant si besoin (comme Séraphin en forêt).",
-     "signature": false,
-     "minutes": 20,
-     "supersedes": -1
-    },
-    {
-     "name": "Acquisition de l'Esprit Saint",
-     "note": "Une journée entière offerte, sans autre but que la présence de Dieu.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Le cycle complet de l'Office slave",
-     "note": "Vêpres, Complies, Mésonyktikon, Matines et les Heures, selon l'usage slave — l'intégralité du cycle quotidien, au-delà du Pravilo personnel.",
+     "name": "Prière de Jésus continuelle (garde du cœur)",
+     "note": "L'invocation descendue de la bouche à l'intelligence, puis au cœur, jour et nuit.",
      "signature": true,
-     "minutes": 50,
-     "supersedes": -1
+     "minutes": 30,
+     "supersedes": 5
     },
     {
-     "name": "Vénération d'une icône mariale",
-     "note": "Prière quotidienne devant une icône de la Mère de Dieu (Kazanskaya, Vladimirskaya, ou autre), au cœur de la piété populaire russe.",
-     "signature": true,
-     "minutes": 5,
-     "supersedes": -1
-    },
-    {
-     "name": "Vœux monastiques du Petit Schème",
-     "note": "Stabilité de lieu, chasteté, obéissance et pauvreté — les vœux formels prononcés à la tonsure du Petit Schème, méditation renouvelée de cet engagement.",
+     "name": "Vœux monastiques (petit schème)",
+     "note": "Renoncement, obéissance et chasteté, dans la lignée d'Optina et de Sarov.",
      "signature": true,
      "minutes": 0,
      "supersedes": -1
@@ -319,23 +319,30 @@
    "devotions": [
     {
      "name": "Lectio divina",
-     "note": "15 à 30 minutes de lecture priante de l'Écriture.",
+     "note": "La lecture priante de l'Écriture, ruminée tout au long du jour.",
      "signature": true,
      "minutes": 22,
      "supersedes": -1
     },
     {
-     "name": "Une Heure de l'Office",
-     "note": "Laudes ou Vêpres, à prier dans le module Liturgie des Heures.",
+     "name": "Une Heure de l'Office (Laudes ou Vêpres)",
+     "note": "L'opus Dei, « à quoi rien ne doit être préféré » (RB 43).",
      "signature": true,
      "minutes": 15,
      "supersedes": -1
     },
     {
-     "name": "Labora offert",
-     "note": "Le travail quotidien, consciemment offert à Dieu.",
+     "name": "Labora — le travail offert",
+     "note": "« Ora et labora » : le travail des mains vécu comme prière.",
      "signature": false,
      "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Grand silence",
+     "note": "Du soir au matin, le silence qui garde le cœur.",
+     "signature": false,
+     "minutes": 20,
      "supersedes": -1
     },
     {
@@ -346,57 +353,57 @@
      "supersedes": 1
     },
     {
-     "name": "Grand silence",
-     "note": "Du soir au matin, silence gardé autant que possible.",
-     "signature": false,
-     "minutes": 20,
-     "supersedes": -1
-    },
-    {
      "name": "Hospitalité",
-     "note": "Accueillir quelqu'un « comme le Christ lui-même » cette semaine.",
+     "note": "Accueillir l'hôte « comme le Christ lui-même » (RB 53).",
      "signature": false,
      "minutes": 0,
      "supersedes": -1
     },
     {
-     "name": "Obéissance quotidienne",
-     "note": "Accepter une contrariété sans résister intérieurement.",
+     "name": "Écoute et obéissance quotidiennes",
+     "note": "« Écoute, ô mon fils » (RB, Prologue) : accueillir sans résister.",
      "signature": false,
      "minutes": 0,
      "supersedes": -1
     },
     {
      "name": "Trois Heures de l'Office",
-     "note": "Trois Heures de l'Office monastique chaque jour (par exemple Laudes, Sexte et Vêpres), à prier dans le module Liturgie des Heures.",
+     "note": "Trois Heures de l'office monastique chaque jour.",
      "signature": false,
      "minutes": 15,
-     "supersedes": 3
+     "supersedes": 4
     },
     {
-     "name": "Stabilité",
-     "note": "Persévérer fidèlement dans le même état de vie, sans céder à l'instabilité intérieure.",
+     "name": "Jeûne selon la Règle",
+     "note": "Sobriété et abstinence, à la mesure de chacun (RB 39-41).",
      "signature": false,
      "minutes": 0,
      "supersedes": -1
     },
     {
-     "name": "Conversatio morum",
-     "note": "Examen hebdomadaire de conversion continue, selon le vœu bénédictin.",
+     "name": "Conversatio morum — examen de conversion",
+     "note": "Se convertir chaque jour davantage, selon le vœu bénédictin.",
      "signature": false,
      "minutes": 10,
      "supersedes": -1
     },
     {
+     "name": "Échelle de l'humilité",
+     "note": "Gravir les douze degrés de l'humilité (RB 7).",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
      "name": "Les huit Heures de l'Office",
-     "note": "L'office monastique complet — Vigiles, Laudes, Prime, Tierce, Sexte, None, Vêpres, Complies — selon Règle de saint Benoît, ch. 16 : « Sept fois le jour j'ai chanté tes louanges » (Ps 118,164), plus l'office de nuit. À prier dans le module Liturgie des Heures.",
+     "note": "L'office monastique complet : Vigiles, Laudes, Prime, Tierce, Sexte, None, Vêpres, Complies.",
      "signature": true,
      "minutes": 40,
      "supersedes": 7
     },
     {
-     "name": "Jeûne selon la Règle",
-     "note": "Un seul repas principal certains jours, selon la Règle de saint Benoît (ch. 39, 41) — sobriété alimentaire mesurée, jamais excessive.",
+     "name": "Vœux bénédictins (stabilité, conversion des mœurs, obéissance)",
+     "note": "La profession qui configure toute la vie à la Règle.",
      "signature": true,
      "minutes": 0,
      "supersedes": -1
@@ -417,80 +424,94 @@
    ],
    "devotions": [
     {
-     "name": "Couronne séraphique",
-     "note": "Rosaire séraphique en sept dizaines, sur les sept joies de la Vierge.",
+     "name": "Prière devant le crucifix de Saint-Damien",
+     "note": "« Dieu très haut et glorieux, viens éclairer les ténèbres de mon cœur » — la prière de la conversion de François.",
+     "signature": true,
+     "minutes": 10,
+     "supersedes": -1
+    },
+    {
+     "name": "Liturgie des Heures (Laudes et Vêpres)",
+     "note": "Le socle de la prière de l'Église.",
+     "signature": false,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Angélus trois fois le jour",
+     "note": "Matin, midi et soir, à la mémoire de l'Incarnation.",
+     "signature": false,
+     "minutes": 5,
+     "supersedes": -1
+    },
+    {
+     "name": "Lecture de l'Évangile (forma vitae)",
+     "note": "« Vivre l'Évangile » : la Règle même de François.",
+     "signature": false,
+     "minutes": 10,
+     "supersedes": -1
+    },
+    {
+     "name": "Vie de pauvreté concrète (Dame Pauvreté)",
+     "note": "Un renoncement réel, choisi par amour.",
+     "signature": true,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Couronne franciscaine (les sept joies de Marie)",
+     "note": "Le chapelet propre à l'Ordre.",
+     "signature": false,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Cantique des créatures — louange dans la création",
+     "note": "Louer Dieu par frère Soleil et sœur Lune.",
+     "signature": true,
+     "minutes": 10,
+     "supersedes": -1
+    },
+    {
+     "name": "Liturgie des Heures complète",
+     "note": "Toutes les heures du jour.",
+     "signature": false,
+     "minutes": 25,
+     "supersedes": 1
+    },
+    {
+     "name": "Service des pauvres et des petits",
+     "note": "Se faire mineur, servir les plus fragiles.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Jeûne et carême franciscains",
+     "note": "Le Carême de la Saint-Martin et celui de Pâques.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Chemin de Croix",
+     "note": "Suivre le Christ souffrant.",
+     "signature": false,
+     "minutes": 20,
+     "supersedes": -1
+    },
+    {
+     "name": "Contemplation de la Passion (à l'image de la Verna)",
+     "note": "Se laisser configurer au Crucifié, jusqu'aux plaies.",
      "signature": true,
      "minutes": 20,
      "supersedes": -1
     },
     {
-     "name": "Angélus",
-     "note": "Trois fois par jour.",
-     "signature": false,
-     "minutes": 3,
-     "supersedes": -1
-    },
-    {
-     "name": "Cantique des créatures",
-     "note": "Méditation quotidienne d'un verset du Cantique de saint François.",
-     "signature": true,
-     "minutes": 20,
-     "supersedes": -1
-    },
-    {
-     "name": "Pauvreté volontaire",
-     "note": "Un geste concret de détachement chaque jour.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Via Crucis",
-     "note": "Chemin de Croix, une fois par semaine.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Fraternité",
-     "note": "Contact fraternel réel — visite, appel, lettre — chaque jour.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Adoration eucharistique",
-     "note": "Un temps hebdomadaire devant le Saint-Sacrement.",
-     "signature": false,
-     "minutes": 30,
-     "supersedes": -1
-    },
-    {
-     "name": "Jeûne de saint Martin",
-     "note": "Jeûne franciscain traditionnel de préparation à Noël.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Méditation du Transitus",
-     "note": "Méditation de la mort de saint François, spécialement le 3 octobre.",
+     "name": "Vœux (pauvreté, chasteté, obéissance selon la Règle)",
+     "note": "La profession franciscaine.",
      "signature": true,
      "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Union à la Passion",
-     "note": "Contemplation prolongée du Crucifié, à l'image des stigmates intérieurs de saint François.",
-     "signature": false,
-     "minutes": 20,
-     "supersedes": -1
-    },
-    {
-     "name": "Office divin franciscain",
-     "note": "Le cycle des Heures — Laudes, Vêpres et les autres Heures — que tout frère franciscain est tenu de prier chaque jour, en communauté ou seul.",
-     "signature": true,
-     "minutes": 40,
      "supersedes": -1
     }
    ]
@@ -509,85 +530,92 @@
    ],
    "devotions": [
     {
-     "name": "Oraison silencieuse",
-     "note": "15 à 20 minutes, assis en silence devant Dieu.",
+     "name": "Oraison silencieuse (une demi-heure)",
+     "note": "« Rien qu'un cœur à cœur avec Celui dont nous savons qu'il nous aime » (Thérèse d'Avila).",
      "signature": true,
-     "minutes": 18,
+     "minutes": 20,
      "supersedes": -1
     },
     {
-     "name": "Petit Office de la Vierge du Carmel",
-     "note": "Selon l'usage carmélitain.",
+     "name": "Liturgie des Heures (Laudes et Vêpres)",
+     "note": "Le socle de la prière de l'Église.",
      "signature": false,
      "minutes": 15,
      "supersedes": -1
     },
     {
-     "name": "Lecture spirituelle",
-     "note": "Un passage de Thérèse d'Avila ou de Jean de la Croix.",
+     "name": "Lecture de l'Évangile",
+     "note": "Un passage médité chaque jour.",
      "signature": false,
      "minutes": 10,
      "supersedes": -1
     },
     {
-     "name": "Petite voie",
-     "note": "Un acte d'amour caché, sans qu'il soit vu, selon sainte Thérèse de Lisieux.",
+     "name": "Port du scapulaire et dévotion mariale",
+     "note": "Le signe marial du Carmel.",
      "signature": true,
      "minutes": 0,
      "supersedes": -1
     },
     {
-     "name": "Consécration à Marie du Carmel",
-     "note": "Renouvelée chaque mois.",
-     "signature": false,
+     "name": "La petite voie — offrande des petites choses par amour",
+     "note": "La voie d'enfance de Thérèse de Lisieux.",
+     "signature": true,
      "minutes": 0,
      "supersedes": -1
     },
     {
-     "name": "Oraison prolongée",
-     "note": "30 minutes, sans chercher de consolation sensible.",
+     "name": "Lecture de Thérèse d'Avila / Jean de la Croix",
+     "note": "Les maîtres de l'oraison.",
      "signature": false,
-     "minutes": 30,
+     "minutes": 15,
      "supersedes": -1
     },
     {
-     "name": "Silence intérieur prolongé",
-     "note": "Un temps de solitude et de silence plus long, une fois par semaine.",
-     "signature": false,
-     "minutes": 30,
-     "supersedes": -1
-    },
-    {
-     "name": "Désert mensuel",
-     "note": "Une journée de solitude et de silence plus profond, chaque mois.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Nuit obscure acceptée",
-     "note": "Persévérer dans la prière même dans l'aridité, sans fuir.",
-     "signature": false,
-     "minutes": 60,
-     "supersedes": -1
-    },
-    {
-     "name": "Château intérieur",
-     "note": "Contemplation des demeures de l'âme selon sainte Thérèse d'Avila — abandon total.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Office divin du Carmel",
-     "note": "Le cycle complet des Heures canoniques, obligatoire pour tout carme, distinct du Petit Office marial.",
+     "name": "Oraison silencieuse prolongée (une heure)",
+     "note": "Le cœur à cœur mené plus loin, dans le silence.",
      "signature": true,
      "minutes": 40,
+     "supersedes": 0
+    },
+    {
+     "name": "Liturgie des Heures complète",
+     "note": "Toutes les heures du jour.",
+     "signature": false,
+     "minutes": 25,
+     "supersedes": 1
+    },
+    {
+     "name": "Examen d'amour du soir",
+     "note": "Relire sa journée sous le regard de l'Aimé.",
+     "signature": false,
+     "minutes": 5,
      "supersedes": -1
     },
     {
-     "name": "Jeûne du Carmel",
-     "note": "Abstinence et jeûne du 14 septembre à Pâques, selon la Règle du Carmel (Règle de saint Albert) — à vivre avec discernement selon son état de vie.",
+     "name": "Solitude et silence (à l'image d'Élie)",
+     "note": "Le désert intérieur du prophète du Carmel.",
+     "signature": false,
+     "minutes": 20,
+     "supersedes": -1
+    },
+    {
+     "name": "Jeûne et pénitence du Carmel",
+     "note": "Selon la Règle primitive.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Nuit d'oraison / contemplation dans la foi nue",
+     "note": "Traverser la nuit avec Jean de la Croix, jusqu'à l'union.",
+     "signature": true,
+     "minutes": 45,
+     "supersedes": 6
+    },
+    {
+     "name": "Vœux du Carmel",
+     "note": "La profession contemplative.",
      "signature": true,
      "minutes": 0,
      "supersedes": -1
@@ -609,84 +637,91 @@
    "devotions": [
     {
      "name": "Rosaire dominicain",
-     "note": "Les quinze mystères, répartis sur la semaine.",
+     "note": "Les mystères, don de la Vierge à saint Dominique.",
      "signature": true,
      "minutes": 20,
      "supersedes": -1
     },
     {
-     "name": "Étude quotidienne",
-     "note": "Un temps d'étude de l'Écriture ou de théologie, offert en prière.",
+     "name": "Étude quotidienne (Veritas)",
+     "note": "« La Vérité » : étudier pour contempler et pour prêcher.",
      "signature": true,
      "minutes": 0,
      "supersedes": -1
     },
     {
-     "name": "Les Neuf Façons de Prier de saint Dominique",
-     "note": "Une façon différente chaque semaine.",
+     "name": "Les Neuf Façons de prier de saint Dominique",
+     "note": "Prier avec le corps, à la manière de Dominique.",
      "signature": true,
-     "minutes": 0,
+     "minutes": 10,
      "supersedes": -1
     },
     {
-     "name": "Office divin",
-     "note": "En communauté ou en solitaire, selon ce qui est possible.",
+     "name": "Office divin (Laudes et Vêpres)",
+     "note": "En communauté ou seul, selon ce qui est possible.",
      "signature": false,
      "minutes": 15,
      "supersedes": -1
     },
     {
-     "name": "Silence d'étude",
-     "note": "Un temps de silence dédié à la lecture, chaque jour.",
+     "name": "Silence dédié à l'étude",
+     "note": "Un temps de silence pour lire et penser devant Dieu.",
      "signature": false,
      "minutes": 20,
      "supersedes": -1
     },
     {
-     "name": "Prédication informelle",
-     "note": "Partager sa foi avec quelqu'un, une fois par semaine.",
+     "name": "Lecture de l'Évangile et de saint Thomas d'Aquin",
+     "note": "Le Docteur commun, où contemplation et raison s'unissent.",
      "signature": false,
-     "minutes": 0,
+     "minutes": 15,
      "supersedes": -1
     },
     {
-     "name": "Neuvaine à saint Dominique",
-     "note": "Une fois par trimestre, ou en préparation de sa fête.",
+     "name": "Office divin intégral (chanté)",
+     "note": "Le cycle complet des Heures canoniques.",
      "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Charité intellectuelle",
-     "note": "Corriger une erreur ou un malentendu avec douceur et vérité.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Examen de vérité",
-     "note": "Examen de conscience centré sur la sincérité et la droiture d'intention.",
-     "signature": false,
-     "minutes": 10,
-     "supersedes": -1
-    },
-    {
-     "name": "Contemplata aliis tradere",
-     "note": "Enseigner ou transmettre, cette semaine, ce que la contemplation a donné.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Office divin intégral",
-     "note": "Le cycle complet des Heures canoniques, chanté ou récité chaque jour — cœur de la vie conventuelle dominicaine, entre étude et prédication.",
-     "signature": true,
      "minutes": 45,
      "supersedes": 3
     },
     {
-     "name": "Jeûne dominicain",
-     "note": "Sobriété et abstinence, selon la tradition de l'Ordre des Prêcheurs, pour soutenir l'étude et la contemplation.",
+     "name": "Salve Regina en procession le soir",
+     "note": "L'antienne mariale qui clôt la journée dominicaine.",
+     "signature": true,
+     "minutes": 5,
+     "supersedes": -1
+    },
+    {
+     "name": "Prédication — partager la foi",
+     "note": "Annoncer ce que l'on a reçu dans la contemplation.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Jeûne et sobriété de l'Ordre",
+     "note": "L'ascèse au service de la prédication.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Charité de la vérité (corriger avec douceur)",
+     "note": "Servir la vérité sans blesser, dans la charité.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Contemplata aliis tradere",
+     "note": "« Donner aux autres le fruit de sa contemplation » : la devise même de l'Ordre.",
+     "signature": true,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Vœux dominicains (profession d'obéissance)",
+     "note": "La profession, où le seul mot « obéissance » contient toute la vie.",
      "signature": true,
      "minutes": 0,
      "supersedes": -1
@@ -707,78 +742,92 @@
    ],
    "devotions": [
     {
-     "name": "Examen particulier",
-     "note": "Deux fois par jour, sur un point précis de combat intérieur.",
+     "name": "Examen quotidien (le soir)",
+     "note": "Le regard reconnaissant sur la journée : où Dieu s'est montré, où j'ai résisté.",
      "signature": true,
-     "minutes": 10,
+     "minutes": 15,
      "supersedes": -1
     },
     {
-     "name": "Oraison ignatienne",
-     "note": "20 minutes de contemplation imaginative d'une scène d'Évangile.",
+     "name": "Méditation ignatienne sur l'Évangile",
+     "note": "Une heure de contemplation d'une scène de l'Évangile, avec les sens.",
      "signature": true,
-     "minutes": 20,
+     "minutes": 25,
      "supersedes": -1
     },
     {
-     "name": "Discernement des esprits",
-     "note": "Relecture hebdomadaire des mouvements intérieurs de consolation et désolation.",
-     "signature": false,
-     "minutes": 10,
-     "supersedes": -1
-    },
-    {
-     "name": "Magis",
-     "note": "Un acte concret cherchant le « plus » pour la gloire de Dieu.",
+     "name": "Liturgie des Heures (Laudes et Vêpres)",
+     "note": "Le socle de la prière de l'Église.",
      "signature": false,
      "minutes": 15,
      "supersedes": -1
     },
     {
-     "name": "Méditation de l'indifférence",
-     "note": "Selon le Principe et Fondement des Exercices.",
+     "name": "Prière du matin — offrande de la journée",
+     "note": "Tout orienter à la plus grande gloire de Dieu.",
      "signature": false,
-     "minutes": 20,
+     "minutes": 5,
      "supersedes": -1
     },
     {
-     "name": "Retraite silencieuse mensuelle",
-     "note": "Une journée de silence et de prière prolongée, chaque mois.",
+     "name": "Discernement des esprits",
+     "note": "Distinguer les mouvements intérieurs, consolation et désolation.",
      "signature": false,
      "minutes": 0,
      "supersedes": -1
     },
     {
-     "name": "Contemplation pour obtenir l'amour",
-     "note": "Prière finale des Exercices, à reprendre régulièrement.",
+     "name": "Double examen (matin et soir)",
+     "note": "L'examen mené deux fois, comme le voulait Ignace même quand tout le reste manque.",
+     "signature": false,
+     "minutes": 15,
+     "supersedes": 0
+    },
+    {
+     "name": "Colloque et prière du Suscipe",
+     "note": "« Prends, Seigneur, et reçois toute ma liberté… »",
+     "signature": true,
+     "minutes": 5,
+     "supersedes": -1
+    },
+    {
+     "name": "Retraite selon les Exercices spirituels (annuelle)",
+     "note": "Le chemin des Exercices, à faire chaque année.",
      "signature": true,
      "minutes": 0,
      "supersedes": -1
     },
     {
-     "name": "Élection",
-     "note": "Discernement concret d'un choix de vie ou d'action.",
+     "name": "Service et mission (contemplation dans l'action)",
+     "note": "Trouver Dieu en toutes choses, jusque dans le travail.",
      "signature": false,
      "minutes": 0,
      "supersedes": -1
     },
     {
-     "name": "Service apostolique",
-     "note": "Un service concret rendu cette semaine.",
+     "name": "Lecture des Exercices et des Constitutions",
+     "note": "Les textes fondateurs d'Ignace.",
      "signature": false,
-     "minutes": 0,
+     "minutes": 15,
      "supersedes": -1
     },
     {
-     "name": "Trouver Dieu en toutes choses",
-     "note": "Une journée entière vécue consciemment en présence de Dieu.",
+     "name": "Contemplation pour obtenir l'amour",
+     "note": "Voir Dieu à l'œuvre en toutes choses, et tout Lui rendre.",
      "signature": false,
-     "minutes": 0,
+     "minutes": 20,
      "supersedes": -1
     },
     {
-     "name": "Quatrième vœu — obéissance au pape",
-     "note": "« Je promets spéciale obéissance au souverain pontife en ce qui concerne les missions » (Constitutions, n°527) — le vœu propre à la Compagnie de Jésus, prononcé à la profession solennelle.",
+     "name": "Adoration et abandon (tout pour la plus grande gloire de Dieu)",
+     "note": "L'offrande sans réserve, sommet ignatien.",
+     "signature": true,
+     "minutes": 20,
+     "supersedes": -1
+    },
+    {
+     "name": "Vœux de la Compagnie",
+     "note": "La profession, jusqu'au vœu d'obéissance au successeur de Pierre.",
      "signature": true,
      "minutes": 0,
      "supersedes": -1
@@ -898,78 +947,198 @@
    ],
    "devotions": [
     {
-     "name": "Salve Regina chanté",
-     "note": "Chaque soir, selon l'usage cistercien.",
-     "signature": true,
-     "minutes": 15,
-     "supersedes": -1
-    },
-    {
-     "name": "Lectio divina cistercienne",
-     "note": "Lecture lente, ruminée, de l'Écriture ou de saint Bernard.",
+     "name": "Lectio divina",
+     "note": "La lecture priante de l'Écriture, ruminée toute la journée.",
      "signature": true,
      "minutes": 20,
      "supersedes": -1
     },
     {
-     "name": "Silence des signes",
-     "note": "Limiter la parole, communiquer par gestes quand c'est possible.",
-     "signature": false,
-     "minutes": 20,
-     "supersedes": -1
-    },
-    {
-     "name": "Travail manuel",
-     "note": "Une tâche manuelle offerte en prière.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Dévotion mariale quotidienne",
-     "note": "Une invocation mariale répétée dans la journée, à l'exemple de saint Bernard.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Office complet du jour",
-     "note": "Toutes les Heures possibles selon son état de vie.",
-     "signature": false,
+     "name": "Office divin (Laudes et Vêpres)",
+     "note": "L'opus Dei, à quoi rien ne doit être préféré.",
+     "signature": true,
      "minutes": 15,
      "supersedes": -1
     },
     {
-     "name": "Sermons sur le Cantique",
-     "note": "Lecture méditée d'un extrait de saint Bernard sur le Cantique des Cantiques.",
+     "name": "Travail des mains",
+     "note": "Ora et labora : le travail comme prière.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Silence gardé",
+     "note": "Le climat de la rencontre avec Dieu.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Prière du matin et méditation",
+     "note": "Se tenir devant Dieu au seuil du jour.",
      "signature": false,
      "minutes": 10,
      "supersedes": -1
     },
     {
-     "name": "Simplicité des lieux et des choses",
-     "note": "Un geste de dépouillement matériel cette semaine.",
+     "name": "Salve Regina le soir",
+     "note": "L'antienne mariale qui clôt la journée cistercienne.",
+     "signature": true,
+     "minutes": 5,
+     "supersedes": -1
+    },
+    {
+     "name": "Office divin complet (les heures et les vigiles)",
+     "note": "Le cycle entier de l'opus Dei.",
+     "signature": false,
+     "minutes": 30,
+     "supersedes": 1
+    },
+    {
+     "name": "Lecture de saint Bernard",
+     "note": "Le docteur mellifluus, chantre de l'amour de Dieu.",
+     "signature": false,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Jeûne et abstinence monastiques",
+     "note": "La sobriété de la Règle.",
      "signature": false,
      "minutes": 0,
      "supersedes": -1
     },
     {
-     "name": "Silence complet un jour",
-     "note": "Une journée de silence total, y compris les signes.",
+     "name": "Adoration silencieuse",
+     "note": "Demeurer sans paroles devant le Seigneur.",
+     "signature": false,
+     "minutes": 20,
+     "supersedes": -1
+    },
+    {
+     "name": "Chapitre / examen communautaire",
+     "note": "La vérité fraternelle et le pardon.",
      "signature": false,
      "minutes": 0,
      "supersedes": -1
     },
     {
-     "name": "Amour ardent de Marie",
-     "note": "Consécration renouvelée, dans l'esprit de saint Bernard, docteur marial.",
+     "name": "Vigiles nocturnes — veille et psalmodie",
+     "note": "Se lever dans la nuit pour attendre l'Époux.",
+     "signature": true,
+     "minutes": 30,
+     "supersedes": -1
+    },
+    {
+     "name": "Vœux (stabilité, conversion des mœurs, obéissance)",
+     "note": "La profession bénédictine-cistercienne.",
+     "signature": true,
+     "minutes": 0,
+     "supersedes": -1
+    }
+   ]
+  },
+  {
+   "id": "trappistes",
+   "family": "catholique",
+   "name": "Trappistes",
+   "subtitle": "Cisterciens de la stricte observance — silence, travail, vie cachée",
+   "patron": "Saint Benoît, saint Bernard, l'abbé de Rancé ; Notre-Dame",
+   "accent": "#243024",
+   "desc": "La branche la plus austère de la famille cistercienne, réformée à la Trappe par l'abbé de Rancé. Une vie de silence presque continuel, de travail manuel, de liturgie chorale et de lectio divina, entièrement tournée vers la recherche de Dieu dans l'ordinaire caché du monastère.",
+   "dailyCore": [
+    "Office divin choral (l'opus Dei), à quoi rien n'est préféré",
+    "Silence gardé et travail des mains"
+   ],
+   "devotions": [
+    {
+     "name": "Lectio divina",
+     "note": "La lecture priante de l'Écriture, ruminée toute la journée.",
+     "signature": true,
+     "minutes": 20,
+     "supersedes": -1
+    },
+    {
+     "name": "Office divin (Laudes et Vêpres)",
+     "note": "L'opus Dei, cœur de la journée monastique.",
+     "signature": true,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Travail manuel",
+     "note": "Ora et labora : gagner son pain et prier de ses mains.",
+     "signature": true,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Silence continuel",
+     "note": "Le grand silence, climat de la rencontre avec Dieu.",
+     "signature": true,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Prière du matin et méditation",
+     "note": "Se tenir devant Dieu au seuil du jour.",
+     "signature": false,
+     "minutes": 10,
+     "supersedes": -1
+    },
+    {
+     "name": "Salve Regina le soir",
+     "note": "L'antienne mariale chantée dans l'obscurité.",
+     "signature": false,
+     "minutes": 5,
+     "supersedes": -1
+    },
+    {
+     "name": "Office divin complet (sept heures et vigiles)",
+     "note": "Le cycle entier de l'opus Dei, jour et nuit.",
+     "signature": false,
+     "minutes": 35,
+     "supersedes": 1
+    },
+    {
+     "name": "Lecture des Pères et de saint Bernard",
+     "note": "La sagesse monastique.",
+     "signature": false,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Jeûne et abstinence monastiques",
+     "note": "Le régime simple et frugal de la Trappe.",
      "signature": false,
      "minutes": 0,
      "supersedes": -1
     },
     {
-     "name": "Vœux monastiques (Règle de saint Benoît)",
-     "note": "Stabilité, conversion des mœurs et obéissance, selon le triptyque bénédictin dont l'Ordre cistercien est issu.",
+     "name": "Adoration silencieuse",
+     "note": "Demeurer sans paroles devant le Seigneur.",
+     "signature": false,
+     "minutes": 20,
+     "supersedes": -1
+    },
+    {
+     "name": "Chapitre / aveu des fautes",
+     "note": "La vérité fraternelle et le pardon.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Vigiles nocturnes — veille et psalmodie",
+     "note": "Se lever dans la nuit pour attendre l'Époux.",
+     "signature": true,
+     "minutes": 35,
+     "supersedes": -1
+    },
+    {
+     "name": "Vœux (stabilité, conversion des mœurs, obéissance)",
+     "note": "La profession bénédictine dans la stricte observance.",
      "signature": true,
      "minutes": 0,
      "supersedes": -1
@@ -990,85 +1159,198 @@
    ],
    "devotions": [
     {
-     "name": "Une heure d'adoration",
-     "note": "Chaque jour, devant le Saint-Sacrement.",
+     "name": "Messe et communion quotidiennes",
+     "note": "La source : recevoir Jésus pour Le donner.",
      "signature": true,
      "minutes": 30,
      "supersedes": -1
     },
     {
-     "name": "Service des plus pauvres",
-     "note": "Un geste concret de service désintéressé chaque jour.",
-     "signature": true,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "« J'ai soif »",
-     "note": "Méditation quotidienne de cette parole du Christ en croix, inscrite dans chaque chapelle de la congrégation.",
+     "name": "Adoration eucharistique (une heure)",
+     "note": "L'heure d'adoration quotidienne, ajoutée par Mère Teresa.",
      "signature": true,
      "minutes": 20,
      "supersedes": -1
     },
     {
      "name": "Chapelet quotidien",
-     "note": "Récité pour les intentions des plus pauvres.",
-     "signature": false,
-     "minutes": 20,
+     "note": "La prière de Marie, portée toute la journée.",
+     "signature": true,
+     "minutes": 15,
      "supersedes": -1
     },
     {
-     "name": "Petites choses avec grand amour",
-     "note": "Accomplir une tâche ordinaire avec une attention totale.",
+     "name": "Liturgie des Heures (Laudes et Vêpres)",
+     "note": "Le socle de la prière de l'Église.",
+     "signature": false,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "« J'ai soif » — méditation devant le crucifix",
+     "note": "La soif de Jésus des âmes, inscrite dans chaque chapelle.",
+     "signature": true,
+     "minutes": 10,
+     "supersedes": -1
+    },
+    {
+     "name": "Service des plus pauvres (Jésus au visage défiguré)",
+     "note": "Le toucher dans le corps souffrant des plus abandonnés.",
+     "signature": true,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Memorare en cas de besoin",
+     "note": "Le recours rapide à Marie dans l'urgence.",
+     "signature": false,
+     "minutes": 2,
+     "supersedes": -1
+    },
+    {
+     "name": "Liturgie des Heures complète",
+     "note": "Toutes les heures du jour.",
+     "signature": false,
+     "minutes": 25,
+     "supersedes": 3
+    },
+    {
+     "name": "Sourire et joie donnés comme service",
+     "note": "« Rien de beau pour Dieu » sans la joie.",
      "signature": false,
      "minutes": 0,
      "supersedes": -1
     },
     {
-     "name": "Silence du cœur",
-     "note": "Un temps de silence pour écouter Dieu dans la prière, avant le service.",
-     "signature": false,
-     "minutes": 20,
-     "supersedes": -1
-    },
-    {
-     "name": "Messe quotidienne si possible",
-     "note": "Participation à l'Eucharistie.",
+     "name": "Jeûne et pauvreté choisie",
+     "note": "Vivre pauvre parmi les pauvres.",
      "signature": false,
      "minutes": 0,
      "supersedes": -1
     },
     {
-     "name": "Pauvreté effective",
-     "note": "Un renoncement matériel concret cette semaine.",
+     "name": "Examen du soir",
+     "note": "Relire la journée dans la gratitude.",
+     "signature": false,
+     "minutes": 5,
+     "supersedes": -1
+    },
+    {
+     "name": "Offrande de la journée aux plus délaissés",
+     "note": "Tout donner, gratuitement.",
      "signature": false,
      "minutes": 0,
      "supersedes": -1
     },
     {
-     "name": "Joie dans le service",
-     "note": "Examen sur la joie effective mise dans les gestes de service.",
+     "name": "Vœux (pauvreté, chasteté, obéissance, service gratuit des plus pauvres)",
+     "note": "Le quatrième vœu propre à l'Ordre.",
+     "signature": true,
+     "minutes": 0,
+     "supersedes": -1
+    }
+   ]
+  },
+  {
+   "id": "salesiens",
+   "family": "catholique",
+   "name": "Salésiens (Don Bosco)",
+   "subtitle": "Société de saint François de Sales — l'éducation des jeunes par la bonté",
+   "patron": "Saint Jean Bosco, saint François de Sales ; Marie Auxiliatrice",
+   "accent": "#7a4a1e",
+   "desc": "Fondés par saint Jean Bosco pour l'éducation et le salut des jeunes, surtout les plus pauvres. Le « système préventif » — raison, religion, affection — s'enracine dans une spiritualité de la joie, de l'Eucharistie, de la dévotion à Marie Auxiliatrice, et de la présence aimante auprès des jeunes. Devise : « Da mihi animas, cetera tolle ».",
+   "dailyCore": [
+    "Présence aimante auprès des jeunes (le système préventif)",
+    "Eucharistie et dévotion à Marie Auxiliatrice"
+   ],
+   "devotions": [
+    {
+     "name": "Prière du matin — offrande de la journée à Marie",
+     "note": "Commencer le jour sous le regard de Marie Auxiliatrice.",
+     "signature": true,
+     "minutes": 5,
+     "supersedes": -1
+    },
+    {
+     "name": "Messe et visite au Saint-Sacrement",
+     "note": "L'Eucharistie, pilier de l'éducation salésienne.",
+     "signature": true,
+     "minutes": 30,
+     "supersedes": -1
+    },
+    {
+     "name": "Chapelet quotidien (Marie Auxiliatrice)",
+     "note": "La prière de Marie, secours des chrétiens.",
+     "signature": true,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Liturgie des Heures (Laudes et Vêpres)",
+     "note": "Le socle de la prière de l'Église.",
+     "signature": false,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Assistance aimante auprès des jeunes",
+     "note": "Être présent avec bonté : le cœur du système préventif.",
+     "signature": true,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "« Da mihi animas, cetera tolle »",
+     "note": "Offrir sa journée pour le salut des âmes.",
+     "signature": true,
+     "minutes": 5,
+     "supersedes": -1
+    },
+    {
+     "name": "Lecture de l'Évangile",
+     "note": "Un passage chaque jour.",
      "signature": false,
      "minutes": 10,
      "supersedes": -1
     },
     {
-     "name": "Disponibilité totale",
-     "note": "Une journée vécue en pleine disponibilité aux besoins d'autrui.",
+     "name": "Adoration prolongée devant le Saint-Sacrement",
+     "note": "La visite quotidienne menée plus loin, dans le cœur à cœur.",
+     "signature": false,
+     "minutes": 30,
+     "supersedes": 1
+    },
+    {
+     "name": "La « bonne nuit » — parole du soir et examen",
+     "note": "Un mot du cœur et une relecture, chaque soir.",
+     "signature": false,
+     "minutes": 5,
+     "supersedes": -1
+    },
+    {
+     "name": "Joie et optimisme comme témoignage",
+     "note": "« Servez le Seigneur dans la joie » : la sainteté salésienne.",
      "signature": false,
      "minutes": 0,
      "supersedes": -1
     },
     {
-     "name": "Laudes et Vêpres",
-     "note": "Prière du matin et du soir, selon l'horaire réel des Missionnaires de la Charité, en plus de l'heure d'adoration.",
-     "signature": true,
-     "minutes": 20,
+     "name": "Service éducatif et catéchèse des jeunes",
+     "note": "Instruire, accompagner, sauver.",
+     "signature": false,
+     "minutes": 0,
      "supersedes": -1
     },
     {
-     "name": "Quatrième vœu — service gratuit aux plus pauvres",
-     "note": "Vœu propre à la congrégation, ajouté aux trois vœux traditionnels : donner un service gratuit et de tout cœur aux plus pauvres parmi les pauvres.",
+     "name": "Neuvaine à Marie Auxiliatrice",
+     "note": "L'intercession mariale, portée neuf jours.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Vœux salésiens (chasteté, pauvreté, obéissance)",
+     "note": "La profession dans la Société.",
      "signature": true,
      "minutes": 0,
      "supersedes": -1
@@ -1089,80 +1371,94 @@
    ],
    "devotions": [
     {
-     "name": "Louange quotidienne",
-     "note": "Chant ou prière spontanée de louange, seul ou en groupe.",
+     "name": "Temps d'adoration eucharistique quotidien",
+     "note": "Le cœur du charisme : demeurer devant Jésus présent.",
      "signature": true,
-     "minutes": 15,
+     "minutes": 20,
      "supersedes": -1
     },
     {
-     "name": "Adoration eucharistique",
-     "note": "Un temps hebdomadaire devant le Saint-Sacrement.",
+     "name": "Louange",
+     "note": "Bénir Dieu, laisser monter l'action de grâce.",
+     "signature": false,
+     "minutes": 10,
+     "supersedes": -1
+    },
+    {
+     "name": "Messe quotidienne (si possible)",
+     "note": "La source de toute la vie chrétienne.",
      "signature": true,
      "minutes": 30,
      "supersedes": -1
     },
     {
-     "name": "Demande de l'effusion de l'Esprit",
-     "note": "Prière renouvelée pour une nouvelle effusion de l'Esprit Saint.",
+     "name": "Liturgie des Heures (Laudes et Vêpres)",
+     "note": "Le socle de la prière de l'Église.",
+     "signature": false,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Lecture de la Parole (méditée)",
+     "note": "Se laisser façonner par l'Écriture.",
+     "signature": false,
+     "minutes": 10,
+     "supersedes": -1
+    },
+    {
+     "name": "Intercession et compassion pour le monde",
+     "note": "Porter dans la prière les détresses du monde.",
+     "signature": true,
+     "minutes": 10,
+     "supersedes": -1
+    },
+    {
+     "name": "Adoration prolongée",
+     "note": "Le face-à-face mené plus loin.",
+     "signature": false,
+     "minutes": 40,
+     "supersedes": 0
+    },
+    {
+     "name": "Chapelet",
+     "note": "La prière de Marie.",
+     "signature": false,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Évangélisation — annonce joyeuse",
+     "note": "Dire le Christ, simplement.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Fraternité — partage de vie et de foi",
+     "note": "La vie de « maisonnée ».",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Jeûne et pénitence",
+     "note": "Ouvrir le cœur par l'ascèse.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Nuit d'adoration",
+     "note": "Veiller devant le Saint-Sacrement.",
+     "signature": true,
+     "minutes": 45,
+     "supersedes": 6
+    },
+    {
+     "name": "Engagement définitif dans la Communauté",
+     "note": "Adoration, compassion, évangélisation.",
      "signature": true,
      "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Partage en groupe de prière",
-     "note": "Participation ou équivalent personnel de partage fraternel.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Compassion concrète",
-     "note": "Un geste de service envers une personne en souffrance cette semaine.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Témoignage donné",
-     "note": "Partager sa foi avec quelqu'un cette semaine.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Louange prolongée",
-     "note": "Un temps plus long de louange, mains levées, dans la tradition charismatique.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Jeûne et prière d'intercession",
-     "note": "Pour une intention précise.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Formation spirituelle",
-     "note": "Un enseignement ou une session lue ou écoutée.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Vie de prière communautaire",
-     "note": "Un engagement stable de prière avec d'autres.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Liturgie des Heures quotidienne",
-     "note": "Pour les membres engagés en communauté de vie : Laudes et Vêpres priées chaque jour, en plus de la louange spontanée.",
-     "signature": true,
-     "minutes": 25,
      "supersedes": -1
     }
    ]
@@ -1181,80 +1477,94 @@
    ],
    "devotions": [
     {
-     "name": "Louange chantée quotidienne",
-     "note": "Chant de louange, seul ou en groupe.",
+     "name": "Adoration eucharistique quotidienne",
+     "note": "Demeurer devant Jésus, source de la paix.",
      "signature": true,
+     "minutes": 20,
+     "supersedes": -1
+    },
+    {
+     "name": "Louange et cantiques",
+     "note": "Chanter la joie du salut.",
+     "signature": true,
+     "minutes": 10,
+     "supersedes": -1
+    },
+    {
+     "name": "Lectio de la Parole",
+     "note": "Écouter et méditer l'Écriture.",
+     "signature": false,
+     "minutes": 10,
+     "supersedes": -1
+    },
+    {
+     "name": "Messe quotidienne",
+     "note": "La source de la vie fraternelle.",
+     "signature": false,
+     "minutes": 30,
+     "supersedes": -1
+    },
+    {
+     "name": "Chapelet",
+     "note": "La prière de Marie.",
+     "signature": false,
      "minutes": 15,
      "supersedes": -1
     },
     {
-     "name": "Intercession nommée",
-     "note": "Prière quotidienne pour une personne précise.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Demande de l'effusion de l'Esprit",
-     "note": "Renouvelée régulièrement.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Évangélisation concrète",
-     "note": "Un témoignage ou une annonce donnée cette semaine.",
-     "signature": true,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
      "name": "Vie fraternelle",
-     "note": "Partage réel de la vie avec d'autres croyants cette semaine.",
+     "note": "Partager la vie, les biens, la foi.",
      "signature": false,
      "minutes": 0,
      "supersedes": -1
     },
     {
      "name": "Adoration prolongée",
-     "note": "Un temps plus long devant le Saint-Sacrement.",
+     "note": "Le face-à-face mené plus loin.",
      "signature": false,
-     "minutes": 30,
-     "supersedes": -1
+     "minutes": 40,
+     "supersedes": 0
     },
     {
-     "name": "Jeûne d'intercession",
-     "note": "Pour une intention missionnaire précise.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Service des pauvres",
-     "note": "Un geste concret cette semaine.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Formation biblique",
-     "note": "Étude priante d'un passage de l'Écriture.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Consécration mariale Shalom",
-     "note": "Consécration à Marie, renouvelée selon le charisme de la communauté.",
+     "name": "Évangélisation (annonce de la paix)",
+     "note": "Porter la paix du Christ, surtout aux jeunes.",
      "signature": true,
      "minutes": 0,
      "supersedes": -1
     },
     {
-     "name": "Liturgie des Heures quotidienne",
-     "note": "Pratique réelle des membres en Communauté de Vie de Shalom : messe quotidienne, Liturgie des Heures et silence du matin.",
+     "name": "Intercession",
+     "note": "Prier pour le monde et l'Église.",
+     "signature": false,
+     "minutes": 10,
+     "supersedes": -1
+    },
+    {
+     "name": "Jeûne",
+     "note": "Ouvrir le cœur par l'ascèse.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Service des pauvres et des jeunes",
+     "note": "Aller vers les périphéries.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Nuit de louange et d'adoration",
+     "note": "Veiller dans la joie devant le Seigneur.",
      "signature": true,
-     "minutes": 30,
+     "minutes": 45,
+     "supersedes": 6
+    },
+    {
+     "name": "Engagement dans la Communauté Shalom",
+     "note": "Louange, évangélisation, vie fraternelle.",
+     "signature": true,
+     "minutes": 0,
      "supersedes": -1
     }
    ]
@@ -1273,85 +1583,92 @@
    ],
    "devotions": [
     {
-     "name": "Rugăciunea inimii",
-     "note": "La Prière de Jésus, répétée avec le souffle, chaque jour.",
+     "name": "Règle du matin et du soir",
+     "note": "Le socle quotidien de la prière roumaine.",
      "signature": true,
      "minutes": 15,
      "supersedes": -1
     },
     {
-     "name": "Lecture de la Philocalie roumaine",
-     "note": "Un passage bref, traduit et commenté par le père Stăniloae.",
+     "name": "Prière de Jésus sur le şirag",
+     "note": "L'invocation du Nom, au rythme du chapelet.",
      "signature": true,
      "minutes": 10,
      "supersedes": -1
     },
     {
-     "name": "Acathiste marial",
-     "note": "Chaque semaine, selon l'usage roumain.",
-     "signature": false,
-     "minutes": 25,
-     "supersedes": -1
-    },
-    {
-     "name": "Jeûne selon le calendrier roumain",
-     "note": "Mercredi, vendredi, et périodes prescrites.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Confession et communion fréquentes",
-     "note": "Selon le rythme conseillé par le père spirituel.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Veillée du Buisson Ardent",
-     "note": "Silence et prière prolongée, à l'image du mouvement spirituel de Bucarest.",
-     "signature": true,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Lecture de l'Échelle sainte",
-     "note": "Incluse dans la Philocalie roumaine, un degré par semaine.",
+     "name": "Lecture de l'Évangile et du Psautier",
+     "note": "Un passage et quelques psaumes chaque jour.",
      "signature": false,
      "minutes": 10,
      "supersedes": -1
     },
     {
-     "name": "Métanies quotidiennes",
-     "note": "Prosternations, nombre croissant.",
+     "name": "Métanies (metanii)",
+     "note": "Prosternations, en nombre croissant.",
      "signature": false,
      "minutes": 5,
      "supersedes": -1
     },
     {
-     "name": "Contemplation de la lumière incréée",
-     "note": "Selon la théologie palamite, chère au père Stăniloae.",
+     "name": "Jeûne selon le calendrier roumain",
+     "note": "Les carêmes, mercredis et vendredis.",
      "signature": false,
      "minutes": 0,
      "supersedes": -1
     },
     {
-     "name": "Prière pour l'unité",
-     "note": "Intention constante pour l'unité de l'Église et la communion des personnes.",
+     "name": "Acathiste",
+     "note": "Hymne debout à la Mère de Dieu ou aux saints.",
+     "signature": false,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Prière de Jésus prolongée",
+     "note": "L'invocation portée longuement, dans le silence.",
+     "signature": false,
+     "minutes": 20,
+     "supersedes": 1
+    },
+    {
+     "name": "Lecture de la Philocalie (Filocalia)",
+     "note": "La grande Philocalie de saint Dumitru Stăniloae.",
+     "signature": false,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Paraclisis à la Mère de Dieu",
+     "note": "Office de supplication à la Toute-Sainte.",
+     "signature": false,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Grand Carême (prière de saint Éphrem)",
+     "note": "Le jeûne majeur, avec métanies.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": 4
+    },
+    {
+     "name": "Veillée nocturne (privegherea)",
+     "note": "Veille de prière des grandes fêtes.",
      "signature": false,
      "minutes": 0,
      "supersedes": -1
     },
     {
-     "name": "Le cycle complet des Heures",
-     "note": "Vêpres, Complies, Mésonyktikon, Matines et les Heures, selon le typikon roumain — l'office monastique dans son intégralité.",
+     "name": "Garde du cœur — prière incessante (Rugul Aprins)",
+     "note": "L'esprit du Buisson Ardent : le Nom qui brûle et ne consume pas.",
      "signature": true,
-     "minutes": 50,
-     "supersedes": -1
+     "minutes": 30,
+     "supersedes": 6
     },
     {
-     "name": "Vœux monastiques du Petit Schème",
-     "note": "Stabilité de lieu, chasteté, obéissance et pauvreté — les vœux formels prononcés à la tonsure du Petit Schème, méditation renouvelée de cet engagement.",
+     "name": "Vœux monastiques",
+     "note": "Selon la tradition athonite et paisienne enracinée en Roumanie.",
      "signature": true,
      "minutes": 0,
      "supersedes": -1
@@ -1372,92 +1689,92 @@
    ],
    "devotions": [
     {
-     "name": "Prière devant la croix de sainte Nino",
-     "note": "Icône ou représentation de la croix de vigne liée de cheveux.",
-     "signature": true,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Chant liturgique géorgien",
-     "note": "Écoute ou pratique du chant polyphonique traditionnel.",
+     "name": "Règle du matin et du soir",
+     "note": "Le socle quotidien de la prière géorgienne.",
      "signature": true,
      "minutes": 15,
      "supersedes": -1
     },
     {
-     "name": "Jeûne selon le typikon géorgien",
-     "note": "Mercredi et vendredi, périodes prescrites.",
+     "name": "Prière de Jésus sur le chapelet",
+     "note": "L'invocation du Nom, au rythme des nœuds.",
      "signature": false,
-     "minutes": 0,
+     "minutes": 10,
      "supersedes": -1
     },
     {
-     "name": "Mémoire des lieux saints",
-     "note": "Pèlerinage intérieur vers Mtskheta et David Gareja par la pensée et la prière.",
-     "signature": false,
-     "minutes": 0,
+     "name": "Vénération de la Croix de sainte Nino",
+     "note": "La croix de pampre liée des cheveux de sainte Nino, qui évangélisa la Géorgie.",
+     "signature": true,
+     "minutes": 5,
      "supersedes": -1
     },
     {
-     "name": "Vénération des icônes et reliques",
-     "note": "Un temps quotidien devant une icône.",
+     "name": "Lecture de l'Évangile",
+     "note": "Un passage chaque jour.",
      "signature": false,
-     "minutes": 0,
+     "minutes": 10,
      "supersedes": -1
     },
     {
-     "name": "Prosternations",
-     "note": "Nombre croissant.",
+     "name": "Métanies",
+     "note": "Prosternations, en nombre croissant.",
      "signature": false,
      "minutes": 5,
      "supersedes": -1
     },
     {
-     "name": "Retraite au désert",
-     "note": "Un temps de solitude, à l'image de saint David Garedjeli.",
+     "name": "Jeûne selon le calendrier géorgien",
+     "note": "Les carêmes, mercredis et vendredis.",
      "signature": false,
      "minutes": 0,
      "supersedes": -1
     },
     {
-     "name": "Confession fréquente",
-     "note": "Selon le rythme conseillé par le père spirituel.",
+     "name": "Chant liturgique géorgien (à trois voix)",
+     "note": "La polyphonie sacrée propre à la Géorgie.",
      "signature": false,
-     "minutes": 0,
+     "minutes": 15,
      "supersedes": -1
     },
     {
-     "name": "Prière pour l'Église et le peuple",
-     "note": "Intention constante, trait marquant de la piété géorgienne.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Silence contemplatif",
-     "note": "À l'image des Pères assyriens fondateurs du désert géorgien.",
+     "name": "Prière de Jésus prolongée",
+     "note": "L'invocation portée longuement.",
      "signature": false,
      "minutes": 20,
+     "supersedes": 1
+    },
+    {
+     "name": "Acathiste à sainte Nino / à la Mère de Dieu",
+     "note": "Hymne debout de louange.",
+     "signature": false,
+     "minutes": 15,
      "supersedes": -1
     },
     {
-     "name": "Le cycle complet des Heures géorgiennes",
-     "note": "Vêpres, Complies, Mésonyktikon, Matines et les Heures, chantés selon la tradition polyphonique géorgienne — l'office monastique complet.",
-     "signature": true,
-     "minutes": 50,
-     "supersedes": -1
+     "name": "Grand Carême",
+     "note": "Le jeûne majeur, avec métanies.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": 5
     },
     {
-     "name": "Consécration à la Mère de Dieu",
-     "note": "La Géorgie se considère traditionnellement comme le « lot de Marie » (Iveria) ; consécration mariale renouvelée régulièrement.",
-     "signature": true,
+     "name": "Veillée des fêtes",
+     "note": "Vigile des grandes solennités.",
+     "signature": false,
      "minutes": 0,
      "supersedes": -1
     },
     {
-     "name": "Vœux monastiques du Petit Schème",
-     "note": "Stabilité de lieu, chasteté, obéissance et pauvreté — les vœux formels prononcés à la tonsure du Petit Schème, méditation renouvelée de cet engagement.",
+     "name": "Retraite au désert (à l'image de David Garedja)",
+     "note": "Solitude et silence, sur les traces des Treize Pères assyriens.",
+     "signature": true,
+     "minutes": 30,
+     "supersedes": -1
+    },
+    {
+     "name": "Vœux monastiques",
+     "note": "Selon la tradition géorgienne, héritière du Sinaï et de l'Athos.",
      "signature": true,
      "minutes": 0,
      "supersedes": -1
@@ -1478,85 +1795,92 @@
    ],
    "devotions": [
     {
-     "name": "Oraison mentale silencieuse",
-     "note": "Un temps quotidien de prière silencieuse, prolongé progressivement.",
+     "name": "Prière devant le crucifix de Saint-Damien",
+     "note": "La prière de la conversion de François.",
+     "signature": true,
+     "minutes": 10,
+     "supersedes": -1
+    },
+    {
+     "name": "Oraison mentale prolongée",
+     "note": "Deux temps d'oraison silencieuse par jour, marque de la réforme capucine.",
      "signature": true,
      "minutes": 20,
      "supersedes": -1
     },
     {
-     "name": "Méditation de la Passion",
-     "note": "Contemplation quotidienne d'un épisode de la Passion du Christ.",
-     "signature": true,
-     "minutes": 20,
+     "name": "Liturgie des Heures (Laudes et Vêpres)",
+     "note": "Le socle de la prière de l'Église.",
+     "signature": false,
+     "minutes": 15,
      "supersedes": -1
     },
     {
-     "name": "Confession fréquente",
-     "note": "À l'exemple de saint Padre Pio, confesseur inlassable.",
+     "name": "Angélus trois fois le jour",
+     "note": "À la mémoire de l'Incarnation.",
+     "signature": false,
+     "minutes": 5,
+     "supersedes": -1
+    },
+    {
+     "name": "Lecture de l'Évangile",
+     "note": "Vivre l'Évangile sans glose.",
+     "signature": false,
+     "minutes": 10,
+     "supersedes": -1
+    },
+    {
+     "name": "Pauvreté et austérité radicales",
+     "note": "La sobriété évangélique portée jusqu'au bout.",
      "signature": true,
      "minutes": 0,
      "supersedes": -1
     },
     {
-     "name": "Angélus",
-     "note": "Trois fois par jour.",
+     "name": "Liturgie des Heures complète",
+     "note": "Toutes les heures du jour.",
      "signature": false,
-     "minutes": 3,
+     "minutes": 25,
+     "supersedes": 2
+    },
+    {
+     "name": "Retraite à l'ermitage (solitude)",
+     "note": "Le retrait régulier au désert, propre aux Capucins.",
+     "signature": false,
+     "minutes": 20,
      "supersedes": -1
     },
     {
-     "name": "Adoration eucharistique",
-     "note": "Un temps hebdomadaire devant le Saint-Sacrement.",
+     "name": "Service des pauvres, prédication simple",
+     "note": "Annoncer le Christ aux petits.",
      "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Jeûne et abstinence franciscains",
+     "note": "Selon les carêmes de l'Ordre.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Chemin de Croix / contemplation de la Passion",
+     "note": "Demeurer auprès du Crucifié.",
+     "signature": false,
+     "minutes": 20,
+     "supersedes": -1
+    },
+    {
+     "name": "Oraison prolongée devant le Saint-Sacrement",
+     "note": "Le cœur à cœur silencieux, sommet de la réforme.",
+     "signature": true,
      "minutes": 30,
-     "supersedes": -1
+     "supersedes": 1
     },
     {
-     "name": "Pauvreté radicale",
-     "note": "Un renoncement concret chaque semaine.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Rosaire",
-     "note": "Récité quotidiennement.",
-     "signature": false,
-     "minutes": 20,
-     "supersedes": -1
-    },
-    {
-     "name": "Solitude en ermitage",
-     "note": "Un temps de retraite personnelle chaque mois.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Partage de la foi avec les pauvres",
-     "note": "Un geste ou une parole de réconfort donnée cette semaine.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Abandon total à la volonté de Dieu",
-     "note": "À l'exemple de Padre Pio, union mystique dans l'obéissance.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Office divin franciscain",
-     "note": "Le cycle des Heures propre à la famille franciscaine, prié chaque jour malgré la vie érémitique et le ministère de confession.",
-     "signature": true,
-     "minutes": 40,
-     "supersedes": -1
-    },
-    {
-     "name": "Jeûne capucin",
-     "note": "Sobriété alimentaire radicale, selon l'esprit de pauvreté propre à la réforme capucine de 1528.",
+     "name": "Vœux franciscains",
+     "note": "La profession dans la réforme capucine.",
      "signature": true,
      "minutes": 0,
      "supersedes": -1
@@ -1577,85 +1901,198 @@
    ],
    "devotions": [
     {
-     "name": "Méditation de la Passion",
-     "note": "Chaque jour, un épisode de la Passion contemplé en détail.",
+     "name": "Mémoire de la Passion — méditation quotidienne",
+     "note": "« Que la Passion soit toujours dans nos cœurs » : le cœur du charisme.",
      "signature": true,
      "minutes": 20,
      "supersedes": -1
     },
     {
-     "name": "Chapelet des Cinq Plaies",
-     "note": "Dévotion propre à la congrégation, approuvée en 1823.",
+     "name": "Liturgie des Heures (Laudes et Vêpres)",
+     "note": "Le socle de la prière de l'Église.",
+     "signature": false,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Chemin de Croix",
+     "note": "Parcourir chaque jour le chemin du Calvaire.",
      "signature": true,
      "minutes": 20,
      "supersedes": -1
     },
     {
-     "name": "Via Crucis",
-     "note": "Chemin de Croix, une fois par semaine.",
+     "name": "Lecture de l'Évangile de la Passion",
+     "note": "Demeurer dans le récit de la Croix.",
+     "signature": false,
+     "minutes": 10,
+     "supersedes": -1
+    },
+    {
+     "name": "Prière du matin",
+     "note": "Offrir la journée au Crucifié.",
+     "signature": false,
+     "minutes": 5,
+     "supersedes": -1
+    },
+    {
+     "name": "Contemplation des plaies du Christ",
+     "note": "Entrer dans les souffrances rédemptrices.",
+     "signature": true,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Liturgie des Heures complète",
+     "note": "Toutes les heures du jour.",
+     "signature": false,
+     "minutes": 25,
+     "supersedes": 1
+    },
+    {
+     "name": "Chapelet et dévotion à Notre-Dame des Douleurs",
+     "note": "Demeurer près de la Mère au pied de la Croix.",
+     "signature": false,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Annonce de la Croix (prédication)",
+     "note": "Faire mémoire de la Passion auprès du peuple.",
      "signature": false,
      "minutes": 0,
      "supersedes": -1
     },
     {
-     "name": "Esprit d'oraison, de solitude, de pauvreté",
-     "note": "Les trois piliers du testament spirituel de saint Paul de la Croix.",
+     "name": "Jeûne et pénitence",
+     "note": "L'ascèse qui unit à la Passion.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Solitude et retraite",
+     "note": "Le retrait où se ravive la mémoire de la Passion.",
+     "signature": false,
+     "minutes": 20,
+     "supersedes": -1
+    },
+    {
+     "name": "Veille au pied de la Croix (nuit du jeudi au vendredi)",
+     "note": "Veiller une heure avec le Christ en agonie.",
+     "signature": true,
+     "minutes": 30,
+     "supersedes": -1
+    },
+    {
+     "name": "Vœux passionistes (dont la mémoire de la Passion)",
+     "note": "Le quatrième vœu propre à l'Ordre.",
+     "signature": true,
+     "minutes": 0,
+     "supersedes": -1
+    }
+   ]
+  },
+  {
+   "id": "redemptoristes",
+   "family": "catholique",
+   "name": "Rédemptoristes",
+   "subtitle": "Congrégation du Très Saint Rédempteur — les plus abandonnés",
+   "patron": "Saint Alphonse de Liguori ; Notre-Dame du Perpétuel Secours",
+   "accent": "#4a2e52",
+   "desc": "Fondés par saint Alphonse de Liguori pour annoncer la Rédemption aux plus abandonnés, spécialement par les missions populaires. Une spiritualité de la Passion du Rédempteur, de la visite au Saint-Sacrement, de la tendresse mariale (Notre-Dame du Perpétuel Secours) et de la miséricorde envers les pécheurs.",
+   "dailyCore": [
+    "Visite quotidienne à Jésus au Saint-Sacrement (selon saint Alphonse)",
+    "Prière à Notre-Dame du Perpétuel Secours"
+   ],
+   "devotions": [
+    {
+     "name": "Visite au Saint-Sacrement",
+     "note": "La « visite à Jésus » chère à saint Alphonse : un cœur à cœur quotidien.",
+     "signature": true,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Méditation sur la Passion du Rédempteur",
+     "note": "Contempler l'amour du Christ qui a tout donné.",
      "signature": true,
      "minutes": 20,
      "supersedes": -1
     },
     {
-     "name": "Partage de la mémoire de la Passion",
-     "note": "Un témoignage donné à quelqu'un cette semaine.",
+     "name": "Liturgie des Heures (Laudes et Vêpres)",
+     "note": "Le socle de la prière de l'Église.",
      "signature": false,
-     "minutes": 0,
+     "minutes": 15,
      "supersedes": -1
     },
     {
-     "name": "Sept Douleurs de la Vierge",
-     "note": "Méditation, à l'image des moniales passionistes debout au pied de la croix.",
+     "name": "Chapelet quotidien",
+     "note": "La prière de Marie.",
      "signature": false,
-     "minutes": 20,
+     "minutes": 15,
      "supersedes": -1
     },
     {
-     "name": "Silence contemplatif prolongé",
-     "note": "Un temps de silence plus long chaque semaine.",
-     "signature": false,
-     "minutes": 20,
-     "supersedes": -1
-    },
-    {
-     "name": "Solitude mensuelle",
-     "note": "Un jour de retraite et de solitude chaque mois.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Charité envers les souffrants",
-     "note": "Visiter ou soutenir une personne malade ou éprouvée.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Abandon au bon plaisir divin",
-     "note": "Dépouillement de toute consolation sensible, selon le journal mystique de saint Paul de la Croix.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Office divin passioniste",
-     "note": "Le cycle complet des Heures canoniques, centré sur la mémoire de la Passion à chaque office.",
+     "name": "Prière à Notre-Dame du Perpétuel Secours",
+     "note": "La tendre dévotion mariale de la Congrégation.",
      "signature": true,
-     "minutes": 40,
+     "minutes": 5,
      "supersedes": -1
     },
     {
-     "name": "Quatrième vœu — propager la mémoire de la Passion",
-     "note": "Vœu propre à la congrégation, ajouté aux trois vœux traditionnels : garder et propager, par toute sa vie, le souvenir vivant de la Passion du Christ.",
+     "name": "Lecture de l'Évangile",
+     "note": "Un passage chaque jour.",
+     "signature": false,
+     "minutes": 10,
+     "supersedes": -1
+    },
+    {
+     "name": "Liturgie des Heures complète",
+     "note": "Toutes les heures du jour.",
+     "signature": false,
+     "minutes": 25,
+     "supersedes": 2
+    },
+    {
+     "name": "Visite à Jésus et à Marie (matin et soir)",
+     "note": "La double visite quotidienne, selon saint Alphonse.",
+     "signature": false,
+     "minutes": 15,
+     "supersedes": 0
+    },
+    {
+     "name": "Mission auprès des plus abandonnés",
+     "note": "Le cœur du charisme : aller aux périphéries.",
+     "signature": true,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Jeûne et pénitence",
+     "note": "L'ascèse qui soutient la mission.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Lecture de saint Alphonse (Pratique de l'amour de Jésus-Christ)",
+     "note": "Se former à l'amour du Rédempteur.",
+     "signature": false,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Neuvaine au Perpétuel Secours",
+     "note": "L'intercession mariale, portée neuf jours.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Vœux et serment de persévérance rédemptoristes",
+     "note": "La profession dans la Congrégation.",
      "signature": true,
      "minutes": 0,
      "supersedes": -1
@@ -1676,85 +2113,92 @@
    ],
    "devotions": [
     {
-     "name": "Chapelet de la Divine Miséricorde",
-     "note": "Récité si possible à 15h, l'Heure de la Miséricorde.",
+     "name": "Chapelet de la Miséricorde divine",
+     "note": "« Pour sa douloureuse Passion, sois miséricordieux… »",
      "signature": true,
-     "minutes": 20,
+     "minutes": 15,
      "supersedes": -1
     },
     {
-     "name": "« Jésus, j'ai confiance en Toi »",
-     "note": "Invocation répétée devant l'image de la Miséricorde divine.",
+     "name": "Heure de la Miséricorde (15 h)",
+     "note": "S'unir à l'agonie du Christ à l'heure de sa mort.",
+     "signature": true,
+     "minutes": 5,
+     "supersedes": -1
+    },
+    {
+     "name": "Liturgie des Heures (Laudes et Vêpres)",
+     "note": "Le socle de la prière de l'Église.",
+     "signature": false,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "« Jésus, j'ai confiance en Toi » devant l'image",
+     "note": "La confiance, cœur du message de la Miséricorde.",
+     "signature": true,
+     "minutes": 5,
+     "supersedes": -1
+    },
+    {
+     "name": "Œuvres de miséricorde du jour",
+     "note": "Accueillir et manifester la Miséricorde en actes.",
      "signature": true,
      "minutes": 0,
      "supersedes": -1
     },
     {
-     "name": "Lecture du Petit Journal",
-     "note": "Un court passage du Petit Journal de sainte Faustine.",
-     "signature": true,
+     "name": "Lecture du Petit Journal de sainte Faustine",
+     "note": "Se laisser conduire par l'Apôtre de la Miséricorde.",
+     "signature": false,
      "minutes": 10,
      "supersedes": -1
     },
     {
-     "name": "Neuvaine à la Divine Miséricorde",
-     "note": "En préparation du Dimanche de la Miséricorde, après Pâques.",
+     "name": "Liturgie des Heures complète",
+     "note": "Toutes les heures du jour.",
      "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Démarche évangélique ignatienne",
-     "note": "Examen et discernement, selon la spiritualité fondatrice.",
-     "signature": false,
-     "minutes": 10,
-     "supersedes": -1
-    },
-    {
-     "name": "Contempler, accueillir, manifester",
-     "note": "Un geste concret de miséricorde envers quelqu'un chaque jour.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Accueil des personnes en difficulté",
-     "note": "Service concret, dans l'esprit de l'apostolat de la congrégation.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Méditation des vœux",
-     "note": "Pauvreté, chasteté, obéissance, médités selon son propre état de vie.",
-     "signature": false,
-     "minutes": 20,
-     "supersedes": -1
-    },
-    {
-     "name": "Confiance totale",
-     "note": "Un acte concret de confiance en la miséricorde de Dieu, même dans la faute.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Miséricorde envers soi-même",
-     "note": "Cesser toute dureté envers soi ; accueillir le pardon reçu.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Liturgie des Heures",
-     "note": "Laudes et Vêpres, comme dans toute congrégation religieuse, en plus des dévotions propres à la Miséricorde divine.",
-     "signature": true,
      "minutes": 25,
+     "supersedes": 2
+    },
+    {
+     "name": "Chapelet marial",
+     "note": "La prière de Marie.",
+     "signature": false,
+     "minutes": 15,
      "supersedes": -1
     },
     {
-     "name": "Jeûne hebdomadaire",
-     "note": "Un jour de jeûne ou d'abstinence dans la semaine, en union avec la Passion du Christ, source de la Miséricorde.",
+     "name": "Adoration eucharistique",
+     "note": "Contempler la Miséricorde présente.",
+     "signature": false,
+     "minutes": 20,
+     "supersedes": -1
+    },
+    {
+     "name": "Jeûne et pénitence pour les pécheurs",
+     "note": "Intercéder par le sacrifice.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Neuvaine à la Miséricorde divine",
+     "note": "Les neuf jours, du Vendredi saint à la fête de la Miséricorde.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Intercession pour les âmes et les mourants",
+     "note": "Obtenir la miséricorde pour le monde entier.",
+     "signature": true,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Vœux (contempler, accueillir, manifester la Miséricorde)",
+     "note": "La consécration selon le charisme.",
      "signature": true,
      "minutes": 0,
      "supersedes": -1
@@ -1775,85 +2219,92 @@
    ],
    "devotions": [
     {
-     "name": "Lecture priante de la Parole",
-     "note": "Chaque jour, à la manière de la tradition ignatienne.",
+     "name": "Temps de prière personnelle quotidien (cœur à cœur)",
+     "note": "Le rendez-vous quotidien avec le Seigneur, dans la ligne ignatienne.",
      "signature": true,
-     "minutes": 10,
+     "minutes": 20,
      "supersedes": -1
     },
     {
-     "name": "Baptême dans l'Esprit Saint",
-     "note": "Demande renouvelée, expérience fondatrice de la communauté.",
+     "name": "Examen ignatien du soir",
+     "note": "Relire sa journée pour y trouver Dieu.",
      "signature": true,
-     "minutes": 0,
+     "minutes": 15,
      "supersedes": -1
     },
     {
-     "name": "Prière commune hebdomadaire",
-     "note": "Participation à un temps de prière partagé.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Accompagnement spirituel",
-     "note": "Régulier, selon le discernement ignatien.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Discernement des esprits",
-     "note": "Relecture des mouvements de consolation et désolation.",
+     "name": "Louange charismatique",
+     "note": "Se laisser renouveler par l'Esprit.",
      "signature": false,
      "minutes": 10,
      "supersedes": -1
     },
     {
-     "name": "Simplicité de vie",
-     "note": "Un geste de partage concret cette semaine.",
+     "name": "Lectio de la Parole",
+     "note": "Écouter et méditer l'Écriture.",
+     "signature": false,
+     "minutes": 10,
+     "supersedes": -1
+    },
+    {
+     "name": "Messe quotidienne (si possible)",
+     "note": "La source de la communion.",
+     "signature": false,
+     "minutes": 30,
+     "supersedes": -1
+    },
+    {
+     "name": "Discernement — relecture",
+     "note": "Distinguer les mouvements de l'Esprit.",
      "signature": false,
      "minutes": 0,
      "supersedes": -1
     },
     {
-     "name": "Prière pour l'unité des chrétiens",
-     "note": "Intention constante, charisme œcuménique propre à la communauté.",
+     "name": "Double examen (matin et soir)",
+     "note": "L'examen mené deux fois, comme le voulait Ignace.",
+     "signature": false,
+     "minutes": 15,
+     "supersedes": 1
+    },
+    {
+     "name": "Retraite selon les Exercices spirituels",
+     "note": "Le chemin des Exercices d'Ignace.",
      "signature": true,
      "minutes": 0,
      "supersedes": -1
     },
     {
-     "name": "Session ou retraite selon les Exercices",
-     "note": "Un temps de retraite ignatienne, au moins une fois par an.",
+     "name": "Vie fraternelle et prière en communauté",
+     "note": "Vivre et prier ensemble.",
      "signature": false,
      "minutes": 0,
      "supersedes": -1
     },
     {
-     "name": "Service et mission",
-     "note": "Un engagement concret pour l'Église ou une personne en difficulté.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Vie fraternelle engagée",
-     "note": "Disponibilité réelle envers un frère ou une sœur cette semaine.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Liturgie des Heures quotidienne",
-     "note": "Pour les membres engagés en communauté de vie : Laudes et Vêpres priées chaque jour.",
+     "name": "Service de l'unité des chrétiens (œcuménisme)",
+     "note": "« Que tous soient un » : la vocation propre du Chemin Neuf.",
      "signature": true,
-     "minutes": 25,
+     "minutes": 0,
      "supersedes": -1
     },
     {
-     "name": "Jeûne hebdomadaire",
-     "note": "Un jour de jeûne dans la semaine, offert pour une intention précise.",
+     "name": "Jeûne",
+     "note": "Ouvrir le cœur par l'ascèse.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Nuit de prière et d'adoration",
+     "note": "Veiller devant le Seigneur.",
+     "signature": true,
+     "minutes": 45,
+     "supersedes": -1
+    },
+    {
+     "name": "Engagement dans la Communauté",
+     "note": "Spiritualité ignatienne et Renouveau.",
      "signature": true,
      "minutes": 0,
      "supersedes": -1
@@ -1874,85 +2325,92 @@
    ],
    "devotions": [
     {
-     "name": "Prière avec la Parole",
-     "note": "Un passage d'Écriture prié chaque jour, pas seulement lu.",
-     "signature": true,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Assimilation de la Parole",
-     "note": "Mémoriser ou intérioriser un verset pour le porter dans la journée.",
-     "signature": true,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Ministère de la Parole",
-     "note": "Partager avec quelqu'un ce que la prière a donné cette semaine.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Vie selon les Béatitudes",
-     "note": "Choisir une Béatitude et la vivre concrètement cette semaine.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Temps de fraternité",
-     "note": "Un temps de partage de vie et de foi avec d'autres.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Évangélisation directe",
-     "note": "Une annonce explicite de la Parole donnée à quelqu'un.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Contemplation missionnaire",
-     "note": "Union de la prière silencieuse et du zèle missionnaire, propre au charisme Verbum Dei.",
-     "signature": true,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Service désintéressé",
-     "note": "Un geste de charité solidaire cette semaine.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Formation à l'Écriture",
-     "note": "Approfondir un livre biblique, verset après verset.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Identification à Jésus Parole",
-     "note": "Relire sa journée en cherchant où la Parole s'est faite chair dans ses actes.",
-     "signature": false,
-     "minutes": 10,
-     "supersedes": -1
-    },
-    {
-     "name": "Liturgie des Heures (membres consacrés)",
-     "note": "Pour les sœurs, prêtres et frères consacrés de la Fraternité : Laudes et Vêpres priées chaque jour.",
+     "name": "Prière de la Parole quotidienne (contemplative)",
+     "note": "« Assidus à la prière et au ministère de la Parole » (Ac 6,4).",
      "signature": true,
      "minutes": 20,
      "supersedes": -1
     },
     {
-     "name": "Jeûne hebdomadaire",
-     "note": "Un jour de jeûne dans la semaine, uni à la prière pour la mission.",
+     "name": "Mémorisation et rumination d'un verset",
+     "note": "Porter la Parole dans le cœur tout le jour.",
+     "signature": true,
+     "minutes": 10,
+     "supersedes": -1
+    },
+    {
+     "name": "Liturgie des Heures (Laudes et Vêpres)",
+     "note": "Le socle de la prière de l'Église.",
+     "signature": false,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Messe et communion",
+     "note": "La table de la Parole et du Pain.",
+     "signature": false,
+     "minutes": 30,
+     "supersedes": -1
+    },
+    {
+     "name": "Lectio divina prolongée",
+     "note": "La Parole écoutée, méditée, priée, contemplée.",
+     "signature": false,
+     "minutes": 20,
+     "supersedes": 0
+    },
+    {
+     "name": "Chapelet et dévotion mariale",
+     "note": "Marie, la première à garder la Parole.",
+     "signature": false,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Annonce de la Parole (témoignage)",
+     "note": "Donner ce que l'on a contemplé.",
+     "signature": true,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Prière d'intercession missionnaire",
+     "note": "Porter les peuples qui n'ont pas entendu l'Évangile.",
+     "signature": false,
+     "minutes": 10,
+     "supersedes": -1
+    },
+    {
+     "name": "Jeûne pour la mission",
+     "note": "Soutenir l'annonce par l'ascèse.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Vie fraternelle",
+     "note": "Partager la vie et la Parole.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Adoration eucharistique",
+     "note": "Contempler le Verbe fait chair.",
+     "signature": false,
+     "minutes": 20,
+     "supersedes": -1
+    },
+    {
+     "name": "Prière continuelle de la Parole (jour et nuit)",
+     "note": "La Parole qui ne cesse d'habiter le cœur.",
+     "signature": true,
+     "minutes": 30,
+     "supersedes": 1
+    },
+    {
+     "name": "Consécration missionnaire Verbum Dei",
+     "note": "Se donner tout entier à la Parole et à sa mission.",
      "signature": true,
      "minutes": 0,
      "supersedes": -1
@@ -1973,92 +2431,92 @@
    ],
    "devotions": [
     {
-     "name": "Rosaire quotidien",
-     "note": "Récité presque sans cesse, à l'exemple de saint Charbel Makhlouf.",
-     "signature": true,
-     "minutes": 20,
-     "supersedes": -1
-    },
-    {
-     "name": "Silence habituel",
-     "note": "Limiter les paroles inutiles ; le silence était, selon la tradition, « la langue maternelle » de saint Charbel.",
+     "name": "Office maronite (Safro le matin, Ramsho le soir)",
+     "note": "La prière du matin et du soir, dans le rite antiochien-syriaque.",
      "signature": true,
      "minutes": 15,
      "supersedes": -1
     },
     {
-     "name": "Travail manuel offert",
-     "note": "Une tâche manuelle accomplie en silence et en prière.",
+     "name": "Prière du cœur en silence",
+     "note": "L'invocation brève, dans la ligne des Pères syriaques.",
      "signature": false,
-     "minutes": 0,
+     "minutes": 10,
      "supersedes": -1
     },
     {
-     "name": "Dévotion à la Vierge, Cèdre du Liban",
-     "note": "Invocation mariale quotidienne, selon les Litanies maronites qui appellent Marie « Cèdre du Liban ».",
-     "signature": true,
+     "name": "Lecture de l'Évangile",
+     "note": "Un passage chaque jour.",
+     "signature": false,
+     "minutes": 10,
+     "supersedes": -1
+    },
+    {
+     "name": "Prosternations",
+     "note": "Inclinations profondes de la prière syriaque.",
+     "signature": false,
      "minutes": 5,
      "supersedes": -1
     },
     {
-     "name": "Lecture de l'Imitation de Jésus-Christ",
-     "note": "Source spirituelle privilégiée de saint Charbel.",
+     "name": "Jeûne maronite (jusqu'à midi)",
+     "note": "L'abstinence du rite, avant la communion.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Chant des hymnes syriaques (saint Éphrem)",
+     "note": "La théologie chantée de la Harpe de l'Esprit.",
+     "signature": true,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Office complet (les temps de prière)",
+     "note": "Le cycle entier des heures maronites.",
+     "signature": false,
+     "minutes": 25,
+     "supersedes": 0
+    },
+    {
+     "name": "Chapelet et dévotion mariale",
+     "note": "La forte piété mariale du Liban.",
      "signature": false,
      "minutes": 15,
      "supersedes": -1
     },
     {
-     "name": "Adoration eucharistique",
-     "note": "Un temps hebdomadaire devant le Saint-Sacrement.",
+     "name": "Retraite à l'ermitage (à l'image de saint Charbel)",
+     "note": "Le silence de la montagne, où vécurent Charbel, Rafqa et Nimatullah.",
+     "signature": true,
+     "minutes": 20,
+     "supersedes": -1
+    },
+    {
+     "name": "Grand Carême maronite",
+     "note": "Le jeûne majeur, avec discernement.",
      "signature": false,
+     "minutes": 0,
+     "supersedes": 4
+    },
+    {
+     "name": "Adoration silencieuse",
+     "note": "Demeurer devant le Seigneur.",
+     "signature": false,
+     "minutes": 20,
+     "supersedes": -1
+    },
+    {
+     "name": "Nuit d'adoration et de silence sur la montagne",
+     "note": "La veille érémitique, sommet de la voie maronite.",
+     "signature": true,
      "minutes": 30,
-     "supersedes": -1
+     "supersedes": 10
     },
     {
-     "name": "Jeûne selon le typikon maronite",
-     "note": "Périodes de jeûne prescrites par le calendrier maronite.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Oraison nocturne",
-     "note": "Un temps de prière prolongé en fin de soirée, à l'image des veilles de saint Charbel.",
-     "signature": false,
-     "minutes": 20,
-     "supersedes": -1
-    },
-    {
-     "name": "Confession fréquente",
-     "note": "Selon le rythme conseillé par le père spirituel.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Accueil humble du visiteur",
-     "note": "Recevoir chaque personne comme un service, selon la règle des ermites maronites.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Vie d'union silencieuse",
-     "note": "Vivre en présence constante de Dieu dans le silence et l'adoration, sommet de la vie érémitique maronite.",
-     "signature": true,
-     "minutes": 20,
-     "supersedes": -1
-    },
-    {
-     "name": "Cycle complet de l'Office maronite",
-     "note": "Safro (l'aube) et Ramsho (le soir), et les autres Heures du rite syriaque maronite — le cycle complet, comme le priaient les moines d'Annaya.",
-     "signature": true,
-     "minutes": 40,
-     "supersedes": -1
-    },
-    {
-     "name": "Vœux définitifs de l'Ordre libanais maronite",
-     "note": "Pauvreté, obéissance et chasteté, prononcés lors des vœux solennels — ceux que Charbel Makhlouf prononça le 1er novembre 1853.",
+     "name": "Vœux monastiques maronites",
+     "note": "La profession dans l'Ordre libanais.",
      "signature": true,
      "minutes": 0,
      "supersedes": -1
@@ -2079,71 +2537,92 @@
    ],
    "devotions": [
     {
-     "name": "Célébration de la Slava",
-     "note": "La fête du saint patron familial, transmise de génération en génération — cœur de la piété domestique serbe.",
-     "signature": true,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Prière de Jésus",
-     "note": "Répétée avec le souffle, chaque jour.",
+     "name": "Règle du matin et du soir",
+     "note": "Le socle quotidien, selon le typikon de saint Sava.",
      "signature": true,
      "minutes": 15,
      "supersedes": -1
     },
     {
-     "name": "Pèlerinage intérieur à Hilandar",
-     "note": "Mémoire priante du monastère serbe du Mont Athos, fondé par saint Sava et saint Siméon.",
-     "signature": false,
-     "minutes": 0,
+     "name": "Prière de Jésus sur la brojanica",
+     "note": "L'invocation du Nom, au chapelet de laine.",
+     "signature": true,
+     "minutes": 10,
      "supersedes": -1
     },
     {
-     "name": "Jeûne selon le typikon serbe",
-     "note": "Mercredi, vendredi, et périodes prescrites.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Chant de l'Octoèque serbe",
-     "note": "Écoute ou pratique du chant liturgique selon les huit tons.",
-     "signature": false,
-     "minutes": 15,
-     "supersedes": -1
-    },
-    {
-     "name": "Vénération des reliques des saints serbes",
-     "note": "Saint Sava, saint Siméon, et les autres saints de la terre serbe.",
-     "signature": false,
-     "minutes": 5,
-     "supersedes": -1
-    },
-    {
-     "name": "Métanies",
-     "note": "Prosternations, nombre croissant.",
-     "signature": false,
-     "minutes": 5,
-     "supersedes": -1
-    },
-    {
-     "name": "Confession fréquente",
-     "note": "Selon le rythme conseillé par le père spirituel.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Lecture de la vie des saints serbes",
-     "note": "Un récit bref chaque semaine.",
+     "name": "Lecture de l'Évangile",
+     "note": "Un passage chaque jour.",
      "signature": false,
      "minutes": 10,
      "supersedes": -1
     },
     {
-     "name": "Vœux monastiques du Petit Schème",
-     "note": "Stabilité de lieu, chasteté, obéissance et pauvreté, comme dans toute la tradition byzantine.",
+     "name": "Métanies (pokloni)",
+     "note": "Prosternations, en nombre croissant.",
+     "signature": false,
+     "minutes": 5,
+     "supersedes": -1
+    },
+    {
+     "name": "Jeûne selon le calendrier serbe",
+     "note": "Les carêmes, mercredis et vendredis.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "La Slava — mémoire du saint patron de la maison",
+     "note": "La fête du saint protecteur de la famille, cœur de la piété serbe.",
+     "signature": true,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Prière de Jésus prolongée",
+     "note": "L'invocation portée longuement.",
+     "signature": false,
+     "minutes": 20,
+     "supersedes": 1
+    },
+    {
+     "name": "Acathiste (à saint Sava, à la Mère de Dieu)",
+     "note": "Hymne debout de louange.",
+     "signature": false,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Lecture des vies des saints (Prologue d'Ohrid)",
+     "note": "Le synaxaire de saint Nicolas Vélimirovitch.",
+     "signature": false,
+     "minutes": 10,
+     "supersedes": -1
+    },
+    {
+     "name": "Grand Carême",
+     "note": "Le jeûne majeur, avec la prière de saint Éphrem.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": 4
+    },
+    {
+     "name": "Veillée des fêtes",
+     "note": "Vigile des grandes solennités.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Garde du cœur — prière incessante",
+     "note": "L'invocation descendue au cœur.",
+     "signature": false,
+     "minutes": 30,
+     "supersedes": 6
+    },
+    {
+     "name": "Vœux monastiques (typikon de saint Sava)",
+     "note": "Dans la lignée de Hilandar et de la Sainte Montagne.",
      "signature": true,
      "minutes": 0,
      "supersedes": -1
@@ -2154,81 +2633,109 @@
    "id": "ethiopienne",
    "family": "orthodoxe",
    "name": "Tradition éthiopienne (Tewahedo)",
-   "subtitle": "Rite guèze — l'une des plus anciennes Églises du monde",
-   "patron": "Saint Yared (musique liturgique, VIe s.), les Neuf Saints, saint Tekle Haymanot",
+   "subtitle": "Rite guèze (ge'ez) — l'une des plus anciennes Églises chrétiennes",
+   "patron": "Saint Frumence (Abba Salama, IVe s.), saint Yared le mélode (VIe s.), les Neuf Saints, saint Tekle Haymanot",
    "accent": "#5a3a1e",
-   "desc": "Église chrétienne parmi les plus anciennes du monde, constituée au IVe siècle, restée largement isolée et fidèle à des usages remontant au christianisme primitif, marqués par une forte influence de l'Ancien Testament et un jeûne parmi les plus rigoureux de toute la chrétienté.",
+   "desc": "Église parmi les plus anciennes du monde, née au IVe siècle avec saint Frumence et longtemps préservée dans un relatif isolement. Elle a gardé des usages proches du christianisme primitif : forte empreinte de l'Ancien Testament (sabbat, tabot, prescriptions alimentaires), chant de saint Yared, louanges quotidiennes de Marie (Weddase Maryam) et l'un des jeûnes les plus rigoureux de toute la chrétienté — à recevoir avec discernement.",
    "dailyCore": [
-    "Prière debout, appuyé sur le bâton de prière (meqwamiya)",
-    "Jeûne éthiopien rigoureux"
+    "Prière debout, appuyé sur le bâton de prière (meqwamiya), avec prosternations (metanya)",
+    "Jeûne du jour selon le calendrier éthiopien (mercredi, vendredi et grands carêmes)"
    ],
    "devotions": [
     {
-     "name": "Prière avec le bâton (meqwamiya)",
-     "note": "Prière debout prolongée, en s'appuyant sur le bâton de prière traditionnel.",
+     "name": "Prière du bâton (meqwamiya)",
+     "note": "Longue prière debout, appuyé sur le bâton traditionnel : le corps entier tenu dans la veille et la patience.",
      "signature": true,
      "minutes": 20,
      "supersedes": -1
     },
     {
-     "name": "Jeûne éthiopien",
-     "note": "Parmi les plus rigoureux de la chrétienté — mercredi, vendredi, et de longues périodes de carême, à vivre avec discernement.",
+     "name": "Weddase Maryam (Louanges de Marie)",
+     "note": "Les Louanges de Marie récitées chaque jour, une section propre à chaque jour de la semaine — la dévotion mariale la plus caractéristique du rite guèze.",
      "signature": true,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Jeûne des mercredis et vendredis",
+     "note": "Abstinence jusqu'à la neuvième heure (vers 15 h), selon l'usage éthiopien ordinaire de la semaine.",
+     "signature": false,
      "minutes": 0,
      "supersedes": -1
     },
     {
-     "name": "Prosternations nombreuses",
-     "note": "Selon l'usage éthiopien, nombre croissant.",
+     "name": "Prosternations (metanya)",
+     "note": "Inclinations et prosternations, en nombre croissant, ponctuant la prière.",
      "signature": false,
      "minutes": 10,
      "supersedes": -1
     },
     {
-     "name": "Chant liturgique guèze",
-     "note": "Selon la tradition musicale fondée par saint Yared au VIe siècle.",
+     "name": "Kidan du matin (prière de l'Alliance)",
+     "note": "La prière de l'Alliance récitée au lever, ouverture ordinaire de la journée de prière éthiopienne.",
+     "signature": false,
+     "minutes": 12,
+     "supersedes": -1
+    },
+    {
+     "name": "Lecture du Senkessar",
+     "note": "Le synaxaire éthiopien : mémoire et vie du saint du jour.",
+     "signature": false,
+     "minutes": 10,
+     "supersedes": -1
+    },
+    {
+     "name": "Chant selon saint Yared",
+     "note": "Chant liturgique dans les trois modes de saint Yared (ge'ez, ezel, araray), au besoin avec le sistre (tsenatsil) et le tambour (kebero).",
      "signature": false,
      "minutes": 15,
      "supersedes": -1
     },
     {
-     "name": "Lecture du Senkessar",
-     "note": "Le synaxaire éthiopien : vie du saint du jour.",
+     "name": "Kidan matin et soir",
+     "note": "La prière de l'Alliance au lever et au coucher, encadrant toute la journée.",
      "signature": false,
-     "minutes": 10,
+     "minutes": 14,
+     "supersedes": 4
+    },
+    {
+     "name": "Confession fréquente",
+     "note": "Auprès du père spirituel, au rythme qu'il conseille.",
+     "signature": false,
+     "minutes": 0,
      "supersedes": -1
     },
     {
      "name": "Vénération du Tabot",
-     "note": "Mémoire priante de l'Arche présente dans chaque église éthiopienne.",
+     "note": "Mémoire priante de l'Arche (tabot) présente au cœur de chaque église éthiopienne.",
      "signature": false,
      "minutes": 0,
      "supersedes": -1
     },
     {
-     "name": "Confession fréquente",
-     "note": "Selon le rythme conseillé par le père spirituel.",
+     "name": "Grands carêmes éthiopiens",
+     "note": "Les grands jeûnes du calendrier : Abiy Tsom (le Grand Carême, environ 55 jours), Filseta (Assomption), Tsome Nebiyat (Avent), jeûne de Ninive et jeûne des Apôtres — à vivre avec discernement et accompagnement.",
      "signature": false,
      "minutes": 0,
+     "supersedes": 2
+    },
+    {
+     "name": "Arganona Weddase (l'Organon de louange)",
+     "note": "Le grand hymne marial attribué à Abba Giyorgis de Sagla, réparti sur les jours de la semaine.",
+     "signature": true,
+     "minutes": 20,
      "supersedes": -1
     },
     {
-     "name": "Pauvreté monastique radicale",
-     "note": "Un renoncement concret, à l'image des moines éthiopiens.",
+     "name": "Office complet des Se'atat (horologe)",
+     "note": "Le cycle complet des heures selon l'horologe (me'eraf / se'atat), à la manière des monastères éthiopiens.",
      "signature": false,
-     "minutes": 0,
-     "supersedes": -1
+     "minutes": 30,
+     "supersedes": 7
     },
     {
-     "name": "Office quotidien complet",
-     "note": "Le cycle des offices selon la tradition monastique éthiopienne.",
-     "signature": false,
-     "minutes": 45,
-     "supersedes": -1
-    },
-    {
-     "name": "Vœux monastiques",
-     "note": "Pauvreté, chasteté et obéissance, selon la profession monastique éthiopienne.",
+     "name": "Vœux monastiques éthiopiens",
+     "note": "Pauvreté, chasteté et obéissance, professés devant un abba : renoncement concret à l'image des Bahtawi et des moines du désert éthiopien.",
      "signature": true,
      "minutes": 0,
      "supersedes": -1
@@ -2249,72 +2756,93 @@
    ],
    "devotions": [
     {
-     "name": "Parole de vie",
-     "note": "Un verset d'Écriture médité et vécu concrètement tout au long du mois.",
+     "name": "Parole de Vie — vivre une phrase de l'Évangile",
+     "note": "Chaque mois, une parole à mettre en pratique concrètement.",
      "signature": true,
      "minutes": 10,
      "supersedes": -1
     },
     {
-     "name": "Prière pour l'unité",
-     "note": "« Que tous soient un » (Jn 17,21), la charte du mouvement.",
+     "name": "Amour mutuel — le pacte de s'aimer les uns les autres",
+     "note": "« Aimez-vous comme je vous ai aimés » : le pacte au cœur du charisme.",
      "signature": true,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Prière personnelle quotidienne",
+     "note": "Le rendez-vous avec Dieu.",
+     "signature": false,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Messe et communion",
+     "note": "La source de la communion.",
+     "signature": false,
+     "minutes": 30,
+     "supersedes": -1
+    },
+    {
+     "name": "Jésus Abandonné — L'aimer dans chaque douleur",
+     "note": "Reconnaître et aimer le Christ dans toute épreuve et division.",
+     "signature": true,
+     "minutes": 10,
+     "supersedes": -1
+    },
+    {
+     "name": "Prière du soir",
+     "note": "Rendre grâce au terme du jour.",
+     "signature": false,
+     "minutes": 10,
+     "supersedes": -1
+    },
+    {
+     "name": "Chapelet",
+     "note": "La prière de Marie.",
+     "signature": false,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "« L'heure de la vérité » — relecture de l'amour",
+     "note": "Vérifier chaque jour si l'on a vraiment aimé.",
+     "signature": false,
      "minutes": 5,
      "supersedes": -1
     },
     {
-     "name": "Contemplation de Jésus abandonné",
-     "note": "Le cri de la croix (Mc 15,34) comme clé de toute réconciliation et division traversée.",
+     "name": "Construire l'unité là où je suis",
+     "note": "Œuvrer pour que « tous soient un ».",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Jeûne et partage des biens",
+     "note": "La communion des biens, jusqu'au matériel.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Jésus présent au milieu (Mt 18,20)",
+     "note": "Prier là où deux ou trois sont réunis en son nom.",
      "signature": true,
      "minutes": 15,
      "supersedes": -1
     },
     {
-     "name": "Amour mutuel concret",
-     "note": "Un geste de charité fraternelle réelle chaque jour.",
+     "name": "Adoration et offrande pour l'unité",
+     "note": "Offrir sa vie pour que le monde croie.",
      "signature": false,
-     "minutes": 0,
-     "supersedes": -1
+     "minutes": 20,
+     "supersedes": 2
     },
     {
-     "name": "Vie de communauté (focolare)",
-     "note": "Partage réel de vie avec d'autres, à l'image des premières focolarines.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Économie de communion",
-     "note": "Un geste concret de partage des biens.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Dialogue avec d'autres confessions et religions",
-     "note": "Une rencontre ou un geste d'ouverture cette semaine.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Silence intérieur",
-     "note": "Un temps d'accueil de l'Esprit, en silence.",
-     "signature": false,
-     "minutes": 15,
-     "supersedes": -1
-    },
-    {
-     "name": "Présence de Jésus au milieu",
-     "note": "Selon Matthieu 18,20 — cultiver l'unité qui rend cette présence sensible.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Vœux des consacrés en focolare",
-     "note": "Pour les célibataires consacrés : pauvreté, chasteté et obéissance.",
-     "signature": false,
+     "name": "Engagement dans le Mouvement",
+     "note": "Se donner à l'idéal de l'unité.",
+     "signature": true,
      "minutes": 0,
      "supersedes": -1
     }
@@ -2334,72 +2862,93 @@
    ],
    "devotions": [
     {
-     "name": "Prière communautaire du soir",
-     "note": "Chaque soir à 20h, écoute de la Parole de Dieu — le premier acte de la Communauté.",
+     "name": "Prière du soir communautaire (autour de la Parole)",
+     "note": "Le cœur de Sant'Egidio : la prière du soir, chaque jour.",
      "signature": true,
-     "minutes": 30,
+     "minutes": 20,
+     "supersedes": -1
+    },
+    {
+     "name": "Lecture priante de l'Évangile",
+     "note": "Écouter la Parole qui envoie vers les pauvres.",
+     "signature": false,
+     "minutes": 10,
      "supersedes": -1
     },
     {
      "name": "Amitié avec les pauvres",
-     "note": "Visite régulière et gratuite, jamais déléguée à une institution.",
+     "note": "Non pas assister, mais devenir ami des plus fragiles.",
      "signature": true,
      "minutes": 0,
      "supersedes": -1
     },
     {
-     "name": "Service personnel et gratuit",
-     "note": "Un engagement concret, sans intermédiaire, cette semaine.",
+     "name": "Prière du matin",
+     "note": "Ouvrir la journée devant Dieu.",
      "signature": false,
-     "minutes": 0,
+     "minutes": 10,
      "supersedes": -1
     },
     {
-     "name": "Travail pour la paix",
-     "note": "Une prière ou une intention précise pour un conflit ou une réconciliation.",
+     "name": "Messe et communion",
+     "note": "La source de la communion.",
      "signature": false,
-     "minutes": 0,
+     "minutes": 30,
      "supersedes": -1
     },
     {
-     "name": "Écoute quotidienne de la Parole",
-     "note": "Un passage d'Évangile lu et médité chaque jour.",
+     "name": "Mémoire des saints et des martyrs contemporains",
+     "note": "Faire mémoire des témoins de la foi d'aujourd'hui.",
+     "signature": true,
+     "minutes": 5,
+     "supersedes": -1
+    },
+    {
+     "name": "Chapelet",
+     "note": "La prière de Marie.",
      "signature": false,
      "minutes": 15,
      "supersedes": -1
     },
     {
-     "name": "Repas partagé",
-     "note": "Avec des personnes en situation de pauvreté, selon l'esprit du Déjeuner de Noël.",
+     "name": "Artisan de paix — réconciliation, médiation",
+     "note": "« La prière, les pauvres, la paix » : la vocation de Sant'Egidio.",
+     "signature": true,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Intercession pour les peuples en guerre",
+     "note": "Porter dans la prière les conflits du monde.",
+     "signature": false,
+     "minutes": 10,
+     "supersedes": -1
+    },
+    {
+     "name": "Jeûne et partage",
+     "note": "Le partage avec les plus pauvres.",
      "signature": false,
      "minutes": 0,
      "supersedes": -1
     },
     {
-     "name": "Dialogue interreligieux",
-     "note": "Dans l'esprit d'Assise, une rencontre ou un geste d'ouverture.",
+     "name": "Adoration / veillée",
+     "note": "Veiller devant le Seigneur.",
+     "signature": false,
+     "minutes": 20,
+     "supersedes": 0
+    },
+    {
+     "name": "Service assidu des plus pauvres comme amis",
+     "note": "La fidélité dans l'amitié, année après année.",
      "signature": false,
      "minutes": 0,
      "supersedes": -1
     },
     {
-     "name": "Fidélité liturgique et sacramentelle",
-     "note": "Messe et sacrements réguliers, fondement non négociable de la Communauté.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Simplicité de vie",
-     "note": "Un geste de dépouillement matériel cette semaine.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Vœux des membres en communauté de vie",
-     "note": "Pour ceux qui s'y engagent pleinement.",
-     "signature": false,
+     "name": "Engagement dans la Communauté",
+     "note": "Prière, pauvres, paix.",
+     "signature": true,
      "minutes": 0,
      "supersedes": -1
     }
@@ -2419,72 +2968,93 @@
    ],
    "devotions": [
     {
-     "name": "Le tripode Parole-Liturgie-Communauté",
-     "note": "Les trois piliers indissociables de tout le Chemin.",
+     "name": "Lectio divina quotidienne (préparée)",
+     "note": "L'écoute assidue de la Parole, préparée chaque jour.",
      "signature": true,
-     "minutes": 0,
+     "minutes": 20,
      "supersedes": -1
     },
     {
-     "name": "Célébration eucharistique communautaire",
-     "note": "Chaque samedi soir, vigile de la résurrection, cœur de la vie de la communauté.",
-     "signature": true,
-     "minutes": 45,
-     "supersedes": -1
-    },
-    {
-     "name": "Catéchèses",
-     "note": "Approfondissement continu de la foi, étape après étape.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Dîme",
-     "note": "Partage réel d'une part de ses revenus avec la communauté, signe de détachement.",
-     "signature": true,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Laudes et Vêpres communautaires",
-     "note": "Quand la communauté le permet.",
+     "name": "Laudes en famille",
+     "note": "La prière du matin, vécue à la maison.",
      "signature": false,
      "minutes": 15,
      "supersedes": -1
     },
     {
-     "name": "Scrutins",
-     "note": "Les étapes de conversion propres au Chemin, vécues avec la communauté.",
-     "signature": false,
+     "name": "Célébration de la Parole (hebdomadaire)",
+     "note": "L'écoute communautaire de l'Écriture, avec échos et résonances.",
+     "signature": true,
      "minutes": 0,
      "supersedes": -1
     },
     {
-     "name": "Convivences",
-     "note": "Temps forts de retraite communautaire, plusieurs fois par an.",
-     "signature": false,
+     "name": "Eucharistie de la vigile (samedi soir)",
+     "note": "La célébration dominicale de la petite communauté.",
+     "signature": true,
      "minutes": 0,
      "supersedes": -1
     },
     {
-     "name": "Chant liturgique propre",
-     "note": "Selon les compositions de Kiko Argüello, propres au Chemin.",
+     "name": "Prière du soir / Vêpres",
+     "note": "Rendre grâce au terme du jour.",
      "signature": false,
      "minutes": 10,
      "supersedes": -1
     },
     {
-     "name": "Simplicité et pauvreté volontaire",
-     "note": "Un geste concret de détachement cette semaine.",
+     "name": "Partage de la Parole en communauté",
+     "note": "Dire comment la Parole a touché la semaine.",
      "signature": false,
      "minutes": 0,
      "supersedes": -1
     },
     {
-     "name": "Disponibilité missionnaire",
-     "note": "Ouverture intérieure à un envoi en mission, selon l'esprit itinérant du Chemin.",
+     "name": "Office complet (Laudes et Vêpres)",
+     "note": "La prière de l'Église, matin et soir.",
      "signature": false,
+     "minutes": 25,
+     "supersedes": 1
+    },
+    {
+     "name": "Chapelet en famille",
+     "note": "La prière de Marie, à la maison.",
+     "signature": false,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Aumône / dîme (partage des biens)",
+     "note": "Le partage concret comme signe de conversion.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Jeûne (mercredi, carême)",
+     "note": "L'ascèse du catéchumène.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Annonce de la foi (mission, itinérance)",
+     "note": "Le témoignage et l'envoi en mission.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Veillée pascale prolongée",
+     "note": "Le sommet de l'année liturgique, longuement célébré.",
+     "signature": true,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Étapes de l'itinéraire néocatéchuménal",
+     "note": "Les passages (scrutins, redditio…) du chemin de foi.",
+     "signature": true,
      "minutes": 0,
      "supersedes": -1
     }
@@ -2504,71 +3074,92 @@
    ],
    "devotions": [
     {
-     "name": "Pèlerinage intérieur à Rila",
-     "note": "Mémoire priante du monastère et de la grotte de saint Jean, quelle que soit la distance réelle.",
-     "signature": true,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Prière de Jésus",
-     "note": "Répétée avec le souffle, chaque jour.",
+     "name": "Règle du matin et du soir",
+     "note": "Le socle quotidien de la prière bulgare.",
      "signature": true,
      "minutes": 15,
      "supersedes": -1
     },
     {
-     "name": "Vie érémitique intérieure",
-     "note": "Un temps quotidien de solitude et de silence, à l'image de la grotte de saint Jean.",
+     "name": "Prière de Jésus sur le broenitsa",
+     "note": "L'invocation du Nom, au chapelet.",
      "signature": true,
-     "minutes": 20,
+     "minutes": 10,
      "supersedes": -1
     },
     {
-     "name": "Jeûne selon le typikon bulgare",
-     "note": "Mercredi, vendredi, et périodes prescrites.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Vénération des reliques de saint Jean de Rila",
-     "note": "Prière devant une icône ou une image du saint.",
-     "signature": false,
-     "minutes": 5,
-     "supersedes": -1
-    },
-    {
-     "name": "Chant liturgique bulgare",
-     "note": "Écoute ou pratique.",
+     "name": "Lecture de l'Évangile et du Psautier",
+     "note": "Un passage et quelques psaumes.",
      "signature": false,
      "minutes": 10,
      "supersedes": -1
     },
     {
      "name": "Métanies",
-     "note": "Prosternations, nombre croissant.",
+     "note": "Prosternations, en nombre croissant.",
      "signature": false,
      "minutes": 5,
      "supersedes": -1
     },
     {
-     "name": "Confession fréquente",
-     "note": "Selon le rythme conseillé par le père spirituel.",
+     "name": "Jeûne selon le calendrier bulgare",
+     "note": "Les carêmes, mercredis et vendredis.",
      "signature": false,
      "minutes": 0,
      "supersedes": -1
     },
     {
-     "name": "Lecture de la vie de saint Jean de Rila",
-     "note": "Un épisode chaque semaine.",
+     "name": "Acathiste à saint Jean de Rila",
+     "note": "Hymne au grand ermite, père de la Bulgarie chrétienne.",
      "signature": false,
-     "minutes": 10,
+     "minutes": 15,
      "supersedes": -1
     },
     {
-     "name": "Vœux monastiques du Petit Schème",
-     "note": "Stabilité de lieu, chasteté, obéissance et pauvreté.",
+     "name": "Prière de Jésus prolongée",
+     "note": "L'invocation portée longuement.",
+     "signature": false,
+     "minutes": 20,
+     "supersedes": 1
+    },
+    {
+     "name": "Retraite érémitique (à l'image de saint Jean de Rila)",
+     "note": "Solitude et silence, sur les hauteurs de Rila.",
+     "signature": true,
+     "minutes": 20,
+     "supersedes": -1
+    },
+    {
+     "name": "Lecture des Pères hésychastes",
+     "note": "Théodose de Tarnovo, Grégoire le Sinaïte, la garde du cœur.",
+     "signature": false,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Grand Carême",
+     "note": "Le jeûne majeur, avec métanies.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": 4
+    },
+    {
+     "name": "Veillée des fêtes",
+     "note": "Vigile des grandes solennités.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Garde du cœur — prière incessante",
+     "note": "L'invocation descendue au cœur, jour et nuit.",
+     "signature": true,
+     "minutes": 30,
+     "supersedes": 6
+    },
+    {
+     "name": "Vœux monastiques",
+     "note": "Selon la tradition de Rila et de l'hésychasme slave.",
      "signature": true,
      "minutes": 0,
      "supersedes": -1
@@ -2589,71 +3180,304 @@
    ],
    "devotions": [
     {
-     "name": "Prière de Carême de saint Éphrem",
-     "note": "« Seigneur et Maître de ma vie, ne me donne pas un esprit d'oisiveté... » — récitée avec des métanies, jour après jour.",
-     "signature": true,
-     "minutes": 10,
-     "supersedes": -1
-    },
-    {
-     "name": "Hymnes de saint Éphrem",
-     "note": "Chant ou lecture d'une hymne, sur le Paradis, la foi, ou les grandes fêtes.",
+     "name": "Office du Shhimo (semainier syriaque)",
+     "note": "Les prières fixes du jour, dans le rite antiochien-occidental.",
      "signature": true,
      "minutes": 15,
      "supersedes": -1
     },
     {
-     "name": "Prière mariale de saint Éphrem",
-     "note": "« Ô Marie, notre Médiatrice, c'est en vous que le genre humain met toute [sa confiance]. »",
-     "signature": false,
-     "minutes": 5,
-     "supersedes": -1
-    },
-    {
-     "name": "Rogations de Ninive",
-     "note": "Jeûne de trois jours propre à la tradition syriaque, en mémoire de la conversion de Ninive.",
-     "signature": true,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Jeûne selon le typikon syriaque",
-     "note": "Mercredi, vendredi, et périodes prescrites.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Componction",
-     "note": "Larmes de repentir cultivées dans la prière silencieuse, selon l'enseignement d'Éphrem.",
-     "signature": false,
-     "minutes": 15,
-     "supersedes": -1
-    },
-    {
-     "name": "Métanies",
-     "note": "Prosternations accompagnant la prière de Carême de saint Éphrem.",
-     "signature": false,
-     "minutes": 5,
-     "supersedes": -1
-    },
-    {
-     "name": "Confession fréquente",
-     "note": "Selon le rythme conseillé par le père spirituel.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Lecture des Mimro de Jacques de Saroug",
-     "note": "Homélies poétiques, dans la même veine qu'Éphrem.",
+     "name": "Prière du cœur (mor / marmita)",
+     "note": "Invocation brève et répétée, dans la ligne de saint Isaac le Syrien.",
      "signature": false,
      "minutes": 10,
      "supersedes": -1
     },
     {
-     "name": "Vœux monastiques",
-     "note": "Pauvreté, chasteté et obéissance, selon la profession monastique syriaque.",
+     "name": "Lecture de l'Évangile",
+     "note": "Un passage chaque jour.",
+     "signature": false,
+     "minutes": 10,
+     "supersedes": -1
+    },
+    {
+     "name": "Prosternations (metanoye)",
+     "note": "Inclinations profondes, en nombre croissant.",
+     "signature": false,
+     "minutes": 5,
+     "supersedes": -1
+    },
+    {
+     "name": "Jeûne syriaque (jusqu'à midi, sans produits animaux)",
+     "note": "L'abstinence du rite syriaque.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Chant des madroshe de saint Éphrem",
+     "note": "Les hymnes de « la Harpe de l'Esprit », théologie chantée.",
+     "signature": true,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Office du Shhimo aux sept temps",
+     "note": "Le semainier prié aux sept heures, comme au monastère.",
+     "signature": false,
+     "minutes": 20,
+     "supersedes": 0
+    },
+    {
+     "name": "Récitation du Psautier (mazmuro)",
+     "note": "La psalmodie, colonne de l'office syriaque.",
+     "signature": false,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Vénération de la Croix",
+     "note": "Au centre de la prière syriaque.",
+     "signature": false,
+     "minutes": 5,
+     "supersedes": -1
+    },
+    {
+     "name": "Grand Carême (Sawmo Rabo, 40 jours)",
+     "note": "Le grand jeûne, avec discernement.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": 4
+    },
+    {
+     "name": "Veillée (lilyo)",
+     "note": "L'office de la nuit des fêtes.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Prière incessante du cœur",
+     "note": "L'invocation qui demeure, selon saint Isaac le Syrien.",
+     "signature": true,
+     "minutes": 30,
+     "supersedes": 1
+    },
+    {
+     "name": "Vœux monastiques syriaques",
+     "note": "Dans la lignée des Pères du désert de Syrie.",
+     "signature": true,
+     "minutes": 0,
+     "supersedes": -1
+    }
+   ]
+  },
+  {
+   "id": "armenienne",
+   "family": "orthodoxe",
+   "name": "Tradition arménienne",
+   "subtitle": "Église apostolique arménienne — la première nation chrétienne (301)",
+   "patron": "Saint Grégoire l'Illuminateur, saint Grégoire de Narek, saint Mesrop Machtots",
+   "accent": "#6e2434",
+   "desc": "L'une des plus anciennes Églises du monde et le premier royaume à faire du christianisme sa religion d'État, en 301, sous saint Grégoire l'Illuminateur. Église orthodoxe orientale (non-chalcédonienne), elle prie en arménien classique (grabar), chante les Charagan, célèbre le Badarak et garde la mémoire vive de ses martyrs. Son sommet mystique est le Livre des Lamentations de saint Grégoire de Narek.",
+   "dailyCore": [
+    "Prière du matin et du soir selon le Livre des Heures (Zhamagirk)",
+    "Signe de croix et vénération de la Croix (khatchkar)"
+   ],
+   "devotions": [
+    {
+     "name": "Livre des Heures (Zhamagirk) — matin et soir",
+     "note": "Le socle de la prière quotidienne arménienne.",
+     "signature": true,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Livre des Lamentations de saint Grégoire de Narek",
+     "note": "Le Narek : dialogue mystique de l'âme avec Dieu, joyau de la spiritualité arménienne.",
+     "signature": true,
+     "minutes": 20,
+     "supersedes": -1
+    },
+    {
+     "name": "Lecture de l'Évangile",
+     "note": "Un passage chaque jour.",
+     "signature": false,
+     "minutes": 10,
+     "supersedes": -1
+    },
+    {
+     "name": "Prosternations",
+     "note": "Inclinations profondes, en nombre croissant.",
+     "signature": false,
+     "minutes": 5,
+     "supersedes": -1
+    },
+    {
+     "name": "Jeûne arménien",
+     "note": "Les nombreux jours de jeûne du calendrier, dont le jeûne préparatoire (Aradjavorats).",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Chant des Charagan (hymnes)",
+     "note": "Le trésor hymnographique arménien, selon les huit modes.",
+     "signature": true,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Office des Heures complet (Zhamagirk)",
+     "note": "Le cycle entier des heures, comme au monastère.",
+     "signature": false,
+     "minutes": 25,
+     "supersedes": 0
+    },
+    {
+     "name": "Vénération de la Croix (khatchkar)",
+     "note": "La croix de pierre sculptée, signe de l'Arménie chrétienne.",
+     "signature": false,
+     "minutes": 5,
+     "supersedes": -1
+    },
+    {
+     "name": "Mémoire des martyrs (Vardanank)",
+     "note": "Faire mémoire de ceux qui ont donné leur vie pour la foi.",
+     "signature": true,
+     "minutes": 5,
+     "supersedes": -1
+    },
+    {
+     "name": "Grand Carême arménien",
+     "note": "Le jeûne majeur des quarante jours, avec discernement.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": 4
+    },
+    {
+     "name": "Prière mariale arménienne",
+     "note": "La dévotion à la Mère de Dieu (Astvatsatsin).",
+     "signature": false,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Récitation prolongée du Narek",
+     "note": "S'enfoncer dans les Lamentations, jusqu'à la prière du cœur.",
+     "signature": true,
+     "minutes": 30,
+     "supersedes": 1
+    },
+    {
+     "name": "Vœux monastiques (vardapet)",
+     "note": "La profession dans la tradition monastique arménienne.",
+     "signature": true,
+     "minutes": 0,
+     "supersedes": -1
+    }
+   ]
+  },
+  {
+   "id": "malankare",
+   "family": "orthodoxe",
+   "name": "Tradition malankare (Inde)",
+   "subtitle": "Chrétiens de saint Thomas — Église orthodoxe de l'Inde",
+   "patron": "Saint Thomas l'Apôtre, saint Grégoire de Parumala (Parumala Thirumeni)",
+   "accent": "#2e4a52",
+   "desc": "Les chrétiens de saint Thomas, en Inde, qui font remonter leur foi à l'apôtre Thomas (traditionnellement en l'an 52). Église orthodoxe orientale de rite syriaque-occidental (antiochien), elle prie selon le Shehimo, célèbre la Sainte Qurbana, garde un jeûne (Nombu) rigoureux et une forte piété mariale, ainsi que la vénération de la Croix de saint Thomas.",
+   "dailyCore": [
+    "Office du Shehimo (semainier syriaque) matin et soir",
+    "Signe de croix et vénération de la Croix de saint Thomas"
+   ],
+   "devotions": [
+    {
+     "name": "Office du Shehimo (semainier)",
+     "note": "Les prières fixes du jour, dans le rite syriaque de l'Inde.",
+     "signature": true,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Prière du cœur (invocation)",
+     "note": "L'invocation brève et répétée, dans la ligne de saint Isaac le Syrien.",
+     "signature": false,
+     "minutes": 10,
+     "supersedes": -1
+    },
+    {
+     "name": "Lecture de l'Évangile",
+     "note": "Un passage chaque jour.",
+     "signature": false,
+     "minutes": 10,
+     "supersedes": -1
+    },
+    {
+     "name": "Prosternations",
+     "note": "Inclinations profondes de la prière syriaque.",
+     "signature": false,
+     "minutes": 5,
+     "supersedes": -1
+    },
+    {
+     "name": "Jeûne (Nombu) selon le calendrier malankare",
+     "note": "Les nombreux jeûnes, dont le carême de l'Avent (25 jours).",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Chant des hymnes syriaques (saint Éphrem)",
+     "note": "La théologie chantée, héritée de la Harpe de l'Esprit.",
+     "signature": true,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Office du Shehimo aux sept temps",
+     "note": "Le semainier prié aux sept heures, comme au monastère.",
+     "signature": false,
+     "minutes": 20,
+     "supersedes": 0
+    },
+    {
+     "name": "Récitation du Psautier",
+     "note": "La psalmodie, colonne de l'office.",
+     "signature": false,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Vénération de la Croix de saint Thomas",
+     "note": "La croix indienne, signe des chrétiens de l'apôtre.",
+     "signature": true,
+     "minutes": 5,
+     "supersedes": -1
+    },
+    {
+     "name": "Grand Carême (Valiya Nombu, 50 jours)",
+     "note": "Le grand jeûne, avec discernement.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": 4
+    },
+    {
+     "name": "Veillée / prière nocturne",
+     "note": "L'office de la nuit des fêtes.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Prière incessante du cœur",
+     "note": "L'invocation qui demeure, selon les Pères syriaques.",
+     "signature": true,
+     "minutes": 30,
+     "supersedes": 1
+    },
+    {
+     "name": "Vœux monastiques malankares",
+     "note": "La profession dans la tradition indienne de saint Thomas.",
      "signature": true,
      "minutes": 0,
      "supersedes": -1
@@ -2674,71 +3498,198 @@
    ],
    "devotions": [
     {
-     "name": "Lecture des Confessions",
-     "note": "Un passage médité chaque jour — le grand livre de la conversion intérieure d'Augustin.",
+     "name": "Prière communautaire (Laudes et Vêpres)",
+     "note": "« Un seul cœur et une seule âme tournés vers Dieu ».",
      "signature": true,
      "minutes": 15,
      "supersedes": -1
     },
     {
-     "name": "Cor unum et anima una in Deum",
-     "note": "« Un seul cœur et une seule âme tournés vers Dieu » (Ac 4,32) — le verset fondateur de la Règle, médité chaque jour.",
+     "name": "Oraison — rentrer en soi pour trouver Dieu",
+     "note": "« Tu étais au-dedans de moi et j'étais au-dehors » (Confessions).",
      "signature": true,
+     "minutes": 20,
+     "supersedes": -1
+    },
+    {
+     "name": "Lecture de l'Évangile",
+     "note": "Un passage chaque jour.",
+     "signature": false,
+     "minutes": 10,
+     "supersedes": -1
+    },
+    {
+     "name": "Vie commune — biens partagés, un seul cœur",
+     "note": "Le cœur de la Règle de saint Augustin.",
+     "signature": true,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Lecture de la Règle de saint Augustin",
+     "note": "La plus ancienne règle monastique d'Occident.",
+     "signature": false,
+     "minutes": 10,
+     "supersedes": -1
+    },
+    {
+     "name": "Prière du matin",
+     "note": "Se tourner vers Dieu au seuil du jour.",
+     "signature": false,
      "minutes": 5,
      "supersedes": -1
     },
     {
-     "name": "Correction fraternelle",
-     "note": "Pratiquée avec charité, jamais par dureté, selon l'esprit de la Règle.",
+     "name": "Office complet",
+     "note": "Toutes les heures du jour.",
+     "signature": false,
+     "minutes": 25,
+     "supersedes": 0
+    },
+    {
+     "name": "Lecture des Confessions de saint Augustin",
+     "note": "Le chemin d'un cœur inquiet vers son repos.",
+     "signature": false,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Charité fraternelle concrète",
+     "note": "Aimer en actes ceux avec qui l'on vit.",
      "signature": false,
      "minutes": 0,
      "supersedes": -1
     },
     {
-     "name": "Garde du regard et sobriété",
-     "note": "Sur le modèle des exigences concrètes de la Règle de saint Augustin.",
+     "name": "Jeûne et modération",
+     "note": "La juste mesure augustinienne.",
      "signature": false,
      "minutes": 0,
      "supersedes": -1
     },
     {
-     "name": "Prière des Heures",
-     "note": "Prière communautaire ou personnelle, à heures fixes.",
+     "name": "Examen du soir",
+     "note": "Relire sa journée devant Dieu.",
+     "signature": false,
+     "minutes": 5,
+     "supersedes": -1
+    },
+    {
+     "name": "Contemplation — le cœur inquiet reposant en Dieu",
+     "note": "« Notre cœur est sans repos tant qu'il ne repose en Toi ».",
+     "signature": true,
+     "minutes": 25,
+     "supersedes": 1
+    },
+    {
+     "name": "Vœux augustiniens",
+     "note": "La profession selon la Règle.",
+     "signature": true,
+     "minutes": 0,
+     "supersedes": -1
+    }
+   ]
+  },
+  {
+   "id": "premontres",
+   "family": "catholique",
+   "name": "Prémontrés (Norbertins)",
+   "subtitle": "Chanoines réguliers de saint Norbert — liturgie solennelle et vie apostolique",
+   "patron": "Saint Norbert de Xanten, saint Augustin ; Notre-Dame",
+   "accent": "#3a3a52",
+   "desc": "Chanoines réguliers fondés par saint Norbert de Xanten en 1120, sous la Règle de saint Augustin. Ils unissent la célébration solennelle et chantée de la liturgie, une grande dévotion eucharistique et mariale, la vie commune et le ministère apostolique dans les paroisses.",
+   "dailyCore": [
+    "Office divin solennel, chanté en commun",
+    "Vie commune selon la Règle de saint Augustin"
+   ],
+   "devotions": [
+    {
+     "name": "Office divin solennel (Laudes et Vêpres, chantés)",
+     "note": "La liturgie célébrée avec solennité, marque des Prémontrés.",
+     "signature": true,
+     "minutes": 20,
+     "supersedes": -1
+    },
+    {
+     "name": "Adoration eucharistique",
+     "note": "Saint Norbert, apôtre de l'Eucharistie.",
+     "signature": true,
+     "minutes": 20,
+     "supersedes": -1
+    },
+    {
+     "name": "Lecture de l'Évangile",
+     "note": "Un passage chaque jour.",
+     "signature": false,
+     "minutes": 10,
+     "supersedes": -1
+    },
+    {
+     "name": "Vie commune canoniale",
+     "note": "Prière, table et biens partagés.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Lecture de la Règle de saint Augustin",
+     "note": "Le fondement de la vie canoniale.",
+     "signature": false,
+     "minutes": 10,
+     "supersedes": -1
+    },
+    {
+     "name": "Dévotion mariale",
+     "note": "Saint Norbert, grand serviteur de Marie.",
+     "signature": true,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Office divin complet, chanté",
+     "note": "Le cycle entier des heures, en chœur.",
+     "signature": false,
+     "minutes": 30,
+     "supersedes": 0
+    },
+    {
+     "name": "Ministère apostolique (paroisse, prédication)",
+     "note": "Annoncer l'Évangile, la « cura animarum ».",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Lectio divina",
+     "note": "La lecture priante de l'Écriture.",
      "signature": false,
      "minutes": 20,
      "supersedes": -1
     },
     {
-     "name": "Lecture spirituelle augustinienne",
-     "note": "Un texte de saint Augustin — Confessions, Cité de Dieu, sermons — chaque semaine.",
-     "signature": false,
-     "minutes": 15,
-     "supersedes": -1
-    },
-    {
-     "name": "Recherche de la vérité intérieure",
-     "note": "« La vérité habite dans l'homme intérieur » — un temps de silence pour se tourner vers son propre cœur.",
-     "signature": true,
-     "minutes": 15,
-     "supersedes": -1
-    },
-    {
-     "name": "Service du bien commun",
-     "note": "Un geste concret mettant le bien de la communauté avant l'intérêt propre.",
+     "name": "Jeûne et abstinence",
+     "note": "L'ascèse canoniale.",
      "signature": false,
      "minutes": 0,
      "supersedes": -1
     },
     {
-     "name": "Méditation de l'extase d'Ostie",
-     "note": "Union mystique d'Augustin et de sa mère Monique, contemplée dans les Confessions, livre IX.",
+     "name": "Adoration prolongée devant le Saint-Sacrement",
+     "note": "Le face-à-face eucharistique mené plus loin.",
+     "signature": false,
+     "minutes": 40,
+     "supersedes": 1
+    },
+    {
+     "name": "Veille et louange solennelle des fêtes",
+     "note": "La liturgie des grandes solennités.",
      "signature": true,
-     "minutes": 10,
+     "minutes": 30,
      "supersedes": -1
     },
     {
-     "name": "Vœux de l'Ordre de Saint-Augustin",
-     "note": "Pauvreté, chasteté et obéissance, vécues dans l'unité fraternelle qui est le cœur de la Règle.",
+     "name": "Vœux (chasteté, pauvreté, obéissance selon la Règle de saint Augustin)",
+     "note": "La profession canoniale.",
      "signature": true,
      "minutes": 0,
      "supersedes": -1
@@ -2760,57 +3711,92 @@
    "devotions": [
     {
      "name": "Prière de Jésus",
-     "note": "L'invocation du Nom, répétée avec le souffle.",
-     "signature": true,
-     "minutes": 15,
-     "supersedes": -1
-    },
-    {
-     "name": "Homélie de saint Jean Chrysostome",
-     "note": "Courte lecture d'une homélie sur l'Écriture.",
+     "note": "« Seigneur Jésus-Christ, aie pitié de moi » — au chapelet, dans la ligne des Pères.",
      "signature": true,
      "minutes": 10,
      "supersedes": -1
     },
     {
-     "name": "Office des Complies",
-     "note": "Prière du soir selon l'usage antiochien.",
+     "name": "Office des Complies (Apodeipnon)",
+     "note": "La prière qui clôt le jour, avant le repos.",
      "signature": false,
+     "minutes": 10,
+     "supersedes": -1
+    },
+    {
+     "name": "Lecture de l'Évangile",
+     "note": "Un passage chaque jour.",
+     "signature": false,
+     "minutes": 10,
+     "supersedes": -1
+    },
+    {
+     "name": "Homélie de saint Jean Chrysostome",
+     "note": "« Bouche d'or » d'Antioche : sa prédication nourrit la prière.",
+     "signature": true,
      "minutes": 15,
      "supersedes": -1
     },
     {
      "name": "Jeûne du mercredi et du vendredi",
-     "note": "Selon le typikon de l'Église d'Antioche.",
+     "note": "Selon le calendrier orthodoxe.",
      "signature": false,
      "minutes": 0,
      "supersedes": -1
     },
     {
      "name": "Vénération de la Croix",
-     "note": "Un temps de recueillement devant la Croix.",
+     "note": "Au centre de la piété antiochienne.",
      "signature": false,
-     "minutes": 10,
+     "minutes": 5,
+     "supersedes": -1
+    },
+    {
+     "name": "Prière de Jésus prolongée",
+     "note": "L'invocation portée longuement, jusqu'au cœur.",
+     "signature": false,
+     "minutes": 20,
+     "supersedes": 0
+    },
+    {
+     "name": "Hymnes de saint Éphrem et de saint Romanos",
+     "note": "La théologie chantée de Syrie et d'Antioche.",
+     "signature": true,
+     "minutes": 15,
      "supersedes": -1
     },
     {
      "name": "Confession régulière",
-     "note": "Ouverture du cœur à un père spirituel.",
+     "note": "Auprès du père spirituel.",
      "signature": false,
      "minutes": 0,
      "supersedes": -1
     },
     {
-     "name": "Hymnes syriaques traduites",
-     "note": "Chant ou lecture d'un hymne de saint Éphrem.",
-     "signature": true,
-     "minutes": 15,
-     "supersedes": 1
+     "name": "Grand Carême antiochien",
+     "note": "Le jeûne majeur, avec la prière de saint Éphrem.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": 4
     },
     {
-     "name": "Vie de zèle missionnaire",
-     "note": "Un geste concret de témoignage ou de charité envers un non-croyant.",
+     "name": "Veillée des fêtes",
+     "note": "Vigile des grandes solennités.",
      "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Zèle missionnaire — annoncer le Christ",
+     "note": "De l'Église où l'on fut d'abord appelé « chrétiens » (Ac 11,26).",
+     "signature": true,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Vœux monastiques",
+     "note": "Selon la tradition d'Antioche.",
+     "signature": true,
      "minutes": 0,
      "supersedes": -1
     }
@@ -2830,59 +3816,94 @@
    ],
    "devotions": [
     {
-     "name": "Prière de Jésus",
-     "note": "Invocation répétée avec le komboskini.",
+     "name": "Règle du matin et du soir",
+     "note": "Le socle quotidien de la prière kiévienne.",
      "signature": true,
      "minutes": 15,
      "supersedes": -1
     },
     {
-     "name": "Acathiste à la Mère de Dieu",
-     "note": "Hymne debout en l'honneur de la Théotokos.",
+     "name": "Prière de Jésus",
+     "note": "L'invocation du Nom au chapelet.",
      "signature": true,
-     "minutes": 20,
+     "minutes": 10,
+     "supersedes": -1
+    },
+    {
+     "name": "Acathiste à la Mère de Dieu",
+     "note": "Hymne debout de louange, cher à la piété ukrainienne.",
+     "signature": true,
+     "minutes": 15,
      "supersedes": -1
     },
     {
      "name": "Lecture des Pères des Grottes de Kiev",
-     "note": "Vies et sentences des moines de la Laure.",
+     "note": "Le Paterik de la Laure des Grottes.",
      "signature": false,
      "minutes": 10,
      "supersedes": -1
     },
     {
      "name": "Jeûne du mercredi et du vendredi",
-     "note": "Selon le typikon ukrainien.",
+     "note": "Selon le calendrier orthodoxe.",
      "signature": false,
      "minutes": 0,
      "supersedes": -1
     },
     {
-     "name": "Panikhide pour les défunts",
-     "note": "Prière pour les âmes des défunts.",
-     "signature": false,
-     "minutes": 10,
-     "supersedes": -1
-    },
-    {
-     "name": "Vénération des reliques",
-     "note": "Un temps de recueillement devant une relique ou une icône vénérée.",
-     "signature": false,
-     "minutes": 10,
-     "supersedes": -1
-    },
-    {
      "name": "Chant liturgique kiévien",
-     "note": "Chant ou écoute méditative du chant znamenny/kiévien.",
+     "note": "L'ample chant propre à la tradition de Kiev.",
      "signature": true,
      "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Prière de Jésus prolongée",
+     "note": "L'invocation portée longuement.",
+     "signature": false,
+     "minutes": 20,
      "supersedes": 1
     },
     {
-     "name": "Pèlerinage intérieur aux Grottes",
-     "note": "Une méditation quotidienne sur la vie des saints de Kiev.",
+     "name": "Panikhide pour les défunts",
+     "note": "La prière pour ceux qui se sont endormis.",
      "signature": false,
-     "minutes": 15,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Vénération des reliques des Grottes",
+     "note": "Les saints incorrompus de la Laure.",
+     "signature": false,
+     "minutes": 5,
+     "supersedes": -1
+    },
+    {
+     "name": "Grand Carême",
+     "note": "Le jeûne majeur, avec métanies.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": 4
+    },
+    {
+     "name": "Veillée des fêtes",
+     "note": "Vigile des grandes solennités.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Pèlerinage intérieur aux Grottes — garde du cœur",
+     "note": "Descendre dans le cœur comme dans les grottes, à la rencontre de Dieu.",
+     "signature": true,
+     "minutes": 30,
+     "supersedes": 6
+    },
+    {
+     "name": "Vœux monastiques",
+     "note": "Dans la lignée de la Laure de Kiev.",
+     "signature": true,
+     "minutes": 0,
      "supersedes": -1
     }
    ]
@@ -2901,58 +3922,93 @@
    ],
    "devotions": [
     {
-     "name": "Prière de Jésus",
-     "note": "Invocation continuelle, assise, en silence.",
+     "name": "Office selon l'usage sinaïtique",
+     "note": "La prière des heures du monastère Sainte-Catherine.",
      "signature": true,
      "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Prière de Jésus",
+     "note": "L'invocation du Nom, garde du cœur au désert.",
+     "signature": true,
+     "minutes": 10,
      "supersedes": -1
     },
     {
      "name": "Lecture d'un degré de l'Échelle sainte",
-     "note": "Un degré de saint Jean Climaque, lu et retenu.",
+     "note": "Un échelon de l'« Échelle » de saint Jean Climaque, chaque jour.",
      "signature": true,
-     "minutes": 15,
-     "supersedes": -1
-    },
-    {
-     "name": "Veille nocturne",
-     "note": "Un temps de prière prolongé avant l'aube, à l'image des veilles du Sinaï.",
-     "signature": false,
      "minutes": 15,
      "supersedes": -1
     },
     {
      "name": "Jeûne du désert",
-     "note": "Grande sobriété alimentaire, à l'imitation des Pères du Sinaï.",
+     "note": "La sobriété radicale des Pères du Sinaï.",
      "signature": false,
      "minutes": 0,
      "supersedes": -1
     },
     {
      "name": "Vénération de l'icône du Buisson ardent",
-     "note": "Recueillement devant une icône de la Mère de Dieu Buisson ardent.",
+     "note": "Marie, buisson qui brûle sans se consumer.",
      "signature": false,
-     "minutes": 10,
+     "minutes": 5,
      "supersedes": -1
     },
     {
      "name": "Silence et solitude",
-     "note": "Un temps de solitude complète, hors de toute parole.",
+     "note": "Le climat même du Sinaï.",
      "signature": false,
      "minutes": 0,
      "supersedes": -1
     },
     {
-     "name": "Cycle complet des degrés de l'Échelle",
-     "note": "Reprise méditée de l'ensemble des trente degrés, un par semaine.",
-     "signature": true,
+     "name": "Prière de Jésus prolongée",
+     "note": "L'invocation portée longuement.",
+     "signature": false,
      "minutes": 20,
      "supersedes": 1
     },
     {
-     "name": "Hospitalité du désert",
-     "note": "Un geste concret d'accueil ou de partage, selon l'hospitalité du Sinaï.",
+     "name": "Cycle complet des degrés de l'Échelle",
+     "note": "Gravir toute l'Échelle sainte, de la rupture au monde à la charité.",
+     "signature": true,
+     "minutes": 20,
+     "supersedes": 2
+    },
+    {
+     "name": "Veille nocturne",
+     "note": "Veiller comme Moïse sur la montagne.",
      "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Grand Carême",
+     "note": "Le jeûne majeur du désert.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": 3
+    },
+    {
+     "name": "Hospitalité du désert",
+     "note": "Accueillir le pèlerin comme le Christ.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Garde du cœur — prière incessante (hésychia)",
+     "note": "Le repos du cœur en Dieu, sommet du Sinaï.",
+     "signature": true,
+     "minutes": 30,
+     "supersedes": 6
+    },
+    {
+     "name": "Vœux monastiques sinaïtiques",
+     "note": "La profession au pied de la montagne sainte.",
+     "signature": true,
      "minutes": 0,
      "supersedes": -1
     }
@@ -2973,56 +4029,91 @@
    "devotions": [
     {
      "name": "Petite Règle de saint Romuald",
-     "note": "« Assieds-toi dans ta cellule comme au paradis » : un temps quotidien de solitude priante.",
+     "note": "« Assieds-toi dans ta cellule comme au paradis. »",
      "signature": true,
+     "minutes": 10,
+     "supersedes": -1
+    },
+    {
+     "name": "Office cellulaire (Laudes et Vêpres)",
+     "note": "L'office prié seul, en cellule.",
+     "signature": true,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Lectio divina et psalmodie en cellule",
+     "note": "La rumination de l'Écriture, dans la solitude.",
+     "signature": false,
      "minutes": 20,
      "supersedes": -1
     },
     {
-     "name": "Lecture spirituelle en cellule",
-     "note": "Lecture silencieuse d'un texte monastique.",
-     "signature": false,
-     "minutes": 15,
-     "supersedes": -1
-    },
-    {
-     "name": "Office cellulaire",
-     "note": "Une Heure priée seul, en plus de l'office commun.",
-     "signature": false,
-     "minutes": 15,
-     "supersedes": -1
-    },
-    {
      "name": "Silence continu",
-     "note": "Grand silence gardé toute la journée.",
+     "note": "Le grand silence de l'ermitage.",
      "signature": false,
      "minutes": 0,
      "supersedes": -1
     },
     {
      "name": "Travail manuel solitaire",
-     "note": "Une tâche accomplie seul, en silence.",
+     "note": "Le labeur qui soutient la prière.",
      "signature": false,
      "minutes": 0,
      "supersedes": -1
     },
     {
+     "name": "Prière du cœur en cellule",
+     "note": "L'invocation qui habite le silence.",
+     "signature": true,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Office complet en cellule (toutes les heures)",
+     "note": "Le cycle entier prié dans la solitude.",
+     "signature": false,
+     "minutes": 30,
+     "supersedes": 1
+    },
+    {
      "name": "Jeûne bénédictin renforcé",
-     "note": "Sobriété alimentaire notable, selon la Règle.",
+     "note": "L'ascèse propre aux Camaldules.",
      "signature": false,
      "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Solitude prolongée (réclusion)",
+     "note": "Le retrait total, à l'image de Romuald.",
+     "signature": false,
+     "minutes": 20,
+     "supersedes": -1
+    },
+    {
+     "name": "Adoration silencieuse",
+     "note": "Demeurer sans paroles devant le Seigneur.",
+     "signature": false,
+     "minutes": 20,
      "supersedes": -1
     },
     {
      "name": "Veille nocturne érémitique",
-     "note": "Une vigile prolongée, seul, avant l'aube.",
+     "note": "Se lever dans la nuit, seul dans la cellule.",
      "signature": true,
-     "minutes": 20,
-     "supersedes": 2
+     "minutes": 30,
+     "supersedes": -1
+    },
+    {
+     "name": "Garde du cœur — prière incessante",
+     "note": "Le paradis de la cellule : le cœur uni à Dieu sans cesse.",
+     "signature": true,
+     "minutes": 35,
+     "supersedes": 5
     },
     {
      "name": "Vœux camaldules",
-     "note": "Stabilité, conversion des mœurs et obéissance, dans l'esprit érémitique romualdien.",
+     "note": "La profession bénédictine-érémitique.",
      "signature": true,
      "minutes": 0,
      "supersedes": -1
@@ -3044,59 +4135,94 @@
    "devotions": [
     {
      "name": "Oraison mentale",
-     "note": "Un temps de prière silencieuse et affective devant Dieu, cher à saint Philippe.",
+     "note": "Le cœur à cœur silencieux, cher à saint Philippe Néri.",
      "signature": true,
      "minutes": 20,
      "supersedes": -1
     },
     {
      "name": "Visite au Saint-Sacrement",
-     "note": "Une brève visite d'adoration au cours de la journée.",
+     "note": "Un temps devant Jésus présent, chaque jour.",
      "signature": true,
-     "minutes": 10,
+     "minutes": 15,
      "supersedes": -1
     },
     {
-     "name": "Examen de conscience du soir",
-     "note": "Relecture priante de la journée.",
-     "signature": false,
-     "minutes": 10,
-     "supersedes": -1
-    },
-    {
-     "name": "Lecture spirituelle joyeuse",
-     "note": "Lecture d'un texte spirituel dans un esprit de simplicité et de joie.",
-     "signature": false,
-     "minutes": 10,
-     "supersedes": -1
-    },
-    {
-     "name": "Direction spirituelle régulière",
-     "note": "Ouverture du cœur à un père spirituel.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Charité fraternelle concrète",
-     "note": "Un geste de charité simple envers un proche.",
-     "signature": false,
-     "minutes": 0,
-     "supersedes": -1
-    },
-    {
-     "name": "Office divin en commun",
-     "note": "Participation à la prière communautaire de l'Oratoire.",
+     "name": "Liturgie des Heures en commun",
+     "note": "La prière de l'Église, priée ensemble.",
      "signature": false,
      "minutes": 15,
      "supersedes": -1
     },
     {
-     "name": "Esprit d'enfance spirituelle",
-     "note": "Cultiver, comme saint Philippe, l'humilité et la joie simple devant Dieu.",
+     "name": "Lecture spirituelle joyeuse",
+     "note": "Nourrir la foi dans la joie, sans lourdeur.",
+     "signature": false,
+     "minutes": 10,
+     "supersedes": -1
+    },
+    {
+     "name": "Examen de conscience du soir",
+     "note": "Relire sa journée devant Dieu.",
+     "signature": false,
+     "minutes": 5,
+     "supersedes": -1
+    },
+    {
+     "name": "Direction spirituelle régulière",
+     "note": "Se laisser accompagner, comme Néri accompagnait Rome.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Prière à l'Esprit Saint",
+     "note": "Le cœur dilaté de Philippe Néri, embrasé à la Pentecôte.",
+     "signature": true,
+     "minutes": 10,
+     "supersedes": -1
+    },
+    {
+     "name": "Oraison prolongée devant le Saint-Sacrement",
+     "note": "Le face-à-face mené plus loin.",
+     "signature": false,
+     "minutes": 30,
+     "supersedes": 1
+    },
+    {
+     "name": "Chapelet et dévotion mariale",
+     "note": "La tendre piété mariale de l'Oratoire.",
+     "signature": false,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Charité fraternelle concrète",
+     "note": "Servir dans la simplicité et la gaieté.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Jeûne et pénitence discrètes",
+     "note": "L'ascèse cachée sous la joie.",
+     "signature": false,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Esprit d'enfance et joie spirituelles",
+     "note": "« Restez joyeux » : la sainteté selon Néri.",
      "signature": true,
      "minutes": 0,
-     "supersedes": 3
+     "supersedes": -1
+    },
+    {
+     "name": "Lien de charité (la vie oratorienne, sans vœux)",
+     "note": "Non des vœux, mais l'amour qui retient : le propre de l'Oratoire.",
+     "signature": true,
+     "minutes": 0,
+     "supersedes": -1
     }
    ]
   },
@@ -3115,59 +4241,94 @@
    "devotions": [
     {
      "name": "Adoration eucharistique silencieuse",
-     "note": "Une heure d'adoration, à l'exemple de Charles de Foucauld.",
+     "note": "Demeurer devant Jésus, comme à Nazareth et au Sahara.",
      "signature": true,
-     "minutes": 30,
+     "minutes": 20,
      "supersedes": -1
     },
     {
-     "name": "Prière d'abandon",
-     "note": "« Mon Père, je m'abandonne à toi... » récitée avec le cœur.",
+     "name": "Prière d'abandon (de Charles de Foucauld)",
+     "note": "« Mon Père, je m'abandonne à Toi, fais de moi ce qu'il Te plaira. »",
      "signature": true,
-     "minutes": 5,
+     "minutes": 10,
+     "supersedes": -1
+    },
+    {
+     "name": "Office simple du jour (Laudes et Vêpres)",
+     "note": "La prière de l'Église, dans la sobriété.",
+     "signature": false,
+     "minutes": 15,
+     "supersedes": -1
+    },
+    {
+     "name": "Lecture de l'Évangile selon Nazareth",
+     "note": "Contempler la vie cachée de Jésus, ouvrier à Nazareth.",
+     "signature": false,
+     "minutes": 10,
      "supersedes": -1
     },
     {
      "name": "Travail manuel humble",
-     "note": "Un travail simple, partagé avec les plus pauvres.",
+     "note": "Gagner son pain parmi les pauvres.",
      "signature": false,
      "minutes": 0,
      "supersedes": -1
     },
     {
      "name": "Vie fraternelle de proximité",
-     "note": "Un temps de présence gratuite auprès d'un pauvre ou d'un isolé.",
+     "note": "Partager la condition des plus petits, sans les convertir de force.",
+     "signature": true,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "Adoration prolongée / nocturne",
+     "note": "Veiller devant le Saint-Sacrement.",
+     "signature": false,
+     "minutes": 40,
+     "supersedes": 0
+    },
+    {
+     "name": "Silence et désert intérieur",
+     "note": "Le désert où Dieu parle au cœur.",
      "signature": false,
      "minutes": 0,
      "supersedes": -1
     },
     {
-     "name": "Lecture de l'Évangile selon Nazareth",
-     "note": "Méditation de la vie cachée de Jésus à Nazareth.",
-     "signature": false,
-     "minutes": 10,
-     "supersedes": -1
-    },
-    {
-     "name": "Silence et désert intérieur",
-     "note": "Un temps de solitude et de silence, à l'image du désert saharien.",
+     "name": "Chapelet",
+     "note": "La prière de Marie, à Nazareth avec elle.",
      "signature": false,
      "minutes": 15,
      "supersedes": -1
     },
     {
-     "name": "Office simple du jour",
-     "note": "Prière des Heures dans sa forme la plus dépouillée.",
+     "name": "Jeûne et pauvreté partagée",
+     "note": "Être pauvre avec les pauvres.",
      "signature": false,
-     "minutes": 15,
+     "minutes": 0,
+     "supersedes": -1
+    },
+    {
+     "name": "« Frère universel » — amitié gratuite",
+     "note": "Se faire proche de tous, y compris des non-chrétiens, comme Foucauld chez les Touaregs.",
+     "signature": true,
+     "minutes": 0,
      "supersedes": -1
     },
     {
      "name": "Esprit de Nazareth permanent",
-     "note": "Vivre, en tout, la présence cachée et humble de Jésus artisan.",
+     "note": "La présence cachée et aimante, sans prêcher, en aimant.",
+     "signature": true,
+     "minutes": 30,
+     "supersedes": 5
+    },
+    {
+     "name": "Consécration à Jésus dans la vie cachée",
+     "note": "Se donner tout entier, dans l'obscurité de Nazareth.",
      "signature": true,
      "minutes": 0,
-     "supersedes": 0
+     "supersedes": -1
     }
    ]
   }
