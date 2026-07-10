@@ -124,6 +124,9 @@ object FastingCalendar {
         return FastPeriod(firstAdventSunday, DateYMD(year, 12, 24))
     }
 
+    /** Carême de saint Michel : 40 jours, du 15 août (Assomption) au 29 septembre (fête des Archanges). */
+    fun michaelLent(year: Int): FastPeriod = FastPeriod(DateYMD(year, 8, 15), DateYMD(year, 9, 29))
+
     /** Vendredis de l'année (abstinence, Code de droit canonique can. 1251) — vérification
      *  simple du jour de semaine, sans tenir compte des solennités qui en dispensent. */
     fun isFridayAbstinence(y: DateYMD): Boolean {

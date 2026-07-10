@@ -26,6 +26,7 @@ object Routes {
     const val FASTING = "fasting"
     const val EXERCISES = "exercises"
     const val READING = "reading"
+    const val PENANCE = "penance"
     fun hour(id: String) = "office/$id"
     fun combatSin(id: String) = "combat/$id"
     fun combatLevel(id: String, level: Int) = "combat/$id/$level"
@@ -47,7 +48,8 @@ fun AppNavGraph(repo: ContentRepository, store: GameStore) {
                 onNovena = { nav.navigate(Routes.NOVENA) },
                 onFasting = { nav.navigate(Routes.FASTING) },
                 onExercises = { nav.navigate(Routes.EXERCISES) },
-                onReading = { nav.navigate(Routes.READING) }
+                onReading = { nav.navigate(Routes.READING) },
+                onPenance = { nav.navigate(Routes.PENANCE) }
             )
         }
         composable(Routes.OFFICE) {
@@ -111,6 +113,9 @@ fun AppNavGraph(repo: ContentRepository, store: GameStore) {
         }
         composable(Routes.READING) {
             ReadingGameScreen(repo, store, onBack = { nav.popBackStack() })
+        }
+        composable(Routes.PENANCE) {
+            PenanceScreen(store, onBack = { nav.popBackStack() })
         }
     }
 }

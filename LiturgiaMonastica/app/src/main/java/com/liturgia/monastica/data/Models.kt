@@ -133,8 +133,11 @@ enum class RuleDifficulty(
     val label: String, val startCount: Int, val paceLevels: Int,
     val timeMultiplier: Double, val capFraction: Double
 ) {
-    DEBUTANT("Débutant", startCount = 1, paceLevels = 8, timeMultiplier = 0.6, capFraction = 0.6),
-    NORMAL("Normal", startCount = 2, paceLevels = 4, timeMultiplier = 1.0, capFraction = 0.85),
+    // Toutes les difficultés atteignent 100 % de la Règle (capFraction = 1.0) : même but,
+    // la pleine mesure du charisme. Elles ne diffèrent que par le rythme (paceLevels : une
+    // nouvelle dévotion toutes les N semaines) et l'intensité de chaque prière (timeMultiplier).
+    DEBUTANT("Débutant", startCount = 1, paceLevels = 8, timeMultiplier = 0.6, capFraction = 1.0),
+    NORMAL("Normal", startCount = 2, paceLevels = 4, timeMultiplier = 1.0, capFraction = 1.0),
     DIFFICILE("Difficile", startCount = 3, paceLevels = 2, timeMultiplier = 1.6, capFraction = 1.0);
 
     companion object {
@@ -159,6 +162,35 @@ data class RuleProgress(
     val lastDay: Long = -1L,
     val lastRenewalYear: Int = 0,
     val history: List<RuleHistoryEntry> = emptyList()
+)
+
+/** Progression du jeûne choisi : un calendrier de jeûne sélectionné, un niveau qui monte
+ *  à chaque jour maigre accompli (« Oui, j'ai jeûné aujourd'hui »). */
+data class FastProgress(
+    val started: Boolean = false,
+    val fastId: String = "",
+    val level: Int = 0,
+    val lastDayKey: String = ""   // "année-mois-jour" du dernier jour maigre confirmé
+)
+
+/** Une œuvre de pénitence : niveau qui monte à chaque acte accompli (une fois par jour). */
+data class PenanceState(
+    val level: Int = 0,
+    val lastDayKey: String = ""
+)
+
+/** Un « temps de pénitence » : une durée choisie (jours / semaines) à parcourir jour après jour. */
+data class PenancePeriod(
+    val started: Boolean = false,
+    val targetDays: Int = 0,
+    val daysDone: Int = 0,
+    val lastDay: Long = -1L   // epochDay du dernier jour confirmé
+)
+
+/** Un temps de pénitence mené à terme, conservé au petit répertoire. */
+data class PenancePeriodDone(
+    val targetDays: Int,
+    val endEpochDay: Long
 )
 
 // =============================================================================

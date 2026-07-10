@@ -116,7 +116,6 @@ private fun ReadingHub(store: GameStore, modifier: Modifier, italian: Boolean, o
 private fun ReadingCategoryList(repo: ContentRepository, store: GameStore, category: String, modifier: Modifier, italian: Boolean) {
     var sessionFor by remember { mutableStateOf<Pair<String, String>?>(null) } // id, label
     var showAdd by remember { mutableStateOf(false) }
-    val bibleBooks = remember(category) { if (category == ReadingCategory.BIBLE) repo.bibleReadingBooks() else emptyList() }
 
     Column(modifier.fillMaxSize()) {
         Text(
@@ -135,8 +134,9 @@ private fun ReadingCategoryList(repo: ContentRepository, store: GameStore, categ
 
         LazyColumn(Modifier.fillMaxSize().padding(horizontal = 16.dp, vertical = 8.dp)) {
             if (category == ReadingCategory.BIBLE) {
-                val at = bibleBooks.filter { it.testament == "AT" }
-                val nt = bibleBooks.filter { it.testament == "NT" }
+                val books = remember { repo.bibleReadingBooks() }
+                val at = books.filter { it.testament == "AT" }
+                val nt = books.filter { it.testament == "NT" }
                 item { SectionLabel(if (italian) "Antico Testamento" else "Ancien Testament") }
                 items(at) { b ->
                     val xp = store.bibleBookXp(b.id)

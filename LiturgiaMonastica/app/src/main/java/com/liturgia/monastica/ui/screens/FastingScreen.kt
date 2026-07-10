@@ -10,7 +10,6 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
@@ -35,6 +34,7 @@ private fun activeInfo(entry: FastEntry, today: DateYMD, italian: Boolean): Pair
         "advent_catholic" -> FastingCalendar.adventCatholic(year).let { it.contains(today) to rangeLabel(it, italian) }
         "friday_weekly" -> (FastingCalendar.isFridayAbstinence(today) to (if (italian) "ogni venerdì" else "chaque vendredi"))
         "wedfri_weekly" -> (FastingCalendar.isWedFriFast(today) to (if (italian) "ogni mercoledì e venerdì" else "chaque mercredi et vendredi"))
+        "michael_lent" -> FastingCalendar.michaelLent(year).let { it.contains(today) to rangeLabel(it, italian) }
         else -> null
     }
 }
@@ -42,10 +42,20 @@ private fun activeInfo(entry: FastEntry, today: DateYMD, italian: Boolean): Pair
 private fun rangeLabel(p: FastingCalendar.FastPeriod, italian: Boolean): String =
     "${FastingCalendar.formatDate(p.start, italian)} – ${FastingCalendar.formatDate(p.end, italian)}"
 
+private fun fastMilestone(level: Int, italian: Boolean): String = when {
+    level <= 0 -> if (italian) "Inizio" else "Commencement"
+    level < 10 -> if (italian) "Primi passi" else "Premiers pas"
+    level < 40 -> if (italian) "Fedeltà" else "Fidélité"
+    level < 100 -> if (italian) "Una quarantena compiuta" else "Une quarantaine accomplie"
+    level < 365 -> if (italian) "Cento giorni di magro" else "Cent jours maigres"
+    else -> if (italian) "Un anno di digiuno" else "Une année de jeûne"
+}
+
 @Composable
 fun FastingScreen(repo: ContentRepository, store: GameStore, onBack: () -> Unit) {
     val it = store.lang == "it"
     val today = remember { FastingCalendar.todayYmd() }
+    val todayKey = "${today.year}-${today.month}-${today.day}"
     var family by remember { mutableStateOf("orthodoxe") }
     val entries = remember(family) { repo.fastEntriesByFamily(family) }
 
@@ -86,14 +96,14 @@ fun FastingScreen(repo: ContentRepository, store: GameStore, onBack: () -> Unit)
                     style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.tertiary,
                     modifier = Modifier.padding(top = 6.dp, bottom = 4.dp)
                 )
-                entries.filter { e -> e.scope.contains("universelle") }.forEach { e -> FastCard(e, today, it) }
+                entries.filter { e -> e.scope.contains("universelle") }.forEach { e -> FastCard(e, today, todayKey, store, it) }
 
                 Text(
                     if (it) "Tradizioni e ordini" else "Traditions et ordres",
                     style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.tertiary,
                     modifier = Modifier.padding(top = 14.dp, bottom = 4.dp)
                 )
-                entries.filterNot { e -> e.scope.contains("universelle") }.forEach { e -> FastCard(e, today, it) }
+                entries.filterNot { e -> e.scope.contains("universelle") }.forEach { e -> FastCard(e, today, todayKey, store, it) }
                 Spacer(Modifier.height(24.dp))
             }
         }
@@ -101,7 +111,7 @@ fun FastingScreen(repo: ContentRepository, store: GameStore, onBack: () -> Unit)
 }
 
 @Composable
-private fun FastCard(entry: FastEntry, today: DateYMD, italian: Boolean) {
+private fun FastCard(entry: FastEntry, today: DateYMD, todayKey: String, store: GameStore, italian: Boolean) {
     val info = activeInfo(entry, today, italian)
     val active = info?.first == true
     Card(
@@ -133,6 +143,48 @@ private fun FastCard(entry: FastEntry, today: DateYMD, italian: Boolean) {
             if (entry.note.isNotBlank()) {
                 Spacer(Modifier.height(4.dp))
                 Text(entry.note, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            }
+
+            val prog = store.fastProgress
+            val isChosen = prog.started && prog.fastId == entry.id
+            Spacer(Modifier.height(10.dp))
+            if (isChosen) {
+                val isFastDay = active || entry.computed == null
+                val doneToday = prog.lastDayKey == todayKey
+                Text(
+                    (if (italian) "Il mio digiuno · livello " else "Mon jeûne · niveau ") + "${prog.level}",
+                    style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.tertiary,
+                    fontWeight = FontWeight.Medium
+                )
+                Text(
+                    if (italian) "${prog.level} giorni di magro compiuti" else "${prog.level} jours maigres accomplis",
+                    style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+                Text(
+                    "— " + fastMilestone(prog.level, italian),
+                    style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.tertiary
+                )
+                Spacer(Modifier.height(8.dp))
+                when {
+                    doneToday -> Text(
+                        if (italian) "✓ Fatto oggi" else "✓ Fait aujourd'hui",
+                        style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.tertiary
+                    )
+                    isFastDay -> Button(onClick = { store.fastConfirm(todayKey) }, modifier = Modifier.fillMaxWidth()) {
+                        Text(if (italian) "Sì, ho digiunato oggi" else "Oui, j'ai jeûné aujourd'hui")
+                    }
+                    else -> Text(
+                        if (italian) "Oggi non è giorno di magro — riposo" else "Aujourd'hui n'est pas un jour maigre — repos",
+                        style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                }
+                TextButton(onClick = { store.fastReset() }, contentPadding = PaddingValues(0.dp)) {
+                    Text(if (italian) "Cambia digiuno" else "Changer de jeûne", style = MaterialTheme.typography.labelSmall)
+                }
+            } else {
+                OutlinedButton(onClick = { store.fastStart(entry.id) }, modifier = Modifier.fillMaxWidth()) {
+                    Text(if (italian) "Scegli questo digiuno" else "Choisir ce jeûne")
+                }
             }
         }
     }

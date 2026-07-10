@@ -1,5 +1,5 @@
 <resources>
-    <style name="Theme.LiturgiaMonastica" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="Theme.LiturgiaMonastica" parent="android:Theme.Material.Light.NoActionBar">
         <item name="android:statusBarColor">#1E1B16</item>
         <item name="android:windowBackground">#F3ECD8</item>
     </style>

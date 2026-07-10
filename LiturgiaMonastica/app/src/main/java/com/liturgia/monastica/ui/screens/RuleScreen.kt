@@ -6,6 +6,7 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
@@ -16,6 +17,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import com.liturgia.monastica.R
 import com.liturgia.monastica.data.*
@@ -51,11 +53,10 @@ private fun stageFor(level: Int, tradition: RuleTradition, diff: RuleDifficulty,
         level < fullLevel ->
             Stage(if (italian) "Noviziato" else "Noviciat", if (italian) "La règle s'apprend, dévotion après dévotion" else "La règle s'apprend, dévotion après dévotion")
         level == fullLevel -> {
-            val pct = (diff.capFraction * 100).toInt()
-            val sub = if (diff == RuleDifficulty.DIFFICILE)
-                (if (italian) "La regola intera dell'ordine, senza riduzione." else "La règle intégrale de l'ordre, sans réduction.")
+            val sub = if (italian)
+                "La regola intera dell'ordine, senza riduzione: sei pienamente nel carisma."
             else
-                (if (italian) "Una versione adattata al tuo stato di vita ($pct% della regola integrale)." else "Une version adaptée à ton état de vie ($pct % de la règle intégrale).")
+                "La règle intégrale de l'ordre, sans réduction : tu es pleinement dans le charisme."
             Stage(if (italian) "Professione" else "Profession", sub)
         }
         else -> {
@@ -77,7 +78,8 @@ private fun stageFor(level: Int, tradition: RuleTradition, diff: RuleDifficulty,
     }
 }
 
-/** Nombre de dévotions accessibles au maximum pour cette difficulté : Difficile seul atteint 100% de la Règle. */
+/** Nombre de dévotions accessibles au maximum : toutes les difficultés atteignent 100 % de la Règle,
+ *  seul le rythme pour y parvenir diffère (paceLevels). */
 private fun maxDevotionsFor(tradition: RuleTradition, diff: RuleDifficulty): Int {
     val cap = kotlin.math.ceil(tradition.devotions.size * diff.capFraction).toInt()
     return cap.coerceIn(diff.startCount, tradition.devotions.size)
@@ -121,6 +123,12 @@ private fun RuleSetup(repo: ContentRepository, store: GameStore, modifier: Modif
     var family by remember { mutableStateOf<String?>(null) }
     var selected by remember { mutableStateOf<RuleTradition?>(null) }
     var difficulty by remember { mutableStateOf<RuleDifficulty?>(null) }
+    var building by remember { mutableStateOf(false) }
+
+    if (building) {
+        RuleBuilder(store = store, modifier = modifier, italian = italian, onCancel = { building = false })
+        return
+    }
 
     Column(
         modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(18.dp),
@@ -151,6 +159,13 @@ private fun RuleSetup(repo: ContentRepository, store: GameStore, modifier: Modif
             modifier = Modifier.padding(top = 6.dp)
         ) {
             Text("🎲 " + (if (italian) "Scegli a caso la mia regola" else "Choisir ma règle au hasard"))
+        }
+
+        OutlinedButton(
+            onClick = { building = true },
+            modifier = Modifier.padding(top = 4.dp)
+        ) {
+            Text("✍️ " + (if (italian) "Scrivi la tua regola" else "Écris ta propre règle"))
         }
 
         Text(
@@ -235,10 +250,14 @@ private fun RuleSetup(repo: ContentRepository, store: GameStore, modifier: Modif
                         Column {
                             Text(d.label, style = MaterialTheme.typography.titleSmall, color = MaterialTheme.colorScheme.onSurface)
                             Text(
-                                if (d == RuleDifficulty.DIFFICILE)
-                                    (if (italian) "Regola integrale (100%)" else "Règle intégrale (100 %)")
-                                else
-                                    (if (italian) "Regola adattata (${(d.capFraction*100).toInt()}%)" else "Règle adaptée (${(d.capFraction*100).toInt()} %)"),
+                                when (d) {
+                                    RuleDifficulty.DEBUTANT ->
+                                        if (italian) "Regola integrale · cammino lento" else "Règle intégrale · chemin lent"
+                                    RuleDifficulty.NORMAL ->
+                                        if (italian) "Regola integrale · cammino ordinario" else "Règle intégrale · chemin ordinaire"
+                                    RuleDifficulty.DIFFICILE ->
+                                        if (italian) "Regola integrale · cammino esigente" else "Règle intégrale · chemin exigeant"
+                                },
                                 style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.tertiary
                             )
                         }
@@ -276,7 +295,9 @@ private fun RuleSetup(repo: ContentRepository, store: GameStore, modifier: Modif
 @Composable
 private fun RuleRunning(repo: ContentRepository, store: GameStore, modifier: Modifier, italian: Boolean) {
     val p = store.ruleProgress
-    val tradition = remember(p.traditionId) { repo.ruleTradition(p.traditionId) }
+    val tradition = remember(p.traditionId, store.customRule) {
+        if (p.traditionId == store.customRuleId) store.customRule else repo.ruleTradition(p.traditionId)
+    }
     var showReset by remember { mutableStateOf(false) }
 
     if (tradition == null) {
@@ -560,5 +581,176 @@ private fun RuleDevotionLine(dev: RuleDevotion, highlighted: Boolean, italian: B
             Spacer(Modifier.height(2.dp))
             Text(dev.note, style = MaterialTheme.typography.bodySmall, color = Color(0xFFE9D9A8))
         }
+    }
+}
+
+/* ============================================================================
+   ÉCRIRE SA PROPRE RÈGLE — à la manière de l'ermite diocésain (canon 603)
+   ============================================================================ */
+private class DevDraft(
+    name: String = "",
+    minutes: String = "",
+    signature: Boolean = false
+) {
+    var name by mutableStateOf(name)
+    var minutes by mutableStateOf(minutes)
+    var signature by mutableStateOf(signature)
+}
+
+private fun customAccentFor(family: String): String = when (family) {
+    "orthodoxe" -> "#1f4e79"
+    "charismatique" -> "#c0562e"
+    else -> "#6b5230"
+}
+
+@Composable
+private fun RuleBuilder(store: GameStore, modifier: Modifier, italian: Boolean, onCancel: () -> Unit) {
+    var name by remember { mutableStateOf("") }
+    var family by remember { mutableStateOf("catholique") }
+    var difficulty by remember { mutableStateOf<RuleDifficulty?>(null) }
+    val drafts = remember { mutableStateListOf(DevDraft(), DevDraft(), DevDraft()) }
+
+    Column(modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(18.dp)) {
+        Text(
+            if (italian) "Scrivi la tua regola" else "Écris ta propre règle",
+            style = MaterialTheme.typography.titleLarge, color = MaterialTheme.colorScheme.onBackground
+        )
+        Text(
+            if (italian)
+                "Come l'eremita diocesano, componi la tua regola di vita. Crescerà anch'essa poco a poco, fino alla piena osservanza."
+            else
+                "Comme l'ermite diocésain, compose ta propre règle de vie. Elle grandira elle aussi peu à peu, jusqu'à la pleine observance.",
+            style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant,
+            modifier = Modifier.padding(vertical = 8.dp)
+        )
+
+        OutlinedTextField(
+            value = name, onValueChange = { name = it },
+            label = { Text(if (italian) "Nome della regola" else "Nom de la règle") },
+            singleLine = true, modifier = Modifier.fillMaxWidth()
+        )
+
+        Text(
+            (if (italian) "Famiglia" else "Famille").uppercase(),
+            style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.tertiary,
+            modifier = Modifier.fillMaxWidth().padding(top = 14.dp, bottom = 4.dp)
+        )
+        Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+            listOf("orthodoxe", "catholique", "charismatique").forEach { f ->
+                val sel = family == f
+                OutlinedButton(
+                    onClick = { family = f },
+                    colors = ButtonDefaults.outlinedButtonColors(
+                        containerColor = if (sel) MaterialTheme.colorScheme.secondary.copy(alpha = 0.3f) else Color.Transparent
+                    ),
+                    contentPadding = PaddingValues(horizontal = 8.dp, vertical = 4.dp),
+                    modifier = Modifier.weight(1f)
+                ) { Text(familyLabel(f, italian), style = MaterialTheme.typography.labelSmall) }
+            }
+        }
+
+        Text(
+            (if (italian) "Devozioni (almeno 3)" else "Dévotions (au moins 3)").uppercase(),
+            style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.tertiary,
+            modifier = Modifier.fillMaxWidth().padding(top = 16.dp, bottom = 4.dp)
+        )
+        Text(
+            if (italian)
+                "Si sbloccheranno una dopo l'altra, nell'ordine. Segna con ★ le devozioni irrinunciabili; i minuti sono la durata suggerita (0 = senza durata)."
+            else
+                "Elles se débloqueront l'une après l'autre, dans l'ordre. Marque d'un ★ les dévotions essentielles ; les minutes sont la durée suggérée (0 = sans durée).",
+            style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant,
+            modifier = Modifier.padding(bottom = 8.dp)
+        )
+
+        drafts.forEachIndexed { i, dr ->
+            Card(
+                Modifier.fillMaxWidth().padding(vertical = 3.dp),
+                shape = RoundedCornerShape(8.dp),
+                colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface)
+            ) {
+                Column(Modifier.padding(10.dp)) {
+                    OutlinedTextField(
+                        value = dr.name, onValueChange = { dr.name = it },
+                        label = { Text((if (italian) "Devozione " else "Dévotion ") + "${i + 1}") },
+                        singleLine = true, modifier = Modifier.fillMaxWidth()
+                    )
+                    Row(
+                        Modifier.fillMaxWidth().padding(top = 6.dp),
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        OutlinedTextField(
+                            value = dr.minutes,
+                            onValueChange = { v -> dr.minutes = v.filter { c -> c.isDigit() }.take(3) },
+                            label = { Text("min") },
+                            singleLine = true,
+                            keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
+                            modifier = Modifier.width(90.dp)
+                        )
+                        Spacer(Modifier.width(10.dp))
+                        Checkbox(checked = dr.signature, onCheckedChange = { dr.signature = it })
+                        Text("★", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.tertiary)
+                        Spacer(Modifier.weight(1f))
+                        if (drafts.size > 3) {
+                            TextButton(onClick = { drafts.removeAt(i) }) {
+                                Text(if (italian) "Togli" else "Retirer")
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        OutlinedButton(onClick = { drafts.add(DevDraft()) }, modifier = Modifier.padding(top = 6.dp)) {
+            Text("＋ " + (if (italian) "Aggiungi una devozione" else "Ajouter une dévotion"))
+        }
+
+        Text(
+            (if (italian) "Ritmo" else "Rythme").uppercase(),
+            style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.tertiary,
+            modifier = Modifier.fillMaxWidth().padding(top = 16.dp, bottom = 4.dp)
+        )
+        Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+            RuleDifficulty.entries.forEach { d ->
+                val sel = difficulty == d
+                OutlinedButton(
+                    onClick = { difficulty = d },
+                    colors = ButtonDefaults.outlinedButtonColors(
+                        containerColor = if (sel) MaterialTheme.colorScheme.secondary.copy(alpha = 0.3f) else Color.Transparent
+                    ),
+                    contentPadding = PaddingValues(horizontal = 8.dp, vertical = 4.dp),
+                    modifier = Modifier.weight(1f)
+                ) { Text(d.label, style = MaterialTheme.typography.labelSmall) }
+            }
+        }
+
+        val filled = drafts.count { it.name.isNotBlank() }
+        val valid = name.isNotBlank() && difficulty != null && filled >= 3
+
+        Spacer(Modifier.height(18.dp))
+        Button(
+            onClick = {
+                val devs = drafts.filter { it.name.isNotBlank() }.map {
+                    RuleDevotion(
+                        name = it.name.trim(), note = "", signature = it.signature,
+                        minutes = it.minutes.toIntOrNull()?.coerceIn(0, 240) ?: 0, supersedes = -1
+                    )
+                }
+                val rule = RuleTradition(
+                    id = store.customRuleId, family = family, name = name.trim(),
+                    subtitle = if (italian) "« La mia regola di vita »" else "« Ma règle de vie »",
+                    patron = "", accent = customAccentFor(family),
+                    desc = if (italian) "Una regola di vita che hai scritto tu." else "Une règle de vie que tu as écrite toi-même.",
+                    dailyCore = devs.take(3).map { it.name }, devotions = devs
+                )
+                store.ruleStartCustom(rule, difficulty!!)
+            },
+            enabled = valid, modifier = Modifier.fillMaxWidth()
+        ) { Text(if (italian) "Comincia questa regola" else "Commencer cette règle") }
+
+        TextButton(onClick = onCancel, modifier = Modifier.fillMaxWidth().padding(top = 4.dp)) {
+            Text(if (italian) "Annulla" else "Annuler")
+        }
+        Spacer(Modifier.height(24.dp))
     }
 }

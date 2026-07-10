@@ -18,6 +18,7 @@ import androidx.compose.material.icons.filled.SelfImprovement
 import androidx.compose.material.icons.filled.Shield
 import androidx.compose.material.icons.filled.Stairs
 import androidx.compose.material.icons.filled.WbTwilight
+import androidx.compose.material.icons.filled.VolunteerActivism
 import androidx.compose.material.icons.outlined.Brightness3
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
@@ -46,11 +47,12 @@ fun HomeScreen(
     onNovena: () -> Unit,
     onFasting: () -> Unit,
     onExercises: () -> Unit,
-    onReading: () -> Unit
+    onReading: () -> Unit,
+    onPenance: () -> Unit
 ) {
     val it = store.lang == "it"
     AppScaffold(
-        title = "Liturgia Monastica",
+        title = "Liturgia Monastica 2.0",
         night = store.night,
         onToggleNight = { store.toggleNight() }
     ) { pad ->
@@ -139,6 +141,11 @@ fun HomeScreen(
                 subtitle = if (it) "Bibbia, teologia, mistica, Padri — livelli infiniti" else "Bible, théologie, mystique, Pères — niveaux infinis",
                 icon = Icons.Filled.Stairs, onClick = onReading
             )
+            Tile(
+                title = if (it) "Penitenza" else "Pénitence",
+                subtitle = if (it) "Opere di penitenza, livelli infiniti" else "Œuvres de pénitence, niveaux infinis",
+                icon = Icons.Filled.VolunteerActivism, onClick = onPenance
+            )
         }
     }
 }
@@ -158,7 +165,7 @@ private fun LanguageToggle(store: GameStore) {
                 modifier = Modifier
                     .clip(RoundedCornerShape(16.dp))
                     .background(if (selected) MaterialTheme.colorScheme.primary else androidx.compose.ui.graphics.Color.Transparent)
-                    .clickable { store.applyLang(code) }
+                    .clickable { store.setLang(code) }
                     .padding(horizontal = 18.dp, vertical = 8.dp),
                 color = if (selected) MaterialTheme.colorScheme.onPrimary else MaterialTheme.colorScheme.onSurface,
                 style = MaterialTheme.typography.labelLarge
