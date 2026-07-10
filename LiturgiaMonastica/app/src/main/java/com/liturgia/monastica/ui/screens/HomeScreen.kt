@@ -165,7 +165,7 @@ private fun LanguageToggle(store: GameStore) {
                 modifier = Modifier
                     .clip(RoundedCornerShape(16.dp))
                     .background(if (selected) MaterialTheme.colorScheme.primary else androidx.compose.ui.graphics.Color.Transparent)
-                    .clickable { store.setLang(code) }
+                    .clickable { store.updateLang(code) }
                     .padding(horizontal = 18.dp, vertical = 8.dp),
                 color = if (selected) MaterialTheme.colorScheme.onPrimary else MaterialTheme.colorScheme.onSurface,
                 style = MaterialTheme.typography.labelLarge

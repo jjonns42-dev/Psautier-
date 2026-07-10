@@ -30,7 +30,7 @@ class GameStore(context: Context) {
     var night by mutableStateOf(sp.getBoolean("night", false))
         private set
 
-    fun setLang(v: String) { lang = v; sp.edit().putString("lang", v).apply() }
+    fun updateLang(v: String) { lang = v; sp.edit().putString("lang", v).apply() }
     fun toggleNight() { night = !night; sp.edit().putBoolean("night", night).apply() }
 
     // =========================================================================
