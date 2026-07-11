@@ -24,9 +24,10 @@ object Routes {
     const val RULE = "rule"
     const val NOVENA = "novena"
     const val FASTING = "fasting"
+    const val PENANCE = "penance"
+    const val MERCY = "mercy"
     const val EXERCISES = "exercises"
     const val READING = "reading"
-    const val PENANCE = "penance"
     fun hour(id: String) = "office/$id"
     fun combatSin(id: String) = "combat/$id"
     fun combatLevel(id: String, level: Int) = "combat/$id/$level"
@@ -47,9 +48,10 @@ fun AppNavGraph(repo: ContentRepository, store: GameStore) {
                 onRule = { nav.navigate(Routes.RULE) },
                 onNovena = { nav.navigate(Routes.NOVENA) },
                 onFasting = { nav.navigate(Routes.FASTING) },
+                onPenance = { nav.navigate(Routes.PENANCE) },
+                onMercy = { nav.navigate(Routes.MERCY) },
                 onExercises = { nav.navigate(Routes.EXERCISES) },
-                onReading = { nav.navigate(Routes.READING) },
-                onPenance = { nav.navigate(Routes.PENANCE) }
+                onReading = { nav.navigate(Routes.READING) }
             )
         }
         composable(Routes.OFFICE) {
@@ -108,14 +110,17 @@ fun AppNavGraph(repo: ContentRepository, store: GameStore) {
         composable(Routes.FASTING) {
             FastingScreen(repo, store, onBack = { nav.popBackStack() })
         }
+        composable(Routes.PENANCE) {
+            PenanceScreen(repo, store, onBack = { nav.popBackStack() })
+        }
+        composable(Routes.MERCY) {
+            WorksOfMercyScreen(repo, store, onBack = { nav.popBackStack() })
+        }
         composable(Routes.EXERCISES) {
             SpiritualExercisesScreen(repo, store, onBack = { nav.popBackStack() })
         }
         composable(Routes.READING) {
             ReadingGameScreen(repo, store, onBack = { nav.popBackStack() })
-        }
-        composable(Routes.PENANCE) {
-            PenanceScreen(store, onBack = { nav.popBackStack() })
         }
     }
 }

@@ -131,17 +131,28 @@ data class RuleTradition(
 
 enum class RuleDifficulty(
     val label: String, val startCount: Int, val paceLevels: Int,
-    val timeMultiplier: Double, val capFraction: Double
+    val timeMultiplier: Double, val capFraction: Double, val eremitic: Boolean = false
 ) {
-    // Toutes les difficultés atteignent 100 % de la Règle (capFraction = 1.0) : même but,
-    // la pleine mesure du charisme. Elles ne diffèrent que par le rythme (paceLevels : une
-    // nouvelle dévotion toutes les N semaines) et l'intensité de chaque prière (timeMultiplier).
-    DEBUTANT("Débutant", startCount = 1, paceLevels = 8, timeMultiplier = 0.6, capFraction = 1.0),
-    NORMAL("Normal", startCount = 2, paceLevels = 4, timeMultiplier = 1.0, capFraction = 1.0),
-    DIFFICILE("Difficile", startCount = 3, paceLevels = 2, timeMultiplier = 1.6, capFraction = 1.0);
+    DEBUTANT("Débutant", startCount = 1, paceLevels = 8, timeMultiplier = 0.6, capFraction = 0.6),
+    NORMAL("Normal", startCount = 2, paceLevels = 4, timeMultiplier = 1.0, capFraction = 0.85),
+    DIFFICILE("Difficile", startCount = 3, paceLevels = 2, timeMultiplier = 1.6, capFraction = 1.0),
+
+    // Paliers érémitiques : réservés à la famille des ermites — d'un ordre de grandeur
+    // plus exigeants (durées démultipliées, progression bien plus lente, règle intégrale).
+    ANACHORETE("Anachorète", startCount = 4, paceLevels = 6, timeMultiplier = 4.0, capFraction = 1.0, eremitic = true),
+    RECLUS("Reclus", startCount = 5, paceLevels = 8, timeMultiplier = 7.0, capFraction = 1.0, eremitic = true),
+    STYLITE("Stylite", startCount = 6, paceLevels = 12, timeMultiplier = 10.0, capFraction = 1.0, eremitic = true);
 
     companion object {
         fun fromKey(k: String) = entries.firstOrNull { it.name == k } ?: NORMAL
+
+        /** Difficultés proposées pour une famille donnée : les paliers érémitiques ne
+         *  s'offrent qu'aux ermites ; la famille « personnelle » a accès à tout. */
+        fun forFamily(family: String): List<RuleDifficulty> = when (family) {
+            "eremitique" -> entries.filter { it.eremitic }
+            "personnelle" -> entries.toList()
+            else -> entries.filter { !it.eremitic }
+        }
     }
 }
 
@@ -162,35 +173,6 @@ data class RuleProgress(
     val lastDay: Long = -1L,
     val lastRenewalYear: Int = 0,
     val history: List<RuleHistoryEntry> = emptyList()
-)
-
-/** Progression du jeûne choisi : un calendrier de jeûne sélectionné, un niveau qui monte
- *  à chaque jour maigre accompli (« Oui, j'ai jeûné aujourd'hui »). */
-data class FastProgress(
-    val started: Boolean = false,
-    val fastId: String = "",
-    val level: Int = 0,
-    val lastDayKey: String = ""   // "année-mois-jour" du dernier jour maigre confirmé
-)
-
-/** Une œuvre de pénitence : niveau qui monte à chaque acte accompli (une fois par jour). */
-data class PenanceState(
-    val level: Int = 0,
-    val lastDayKey: String = ""
-)
-
-/** Un « temps de pénitence » : une durée choisie (jours / semaines) à parcourir jour après jour. */
-data class PenancePeriod(
-    val started: Boolean = false,
-    val targetDays: Int = 0,
-    val daysDone: Int = 0,
-    val lastDay: Long = -1L   // epochDay du dernier jour confirmé
-)
-
-/** Un temps de pénitence mené à terme, conservé au petit répertoire. */
-data class PenancePeriodDone(
-    val targetDays: Int,
-    val endEpochDay: Long
 )
 
 // =============================================================================
@@ -304,3 +286,102 @@ data class ReadingWork(
 
 /** Les 12 durées de séance proposées, en minutes. */
 val READING_DURATIONS = listOf(5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60)
+
+// =============================================================================
+//  LA RÈGLE PERSONNELLE — l'utilisateur compose sa propre règle à partir des
+//  dévotions déjà présentes dans les traditions (bibliothèque commune) et/ou
+//  de dévotions qu'il écrit lui-même. Une règle personnelle est un [RuleTradition]
+//  de famille "personnelle", conservé dans GameStore et jouable comme les autres.
+// =============================================================================
+
+/** Un élément de la bibliothèque commune : une dévotion tirée d'une ou plusieurs
+ *  traditions, présentée pour être ajoutée à une règle personnelle. */
+data class LibraryDevotion(
+    val name: String,
+    val note: String,
+    val signature: Boolean,
+    val minutes: Int,
+    val fromTraditions: List<String>   // noms des traditions où elle apparaît
+)
+
+// =============================================================================
+//  LE SUIVI DE JEÛNE — un « espace de jeûne » suivable comme les neuvaines :
+//  on choisit un jeûne (période traditionnelle, jeûne de saint Michel, ou une
+//  durée personnelle en jours), puis on confirme chaque jour. Un jour manqué
+//  remet le compteur à zéro (fidélité stricte, comme la neuvaine). Les jeûnes
+//  menés à terme sont conservés au répertoire.
+// =============================================================================
+
+/** Un jeûne suivable proposé (durée fixe en jours, ou personnalisable). */
+data class FastTrackType(
+    val id: String,
+    val family: String,       // "orthodoxe" | "catholique" | "universel"
+    val nameFr: String,
+    val nameIt: String,
+    val days: Int,            // durée cible ; 0 = à définir par l'utilisateur (personnalisé)
+    val rule: String,
+    val descFr: String,
+    val descIt: String,
+    val computed: String? = null   // clé FastingCalendar pour dater la période, si connue
+)
+
+data class FastTrackHistoryEntry(
+    val typeId: String,
+    val label: String,
+    val days: Int,
+    val startEpochDay: Long,
+    val endEpochDay: Long
+)
+
+data class FastTrackProgress(
+    val started: Boolean = false,
+    val typeId: String = "",
+    val label: String = "",        // libellé retenu (utile pour un jeûne personnalisé)
+    val target: Int = 0,           // nombre de jours visés
+    val day: Int = 0,
+    val lastDay: Long = -1L,
+    val startEpochDay: Long = -1L,
+    val completed: List<FastTrackHistoryEntry> = emptyList()
+)
+
+// =============================================================================
+//  LA PÉNITENCE — pénitences classées par niveau (douceur → sévérité), chacune
+//  assignée à des jours (jours de semaine, période liturgique calculée, ou
+//  « à volonté »). L'utilisateur peut aussi ajouter ses propres pénitences.
+//  Chaque jour assigné accompli est consigné (petit journal, sans pénalité).
+// =============================================================================
+
+/** Une pénitence : niveau d'intensité + jours assignés. */
+data class Penance(
+    val id: String,
+    val level: Int,               // 1 (douce) → 5 (héroïque)
+    val family: String,           // "commune" | "orthodoxe" | "catholique"
+    val name: String,
+    val desc: String,
+    val weekdays: List<Int> = emptyList(),  // 1=dimanche … 7=samedi (convention Calendar) ; vide = pas de jour fixe
+    val computed: String? = null,           // clé FastingCalendar (carême, avent, vendredis, saint_michael…) ; sinon null
+    val note: String = "",
+    val custom: Boolean = false             // true = ajoutée par l'utilisateur
+)
+
+/** État de la pénitence : pénitences perso ajoutées + jours accomplis par pénitence. */
+data class PenanceProgress(
+    val custom: List<Penance> = emptyList(),
+    val doneDays: Map<String, List<Long>> = emptyMap()  // penanceId -> epochDays accomplis
+)
+
+// =============================================================================
+//  LES ŒUVRES DE MISÉRICORDE — sept corporelles et sept spirituelles, chacune
+//  avec sa parole d'Écriture, sa description et des gestes concrets. Un journal
+//  léger permet de consigner les jours où l'on a vécu une œuvre (sans pénalité).
+// =============================================================================
+
+data class WorkOfMercy(
+    val id: String,
+    val category: String,      // "corporelle" | "spirituelle"
+    val nameFr: String,
+    val nameIt: String,
+    val scripture: String,
+    val desc: String,
+    val examples: List<String>
+)

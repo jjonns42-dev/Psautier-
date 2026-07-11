@@ -91,6 +91,15 @@
       "note": "Du 1er dimanche de l'Avent (dimanche le plus proche du 30 novembre) au 24 décembre."
     },
     {
+      "id": "catho-saint-michael",
+      "family": "catholique",
+      "scope": "Église universelle (usage traditionnel)",
+      "name": "Carême de saint Michel",
+      "computed": "saint_michael",
+      "rule": "Quarante jours de jeûne et de prière, du 15 août à la fête de saint Michel Archange, le 29 septembre. Sobriété alimentaire et invocation quotidienne des saints Anges.",
+      "note": "Dévotion vécue par saint François d’Assise, qui reçut les stigmates à l’Alverne durant ce jeûne (1224)."
+    },
+    {
       "id": "catho-fridays",
       "family": "catholique",
       "scope": "Église universelle",
@@ -134,15 +143,6 @@
       "computed": null,
       "rule": "Abstinence perpétuelle de viande (sauf nécessité ou maladie) et jeûne du 14 septembre à Pâques, selon la Règle primitive rétablie par sainte Thérèse d'Avila.",
       "note": "Uni à un grand silence et à un esprit érémitique hérité du mont Carmel."
-    },
-    {
-      "id": "catho-michael",
-      "family": "catholique",
-      "scope": "Dévotion franciscaine (saint Michel)",
-      "name": "Carême de saint Michel",
-      "computed": "michael_lent",
-      "rule": "Jeûne et abstinence pendant quarante jours, du 15 août au 29 septembre, en l'honneur de saint Michel Archange.",
-      "note": "« Carême de saint Michel » observé par saint François d'Assise, de l'Assomption à la fête des Archanges ; c'est durant ce jeûne, à l'Alverne, qu'il reçut les stigmates."
     }
   ]
 }

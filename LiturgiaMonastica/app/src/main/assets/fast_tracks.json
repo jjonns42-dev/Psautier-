@@ -1,0 +1,114 @@
+{
+  "tracks": [
+    {
+      "id": "saint-michael",
+      "family": "catholique",
+      "name_fr": "Jeûne de saint Michel Archange (40 jours)",
+      "name_it": "Digiuno di san Michele Arcangelo (40 giorni)",
+      "days": 40,
+      "computed": "saint_michael",
+      "rule": "Quarante jours de jeûne et de prière, du 15 août à la fête de saint Michel, le 29 septembre. Sobriété alimentaire et invocation quotidienne de l'Archange.",
+      "desc_fr": "Le « Carême de saint Michel », que vécut saint François d'Assise (c'est durant ce jeûne qu'il reçut les stigmates à l'Alverne). Quarante jours en l'honneur de saint Michel et de tous les anges.",
+      "desc_it": "La « Quaresima di san Michele », vissuta da san Francesco d'Assisi (durante questo digiuno ricevette le stimmate alla Verna). Quaranta giorni in onore di san Michele e di tutti gli angeli."
+    },
+    {
+      "id": "careme-catholique",
+      "family": "catholique",
+      "name_fr": "Grand Carême (40 jours)",
+      "name_it": "Quaresima (40 giorni)",
+      "days": 40,
+      "computed": "lent_catholic",
+      "rule": "Les quarante jours du Carême : jeûne, prière et aumône, à l'imitation des quarante jours du Christ au désert.",
+      "desc_fr": "Le grand temps pénitentiel de l'Église, du Mercredi des Cendres à Pâques.",
+      "desc_it": "Il grande tempo penitenziale della Chiesa, dal Mercoledì delle Ceneri a Pasqua."
+    },
+    {
+      "id": "avent-catholique",
+      "family": "catholique",
+      "name_fr": "Avent (Carême de saint Martin, 40 jours)",
+      "name_it": "Avvento (Quaresima di san Martino, 40 giorni)",
+      "days": 40,
+      "computed": "advent_catholic",
+      "rule": "Le jeûne traditionnel de l'Avent, du 12 novembre (lendemain de saint Martin) au 24 décembre : préparation pénitentielle à Noël.",
+      "desc_fr": "L'ancien « Carême de saint Martin », quarante jours de préparation à la Nativité, encore vivant en Orient et dans la tradition monastique.",
+      "desc_it": "L'antica « Quaresima di san Martino », quaranta giorni di preparazione al Natale, ancora viva in Oriente e nella tradizione monastica."
+    },
+    {
+      "id": "grand-careme-ortho",
+      "family": "orthodoxe",
+      "name_fr": "Grand Carême (40 jours)",
+      "name_it": "Grande Quaresima (40 giorni)",
+      "days": 40,
+      "computed": "great_lent",
+      "rule": "Abstinence de viande, laitages, œufs et souvent d'huile et de vin ; jeûne strict, prière et prosternations, jusqu'à Pâques.",
+      "desc_fr": "Le Grand Carême orthodoxe, quarante jours suivis de la Semaine sainte.",
+      "desc_it": "La Grande Quaresima ortodossa, quaranta giorni seguiti dalla Settimana Santa."
+    },
+    {
+      "id": "nativite-ortho",
+      "family": "orthodoxe",
+      "name_fr": "Jeûne de la Nativité (40 jours)",
+      "name_it": "Digiuno della Natività (40 giorni)",
+      "days": 40,
+      "computed": "nativity_fast",
+      "rule": "Le « Carême des Philippes », du 15 novembre au 24 décembre : abstinence et prière en préparation de la Nativité du Christ.",
+      "desc_fr": "Les quarante jours du jeûne de la Nativité, dans la tradition orthodoxe.",
+      "desc_it": "I quaranta giorni del digiuno della Natività, nella tradizione ortodossa."
+    },
+    {
+      "id": "dormition-ortho",
+      "family": "orthodoxe",
+      "name_fr": "Jeûne de la Dormition (14 jours)",
+      "name_it": "Digiuno della Dormizione (14 giorni)",
+      "days": 14,
+      "computed": "dormition_fast",
+      "rule": "Du 1er au 14 août, jeûne strict en l'honneur de la Toute-Sainte Mère de Dieu, avec le chant des Paraclisis.",
+      "desc_fr": "Deux semaines de jeûne marial avant la fête de la Dormition de la Vierge.",
+      "desc_it": "Due settimane di digiuno mariano prima della festa della Dormizione della Vergine."
+    },
+    {
+      "id": "apotres-ortho",
+      "family": "orthodoxe",
+      "name_fr": "Jeûne des saints Apôtres",
+      "name_it": "Digiuno dei santi Apostoli",
+      "days": 12,
+      "computed": "apostles_fast",
+      "rule": "Jeûne de durée variable qui s'achève à la fête des saints Pierre et Paul, le 29 juin.",
+      "desc_fr": "Le jeûne apostolique, qui suit le temps de la Pentecôte ; sa durée varie selon la date de Pâques.",
+      "desc_it": "Il digiuno apostolico, che segue il tempo di Pentecoste; la sua durata varia secondo la data di Pasqua."
+    },
+    {
+      "id": "quarante-jours",
+      "family": "universel",
+      "name_fr": "Quarante jours au désert",
+      "name_it": "Quaranta giorni nel deserto",
+      "days": 40,
+      "computed": null,
+      "rule": "Quarante jours de jeûne et de prière, à l'imitation du Christ, de Moïse et d'Élie, pour une intention ou une conversion.",
+      "desc_fr": "Un jeûne de quarante jours, hors calendrier, que l'on peut commencer à tout moment.",
+      "desc_it": "Un digiuno di quaranta giorni, fuori calendario, che si può iniziare in qualunque momento."
+    },
+    {
+      "id": "neuf-jours",
+      "family": "universel",
+      "name_fr": "Jeûne de neuf jours",
+      "name_it": "Digiuno di nove giorni",
+      "days": 9,
+      "computed": null,
+      "rule": "Neuf jours de jeûne joints à une neuvaine, pour appuyer une demande pressante par la prière et la pénitence.",
+      "desc_fr": "Un court jeûne de neuf jours, à unir à une neuvaine.",
+      "desc_it": "Un breve digiuno di nove giorni, da unire a una novena."
+    },
+    {
+      "id": "personnalise",
+      "family": "universel",
+      "name_fr": "Jeûne personnalisé",
+      "name_it": "Digiuno personalizzato",
+      "days": 0,
+      "computed": null,
+      "rule": "Fixe toi-même la durée (en jours) et l'objet de ton jeûne, puis confirme chaque jour tenu.",
+      "desc_fr": "Choisis librement le nombre de jours de ton jeûne.",
+      "desc_it": "Scegli liberamente il numero di giorni del tuo digiuno."
+    }
+  ]
+}

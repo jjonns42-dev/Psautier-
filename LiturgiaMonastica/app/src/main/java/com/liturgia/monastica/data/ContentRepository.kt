@@ -373,6 +373,87 @@ class ContentRepository(private val context: Context) {
 
     fun fastEntriesByFamily(family: String): List<FastEntry> = fastEntries().filter { it.family == family }
 
+    // ---- Jeûnes suivables (espace de jeûne) -------------------------------------
+    private val fastTracksRoot: JsonObject by lazy { obj("fast_tracks.json") }
+
+    fun fastTracks(): List<FastTrackType> =
+        fastTracksRoot.getAsJsonArray("tracks").map { el ->
+            val o = el.asJsonObject
+            FastTrackType(
+                id = o.get("id").asString,
+                family = o.get("family").asString,
+                nameFr = o.get("name_fr").asString,
+                nameIt = o.get("name_it").asString,
+                days = o.get("days").asInt,
+                rule = o.get("rule").asString,
+                descFr = o.get("desc_fr").asString,
+                descIt = o.get("desc_it").asString,
+                computed = if (o.has("computed") && !o.get("computed").isJsonNull) o.get("computed").asString else null
+            )
+        }
+
+    fun fastTrack(id: String): FastTrackType? = fastTracks().firstOrNull { it.id == id }
+
+    // ---- Pénitences (catalogue par niveaux, jours assignés) ---------------------
+    private val penancesRoot: JsonObject by lazy { obj("penances.json") }
+
+    fun penances(): List<Penance> =
+        penancesRoot.getAsJsonArray("penances").map { el ->
+            val o = el.asJsonObject
+            Penance(
+                id = o.get("id").asString,
+                level = o.get("level").asInt,
+                family = o.get("family").asString,
+                name = o.get("name").asString,
+                desc = o.get("desc").asString,
+                weekdays = if (o.has("weekdays")) o.getAsJsonArray("weekdays").map { it2 -> it2.asInt } else emptyList(),
+                computed = if (o.has("computed") && !o.get("computed").isJsonNull) o.get("computed").asString else null,
+                note = if (o.has("note")) o.get("note").asString else "",
+                custom = false
+            )
+        }
+
+    // ---- Œuvres de miséricorde --------------------------------------------------
+    private val mercyRoot: JsonObject by lazy { obj("works_of_mercy.json") }
+
+    fun worksOfMercy(): List<WorkOfMercy> =
+        mercyRoot.getAsJsonArray("works").map { el ->
+            val o = el.asJsonObject
+            WorkOfMercy(
+                id = o.get("id").asString,
+                category = o.get("category").asString,
+                nameFr = o.get("name_fr").asString,
+                nameIt = o.get("name_it").asString,
+                scripture = o.get("scripture").asString,
+                desc = o.get("desc").asString,
+                examples = o.getAsJsonArray("examples").map { it2 -> it2.asString }
+            )
+        }
+
+    fun worksOfMercyByCategory(category: String): List<WorkOfMercy> =
+        worksOfMercy().filter { it.category == category }
+
+    // ---- Bibliothèque commune de dévotions (pour la règle personnelle) ----------
+    /** Toutes les dévotions de toutes les traditions, dédupliquées par nom, pour
+     *  que l'utilisateur puisse composer sa propre règle. */
+    fun ruleLibraryDevotions(): List<LibraryDevotion> {
+        val byName = LinkedHashMap<String, LibraryDevotion>()
+        ruleTraditions().forEach { trad ->
+            trad.devotions.forEach { d ->
+                val existing = byName[d.name]
+                if (existing == null) {
+                    byName[d.name] = LibraryDevotion(
+                        name = d.name, note = d.note, signature = d.signature,
+                        minutes = d.minutes, fromTraditions = listOf(trad.name)
+                    )
+                } else {
+                    byName[d.name] = existing.copy(fromTraditions = existing.fromTraditions + trad.name)
+                }
+            }
+        }
+        return byName.values.sortedBy { it.name.lowercase() }
+    }
+
     // ---- Livres du jeu de lecture biblique (73 livres, niveaux) -------------------
     private val bibleReadingRoot: JsonObject by lazy { obj("bible_reading_books.json") }
 

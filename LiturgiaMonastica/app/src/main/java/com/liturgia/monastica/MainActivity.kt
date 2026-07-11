@@ -23,6 +23,7 @@ class MainActivity : ComponentActivity() {
                 store.combatRefresh()
                 store.ruleRefresh()
                 store.novenaRefresh()
+                store.fastTrackRefresh()
             }
             LiturgiaTheme(night = store.night) {
                 AppNavGraph(repo, store)

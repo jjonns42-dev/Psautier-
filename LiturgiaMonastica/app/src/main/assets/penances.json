@@ -1,0 +1,150 @@
+{
+  "_note": "weekdays : convention java.util.Calendar — 1=dimanche, 2=lundi, 3=mardi, 4=mercredi, 5=jeudi, 6=vendredi, 7=samedi. computed : clé FastingCalendar (lent_catholic, great_lent, advent_catholic, saint_michael, friday_weekly, wedfri_weekly...). Aucun des deux = pénitence à volonté.",
+  "penances": [
+    {
+      "id": "garde-des-yeux",
+      "level": 1,
+      "family": "commune",
+      "name": "Garde des yeux",
+      "desc": "Détourner volontairement le regard de ce qui distrait ou trouble le cœur, pour le garder pur et recueilli.",
+      "note": "À volonté, tout au long du jour."
+    },
+    {
+      "id": "silence-choisi",
+      "level": 1,
+      "family": "commune",
+      "name": "Un temps de silence",
+      "desc": "S'imposer un temps de silence — téléphone éteint, paroles retenues — pour faire de la place à Dieu.",
+      "note": "À volonté."
+    },
+    {
+      "id": "renoncement-douceur",
+      "level": 1,
+      "family": "catholique",
+      "name": "Renoncement à une douceur",
+      "desc": "Se priver d'un dessert, d'un sucre, d'une gourmandise, en union au Christ et pour une intention.",
+      "weekdays": [6],
+      "note": "Traditionnellement le vendredi, jour de la Passion."
+    },
+    {
+      "id": "action-de-grace-contrariete",
+      "level": 1,
+      "family": "commune",
+      "name": "Accueillir une contrariété",
+      "desc": "Accepter sans se plaindre un désagrément du jour, et l'offrir en silence.",
+      "note": "À volonté."
+    },
+    {
+      "id": "abstinence-vendredi",
+      "level": 2,
+      "family": "catholique",
+      "name": "Abstinence du vendredi",
+      "desc": "S'abstenir de viande le vendredi, en mémoire de la Passion du Seigneur (Code de droit canonique, can. 1251).",
+      "weekdays": [6],
+      "computed": "friday_weekly",
+      "note": "Chaque vendredi de l'année."
+    },
+    {
+      "id": "jeune-merc-vend",
+      "level": 2,
+      "family": "orthodoxe",
+      "name": "Jeûne du mercredi et du vendredi",
+      "desc": "Jeûne hebdomadaire de l'Orient : le mercredi (trahison) et le vendredi (Crucifixion).",
+      "weekdays": [4, 6],
+      "computed": "wedfri_weekly",
+      "note": "Hors semaines « sans jeûne » du calendrier liturgique."
+    },
+    {
+      "id": "renoncement-confort",
+      "level": 2,
+      "family": "commune",
+      "name": "Renoncer à un confort",
+      "desc": "Choisir l'escalier plutôt que l'ascenseur, l'eau plutôt qu'une boisson agréable, un petit inconfort offert.",
+      "note": "À volonté."
+    },
+    {
+      "id": "aumone-hebdomadaire",
+      "level": 2,
+      "family": "commune",
+      "name": "Aumône sacrificielle",
+      "desc": "Donner une somme ou un bien qui coûte vraiment, à un pauvre ou à une œuvre.",
+      "weekdays": [1],
+      "note": "Traditionnellement le dimanche."
+    },
+    {
+      "id": "un-seul-repas",
+      "level": 3,
+      "family": "catholique",
+      "name": "Un seul repas",
+      "desc": "Ne prendre qu'un seul repas complet dans la journée, avec deux légères collations, selon l'usage du jeûne.",
+      "weekdays": [6],
+      "note": "Avec discernement, en tenant compte de sa santé."
+    },
+    {
+      "id": "pain-et-eau",
+      "level": 3,
+      "family": "commune",
+      "name": "Jour au pain et à l'eau",
+      "desc": "Se nourrir de pain et d'eau une journée, jeûne des ermites et des grandes intentions.",
+      "note": "À vivre avec prudence ; jamais au détriment de la santé."
+    },
+    {
+      "id": "lever-nocturne",
+      "level": 3,
+      "family": "commune",
+      "name": "Lever nocturne pour prier",
+      "desc": "Se lever une part de la nuit pour veiller et prier, à la manière des moines (Vigiles).",
+      "note": "À volonté."
+    },
+    {
+      "id": "jeune-de-parole",
+      "level": 3,
+      "family": "commune",
+      "name": "Jeûne de la parole",
+      "desc": "Une journée de grand silence : ne parler que par nécessité et charité, pour écouter Dieu.",
+      "note": "À volonté."
+    },
+    {
+      "id": "grand-careme",
+      "level": 4,
+      "family": "catholique",
+      "name": "Vivre le Carême en pénitent",
+      "desc": "Traverser les quarante jours du Carême dans le jeûne, la prière et l'aumône renforcés.",
+      "computed": "lent_catholic",
+      "note": "Pendant tout le Carême."
+    },
+    {
+      "id": "careme-saint-michel",
+      "level": 4,
+      "family": "commune",
+      "name": "Carême de saint Michel",
+      "desc": "Quarante jours de jeûne et de prière, du 15 août au 29 septembre, en l'honneur de saint Michel Archange.",
+      "computed": "saint_michael",
+      "note": "Le jeûne que vécut saint François à l'Alverne."
+    },
+    {
+      "id": "veille-de-nuit",
+      "level": 4,
+      "family": "commune",
+      "name": "Veille de nuit",
+      "desc": "Passer une grande partie de la nuit en prière, seul devant Dieu, pour une intention grave.",
+      "note": "Occasionnel, avec discernement."
+    },
+    {
+      "id": "jeune-prolonge",
+      "level": 5,
+      "family": "commune",
+      "name": "Jeûne prolongé",
+      "desc": "Un jeûne austère de plusieurs jours, à la manière du désert, offert pour une conversion ou une grande intention.",
+      "note": "À n'entreprendre qu'avec l'accord d'un accompagnateur spirituel et en veillant à sa santé."
+    },
+    {
+      "id": "jour-de-reclusion",
+      "level": 5,
+      "family": "commune",
+      "name": "Jour de réclusion",
+      "desc": "Une journée entière retirée du monde — silence, jeûne et prière continue — comme les reclus du désert.",
+      "note": "À vivre avec préparation et discernement."
+    }
+  ]
+}

@@ -13,12 +13,13 @@ import androidx.compose.material.icons.automirrored.filled.MenuBook
 import androidx.compose.material.icons.filled.AutoStories
 import androidx.compose.material.icons.filled.CalendarMonth
 import androidx.compose.material.icons.filled.LocalFireDepartment
+import androidx.compose.material.icons.filled.Healing
+import androidx.compose.material.icons.filled.VolunteerActivism
 import androidx.compose.material.icons.filled.NoFood
 import androidx.compose.material.icons.filled.SelfImprovement
 import androidx.compose.material.icons.filled.Shield
 import androidx.compose.material.icons.filled.Stairs
 import androidx.compose.material.icons.filled.WbTwilight
-import androidx.compose.material.icons.filled.VolunteerActivism
 import androidx.compose.material.icons.outlined.Brightness3
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
@@ -46,13 +47,14 @@ fun HomeScreen(
     onRule: () -> Unit,
     onNovena: () -> Unit,
     onFasting: () -> Unit,
+    onPenance: () -> Unit,
+    onMercy: () -> Unit,
     onExercises: () -> Unit,
-    onReading: () -> Unit,
-    onPenance: () -> Unit
+    onReading: () -> Unit
 ) {
     val it = store.lang == "it"
     AppScaffold(
-        title = "Liturgia Monastica 2.0",
+        title = "Liturgia Monastica",
         night = store.night,
         onToggleNight = { store.toggleNight() }
     ) { pad ->
@@ -127,9 +129,19 @@ fun HomeScreen(
                 icon = Icons.Filled.CalendarMonth, onClick = onNovena
             )
             Tile(
-                title = if (it) "Calendario dei digiuni" else "Calendrier de jeûne",
-                subtitle = if (it) "Tradizioni ortodosse e cattoliche" else "Traditions orthodoxes et catholiques",
+                title = if (it) "Il digiuno" else "Le jeûne",
+                subtitle = if (it) "Calendario e digiuno da seguire giorno per giorno" else "Calendrier et jeûne à suivre jour après jour",
                 icon = Icons.Filled.NoFood, onClick = onFasting
+            )
+            Tile(
+                title = if (it) "La penitenza" else "La pénitence",
+                subtitle = if (it) "Per livelli, con giorni assegnati e penitenze personali" else "Par niveaux, jours assignés et pénitences personnelles",
+                icon = Icons.Filled.Healing, onClick = onPenance
+            )
+            Tile(
+                title = if (it) "Opere di misericordia" else "Œuvres de miséricorde",
+                subtitle = if (it) "Sette corporali e sette spirituali, da vivere ogni giorno" else "Sept corporelles et sept spirituelles, à vivre chaque jour",
+                icon = Icons.Filled.VolunteerActivism, onClick = onMercy
             )
             Tile(
                 title = if (it) "Esercizi spirituali" else "Exercices spirituels",
@@ -140,11 +152,6 @@ fun HomeScreen(
                 title = if (it) "Gioco di lettura" else "Jeu de lecture",
                 subtitle = if (it) "Bibbia, teologia, mistica, Padri — livelli infiniti" else "Bible, théologie, mystique, Pères — niveaux infinis",
                 icon = Icons.Filled.Stairs, onClick = onReading
-            )
-            Tile(
-                title = if (it) "Penitenza" else "Pénitence",
-                subtitle = if (it) "Opere di penitenza, livelli infiniti" else "Œuvres de pénitence, niveaux infinis",
-                icon = Icons.Filled.VolunteerActivism, onClick = onPenance
             )
         }
     }

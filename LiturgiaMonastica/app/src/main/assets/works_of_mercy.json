@@ -1,0 +1,187 @@
+{
+  "_note": "Les quatorze œuvres de miséricorde : sept corporelles (largement tirées de Mt 25, 31-46, avec l'ensevelissement des morts issu de Tb 1, 17) et sept spirituelles. category : corporelle | spirituelle.",
+  "works": [
+    {
+      "id": "nourrir-affames",
+      "category": "corporelle",
+      "name_fr": "Nourrir les affamés",
+      "name_it": "Dar da mangiare agli affamati",
+      "scripture": "« J'ai eu faim, et vous m'avez donné à manger » (Mt 25, 35)",
+      "desc": "Partager sa nourriture avec celui qui manque du nécessaire, et voir dans l'affamé le Christ lui-même.",
+      "examples": [
+        "Donner un repas ou des provisions à une personne dans le besoin.",
+        "Soutenir une banque alimentaire ou une soupe populaire.",
+        "Inviter à sa table quelqu'un de seul ou de démuni."
+      ]
+    },
+    {
+      "id": "donner-a-boire",
+      "category": "corporelle",
+      "name_fr": "Donner à boire à ceux qui ont soif",
+      "name_it": "Dar da bere agli assetati",
+      "scripture": "« J'ai eu soif, et vous m'avez donné à boire » (Mt 25, 35)",
+      "desc": "Répondre à la soif du corps, et par là à toute soif du prochain — jusqu'au verre d'eau donné au nom du Christ.",
+      "examples": [
+        "Offrir à boire à celui qui peine sous la chaleur.",
+        "Soutenir l'accès à l'eau potable là où elle manque.",
+        "Être attentif aux besoins simples de ceux qui nous entourent."
+      ]
+    },
+    {
+      "id": "vetir-les-nus",
+      "category": "corporelle",
+      "name_fr": "Vêtir ceux qui sont nus",
+      "name_it": "Vestire gli ignudi",
+      "scripture": "« J'étais nu, et vous m'avez vêtu » (Mt 25, 36)",
+      "desc": "Couvrir celui qui a froid ou qui manque du vêtement digne, en préservant sa dignité.",
+      "examples": [
+        "Donner des vêtements chauds et en bon état.",
+        "Soutenir un vestiaire solidaire.",
+        "Habiller dignement, sans humilier celui que l'on aide."
+      ]
+    },
+    {
+      "id": "accueillir-etrangers",
+      "category": "corporelle",
+      "name_fr": "Accueillir les étrangers",
+      "name_it": "Alloggiare i pellegrini",
+      "scripture": "« J'étais un étranger, et vous m'avez accueilli » (Mt 25, 35)",
+      "desc": "Ouvrir sa porte et son cœur au voyageur, au migrant, au pèlerin, comme Abraham aux chênes de Mambré.",
+      "examples": [
+        "Offrir l'hospitalité à un voyageur ou un sans-abri.",
+        "Accompagner l'accueil d'un migrant ou d'un réfugié.",
+        "Rendre un lieu accueillant pour celui qui est de passage."
+      ]
+    },
+    {
+      "id": "visiter-malades",
+      "category": "corporelle",
+      "name_fr": "Visiter les malades",
+      "name_it": "Visitare gli infermi",
+      "scripture": "« J'étais malade, et vous m'avez visité » (Mt 25, 36)",
+      "desc": "Se tenir auprès du malade, non pour guérir mais pour accompagner, présence qui console.",
+      "examples": [
+        "Rendre visite à un malade ou une personne âgée isolée.",
+        "Prendre des nouvelles, appeler, écrire à un souffrant.",
+        "Aider un proche à porter le poids de la maladie."
+      ]
+    },
+    {
+      "id": "visiter-prisonniers",
+      "category": "corporelle",
+      "name_fr": "Visiter les prisonniers",
+      "name_it": "Visitare i carcerati",
+      "scripture": "« J'étais en prison, et vous êtes venus me voir » (Mt 25, 36)",
+      "desc": "Ne pas abandonner celui qui est enfermé, mais lui garder un visage humain et une espérance.",
+      "examples": [
+        "Soutenir un aumônier ou une association de visiteurs de prison.",
+        "Prier pour les détenus et leurs familles.",
+        "Ne pas condamner sans retour celui qui a failli."
+      ]
+    },
+    {
+      "id": "ensevelir-morts",
+      "category": "corporelle",
+      "name_fr": "Ensevelir les morts",
+      "name_it": "Seppellire i morti",
+      "scripture": "« J'ensevelissais les morts… » (Tobie 1, 17)",
+      "desc": "Rendre au corps du défunt le respect qui lui est dû, et entourer ceux qui pleurent.",
+      "examples": [
+        "Assister à des funérailles, accompagner une famille en deuil.",
+        "Prier pour les défunts, entretenir une tombe délaissée.",
+        "Honorer la dignité du corps de tout défunt, même inconnu."
+      ]
+    },
+    {
+      "id": "conseiller-doutants",
+      "category": "spirituelle",
+      "name_fr": "Conseiller ceux qui doutent",
+      "name_it": "Consigliare i dubbiosi",
+      "scripture": "« Que ta parole soit toujours aimable » (cf. Col 4, 6)",
+      "desc": "Éclairer avec douceur celui qui hésite, sans imposer, en l'aidant à voir clair devant Dieu.",
+      "examples": [
+        "Écouter longuement avant de conseiller.",
+        "Orienter vers une aide compétente quand il le faut.",
+        "Aider quelqu'un à discerner un choix difficile."
+      ]
+    },
+    {
+      "id": "enseigner-ignorants",
+      "category": "spirituelle",
+      "name_fr": "Enseigner les ignorants",
+      "name_it": "Insegnare agli ignoranti",
+      "scripture": "« Allez, enseignez toutes les nations » (cf. Mt 28, 19)",
+      "desc": "Transmettre ce que l'on sait — surtout la connaissance de Dieu — comme un don reçu à partager.",
+      "examples": [
+        "Aider un enfant ou un adulte à apprendre.",
+        "Partager la foi avec simplicité, sans écraser.",
+        "Prêter un bon livre, ouvrir à la vérité et à la beauté."
+      ]
+    },
+    {
+      "id": "avertir-pecheurs",
+      "category": "spirituelle",
+      "name_fr": "Avertir les pécheurs",
+      "name_it": "Ammonire i peccatori",
+      "scripture": "« Reprends-le entre toi et lui seul » (cf. Mt 18, 15)",
+      "desc": "Reprendre avec charité et discrétion celui qui s'égare, pour son bien et non pour le juger.",
+      "examples": [
+        "Dire une vérité difficile avec bonté, en tête-à-tête.",
+        "Ne pas se taire par lâcheté quand la charité demande de parler.",
+        "Corriger sans jamais humilier ni mépriser."
+      ]
+    },
+    {
+      "id": "consoler-affliges",
+      "category": "spirituelle",
+      "name_fr": "Consoler les affligés",
+      "name_it": "Consolare gli afflitti",
+      "scripture": "« Consolez, consolez mon peuple » (Is 40, 1)",
+      "desc": "Porter réconfort à celui qui pleure, par la présence, l'écoute et l'espérance.",
+      "examples": [
+        "Rester auprès de quelqu'un qui souffre, sans fuir sa peine.",
+        "Écrire un mot, dire une parole qui relève.",
+        "Offrir une espérance sans nier la douleur."
+      ]
+    },
+    {
+      "id": "pardonner-offenses",
+      "category": "spirituelle",
+      "name_fr": "Pardonner les offenses",
+      "name_it": "Perdonare le offese",
+      "scripture": "« Pardonne-nous nos offenses, comme nous pardonnons » (cf. Mt 6, 12)",
+      "desc": "Renoncer à la vengeance et rendre la paix, à l'exemple du Christ pardonnant sur la Croix.",
+      "examples": [
+        "Faire le premier pas de réconciliation.",
+        "Cesser d'entretenir une rancune ou un ressentiment.",
+        "Prier pour celui qui nous a blessés."
+      ]
+    },
+    {
+      "id": "supporter-patiemment",
+      "category": "spirituelle",
+      "name_fr": "Supporter patiemment les personnes pénibles",
+      "name_it": "Sopportare pazientemente le persone moleste",
+      "scripture": "« Supportez-vous les uns les autres avec charité » (Ep 4, 2)",
+      "desc": "Porter sans aigreur les défauts et les lourdeurs du prochain, comme lui porte les nôtres.",
+      "examples": [
+        "Garder la douceur devant un caractère difficile.",
+        "Excuser une maladresse plutôt que de la relever.",
+        "Offrir en silence une contrariété répétée."
+      ]
+    },
+    {
+      "id": "prier-vivants-morts",
+      "category": "spirituelle",
+      "name_fr": "Prier Dieu pour les vivants et les morts",
+      "name_it": "Pregare Dio per i vivi e per i morti",
+      "scripture": "« C'est une sainte pensée de prier pour les défunts » (cf. 2 M 12, 46)",
+      "desc": "Porter devant Dieu, dans l'intercession, les vivants comme les défunts, unis dans la communion des saints.",
+      "examples": [
+        "Confier chaque jour une personne à Dieu par le nom.",
+        "Prier pour les défunts, spécialement les oubliés.",
+        "Offrir une messe, un chapelet, une dizaine pour autrui."
+      ]
+    }
+  ]
+}

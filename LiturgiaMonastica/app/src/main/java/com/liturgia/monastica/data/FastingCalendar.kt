@@ -124,9 +124,6 @@ object FastingCalendar {
         return FastPeriod(firstAdventSunday, DateYMD(year, 12, 24))
     }
 
-    /** Carême de saint Michel : 40 jours, du 15 août (Assomption) au 29 septembre (fête des Archanges). */
-    fun michaelLent(year: Int): FastPeriod = FastPeriod(DateYMD(year, 8, 15), DateYMD(year, 9, 29))
-
     /** Vendredis de l'année (abstinence, Code de droit canonique can. 1251) — vérification
      *  simple du jour de semaine, sans tenir compte des solennités qui en dispensent. */
     fun isFridayAbstinence(y: DateYMD): Boolean {
@@ -143,6 +140,30 @@ object FastingCalendar {
         cal.set(y.year, y.month - 1, y.day, 12, 0, 0)
         val wd = cal.get(Calendar.DAY_OF_WEEK)
         return wd == Calendar.WEDNESDAY || wd == Calendar.FRIDAY
+    }
+
+    /** Carême de saint Michel : dévotion traditionnelle (vécue par saint François
+     *  d'Assise) du 15 août à la fête de saint Michel Archange, le 29 septembre —
+     *  40 jours de jeûne et de prière. */
+    fun saintMichaelFast(year: Int): FastPeriod =
+        FastPeriod(DateYMD(year, 8, 15), DateYMD(year, 9, 29))
+
+    /** Résout si une clé calculée est « active aujourd'hui » — mutualisé par le
+     *  calendrier de jeûne, le suivi de jeûne et les pénitences datées. */
+    fun isComputedActiveToday(key: String?, today: DateYMD): Boolean {
+        val y = today.year
+        return when (key) {
+            "great_lent" -> greatLent(y).contains(today)
+            "apostles_fast" -> apostlesFast(y).contains(today)
+            "dormition_fast" -> dormitionFast(y).contains(today)
+            "nativity_fast" -> nativityFast(y).contains(today)
+            "lent_catholic" -> lentCatholic(y).contains(today)
+            "advent_catholic" -> adventCatholic(y).contains(today)
+            "saint_michael" -> saintMichaelFast(y).contains(today)
+            "friday_weekly" -> isFridayAbstinence(today)
+            "wedfri_weekly" -> isWedFriFast(today)
+            else -> false
+        }
     }
 
     fun formatDate(d: DateYMD, italian: Boolean): String {

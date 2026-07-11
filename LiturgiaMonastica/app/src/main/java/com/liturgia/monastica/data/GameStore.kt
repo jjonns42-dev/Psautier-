@@ -284,160 +284,6 @@ class GameStore(context: Context) {
         sp.edit().putString("rule_progress", gson.toJson(ruleProgress)).apply()
     }
 
-    // --- Règle personnelle écrite par l'utilisateur (une seule à la fois) ---
-    /** Identifiant fixe de la règle personnelle. */
-    val customRuleId = "__custom__"
-
-    private fun loadCustomRule(): RuleTradition? {
-        val raw = sp.getString("rule_custom", null) ?: return null
-        return try { gson.fromJson(raw, RuleTradition::class.java) } catch (e: Exception) { null }
-    }
-
-    var customRule by mutableStateOf(loadCustomRule())
-        private set
-
-    private fun persistCustomRule() {
-        sp.edit().apply {
-            if (customRule == null) remove("rule_custom")
-            else putString("rule_custom", gson.toJson(customRule))
-        }.apply()
-    }
-
-    /** Enregistre une règle personnelle (id imposé) puis démarre la progression dessus. */
-    fun ruleStartCustom(rule: RuleTradition, difficulty: RuleDifficulty) {
-        customRule = RuleTradition(
-            id = customRuleId, family = rule.family, name = rule.name, subtitle = rule.subtitle,
-            patron = rule.patron, accent = rule.accent, desc = rule.desc,
-            dailyCore = rule.dailyCore, devotions = rule.devotions
-        )
-        persistCustomRule()
-        ruleStart(customRuleId, difficulty)
-    }
-
-    // --- Jeûne choisi : calendrier + niveau qui monte à chaque jour maigre accompli ---
-    private val fastType = object : TypeToken<FastProgress>() {}.type
-
-    var fastProgress by mutableStateOf(loadFastProgress())
-        private set
-
-    private fun loadFastProgress(): FastProgress {
-        val raw = sp.getString("fast_progress", null) ?: return FastProgress()
-        return try { gson.fromJson(raw, fastType) ?: FastProgress() } catch (e: Exception) { FastProgress() }
-    }
-
-    private fun persistFast() {
-        sp.edit().putString("fast_progress", gson.toJson(fastProgress)).apply()
-    }
-
-    /** Choisit un calendrier de jeûne ; remet le niveau à zéro. */
-    fun fastStart(fastId: String) {
-        fastProgress = FastProgress(started = true, fastId = fastId, level = 0, lastDayKey = "")
-        persistFast()
-    }
-
-    fun fastReset() { fastProgress = FastProgress(); persistFast() }
-
-    /** Confirme un jour maigre accompli : monte d'un niveau (une fois par jour). */
-    fun fastConfirm(dayKey: String) {
-        val p = fastProgress
-        if (!p.started || p.lastDayKey == dayKey) return
-        fastProgress = p.copy(level = p.level + 1, lastDayKey = dayKey)
-        persistFast()
-    }
-
-    // --- Pénitence : chaque œuvre a son niveau, qui monte à chaque acte (1×/jour) ---
-    private val penanceType = object : TypeToken<Map<String, PenanceState>>() {}.type
-
-    var penanceProgress by mutableStateOf(loadPenance())
-        private set
-
-    private fun loadPenance(): Map<String, PenanceState> {
-        val raw = sp.getString("penance_progress", null) ?: return emptyMap()
-        return try { gson.fromJson<Map<String, PenanceState>>(raw, penanceType) ?: emptyMap() } catch (e: Exception) { emptyMap() }
-    }
-
-    private fun persistPenance() {
-        sp.edit().putString("penance_progress", gson.toJson(penanceProgress)).apply()
-    }
-
-    fun penanceState(id: String): PenanceState = penanceProgress[id] ?: PenanceState()
-
-    /** Accomplit une œuvre de pénitence : +1 niveau, une seule fois par jour. */
-    fun penanceDo(id: String, dayKey: String) {
-        val cur = penanceProgress[id] ?: PenanceState()
-        if (cur.lastDayKey == dayKey) return
-        penanceProgress = penanceProgress + (id to cur.copy(level = cur.level + 1, lastDayKey = dayKey))
-        persistPenance()
-    }
-
-    // --- Temps de pénitence : une durée choisie, parcourue jour après jour ---
-    private val penancePeriodType = object : TypeToken<PenancePeriod>() {}.type
-
-    var penancePeriod by mutableStateOf(loadPenancePeriod())
-        private set
-
-    private fun loadPenancePeriod(): PenancePeriod {
-        val raw = sp.getString("penance_period", null) ?: return PenancePeriod()
-        return try { gson.fromJson(raw, penancePeriodType) ?: PenancePeriod() } catch (e: Exception) { PenancePeriod() }
-    }
-
-    private fun persistPenancePeriod() {
-        sp.edit().putString("penance_period", gson.toJson(penancePeriod)).apply()
-    }
-
-    fun penancePeriodStart(targetDays: Int) {
-        penancePeriod = PenancePeriod(started = true, targetDays = targetDays, daysDone = 0, lastDay = -1L)
-        persistPenancePeriod()
-    }
-
-    fun penancePeriodReset() { penancePeriod = PenancePeriod(); persistPenancePeriod() }
-
-    fun penancePeriodDoneToday(): Boolean =
-        penancePeriod.started && penancePeriod.lastDay == todayEpochDay()
-
-    /** true juste après qu'un jour manqué a remis le temps de pénitence à zéro (consommé une fois par l'UI). */
-    var penancePeriodJustReset by mutableStateOf(false)
-        private set
-    fun penancePeriodConsumeReset() { if (penancePeriodJustReset) penancePeriodJustReset = false }
-
-    // Répertoire des temps de pénitence menés à terme.
-    private val penanceHistType = object : TypeToken<List<PenancePeriodDone>>() {}.type
-    var penancePeriodHistory by mutableStateOf(loadPenanceHistory())
-        private set
-    private fun loadPenanceHistory(): List<PenancePeriodDone> {
-        val raw = sp.getString("penance_period_history", null) ?: return emptyList()
-        return try { gson.fromJson<List<PenancePeriodDone>>(raw, penanceHistType) ?: emptyList() } catch (e: Exception) { emptyList() }
-    }
-    private fun persistPenanceHistory() {
-        sp.edit().putString("penance_period_history", gson.toJson(penancePeriodHistory)).apply()
-    }
-
-    /** Un jour manqué remet le compteur à zéro (fidélité stricte, comme la neuvaine). */
-    fun penancePeriodRefresh() {
-        val p = penancePeriod
-        if (!p.started || p.lastDay < 0) return
-        if (p.daysDone >= p.targetDays) return   // déjà accompli : ne pas remettre à zéro
-        if (todayEpochDay() - p.lastDay >= 2) {
-            penancePeriod = p.copy(daysDone = 0, lastDay = -1L)
-            penancePeriodJustReset = true
-            persistPenancePeriod()
-        }
-    }
-
-    /** Confirme un jour de pénitence dans le temps en cours (une fois par jour) ; archive à l'achèvement. */
-    fun penancePeriodConfirm() {
-        val p = penancePeriod
-        val today = todayEpochDay()
-        if (!p.started || p.lastDay == today) return
-        val newDays = p.daysDone + 1
-        penancePeriod = p.copy(daysDone = newDays, lastDay = today)
-        persistPenancePeriod()
-        if (newDays >= p.targetDays) {
-            penancePeriodHistory = penancePeriodHistory + PenancePeriodDone(p.targetDays, today)
-            persistPenanceHistory()
-        }
-    }
-
     fun ruleDoneToday(): Boolean = ruleProgress.started && ruleProgress.lastDay == todayEpochDay()
 
     /** Locks the tradition and difficulty; begins at level 1. */
@@ -644,5 +490,200 @@ class GameStore(context: Context) {
         val gain = ReadingLeveling.sessionXp(minutes)
         readingWorks = readingWorks.map { if (it.id == workId) it.copy(xp = it.xp + gain) else it }
         persistWorks()
+    }
+
+    // =========================================================================
+    //  LA RÈGLE PERSONNELLE — règles composées par l'utilisateur, conservées ici
+    //  et jouées par le même moteur que les traditions (famille "personnelle").
+    // =========================================================================
+    private val customRulesType = object : TypeToken<List<RuleTradition>>() {}.type
+
+    var customRules by mutableStateOf(loadCustomRules())
+        private set
+
+    private fun loadCustomRules(): List<RuleTradition> {
+        val raw = sp.getString("custom_rules", null) ?: return emptyList()
+        return try { gson.fromJson<List<RuleTradition>>(raw, customRulesType) ?: emptyList() } catch (e: Exception) { emptyList() }
+    }
+
+    private fun persistCustomRules() {
+        sp.edit().putString("custom_rules", gson.toJson(customRules)).apply()
+    }
+
+    fun customRuleById(id: String): RuleTradition? = customRules.firstOrNull { it.id == id }
+
+    /** Crée (ou remplace, si l'id est fourni) une règle personnelle. Retourne son id. */
+    fun saveCustomRule(
+        name: String, subtitle: String, patron: String, accent: String, desc: String,
+        dailyCore: List<String>, devotions: List<RuleDevotion>, existingId: String? = null
+    ): String {
+        val id = existingId ?: ("perso_" + System.currentTimeMillis().toString(36) + "_" + (0..999).random())
+        val rule = RuleTradition(
+            id = id, family = "personnelle",
+            name = name.trim().ifBlank { "Ma règle" },
+            subtitle = subtitle.trim(), patron = patron.trim(), accent = accent,
+            desc = desc.trim(), dailyCore = dailyCore, devotions = devotions
+        )
+        customRules = customRules.filterNot { it.id == id } + rule
+        persistCustomRules()
+        return id
+    }
+
+    fun removeCustomRule(id: String) {
+        customRules = customRules.filterNot { it.id == id }
+        persistCustomRules()
+    }
+
+    // =========================================================================
+    //  LE SUIVI DE JEÛNE — même logique stricte que la neuvaine : un jour manqué
+    //  remet le compteur à zéro. Au terme, le jeûne est archivé au répertoire.
+    // =========================================================================
+    private val fastTrackType = object : TypeToken<FastTrackProgress>() {}.type
+
+    var fastTrackProgress by mutableStateOf(loadFastTrack())
+        private set
+
+    var fastTrackJustReset by mutableStateOf(false)
+        private set
+
+    private fun loadFastTrack(): FastTrackProgress {
+        val raw = sp.getString("fasttrack_progress", null) ?: return FastTrackProgress()
+        return try { gson.fromJson(raw, fastTrackType) ?: FastTrackProgress() } catch (e: Exception) { FastTrackProgress() }
+    }
+
+    private fun persistFastTrack() {
+        sp.edit().putString("fasttrack_progress", gson.toJson(fastTrackProgress)).apply()
+    }
+
+    fun fastTrackDoneToday(): Boolean = fastTrackProgress.started && fastTrackProgress.lastDay == todayEpochDay()
+
+    fun fastTrackStart(typeId: String, label: String, target: Int) {
+        fastTrackProgress = fastTrackProgress.copy(
+            started = true, typeId = typeId, label = label,
+            target = target.coerceAtLeast(1), day = 0, lastDay = -1L, startEpochDay = todayEpochDay()
+        )
+        fastTrackJustReset = false
+        persistFastTrack()
+    }
+
+    fun fastTrackRefresh() {
+        val p = fastTrackProgress
+        if (!p.started || p.lastDay < 0) return
+        val gap = todayEpochDay() - p.lastDay
+        if (gap >= 2) {
+            fastTrackProgress = p.copy(day = 0, lastDay = -1L, startEpochDay = todayEpochDay())
+            fastTrackJustReset = true
+            persistFastTrack()
+        }
+    }
+
+    fun fastTrackConsumeReset() { if (fastTrackJustReset) fastTrackJustReset = false }
+
+    fun fastTrackConfirmToday() {
+        val p = fastTrackProgress
+        if (!p.started || fastTrackDoneToday()) return
+        val newDay = p.day + 1
+        if (newDay >= p.target) {
+            val entry = FastTrackHistoryEntry(
+                typeId = p.typeId, label = p.label, days = p.target,
+                startEpochDay = if (p.startEpochDay >= 0) p.startEpochDay else todayEpochDay(),
+                endEpochDay = todayEpochDay()
+            )
+            fastTrackProgress = FastTrackProgress(completed = p.completed + entry)
+        } else {
+            fastTrackProgress = p.copy(day = newDay, lastDay = todayEpochDay())
+        }
+        persistFastTrack()
+    }
+
+    fun fastTrackAbandon() {
+        fastTrackProgress = fastTrackProgress.copy(
+            started = false, typeId = "", label = "", target = 0, day = 0, lastDay = -1L, startEpochDay = -1L
+        )
+        fastTrackJustReset = false
+        persistFastTrack()
+    }
+
+    // =========================================================================
+    //  LA PÉNITENCE — pénitences perso ajoutées + journal des jours accomplis.
+    //  Pas de pénalité : on consigne simplement les jours où la pénitence a été
+    //  vécue (sur ses jours assignés ou à volonté).
+    // =========================================================================
+    private val penanceType = object : TypeToken<PenanceProgress>() {}.type
+
+    var penanceProgress by mutableStateOf(loadPenance())
+        private set
+
+    private fun loadPenance(): PenanceProgress {
+        val raw = sp.getString("penance_progress", null) ?: return PenanceProgress()
+        return try { gson.fromJson(raw, penanceType) ?: PenanceProgress() } catch (e: Exception) { PenanceProgress() }
+    }
+
+    private fun persistPenance() {
+        sp.edit().putString("penance_progress", gson.toJson(penanceProgress)).apply()
+    }
+
+    fun addCustomPenance(level: Int, name: String, desc: String, weekdays: List<Int>, computed: String?): String {
+        val id = "pen_" + System.currentTimeMillis().toString(36) + "_" + (0..999).random()
+        val p = Penance(
+            id = id, level = level.coerceIn(1, 5), family = "commune",
+            name = name.trim().ifBlank { "Ma pénitence" }, desc = desc.trim(),
+            weekdays = weekdays, computed = computed, custom = true
+        )
+        penanceProgress = penanceProgress.copy(custom = penanceProgress.custom + p)
+        persistPenance()
+        return id
+    }
+
+    fun removeCustomPenance(id: String) {
+        penanceProgress = penanceProgress.copy(
+            custom = penanceProgress.custom.filterNot { it.id == id },
+            doneDays = penanceProgress.doneDays - id
+        )
+        persistPenance()
+    }
+
+    fun penanceDoneToday(id: String): Boolean =
+        penanceProgress.doneDays[id]?.contains(todayEpochDay()) == true
+
+    fun penanceDoneCount(id: String): Int = penanceProgress.doneDays[id]?.size ?: 0
+
+    /** Bascule l'état « accompli aujourd'hui » pour une pénitence. */
+    fun penanceToggleToday(id: String) {
+        val today = todayEpochDay()
+        val current = penanceProgress.doneDays[id] ?: emptyList()
+        val updated = if (current.contains(today)) current - today else current + today
+        penanceProgress = penanceProgress.copy(doneDays = penanceProgress.doneDays + (id to updated))
+        persistPenance()
+    }
+
+    // =========================================================================
+    //  LES ŒUVRES DE MISÉRICORDE — journal léger : jours où chaque œuvre a été
+    //  vécue (sans pénalité). Structure identique au journal des pénitences.
+    // =========================================================================
+    private val mercyType = object : TypeToken<Map<String, List<Long>>>() {}.type
+
+    var mercyDoneDays by mutableStateOf(loadMercy())
+        private set
+
+    private fun loadMercy(): Map<String, List<Long>> {
+        val raw = sp.getString("mercy_done", null) ?: return emptyMap()
+        return try { gson.fromJson<Map<String, List<Long>>>(raw, mercyType) ?: emptyMap() } catch (e: Exception) { emptyMap() }
+    }
+
+    private fun persistMercy() {
+        sp.edit().putString("mercy_done", gson.toJson(mercyDoneDays)).apply()
+    }
+
+    fun mercyDoneToday(id: String): Boolean = mercyDoneDays[id]?.contains(todayEpochDay()) == true
+
+    fun mercyDoneCount(id: String): Int = mercyDoneDays[id]?.size ?: 0
+
+    fun mercyToggleToday(id: String) {
+        val today = todayEpochDay()
+        val current = mercyDoneDays[id] ?: emptyList()
+        val updated = if (current.contains(today)) current - today else current + today
+        mercyDoneDays = mercyDoneDays + (id to updated)
+        persistMercy()
     }
 }
