@@ -36,21 +36,21 @@
         },
         {
           "name": "Jeûne selon le typikon athonite",
-          "note": "Mercredi et vendredi, sans huile si possible.",
+          "note": "Mercredi et vendredi, sans huile si possible. → Concrètement : allège nourriture et superflu selon ta santé (un repas plus simple, pas de gourmandises), et offre cette faim en prière ; toujours avec discernement.",
           "signature": false,
           "minutes": 0,
           "supersedes": -1
         },
         {
           "name": "Acathiste à la Mère de Dieu",
-          "note": "Chaque samedi soir.",
+          "note": "Chaque samedi soir. → Concrètement : reste debout et chante ou lis l'hymne acathiste (kontakia et ikos), reprenant le refrain « Réjouis-toi… » à la Mère de Dieu.",
           "signature": true,
           "minutes": 25,
           "supersedes": -1
         },
         {
           "name": "Métanies",
-          "note": "Prosternations, nombre croissant selon la force de chacun.",
+          "note": "Prosternations, nombre croissant selon la force de chacun. → Concrètement : à chaque Prière de Jésus, incline-toi (petite métanie) ou mets un genou et le front à terre (grande métanie), puis relève-toi.",
           "signature": false,
           "minutes": 5,
           "supersedes": -1
@@ -121,14 +121,14 @@
         },
         {
           "name": "Chapelet de la Prière de Jésus",
-          "note": "Sur le tchotki, cent grains.",
+          "note": "Sur le tchotki, cent grains. → Concrètement : répète lentement « Seigneur Jésus-Christ, Fils de Dieu, aie pitié de moi, pécheur », en l'accordant au souffle ; dès que l'esprit s'échappe, reviens doucement au Nom.",
           "signature": false,
           "minutes": 20,
           "supersedes": -1
         },
         {
           "name": "Acathiste à saint Séraphin de Sarov",
-          "note": "Une fois par semaine.",
+          "note": "Une fois par semaine. → Concrètement : reste debout et chante ou lis l'hymne acathiste (kontakia et ikos), reprenant le refrain « Réjouis-toi… » à la Mère de Dieu.",
           "signature": true,
           "minutes": 25,
           "supersedes": -1
@@ -142,14 +142,14 @@
         },
         {
           "name": "Jeûne selon le calendrier orthodoxe russe",
-          "note": "Mercredi, vendredi, et périodes de jeûne prescrites.",
+          "note": "Mercredi, vendredi, et périodes de jeûne prescrites. → Concrètement : allège nourriture et superflu selon ta santé (un repas plus simple, pas de gourmandises), et offre cette faim en prière ; toujours avec discernement.",
           "signature": false,
           "minutes": 0,
           "supersedes": -1
         },
         {
           "name": "Poklony (prosternations)",
-          "note": "Nombre croissant, au rythme de chacun.",
+          "note": "Nombre croissant, au rythme de chacun. → Concrètement : prosterne-toi corps et esprit en disant le Nom de Jésus, puis relève-toi ; répète avec calme.",
           "signature": false,
           "minutes": 5,
           "supersedes": -1
@@ -170,7 +170,7 @@
         },
         {
           "name": "Silence du cœur",
-          "note": "Un temps quotidien de recueillement, en marchant si besoin (comme Séraphin en forêt).",
+          "note": "Un temps quotidien de recueillement, en marchant si besoin (comme Séraphin en forêt). → Concrètement : retiens les paroles inutiles et fais du silence en toi ; reviens à la présence de Dieu au fil des tâches.",
           "signature": false,
           "minutes": 20,
           "supersedes": -1
@@ -183,8 +183,8 @@
           "supersedes": -1
         },
         {
-          "name": "Le cycle complet de l'Office slave",
-          "note": "Vêpres, Complies, Mésonyktikon, Matines et les Heures, selon l'usage slave — l'intégralité du cycle quotidien, au-delà du Pravilo personnel.",
+          "name": "Le cycle complet de l'Office byzantin slave",
+          "note": "Prie l'office byzantin complet — Mésonyctique (minuit), Orthros, les Heures, Vêpres et Complies — selon l'Horologe. Sers-toi du module Liturgie des Heures.",
           "signature": true,
           "minutes": 50,
           "supersedes": -1
@@ -234,7 +234,7 @@
         },
         {
           "name": "Jeûne copte",
-          "note": "Selon le calendrier copte, substantiel dans sa forme traditionnelle.",
+          "note": "Selon le calendrier copte, substantiel dans sa forme traditionnelle. → Concrètement : allège nourriture et superflu selon ta santé (un repas plus simple, pas de gourmandises), et offre cette faim en prière ; toujours avec discernement.",
           "signature": false,
           "minutes": 0,
           "supersedes": -1
@@ -262,7 +262,7 @@
         },
         {
           "name": "Jeûne du Grand Carême copte",
-          "note": "Cinquante-cinq jours, selon la tradition — à vivre avec discernement et un accompagnement.",
+          "note": "Cinquante-cinq jours, selon la tradition — à vivre avec discernement et un accompagnement. → Concrètement : allège nourriture et superflu selon ta santé (un repas plus simple, pas de gourmandises), et offre cette faim en prière ; toujours avec discernement.",
           "signature": false,
           "minutes": 0,
           "supersedes": -1
@@ -319,7 +319,7 @@
       "devotions": [
         {
           "name": "Lectio divina",
-          "note": "15 à 30 minutes de lecture priante de l'Écriture.",
+          "note": "15 à 30 minutes de lecture priante de l'Écriture. → Concrètement : en quatre temps — lis un court passage (lectio), rumine un mot qui te touche (meditatio), prie à partir de lui (oratio), puis demeure en silence devant Dieu (contemplatio).",
           "signature": true,
           "minutes": 22,
           "supersedes": -1
@@ -347,7 +347,7 @@
         },
         {
           "name": "Grand silence",
-          "note": "Du soir au matin, silence gardé autant que possible.",
+          "note": "Du soir au matin, silence gardé autant que possible. → Concrètement : coupe les sources de bruit (écrans, paroles inutiles) ; garde le cœur attentif à Dieu, ne parlant que par nécessité et charité.",
           "signature": false,
           "minutes": 20,
           "supersedes": -1
@@ -396,7 +396,7 @@
         },
         {
           "name": "Jeûne selon la Règle",
-          "note": "Un seul repas principal certains jours, selon la Règle de saint Benoît (ch. 39, 41) — sobriété alimentaire mesurée, jamais excessive.",
+          "note": "Un seul repas principal certains jours, selon la Règle de saint Benoît (ch. 39, 41) — sobriété alimentaire mesurée, jamais excessive. → Concrètement : allège nourriture et superflu selon ta santé (un repas plus simple, pas de gourmandises), et offre cette faim en prière ; toujours avec discernement.",
           "signature": true,
           "minutes": 0,
           "supersedes": -1
@@ -425,7 +425,7 @@
         },
         {
           "name": "Angélus",
-          "note": "Trois fois par jour.",
+          "note": "Trois fois par jour. → Concrètement : matin, midi et soir : dis les trois versets de l'Incarnation (« L'ange du Seigneur… ») avec un Je vous salue Marie après chacun, puis l'oraison finale.",
           "signature": false,
           "minutes": 3,
           "supersedes": -1
@@ -460,14 +460,14 @@
         },
         {
           "name": "Adoration eucharistique",
-          "note": "Un temps hebdomadaire devant le Saint-Sacrement.",
+          "note": "Un temps hebdomadaire devant le Saint-Sacrement. → Concrètement : place-toi en silence devant le Saint-Sacrement ; regarde Jésus et laisse-toi regarder, sans rien 'faire' d'autre que rester présent.",
           "signature": false,
           "minutes": 30,
           "supersedes": -1
         },
         {
           "name": "Jeûne de saint Martin",
-          "note": "Jeûne franciscain traditionnel de préparation à Noël.",
+          "note": "Jeûne franciscain traditionnel de préparation à Noël. → Concrètement : allège nourriture et superflu selon ta santé (un repas plus simple, pas de gourmandises), et offre cette faim en prière ; toujours avec discernement.",
           "signature": false,
           "minutes": 0,
           "supersedes": -1
@@ -510,7 +510,7 @@
       "devotions": [
         {
           "name": "Oraison silencieuse",
-          "note": "15 à 20 minutes, assis en silence devant Dieu.",
+          "note": "15 à 20 minutes, assis en silence devant Dieu. → Concrètement : mets-toi en présence de Dieu ; prends une scène d'Évangile ou une vérité, parle-lui cœur à cœur, puis écoute en silence.",
           "signature": true,
           "minutes": 18,
           "supersedes": -1
@@ -545,14 +545,14 @@
         },
         {
           "name": "Oraison prolongée",
-          "note": "30 minutes, sans chercher de consolation sensible.",
+          "note": "30 minutes, sans chercher de consolation sensible. → Concrètement : mets-toi en présence de Dieu ; prends une scène d'Évangile ou une vérité, parle-lui cœur à cœur, puis écoute en silence.",
           "signature": false,
           "minutes": 30,
           "supersedes": -1
         },
         {
           "name": "Silence intérieur prolongé",
-          "note": "Un temps de solitude et de silence plus long, une fois par semaine.",
+          "note": "Un temps de solitude et de silence plus long, une fois par semaine. → Concrètement : retiens les paroles inutiles et fais du silence en toi ; reviens à la présence de Dieu au fil des tâches.",
           "signature": false,
           "minutes": 30,
           "supersedes": -1
@@ -587,7 +587,7 @@
         },
         {
           "name": "Jeûne du Carmel",
-          "note": "Abstinence et jeûne du 14 septembre à Pâques, selon la Règle du Carmel (Règle de saint Albert) — à vivre avec discernement selon son état de vie.",
+          "note": "Abstinence et jeûne du 14 septembre à Pâques, selon la Règle du Carmel (Règle de saint Albert) — à vivre avec discernement selon son état de vie. → Concrètement : allège nourriture et superflu selon ta santé (un repas plus simple, pas de gourmandises), et offre cette faim en prière ; toujours avec discernement.",
           "signature": true,
           "minutes": 0,
           "supersedes": -1
@@ -609,7 +609,7 @@
       "devotions": [
         {
           "name": "Rosaire dominicain",
-          "note": "Les quinze mystères, répartis sur la semaine.",
+          "note": "Les quinze mystères, répartis sur la semaine. → Concrètement : annonce un mystère, dis un Notre Père puis dix Je vous salue Marie en méditant la scène évangélique.",
           "signature": true,
           "minutes": 20,
           "supersedes": -1
@@ -637,7 +637,7 @@
         },
         {
           "name": "Silence d'étude",
-          "note": "Un temps de silence dédié à la lecture, chaque jour.",
+          "note": "Un temps de silence dédié à la lecture, chaque jour. → Concrètement : retiens les paroles inutiles et fais du silence en toi ; reviens à la présence de Dieu au fil des tâches.",
           "signature": false,
           "minutes": 20,
           "supersedes": -1
@@ -665,7 +665,7 @@
         },
         {
           "name": "Examen de vérité",
-          "note": "Examen de conscience centré sur la sincérité et la droiture d'intention.",
+          "note": "Examen de conscience centré sur la sincérité et la droiture d'intention. → Concrètement : le soir, en cinq pas : rends grâce pour un bienfait, demande la lumière, relis les heures du jour, reconnais une faute et demande pardon, choisis un point pour demain.",
           "signature": false,
           "minutes": 10,
           "supersedes": -1
@@ -686,7 +686,7 @@
         },
         {
           "name": "Jeûne dominicain",
-          "note": "Sobriété et abstinence, selon la tradition de l'Ordre des Prêcheurs, pour soutenir l'étude et la contemplation.",
+          "note": "Sobriété et abstinence, selon la tradition de l'Ordre des Prêcheurs, pour soutenir l'étude et la contemplation. → Concrètement : allège nourriture et superflu selon ta santé (un repas plus simple, pas de gourmandises), et offre cette faim en prière ; toujours avec discernement.",
           "signature": true,
           "minutes": 0,
           "supersedes": -1
@@ -708,14 +708,14 @@
       "devotions": [
         {
           "name": "Examen particulier",
-          "note": "Deux fois par jour, sur un point précis de combat intérieur.",
+          "note": "Deux fois par jour, sur un point précis de combat intérieur. → Concrètement : le soir, en cinq pas : rends grâce pour un bienfait, demande la lumière, relis les heures du jour, reconnais une faute et demande pardon, choisis un point pour demain.",
           "signature": true,
           "minutes": 10,
           "supersedes": -1
         },
         {
           "name": "Oraison ignatienne",
-          "note": "20 minutes de contemplation imaginative d'une scène d'Évangile.",
+          "note": "20 minutes de contemplation imaginative d'une scène d'Évangile. → Concrètement : mets-toi en présence de Dieu ; prends une scène d'Évangile ou une vérité, parle-lui cœur à cœur, puis écoute en silence.",
           "signature": true,
           "minutes": 20,
           "supersedes": -1
@@ -807,7 +807,7 @@
         },
         {
           "name": "Silence de la cellule",
-          "note": "Un temps quotidien de solitude et de silence total, à l'image de la cellule chartreuse.",
+          "note": "Un temps quotidien de solitude et de silence total, à l'image de la cellule chartreuse. → Concrètement : retiens les paroles inutiles et fais du silence en toi ; reviens à la présence de Dieu au fil des tâches.",
           "signature": true,
           "minutes": 20,
           "supersedes": -1
@@ -828,14 +828,14 @@
         },
         {
           "name": "Jeûne du désert",
-          "note": "Sobriété alimentaire marquée, avec discernement.",
+          "note": "Sobriété alimentaire marquée, avec discernement. → Concrètement : allège nourriture et superflu selon ta santé (un repas plus simple, pas de gourmandises), et offre cette faim en prière ; toujours avec discernement.",
           "signature": false,
           "minutes": 20,
           "supersedes": -1
         },
         {
           "name": "Travail manuel silencieux",
-          "note": "Une tâche accomplie sans parole ni distraction.",
+          "note": "Une tâche accomplie sans parole ni distraction. → Concrètement : fais un travail utile des mains en priant intérieurement ; offre ta peine à Dieu.",
           "signature": false,
           "minutes": 0,
           "supersedes": -1
@@ -906,21 +906,21 @@
         },
         {
           "name": "Lectio divina cistercienne",
-          "note": "Lecture lente, ruminée, de l'Écriture ou de saint Bernard.",
+          "note": "Lecture lente, ruminée, de l'Écriture ou de saint Bernard. → Concrètement : en quatre temps — lis un court passage (lectio), rumine un mot qui te touche (meditatio), prie à partir de lui (oratio), puis demeure en silence devant Dieu (contemplatio).",
           "signature": true,
           "minutes": 20,
           "supersedes": -1
         },
         {
           "name": "Silence des signes",
-          "note": "Limiter la parole, communiquer par gestes quand c'est possible.",
+          "note": "Limiter la parole, communiquer par gestes quand c'est possible. → Concrètement : retiens les paroles inutiles et fais du silence en toi ; reviens à la présence de Dieu au fil des tâches.",
           "signature": false,
           "minutes": 20,
           "supersedes": -1
         },
         {
           "name": "Travail manuel",
-          "note": "Une tâche manuelle offerte en prière.",
+          "note": "Une tâche manuelle offerte en prière. → Concrètement : fais un travail utile des mains en priant intérieurement ; offre ta peine à Dieu.",
           "signature": false,
           "minutes": 0,
           "supersedes": -1
@@ -955,7 +955,7 @@
         },
         {
           "name": "Silence complet un jour",
-          "note": "Une journée de silence total, y compris les signes.",
+          "note": "Une journée de silence total, y compris les signes. → Concrètement : retiens les paroles inutiles et fais du silence en toi ; reviens à la présence de Dieu au fil des tâches.",
           "signature": false,
           "minutes": 0,
           "supersedes": -1
@@ -991,7 +991,7 @@
       "devotions": [
         {
           "name": "Une heure d'adoration",
-          "note": "Chaque jour, devant le Saint-Sacrement.",
+          "note": "Chaque jour, devant le Saint-Sacrement. → Concrètement : tiens-toi en silence devant le Saint-Sacrement ; regarde Jésus et laisse-toi regarder.",
           "signature": true,
           "minutes": 30,
           "supersedes": -1
@@ -1026,7 +1026,7 @@
         },
         {
           "name": "Silence du cœur",
-          "note": "Un temps de silence pour écouter Dieu dans la prière, avant le service.",
+          "note": "Un temps de silence pour écouter Dieu dans la prière, avant le service. → Concrètement : retiens les paroles inutiles et fais du silence en toi ; reviens à la présence de Dieu au fil des tâches.",
           "signature": false,
           "minutes": 20,
           "supersedes": -1
@@ -1097,7 +1097,7 @@
         },
         {
           "name": "Adoration eucharistique",
-          "note": "Un temps hebdomadaire devant le Saint-Sacrement.",
+          "note": "Un temps hebdomadaire devant le Saint-Sacrement. → Concrètement : place-toi en silence devant le Saint-Sacrement ; regarde Jésus et laisse-toi regarder, sans rien 'faire' d'autre que rester présent.",
           "signature": true,
           "minutes": 30,
           "supersedes": -1
@@ -1139,7 +1139,7 @@
         },
         {
           "name": "Jeûne et prière d'intercession",
-          "note": "Pour une intention précise.",
+          "note": "Pour une intention précise. → Concrètement : allège nourriture et superflu selon ta santé (un repas plus simple, pas de gourmandises), et offre cette faim en prière ; toujours avec discernement.",
           "signature": false,
           "minutes": 0,
           "supersedes": -1
@@ -1217,14 +1217,14 @@
         },
         {
           "name": "Adoration prolongée",
-          "note": "Un temps plus long devant le Saint-Sacrement.",
+          "note": "Un temps plus long devant le Saint-Sacrement. → Concrètement : tiens-toi en silence devant le Saint-Sacrement ; regarde Jésus et laisse-toi regarder.",
           "signature": false,
           "minutes": 30,
           "supersedes": -1
         },
         {
           "name": "Jeûne d'intercession",
-          "note": "Pour une intention missionnaire précise.",
+          "note": "Pour une intention missionnaire précise. → Concrètement : allège nourriture et superflu selon ta santé (un repas plus simple, pas de gourmandises), et offre cette faim en prière ; toujours avec discernement.",
           "signature": false,
           "minutes": 0,
           "supersedes": -1
@@ -1288,14 +1288,14 @@
         },
         {
           "name": "Acathiste marial",
-          "note": "Chaque semaine, selon l'usage roumain.",
+          "note": "Chaque semaine, selon l'usage roumain. → Concrètement : reste debout et chante ou lis l'hymne acathiste (kontakia et ikos), reprenant le refrain « Réjouis-toi… » à la Mère de Dieu.",
           "signature": false,
           "minutes": 25,
           "supersedes": -1
         },
         {
           "name": "Jeûne selon le calendrier roumain",
-          "note": "Mercredi, vendredi, et périodes prescrites.",
+          "note": "Mercredi, vendredi, et périodes prescrites. → Concrètement : allège nourriture et superflu selon ta santé (un repas plus simple, pas de gourmandises), et offre cette faim en prière ; toujours avec discernement.",
           "signature": false,
           "minutes": 0,
           "supersedes": -1
@@ -1323,7 +1323,7 @@
         },
         {
           "name": "Métanies quotidiennes",
-          "note": "Prosternations, nombre croissant.",
+          "note": "Prosternations, nombre croissant. → Concrètement : à chaque Prière de Jésus, incline-toi (petite métanie) ou mets un genou et le front à terre (grande métanie), puis relève-toi.",
           "signature": false,
           "minutes": 5,
           "supersedes": -1
@@ -1387,7 +1387,7 @@
         },
         {
           "name": "Jeûne selon le typikon géorgien",
-          "note": "Mercredi et vendredi, périodes prescrites.",
+          "note": "Mercredi et vendredi, périodes prescrites. → Concrètement : allège nourriture et superflu selon ta santé (un repas plus simple, pas de gourmandises), et offre cette faim en prière ; toujours avec discernement.",
           "signature": false,
           "minutes": 0,
           "supersedes": -1
@@ -1408,7 +1408,7 @@
         },
         {
           "name": "Prosternations",
-          "note": "Nombre croissant.",
+          "note": "Nombre croissant. → Concrètement : prosterne-toi corps et esprit en disant le Nom de Jésus, puis relève-toi ; répète avec calme.",
           "signature": false,
           "minutes": 5,
           "supersedes": -1
@@ -1436,7 +1436,7 @@
         },
         {
           "name": "Silence contemplatif",
-          "note": "À l'image des Pères assyriens fondateurs du désert géorgien.",
+          "note": "À l'image des Pères assyriens fondateurs du désert géorgien. → Concrètement : retiens les paroles inutiles et fais du silence en toi ; reviens à la présence de Dieu au fil des tâches.",
           "signature": false,
           "minutes": 20,
           "supersedes": -1
@@ -1479,7 +1479,7 @@
       "devotions": [
         {
           "name": "Oraison mentale silencieuse",
-          "note": "Un temps quotidien de prière silencieuse, prolongé progressivement.",
+          "note": "Un temps quotidien de prière silencieuse, prolongé progressivement. → Concrètement : mets-toi en présence de Dieu ; prends une scène d'Évangile ou une vérité, parle-lui cœur à cœur, puis écoute en silence.",
           "signature": true,
           "minutes": 20,
           "supersedes": -1
@@ -1500,14 +1500,14 @@
         },
         {
           "name": "Angélus",
-          "note": "Trois fois par jour.",
+          "note": "Trois fois par jour. → Concrètement : matin, midi et soir : dis les trois versets de l'Incarnation (« L'ange du Seigneur… ») avec un Je vous salue Marie après chacun, puis l'oraison finale.",
           "signature": false,
           "minutes": 3,
           "supersedes": -1
         },
         {
           "name": "Adoration eucharistique",
-          "note": "Un temps hebdomadaire devant le Saint-Sacrement.",
+          "note": "Un temps hebdomadaire devant le Saint-Sacrement. → Concrètement : place-toi en silence devant le Saint-Sacrement ; regarde Jésus et laisse-toi regarder, sans rien 'faire' d'autre que rester présent.",
           "signature": false,
           "minutes": 30,
           "supersedes": -1
@@ -1521,7 +1521,7 @@
         },
         {
           "name": "Rosaire",
-          "note": "Récité quotidiennement.",
+          "note": "Récité quotidiennement. → Concrètement : annonce un mystère, dis un Notre Père puis dix Je vous salue Marie en méditant la scène évangélique.",
           "signature": false,
           "minutes": 20,
           "supersedes": -1
@@ -1556,7 +1556,7 @@
         },
         {
           "name": "Jeûne capucin",
-          "note": "Sobriété alimentaire radicale, selon l'esprit de pauvreté propre à la réforme capucine de 1528.",
+          "note": "Sobriété alimentaire radicale, selon l'esprit de pauvreté propre à la réforme capucine de 1528. → Concrètement : allège nourriture et superflu selon ta santé (un repas plus simple, pas de gourmandises), et offre cette faim en prière ; toujours avec discernement.",
           "signature": true,
           "minutes": 0,
           "supersedes": -1
@@ -1599,7 +1599,7 @@
         },
         {
           "name": "Esprit d'oraison, de solitude, de pauvreté",
-          "note": "Les trois piliers du testament spirituel de saint Paul de la Croix.",
+          "note": "Les trois piliers du testament spirituel de saint Paul de la Croix. → Concrètement : mets-toi en présence de Dieu ; prends une scène d'Évangile ou une vérité, parle-lui cœur à cœur, puis écoute en silence.",
           "signature": true,
           "minutes": 20,
           "supersedes": -1
@@ -1620,7 +1620,7 @@
         },
         {
           "name": "Silence contemplatif prolongé",
-          "note": "Un temps de silence plus long chaque semaine.",
+          "note": "Un temps de silence plus long chaque semaine. → Concrètement : retiens les paroles inutiles et fais du silence en toi ; reviens à la présence de Dieu au fil des tâches.",
           "signature": false,
           "minutes": 20,
           "supersedes": -1
@@ -1754,7 +1754,7 @@
         },
         {
           "name": "Jeûne hebdomadaire",
-          "note": "Un jour de jeûne ou d'abstinence dans la semaine, en union avec la Passion du Christ, source de la Miséricorde.",
+          "note": "Un jour de jeûne ou d'abstinence dans la semaine, en union avec la Passion du Christ, source de la Miséricorde. → Concrètement : allège nourriture et superflu selon ta santé (un repas plus simple, pas de gourmandises), et offre cette faim en prière ; toujours avec discernement.",
           "signature": true,
           "minutes": 0,
           "supersedes": -1
@@ -1853,7 +1853,7 @@
         },
         {
           "name": "Jeûne hebdomadaire",
-          "note": "Un jour de jeûne dans la semaine, offert pour une intention précise.",
+          "note": "Un jour de jeûne dans la semaine, offert pour une intention précise. → Concrètement : allège nourriture et superflu selon ta santé (un repas plus simple, pas de gourmandises), et offre cette faim en prière ; toujours avec discernement.",
           "signature": true,
           "minutes": 0,
           "supersedes": -1
@@ -1952,7 +1952,7 @@
         },
         {
           "name": "Jeûne hebdomadaire",
-          "note": "Un jour de jeûne dans la semaine, uni à la prière pour la mission.",
+          "note": "Un jour de jeûne dans la semaine, uni à la prière pour la mission. → Concrètement : allège nourriture et superflu selon ta santé (un repas plus simple, pas de gourmandises), et offre cette faim en prière ; toujours avec discernement.",
           "signature": true,
           "minutes": 0,
           "supersedes": -1
@@ -1974,21 +1974,21 @@
       "devotions": [
         {
           "name": "Rosaire quotidien",
-          "note": "Récité presque sans cesse, à l'exemple de saint Charbel Makhlouf.",
+          "note": "Récité presque sans cesse, à l'exemple de saint Charbel Makhlouf. → Concrètement : annonce un mystère, dis un Notre Père puis dix Je vous salue Marie en méditant la scène évangélique.",
           "signature": true,
           "minutes": 20,
           "supersedes": -1
         },
         {
           "name": "Silence habituel",
-          "note": "Limiter les paroles inutiles ; le silence était, selon la tradition, « la langue maternelle » de saint Charbel.",
+          "note": "Limiter les paroles inutiles ; le silence était, selon la tradition, « la langue maternelle » de saint Charbel. → Concrètement : retiens les paroles inutiles et fais du silence en toi ; reviens à la présence de Dieu au fil des tâches.",
           "signature": true,
           "minutes": 15,
           "supersedes": -1
         },
         {
           "name": "Travail manuel offert",
-          "note": "Une tâche manuelle accomplie en silence et en prière.",
+          "note": "Une tâche manuelle accomplie en silence et en prière. → Concrètement : fais un travail utile des mains en priant intérieurement ; offre ta peine à Dieu.",
           "signature": false,
           "minutes": 0,
           "supersedes": -1
@@ -2009,21 +2009,21 @@
         },
         {
           "name": "Adoration eucharistique",
-          "note": "Un temps hebdomadaire devant le Saint-Sacrement.",
+          "note": "Un temps hebdomadaire devant le Saint-Sacrement. → Concrètement : place-toi en silence devant le Saint-Sacrement ; regarde Jésus et laisse-toi regarder, sans rien 'faire' d'autre que rester présent.",
           "signature": false,
           "minutes": 30,
           "supersedes": -1
         },
         {
           "name": "Jeûne selon le typikon maronite",
-          "note": "Périodes de jeûne prescrites par le calendrier maronite.",
+          "note": "Périodes de jeûne prescrites par le calendrier maronite. → Concrètement : allège nourriture et superflu selon ta santé (un repas plus simple, pas de gourmandises), et offre cette faim en prière ; toujours avec discernement.",
           "signature": false,
           "minutes": 0,
           "supersedes": -1
         },
         {
           "name": "Oraison nocturne",
-          "note": "Un temps de prière prolongé en fin de soirée, à l'image des veilles de saint Charbel.",
+          "note": "Un temps de prière prolongé en fin de soirée, à l'image des veilles de saint Charbel. → Concrètement : mets-toi en présence de Dieu ; prends une scène d'Évangile ou une vérité, parle-lui cœur à cœur, puis écoute en silence.",
           "signature": false,
           "minutes": 20,
           "supersedes": -1
@@ -2087,7 +2087,7 @@
         },
         {
           "name": "Prière de Jésus",
-          "note": "Répétée avec le souffle, chaque jour.",
+          "note": "Répétée avec le souffle, chaque jour. → Concrètement : répète lentement « Seigneur Jésus-Christ, Fils de Dieu, aie pitié de moi, pécheur », en l'accordant au souffle ; dès que l'esprit s'échappe, reviens doucement au Nom.",
           "signature": true,
           "minutes": 15,
           "supersedes": -1
@@ -2101,7 +2101,7 @@
         },
         {
           "name": "Jeûne selon le typikon serbe",
-          "note": "Mercredi, vendredi, et périodes prescrites.",
+          "note": "Mercredi, vendredi, et périodes prescrites. → Concrètement : allège nourriture et superflu selon ta santé (un repas plus simple, pas de gourmandises), et offre cette faim en prière ; toujours avec discernement.",
           "signature": false,
           "minutes": 0,
           "supersedes": -1
@@ -2122,7 +2122,7 @@
         },
         {
           "name": "Métanies",
-          "note": "Prosternations, nombre croissant.",
+          "note": "Prosternations, nombre croissant. → Concrètement : à chaque Prière de Jésus, incline-toi (petite métanie) ou mets un genou et le front à terre (grande métanie), puis relève-toi.",
           "signature": false,
           "minutes": 5,
           "supersedes": -1
@@ -2172,14 +2172,14 @@
         },
         {
           "name": "Jeûne éthiopien",
-          "note": "Parmi les plus rigoureux de la chrétienté — mercredi, vendredi, et de longues périodes de carême, à vivre avec discernement.",
+          "note": "Parmi les plus rigoureux de la chrétienté — mercredi, vendredi, et de longues périodes de carême, à vivre avec discernement. → Concrètement : allège nourriture et superflu selon ta santé (un repas plus simple, pas de gourmandises), et offre cette faim en prière ; toujours avec discernement.",
           "signature": true,
           "minutes": 0,
           "supersedes": -1
         },
         {
           "name": "Prosternations nombreuses",
-          "note": "Selon l'usage éthiopien, nombre croissant.",
+          "note": "Selon l'usage éthiopien, nombre croissant. → Concrètement : prosterne-toi corps et esprit en disant le Nom de Jésus, puis relève-toi ; répète avec calme.",
           "signature": false,
           "minutes": 10,
           "supersedes": -1
@@ -2299,7 +2299,7 @@
         },
         {
           "name": "Silence intérieur",
-          "note": "Un temps d'accueil de l'Esprit, en silence.",
+          "note": "Un temps d'accueil de l'Esprit, en silence. → Concrètement : retiens les paroles inutiles et fais du silence en toi ; reviens à la présence de Dieu au fil des tâches.",
           "signature": false,
           "minutes": 15,
           "supersedes": -1
@@ -2512,7 +2512,7 @@
         },
         {
           "name": "Prière de Jésus",
-          "note": "Répétée avec le souffle, chaque jour.",
+          "note": "Répétée avec le souffle, chaque jour. → Concrètement : répète lentement « Seigneur Jésus-Christ, Fils de Dieu, aie pitié de moi, pécheur », en l'accordant au souffle ; dès que l'esprit s'échappe, reviens doucement au Nom.",
           "signature": true,
           "minutes": 15,
           "supersedes": -1
@@ -2526,7 +2526,7 @@
         },
         {
           "name": "Jeûne selon le typikon bulgare",
-          "note": "Mercredi, vendredi, et périodes prescrites.",
+          "note": "Mercredi, vendredi, et périodes prescrites. → Concrètement : allège nourriture et superflu selon ta santé (un repas plus simple, pas de gourmandises), et offre cette faim en prière ; toujours avec discernement.",
           "signature": false,
           "minutes": 0,
           "supersedes": -1
@@ -2547,7 +2547,7 @@
         },
         {
           "name": "Métanies",
-          "note": "Prosternations, nombre croissant.",
+          "note": "Prosternations, nombre croissant. → Concrètement : à chaque Prière de Jésus, incline-toi (petite métanie) ou mets un genou et le front à terre (grande métanie), puis relève-toi.",
           "signature": false,
           "minutes": 5,
           "supersedes": -1
@@ -2618,7 +2618,7 @@
         },
         {
           "name": "Jeûne selon le typikon syriaque",
-          "note": "Mercredi, vendredi, et périodes prescrites.",
+          "note": "Mercredi, vendredi, et périodes prescrites. → Concrètement : allège nourriture et superflu selon ta santé (un repas plus simple, pas de gourmandises), et offre cette faim en prière ; toujours avec discernement.",
           "signature": false,
           "minutes": 0,
           "supersedes": -1
@@ -2632,7 +2632,7 @@
         },
         {
           "name": "Métanies",
-          "note": "Prosternations accompagnant la prière de Carême de saint Éphrem.",
+          "note": "Prosternations accompagnant la prière de Carême de saint Éphrem. → Concrètement : à chaque Prière de Jésus, incline-toi (petite métanie) ou mets un genou et le front à terre (grande métanie), puis relève-toi.",
           "signature": false,
           "minutes": 5,
           "supersedes": -1
@@ -2760,7 +2760,7 @@
       "devotions": [
         {
           "name": "Prière de Jésus",
-          "note": "L'invocation du Nom, répétée avec le souffle.",
+          "note": "L'invocation du Nom, répétée avec le souffle. → Concrètement : répète lentement « Seigneur Jésus-Christ, Fils de Dieu, aie pitié de moi, pécheur », en l'accordant au souffle ; dès que l'esprit s'échappe, reviens doucement au Nom.",
           "signature": true,
           "minutes": 15,
           "supersedes": -1
@@ -2773,15 +2773,15 @@
           "supersedes": -1
         },
         {
-          "name": "Office des Complies",
-          "note": "Prière du soir selon l'usage antiochien.",
+          "name": "Office byzantin des Complies",
+          "note": "Prie l'office byzantin complet — Mésonyctique (minuit), Orthros, les Heures, Vêpres et Complies — selon l'Horologe. Sers-toi du module Liturgie des Heures.",
           "signature": false,
           "minutes": 15,
           "supersedes": -1
         },
         {
           "name": "Jeûne du mercredi et du vendredi",
-          "note": "Selon le typikon de l'Église d'Antioche.",
+          "note": "Selon le typikon de l'Église d'Antioche. → Concrètement : allège nourriture et superflu selon ta santé (un repas plus simple, pas de gourmandises), et offre cette faim en prière ; toujours avec discernement.",
           "signature": false,
           "minutes": 0,
           "supersedes": -1
@@ -2831,14 +2831,14 @@
       "devotions": [
         {
           "name": "Prière de Jésus",
-          "note": "Invocation répétée avec le komboskini.",
+          "note": "Invocation répétée avec le komboskini. → Concrètement : répète lentement « Seigneur Jésus-Christ, Fils de Dieu, aie pitié de moi, pécheur », en l'accordant au souffle ; dès que l'esprit s'échappe, reviens doucement au Nom.",
           "signature": true,
           "minutes": 15,
           "supersedes": -1
         },
         {
           "name": "Acathiste à la Mère de Dieu",
-          "note": "Hymne debout en l'honneur de la Théotokos.",
+          "note": "Hymne debout en l'honneur de la Théotokos. → Concrètement : reste debout et chante ou lis l'hymne acathiste (kontakia et ikos), reprenant le refrain « Réjouis-toi… » à la Mère de Dieu.",
           "signature": true,
           "minutes": 20,
           "supersedes": -1
@@ -2852,7 +2852,7 @@
         },
         {
           "name": "Jeûne du mercredi et du vendredi",
-          "note": "Selon le typikon ukrainien.",
+          "note": "Selon le typikon ukrainien. → Concrètement : allège nourriture et superflu selon ta santé (un repas plus simple, pas de gourmandises), et offre cette faim en prière ; toujours avec discernement.",
           "signature": false,
           "minutes": 0,
           "supersedes": -1
@@ -2902,7 +2902,7 @@
       "devotions": [
         {
           "name": "Prière de Jésus",
-          "note": "Invocation continuelle, assise, en silence.",
+          "note": "Invocation continuelle, assise, en silence. → Concrètement : répète lentement « Seigneur Jésus-Christ, Fils de Dieu, aie pitié de moi, pécheur », en l'accordant au souffle ; dès que l'esprit s'échappe, reviens doucement au Nom.",
           "signature": true,
           "minutes": 15,
           "supersedes": -1
@@ -2923,7 +2923,7 @@
         },
         {
           "name": "Jeûne du désert",
-          "note": "Grande sobriété alimentaire, à l'imitation des Pères du Sinaï.",
+          "note": "Grande sobriété alimentaire, à l'imitation des Pères du Sinaï. → Concrètement : allège nourriture et superflu selon ta santé (un repas plus simple, pas de gourmandises), et offre cette faim en prière ; toujours avec discernement.",
           "signature": false,
           "minutes": 0,
           "supersedes": -1
@@ -2937,7 +2937,7 @@
         },
         {
           "name": "Silence et solitude",
-          "note": "Un temps de solitude complète, hors de toute parole.",
+          "note": "Un temps de solitude complète, hors de toute parole. → Concrètement : retiens les paroles inutiles et fais du silence en toi ; reviens à la présence de Dieu au fil des tâches.",
           "signature": false,
           "minutes": 0,
           "supersedes": -1
@@ -2994,21 +2994,21 @@
         },
         {
           "name": "Silence continu",
-          "note": "Grand silence gardé toute la journée.",
+          "note": "Grand silence gardé toute la journée. → Concrètement : retiens les paroles inutiles et fais du silence en toi ; reviens à la présence de Dieu au fil des tâches.",
           "signature": false,
           "minutes": 0,
           "supersedes": -1
         },
         {
           "name": "Travail manuel solitaire",
-          "note": "Une tâche accomplie seul, en silence.",
+          "note": "Une tâche accomplie seul, en silence. → Concrètement : fais un travail utile des mains en priant intérieurement ; offre ta peine à Dieu.",
           "signature": false,
           "minutes": 0,
           "supersedes": -1
         },
         {
           "name": "Jeûne bénédictin renforcé",
-          "note": "Sobriété alimentaire notable, selon la Règle.",
+          "note": "Sobriété alimentaire notable, selon la Règle. → Concrètement : allège nourriture et superflu selon ta santé (un repas plus simple, pas de gourmandises), et offre cette faim en prière ; toujours avec discernement.",
           "signature": false,
           "minutes": 0,
           "supersedes": -1
@@ -3044,21 +3044,21 @@
       "devotions": [
         {
           "name": "Oraison mentale",
-          "note": "Un temps de prière silencieuse et affective devant Dieu, cher à saint Philippe.",
+          "note": "Un temps de prière silencieuse et affective devant Dieu, cher à saint Philippe. → Concrètement : mets-toi en présence de Dieu ; prends une scène d'Évangile ou une vérité, parle-lui cœur à cœur, puis écoute en silence.",
           "signature": true,
           "minutes": 20,
           "supersedes": -1
         },
         {
           "name": "Visite au Saint-Sacrement",
-          "note": "Une brève visite d'adoration au cours de la journée.",
+          "note": "Une brève visite d'adoration au cours de la journée. → Concrètement : entre un instant à l'église ; salue Jésus au tabernacle, confie-lui ta journée, repars en paix.",
           "signature": true,
           "minutes": 10,
           "supersedes": -1
         },
         {
           "name": "Examen de conscience du soir",
-          "note": "Relecture priante de la journée.",
+          "note": "Relecture priante de la journée. → Concrètement : le soir, en cinq pas : rends grâce pour un bienfait, demande la lumière, relis les heures du jour, reconnais une faute et demande pardon, choisis un point pour demain.",
           "signature": false,
           "minutes": 10,
           "supersedes": -1
@@ -3115,7 +3115,7 @@
       "devotions": [
         {
           "name": "Adoration eucharistique silencieuse",
-          "note": "Une heure d'adoration, à l'exemple de Charles de Foucauld.",
+          "note": "Une heure d'adoration, à l'exemple de Charles de Foucauld. → Concrètement : place-toi en silence devant le Saint-Sacrement ; regarde Jésus et laisse-toi regarder, sans rien 'faire' d'autre que rester présent.",
           "signature": true,
           "minutes": 30,
           "supersedes": -1
@@ -3129,7 +3129,7 @@
         },
         {
           "name": "Travail manuel humble",
-          "note": "Un travail simple, partagé avec les plus pauvres.",
+          "note": "Un travail simple, partagé avec les plus pauvres. → Concrètement : fais un travail utile des mains en priant intérieurement ; offre ta peine à Dieu.",
           "signature": false,
           "minutes": 0,
           "supersedes": -1
@@ -3150,7 +3150,7 @@
         },
         {
           "name": "Silence et désert intérieur",
-          "note": "Un temps de solitude et de silence, à l'image du désert saharien.",
+          "note": "Un temps de solitude et de silence, à l'image du désert saharien. → Concrètement : retiens les paroles inutiles et fais du silence en toi ; reviens à la présence de Dieu au fil des tâches.",
           "signature": false,
           "minutes": 15,
           "supersedes": -1
@@ -3214,28 +3214,28 @@
         },
         {
           "name": "Vigiles nocturnes",
-          "note": "Se lever pour l'Office de nuit, veille du cœur avec l'Époux.",
+          "note": "Se lever pour l'Office de nuit, veille du cœur avec l'Époux. → Concrètement : veille une part de la nuit en prière : psaumes, Prière de Jésus, silence devant Dieu.",
           "signature": true,
           "minutes": 30,
           "supersedes": -1
         },
         {
           "name": "Lectio divina",
-          "note": "Lecture priante et lente de l'Écriture, deux fois le jour.",
+          "note": "Lecture priante et lente de l'Écriture, deux fois le jour. → Concrètement : en quatre temps — lis un court passage (lectio), rumine un mot qui te touche (meditatio), prie à partir de lui (oratio), puis demeure en silence devant Dieu (contemplatio).",
           "signature": true,
           "minutes": 25,
           "supersedes": -1
         },
         {
           "name": "Grand silence",
-          "note": "Garder le silence extérieur et intérieur, hors nécessité et charité.",
+          "note": "Garder le silence extérieur et intérieur, hors nécessité et charité. → Concrètement : coupe les sources de bruit (écrans, paroles inutiles) ; garde le cœur attentif à Dieu, ne parlant que par nécessité et charité.",
           "signature": true,
           "minutes": 0,
           "supersedes": -1
         },
         {
           "name": "Travail manuel offert",
-          "note": "Le labeur des mains, gagne-pain et ascèse, offert avec les moines.",
+          "note": "Le labeur des mains, gagne-pain et ascèse, offert avec les moines. → Concrètement : fais un travail utile des mains en priant intérieurement ; offre ta peine à Dieu.",
           "signature": false,
           "minutes": 0,
           "supersedes": -1
@@ -3278,7 +3278,7 @@
       "devotions": [
         {
           "name": "Visite au Saint-Sacrement",
-          "note": "La « visite » quotidienne chère à saint Alphonse : un cœur à cœur devant le Tabernacle.",
+          "note": "La « visite » quotidienne chère à saint Alphonse : un cœur à cœur devant le Tabernacle. → Concrètement : entre un instant à l'église ; salue Jésus au tabernacle, confie-lui ta journée, repars en paix.",
           "signature": true,
           "minutes": 15,
           "supersedes": -1
@@ -3299,35 +3299,35 @@
         },
         {
           "name": "Méditation du matin",
-          "note": "Oraison sur un mystère de la vie du Christ, selon la méthode de saint Alphonse.",
+          "note": "Oraison sur un mystère de la vie du Christ, selon la méthode de saint Alphonse. → Concrètement : prends une scène de la vie du Christ ; regarde, écoute, laisse-la te toucher, tire une résolution pour le jour.",
           "signature": false,
           "minutes": 20,
           "supersedes": -1
         },
         {
           "name": "Chapelet",
-          "note": "Cinq dizaines pour les âmes les plus abandonnées.",
+          "note": "Cinq dizaines pour les âmes les plus abandonnées. → Concrètement : pour chaque dizaine : annonce le mystère, un Notre Père, puis dix Je vous salue Marie en méditant la scène.",
           "signature": false,
           "minutes": 20,
           "supersedes": -1
         },
         {
           "name": "Chemin de Croix",
-          "note": "Union au Christ souffrant, une fois la semaine.",
+          "note": "Union au Christ souffrant, une fois la semaine. → Concrètement : parcours les quatorze stations ; à chacune : « Nous t'adorons, ô Christ, et nous te bénissons… », un bref regard sur la scène, puis un élan de prière.",
           "signature": false,
           "minutes": 0,
           "supersedes": -1
         },
         {
           "name": "Uniformité à la volonté de Dieu",
-          "note": "Selon le grand traité de saint Alphonse : accueillir chaque événement comme voulu par Dieu.",
+          "note": "Selon le grand traité de saint Alphonse : accueillir chaque événement comme voulu par Dieu. → Concrètement : devant chaque événement du jour, redis : « Que ta volonté soit faite » ; accueille-le comme venant de la main du Père.",
           "signature": false,
           "minutes": 0,
           "supersedes": -1
         },
         {
           "name": "Communion spirituelle",
-          "note": "Désir ardent de l'Eucharistie quand on ne peut communier.",
+          "note": "Désir ardent de l'Eucharistie quand on ne peut communier. → Concrètement : quand tu ne peux communier, dis avec désir : « Jésus, je crois que tu es présent ; viens dans mon cœur, je t'embrasse, ne me laisse jamais me séparer de toi. »",
           "signature": false,
           "minutes": 3,
           "supersedes": -1
@@ -3391,14 +3391,14 @@
         },
         {
           "name": "Adoration eucharistique",
-          "note": "Norbert, apôtre du Saint-Sacrement : un temps prolongé d'adoration.",
+          "note": "Norbert, apôtre du Saint-Sacrement : un temps prolongé d'adoration. → Concrètement : place-toi en silence devant le Saint-Sacrement ; regarde Jésus et laisse-toi regarder, sans rien 'faire' d'autre que rester présent.",
           "signature": true,
           "minutes": 30,
           "supersedes": -1
         },
         {
           "name": "Salut du Saint-Sacrement",
-          "note": "Bénédiction et louange eucharistique du soir.",
+          "note": "Bénédiction et louange eucharistique du soir. → Concrètement : devant l'ostensoir : chant d'exposition, un temps d'adoration silencieuse, puis la bénédiction et le Tantum Ergo.",
           "signature": false,
           "minutes": 15,
           "supersedes": -1
@@ -3455,14 +3455,14 @@
         },
         {
           "name": "Trois Ave Maria",
-          "note": "La dévotion que Don Bosco recommandait pour la pureté et la persévérance.",
+          "note": "La dévotion que Don Bosco recommandait pour la pureté et la persévérance. → Concrètement : dis trois Je vous salue Marie en demandant la pureté et la persévérance, confiées à l'Immaculée.",
           "signature": true,
           "minutes": 3,
           "supersedes": -1
         },
         {
           "name": "Visite au Saint-Sacrement",
-          "note": "Bref passage devant Jésus au Tabernacle, cœur de la piété salésienne.",
+          "note": "Bref passage devant Jésus au Tabernacle, cœur de la piété salésienne. → Concrètement : entre un instant à l'église ; salue Jésus au tabernacle, confie-lui ta journée, repars en paix.",
           "signature": false,
           "minutes": 10,
           "supersedes": -1
@@ -3490,7 +3490,7 @@
         },
         {
           "name": "Chapelet",
-          "note": "Cinq dizaines, confiés à l'Auxiliatrice.",
+          "note": "Cinq dizaines, confiés à l'Auxiliatrice. → Concrètement : pour chaque dizaine : annonce le mystère, un Notre Père, puis dix Je vous salue Marie en méditant la scène.",
           "signature": false,
           "minutes": 20,
           "supersedes": -1
@@ -3504,7 +3504,7 @@
         },
         {
           "name": "Examen du soir",
-          "note": "Revoir la journée avec douceur, dans l'esprit de saint François de Sales.",
+          "note": "Revoir la journée avec douceur, dans l'esprit de saint François de Sales. → Concrètement : le soir, en cinq pas : rends grâce pour un bienfait, demande la lumière, relis les heures du jour, reconnais une faute et demande pardon, choisis un point pour demain.",
           "signature": false,
           "minutes": 8,
           "supersedes": -1
@@ -3540,7 +3540,7 @@
         },
         {
           "name": "Oraison du matin",
-          "note": "Un temps d'oraison mentale méthodique pour commencer la journée avec Dieu.",
+          "note": "Un temps d'oraison mentale méthodique pour commencer la journée avec Dieu. → Concrètement : mets-toi en présence de Dieu ; prends une scène d'Évangile ou une vérité, parle-lui cœur à cœur, puis écoute en silence.",
           "signature": true,
           "minutes": 20,
           "supersedes": -1
@@ -3568,7 +3568,7 @@
         },
         {
           "name": "Chapelet",
-          "note": "Cinq dizaines, avec les Frères.",
+          "note": "Cinq dizaines, avec les Frères. → Concrètement : pour chaque dizaine : annonce le mystère, un Notre Père, puis dix Je vous salue Marie en méditant la scène.",
           "signature": false,
           "minutes": 20,
           "supersedes": -1
@@ -3589,7 +3589,7 @@
         },
         {
           "name": "Examen particulier",
-          "note": "Veiller sur un point précis de conversion, à la manière lasallienne.",
+          "note": "Veiller sur un point précis de conversion, à la manière lasallienne. → Concrètement : le soir, en cinq pas : rends grâce pour un bienfait, demande la lumière, relis les heures du jour, reconnais une faute et demande pardon, choisis un point pour demain.",
           "signature": false,
           "minutes": 8,
           "supersedes": -1
@@ -3611,7 +3611,7 @@
       "devotions": [
         {
           "name": "Oraison mentale",
-          "note": "« Donnez-moi un homme d'oraison » : le temps d'oraison quotidien cher à saint Vincent.",
+          "note": "« Donnez-moi un homme d'oraison » : le temps d'oraison quotidien cher à saint Vincent. → Concrètement : mets-toi en présence de Dieu ; prends une scène d'Évangile ou une vérité, parle-lui cœur à cœur, puis écoute en silence.",
           "signature": true,
           "minutes": 30,
           "supersedes": -1
@@ -3632,7 +3632,7 @@
         },
         {
           "name": "Chapelet",
-          "note": "Cinq dizaines, avec Louise de Marillac et les Filles de la Charité.",
+          "note": "Cinq dizaines, avec Louise de Marillac et les Filles de la Charité. → Concrètement : pour chaque dizaine : annonce le mystère, un Notre Père, puis dix Je vous salue Marie en méditant la scène.",
           "signature": false,
           "minutes": 20,
           "supersedes": -1
@@ -3646,7 +3646,7 @@
         },
         {
           "name": "Visite au Saint-Sacrement",
-          "note": "Bref temps d'adoration, source de la charité active.",
+          "note": "Bref temps d'adoration, source de la charité active. → Concrètement : entre un instant à l'église ; salue Jésus au tabernacle, confie-lui ta journée, repars en paix.",
           "signature": false,
           "minutes": 10,
           "supersedes": -1
@@ -3667,7 +3667,7 @@
         },
         {
           "name": "Examen du soir",
-          "note": "Revoir la journée sous le regard de la miséricorde.",
+          "note": "Revoir la journée sous le regard de la miséricorde. → Concrètement : le soir, en cinq pas : rends grâce pour un bienfait, demande la lumière, relis les heures du jour, reconnais une faute et demande pardon, choisis un point pour demain.",
           "signature": false,
           "minutes": 8,
           "supersedes": -1
@@ -3710,14 +3710,14 @@
         },
         {
           "name": "Abandon à la volonté de Dieu",
-          "note": "Le « saint indifférence » salésien : vouloir ce que Dieu veut, comme Il le veut.",
+          "note": "Le « saint indifférence » salésien : vouloir ce que Dieu veut, comme Il le veut. → Concrètement : remets à Dieu ce que tu ne maîtrises pas : « Je veux ce que tu veux, comme tu le veux » ; agis, puis laisse le reste.",
           "signature": true,
           "minutes": 10,
           "supersedes": -1
         },
         {
           "name": "Oraison de simple regard",
-          "note": "Se tenir simplement devant Dieu, sans effort de raisonnement.",
+          "note": "Se tenir simplement devant Dieu, sans effort de raisonnement. → Concrètement : mets-toi en présence de Dieu ; prends une scène d'Évangile ou une vérité, parle-lui cœur à cœur, puis écoute en silence.",
           "signature": false,
           "minutes": 20,
           "supersedes": -1
@@ -3731,7 +3731,7 @@
         },
         {
           "name": "Direction de l'intention",
-          "note": "Offrir au matin toutes les actions du jour à Dieu.",
+          "note": "Offrir au matin toutes les actions du jour à Dieu. → Concrètement : au matin, offre d'avance toutes les actions du jour : « Tout pour toi, Seigneur, par amour ».",
           "signature": false,
           "minutes": 5,
           "supersedes": -1
@@ -3745,7 +3745,7 @@
         },
         {
           "name": "Chapelet",
-          "note": "Cinq dizaines, dans la paix salésienne.",
+          "note": "Cinq dizaines, dans la paix salésienne. → Concrètement : pour chaque dizaine : annonce le mystère, un Notre Père, puis dix Je vous salue Marie en méditant la scène.",
           "signature": false,
           "minutes": 20,
           "supersedes": -1
@@ -3774,14 +3774,14 @@
       "devotions": [
         {
           "name": "Chapelet des Sept Douleurs",
-          "note": "La dévotion servite par excellence : méditer les sept douleurs de Marie.",
+          "note": "La dévotion servite par excellence : méditer les sept douleurs de Marie. → Concrètement : médite les sept douleurs de Marie (prophétie de Siméon, fuite en Égypte, perte au Temple, montée au Calvaire, crucifixion, descente de croix, mise au tombeau), avec un Ave à chacune.",
           "signature": true,
           "minutes": 20,
           "supersedes": -1
         },
         {
           "name": "Vigile au pied de la Croix",
-          "note": "Demeurer avec Marie et Jean auprès du Crucifié.",
+          "note": "Demeurer avec Marie et Jean auprès du Crucifié. → Concrètement : veille une part de la nuit en prière : psaumes, Prière de Jésus, silence devant Dieu.",
           "signature": true,
           "minutes": 15,
           "supersedes": -1
@@ -3809,21 +3809,21 @@
         },
         {
           "name": "Jeûne du vendredi",
-          "note": "Petit jeûne en mémoire de la Passion, un vendredi par semaine.",
+          "note": "Petit jeûne en mémoire de la Passion, un vendredi par semaine. → Concrètement : allège nourriture et superflu selon ta santé (un repas plus simple, pas de gourmandises), et offre cette faim en prière ; toujours avec discernement.",
           "signature": false,
           "minutes": 0,
           "supersedes": -1
         },
         {
           "name": "Chapelet",
-          "note": "Cinq dizaines confiées à Notre-Dame.",
+          "note": "Cinq dizaines confiées à Notre-Dame. → Concrètement : pour chaque dizaine : annonce le mystère, un Notre Père, puis dix Je vous salue Marie en méditant la scène.",
           "signature": false,
           "minutes": 20,
           "supersedes": -1
         },
         {
           "name": "Silence contemplatif",
-          "note": "Un temps de silence auprès de la Vierge qui gardait tout en son cœur.",
+          "note": "Un temps de silence auprès de la Vierge qui gardait tout en son cœur. → Concrètement : retiens les paroles inutiles et fais du silence en toi ; reviens à la présence de Dieu au fil des tâches.",
           "signature": false,
           "minutes": 15,
           "supersedes": -1
@@ -3866,14 +3866,14 @@
         },
         {
           "name": "Trisagion",
-          "note": "« Saint Dieu, Saint Fort, Saint Immortel » répété avec adoration.",
+          "note": "« Saint Dieu, Saint Fort, Saint Immortel » répété avec adoration. → Concrètement : dis trois fois, avec une inclination à chaque fois : « Saint Dieu, Saint Fort, Saint Immortel, aie pitié de nous. »",
           "signature": true,
           "minutes": 5,
           "supersedes": -1
         },
         {
           "name": "Chapelet",
-          "note": "Cinq dizaines, à l'intention des opprimés.",
+          "note": "Cinq dizaines, à l'intention des opprimés. → Concrètement : pour chaque dizaine : annonce le mystère, un Notre Père, puis dix Je vous salue Marie en méditant la scène.",
           "signature": false,
           "minutes": 20,
           "supersedes": -1
@@ -3894,7 +3894,7 @@
         },
         {
           "name": "Adoration",
-          "note": "Un temps devant le Saint-Sacrement, pour ceux qui ne peuvent adorer librement.",
+          "note": "Un temps devant le Saint-Sacrement, pour ceux qui ne peuvent adorer librement. → Concrètement : tiens-toi en silence devant le Saint-Sacrement ; regarde Jésus et laisse-toi regarder.",
           "signature": false,
           "minutes": 20,
           "supersedes": -1
@@ -3951,21 +3951,21 @@
         },
         {
           "name": "Silence au cœur de la ville",
-          "note": "Garder, au milieu du bruit urbain, un désert intérieur.",
+          "note": "Garder, au milieu du bruit urbain, un désert intérieur. → Concrètement : retiens les paroles inutiles et fais du silence en toi ; reviens à la présence de Dieu au fil des tâches.",
           "signature": true,
           "minutes": 15,
           "supersedes": -1
         },
         {
           "name": "Lectio divina",
-          "note": "Lecture priante de l'Écriture, chaque jour.",
+          "note": "Lecture priante de l'Écriture, chaque jour. → Concrètement : en quatre temps — lis un court passage (lectio), rumine un mot qui te touche (meditatio), prie à partir de lui (oratio), puis demeure en silence devant Dieu (contemplatio).",
           "signature": true,
           "minutes": 25,
           "supersedes": -1
         },
         {
           "name": "Adoration eucharistique",
-          "note": "Un temps devant le Saint-Sacrement, cœur silencieux de la cité.",
+          "note": "Un temps devant le Saint-Sacrement, cœur silencieux de la cité. → Concrètement : place-toi en silence devant le Saint-Sacrement ; regarde Jésus et laisse-toi regarder, sans rien 'faire' d'autre que rester présent.",
           "signature": true,
           "minutes": 30,
           "supersedes": -1
@@ -4036,7 +4036,7 @@
         },
         {
           "name": "Adoration eucharistique",
-          "note": "L'adoration quotidienne, cœur de la vie johannique.",
+          "note": "L'adoration quotidienne, cœur de la vie johannique. → Concrètement : place-toi en silence devant le Saint-Sacrement ; regarde Jésus et laisse-toi regarder, sans rien 'faire' d'autre que rester présent.",
           "signature": true,
           "minutes": 30,
           "supersedes": -1
@@ -4050,7 +4050,7 @@
         },
         {
           "name": "Lectio divina de saint Jean",
-          "note": "Méditer un passage de l'Évangile ou des Lettres du disciple bien-aimé.",
+          "note": "Méditer un passage de l'Évangile ou des Lettres du disciple bien-aimé. → Concrètement : en quatre temps — lis un court passage (lectio), rumine un mot qui te touche (meditatio), prie à partir de lui (oratio), puis demeure en silence devant Dieu (contemplatio).",
           "signature": true,
           "minutes": 20,
           "supersedes": -1
@@ -4071,14 +4071,14 @@
         },
         {
           "name": "Chapelet",
-          "note": "Cinq dizaines auprès de la Vierge.",
+          "note": "Cinq dizaines auprès de la Vierge. → Concrètement : pour chaque dizaine : annonce le mystère, un Notre Père, puis dix Je vous salue Marie en méditant la scène.",
           "signature": false,
           "minutes": 20,
           "supersedes": -1
         },
         {
           "name": "Silence adorant",
-          "note": "Un temps de silence, à l'écoute du Verbe.",
+          "note": "Un temps de silence, à l'écoute du Verbe. → Concrètement : retiens les paroles inutiles et fais du silence en toi ; reviens à la présence de Dieu au fil des tâches.",
           "signature": false,
           "minutes": 15,
           "supersedes": -1
@@ -4100,7 +4100,7 @@
       "devotions": [
         {
           "name": "Prière de Jésus",
-          "note": "« Seigneur Jésus-Christ, Fils de Dieu, aie pitié de moi, pécheur. »",
+          "note": "« Seigneur Jésus-Christ, Fils de Dieu, aie pitié de moi, pécheur. ». → Concrètement : répète lentement « Seigneur Jésus-Christ, Fils de Dieu, aie pitié de moi, pécheur », en l'accordant au souffle ; dès que l'esprit s'échappe, reviens doucement au Nom.",
           "signature": true,
           "minutes": 15,
           "supersedes": -1
@@ -4114,14 +4114,14 @@
         },
         {
           "name": "Acathiste à la Théotokos",
-          "note": "L'hymne acathiste, joyau de la piété byzantine.",
+          "note": "L'hymne acathiste, joyau de la piété byzantine. → Concrètement : reste debout et chante ou lis l'hymne acathiste (kontakia et ikos), reprenant le refrain « Réjouis-toi… » à la Mère de Dieu.",
           "signature": true,
           "minutes": 25,
           "supersedes": -1
         },
         {
           "name": "Métanies",
-          "note": "Prosternations accompagnant la Prière de Jésus.",
+          "note": "Prosternations accompagnant la Prière de Jésus. → Concrètement : à chaque Prière de Jésus, incline-toi (petite métanie) ou mets un genou et le front à terre (grande métanie), puis relève-toi.",
           "signature": false,
           "minutes": 10,
           "supersedes": -1
@@ -4142,7 +4142,7 @@
         },
         {
           "name": "Jeûne selon le typikon",
-          "note": "Observer les jeûnes de l'Église — mercredi, vendredi et les grands carêmes.",
+          "note": "Observer les jeûnes de l'Église — mercredi, vendredi et les grands carêmes. → Concrètement : allège nourriture et superflu selon ta santé (un repas plus simple, pas de gourmandises), et offre cette faim en prière ; toujours avec discernement.",
           "signature": false,
           "minutes": 0,
           "supersedes": -1
@@ -4156,7 +4156,7 @@
         },
         {
           "name": "Komboskini",
-          "note": "Prière du chapelet de laine (κομποσκοίνι), nœud après nœud.",
+          "note": "Prière du chapelet de laine (κομποσκοίνι), nœud après nœud. → Concrètement : sur le cordon de prière, dis la Prière de Jésus à chaque nœud, sans compter anxieusement, l'attention gardée dans le cœur.",
           "signature": false,
           "minutes": 15,
           "supersedes": -1
@@ -4199,7 +4199,7 @@
         },
         {
           "name": "Prière de Jésus",
-          "note": "« Seigneur Jésus-Christ, aie pitié de moi », dans la simplicité du cœur.",
+          "note": "« Seigneur Jésus-Christ, aie pitié de moi », dans la simplicité du cœur. → Concrètement : répète lentement « Seigneur Jésus-Christ, Fils de Dieu, aie pitié de moi, pécheur », en l'accordant au souffle ; dès que l'esprit s'échappe, reviens doucement au Nom.",
           "signature": false,
           "minutes": 15,
           "supersedes": -1
@@ -4213,7 +4213,7 @@
         },
         {
           "name": "Jeûne arménien",
-          "note": "Observer les jeûnes propres, dont l'Avent de sept semaines et le Carême.",
+          "note": "Observer les jeûnes propres, dont l'Avent de sept semaines et le Carême. → Concrètement : allège nourriture et superflu selon ta santé (un repas plus simple, pas de gourmandises), et offre cette faim en prière ; toujours avec discernement.",
           "signature": false,
           "minutes": 0,
           "supersedes": -1
@@ -4234,7 +4234,7 @@
         },
         {
           "name": "Chapelet arménien (Tchotki)",
-          "note": "Prière répétée sur le cordon de prière.",
+          "note": "Prière répétée sur le cordon de prière. → Concrètement : sur le cordon de prière, dis la Prière de Jésus à chaque nœud, l'attention gardée dans le cœur.",
           "signature": false,
           "minutes": 15,
           "supersedes": -1
@@ -4277,7 +4277,7 @@
         },
         {
           "name": "Prière de Jésus",
-          "note": "Invocation continue du Nom, dans le silence du cœur.",
+          "note": "Invocation continue du Nom, dans le silence du cœur. → Concrètement : répète lentement « Seigneur Jésus-Christ, Fils de Dieu, aie pitié de moi, pécheur », en l'accordant au souffle ; dès que l'esprit s'échappe, reviens doucement au Nom.",
           "signature": false,
           "minutes": 15,
           "supersedes": -1
@@ -4291,7 +4291,7 @@
         },
         {
           "name": "Jeûne selon la tradition",
-          "note": "Observer les jeûnes, dont le Grand Carême et le jeûne des Trois Jours.",
+          "note": "Observer les jeûnes, dont le Grand Carême et le jeûne des Trois Jours. → Concrètement : allège nourriture et superflu selon ta santé (un repas plus simple, pas de gourmandises), et offre cette faim en prière ; toujours avec discernement.",
           "signature": false,
           "minutes": 0,
           "supersedes": -1
@@ -4327,7 +4327,7 @@
       "devotions": [
         {
           "name": "Adoration eucharistique",
-          "note": "Un temps prolongé devant le Saint-Sacrement, cœur de la vie communautaire.",
+          "note": "Un temps prolongé devant le Saint-Sacrement, cœur de la vie communautaire. → Concrètement : place-toi en silence devant le Saint-Sacrement ; regarde Jésus et laisse-toi regarder, sans rien 'faire' d'autre que rester présent.",
           "signature": true,
           "minutes": 30,
           "supersedes": -1
@@ -4348,14 +4348,14 @@
         },
         {
           "name": "Oraison silencieuse",
-          "note": "Un temps d'oraison carmélitaine, cœur à cœur avec Dieu.",
+          "note": "Un temps d'oraison carmélitaine, cœur à cœur avec Dieu. → Concrètement : mets-toi en présence de Dieu ; prends une scène d'Évangile ou une vérité, parle-lui cœur à cœur, puis écoute en silence.",
           "signature": false,
           "minutes": 20,
           "supersedes": -1
         },
         {
           "name": "Chapelet",
-          "note": "Cinq dizaines, auprès de la Vierge.",
+          "note": "Cinq dizaines, auprès de la Vierge. → Concrètement : pour chaque dizaine : annonce le mystère, un Notre Père, puis dix Je vous salue Marie en méditant la scène.",
           "signature": false,
           "minutes": 20,
           "supersedes": -1
@@ -4412,7 +4412,7 @@
         },
         {
           "name": "Adoration eucharistique",
-          "note": "Un temps devant le Saint-Sacrement, à l'écoute du Verbe.",
+          "note": "Un temps devant le Saint-Sacrement, à l'écoute du Verbe. → Concrètement : place-toi en silence devant le Saint-Sacrement ; regarde Jésus et laisse-toi regarder, sans rien 'faire' d'autre que rester présent.",
           "signature": true,
           "minutes": 25,
           "supersedes": -1
@@ -4433,7 +4433,7 @@
         },
         {
           "name": "Chapelet",
-          "note": "Cinq dizaines auprès de Marie, la première à recevoir le Verbe.",
+          "note": "Cinq dizaines auprès de Marie, la première à recevoir le Verbe. → Concrètement : pour chaque dizaine : annonce le mystère, un Notre Père, puis dix Je vous salue Marie en méditant la scène.",
           "signature": false,
           "minutes": 20,
           "supersedes": -1
@@ -4476,7 +4476,7 @@
       "devotions": [
         {
           "name": "Acte de consécration à l'Immaculée",
-          "note": "Se remettre chaque jour, sans réserve, entre les mains de la Vierge sans tache, à la manière de saint Maximilien.",
+          "note": "Se remettre chaque jour, sans réserve, entre les mains de la Vierge sans tache, à la manière de saint Maximilien. → Concrètement : dis un acte de don total : « Je suis tout à toi, ô Immaculée, et tout ce qui est à moi t'appartient » ; renouvelle-le chaque jour.",
           "signature": true,
           "minutes": 8,
           "supersedes": -1
@@ -4490,21 +4490,21 @@
         },
         {
           "name": "Couronne franciscaine",
-          "note": "Le rosaire séraphique des sept joies de la Vierge.",
+          "note": "Le rosaire séraphique des sept joies de la Vierge. → Concrètement : récite les sept dizaines des sept joies de la Vierge (Annonciation, Visitation, Nativité, Adoration des mages, Recouvrement au Temple, Résurrection, Couronnement).",
           "signature": true,
           "minutes": 20,
           "supersedes": -1
         },
         {
           "name": "Chapelet",
-          "note": "Cinq dizaines offertes à l'Immaculée pour la conversion des pécheurs.",
+          "note": "Cinq dizaines offertes à l'Immaculée pour la conversion des pécheurs. → Concrètement : pour chaque dizaine : annonce le mystère, un Notre Père, puis dix Je vous salue Marie en méditant la scène.",
           "signature": false,
           "minutes": 20,
           "supersedes": -1
         },
         {
           "name": "Angélus",
-          "note": "Trois fois par jour, mémoire de l'Incarnation.",
+          "note": "Trois fois par jour, mémoire de l'Incarnation. → Concrètement : matin, midi et soir : dis les trois versets de l'Incarnation (« L'ange du Seigneur… ») avec un Je vous salue Marie après chacun, puis l'oraison finale.",
           "signature": false,
           "minutes": 3,
           "supersedes": -1
@@ -4582,7 +4582,7 @@
         },
         {
           "name": "Chapelet",
-          "note": "Cinq dizaines pour la conversion des pécheurs et des ennemis de l'Église.",
+          "note": "Cinq dizaines pour la conversion des pécheurs et des ennemis de l'Église. → Concrètement : pour chaque dizaine : annonce le mystère, un Notre Père, puis dix Je vous salue Marie en méditant la scène.",
           "signature": false,
           "minutes": 20,
           "supersedes": -1
@@ -4610,7 +4610,7 @@
         },
         {
           "name": "Angélus",
-          "note": "Trois fois le jour.",
+          "note": "Trois fois le jour. → Concrètement : matin, midi et soir : dis les trois versets de l'Incarnation (« L'ange du Seigneur… ») avec un Je vous salue Marie après chacun, puis l'oraison finale.",
           "signature": false,
           "minutes": 3,
           "supersedes": -1
@@ -4646,21 +4646,21 @@
         },
         {
           "name": "Couronne franciscaine",
-          "note": "Rosaire séraphique des sept joies de la Vierge.",
+          "note": "Rosaire séraphique des sept joies de la Vierge. → Concrètement : récite les sept dizaines des sept joies de la Vierge (Annonciation, Visitation, Nativité, Adoration des mages, Recouvrement au Temple, Résurrection, Couronnement).",
           "signature": true,
           "minutes": 20,
           "supersedes": -1
         },
         {
           "name": "Consécration à l'Immaculée",
-          "note": "À la suite de saint Maximilien Kolbe, se remettre à la Vierge sans tache.",
+          "note": "À la suite de saint Maximilien Kolbe, se remettre à la Vierge sans tache. → Concrètement : dis un acte de don total : « Je suis tout à toi, ô Immaculée, et tout ce qui est à moi t'appartient » ; renouvelle-le chaque jour.",
           "signature": true,
           "minutes": 8,
           "supersedes": -1
         },
         {
           "name": "Angélus",
-          "note": "Trois fois par jour.",
+          "note": "Trois fois par jour. → Concrètement : matin, midi et soir : dis les trois versets de l'Incarnation (« L'ange du Seigneur… ») avec un Je vous salue Marie après chacun, puis l'oraison finale.",
           "signature": false,
           "minutes": 3,
           "supersedes": -1
@@ -4674,7 +4674,7 @@
         },
         {
           "name": "Chapelet",
-          "note": "Cinq dizaines en fraternité.",
+          "note": "Cinq dizaines en fraternité. → Concrètement : pour chaque dizaine : annonce le mystère, un Notre Père, puis dix Je vous salue Marie en méditant la scène.",
           "signature": false,
           "minutes": 20,
           "supersedes": -1
@@ -4738,7 +4738,7 @@
         },
         {
           "name": "Adoration eucharistique",
-          "note": "Contempler le Christ dans l'hostie, comme Claire élevant l'ostensoir.",
+          "note": "Contempler le Christ dans l'hostie, comme Claire élevant l'ostensoir. → Concrètement : place-toi en silence devant le Saint-Sacrement ; regarde Jésus et laisse-toi regarder, sans rien 'faire' d'autre que rester présent.",
           "signature": true,
           "minutes": 30,
           "supersedes": -1
@@ -4759,14 +4759,14 @@
         },
         {
           "name": "Silence contemplatif",
-          "note": "Garder le silence pour écouter l'Époux.",
+          "note": "Garder le silence pour écouter l'Époux. → Concrètement : retiens les paroles inutiles et fais du silence en toi ; reviens à la présence de Dieu au fil des tâches.",
           "signature": false,
           "minutes": 15,
           "supersedes": -1
         },
         {
           "name": "Chapelet",
-          "note": "Cinq dizaines auprès de la Vierge.",
+          "note": "Cinq dizaines auprès de la Vierge. → Concrètement : pour chaque dizaine : annonce le mystère, un Notre Père, puis dix Je vous salue Marie en méditant la scène.",
           "signature": false,
           "minutes": 20,
           "supersedes": -1
@@ -4795,14 +4795,14 @@
       "devotions": [
         {
           "name": "Consécration à Jésus par Marie",
-          "note": "Le don total de soi selon le Traité de la vraie dévotion.",
+          "note": "Le don total de soi selon le Traité de la vraie dévotion. → Concrètement : renouvelle le « Totus Tuus » : remets à Marie ton corps, ton âme et tes actions du jour, pour qu'elle les offre à Jésus.",
           "signature": true,
           "minutes": 10,
           "supersedes": -1
         },
         {
           "name": "Rosaire médité",
-          "note": "Le chapelet vécu comme école de la Sagesse, cher à Montfort.",
+          "note": "Le chapelet vécu comme école de la Sagesse, cher à Montfort. → Concrètement : avant chaque dizaine, imagine la scène du mystère, écoute ce que Dieu te dit, puis récite la dizaine lentement.",
           "signature": true,
           "minutes": 25,
           "supersedes": -1
@@ -4830,7 +4830,7 @@
         },
         {
           "name": "Angélus",
-          "note": "Trois fois par jour.",
+          "note": "Trois fois par jour. → Concrètement : matin, midi et soir : dis les trois versets de l'Incarnation (« L'ange du Seigneur… ») avec un Je vous salue Marie après chacun, puis l'oraison finale.",
           "signature": false,
           "minutes": 3,
           "supersedes": -1
@@ -4901,7 +4901,7 @@
         },
         {
           "name": "Chapelet",
-          "note": "Cinq dizaines, offertes au Cœur de Marie.",
+          "note": "Cinq dizaines, offertes au Cœur de Marie. → Concrètement : pour chaque dizaine : annonce le mystère, un Notre Père, puis dix Je vous salue Marie en méditant la scène.",
           "signature": false,
           "minutes": 20,
           "supersedes": -1
@@ -4972,7 +4972,7 @@
         },
         {
           "name": "Chapelet",
-          "note": "Cinq dizaines confiées à Marie.",
+          "note": "Cinq dizaines confiées à Marie. → Concrètement : pour chaque dizaine : annonce le mystère, un Notre Père, puis dix Je vous salue Marie en méditant la scène.",
           "signature": false,
           "minutes": 20,
           "supersedes": -1
@@ -5043,14 +5043,14 @@
         },
         {
           "name": "Chapelet",
-          "note": "Cinq dizaines pour les missions.",
+          "note": "Cinq dizaines pour les missions. → Concrètement : pour chaque dizaine : annonce le mystère, un Notre Père, puis dix Je vous salue Marie en méditant la scène.",
           "signature": false,
           "minutes": 20,
           "supersedes": -1
         },
         {
           "name": "Adoration eucharistique",
-          "note": "Un temps devant le Saint-Sacrement, force de l'apôtre.",
+          "note": "Un temps devant le Saint-Sacrement, force de l'apôtre. → Concrètement : place-toi en silence devant le Saint-Sacrement ; regarde Jésus et laisse-toi regarder, sans rien 'faire' d'autre que rester présent.",
           "signature": false,
           "minutes": 25,
           "supersedes": -1
@@ -5114,7 +5114,7 @@
         },
         {
           "name": "Adoration eucharistique",
-          "note": "Un temps devant le Saint-Sacrement, source de la charité.",
+          "note": "Un temps devant le Saint-Sacrement, source de la charité. → Concrètement : place-toi en silence devant le Saint-Sacrement ; regarde Jésus et laisse-toi regarder, sans rien 'faire' d'autre que rester présent.",
           "signature": false,
           "minutes": 25,
           "supersedes": -1
@@ -5192,7 +5192,7 @@
         },
         {
           "name": "Prière de Jésus",
-          "note": "« Seigneur Jésus-Christ, aie pitié de moi », dans le silence du cœur.",
+          "note": "« Seigneur Jésus-Christ, aie pitié de moi », dans le silence du cœur. → Concrètement : répète lentement « Seigneur Jésus-Christ, Fils de Dieu, aie pitié de moi, pécheur », en l'accordant au souffle ; dès que l'esprit s'échappe, reviens doucement au Nom.",
           "signature": true,
           "minutes": 20,
           "supersedes": -1
@@ -5206,21 +5206,21 @@
         },
         {
           "name": "Grand silence",
-          "note": "Garder le silence extérieur et intérieur tout le jour.",
+          "note": "Garder le silence extérieur et intérieur tout le jour. → Concrètement : coupe les sources de bruit (écrans, paroles inutiles) ; garde le cœur attentif à Dieu, ne parlant que par nécessité et charité.",
           "signature": false,
           "minutes": 0,
           "supersedes": -1
         },
         {
           "name": "Travail des mains",
-          "note": "Un travail simple et silencieux, offert à Dieu.",
+          "note": "Un travail simple et silencieux, offert à Dieu. → Concrètement : accomplis une tâche simple des mains (artisanat, ménage, jardin) en gardant la prière intérieure ; offre-la contre l'oisiveté et l'acédie.",
           "signature": false,
           "minutes": 0,
           "supersedes": -1
         },
         {
           "name": "Lectio divina",
-          "note": "Lecture lente et priante de l'Écriture.",
+          "note": "Lecture lente et priante de l'Écriture. → Concrètement : en quatre temps — lis un court passage (lectio), rumine un mot qui te touche (meditatio), prie à partir de lui (oratio), puis demeure en silence devant Dieu (contemplatio).",
           "signature": false,
           "minutes": 25,
           "supersedes": -1
@@ -5249,14 +5249,14 @@
       "devotions": [
         {
           "name": "Prière de Jésus",
-          "note": "« Seigneur Jésus-Christ, Fils de Dieu, aie pitié de moi, pécheur. »",
+          "note": "« Seigneur Jésus-Christ, Fils de Dieu, aie pitié de moi, pécheur. ». → Concrètement : répète lentement « Seigneur Jésus-Christ, Fils de Dieu, aie pitié de moi, pécheur », en l'accordant au souffle ; dès que l'esprit s'échappe, reviens doucement au Nom.",
           "signature": true,
           "minutes": 15,
           "supersedes": -1
         },
         {
           "name": "Acathiste",
-          "note": "Chanter ou lire l'hymne acathiste à la Mère de Dieu.",
+          "note": "Chanter ou lire l'hymne acathiste à la Mère de Dieu. → Concrètement : reste debout et chante ou lis l'hymne acathiste (kontakia et ikos), reprenant le refrain « Réjouis-toi… » à la Mère de Dieu.",
           "signature": true,
           "minutes": 25,
           "supersedes": -1
@@ -5277,7 +5277,7 @@
         },
         {
           "name": "Métanies",
-          "note": "Prosternations jointes à la Prière de Jésus.",
+          "note": "Prosternations jointes à la Prière de Jésus. → Concrètement : à chaque Prière de Jésus, incline-toi (petite métanie) ou mets un genou et le front à terre (grande métanie), puis relève-toi.",
           "signature": false,
           "minutes": 10,
           "supersedes": -1
@@ -5291,14 +5291,14 @@
         },
         {
           "name": "Jeûne selon la tradition",
-          "note": "Observer les jeûnes de l'Orient — mercredi, vendredi et grands carêmes.",
+          "note": "Observer les jeûnes de l'Orient — mercredi, vendredi et grands carêmes. → Concrètement : allège nourriture et superflu selon ta santé (un repas plus simple, pas de gourmandises), et offre cette faim en prière ; toujours avec discernement.",
           "signature": false,
           "minutes": 0,
           "supersedes": -1
         },
         {
           "name": "Komboskini",
-          "note": "Prière répétée sur le chapelet de laine.",
+          "note": "Prière répétée sur le chapelet de laine. → Concrètement : sur le cordon de prière, dis la Prière de Jésus à chaque nœud, sans compter anxieusement, l'attention gardée dans le cœur.",
           "signature": false,
           "minutes": 15,
           "supersedes": -1
@@ -5341,7 +5341,7 @@
         },
         {
           "name": "Prière de Jésus",
-          "note": "Invocation continue du Nom dans le silence.",
+          "note": "Invocation continue du Nom dans le silence. → Concrètement : répète lentement « Seigneur Jésus-Christ, Fils de Dieu, aie pitié de moi, pécheur », en l'accordant au souffle ; dès que l'esprit s'échappe, reviens doucement au Nom.",
           "signature": false,
           "minutes": 15,
           "supersedes": -1
@@ -5355,7 +5355,7 @@
         },
         {
           "name": "Jeûne selon la tradition",
-          "note": "Observer les jeûnes propres, dont le Grand Carême.",
+          "note": "Observer les jeûnes propres, dont le Grand Carême. → Concrètement : allège nourriture et superflu selon ta santé (un repas plus simple, pas de gourmandises), et offre cette faim en prière ; toujours avec discernement.",
           "signature": false,
           "minutes": 0,
           "supersedes": -1
@@ -5391,7 +5391,7 @@
       "devotions": [
         {
           "name": "Prière de Jésus",
-          "note": "« Seigneur Jésus-Christ, aie pitié de moi, pécheur », dans la simplicité du cœur.",
+          "note": "« Seigneur Jésus-Christ, aie pitié de moi, pécheur », dans la simplicité du cœur. → Concrètement : répète lentement « Seigneur Jésus-Christ, Fils de Dieu, aie pitié de moi, pécheur », en l'accordant au souffle ; dès que l'esprit s'échappe, reviens doucement au Nom.",
           "signature": true,
           "minutes": 15,
           "supersedes": -1
@@ -5405,14 +5405,14 @@
         },
         {
           "name": "Acathiste",
-          "note": "Lire ou chanter un acathiste au Christ ou à la Mère de Dieu.",
+          "note": "Lire ou chanter un acathiste au Christ ou à la Mère de Dieu. → Concrètement : reste debout et chante ou lis l'hymne acathiste (kontakia et ikos), reprenant le refrain « Réjouis-toi… » à la Mère de Dieu.",
           "signature": true,
           "minutes": 25,
           "supersedes": -1
         },
         {
           "name": "Métanies",
-          "note": "Prosternations accompagnant la Prière de Jésus.",
+          "note": "Prosternations accompagnant la Prière de Jésus. → Concrètement : à chaque Prière de Jésus, incline-toi (petite métanie) ou mets un genou et le front à terre (grande métanie), puis relève-toi.",
           "signature": false,
           "minutes": 10,
           "supersedes": -1
@@ -5433,7 +5433,7 @@
         },
         {
           "name": "Jeûne selon le calendrier",
-          "note": "Observer mercredi, vendredi et les grands carêmes.",
+          "note": "Observer mercredi, vendredi et les grands carêmes. → Concrètement : allège nourriture et superflu selon ta santé (un repas plus simple, pas de gourmandises), et offre cette faim en prière ; toujours avec discernement.",
           "signature": false,
           "minutes": 0,
           "supersedes": -1
@@ -5462,7 +5462,7 @@
       "devotions": [
         {
           "name": "Adoration eucharistique",
-          "note": "Un temps prolongé devant le Saint-Sacrement, cœur du Foyer.",
+          "note": "Un temps prolongé devant le Saint-Sacrement, cœur du Foyer. → Concrètement : place-toi en silence devant le Saint-Sacrement ; regarde Jésus et laisse-toi regarder, sans rien 'faire' d'autre que rester présent.",
           "signature": true,
           "minutes": 30,
           "supersedes": -1
@@ -5483,7 +5483,7 @@
         },
         {
           "name": "Chapelet",
-          "note": "Cinq dizaines auprès de la Mère de charité.",
+          "note": "Cinq dizaines auprès de la Mère de charité. → Concrètement : pour chaque dizaine : annonce le mystère, un Notre Père, puis dix Je vous salue Marie en méditant la scène.",
           "signature": false,
           "minutes": 20,
           "supersedes": -1
@@ -5561,42 +5561,42 @@
         },
         {
           "name": "Prière de Jésus (une heure)",
-          "note": "« Seigneur Jésus-Christ, Fils de Dieu, aie pitié de moi, pécheur », gardée sans relâche.",
+          "note": "« Seigneur Jésus-Christ, Fils de Dieu, aie pitié de moi, pécheur », gardée sans relâche. → Concrètement : répète lentement « Seigneur Jésus-Christ, Fils de Dieu, aie pitié de moi, pécheur », en l'accordant au souffle ; dès que l'esprit s'échappe, reviens doucement au Nom.",
           "signature": true,
           "minutes": 60,
           "supersedes": -1
         },
         {
           "name": "Vigile de nuit",
-          "note": "Se lever au cœur de la nuit pour veiller et prier, comme au désert.",
+          "note": "Se lever au cœur de la nuit pour veiller et prier, comme au désert. → Concrètement : veille une part de la nuit en prière : psaumes, Prière de Jésus, silence devant Dieu.",
           "signature": true,
           "minutes": 60,
           "supersedes": -1
         },
         {
           "name": "Grand jeûne du désert",
-          "note": "Un seul repas léger après None ; sobriété radicale de pain, sel et eau certains jours.",
+          "note": "Un seul repas léger après None ; sobriété radicale de pain, sel et eau certains jours. → Concrètement : allège nourriture et superflu selon ta santé (un repas plus simple, pas de gourmandises), et offre cette faim en prière ; toujours avec discernement.",
           "signature": true,
           "minutes": 0,
           "supersedes": -1
         },
         {
           "name": "Travail des mains",
-          "note": "Tresser, écrire, œuvrer en silence — le travail qui soutient la prière et chasse l'acédie.",
+          "note": "Tresser, écrire, œuvrer en silence — le travail qui soutient la prière et chasse l'acédie. → Concrètement : accomplis une tâche simple des mains (artisanat, ménage, jardin) en gardant la prière intérieure ; offre-la contre l'oisiveté et l'acédie.",
           "signature": false,
           "minutes": 0,
           "supersedes": -1
         },
         {
           "name": "Garde du cœur (nepsis)",
-          "note": "Veiller sur les pensées (logismoi) et les repousser dès leur naissance.",
+          "note": "Veiller sur les pensées (logismoi) et les repousser dès leur naissance. → Concrètement : veille à la porte du cœur ; repousse toute pensée mauvaise dès sa naissance, en revenant au Nom de Jésus.",
           "signature": true,
           "minutes": 0,
           "supersedes": -1
         },
         {
           "name": "Métanies (prosternations)",
-          "note": "Cent prosternations, corps et esprit prosternés devant Dieu.",
+          "note": "Cent prosternations, corps et esprit prosternés devant Dieu. → Concrètement : à chaque Prière de Jésus, incline-toi (petite métanie) ou mets un genou et le front à terre (grande métanie), puis relève-toi.",
           "signature": false,
           "minutes": 20,
           "supersedes": -1
@@ -5617,7 +5617,7 @@
         },
         {
           "name": "Lectio des Apophtegmes",
-          "note": "Méditer une sentence des Pères du désert.",
+          "note": "Méditer une sentence des Pères du désert. → Concrètement : lis une brève sentence des Pères du désert, rumine-la, puis garde-la en tête comme viatique du jour.",
           "signature": false,
           "minutes": 15,
           "supersedes": -1
@@ -5688,21 +5688,21 @@
         },
         {
           "name": "Jeûne camaldule",
-          "note": "Jeûne prolongé, pain et eau certains jours selon la coutume de l'ermitage.",
+          "note": "Jeûne prolongé, pain et eau certains jours selon la coutume de l'ermitage. → Concrètement : allège nourriture et superflu selon ta santé (un repas plus simple, pas de gourmandises), et offre cette faim en prière ; toujours avec discernement.",
           "signature": true,
           "minutes": 0,
           "supersedes": -1
         },
         {
           "name": "Vigile nocturne",
-          "note": "Veiller la nuit, seul devant Dieu.",
+          "note": "Veiller la nuit, seul devant Dieu. → Concrètement : lève-toi une partie de la nuit ; psalmodie quelques psaumes, redis le Nom de Jésus, veille en silence, offrant ce temps pour le monde.",
           "signature": false,
           "minutes": 60,
           "supersedes": -1
         },
         {
           "name": "Travail silencieux",
-          "note": "Un travail simple, sans rompre le silence de l'ermitage.",
+          "note": "Un travail simple, sans rompre le silence de l'ermitage. → Concrètement : œuvre en silence, sans rompre le recueillement ; que tes mains travaillent et que ton cœur prie.",
           "signature": false,
           "minutes": 0,
           "supersedes": -1
@@ -5773,14 +5773,14 @@
         },
         {
           "name": "Jeûne cartusien",
-          "note": "Abstinence perpétuelle de viande et jeûne fréquent, selon les Statuts.",
+          "note": "Abstinence perpétuelle de viande et jeûne fréquent, selon les Statuts. → Concrètement : allège nourriture et superflu selon ta santé (un repas plus simple, pas de gourmandises), et offre cette faim en prière ; toujours avec discernement.",
           "signature": true,
           "minutes": 0,
           "supersedes": -1
         },
         {
           "name": "Lectio divina",
-          "note": "Lecture priante prolongée de l'Écriture, dans le silence.",
+          "note": "Lecture priante prolongée de l'Écriture, dans le silence. → Concrètement : en quatre temps — lis un court passage (lectio), rumine un mot qui te touche (meditatio), prie à partir de lui (oratio), puis demeure en silence devant Dieu (contemplatio).",
           "signature": true,
           "minutes": 40,
           "supersedes": -1
@@ -5858,14 +5858,14 @@
         },
         {
           "name": "Silence prophétique",
-          "note": "Garder le silence à l'imitation d'Élie sur l'Horeb.",
+          "note": "Garder le silence à l'imitation d'Élie sur l'Horeb. → Concrètement : retiens les paroles inutiles et fais du silence en toi ; reviens à la présence de Dieu au fil des tâches.",
           "signature": true,
           "minutes": 0,
           "supersedes": -1
         },
         {
           "name": "Jeûne du Carmel",
-          "note": "Jeûne de la Toussaint à Pâques et abstinence perpétuelle, selon la Règle primitive.",
+          "note": "Jeûne de la Toussaint à Pâques et abstinence perpétuelle, selon la Règle primitive. → Concrètement : allège nourriture et superflu selon ta santé (un repas plus simple, pas de gourmandises), et offre cette faim en prière ; toujours avec discernement.",
           "signature": true,
           "minutes": 0,
           "supersedes": -1
@@ -5879,14 +5879,14 @@
         },
         {
           "name": "Vigile en cellule",
-          "note": "Veiller en prière, seul, une part de la nuit.",
+          "note": "Veiller en prière, seul, une part de la nuit. → Concrètement : veille une part de la nuit en prière : psaumes, Prière de Jésus, silence devant Dieu.",
           "signature": false,
           "minutes": 60,
           "supersedes": -1
         },
         {
           "name": "Travail des mains",
-          "note": "Œuvrer en silence pour ne pas manger le pain de l'oisiveté.",
+          "note": "Œuvrer en silence pour ne pas manger le pain de l'oisiveté. → Concrètement : accomplis une tâche simple des mains (artisanat, ménage, jardin) en gardant la prière intérieure ; offre-la contre l'oisiveté et l'acédie.",
           "signature": false,
           "minutes": 0,
           "supersedes": -1
@@ -5957,35 +5957,35 @@
         },
         {
           "name": "Jeûne de l'ermite",
-          "note": "Jeûne fréquent et sobriété, à l'image du désert.",
+          "note": "Jeûne fréquent et sobriété, à l'image du désert. → Concrètement : allège nourriture et superflu selon ta santé (un repas plus simple, pas de gourmandises), et offre cette faim en prière ; toujours avec discernement.",
           "signature": true,
           "minutes": 0,
           "supersedes": -1
         },
         {
           "name": "Vigile nocturne",
-          "note": "Une veille dans la nuit, comme le solitaire de la Thébaïde.",
+          "note": "Une veille dans la nuit, comme le solitaire de la Thébaïde. → Concrètement : lève-toi une partie de la nuit ; psalmodie quelques psaumes, redis le Nom de Jésus, veille en silence, offrant ce temps pour le monde.",
           "signature": false,
           "minutes": 50,
           "supersedes": -1
         },
         {
           "name": "Chapelet",
-          "note": "Cinq dizaines auprès de la Mère de Dieu.",
+          "note": "Cinq dizaines auprès de la Mère de Dieu. → Concrètement : pour chaque dizaine : annonce le mystère, un Notre Père, puis dix Je vous salue Marie en méditant la scène.",
           "signature": false,
           "minutes": 20,
           "supersedes": -1
         },
         {
           "name": "Travail et silence",
-          "note": "Un travail humble dans le recueillement de la cellule.",
+          "note": "Un travail humble dans le recueillement de la cellule. → Concrètement : retiens les paroles inutiles et fais du silence en toi ; reviens à la présence de Dieu au fil des tâches.",
           "signature": false,
           "minutes": 0,
           "supersedes": -1
         },
         {
           "name": "Mémoire de la mort",
-          "note": "Méditer la fin dernière, comme saint Antoine ensevelissant saint Paul.",
+          "note": "Méditer la fin dernière, comme saint Antoine ensevelissant saint Paul. → Concrètement : rappelle-toi avec paix que ce jour peut être le dernier ; ordonne-le en conséquence, dans la componction et l'espérance.",
           "signature": false,
           "minutes": 15,
           "supersedes": -1
@@ -6007,49 +6007,49 @@
       "devotions": [
         {
           "name": "Prière de Jésus (longue)",
-          "note": "Invoquer sans cesse le Nom, l'intelligence descendue dans le cœur.",
+          "note": "Invoquer sans cesse le Nom, l'intelligence descendue dans le cœur. → Concrètement : répète lentement « Seigneur Jésus-Christ, Fils de Dieu, aie pitié de moi, pécheur », en l'accordant au souffle ; dès que l'esprit s'échappe, reviens doucement au Nom.",
           "signature": true,
           "minutes": 60,
           "supersedes": -1
         },
         {
           "name": "Prière de Jésus (une deuxième heure)",
-          "note": "Prolonger l'invocation, matin et soir.",
+          "note": "Prolonger l'invocation, matin et soir. → Concrètement : répète lentement « Seigneur Jésus-Christ, Fils de Dieu, aie pitié de moi, pécheur », en l'accordant au souffle ; dès que l'esprit s'échappe, reviens doucement au Nom.",
           "signature": true,
           "minutes": 60,
           "supersedes": -1
         },
         {
           "name": "Garde des pensées (nepsis)",
-          "note": "Veiller à la porte du cœur, refuser tout logismos naissant.",
+          "note": "Veiller à la porte du cœur, refuser tout logismos naissant. → Concrètement : observe les pensées sans les suivre ; à la première suggestion mauvaise, retourne au Nom de Jésus.",
           "signature": true,
           "minutes": 0,
           "supersedes": -1
         },
         {
           "name": "Komboskini",
-          "note": "Prière comptée sur le chapelet de laine, nœud après nœud.",
+          "note": "Prière comptée sur le chapelet de laine, nœud après nœud. → Concrètement : sur le cordon de prière, dis la Prière de Jésus à chaque nœud, sans compter anxieusement, l'attention gardée dans le cœur.",
           "signature": true,
           "minutes": 20,
           "supersedes": -1
         },
         {
           "name": "Métanies",
-          "note": "Grandes et petites prosternations accompagnant l'invocation.",
+          "note": "Grandes et petites prosternations accompagnant l'invocation. → Concrètement : à chaque Prière de Jésus, incline-toi (petite métanie) ou mets un genou et le front à terre (grande métanie), puis relève-toi.",
           "signature": false,
           "minutes": 20,
           "supersedes": -1
         },
         {
           "name": "Vigile nocturne",
-          "note": "Veiller la nuit dans la prière du cœur.",
+          "note": "Veiller la nuit dans la prière du cœur. → Concrètement : lève-toi une partie de la nuit ; psalmodie quelques psaumes, redis le Nom de Jésus, veille en silence, offrant ce temps pour le monde.",
           "signature": true,
           "minutes": 60,
           "supersedes": -1
         },
         {
           "name": "Jeûne strict",
-          "note": "Sobriété rigoureuse qui allège le corps et l'esprit pour la prière.",
+          "note": "Sobriété rigoureuse qui allège le corps et l'esprit pour la prière. → Concrètement : allège nourriture et superflu selon ta santé (un repas plus simple, pas de gourmandises), et offre cette faim en prière ; toujours avec discernement.",
           "signature": false,
           "minutes": 0,
           "supersedes": -1
@@ -6092,14 +6092,14 @@
         },
         {
           "name": "Prière de Jésus incessante",
-          "note": "Invoquer le Nom sans relâche, jour et nuit.",
+          "note": "Invoquer le Nom sans relâche, jour et nuit. → Concrètement : répète lentement « Seigneur Jésus-Christ, Fils de Dieu, aie pitié de moi, pécheur », en l'accordant au souffle ; dès que l'esprit s'échappe, reviens doucement au Nom.",
           "signature": true,
           "minutes": 60,
           "supersedes": -1
         },
         {
           "name": "Vigile de la nuit",
-          "note": "Veiller la plus grande part de la nuit, comme les reclus.",
+          "note": "Veiller la plus grande part de la nuit, comme les reclus. → Concrètement : veille une part de la nuit en prière : psaumes, Prière de Jésus, silence devant Dieu.",
           "signature": true,
           "minutes": 90,
           "supersedes": -1
@@ -6113,14 +6113,14 @@
         },
         {
           "name": "Jeûne extrême",
-          "note": "Jeûne prolongé, ne rompant que le strict nécessaire à la vie.",
+          "note": "Jeûne prolongé, ne rompant que le strict nécessaire à la vie. → Concrètement : allège nourriture et superflu selon ta santé (un repas plus simple, pas de gourmandises), et offre cette faim en prière ; toujours avec discernement.",
           "signature": true,
           "minutes": 0,
           "supersedes": -1
         },
         {
           "name": "Métanies sans nombre",
-          "note": "Prosternations répétées jusqu'à l'épuisement offert.",
+          "note": "Prosternations répétées jusqu'à l'épuisement offert. → Concrètement : à chaque Prière de Jésus, incline-toi (petite métanie) ou mets un genou et le front à terre (grande métanie), puis relève-toi.",
           "signature": false,
           "minutes": 30,
           "supersedes": -1
@@ -6134,7 +6134,7 @@
         },
         {
           "name": "Mémoire de la mort",
-          "note": "Vivre chaque jour comme le dernier, dans la componction.",
+          "note": "Vivre chaque jour comme le dernier, dans la componction. → Concrètement : rappelle-toi avec paix que ce jour peut être le dernier ; ordonne-le en conséquence, dans la componction et l'espérance.",
           "signature": false,
           "minutes": 15,
           "supersedes": -1
@@ -6205,21 +6205,21 @@
         },
         {
           "name": "Jeûne et sobriété",
-          "note": "Jeûne régulier qui libère le cœur pour la contemplation.",
+          "note": "Jeûne régulier qui libère le cœur pour la contemplation. → Concrètement : allège nourriture et superflu selon ta santé (un repas plus simple, pas de gourmandises), et offre cette faim en prière ; toujours avec discernement.",
           "signature": false,
           "minutes": 0,
           "supersedes": -1
         },
         {
           "name": "Vigile",
-          "note": "Une veille de prière dans la nuit.",
+          "note": "Une veille de prière dans la nuit. → Concrètement : veille une part de la nuit en prière : psaumes, Prière de Jésus, silence devant Dieu.",
           "signature": false,
           "minutes": 50,
           "supersedes": -1
         },
         {
           "name": "Travail en silence",
-          "note": "Œuvrer humblement sans rompre le recueillement.",
+          "note": "Œuvrer humblement sans rompre le recueillement. → Concrètement : retiens les paroles inutiles et fais du silence en toi ; reviens à la présence de Dieu au fil des tâches.",
           "signature": false,
           "minutes": 0,
           "supersedes": -1
@@ -6247,29 +6247,29 @@
       ],
       "devotions": [
         {
-          "name": "Une Heure de l'Office",
-          "note": "Une Heure de l'Office, priée en communauté selon l'ordre basilien.",
+          "name": "Une Heure de l'office byzantin",
+          "note": "Prie une Heure de l'office byzantin — par ex. les Vêpres, l'Orthros (matines) ou l'une des Heures — selon l'Horologe et le ton de la semaine.",
           "signature": true,
           "minutes": 15,
           "supersedes": -1
         },
         {
-          "name": "Deux Heures de l'Office",
-          "note": "Deux Heures, dont Matines ou Vêpres.",
+          "name": "Deux Heures de l'Office byzantin",
+          "note": "Prie deux Heures de l'office byzantin, par ex. Vêpres et Complies, ou l'Orthros et une Heure.",
           "signature": false,
           "minutes": 25,
           "supersedes": 0
         },
         {
-          "name": "Trois Heures de l'Office",
-          "note": "Trois Heures ponctuant la journée du cénobite.",
+          "name": "Trois Heures de l'Office byzantin",
+          "note": "Prie trois temps de l'office byzantin répartis dans la journée (matin, midi, soir).",
           "signature": false,
           "minutes": 35,
           "supersedes": 1
         },
         {
-          "name": "L'Office intégral",
-          "note": "Les Heures du jour et de la nuit — Matines, Tierce, Sexte, None, Vêpres, Complies et l'Office de minuit — « sept fois le jour je te loue ».",
+          "name": "L'Office byzantin intégral",
+          "note": "Prie l'office byzantin complet — Mésonyctique (minuit), Orthros, les Heures, Vêpres et Complies — selon l'Horologe. Sers-toi du module Liturgie des Heures.",
           "signature": true,
           "minutes": 70,
           "supersedes": 2
@@ -6339,7 +6339,7 @@
         },
         {
           "name": "Examen fraternel",
-          "note": "Reconnaître ses fautes avec humilité, dans la vérité et la paix.",
+          "note": "Reconnaître ses fautes avec humilité, dans la vérité et la paix. → Concrètement : le soir, en cinq pas : rends grâce pour un bienfait, demande la lumière, relis les heures du jour, reconnais une faute et demande pardon, choisis un point pour demain.",
           "signature": false,
           "minutes": 8,
           "supersedes": -1
@@ -6389,14 +6389,14 @@
         },
         {
           "name": "Prière de Jésus incessante",
-          "note": "Invoquer le Nom sans relâche, prière qui ne cesse ni jour ni nuit.",
+          "note": "Invoquer le Nom sans relâche, prière qui ne cesse ni jour ni nuit. → Concrètement : répète lentement « Seigneur Jésus-Christ, Fils de Dieu, aie pitié de moi, pécheur », en l'accordant au souffle ; dès que l'esprit s'échappe, reviens doucement au Nom.",
           "signature": true,
           "minutes": 60,
           "supersedes": -1
         },
         {
           "name": "Combat spirituel",
-          "note": "Discerner et repousser les pensées (logismoi) dès leur venue, par la vigilance.",
+          "note": "Discerner et repousser les pensées (logismoi) dès leur venue, par la vigilance. → Concrètement : surveille la première pensée (logismos) : dès qu'une tentation se présente, n'entre pas en dialogue — reviens aussitôt à la Prière de Jésus.",
           "signature": true,
           "minutes": 0,
           "supersedes": -1
@@ -6410,35 +6410,35 @@
         },
         {
           "name": "Vigile nocturne",
-          "note": "Se lever la nuit pour veiller et prier, à l'exemple d'Antoine.",
+          "note": "Se lever la nuit pour veiller et prier, à l'exemple d'Antoine. → Concrètement : lève-toi une partie de la nuit ; psalmodie quelques psaumes, redis le Nom de Jésus, veille en silence, offrant ce temps pour le monde.",
           "signature": true,
           "minutes": 60,
           "supersedes": -1
         },
         {
           "name": "Grand jeûne du désert",
-          "note": "Un seul repas de pain, de sel et d'eau après le coucher du soleil.",
+          "note": "Un seul repas de pain, de sel et d'eau après le coucher du soleil. → Concrètement : allège nourriture et superflu selon ta santé (un repas plus simple, pas de gourmandises), et offre cette faim en prière ; toujours avec discernement.",
           "signature": true,
           "minutes": 0,
           "supersedes": -1
         },
         {
           "name": "Travail des mains",
-          "note": "Tresser des nattes et des corbeilles en priant, contre l'oisiveté et l'acédie.",
+          "note": "Tresser des nattes et des corbeilles en priant, contre l'oisiveté et l'acédie. → Concrètement : accomplis une tâche simple des mains (artisanat, ménage, jardin) en gardant la prière intérieure ; offre-la contre l'oisiveté et l'acédie.",
           "signature": false,
           "minutes": 0,
           "supersedes": -1
         },
         {
           "name": "Méditation de l'Écriture",
-          "note": "Retenir et ruminer la Parole — Antoine la savait par cœur pour livre.",
+          "note": "Retenir et ruminer la Parole — Antoine la savait par cœur pour livre. → Concrètement : lis lentement un verset, redis-le intérieurement jusqu'à ce qu'il descende dans le cœur, garde-le tout le jour.",
           "signature": true,
           "minutes": 25,
           "supersedes": -1
         },
         {
           "name": "Mémoire de la mort",
-          "note": "Vivre chaque jour comme le dernier, dans la crainte devenue amour de Dieu.",
+          "note": "Vivre chaque jour comme le dernier, dans la crainte devenue amour de Dieu. → Concrètement : rappelle-toi avec paix que ce jour peut être le dernier ; ordonne-le en conséquence, dans la componction et l'espérance.",
           "signature": false,
           "minutes": 15,
           "supersedes": -1
@@ -6455,6 +6455,834 @@
           "note": "Comme Antoine descendu servir les confesseurs et les malades, secourir le prochain quand Dieu l'appelle.",
           "signature": false,
           "minutes": 0,
+          "supersedes": -1
+        }
+      ]
+    },
+    {
+      "id": "peres-du-desert-mixte",
+      "family": "orthodoxe",
+      "name": "Pères du désert",
+      "subtitle": "« Va, demeure dans ta cellule »",
+      "patron": "Saint Antoine le Grand, saint Macaire, saint Paul de Thèbes",
+      "accent": "#8a6a2a",
+      "desc": "L'anachorèse des déserts d'Égypte : la cellule, le silence (hésychia), la prière incessante, le travail des mains et un jeûne sévère. « Ta cellule t'enseignera tout. »",
+      "dailyCore": [
+        "Demeurer en cellule, dans le silence et la garde du cœur",
+        "Prière de Jésus incessante, au rythme du souffle"
+      ],
+      "devotions": [
+        {
+          "name": "Une Heure de l'Office",
+          "note": "Une Heure de l'Office de la cellule (psalmodie et prosternations).",
+          "signature": true,
+          "minutes": 25,
+          "supersedes": -1
+        },
+        {
+          "name": "Deux Heures de l'Office",
+          "note": "Deux Heures, dont la synaxe du soir.",
+          "signature": false,
+          "minutes": 35,
+          "supersedes": 0
+        },
+        {
+          "name": "Trois Heures de l'Office",
+          "note": "Trois temps de psalmodie répartis dans le jour et la nuit.",
+          "signature": false,
+          "minutes": 50,
+          "supersedes": 1
+        },
+        {
+          "name": "L'Office intégral, jour et nuit",
+          "note": "La règle des douze psaumes au soir et à la nuit, selon les Pères (Pallade, Cassien).",
+          "signature": true,
+          "minutes": 100,
+          "supersedes": 2
+        },
+        {
+          "name": "Prière de Jésus (une heure)",
+          "note": "« Seigneur Jésus-Christ, Fils de Dieu, aie pitié de moi, pécheur », gardée sans relâche. → Concrètement : répète lentement « Seigneur Jésus-Christ, Fils de Dieu, aie pitié de moi, pécheur », en l'accordant au souffle ; dès que l'esprit s'échappe, reviens doucement au Nom.",
+          "signature": true,
+          "minutes": 60,
+          "supersedes": -1
+        },
+        {
+          "name": "Vigile de nuit",
+          "note": "Se lever au cœur de la nuit pour veiller et prier, comme au désert. → Concrètement : veille une part de la nuit en prière : psaumes, Prière de Jésus, silence devant Dieu.",
+          "signature": true,
+          "minutes": 60,
+          "supersedes": -1
+        },
+        {
+          "name": "Grand jeûne du désert",
+          "note": "Un seul repas léger après None ; sobriété radicale de pain, sel et eau certains jours. → Concrètement : allège nourriture et superflu selon ta santé (un repas plus simple, pas de gourmandises), et offre cette faim en prière ; toujours avec discernement.",
+          "signature": true,
+          "minutes": 0,
+          "supersedes": -1
+        },
+        {
+          "name": "Travail des mains",
+          "note": "Tresser, écrire, œuvrer en silence — le travail qui soutient la prière et chasse l'acédie. → Concrètement : accomplis une tâche simple des mains (artisanat, ménage, jardin) en gardant la prière intérieure ; offre-la contre l'oisiveté et l'acédie.",
+          "signature": false,
+          "minutes": 0,
+          "supersedes": -1
+        },
+        {
+          "name": "Garde du cœur (nepsis)",
+          "note": "Veiller sur les pensées (logismoi) et les repousser dès leur naissance. → Concrètement : veille à la porte du cœur ; repousse toute pensée mauvaise dès sa naissance, en revenant au Nom de Jésus.",
+          "signature": true,
+          "minutes": 0,
+          "supersedes": -1
+        },
+        {
+          "name": "Métanies (prosternations)",
+          "note": "Cent prosternations, corps et esprit prosternés devant Dieu. → Concrètement : à chaque Prière de Jésus, incline-toi (petite métanie) ou mets un genou et le front à terre (grande métanie), puis relève-toi.",
+          "signature": false,
+          "minutes": 20,
+          "supersedes": -1
+        },
+        {
+          "name": "Xéniteia (l'exil)",
+          "note": "Se tenir étranger au monde, dépouillé de tout attachement.",
+          "signature": false,
+          "minutes": 0,
+          "supersedes": -1
+        },
+        {
+          "name": "Larmes de componction",
+          "note": "Demander le don des larmes, mémoire de la mort et du jugement.",
+          "signature": false,
+          "minutes": 15,
+          "supersedes": -1
+        },
+        {
+          "name": "Lectio des Apophtegmes",
+          "note": "Méditer une sentence des Pères du désert. → Concrètement : lis une brève sentence des Pères du désert, rumine-la, puis garde-la en tête comme viatique du jour.",
+          "signature": false,
+          "minutes": 15,
+          "supersedes": -1
+        }
+      ]
+    },
+    {
+      "id": "hesychastes-mixte",
+      "family": "orthodoxe",
+      "name": "Hésychastes",
+      "subtitle": "La prière du cœur, dans le silence",
+      "patron": "Saint Grégoire Palamas, saint Grégoire le Sinaïte",
+      "accent": "#2a4a5a",
+      "desc": "La voie de l'hésychia : le retour de l'intelligence dans le cœur, la Prière de Jésus unie au souffle, la garde des pensées et l'attente de la lumière incréée, dans la solitude et le silence.",
+      "dailyCore": [
+        "Prière de Jésus unie au souffle, l'esprit gardé dans le cœur",
+        "Silence (hésychia) et sobriété (nepsis)"
+      ],
+      "devotions": [
+        {
+          "name": "Prière de Jésus (longue)",
+          "note": "Invoquer sans cesse le Nom, l'intelligence descendue dans le cœur. → Concrètement : répète lentement « Seigneur Jésus-Christ, Fils de Dieu, aie pitié de moi, pécheur », en l'accordant au souffle ; dès que l'esprit s'échappe, reviens doucement au Nom.",
+          "signature": true,
+          "minutes": 60,
+          "supersedes": -1
+        },
+        {
+          "name": "Prière de Jésus (une deuxième heure)",
+          "note": "Prolonger l'invocation, matin et soir. → Concrètement : répète lentement « Seigneur Jésus-Christ, Fils de Dieu, aie pitié de moi, pécheur », en l'accordant au souffle ; dès que l'esprit s'échappe, reviens doucement au Nom.",
+          "signature": true,
+          "minutes": 60,
+          "supersedes": -1
+        },
+        {
+          "name": "Garde des pensées (nepsis)",
+          "note": "Veiller à la porte du cœur, refuser tout logismos naissant. → Concrètement : observe les pensées sans les suivre ; à la première suggestion mauvaise, retourne au Nom de Jésus.",
+          "signature": true,
+          "minutes": 0,
+          "supersedes": -1
+        },
+        {
+          "name": "Komboskini",
+          "note": "Prière comptée sur le chapelet de laine, nœud après nœud. → Concrètement : sur le cordon de prière, dis la Prière de Jésus à chaque nœud, sans compter anxieusement, l'attention gardée dans le cœur.",
+          "signature": true,
+          "minutes": 20,
+          "supersedes": -1
+        },
+        {
+          "name": "Métanies",
+          "note": "Grandes et petites prosternations accompagnant l'invocation. → Concrètement : à chaque Prière de Jésus, incline-toi (petite métanie) ou mets un genou et le front à terre (grande métanie), puis relève-toi.",
+          "signature": false,
+          "minutes": 20,
+          "supersedes": -1
+        },
+        {
+          "name": "Vigile nocturne",
+          "note": "Veiller la nuit dans la prière du cœur. → Concrètement : lève-toi une partie de la nuit ; psalmodie quelques psaumes, redis le Nom de Jésus, veille en silence, offrant ce temps pour le monde.",
+          "signature": true,
+          "minutes": 60,
+          "supersedes": -1
+        },
+        {
+          "name": "Jeûne strict",
+          "note": "Sobriété rigoureuse qui allège le corps et l'esprit pour la prière. → Concrètement : allège nourriture et superflu selon ta santé (un repas plus simple, pas de gourmandises), et offre cette faim en prière ; toujours avec discernement.",
+          "signature": false,
+          "minutes": 0,
+          "supersedes": -1
+        },
+        {
+          "name": "Lecture de la Philocalie",
+          "note": "Méditer un texte des Pères neptiques.",
+          "signature": false,
+          "minutes": 20,
+          "supersedes": -1
+        },
+        {
+          "name": "Attente de la lumière",
+          "note": "Se tenir en silence, pauvre et attentif, devant Dieu seul.",
+          "signature": false,
+          "minutes": 30,
+          "supersedes": -1
+        }
+      ]
+    },
+    {
+      "id": "stylites-reclus-mixte",
+      "family": "orthodoxe",
+      "name": "Stylites et reclus",
+      "subtitle": "L'ascèse extrême, fixé en un seul lieu",
+      "patron": "Saint Siméon le Stylite, saint Jean le Reclus",
+      "accent": "#5a3a3a",
+      "desc": "La voie des reclus et des stylites : se fixer en un seul lieu — colonne, grotte ou cellule murée — pour n'y plus vivre que de prière, de veille et de pénitence, offerts pour le monde.",
+      "dailyCore": [
+        "Stabilité radicale : demeurer en un seul lieu, tourné vers Dieu",
+        "Prière et intercession perpétuelles pour le monde"
+      ],
+      "devotions": [
+        {
+          "name": "Station de prière",
+          "note": "Se tenir debout en prière, immobile, une longue durée (stasis).",
+          "signature": true,
+          "minutes": 60,
+          "supersedes": -1
+        },
+        {
+          "name": "Prière de Jésus incessante",
+          "note": "Invoquer le Nom sans relâche, jour et nuit. → Concrètement : répète lentement « Seigneur Jésus-Christ, Fils de Dieu, aie pitié de moi, pécheur », en l'accordant au souffle ; dès que l'esprit s'échappe, reviens doucement au Nom.",
+          "signature": true,
+          "minutes": 60,
+          "supersedes": -1
+        },
+        {
+          "name": "Vigile de la nuit",
+          "note": "Veiller la plus grande part de la nuit, comme les reclus. → Concrètement : veille une part de la nuit en prière : psaumes, Prière de Jésus, silence devant Dieu.",
+          "signature": true,
+          "minutes": 90,
+          "supersedes": -1
+        },
+        {
+          "name": "Réclusion totale",
+          "note": "Demeurer enfermé, sans sortir, tout offert à Dieu.",
+          "signature": true,
+          "minutes": 0,
+          "supersedes": -1
+        },
+        {
+          "name": "Jeûne extrême",
+          "note": "Jeûne prolongé, ne rompant que le strict nécessaire à la vie. → Concrètement : allège nourriture et superflu selon ta santé (un repas plus simple, pas de gourmandises), et offre cette faim en prière ; toujours avec discernement.",
+          "signature": true,
+          "minutes": 0,
+          "supersedes": -1
+        },
+        {
+          "name": "Métanies sans nombre",
+          "note": "Prosternations répétées jusqu'à l'épuisement offert. → Concrètement : à chaque Prière de Jésus, incline-toi (petite métanie) ou mets un genou et le front à terre (grande métanie), puis relève-toi.",
+          "signature": false,
+          "minutes": 30,
+          "supersedes": -1
+        },
+        {
+          "name": "Intercession pour le monde",
+          "note": "Porter, du haut de la colonne, les peines de tous devant Dieu.",
+          "signature": false,
+          "minutes": 20,
+          "supersedes": -1
+        },
+        {
+          "name": "Mémoire de la mort",
+          "note": "Vivre chaque jour comme le dernier, dans la componction. → Concrètement : rappelle-toi avec paix que ce jour peut être le dernier ; ordonne-le en conséquence, dans la componction et l'espérance.",
+          "signature": false,
+          "minutes": 15,
+          "supersedes": -1
+        }
+      ]
+    },
+    {
+      "id": "regle-saint-antoine-mixte",
+      "family": "orthodoxe",
+      "name": "Règle de saint Antoine",
+      "subtitle": "« Je ne crains plus Dieu : je L'aime »",
+      "patron": "Saint Antoine le Grand, père des moines",
+      "accent": "#7a5a2a",
+      "desc": "La règle du premier des ermites : quitter le monde pour le désert, demeurer dans la cellule, prier sans cesse et combattre les pensées mauvaises par la vigilance et l'humilité, dans le jeûne, le travail des mains et la méditation continuelle de l'Écriture.",
+      "dailyCore": [
+        "Demeurer dans la cellule, séparé du monde",
+        "Vigilance du cœur et prière incessante contre les pensées"
+      ],
+      "devotions": [
+        {
+          "name": "Une Heure de l'Office",
+          "note": "Une Heure de la règle de la cellule (psalmodie et prière).",
+          "signature": true,
+          "minutes": 20,
+          "supersedes": -1
+        },
+        {
+          "name": "Deux Heures de l'Office",
+          "note": "Deux Heures, dont la synaxe du soir.",
+          "signature": false,
+          "minutes": 30,
+          "supersedes": 0
+        },
+        {
+          "name": "Trois Heures de l'Office",
+          "note": "Trois temps de psalmodie, jour et nuit.",
+          "signature": false,
+          "minutes": 45,
+          "supersedes": 1
+        },
+        {
+          "name": "L'Office intégral",
+          "note": "La règle des douze psaumes au soir et à la nuit, prière continue du solitaire.",
+          "signature": true,
+          "minutes": 90,
+          "supersedes": 2
+        },
+        {
+          "name": "Prière de Jésus incessante",
+          "note": "Invoquer le Nom sans relâche, prière qui ne cesse ni jour ni nuit. → Concrètement : répète lentement « Seigneur Jésus-Christ, Fils de Dieu, aie pitié de moi, pécheur », en l'accordant au souffle ; dès que l'esprit s'échappe, reviens doucement au Nom.",
+          "signature": true,
+          "minutes": 60,
+          "supersedes": -1
+        },
+        {
+          "name": "Combat spirituel",
+          "note": "Discerner et repousser les pensées (logismoi) dès leur venue, par la vigilance. → Concrètement : surveille la première pensée (logismos) : dès qu'une tentation se présente, n'entre pas en dialogue — reviens aussitôt à la Prière de Jésus.",
+          "signature": true,
+          "minutes": 0,
+          "supersedes": -1
+        },
+        {
+          "name": "Humilité",
+          "note": "« J'ai vu tous les filets de l'ennemi, et j'ai gémi : qui les évitera ? — L'humilité. »",
+          "signature": true,
+          "minutes": 0,
+          "supersedes": -1
+        },
+        {
+          "name": "Vigile nocturne",
+          "note": "Se lever la nuit pour veiller et prier, à l'exemple d'Antoine. → Concrètement : lève-toi une partie de la nuit ; psalmodie quelques psaumes, redis le Nom de Jésus, veille en silence, offrant ce temps pour le monde.",
+          "signature": true,
+          "minutes": 60,
+          "supersedes": -1
+        },
+        {
+          "name": "Grand jeûne du désert",
+          "note": "Un seul repas de pain, de sel et d'eau après le coucher du soleil. → Concrètement : allège nourriture et superflu selon ta santé (un repas plus simple, pas de gourmandises), et offre cette faim en prière ; toujours avec discernement.",
+          "signature": true,
+          "minutes": 0,
+          "supersedes": -1
+        },
+        {
+          "name": "Travail des mains",
+          "note": "Tresser des nattes et des corbeilles en priant, contre l'oisiveté et l'acédie. → Concrètement : accomplis une tâche simple des mains (artisanat, ménage, jardin) en gardant la prière intérieure ; offre-la contre l'oisiveté et l'acédie.",
+          "signature": false,
+          "minutes": 0,
+          "supersedes": -1
+        },
+        {
+          "name": "Méditation de l'Écriture",
+          "note": "Retenir et ruminer la Parole — Antoine la savait par cœur pour livre. → Concrètement : lis lentement un verset, redis-le intérieurement jusqu'à ce qu'il descende dans le cœur, garde-le tout le jour.",
+          "signature": true,
+          "minutes": 25,
+          "supersedes": -1
+        },
+        {
+          "name": "Mémoire de la mort",
+          "note": "Vivre chaque jour comme le dernier, dans la crainte devenue amour de Dieu. → Concrètement : rappelle-toi avec paix que ce jour peut être le dernier ; ordonne-le en conséquence, dans la componction et l'espérance.",
+          "signature": false,
+          "minutes": 15,
+          "supersedes": -1
+        },
+        {
+          "name": "Obéissance aux anciens",
+          "note": "Se soumettre au conseil des pères éprouvés, contre l'illusion de soi.",
+          "signature": false,
+          "minutes": 0,
+          "supersedes": -1
+        },
+        {
+          "name": "Charité au-delà du désert",
+          "note": "Comme Antoine descendu servir les confesseurs et les malades, secourir le prochain quand Dieu l'appelle.",
+          "signature": false,
+          "minutes": 0,
+          "supersedes": -1
+        }
+      ]
+    },
+    {
+      "id": "ermites-camaldules-mixte",
+      "family": "catholique",
+      "name": "Ermites camaldules",
+      "subtitle": "« Ô bienheureuse solitude »",
+      "patron": "Saint Romuald, saint Pierre Damien",
+      "accent": "#3a5a3c",
+      "desc": "La réforme érémitique de saint Romuald, greffée sur la Règle de saint Benoît : chacun dans son ermitage, la Brève Règle — « Assieds-toi dans ta cellule comme au paradis. »",
+      "dailyCore": [
+        "Vie en ermitage séparé, sous la Règle de saint Benoît",
+        "Psalmodie lente et attentive, « comme le paradis »"
+      ],
+      "devotions": [
+        {
+          "name": "Une Heure de l'Office",
+          "note": "Une Heure de l'Office chanté seul en cellule.",
+          "signature": true,
+          "minutes": 25,
+          "supersedes": -1
+        },
+        {
+          "name": "Deux Heures de l'Office",
+          "note": "Deux Heures, dont Vigiles ou Vêpres.",
+          "signature": false,
+          "minutes": 35,
+          "supersedes": 0
+        },
+        {
+          "name": "Trois Heures de l'Office",
+          "note": "Trois Heures ponctuant la solitude de l'ermitage.",
+          "signature": false,
+          "minutes": 50,
+          "supersedes": 1
+        },
+        {
+          "name": "L'Office intégral, jour et nuit",
+          "note": "L'Office monastique complet plus les Vigiles nocturnes, prié seul en cellule.",
+          "signature": true,
+          "minutes": 95,
+          "supersedes": 2
+        },
+        {
+          "name": "Brève Règle de Romuald",
+          "note": "« Assieds-toi dans ta cellule comme au paradis » : la relire et la vivre ce jour.",
+          "signature": true,
+          "minutes": 10,
+          "supersedes": -1
+        },
+        {
+          "name": "Psalmodie du cœur",
+          "note": "Psalmodier lentement, revenir doucement à l'attention quand l'esprit fuit.",
+          "signature": true,
+          "minutes": 40,
+          "supersedes": -1
+        },
+        {
+          "name": "Réclusion",
+          "note": "Un temps de réclusion volontaire, porte close au monde.",
+          "signature": true,
+          "minutes": 60,
+          "supersedes": -1
+        },
+        {
+          "name": "Jeûne camaldule",
+          "note": "Jeûne prolongé, pain et eau certains jours selon la coutume de l'ermitage. → Concrètement : allège nourriture et superflu selon ta santé (un repas plus simple, pas de gourmandises), et offre cette faim en prière ; toujours avec discernement.",
+          "signature": true,
+          "minutes": 0,
+          "supersedes": -1
+        },
+        {
+          "name": "Vigile nocturne",
+          "note": "Veiller la nuit, seul devant Dieu. → Concrètement : lève-toi une partie de la nuit ; psalmodie quelques psaumes, redis le Nom de Jésus, veille en silence, offrant ce temps pour le monde.",
+          "signature": false,
+          "minutes": 60,
+          "supersedes": -1
+        },
+        {
+          "name": "Travail silencieux",
+          "note": "Un travail simple, sans rompre le silence de l'ermitage. → Concrètement : œuvre en silence, sans rompre le recueillement ; que tes mains travaillent et que ton cœur prie.",
+          "signature": false,
+          "minutes": 0,
+          "supersedes": -1
+        },
+        {
+          "name": "Discipline / mortification",
+          "note": "Une mortification corporelle mesurée, dans l'esprit de saint Pierre Damien.",
+          "signature": false,
+          "minutes": 0,
+          "supersedes": -1
+        }
+      ]
+    },
+    {
+      "id": "chartreux-ermites-mixte",
+      "family": "catholique",
+      "name": "Chartreux (vie en cellule)",
+      "subtitle": "« Stat crux dum volvitur orbis »",
+      "patron": "Saint Bruno, saint Hugues de Lincoln",
+      "accent": "#5a6a72",
+      "desc": "La solitude cartusienne dans sa rigueur : la cellule pour tout horizon, l'Office de nuit au milieu du silence, le jeûne perpétuel et le désert intérieur où « la croix demeure tandis que le monde tourne ».",
+      "dailyCore": [
+        "Solitude et silence de la cellule",
+        "Office de nuit prolongé au cœur des ténèbres"
+      ],
+      "devotions": [
+        {
+          "name": "Une Heure de l'Office",
+          "note": "Une Heure de l'Office, chantée seul selon le rite cartusien.",
+          "signature": true,
+          "minutes": 25,
+          "supersedes": -1
+        },
+        {
+          "name": "Deux Heures de l'Office",
+          "note": "Deux Heures, dont les longues Matines de nuit.",
+          "signature": false,
+          "minutes": 35,
+          "supersedes": 0
+        },
+        {
+          "name": "Trois Heures de l'Office",
+          "note": "Trois Heures, la journée cartusienne ponctuée de prière.",
+          "signature": false,
+          "minutes": 50,
+          "supersedes": 1
+        },
+        {
+          "name": "L'Office intégral, jour et nuit",
+          "note": "L'Office de nuit intégral et les Heures du jour, selon la sobriété cartusienne.",
+          "signature": true,
+          "minutes": 110,
+          "supersedes": 2
+        },
+        {
+          "name": "Longues Matines de nuit",
+          "note": "Se lever la nuit pour l'Office nocturne, veille propre aux Chartreux.",
+          "signature": true,
+          "minutes": 90,
+          "supersedes": -1
+        },
+        {
+          "name": "Prière de la cellule",
+          "note": "Demeurer seul en cellule, la solitude comme épouse.",
+          "signature": true,
+          "minutes": 60,
+          "supersedes": -1
+        },
+        {
+          "name": "Jeûne cartusien",
+          "note": "Abstinence perpétuelle de viande et jeûne fréquent, selon les Statuts. → Concrètement : allège nourriture et superflu selon ta santé (un repas plus simple, pas de gourmandises), et offre cette faim en prière ; toujours avec discernement.",
+          "signature": true,
+          "minutes": 0,
+          "supersedes": -1
+        },
+        {
+          "name": "Lectio divina",
+          "note": "Lecture priante prolongée de l'Écriture, dans le silence. → Concrètement : en quatre temps — lis un court passage (lectio), rumine un mot qui te touche (meditatio), prie à partir de lui (oratio), puis demeure en silence devant Dieu (contemplatio).",
+          "signature": true,
+          "minutes": 40,
+          "supersedes": -1
+        },
+        {
+          "name": "Spatiament silencieux",
+          "note": "La marche solitaire hebdomadaire, offerte dans le recueillement.",
+          "signature": false,
+          "minutes": 0,
+          "supersedes": -1
+        },
+        {
+          "name": "Prière du cœur",
+          "note": "Invocation continue du Nom, au fil des heures de solitude.",
+          "signature": false,
+          "minutes": 30,
+          "supersedes": -1
+        },
+        {
+          "name": "Mémoire de la Croix",
+          "note": "Contempler la Croix stable au milieu du monde qui passe.",
+          "signature": false,
+          "minutes": 15,
+          "supersedes": -1
+        }
+      ]
+    },
+    {
+      "id": "carmes-primitifs-mixte",
+      "family": "catholique",
+      "name": "Ermites du Mont-Carmel",
+      "subtitle": "« Zelo zelatus sum »",
+      "patron": "Le prophète Élie, Notre-Dame du Mont-Carmel",
+      "accent": "#6a4a2a",
+      "desc": "La Règle primitive de saint Albert, avant toute mitigation : chacun en sa cellule « méditant jour et nuit la loi du Seigneur », dans le silence, le jeûne et le zèle brûlant du prophète Élie.",
+      "dailyCore": [
+        "Demeurer en cellule, méditant la loi du Seigneur jour et nuit",
+        "Silence gardé depuis Complies jusqu'après Prime"
+      ],
+      "devotions": [
+        {
+          "name": "Une Heure de l'Office",
+          "note": "Une Heure de l'Office, seul en cellule.",
+          "signature": true,
+          "minutes": 25,
+          "supersedes": -1
+        },
+        {
+          "name": "Deux Heures de l'Office",
+          "note": "Deux Heures selon la Règle de saint Albert.",
+          "signature": false,
+          "minutes": 35,
+          "supersedes": 0
+        },
+        {
+          "name": "Trois Heures de l'Office",
+          "note": "Trois Heures méditées jour et nuit.",
+          "signature": false,
+          "minutes": 50,
+          "supersedes": 1
+        },
+        {
+          "name": "L'Office intégral, jour et nuit",
+          "note": "L'Office canonial complet, ou les 25 Notre Père pour ceux qui ne savent lire (Règle primitive).",
+          "signature": true,
+          "minutes": 90,
+          "supersedes": 2
+        },
+        {
+          "name": "Méditation continue de la Loi",
+          "note": "« Méditant jour et nuit la loi du Seigneur » : rumination lente de l'Écriture.",
+          "signature": true,
+          "minutes": 45,
+          "supersedes": -1
+        },
+        {
+          "name": "Silence prophétique",
+          "note": "Garder le silence à l'imitation d'Élie sur l'Horeb. → Concrètement : retiens les paroles inutiles et fais du silence en toi ; reviens à la présence de Dieu au fil des tâches.",
+          "signature": true,
+          "minutes": 0,
+          "supersedes": -1
+        },
+        {
+          "name": "Jeûne du Carmel",
+          "note": "Jeûne de la Toussaint à Pâques et abstinence perpétuelle, selon la Règle primitive. → Concrètement : allège nourriture et superflu selon ta santé (un repas plus simple, pas de gourmandises), et offre cette faim en prière ; toujours avec discernement.",
+          "signature": true,
+          "minutes": 0,
+          "supersedes": -1
+        },
+        {
+          "name": "Zèle d'Élie",
+          "note": "« J'ai été rempli de zèle pour le Seigneur » : offrir la journée pour la gloire de Dieu.",
+          "signature": true,
+          "minutes": 0,
+          "supersedes": -1
+        },
+        {
+          "name": "Vigile en cellule",
+          "note": "Veiller en prière, seul, une part de la nuit. → Concrètement : veille une part de la nuit en prière : psaumes, Prière de Jésus, silence devant Dieu.",
+          "signature": false,
+          "minutes": 60,
+          "supersedes": -1
+        },
+        {
+          "name": "Travail des mains",
+          "note": "Œuvrer en silence pour ne pas manger le pain de l'oisiveté. → Concrètement : accomplis une tâche simple des mains (artisanat, ménage, jardin) en gardant la prière intérieure ; offre-la contre l'oisiveté et l'acédie.",
+          "signature": false,
+          "minutes": 0,
+          "supersedes": -1
+        },
+        {
+          "name": "Sous le manteau de Marie",
+          "note": "Se placer sous la protection de Notre-Dame du Mont-Carmel.",
+          "signature": false,
+          "minutes": 15,
+          "supersedes": -1
+        }
+      ]
+    },
+    {
+      "id": "paulins-mixte",
+      "family": "catholique",
+      "name": "Ermites de saint Paul (Paulins)",
+      "subtitle": "« Solus cum Deo solo »",
+      "patron": "Saint Paul de Thèbes, premier ermite",
+      "accent": "#7a5a3c",
+      "desc": "L'Ordre de Saint-Paul-Premier-Ermite : la vie solitaire héritée de Paul de Thèbes, unie à une tendre dévotion mariale, entre désert intérieur et louange de la Vierge.",
+      "dailyCore": [
+        "Solitude à la suite du premier ermite",
+        "Office de la Vierge, patronne de l'ordre"
+      ],
+      "devotions": [
+        {
+          "name": "Une Heure de l'Office",
+          "note": "Une Heure de l'Office, dans le silence de l'ermitage.",
+          "signature": true,
+          "minutes": 25,
+          "supersedes": -1
+        },
+        {
+          "name": "Deux Heures de l'Office",
+          "note": "Deux Heures, dont l'office marial.",
+          "signature": false,
+          "minutes": 35,
+          "supersedes": 0
+        },
+        {
+          "name": "Trois Heures de l'Office",
+          "note": "Trois Heures rythmant la solitude.",
+          "signature": false,
+          "minutes": 50,
+          "supersedes": 1
+        },
+        {
+          "name": "L'Office intégral, jour et nuit",
+          "note": "L'Office complet et l'office de la Vierge, selon la tradition paulinienne.",
+          "signature": true,
+          "minutes": 85,
+          "supersedes": 2
+        },
+        {
+          "name": "Prière solitaire",
+          "note": "Demeurer « seul avec Dieu seul », à la suite de Paul de Thèbes.",
+          "signature": true,
+          "minutes": 45,
+          "supersedes": -1
+        },
+        {
+          "name": "Office de la Vierge",
+          "note": "L'office marial que chérissent les Paulins.",
+          "signature": true,
+          "minutes": 25,
+          "supersedes": -1
+        },
+        {
+          "name": "Jeûne de l'ermite",
+          "note": "Jeûne fréquent et sobriété, à l'image du désert. → Concrètement : allège nourriture et superflu selon ta santé (un repas plus simple, pas de gourmandises), et offre cette faim en prière ; toujours avec discernement.",
+          "signature": true,
+          "minutes": 0,
+          "supersedes": -1
+        },
+        {
+          "name": "Vigile nocturne",
+          "note": "Une veille dans la nuit, comme le solitaire de la Thébaïde. → Concrètement : lève-toi une partie de la nuit ; psalmodie quelques psaumes, redis le Nom de Jésus, veille en silence, offrant ce temps pour le monde.",
+          "signature": false,
+          "minutes": 50,
+          "supersedes": -1
+        },
+        {
+          "name": "Chapelet",
+          "note": "Cinq dizaines auprès de la Mère de Dieu. → Concrètement : pour chaque dizaine : annonce le mystère, un Notre Père, puis dix Je vous salue Marie en méditant la scène.",
+          "signature": false,
+          "minutes": 20,
+          "supersedes": -1
+        },
+        {
+          "name": "Travail et silence",
+          "note": "Un travail humble dans le recueillement de la cellule. → Concrètement : retiens les paroles inutiles et fais du silence en toi ; reviens à la présence de Dieu au fil des tâches.",
+          "signature": false,
+          "minutes": 0,
+          "supersedes": -1
+        },
+        {
+          "name": "Mémoire de la mort",
+          "note": "Méditer la fin dernière, comme saint Antoine ensevelissant saint Paul. → Concrètement : rappelle-toi avec paix que ce jour peut être le dernier ; ordonne-le en conséquence, dans la componction et l'espérance.",
+          "signature": false,
+          "minutes": 15,
+          "supersedes": -1
+        }
+      ]
+    },
+    {
+      "id": "ermites-augustins-mixte",
+      "family": "catholique",
+      "name": "Ermites de saint Augustin",
+      "subtitle": "« Un seul cœur et une seule âme vers Dieu »",
+      "patron": "Saint Augustin, les ermites de Toscane",
+      "accent": "#4a3a5a",
+      "desc": "La vie érémitique sous la Règle de saint Augustin, avant le grand rassemblement mendiant : solitude des ermitages toscans, intériorité augustinienne et quête inquiète du repos en Dieu.",
+      "dailyCore": [
+        "Rentrer en soi-même, où Dieu habite plus intime que l'intime",
+        "Vie sous la Règle de saint Augustin, en solitude"
+      ],
+      "devotions": [
+        {
+          "name": "Une Heure de l'Office",
+          "note": "Une Heure de l'Office, seul dans l'ermitage.",
+          "signature": true,
+          "minutes": 25,
+          "supersedes": -1
+        },
+        {
+          "name": "Deux Heures de l'Office",
+          "note": "Deux Heures selon la Règle augustinienne.",
+          "signature": false,
+          "minutes": 35,
+          "supersedes": 0
+        },
+        {
+          "name": "Trois Heures de l'Office",
+          "note": "Trois Heures ponctuant la solitude.",
+          "signature": false,
+          "minutes": 50,
+          "supersedes": 1
+        },
+        {
+          "name": "L'Office intégral, jour et nuit",
+          "note": "L'Office complet, prié dans le silence de l'ermitage.",
+          "signature": true,
+          "minutes": 80,
+          "supersedes": 2
+        },
+        {
+          "name": "Intériorité augustinienne",
+          "note": "« Ne va pas au dehors, rentre en toi-même » : oraison du cœur.",
+          "signature": true,
+          "minutes": 40,
+          "supersedes": -1
+        },
+        {
+          "name": "Confessions",
+          "note": "Méditer un passage des Confessions, dialogue de l'âme et de Dieu.",
+          "signature": true,
+          "minutes": 20,
+          "supersedes": -1
+        },
+        {
+          "name": "Cœur inquiet",
+          "note": "« Notre cœur est sans repos jusqu'à ce qu'il repose en Toi » : offrir son désir de Dieu.",
+          "signature": true,
+          "minutes": 0,
+          "supersedes": -1
+        },
+        {
+          "name": "Jeûne et sobriété",
+          "note": "Jeûne régulier qui libère le cœur pour la contemplation. → Concrètement : allège nourriture et superflu selon ta santé (un repas plus simple, pas de gourmandises), et offre cette faim en prière ; toujours avec discernement.",
+          "signature": false,
+          "minutes": 0,
+          "supersedes": -1
+        },
+        {
+          "name": "Vigile",
+          "note": "Une veille de prière dans la nuit. → Concrètement : veille une part de la nuit en prière : psaumes, Prière de Jésus, silence devant Dieu.",
+          "signature": false,
+          "minutes": 50,
+          "supersedes": -1
+        },
+        {
+          "name": "Travail en silence",
+          "note": "Œuvrer humblement sans rompre le recueillement. → Concrètement : retiens les paroles inutiles et fais du silence en toi ; reviens à la présence de Dieu au fil des tâches.",
+          "signature": false,
+          "minutes": 0,
+          "supersedes": -1
+        },
+        {
+          "name": "Charité même en solitude",
+          "note": "Porter dans la prière les frères, « un seul cœur vers Dieu ».",
+          "signature": false,
+          "minutes": 15,
           "supersedes": -1
         }
       ]

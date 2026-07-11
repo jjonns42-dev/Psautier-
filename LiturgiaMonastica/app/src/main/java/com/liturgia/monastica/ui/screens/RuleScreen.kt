@@ -35,6 +35,30 @@ private fun familyLabel(f: String, it: Boolean) = when (f) {
     else -> if (it) "Personale" else "Personnelle"
 }
 
+/** Courte description de chaque famille spirituelle, affichée sous le sélecteur. */
+private fun familyDesc(f: String, it: Boolean) = when (f) {
+    "orthodoxe" -> if (it)
+        "Le Chiese d'Oriente: uffici cantati, Preghiera di Gesù, digiuni e icone."
+    else
+        "Les Églises d'Orient : offices byzantins et orientaux, Prière de Jésus, jeûnes et icônes."
+    "catholique" -> if (it)
+        "Ordini e spiritualità di rito latino: Ufficio divino, sacramenti e devozioni."
+    else
+        "Ordres et spiritualités du rite latin : Office divin, sacrements et dévotions."
+    "charismatique" -> if (it)
+        "Nuove comunità: lode, adorazione e vita fraterna, nei doni dello Spirito."
+    else
+        "Communautés nouvelles : louange, adoration et vie fraternelle, dans les dons de l'Esprit."
+    "eremitique" -> if (it)
+        "La via degli eremiti: solitudine e ascesi — le regole più esigenti (difficoltà eremitica)."
+    else
+        "La voie des ermites : solitude et ascèse — les règles les plus exigeantes (difficulté érémitique)."
+    else -> if (it)
+        "Componi e segui la tua regola, con le devozioni esistenti o le tue."
+    else
+        "Compose et suis ta propre règle, à partir des dévotions existantes ou des tiennes."
+}
+
 /** Étapes réelles de formation religieuse, communes aux trois familles (voir recherche : Shalom a
  *  Postulantado → Discipulado → Promessas Temporárias → Definitivas ; les ordres catholiques et les
  *  monastères orthodoxes suivent le même schéma postulat/noviciat/profession). */
@@ -188,6 +212,15 @@ private fun RuleSetup(repo: ContentRepository, store: GameStore, modifier: Modif
                     style = MaterialTheme.typography.labelMedium, textAlign = TextAlign.Center
                 )
             }
+        }
+
+        family?.let { fam ->
+            Text(
+                familyDesc(fam, italian),
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                modifier = Modifier.fillMaxWidth().padding(top = 8.dp, bottom = 2.dp)
+            )
         }
 
         if (family != null) {
