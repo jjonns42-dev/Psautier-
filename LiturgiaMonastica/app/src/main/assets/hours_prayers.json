@@ -1,0 +1,151 @@
+{
+  "_note": "Hymnes anciennes du domaine public (rendus français propres à l'app) et prières fournies par l'utilisateur. Les psaumes et Évangiles proviennent de la Bible Crampon 1923 (domaine public), déjà embarquée.",
+  "hymns": {
+    "st_patrick": {
+      "title_fr": "Cuirasse de saint Patrick",
+      "title_it": "Corazza di san Patrizio",
+      "lines": [
+        "Je me lève aujourd'hui par une force puissante :",
+        "l'invocation de la Trinité,",
+        "la foi en la Trinité, la confession de l'Unité,",
+        "du Créateur du monde.",
+        "",
+        "Le Christ avec moi, le Christ devant moi, le Christ derrière moi,",
+        "le Christ en moi, le Christ sous moi, le Christ au-dessus de moi,",
+        "le Christ à ma droite, le Christ à ma gauche,",
+        "le Christ dans la largeur, la longueur et la hauteur.",
+        "",
+        "Salut au Seigneur, salut au Christ,",
+        "car du Seigneur vient le salut,",
+        "du Christ vient le salut :",
+        "que ton salut, Seigneur, soit toujours avec nous."
+      ]
+    },
+    "veni_creator": {
+      "title_fr": "Veni Creator Spiritus",
+      "title_it": "Veni Creator Spiritus",
+      "lines": [
+        "Veni, Creator Spiritus,",
+        "mentes tuorum visita,",
+        "imple superna gratia",
+        "quae tu creasti pectora.",
+        "",
+        "Viens, Esprit Créateur,",
+        "visite l'âme de tes fidèles,",
+        "emplis de la grâce d'en haut",
+        "les cœurs que tu as créés.",
+        "",
+        "Ô toi qu'on nomme le Consolateur,",
+        "don du Dieu très-haut,",
+        "source vive, feu, charité,",
+        "et onction spirituelle."
+      ]
+    },
+    "ephrem_passion": {
+      "title_fr": "Hymne de la Passion (à la manière de saint Éphrem)",
+      "title_it": "Inno della Passione (alla maniera di sant'Efrem)",
+      "lines": [
+        "Ô Christ, qui pour nous as souffert,",
+        "tes plaies sont devenues nos fontaines de vie ;",
+        "de ton côté ouvert jaillissent le sang et l'eau,",
+        "qui lavent le monde de sa nuit.",
+        "",
+        "Gloire à toi qui as porté la croix,",
+        "gloire à ton silence devant les juges,",
+        "gloire à ton amour plus fort que la mort :",
+        "par ta Passion, sauve-nous, ô Miséricordieux."
+      ]
+    },
+    "christos_anesti": {
+      "title_fr": "Tropaire de la Résurrection",
+      "title_it": "Tropario della Risurrezione",
+      "lines": [
+        "Christós anésti ek nekrón,",
+        "thanáto thánaton patísas,",
+        "ké tís en tís mnímasi zoín charisámenos.",
+        "",
+        "Le Christ est ressuscité des morts ;",
+        "par la mort, il a vaincu la mort ;",
+        "à ceux qui sont dans les tombeaux,",
+        "il a donné la vie."
+      ]
+    },
+    "vexilla_crux": {
+      "title_fr": "Hymne de la Croix (Vexilla Regis)",
+      "title_it": "Inno della Croce (Vexilla Regis)",
+      "lines": [
+        "Vexilla Regis prodeunt,",
+        "fulget Crucis mysterium,",
+        "quo carne carnis conditor",
+        "suspensus est patibulo.",
+        "",
+        "Les étendards du Roi s'avancent,",
+        "resplendit le mystère de la Croix,",
+        "où le Créateur de la chair, dans la chair,",
+        "fut suspendu au gibet.",
+        "",
+        "Ô Croix, salut, notre unique espérance,",
+        "accrois la grâce dans les cœurs des fidèles,",
+        "et remets leurs fautes aux coupables."
+      ]
+    },
+    "phos_hilaron": {
+      "title_fr": "Lumière joyeuse (hymne du soir)",
+      "title_it": "Luce gioiosa (inno della sera)",
+      "lines": [
+        "Lumière joyeuse de la sainte gloire",
+        "du Père immortel, céleste, saint, bienheureux :",
+        "ô Jésus-Christ !",
+        "",
+        "Parvenus au coucher du soleil,",
+        "voyant la lumière du soir,",
+        "nous chantons le Père, le Fils",
+        "et le Saint-Esprit, Dieu.",
+        "",
+        "Il est digne en tout temps de te célébrer",
+        "par des voix saintes, ô Fils de Dieu",
+        "qui donnes la vie :",
+        "aussi le monde te glorifie."
+      ]
+    }
+  },
+  "notre_pere": [
+    "Notre Père, qui es aux cieux, que ton nom soit sanctifié, que ton règne vienne, que ta volonté soit faite sur la terre comme au ciel. Donne-nous aujourd'hui notre pain de ce jour. Pardonne-nous nos offenses, comme nous pardonnons aussi à ceux qui nous ont offensés. Et ne nous laisse pas entrer en tentation, mais délivre-nous du Mal. Amen."
+  ],
+  "intercession": {
+    "title_fr": "Intercession au Précieux Sang et aux Saintes Plaies de Notre Seigneur Jésus-Christ",
+    "title_it": "Intercessione al Preziosissimo Sangue e alle Sante Piaghe di Nostro Signore Gesù Cristo",
+    "paragraphs": [
+      "Au nom du Père, et du Fils, et du Saint-Esprit. Amen.",
+      "Très Précieux Sang de Jésus-Christ, Sang de l'Alliance nouvelle et éternelle, nous venons à Toi avec confiance et humilité.",
+      "Par le Sang versé pour nous au Jardin des Oliviers, par le Sang répandu sous la flagellation, par le Sang coulé de Ton front couronné d'épines, par le Sang jailli de Tes mains et de Tes pieds cloués, par le Sang sorti de Ton Cœur transpercé par la lance, aie pitié de nous et du monde entier.",
+      "Seigneur, par Ton Précieux Sang, écoute notre prière.",
+      "Nous Te confions :",
+      "— Ton Église et tous ses pasteurs ;",
+      "— les familles, les enfants et les personnes seules ;",
+      "— les malades, les souffrants et les mourants ;",
+      "— ceux qui cherchent la vérité et la paix ;",
+      "— les âmes du purgatoire ;",
+      "— tous ceux qui ont besoin de Ta miséricorde.",
+      "Seigneur, par Tes Saintes Plaies, guéris-nous.",
+      "Par la Plaie de Ta main droite, bénis nos œuvres. Par la Plaie de Ta main gauche, protège-nous du péché. Par la Plaie de Ton pied droit, guide nos pas vers Toi. Par la Plaie de Ton pied gauche, relève ceux qui sont tombés. Par la Plaie de Ton Cœur Sacré, embrase-nous de Ton amour.",
+      "Très Précieux Sang de Jésus, sois notre refuge dans les combats, notre force dans les tentations, notre consolation dans les souffrances, notre espérance à l'heure de notre mort.",
+      "Agneau de Dieu, immolé pour le salut du monde, reçois nos prières et accorde-nous Ta miséricorde.",
+      "Par les mérites de Ta Passion et de Tes Saintes Plaies, accorde-nous la grâce de vivre dans Ton amour et de demeurer unis à Toi pour l'éternité. Amen."
+    ]
+  },
+  "oraison": {
+    "title_fr": "Oraison de bénédiction",
+    "title_it": "Orazione di benedizione",
+    "paragraphs": [
+      "Seigneur notre Dieu, Père tout-puissant, source de toute bénédiction, regarde avec bonté tes serviteurs qui se tournent vers Toi.",
+      "Bénis-nous par ta grâce, sanctifie nos pensées, nos paroles et nos œuvres. Protège-nous de tout mal, garde-nous sous l'ombre de tes ailes, et conduis-nous sur le chemin de la paix et du salut.",
+      "Que la bénédiction du Père, la grâce du Fils unique Jésus-Christ, et la communion du Saint-Esprit demeurent avec nous maintenant et toujours.",
+      "Par le Christ notre Seigneur. Amen."
+    ]
+  },
+  "invocations": [
+    "Très Précieux Sang de Jésus-Christ, sauve-nous et le monde entier.",
+    "Ô mon Jésus, par les mérites de Tes Saintes Plaies, pardon et miséricorde."
+  ]
+}

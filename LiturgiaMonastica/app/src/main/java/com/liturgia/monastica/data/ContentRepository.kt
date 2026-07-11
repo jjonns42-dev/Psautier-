@@ -485,6 +485,48 @@ class ContentRepository(private val context: Context) {
     fun bibleChapterCount(file: String): Int =
         obj(file).getAsJsonObject("chapters").keySet().mapNotNull { it.toIntOrNull() }.maxOrNull() ?: 0
 
+    // ---- Liturgie des Heures « Ora et labora » -------------------------------
+    private val verseRegex = Regex("(\\d+)\\s+(.*?)(?=\\s+\\d+\\s|\\Z)", RegexOption.DOT_MATCHES_ALL)
+
+    /** Découpe un chapitre (texte Crampon « 1 … 2 … ») en (numéro, texte). */
+    fun bibleVerses(file: String, chapter: Int): List<Pair<Int, String>> {
+        val txt = bibleChapter(file, chapter)
+        if (txt.isBlank()) return emptyList()
+        return verseRegex.findAll(txt).mapNotNull { m ->
+            val n = m.groupValues[1].toIntOrNull() ?: return@mapNotNull null
+            n to m.groupValues[2].trim()
+        }.toList()
+    }
+
+    private val hoursRoot: JsonObject by lazy { obj("hours_prayers.json") }
+
+    fun hoursPrayers(): HoursPrayers {
+        val h = hoursRoot.getAsJsonObject("hymns")
+        val hymns = h.keySet().associateWith { key ->
+            val o = h.getAsJsonObject(key)
+            HoursHymn(
+                id = key,
+                titleFr = o.get("title_fr").asString,
+                titleIt = o.get("title_it").asString,
+                lines = o.getAsJsonArray("lines").map { it2 -> it2.asString }
+            )
+        }
+        fun arr(name: String) = hoursRoot.getAsJsonArray(name).map { it2 -> it2.asString }
+        val inter = hoursRoot.getAsJsonObject("intercession")
+        val orai = hoursRoot.getAsJsonObject("oraison")
+        return HoursPrayers(
+            hymns = hymns,
+            notrePere = arr("notre_pere"),
+            intercessionTitleFr = inter.get("title_fr").asString,
+            intercessionTitleIt = inter.get("title_it").asString,
+            intercession = inter.getAsJsonArray("paragraphs").map { it2 -> it2.asString },
+            oraisonTitleFr = orai.get("title_fr").asString,
+            oraisonTitleIt = orai.get("title_it").asString,
+            oraison = orai.getAsJsonArray("paragraphs").map { it2 -> it2.asString },
+            invocations = arr("invocations")
+        )
+    }
+
     companion object {
         fun todayWeekday(): Int = Calendar.getInstance().get(Calendar.DAY_OF_WEEK)
     }

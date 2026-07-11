@@ -385,3 +385,29 @@ data class WorkOfMercy(
     val desc: String,
     val examples: List<String>
 )
+
+// =============================================================================
+//  LITURGIE DES HEURES « ORA ET LABORA » — office original : les 150 psaumes
+//  parcourus en une semaine ou moins, tirés au sort sans répétition, avec
+//  annotation des numéros, un passage évangélique par Heure (Crampon 1923),
+//  hymnes anciennes et intercessions au Précieux Sang à Laudes et Vêpres.
+// =============================================================================
+
+data class HoursHymn(
+    val id: String,
+    val titleFr: String,
+    val titleIt: String,
+    val lines: List<String>
+)
+
+data class HoursPrayers(
+    val hymns: Map<String, HoursHymn>,
+    val notrePere: List<String>,
+    val intercessionTitleFr: String,
+    val intercessionTitleIt: String,
+    val intercession: List<String>,
+    val oraisonTitleFr: String,
+    val oraisonTitleIt: String,
+    val oraison: List<String>,
+    val invocations: List<String>
+)

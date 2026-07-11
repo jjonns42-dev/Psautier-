@@ -95,7 +95,7 @@ fun HomeScreen(
 
             Tile(
                 title = if (it) "Liturgia delle Ore" else "Liturgie des Heures",
-                subtitle = if (it) "Le otto ore monastiche" else "Les huit heures monastiques",
+                subtitle = if (it) "150 salmi in una settimana, 8 ore, Vangeli e intercessioni" else "150 psaumes en une semaine, 8 heures, Évangiles et intercessions",
                 icon = Icons.Filled.WbTwilight, onClick = onOffice
             )
             Tile(

@@ -55,8 +55,7 @@ fun AppNavGraph(repo: ContentRepository, store: GameStore) {
             )
         }
         composable(Routes.OFFICE) {
-            OfficeListScreen(repo, store, onBack = { nav.popBackStack() },
-                onHour = { id -> nav.navigate(Routes.hour(id)) })
+            HoursScreen(repo, store, onBack = { nav.popBackStack() })
         }
         composable(
             Routes.OFFICE_HOUR,
